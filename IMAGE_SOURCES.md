@@ -88,6 +88,16 @@ These images depict copyrighted characters and artwork from their respective man
 | Hanbin Ryu | [Wiki page](https://survival-story-of-a-sword-king-in-a-fantasy-world.fandom.com/wiki/Ryu_Han-Bin) | [Direct image](https://static.wikia.nocookie.net/survival-story-of-a-sword-king-in-a-fantasy-world/images/2/28/SSSKFW_%2858%29.jpg/revision/latest?cb=20210626143511) |
 | Barolt — Aura | [Wiki page](https://survival-story-of-a-sword-king-in-a-fantasy-world.fandom.com/wiki/Barolt) | [Direct image](https://static.wikia.nocookie.net/survival-story-of-a-sword-king-in-a-fantasy-world/images/f/f6/Barolt_now.jpg/revision/latest?cb=20220703005029) |
 | Joo Seoh-Cheon | [Wiki page](https://volcanic-age.fandom.com/wiki/Joo_Seo-Cheon) | [Direct image](https://static.wikia.nocookie.net/volcanic-age/images/0/01/Joo_Seo-Cheon.png/revision/latest?cb=20211114072402) |
+| Naruto Uzumaki | [Wiki page](https://naruto.fandom.com/wiki/Naruto_Uzumaki) | [Direct image](https://static.wikia.nocookie.net/naruto/images/d/dc/Naruto%27s_Sage_Mode.png/revision/latest?cb=20150124180545) |
+| Sasuke Uchiha | [Wiki page](https://naruto.fandom.com/wiki/Sasuke_Uchiha) | [Direct image](https://static.wikia.nocookie.net/naruto/images/6/6a/Sasuke_The_Last.png/revision/latest?cb=20150711121636) |
+| Madara Uchiha | [Wiki page](https://naruto.fandom.com/wiki/Madara_Uchiha) | [Direct image](https://static.wikia.nocookie.net/naruto/images/7/7f/Madara_Jinchuriki_anime.png/revision/latest?cb=20260108183827) |
+| Minato Namikaze | [Wiki page](https://naruto.fandom.com/wiki/Minato_Namikaze) | [Direct image](https://static.wikia.nocookie.net/naruto/images/1/1f/Minato_KCM_Naruto_Mobile.png/revision/latest?cb=20251121212201) |
+| Itachi Uchiha | [Wiki page](https://naruto.fandom.com/wiki/Itachi_Uchiha) | [Direct image](https://static.wikia.nocookie.net/naruto/images/5/5e/Itachi_Akatsuki.png/revision/latest?cb=20260212215738) |
+| Boruto Uzumaki | [Wiki page](https://naruto.fandom.com/wiki/Boruto_Uzumaki) | [Direct image](https://static.wikia.nocookie.net/naruto/images/4/4a/Boruto-TBV.png/revision/latest?cb=20260528223214) |
+| Ichigo Kurosaki | [Wiki page](https://bleach.fandom.com/wiki/Ichigo_Kurosaki) | [Direct image](https://static.wikia.nocookie.net/bleach/images/5/52/591Ichigo_profile.png/revision/latest?cb=20190129174528&path-prefix=en) |
+| Sōsuke Aizen | [Wiki page](https://bleach.fandom.com/wiki/S%C5%8Dsuke_Aizen) | [Direct image](https://static.wikia.nocookie.net/bleach/images/5/5f/Ep300AizenSecondFusion.png/revision/latest?cb=20220916173647&path-prefix=en) |
+| Monkey D. Luffy | [Wiki page](https://onepiece.fandom.com/wiki/Monkey_D._Luffy) | [Direct image](https://static.wikia.nocookie.net/onepiece/images/6/6a/Luffy_Snakeman_Pirate_Warriors_4.png/revision/latest?cb=20191216211506) |
+| Jotaro Kujo | [Wiki page](https://jojo.fandom.com/wiki/Jotaro_Kujo) | [Direct image](https://static.wikia.nocookie.net/jjba/images/0/01/JotaroProfile.png/revision/latest?cb=20191125014406) |
 
 ## Refreshing the local files
 

@@ -1,6 +1,7 @@
 import type { BuildVariant, CharacterBuild, HotbarSlot } from '../types'
 import { originalCharacters } from './characters'
 import { curatedBuilds } from './curatedBuilds'
+import { animeMangaBuilds } from './animeMangaBuilds'
 
 const curatedIds = new Set(curatedBuilds.map((build) => build.id))
 const hotbarKeys = ['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q']
@@ -84,4 +85,4 @@ function toDraft(build: CharacterBuild): CharacterBuild {
 }
 
 export const restoredDraftBuilds = originalCharacters.filter((build) => !curatedIds.has(build.id)).map(toDraft)
-export const completeRoster = [...curatedBuilds, ...restoredDraftBuilds]
+export const completeRoster = [...curatedBuilds, ...animeMangaBuilds, ...restoredDraftBuilds]

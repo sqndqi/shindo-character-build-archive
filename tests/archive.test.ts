@@ -3,6 +3,7 @@ import { resolve } from 'node:path'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { completeRoster, restoredDraftBuilds } from '../src/data/restoredRoster'
 import { curatedBuilds } from '../src/data/curatedBuilds'
+import { animeMangaBuilds } from '../src/data/animeMangaBuilds'
 import { createDuplicateName, createPermanentId } from '../src/lib/identity'
 import { decodeTierShare, encodeTierShare } from '../src/lib/tierShare'
 import { validateOfficialMoveNames } from '../src/lib/validation'
@@ -12,7 +13,18 @@ import { buildRepository } from '../src/repositories/BuildRepository'
 import { migratePublicData, PUBLIC_SCHEMA_VERSION } from '../src/services/publicMigration'
 
 describe('full restored roster', () => {
-  it('restores at least all 90 original characters', () => expect(completeRoster.length).toBeGreaterThanOrEqual(90))
+  it('contains exactly 100 characters after preserving the original 90', () => {
+    const originalIds = [...curatedBuilds, ...restoredDraftBuilds].map((build) => build.id)
+    expect(completeRoster).toHaveLength(100)
+    expect(originalIds).toHaveLength(90)
+    expect(originalIds.every((id) => completeRoster.some((build) => build.id === id))).toBe(true)
+  })
+  it('adds the ten expected anime and manga records', () => {
+    expect(animeMangaBuilds.map((build) => build.id)).toEqual([
+      'anime-naruto-uzumaki', 'anime-sasuke-uchiha', 'anime-madara-uchiha', 'anime-minato-namikaze', 'anime-itachi-uchiha',
+      'anime-boruto-uzumaki', 'anime-ichigo-kurosaki', 'anime-sosuke-aizen', 'anime-monkey-d-luffy-snakeman', 'anime-jotaro-kujo',
+    ])
+  })
   it.each(['Solo Leveling', 'The God of High School', 'Eleceed', 'Nano Machine', 'Weak Hero', 'The Beginning After the End'])('includes %s', (series) => expect(completeRoster.some((build) => build.series === series)).toBe(true))
   it('includes multiple Murim properties', () => expect(completeRoster.filter((build) => /Murim|Northern Blade|Mount Hua|Gosu/.test(`${build.series} ${build.franchise}`)).length).toBeGreaterThan(3))
   it('contains multiple non-Lookism series', () => expect(new Set(completeRoster.filter((build) => build.series !== 'Lookism').map((build) => build.series)).size).toBeGreaterThan(20))
@@ -25,13 +37,17 @@ describe('full restored roster', () => {
   it('orders reviewed builds before restored drafts', () => {
     const sorted = [...completeRoster].sort(comparePublicationStatus)
     const ranks = sorted.map((build) => build.publicationStatus)
-    expect(ranks.slice(0, 10).every((status) => status === 'Reviewed')).toBe(true)
+    expect(ranks.slice(0, 20).every((status) => status === 'Reviewed')).toBe(true)
     expect(ranks.lastIndexOf('Needs Retesting')).toBeLessThan(ranks.indexOf('Draft'))
     expect(ranks.lastIndexOf('Draft')).toBeLessThan(ranks.indexOf('Needs Research'))
   })
+  it('keeps curated Lookism before the anime wave in roster composition', () => {
+    expect(completeRoster.slice(0, 10).map((build) => build.id)).toEqual(curatedBuilds.map((build) => build.id))
+    expect(completeRoster.slice(10, 20).map((build) => build.id)).toEqual(animeMangaBuilds.map((build) => build.id))
+  })
   it('has the audited publication counts', () => {
     const count = (status: string) => completeRoster.filter((build) => build.publicationStatus === status).length
-    expect({ reviewed: count('Reviewed'), retesting: count('Needs Retesting'), draft: count('Draft'), research: count('Needs Research') }).toEqual({ reviewed: 10, retesting: 63, draft: 9, research: 8 })
+    expect({ reviewed: count('Reviewed'), retesting: count('Needs Retesting'), draft: count('Draft'), research: count('Needs Research') }).toEqual({ reviewed: 20, retesting: 63, draft: 9, research: 8 })
   })
   it('preserves the curated James Lee authority and approved core', () => {
     const james = completeRoster.find((build) => build.id === 'james-lee')!
@@ -62,6 +78,62 @@ describe('full restored roster', () => {
       expect(variant.hotbar).toHaveLength(12)
     }
   })
+  it('keeps all ten existing curated Lookism object references unchanged', () => {
+    expect(completeRoster.slice(0, curatedBuilds.length)).toEqual(curatedBuilds)
+  })
+  it('authors complete independent two, three, and four-slot anime variants', () => {
+    for (const build of animeMangaBuilds) {
+      expect(build.publicationStatus).toBe('Reviewed')
+      expect(build.confidence).toBe('Strong Match')
+      expect(build.media).toBe('Manga / Anime')
+      expect(build.variants.map((variant) => [variant.type, variant.bloodlineSlotCount, variant.elementSlotCount])).toEqual([
+        ['Two Slot', 2, 2], ['Three Slot', 3, 2], ['Primary', 4, 2],
+      ])
+      for (const variant of build.variants) {
+        expect(variant.verificationStatus).toBe('Needs Retesting')
+        expect(variant.hotbar.map((slot) => slot.key)).toEqual(['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q'])
+        expect(variant.combos).toHaveLength(6)
+        expect(variant.ownershipRequirements?.length).toBeGreaterThan(4)
+        expect(variant.compromises?.length).toBeGreaterThan(0)
+      }
+      expect(build.variants[0].hotbar).not.toBe(build.variants[1].hotbar)
+      expect(build.variants[1].hotbar).not.toBe(build.variants[2].hotbar)
+      expect(build.variants[0].bloodlines.map((slot) => slot.name)).not.toEqual(build.variants[2].bloodlines.map((slot) => slot.name))
+    }
+  })
+  it('uses checked or explicitly unresolved anime move labels without placeholders', () => {
+    const abilities = animeMangaBuilds.flatMap((build) => build.variants.flatMap((variant) => variant.hotbar.map((slot) => slot.ability)))
+    expect(validateOfficialMoveNames(abilities)).toEqual([])
+    expect(abilities.every((ability) => ability.trim().length > 0)).toBe(true)
+  })
+  it('has unique build, character, version, variant, and hotbar IDs', () => {
+    const unique = (values: string[]) => new Set(values).size === values.length
+    expect(unique(completeRoster.map((build) => build.id))).toBe(true)
+    expect(unique(animeMangaBuilds.map((build) => build.characterId))).toBe(true)
+    expect(animeMangaBuilds.every((build) => ![...curatedBuilds, ...restoredDraftBuilds].some((existing) => existing.characterId === build.characterId))).toBe(true)
+    expect(unique(completeRoster.map((build) => build.versionId))).toBe(true)
+    expect(unique(completeRoster.flatMap((build) => build.variants.map((variant) => variant.id)))).toBe(true)
+    expect(unique(animeMangaBuilds.flatMap((build) => build.variants.flatMap((variant) => variant.hotbar.map((slot) => slot.id))))).toBe(true)
+  })
+  it.each(['Naruto / Boruto', 'Bleach', 'One Piece', 'JoJo’s Bizarre Adventure'])('supports the %s franchise filter value', (franchise) => {
+    expect(animeMangaBuilds.some((build) => build.franchise === franchise)).toBe(true)
+  })
+  it('supports the Anime / Manga media filter and inventory calculations', () => {
+    const anime = completeRoster.filter((build) => build.media === 'Manga / Anime')
+    const ownedNames = new Set(anime.flatMap((build) => build.variants.flatMap((variant) => variant.bloodlines.map((slot) => slot.name))))
+    expect(anime).toHaveLength(10)
+    expect(ownedNames.size).toBeGreaterThan(20)
+    expect(ownedNames.has('Six-Paths-Narumaki')).toBe(true)
+    expect(ownedNames.has('Getsuga-Black')).toBe(true)
+    expect(ownedNames.has('SnakeMan')).toBe(true)
+  })
+  it('resolves every new portrait and thumbnail and keeps README absent', () => {
+    for (const build of animeMangaBuilds) {
+      expect(existsSync(resolve('public', build.image.replace(/^\//, '')))).toBe(true)
+      expect(existsSync(resolve('public', build.thumbnail!.replace(/^\//, '')))).toBe(true)
+    }
+    expect(existsSync(resolve('README.md'))).toBe(false)
+  })
 })
 
 describe('repository consumers and performance', () => {
@@ -69,6 +141,7 @@ describe('repository consumers and performance', () => {
     const previews = await buildRepository.listBuildPreviews()
     expect(previews).toHaveLength(completeRoster.length)
     expect(previews.some((build) => build.series === 'Solo Leveling')).toBe(true)
+    expect(previews.filter((build) => build.media === 'Manga / Anime')).toHaveLength(10)
   })
   it('filters and sorts the restored roster quickly', () => {
     const dataset = Array.from({ length: 500 }, (_, index) => ({ ...completeRoster[index % completeRoster.length], id: `perf-${index}` }))

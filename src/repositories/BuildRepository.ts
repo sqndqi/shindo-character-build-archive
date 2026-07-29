@@ -6,6 +6,7 @@ export interface BuildPreview {
   name: string
   series: string
   franchise: string
+  media?: CharacterBuild['media']
   version: string
   image: string
   thumbnail?: string
@@ -25,12 +26,13 @@ class LocalBuildRepository implements BuildRepository {
 
   async listBuildPreviews() {
     return this.roster.map((build) => {
-      const primary = build.variants[0]
+      const primary = build.variants.find((variant) => variant.type === 'Primary') ?? build.variants[0]
       return {
         id: build.id,
         name: build.name,
         series: build.series,
         franchise: build.franchise,
+        media: build.media,
         version: build.version,
         image: build.image,
         thumbnail: build.thumbnail,

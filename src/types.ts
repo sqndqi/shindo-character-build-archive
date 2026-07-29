@@ -4,6 +4,8 @@ export type TierRank = 'S+' | 'S' | 'A' | 'B' | 'C'
 export type VerificationStatus = 'Current' | 'Needs Retesting' | 'Outdated' | 'Archived'
 export type VariantVerificationStatus = 'Verified' | 'Needs Research' | 'Needs Retesting'
 export type ConfidenceLabel = 'Verified' | 'Strong Match' | 'Approximation' | 'Competitive Substitute' | 'Unverified'
+export type AccuracyClassification = 'Direct Match' | 'Strong Match' | 'Visual Approximation' | 'Competitive Substitute' | 'Unresolved'
+export type MediaCategory = 'Manhwa' | 'Manga / Anime'
 
 export interface BloodlineSlot {
   id: string
@@ -21,6 +23,10 @@ export interface HotbarSlot {
   comboRole: string
   blockBreak: boolean
   usageNotes: string
+  characterAbility?: string
+  counter?: boolean
+  modeAbility?: boolean
+  accuracy?: AccuracyClassification
 }
 
 export interface Combo {
@@ -73,6 +79,8 @@ export interface BuildVariant {
   strengths: string[]
   weaknesses: string[]
   usageGuide: string[]
+  ownershipRequirements?: string[]
+  compromises?: string[]
   verificationStatus: VariantVerificationStatus
   lastVerifiedUpdate: string
 }
@@ -85,6 +93,7 @@ export interface CharacterBuild {
   name: string
   series: string
   franchise: string
+  media?: MediaCategory
   version: string
   image: string
   thumbnail?: string

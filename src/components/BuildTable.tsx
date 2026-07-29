@@ -13,6 +13,7 @@ const columns: Column[] = [
   { key: 'character', label: 'Character', value: (b) => b.name, sticky: true },
   { key: 'series', label: 'Series', value: (b) => b.series },
   { key: 'franchise', label: 'Franchise', value: (b) => b.franchise },
+  { key: 'media', label: 'Media', value: (b) => b.media ?? 'Manhwa' },
   { key: 'version', label: 'Version / Arc', value: (b) => b.version },
   ...[0, 1, 2, 3].map((index) => ({ key: `bloodline${index + 1}`, label: `Bloodline ${index + 1}`, value: (_b: CharacterBuild, slots: string[]) => slots[index] ?? '—' })),
   { key: 'element1', label: 'Element 1', value: (b) => b.elements[0] ?? '—' },
