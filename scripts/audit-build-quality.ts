@@ -13,7 +13,7 @@ const mentorSelections = Object.entries(primaryVariants.reduce<Record<string, nu
 const report = {
   generatedAt: new Date().toISOString(),
   baseline: {
-    sourceCommit: 'f1ecefdad49ac976fbdc3e6d8b841a109373cc62',
+    sourceCommit: '468d8f917d5073ce02a102696aae6816bbe3db09',
     rosterCount: 100,
     seriesCount: 37,
     mainBundleBytes: 398_950,
@@ -54,4 +54,62 @@ const report = {
 
 mkdirSync(path.join(process.cwd(), 'artifacts'), { recursive: true })
 writeFileSync(path.join(process.cwd(), 'artifacts', 'build-quality-audit.json'), `${JSON.stringify(report, null, 2)}\n`)
+const reviewed = completeRoster.filter((build) => build.publicationStatus === 'Reviewed')
+const requiredSlots = [2, 3, 4]
+const weaponIdentityIds = new Set(['goo-kim', 'anime-sasuke-uchiha', 'anime-boruto-uzumaki', 'anime-ichigo-kurosaki', 'anime-sosuke-aizen'])
+const consistency = reviewed.map((build) => {
+  const editorialIssues: { category: string; severity: string; variantId?: string; message: string }[] = []
+  for (const count of requiredSlots) if (!build.variants.some((variant) => variant.bloodlineSlotCount === count)) {
+    editorialIssues.push({ category: 'Inventory-alternative missing', severity: 'Major', message: `No prepared ${count}-slot variant.` })
+  }
+  if (!build.variants.some((variant) => variant.type === 'Beginner' || /accessible/i.test(variant.name))) {
+    editorialIssues.push({ category: 'Inventory-alternative missing', severity: 'Major', message: 'No prepared accessible variant.' })
+  }
+  for (const variant of build.variants) {
+    if (weaponIdentityIds.has(build.id) && (variant.weapon === 'None' || (variant.kenjutsu ?? 'None') === 'None')) {
+      editorialIssues.push({ category: 'Weapon mismatch', severity: 'Major', variantId: variant.id, message: 'A weapon-identity profile is missing its weapon or Kenjutsu selection.' })
+    }
+    if (weaponIdentityIds.has(build.id) && (!variant.qAction || variant.qAction.source === 'None')) {
+      editorialIssues.push({ category: 'Weapon mismatch', severity: 'Major', variantId: variant.id, message: 'Weapon profile has no prepared Q action.' })
+    }
+    if (variant.hotbar.some((slot) => slot.sourceType === undefined && !/not used/i.test(slot.ability))) {
+      editorialIssues.push({ category: 'Move-source error', severity: 'Minor', variantId: variant.id, message: 'One or more active controls still need a source-type review.' })
+    }
+    editorialIssues.push(...auditBuild({ ...build, variants: [variant] }).map((issue) => ({
+      category: issue.code.includes('family') ? 'Duplicate-family issue'
+        : issue.code.includes('source') || issue.code.includes('move') ? 'Move-source error'
+          : issue.code.includes('mode') ? 'Mode conflict'
+            : issue.code.includes('filler') ? 'Equipment filler'
+              : issue.code.includes('defense') || issue.code.includes('guard') ? 'Fighting-style mismatch'
+                : 'Live testing required',
+      severity: issue.severity,
+      variantId: variant.id,
+      message: issue.message,
+    })))
+  }
+  return {
+    id: build.id,
+    character: build.name,
+    variants: build.variants.map((variant) => ({
+      id: variant.id,
+      name: variant.name,
+      slots: `${variant.bloodlineSlotCount}x${variant.elementSlotCount}`,
+      bloodlines: variant.bloodlines.map((slot) => slot.name),
+      combatArt: variant.combatArt,
+      kenjutsu: variant.kenjutsu ?? 'None',
+      weapon: variant.weapon,
+      qAction: variant.qAction,
+      ownerTesting: build.testing.status,
+    })),
+    issues: editorialIssues,
+  }
+})
+writeFileSync(path.join(process.cwd(), 'artifacts', 'reviewed-build-consistency.json'), `${JSON.stringify({
+  generatedAt: new Date().toISOString(),
+  disclaimer: 'Static consistency review only. Gameplay behavior and combo timing still require live owner testing.',
+  rosterCount: completeRoster.length,
+  reviewedCount: reviewed.length,
+  reviewedVariants: reviewed.reduce((sum, build) => sum + build.variants.length, 0),
+  builds: consistency,
+}, null, 2)}\n`)
 console.log(JSON.stringify({ rosterCount: report.rosterCount, buildsWithIssues: report.buildsWithIssues, issueCounts: report.issueCounts }, null, 2))

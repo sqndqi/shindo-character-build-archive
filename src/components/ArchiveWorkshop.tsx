@@ -74,7 +74,7 @@ export default function ArchiveWorkshop({
       primary.elements.forEach((slot) => add(slot.name, 'Element', reviewed))
       add(primary.cMode, 'Mode', reviewed)
       add(primary.zMode, 'Mode', reviewed)
-      ;[primary.combatArt, primary.weapon, primary.ninjaTool, primary.consumable, primary.mentor, primary.race].forEach((name) => add(name, 'Equipment', reviewed))
+      ;[primary.combatArt, primary.kenjutsu ?? 'None', primary.weapon, primary.ninjaTool, primary.consumable, primary.mentor, primary.race].forEach((name) => add(name, 'Equipment', reviewed))
     }
     return [...records.values()].sort((a, b) => a.name.localeCompare(b.name))
   }, [builds])

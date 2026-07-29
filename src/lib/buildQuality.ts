@@ -17,6 +17,8 @@ const familyDefinitions = [
   { id: 'minakaze', names: ['Minakaze', 'Minakaze-Azure', 'Minakaze-Ruby'] },
   { id: 'aizden', names: ['Aizden', 'Aizden-Inverse'] },
   { id: 'borumaki', names: ['Borumaki', 'Borumaki-Shiki', 'Borumaki-Gaiden'] },
+  { id: 'raion', names: ['Raion-Akuma', 'Raion-Rengoku', 'Raion-Gaiden'] },
+  { id: 'akuma', names: ['Akuma', 'Bankai-Akuma', 'Riser-Akuma', 'Shiver-Akuma', 'Shindai-Akuma', 'Indra-Akuma'] },
 ] as const
 
 const fillerEquipment = new Set(['Dagai', 'Chi Pot', 'Basic Combat', 'Shindai Akuma', 'Shinobi'])
@@ -33,6 +35,13 @@ export function findBloodlineFamilyDuplicates(variant: BuildVariant) {
 function hasEquipmentReason(variant: BuildVariant, value: string) {
   if (!value || isNone(value)) return true
   const text = [
+    variant.combatArtReason ?? '',
+    variant.kenjutsuReason ?? '',
+    variant.weaponReason ?? '',
+    variant.equipment?.ninjaToolReason ?? '',
+    variant.equipment?.consumableReason ?? '',
+    variant.equipment?.mentorReason ?? '',
+    variant.equipment?.raceReason ?? '',
     ...variant.usageGuide,
     ...variant.strengths,
     ...variant.weaknesses,
@@ -85,6 +94,7 @@ export function auditVariant(variant: BuildVariant): BuildQualityIssue[] {
     normalized(variant.cMode),
     normalized(variant.zMode),
     normalized(variant.weapon),
+    normalized(variant.kenjutsu ?? 'None'),
     normalized(variant.combatArt),
     normalized(variant.ninjaTool),
     'none',
@@ -93,6 +103,8 @@ export function auditVariant(variant: BuildVariant): BuildQualityIssue[] {
     'mode',
     'sub-ability',
     'ninja tool',
+    'kenjutsu',
+    ...(variant.qAction ? [normalized(variant.qAction.source)] : []),
   ])
   for (const slot of activeMoves) {
     const source = normalized(slot.source)
@@ -106,7 +118,7 @@ export function auditVariant(variant: BuildVariant): BuildQualityIssue[] {
   if (!roles.some((role) => /counter|defen|reversal|escape|evade/.test(role))) {
     push('no-defense', 'Minor', 'No defensive option is documented', 'This may be intentional, but the weakness should be explained.')
   }
-  if (!activeMoves.some((slot) => slot.blockBreak || /guard|block break|block-break/i.test(`${slot.comboRole} ${slot.purpose}`))) {
+  if (!activeMoves.some((slot) => slot.blockBreak || slot.guardPressure || /guard|block break|block-break/i.test(`${slot.comboRole} ${slot.purpose}`))) {
     push('no-guard-pressure', 'Minor', 'No guard-pressure option is documented', 'Do not add filler; document the limitation or verify a real option.')
   }
   if (variant.hotbar.length !== 12) push('hotbar-count', 'Critical', 'Hotbar control count is invalid', `Expected 12 controls but found ${variant.hotbar.length}.`)
@@ -117,4 +129,3 @@ export function auditVariant(variant: BuildVariant): BuildQualityIssue[] {
 export function auditBuild(build: CharacterBuild) {
   return build.variants.flatMap(auditVariant)
 }
-

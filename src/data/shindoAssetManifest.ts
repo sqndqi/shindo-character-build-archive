@@ -5,6 +5,7 @@ export type ShindoAssetType =
   | 'Element'
   | 'Mode'
   | 'Combat Art'
+  | 'Kenjutsu'
   | 'Weapon'
   | 'Ninja Tool'
   | 'Consumable'
@@ -54,4 +55,3 @@ export function resolveShindoAsset(name: string, preferredType?: ShindoAssetType
   return shindoAssetManifest.find((entry) =>
     normalize(entry.name) === normalized || entry.aliases.some((alias) => normalize(alias) === normalized))
 }
-

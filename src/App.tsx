@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight, Dice5, Grid2X2, Heart, Menu, Rows3, Search, 
 import type { CharacterBuild } from './types'
 import { buildRepository } from './repositories/BuildRepository'
 import { useArchivePrefs } from './hooks/useArchivePrefs'
+import { useBuildExperiencePrefs } from './hooks/useBuildExperiencePrefs'
 import { useBloodlineCollection } from './hooks/useBloodlineCollection'
 import { useTierLists } from './hooks/useTierLists'
 import { useDebouncedValue } from './hooks/useDebouncedValue'
@@ -11,7 +12,8 @@ import { readStorage, writeStorage } from './services/storage'
 import { comparePublicationStatus } from './lib/publication'
 import { Gallery } from './components/Gallery'
 import { BuildTable } from './components/BuildTable'
-import { BuildDetail } from './components/BuildDetail'
+import { BuildQuickView } from './components/BuildQuickView'
+import { FullBuildPage } from './components/FullBuildPage'
 import { ErrorBoundary } from './components/ErrorBoundary'
 
 const ComparePanel = lazy(() => import('./components/ComparePanel').then((module) => ({ default: module.ComparePanel })))
@@ -23,12 +25,26 @@ const DiagnosticsPage = import.meta.env.DEV ? lazy(() => import('./components/Di
 type View = 'builds' | 'database' | 'tiers' | 'inventory' | 'compare' | 'suggestions' | 'diagnostics'
 const emptyFilters = { media: '', franchise: '', series: '', status: '', bloodline: '', slots: '', favorites: '', owned: '', sort: 'archive' }
 const compareKey = 'shindo-build-archive:compare:v1'
+type BuildRoute = { buildId: string; variantId?: string } | null
+
+function readBuildRoute(): BuildRoute {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+  const path = window.location.pathname.startsWith(base) ? window.location.pathname.slice(base.length) : window.location.pathname
+  const match = path.match(/^\/build\/([^/]+)(?:\/([^/]+))?\/?$/)
+  return match ? { buildId: decodeURIComponent(match[1]), variantId: match[2] ? decodeURIComponent(match[2]) : undefined } : null
+}
+
+function buildPath(buildId: string, variantId?: string) {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+  return `${base}/build/${encodeURIComponent(buildId)}${variantId ? `/${encodeURIComponent(variantId)}` : ''}`
+}
 
 export default function App() {
   const [builds, setBuilds] = useState<CharacterBuild[]>([])
   const [loading, setLoading] = useState(true)
   const [loadError, setLoadError] = useState('')
   const { prefs, toggleFavorite, setPageSize, setMetaBias, setTheme } = useArchivePrefs()
+  const buildExperience = useBuildExperiencePrefs()
   const { collection, setStatus, setElementStatus, setModeStatus, setEquipmentStatus, setMany, importPreferences, toggleFavorite: toggleBloodlineFavorite } = useBloodlineCollection()
   const tiers = useTierLists()
   const [view, setView] = useState<View>('builds')
@@ -40,6 +56,8 @@ export default function App() {
   const [filters, setFilters] = useState(emptyFilters)
   const [page, setPage] = useState(1)
   const [selected, setSelected] = useState<CharacterBuild | null>(null)
+  const [buildRoute, setBuildRoute] = useState<BuildRoute>(() => readBuildRoute())
+  const [galleryScroll, setGalleryScroll] = useState(0)
   const [suggestionBuild, setSuggestionBuild] = useState<{ buildId: string; character: string; variant: string } | null>(null)
   const [compareIds, setCompareIds] = useState<string[]>(() => readStorage(compareKey, []))
 
@@ -48,6 +66,11 @@ export default function App() {
     buildRepository.listBuildPreviews()
       .then((previews) => Promise.all(previews.map((preview) => buildRepository.getBuild(preview.id))))
       .then(setBuilds).catch(() => setLoadError('The archive could not be loaded. Your personal preferences were not changed.')).finally(() => setLoading(false))
+  }, [])
+  useEffect(() => {
+    const onPopState = () => setBuildRoute(readBuildRoute())
+    addEventListener('popstate', onPopState)
+    return () => removeEventListener('popstate', onPopState)
   }, [])
   useEffect(() => {
     document.documentElement.dataset.theme = prefs.theme
@@ -93,7 +116,15 @@ export default function App() {
   useEffect(() => setPage((current) => Math.min(current, pageCount)), [pageCount])
   const compared = compareIds.map((id) => builds.find((build) => build.id === id)).filter(Boolean) as CharacterBuild[]
   const toggleCompare = useCallback((id: string) => setCompareIds((current) => current.includes(id) ? current.filter((item) => item !== id) : current.length < 3 ? [...current, id] : current), [])
-  const navigate = (next: View) => { setView(next); setMobileOpen(false); window.scrollTo({ top: 0, behavior: 'instant' }) }
+  const navigate = (next: View) => {
+    if (buildRoute) {
+      history.pushState(null, '', import.meta.env.BASE_URL)
+      setBuildRoute(null)
+    }
+    setView(next)
+    setMobileOpen(false)
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }
   const nav: [View, string][] = [['builds', 'Builds'], ['database', 'Database'], ['tiers', 'Tier Lists'], ['inventory', 'My Inventory'], ['compare', 'Compare'], ['suggestions', 'Suggestions']]
   if (import.meta.env.DEV) nav.push(['diagnostics', 'Diagnostics'])
   const buildableCount = builds.filter((build) => {
@@ -101,6 +132,31 @@ export default function App() {
     return [...primary.bloodlines.map((slot) => collection.statuses[slot.name]), ...primary.elements.map((slot) => collection.elementStatuses[slot.name])].every((status) => status === 'Owned')
   }).length
   const activeFilterCount = Object.entries(filters).filter(([key, value]) => key !== 'sort' && value).length
+  const routedBuild = buildRoute ? builds.find((build) => build.id === buildRoute.buildId) : undefined
+  const openFullBuild = (build: CharacterBuild, variantId?: string) => {
+    setGalleryScroll(window.scrollY)
+    const route = { buildId: build.id, variantId }
+    history.pushState(route, '', buildPath(build.id, variantId))
+    setBuildRoute(route)
+    setSelected(null)
+  }
+  const changeBuildVariantRoute = (variantId: string) => {
+    if (!buildRoute) return
+    const route = { ...buildRoute, variantId }
+    history.replaceState(route, '', buildPath(route.buildId, variantId))
+    setBuildRoute(route)
+  }
+  const closeFullBuild = () => {
+    if (history.state?.buildId) history.back()
+    else {
+      history.pushState(null, '', import.meta.env.BASE_URL)
+      setBuildRoute(null)
+      requestAnimationFrame(() => window.scrollTo({ top: galleryScroll, behavior: 'instant' }))
+    }
+  }
+  useEffect(() => {
+    if (!buildRoute) requestAnimationFrame(() => window.scrollTo({ top: galleryScroll, behavior: 'instant' }))
+  }, [buildRoute, galleryScroll])
 
   return <div className="app-shell">
     <header className="site-header">
@@ -111,6 +167,8 @@ export default function App() {
 
     {loading ? <main className="loading-page">Loading archive…</main>
       : loadError ? <main className="empty-state"><h2>Archive unavailable</h2><p>{loadError}</p></main>
+      : buildRoute && routedBuild ? <FullBuildPage build={routedBuild} initialVariantId={buildRoute.variantId} collection={collection} variantFavorites={buildExperience.state.variantFavorites} watchlist={buildExperience.state.updateWatchlist} onBack={closeFullBuild} onVariantRoute={changeBuildVariantRoute} onFavoriteVariant={buildExperience.toggleVariantFavorite} onWatch={buildExperience.toggleWatch} onViewed={buildExperience.markViewed} onReportIssue={(variant) => { setSuggestionBuild({ buildId: routedBuild.id, character: routedBuild.name, variant }); history.pushState(null, '', import.meta.env.BASE_URL); setBuildRoute(null); navigate('suggestions') }} />
+      : buildRoute ? <main className="empty-state"><h2>Build not found</h2><p>This build URL does not match a current archive record.</p><button className="button button--primary" onClick={closeFullBuild}>Back to archive</button></main>
       : view === 'tiers' ? <Suspense fallback={<main className="loading-page">Loading your tier lists…</main>}><main><TierListBoard builds={builds} lists={tiers.lists} onCreate={tiers.create} onUpdate={tiers.update} onDuplicate={tiers.duplicate} onDelete={tiers.remove} onImportShared={tiers.addShared} /></main></Suspense>
       : view === 'inventory' ? <Suspense fallback={<main className="loading-page">Loading inventory…</main>}><ArchiveWorkshop builds={builds} collection={collection} onStatus={setStatus} onElementStatus={setElementStatus} onModeStatus={setModeStatus} onEquipmentStatus={setEquipmentStatus} onBulk={setMany} onImport={importPreferences} onFavorite={toggleBloodlineFavorite} /></Suspense>
       : view === 'suggestions' ? <Suspense fallback={<main className="loading-page">Loading suggestions…</main>}><SuggestionsPage issueContext={suggestionBuild} /></Suspense>
@@ -118,6 +176,7 @@ export default function App() {
       : view === 'diagnostics' && import.meta.env.DEV && DiagnosticsPage ? <Suspense fallback={<main className="loading-page">Loading diagnostics…</main>}><DiagnosticsPage builds={builds} visibleCount={pageBuilds.length} filteringDuration={0} /></Suspense>
       : <main>
         <section className="archive-hero"><div className="archive-hero__copy"><span className="eyebrow">Community Shindo loadout companion</span><h1>Character Build Archive</h1><p>Browse reviewed setups and clearly labeled research drafts across manhwa, manga, and anime.</p></div><div className="archive-stats"><div><strong>{builds.length}</strong><span>Characters</span></div><div><strong>{values.series.length}</strong><span>Series</span></div><div><strong>{builds.filter((build) => build.publicationStatus === 'Reviewed').length}</strong><span>Reviewed</span></div><div><strong>{buildableCount}</strong><span>Buildable now</span></div></div></section>
+        {buildExperience.state.recentlyViewed.length > 0 && <section className="recent-builds" aria-label="Recently viewed builds"><span>Recently viewed</span><div>{buildExperience.state.recentlyViewed.map((id) => builds.find((build) => build.id === id)).filter((build): build is CharacterBuild => Boolean(build)).map((build) => <button key={build.id} onClick={() => openFullBuild(build)}>{build.name}<small>{build.version}</small></button>)}</div></section>}
         <section className="controls-shell"><div className="search-wrap"><Search size={18} /><input aria-label="Search builds" value={searchInput} onChange={(event) => { setSearchInput(event.target.value); setPage(1) }} placeholder="Search characters, series, arcs, or Bloodlines…" /></div><button className="filter-drawer-button button button--outline" onClick={() => setFiltersOpen((open) => !open)} aria-expanded={filtersOpen}><SlidersHorizontal size={16} /> Filters{activeFilterCount ? ` (${activeFilterCount})` : ''}</button><div className="bias-control"><span>Lore</span><input aria-label="Lore accuracy versus PvP meta" type="range" min="0" max="100" value={prefs.metaBias} onChange={(event) => setMetaBias(Number(event.target.value))} /><span>Meta</span></div><label className="theme-control"><span>Appearance</span><select aria-label="Appearance theme" value={prefs.theme} onChange={(event) => setTheme(event.target.value as typeof prefs.theme)}><option value="shindo-green">Shindo Green</option><option value="chakra-blue">Chakra Blue</option><option value="ember-crimson">Ember Crimson</option></select></label></section>
         <section className={`filter-row ${filtersOpen ? 'is-open' : ''}`}><span><SlidersHorizontal size={15} /> Filters</span><select aria-label="Filter by media category" value={filters.media} onChange={(e) => setFilters({ ...filters, media: e.target.value })}><option value="">All media</option>{values.media.map((value) => <option key={value}>{value}</option>)}</select><select aria-label="Filter by franchise" value={filters.franchise} onChange={(e) => setFilters({ ...filters, franchise: e.target.value })}><option value="">All franchises</option>{values.franchises.map((value) => <option key={value}>{value}</option>)}</select><select aria-label="Filter by series" value={filters.series} onChange={(e) => setFilters({ ...filters, series: e.target.value })}><option value="">All series</option>{values.series.map((value) => <option key={value}>{value}</option>)}</select><select aria-label="Filter by publication status" value={filters.status} onChange={(e) => setFilters({ ...filters, status: e.target.value })}><option value="">All statuses</option><option>Reviewed</option><option>Needs Retesting</option><option>Draft</option><option>Needs Research</option></select><select aria-label="Filter by Bloodline" value={filters.bloodline} onChange={(e) => setFilters({ ...filters, bloodline: e.target.value })}><option value="">All Bloodlines</option>{values.bloodlines.map((value) => <option key={value}>{value}</option>)}</select><select aria-label="Filter by Bloodline slot count" value={filters.slots} onChange={(e) => setFilters({ ...filters, slots: e.target.value })}><option value="">Any slots</option><option value="2">2 Bloodline slots</option><option value="3">3 Bloodline slots</option><option value="4">4 Bloodline slots</option></select><select aria-label="Filter by inventory readiness" value={filters.owned} onChange={(e) => setFilters({ ...filters, owned: e.target.value })}><option value="">Any inventory</option><option value="makeable">Builds I can make</option><option value="missing-one">Missing one item</option></select><select aria-label="Sort builds" value={filters.sort} onChange={(e) => setFilters({ ...filters, sort: e.target.value })}><option value="archive">Archive order</option><option value="name">Name</option><option value="accuracy">Accuracy</option><option value="pvp">PvP</option></select><button className={`favorites-filter ${filters.favorites ? 'active' : ''}`} onClick={() => setFilters({ ...filters, favorites: filters.favorites ? '' : 'only' })}><Heart size={13} /> Favorites</button><button className="clear-filter" disabled={!activeFilterCount} onClick={() => setFilters(emptyFilters)}>Clear all filters</button></section>
         <div className="results-bar"><div><strong>{filtered.length}</strong> ARCHIVE RESULTS</div><div className="view-switch"><button className={view === 'builds' && cardMode === 'compact' ? 'active' : ''} onClick={() => { navigate('builds'); setCardMode('compact') }} aria-label="Compact cards"><Grid2X2 size={16} /></button><button className={view === 'builds' && cardMode === 'visual' ? 'active' : ''} onClick={() => { navigate('builds'); setCardMode('visual') }} aria-label="Visual cards"><Rows3 size={16} /></button><button className={view === 'database' ? 'active' : ''} onClick={() => navigate('database')} aria-label="Table view"><Table2 size={16} /></button><button onClick={() => filtered.length && setSelected(filtered[Math.floor(Math.random() * filtered.length)])} aria-label="Random build"><Dice5 size={16} /></button></div></div>
@@ -126,6 +185,6 @@ export default function App() {
       </main>}
 
     <footer className="site-footer"><p>Unofficial fan-made build archive. Game balance and abilities may change. · <a href="https://discord.gg/agarthia" target="_blank" rel="noreferrer">discord.gg/agarthia</a></p></footer>
-    {selected && <BuildDetail build={selected} onClose={() => setSelected(null)} onReportIssue={(variant) => { setSuggestionBuild({ buildId: selected.id, character: selected.name, variant }); setSelected(null); navigate('suggestions') }} />}
+    {selected && <BuildQuickView build={selected} onClose={() => setSelected(null)} onOpenFull={() => openFullBuild(selected)} />}
   </div>
 }

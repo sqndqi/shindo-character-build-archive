@@ -16,7 +16,40 @@ const hotbarSchema = z.object({
   comboRole: z.string(),
   blockBreak: z.boolean(),
   usageNotes: z.string(),
+  sourceType: z.enum(['Bloodline', 'Element', 'Sub-Ability', 'Mode', 'Weapon', 'Combat Art', 'Kenjutsu', 'None']).optional(),
+  testingStatus: z.enum(['Untested', 'Needs Retesting', 'Works', 'Verified for update']).optional(),
+}).passthrough()
+
+const fightingEquipmentSchema = z.object({
+  ninjaTool: z.string(),
+  ninjaToolReason: z.string(),
+  consumable: z.string(),
+  consumableReason: z.string(),
+  mentor: z.string(),
+  mentorReason: z.string(),
+  race: z.string(),
+  raceReason: z.string(),
 })
+
+const variantSchema = z.object({
+  id: z.string().min(1),
+  name: z.string().min(1),
+  bloodlineSlotCount: z.union([z.literal(2), z.literal(3), z.literal(4)]),
+  elementSlotCount: z.union([z.literal(2), z.literal(3), z.literal(4)]),
+  combatArt: z.string(),
+  combatArtReason: z.string().optional(),
+  kenjutsu: z.string().optional(),
+  kenjutsuReason: z.string().optional(),
+  weapon: z.string(),
+  weaponReason: z.string().optional(),
+  qAction: z.object({
+    source: z.enum(['Weapon', 'Combat Art', 'Kenjutsu', 'None']),
+    name: z.string(),
+    purpose: z.string(),
+  }).optional(),
+  equipment: fightingEquipmentSchema.optional(),
+  hotbar: z.array(hotbarSchema),
+}).passthrough()
 
 export const buildSchema = z.object({
   id: z.string().min(1),
@@ -27,6 +60,7 @@ export const buildSchema = z.object({
   bloodlines: z.array(bloodlineSchema).max(4),
   elements: z.array(z.string()).max(2),
   hotbar: z.array(hotbarSchema),
+  variants: z.array(variantSchema).optional(),
   ratings: z.object({
     accuracy: z.number().min(0).max(10),
     pvp: z.number().min(0).max(10),

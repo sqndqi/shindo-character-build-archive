@@ -1871,5 +1871,73 @@
     "checkedAt": "2026-07-29",
     "status": "Available",
     "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/05/Shinobi.png/revision/latest?cb=20230427023727"
+  },
+  {
+    "id": "kenjutsu-wind-kenjutsu",
+    "type": "Kenjutsu",
+    "name": "Wind-Kenjutsu",
+    "aliases": [
+      "Wind Kenjutsu"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Wind-Kenjutsu",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/9/94/KenWind.png/revision/latest?cb=20210528190752",
+    "localPath": "/shindo-icons/kenjutsu/wind-kenjutsu.png",
+    "width": 167772160,
+    "height": 268435456,
+    "transparent": true,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "notes": "Direct Shindo Life community wiki artwork stored locally."
+  },
+  {
+    "id": "kenjutsu-shiver-kenjutsu",
+    "type": "Kenjutsu",
+    "name": "Shiver-Kenjutsu",
+    "aliases": [
+      "Shiver Kenjutsu"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Shiver-Kenjutsu",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/7/76/Shiver-Kenjutsu.png/revision/latest?cb=20211003083256",
+    "localPath": "/shindo-icons/kenjutsu/shiver-kenjutsu.png",
+    "width": 167772160,
+    "height": 268435456,
+    "transparent": true,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "notes": "Direct Shindo Life community wiki artwork stored locally."
+  },
+  {
+    "id": "kenjutsu-thunder-kenjutsu",
+    "type": "Kenjutsu",
+    "name": "Thunder-Kenjutsu",
+    "aliases": [
+      "Thunder Kenjutsu"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Thunder-Kenjutsu",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/4/49/KenThunder.png/revision/latest?cb=20210528190709",
+    "localPath": "/shindo-icons/kenjutsu/thunder-kenjutsu.png",
+    "width": 167772160,
+    "height": 268435456,
+    "transparent": true,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "notes": "Direct Shindo Life community wiki artwork stored locally."
+  },
+  {
+    "id": "kenjutsu-moon-kenjutsu",
+    "type": "Kenjutsu",
+    "name": "Moon-Kenjutsu",
+    "aliases": [
+      "Moon Kenjutsu"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Moon-Kenjutsu",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/1/1e/KenMoon.png/revision/latest?cb=20210711010313",
+    "localPath": "/shindo-icons/kenjutsu/moon-kenjutsu.png",
+    "width": 167772160,
+    "height": 268435456,
+    "transparent": true,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "notes": "Direct Shindo Life community wiki artwork stored locally."
   }
 ]

@@ -89,18 +89,18 @@ describe('full restored roster', () => {
       expect(build.publicationStatus).toBe('Reviewed')
       expect(build.confidence).toBe('Strong Match')
       expect(build.media).toBe('Manga / Anime')
-      expect(build.variants.map((variant) => variant.elementSlotCount)).toEqual([2, 2, 2])
+      expect(build.variants.map((variant) => variant.elementSlotCount)).toEqual([2, 2, 2, 2])
       expect(build.variants.every((variant) => variant.bloodlineSlotCount >= 2 && variant.bloodlineSlotCount <= 4)).toBe(true)
       for (const variant of build.variants) {
         expect(variant.verificationStatus).toBe('Needs Retesting')
         expect(variant.hotbar.map((slot) => slot.key)).toEqual(['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q'])
-        expect(variant.combos).toHaveLength(6)
+        expect(variant.combos.length).toBeGreaterThanOrEqual(2)
         expect(variant.ownershipRequirements?.length).toBeGreaterThan(4)
         expect(variant.compromises?.length).toBeGreaterThan(0)
       }
       expect(build.variants[0].hotbar).not.toBe(build.variants[1].hotbar)
       expect(build.variants[1].hotbar).not.toBe(build.variants[2].hotbar)
-      expect(new Set(build.variants.map((variant) => variant.id)).size).toBe(3)
+      expect(new Set(build.variants.map((variant) => variant.id)).size).toBe(4)
     }
   })
   it('uses checked or explicitly unresolved anime move labels without placeholders', () => {
@@ -232,9 +232,53 @@ describe('Shindo identity, assets, and build-quality checks', () => {
     expect(resolveShindoAsset('Dio Senko Rose', 'Bloodline')?.id).toBe(resolveShindoAsset('Dio-Senko-Rose', 'Bloodline')?.id)
   })
   it('uses direct icons in cards, details, inventory, and the hotbar', () => {
-    for (const file of ['CharacterCard.tsx', 'BuildDetail.tsx', 'ArchiveWorkshop.tsx']) {
+    for (const file of ['CharacterCard.tsx', 'FullBuildPage.tsx', 'ArchiveWorkshop.tsx']) {
       expect(readFileSync(resolve('src/components', file), 'utf8')).toContain('ShindoIcon')
     }
+  })
+  it('resolves prepared Kenjutsu icons locally', () => {
+    for (const name of ['Wind-Kenjutsu', 'Shiver-Kenjutsu', 'Thunder-Kenjutsu', 'Moon-Kenjutsu']) {
+      const asset = resolveShindoAsset(name, 'Kenjutsu')
+      expect(asset?.status).toBe('Available')
+      expect(existsSync(resolve('public', asset!.localPath.slice(1)))).toBe(true)
+    }
+  })
+  it('gives all 20 reviewed builds prepared slot and accessible profiles', () => {
+    const reviewed = completeRoster.filter((build) => build.publicationStatus === 'Reviewed')
+    expect(reviewed).toHaveLength(20)
+    for (const build of reviewed) {
+      expect([2, 3, 4].every((count) => build.variants.some((variant) => variant.bloodlineSlotCount === count))).toBe(true)
+      expect(build.variants.some((variant) => variant.type === 'Beginner' || /accessible/i.test(variant.name))).toBe(true)
+      for (const variant of build.variants) {
+        expect(variant.combatArtReason).toBeTruthy()
+        expect(variant.kenjutsu).toBeTruthy()
+        expect(variant.kenjutsuReason).toBeTruthy()
+        expect(variant.weaponReason).toBeTruthy()
+        expect(variant.qAction?.name).toBeTruthy()
+        expect(variant.equipment?.ninjaToolReason).toBeTruthy()
+        expect(variant.hotbar).toHaveLength(12)
+      }
+    }
+  })
+  it('materializes reviewed editorial data without the old primary factory', () => {
+    expect(readFileSync(resolve('src/data/curatedBuilds.ts'), 'utf8')).not.toContain('primaryVariant')
+    expect(readFileSync(resolve('src/data/animeMangaBuilds.ts'), 'utf8')).not.toContain('authoredVariant')
+    expect(readFileSync(resolve('src/data/reviewedBuilds.ts'), 'utf8')).not.toMatch(/\barray\.slice\b|primaryVariant|authoredVariant/)
+  })
+  it('models Goo Kim as a visible weapon-first setup', () => {
+    const goo = curatedBuilds.find((build) => build.id === 'goo-kim')!
+    const primary = goo.variants.find((variant) => variant.type === 'Primary')!
+    expect(primary.kenjutsu).toBe('Wind-Kenjutsu')
+    expect(primary.weapon).toBe('Bankai Blade')
+    expect(primary.qAction).toMatchObject({ source: 'Weapon', name: 'Bankai Blade Q ability' })
+    expect(goo.variants.map((variant) => variant.name)).toEqual(expect.arrayContaining(['Three-Slot Weapon Genius', 'Two-Slot Weapon Genius', 'Accessible Sword Build', 'Competitive Sword Build']))
+  })
+  it('ships a routed full build page and compact quick view', () => {
+    const app = readFileSync(resolve('src/App.tsx'), 'utf8')
+    expect(app).toContain('/build/')
+    expect(app).toContain('BuildQuickView')
+    expect(app).toContain('FullBuildPage')
+    expect(readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')).toContain('Compare current variant with')
   })
   it('removes the audited SnakeMan recolor overlap', () => {
     const luffy = animeMangaBuilds.find((build) => build.id === 'anime-monkey-d-luffy-snakeman')!

@@ -4,7 +4,7 @@ import { buildSchema } from '../lib/validation'
 import type { CharacterBuild } from '../types'
 import { backupRawBuildData, STORAGE_KEYS, writeStorage } from './storage'
 
-export const CURRENT_SCHEMA_VERSION = 2
+export const CURRENT_SCHEMA_VERSION = 3
 
 const expectedKeys = new Set(['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q'])
 
@@ -30,6 +30,29 @@ export function normalizeBuild(build: CharacterBuild): CharacterBuild {
     changeHistory: build.changeHistory ?? [],
     bloodlines: (build.bloodlines ?? []).map((slot, index) => ({ ...slot, id: slot.id ?? `${build.id}-bloodline-${index + 1}` })),
     hotbar: (build.hotbar ?? []).map((slot, index) => ({ ...slot, id: slot.id ?? `${build.id}-hotbar-${slot.key || index + 1}` })),
+    variants: (build.variants ?? []).map((variant) => ({
+      ...variant,
+      combatArtReason: variant.combatArtReason ?? 'Migrated legacy selection; editorial reason is still being reviewed.',
+      kenjutsu: variant.kenjutsu ?? 'None',
+      kenjutsuReason: variant.kenjutsuReason ?? 'No Kenjutsu was recorded in the legacy variant.',
+      weaponReason: variant.weaponReason ?? (variant.weapon === 'None' ? 'No weapon was recorded.' : 'Migrated legacy weapon; editorial reason is still being reviewed.'),
+      qAction: variant.qAction ?? (variant.weapon !== 'None'
+        ? { source: 'Weapon', name: `${variant.weapon} Q action`, purpose: 'Migrated weapon action; exact behavior still needs review.' }
+        : variant.combatArt !== 'None'
+          ? { source: 'Combat Art', name: `${variant.combatArt} Q action`, purpose: 'Migrated Combat Art action.' }
+          : { source: 'None', name: 'Not used in this variant', purpose: 'No meaningful Q action was recorded.' }),
+      fightingStyleNotes: variant.fightingStyleNotes ?? [],
+      equipment: variant.equipment ?? {
+        ninjaTool: variant.ninjaTool,
+        ninjaToolReason: 'Migrated legacy selection; reason still needs review.',
+        consumable: variant.consumable,
+        consumableReason: 'Migrated legacy selection; reason still needs review.',
+        mentor: variant.mentor,
+        mentorReason: 'Migrated legacy selection; reason still needs review.',
+        race: variant.race,
+        raceReason: 'Migrated legacy selection; reason still needs review.',
+      },
+    })),
     ratings: {
       ...(original?.ratings ?? {}),
       ...build.ratings,

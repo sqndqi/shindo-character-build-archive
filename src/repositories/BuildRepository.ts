@@ -1,5 +1,4 @@
 import type { BuildVariant, CharacterBuild } from '../types'
-import { completeRoster } from '../data/restoredRoster'
 
 export interface BuildPreview {
   id: string
@@ -22,10 +21,16 @@ export interface BuildRepository {
 }
 
 class LocalBuildRepository implements BuildRepository {
-  private readonly roster = completeRoster
+  private rosterPromise?: Promise<CharacterBuild[]>
+
+  private loadRoster() {
+    this.rosterPromise ??= import('../data/restoredRoster').then(({ completeRoster }) => completeRoster)
+    return this.rosterPromise
+  }
 
   async listBuildPreviews() {
-    return this.roster.map((build) => {
+    const roster = await this.loadRoster()
+    return roster.map((build) => {
       const primary = build.variants.find((variant) => variant.type === 'Primary') ?? build.variants[0]
       return {
         id: build.id,
@@ -44,7 +49,8 @@ class LocalBuildRepository implements BuildRepository {
   }
 
   async getBuild(id: string) {
-    const build = this.roster.find((item) => item.id === id)
+    const roster = await this.loadRoster()
+    const build = roster.find((item) => item.id === id)
     if (!build) throw new Error('Build is not available in the archive.')
     return structuredClone(build)
   }

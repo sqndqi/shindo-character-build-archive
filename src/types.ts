@@ -27,6 +27,12 @@ export interface HotbarSlot {
   counter?: boolean
   modeAbility?: boolean
   accuracy?: AccuracyClassification
+  sourceType?: 'Bloodline' | 'Element' | 'Sub-Ability' | 'Mode' | 'Weapon' | 'Combat Art' | 'Kenjutsu' | 'None'
+  mobility?: boolean
+  guardPressure?: boolean
+  modeRequirement?: string
+  testingStatus?: 'Untested' | 'Needs Retesting' | 'Works' | 'Verified for update'
+  resourceNotes?: string
 }
 
 export interface Combo {
@@ -68,11 +74,31 @@ export interface BuildVariant {
   cMode: string
   zMode: string
   combatArt: string
+  combatArtReason?: string
+  kenjutsu?: string
+  kenjutsuReason?: string
   weapon: string
+  weaponReason?: string
+  qAction?: {
+    source: 'Weapon' | 'Combat Art' | 'Kenjutsu' | 'None'
+    name: string
+    purpose: string
+  }
+  fightingStyleNotes?: string[]
   ninjaTool: string
   consumable: string
   mentor: string
   race: string
+  equipment?: {
+    ninjaTool: string
+    ninjaToolReason: string
+    consumable: string
+    consumableReason: string
+    mentor: string
+    mentorReason: string
+    race: string
+    raceReason: string
+  }
   hotbar: HotbarSlot[]
   combos: Combo[]
   ratings: CharacterBuild['ratings']

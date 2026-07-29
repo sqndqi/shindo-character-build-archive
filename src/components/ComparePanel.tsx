@@ -2,6 +2,7 @@ import React from 'react'
 import { Scale, X } from 'lucide-react'
 import type { CharacterBuild, SlotLimit } from '../types'
 import { Portrait } from './Portrait'
+import { variantKenjutsu, variantQAction } from '../lib/variants'
 
 type Props = {
   builds: CharacterBuild[]
@@ -21,6 +22,9 @@ export function ComparePanel({ builds, slotLimit, onRemove, onClose }: Props) {
   const rows: Array<[string, (build: CharacterBuild) => string | number]> = [
     ['Elements', (b) => variantFor(b).elements.map((item) => item.name).join(' / ')],
     ['C / Z Modes', (b) => `${variantFor(b).cMode} / ${variantFor(b).zMode}`],
+    ['Combat Art', (b) => variantFor(b).combatArt],
+    ['Kenjutsu', (b) => variantKenjutsu(variantFor(b))],
+    ['Weapon / Q', (b) => `${variantFor(b).weapon} / ${variantQAction(variantFor(b)).name}`],
     ['Accuracy', (b) => variantFor(b).ratings.accuracy.toFixed(1)],
     ['PvP', (b) => variantFor(b).ratings.pvp.toFixed(1)],
     ['Mobility', (b) => variantFor(b).ratings.mobility.toFixed(1)],
