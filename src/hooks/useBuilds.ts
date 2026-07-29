@@ -4,10 +4,31 @@ import type { CharacterBuild } from '../types'
 
 const STORAGE_KEY = 'shindo-build-archive:v1'
 
+function normalizeBuild(build: CharacterBuild): CharacterBuild {
+  const original = originalCharacters.find((item) => item.id === build.id)
+  return {
+    ...original,
+    ...build,
+    franchise: build.franchise ?? original?.franchise ?? build.series,
+    combatTags: build.combatTags ?? original?.combatTags ?? ['Martial arts'],
+    customTags: build.customTags ?? [],
+    effectsIntensity: build.effectsIntensity ?? original?.effectsIntensity ?? 'Medium',
+    ratings: {
+      ...(original?.ratings ?? {}),
+      ...build.ratings,
+      aura: build.ratings?.aura ?? original?.ratings.aura ?? 8,
+    },
+  } as CharacterBuild
+}
+
 function loadBuilds(): CharacterBuild[] {
   try {
     const saved = localStorage.getItem(STORAGE_KEY)
-    return saved ? JSON.parse(saved) : structuredClone(originalCharacters)
+    if (!saved) return structuredClone(originalCharacters)
+    const local = (JSON.parse(saved) as CharacterBuild[]).map(normalizeBuild)
+    const localIds = new Set(local.map((build) => build.id))
+    const additions = originalCharacters.filter((build) => !localIds.has(build.id))
+    return [...local, ...structuredClone(additions)]
   } catch {
     return structuredClone(originalCharacters)
   }

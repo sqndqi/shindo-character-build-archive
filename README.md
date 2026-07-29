@@ -1,6 +1,8 @@
 # Shindo Character Build Archive
 
-A polished, local-first archive for manhwa-inspired Shindo Life builds. The app includes a portrait gallery, sortable spreadsheet view, build details, slot-limit variants, comparison tools, structured editing, CSV export, and browser-local persistence.
+A polished, local-first archive for manhwa-inspired Shindo Life builds. The app ships with 90 character and arc-specific builds, and its paginated data layer is designed to stay fast beyond 100 entries.
+
+It includes a portrait gallery, sortable spreadsheet, franchise and combat-tag filters, slot-limit variants, favorites, weighted Accuracy-vs-Meta ranking, random selection, a spinning character wheel, matchup comparison, a drag-and-drop tier lab, structured editing, CSV export, and browser-local persistence.
 
 ## Run locally
 
@@ -57,7 +59,7 @@ npm run sync:portraits
 
 ## Local data and resets
 
-Edits, duplicates, deletions, and new builds are stored under `shindo-build-archive:v1` in localStorage. Reset one build from its detail view, or restore the complete starter archive from the About page.
+Edits, duplicates, deletions, and new builds are stored under `shindo-build-archive:v1` in localStorage. Favorites, tier placements, page size, and ranking preference are stored separately under `shindo-archive-prefs:v1`. Reset one build from its detail view, or restore the complete starter archive from the About page.
 
 ## Disclaimer
 

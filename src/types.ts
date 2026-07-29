@@ -1,4 +1,6 @@
 export type BuildStatus = 'Complete' | 'Draft' | 'Needs Testing'
+export type EffectsIntensity = 'Low' | 'Medium' | 'High' | 'Ridiculous'
+export type TierRank = 'S+' | 'S' | 'A' | 'B' | 'C'
 
 export interface BloodlineSlot {
   name: string
@@ -26,10 +28,14 @@ export interface CharacterBuild {
   id: string
   name: string
   series: string
+  franchise: string
   version: string
   image: string
   description: string
   archetype: string[]
+  combatTags: string[]
+  customTags: string[]
+  effectsIntensity: EffectsIntensity
   bloodlines: BloodlineSlot[]
   elements: string[]
   cMode: string
@@ -52,6 +58,7 @@ export interface CharacterBuild {
     combos: number
     defense: number
     visuals: number
+    aura: number
     difficulty: number
   }
   slotAlternatives: {

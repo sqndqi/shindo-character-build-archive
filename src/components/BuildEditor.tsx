@@ -31,9 +31,11 @@ export function BuildEditor({ build, title = 'Edit build', onSave, onClose }: Pr
             <div className="form-grid">
               <label>Name<input value={draft.name} required onChange={(e) => set('name', e.target.value)} /></label>
               <label>Series<input value={draft.series} required onChange={(e) => set('series', e.target.value)} /></label>
+              <label>Franchise<input value={draft.franchise} required onChange={(e) => set('franchise', e.target.value)} /></label>
               <label>Version / arc<input value={draft.version} onChange={(e) => set('version', e.target.value)} /></label>
               <label>Image path<input value={draft.image} onChange={(e) => set('image', e.target.value)} placeholder="/characters/name.jpg" /></label>
               <label className="span-2">Build types, comma separated<input value={draft.archetype.join(', ')} onChange={(e) => set('archetype', split(e.target.value))} /></label>
+              <label className="span-2">Custom tags, comma separated<input value={draft.customTags.join(', ')} onChange={(e) => set('customTags', split(e.target.value))} /></label>
               <label className="span-2">Fighting style description<textarea value={draft.description} onChange={(e) => set('description', e.target.value)} /></label>
             </div>
           </section>
@@ -61,6 +63,8 @@ export function BuildEditor({ build, title = 'Edit build', onSave, onClose }: Pr
               <label>Mentor<input value={draft.mentor} onChange={(e) => set('mentor', e.target.value)} /></label>
               <label>Race<input value={draft.race} onChange={(e) => set('race', e.target.value)} /></label>
               <label>Status<select value={draft.status} onChange={(e) => set('status', e.target.value as CharacterBuild['status'])}><option>Complete</option><option>Draft</option><option>Needs Testing</option></select></label>
+              <label>Effects intensity<select value={draft.effectsIntensity} onChange={(e) => set('effectsIntensity', e.target.value as CharacterBuild['effectsIntensity'])}><option>Low</option><option>Medium</option><option>High</option><option>Ridiculous</option></select></label>
+              <label>Aura rating<input type="number" min="0" max="10" step="0.1" value={draft.ratings.aura} onChange={(e) => set('ratings', { ...draft.ratings, aura: Number(e.target.value) })} /></label>
             </div>
           </section>
 

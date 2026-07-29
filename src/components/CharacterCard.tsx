@@ -1,4 +1,4 @@
-import { ArrowUpRight, Check, Swords } from 'lucide-react'
+import { ArrowUpRight, Check, Heart, Swords } from 'lucide-react'
 import type { CharacterBuild, SlotLimit } from '../types'
 import { Portrait } from './Portrait'
 import { Score } from './Score'
@@ -7,12 +7,14 @@ type Props = {
   build: CharacterBuild
   slotLimit: SlotLimit
   selected: boolean
+  favorite: boolean
   comparisonDisabled: boolean
   onOpen: () => void
   onCompare: () => void
+  onFavorite: () => void
 }
 
-export function CharacterCard({ build, slotLimit, selected, comparisonDisabled, onOpen, onCompare }: Props) {
+export function CharacterCard({ build, slotLimit, selected, favorite, comparisonDisabled, onOpen, onCompare, onFavorite }: Props) {
   const activeBloodlines = build.slotAlternatives[slotLimit === 2 ? 'twoSlots' : slotLimit === 3 ? 'threeSlots' : 'fourSlots']
 
   return (
@@ -29,6 +31,13 @@ export function CharacterCard({ build, slotLimit, selected, comparisonDisabled, 
           aria-label={`${selected ? 'Remove' : 'Add'} ${build.name} ${selected ? 'from' : 'to'} comparison`}
         >
           {selected ? <Check size={15} /> : <Swords size={15} />}
+        </button>
+        <button
+          className={`favorite-toggle ${favorite ? 'is-favorite' : ''}`}
+          onClick={onFavorite}
+          aria-label={`${favorite ? 'Remove' : 'Add'} ${build.name} ${favorite ? 'from' : 'to'} favorites`}
+        >
+          <Heart size={15} fill={favorite ? 'currentColor' : 'none'} />
         </button>
         <div className="character-card__identity">
           <span>{build.series}</span>
@@ -53,7 +62,7 @@ export function CharacterCard({ build, slotLimit, selected, comparisonDisabled, 
           <Score compact label="PVP" value={build.ratings.pvp} />
         </div>
         <div className="card-footer">
-          <span className="difficulty">DIFF. {build.ratings.difficulty.toFixed(1)}</span>
+          <span className="difficulty">AURA {build.ratings.aura.toFixed(1)} · {build.effectsIntensity.toUpperCase()} FX</span>
           <button className="button button--text" onClick={onOpen}>View build <ArrowUpRight size={15} /></button>
         </div>
       </div>

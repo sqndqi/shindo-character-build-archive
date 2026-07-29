@@ -6,12 +6,14 @@ type Props = {
   builds: CharacterBuild[]
   slotLimit: SlotLimit
   compareIds: string[]
+  favorites: string[]
   onOpen: (build: CharacterBuild) => void
   onCompare: (id: string) => void
+  onFavorite: (id: string) => void
   onClear: () => void
 }
 
-export function Gallery({ builds, slotLimit, compareIds, onOpen, onCompare, onClear }: Props) {
+export function Gallery({ builds, slotLimit, compareIds, favorites, onOpen, onCompare, onFavorite, onClear }: Props) {
   if (!builds.length) {
     return (
       <div className="empty-state">
@@ -31,9 +33,11 @@ export function Gallery({ builds, slotLimit, compareIds, onOpen, onCompare, onCl
           build={build}
           slotLimit={slotLimit}
           selected={compareIds.includes(build.id)}
+          favorite={favorites.includes(build.id)}
           comparisonDisabled={compareIds.length >= 3}
           onOpen={() => onOpen(build)}
           onCompare={() => onCompare(build.id)}
+          onFavorite={() => onFavorite(build.id)}
         />
       ))}
     </div>

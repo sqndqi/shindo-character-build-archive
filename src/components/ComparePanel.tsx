@@ -24,8 +24,21 @@ export function ComparePanel({ builds, slotLimit, onRemove, onClose }: Props) {
     ['PvP', (b) => b.ratings.pvp.toFixed(1)],
     ['Mobility', (b) => b.ratings.mobility.toFixed(1)],
     ['Defense', (b) => b.ratings.defense.toFixed(1)],
+    ['Aura', (b) => b.ratings.aura.toFixed(1)],
+    ['Effects', (b) => b.effectsIntensity],
     ['Difficulty', (b) => b.ratings.difficulty.toFixed(1)],
   ]
+  const matchup = builds.length === 2 ? (() => {
+    const score = (build: CharacterBuild) => build.ratings.pvp + build.ratings.accuracy + build.ratings.mobility + build.ratings.defense + build.ratings.combos + build.ratings.aura
+    const left = score(builds[0])
+    const right = score(builds[1])
+    return {
+      winner: left === right ? null : left > right ? builds[0] : builds[1],
+      gap: Math.abs(left - right).toFixed(1),
+      left: (left / 6).toFixed(1),
+      right: (right / 6).toFixed(1),
+    }
+  })() : null
 
   return (
     <div className="modal-layer compare-layer" role="dialog" aria-modal="true" aria-label="Build comparison">
@@ -35,6 +48,13 @@ export function ComparePanel({ builds, slotLimit, onRemove, onClose }: Props) {
           <div><span className="eyebrow"><Scale size={14} /> SIDE-BY-SIDE ANALYSIS</span><h2>Build comparison</h2></div>
           <button className="icon-button" onClick={onClose} aria-label="Close comparison"><X /></button>
         </header>
+        {matchup && (
+          <div className="matchup-verdict">
+            <div><span>MATCHUP INDEX</span><strong>{builds[0].name}</strong><b>{matchup.left}</b></div>
+            <div><small>PROJECTED EDGE</small><strong>{matchup.winner ? matchup.winner.name : 'EVEN MATCH'}</strong><span>{matchup.gap} POINT GAP</span></div>
+            <div><span>MATCHUP INDEX</span><strong>{builds[1].name}</strong><b>{matchup.right}</b></div>
+          </div>
+        )}
         <div className="compare-scroll">
           <div className="compare-grid" style={{ '--compare-count': builds.length } as React.CSSProperties}>
             <div className="compare-label" />

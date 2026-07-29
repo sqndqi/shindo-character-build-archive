@@ -71,6 +71,8 @@ export function BuildDetail({ build, slotLimit, onClose, onEdit, onDuplicate, on
                 ['Ninja Tool', build.ninjaTool],
                 ['Consumable', build.consumable],
                 ['Race / Mentor', `${build.race} / ${build.mentor}`],
+                ['Effects intensity', build.effectsIntensity],
+                ['Combat taxonomy', build.combatTags.join(' / ')],
               ].map(([label, value]) => <div className="loadout-card" key={label}><span>{label}</span><strong>{value}</strong></div>)}
             </div>
           </section>

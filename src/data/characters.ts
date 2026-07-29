@@ -6,9 +6,12 @@ type Seed = {
   id: string
   name: string
   series: string
+  franchise?: string
   version: string
   description: string
   archetype: string[]
+  combatTags?: string[]
+  effectsIntensity?: CharacterBuild['effectsIntensity']
   bloodlines: string[]
   elements: string[]
   cMode?: string
@@ -16,6 +19,7 @@ type Seed = {
   combatArt: string
   weapon?: string
   ratings: [number, number, number, number, number, number, number]
+  aura?: number
   status?: CharacterBuild['status']
 }
 
@@ -29,6 +33,14 @@ const abilityNames: Record<string, string[]> = {
   'Doom-Shado': ['Shadow Vanish', 'Shade Army', 'Doom Descent'],
   'Raion-Gaiden': ['Raion Burst', 'Black Lightning', 'Gaiden Spear'],
   'Tetsuo-Kaijin': ['Staff Cyclone', 'Kaijin Impact', 'Tetsuo Shift'],
+}
+
+function franchiseFor(series: string) {
+  if (['Lookism', 'Manager Kim', 'Viral Hit', 'Questism', 'Reality Quest', 'Mercenary Enrollment'].includes(series)) return 'PTJ / Street Action'
+  if (['Nano Machine', 'Myst, Might, Mayhem', 'Return of the Mount Hua Sect', 'Murim Login', 'Martial Artist Lee Gwak', 'Volcanic Age', 'Return of the Mad Demon'].includes(series)) return 'Murim'
+  if (['Legend of the Northern Blade', 'Gosu'].includes(series)) return 'Northern Blade / Gosu'
+  if (['The Beginning After the End', 'Doom Breaker', 'Revenge of the Iron-Blooded Sword Hound'].includes(series)) return 'Aura Fantasy'
+  return series
 }
 
 function hotbarFor(seed: Seed): HotbarSlot[] {
@@ -52,8 +64,32 @@ function hotbarFor(seed: Seed): HotbarSlot[] {
 function makeBuild(seed: Seed): CharacterBuild {
   const [accuracy, pvp, mobility, combos, defense, visuals, difficulty] = seed.ratings
   const purpose = ['Core identity', 'Combo routing', 'Mobility / pressure', 'Counter / utility']
+  const searchable = [...seed.archetype, seed.combatArt, seed.weapon ?? '', ...seed.bloodlines].join(' ').toLowerCase()
+  const combatTags = seed.combatTags ?? [
+    !seed.weapon || seed.weapon === 'None' ? 'Hand-to-hand' : '',
+    /sword|katana|blade|knight/.test(searchable) ? 'Sword' : '',
+    /spear/.test(searchable) ? 'Spear' : '',
+    /staff/.test(searchable) ? 'Staff' : '',
+    /assassin/.test(searchable) ? 'Assassin' : '',
+    /mage|magic|elemental/.test(searchable) ? 'Mage' : '',
+    /system/.test(searchable) ? 'System user' : '',
+    /copy/.test(searchable) ? 'Copy user' : '',
+    /lightning|raion/.test(searchable) ? 'Lightning' : '',
+    /shadow|shado|doom/.test(searchable) ? 'Shadow' : '',
+    /martial|boxing|karate|kune|muay|cqc|grappl/.test(searchable) ? 'Martial arts' : '',
+    /final boss|boss|demon|cosmic/.test(searchable) ? 'Final boss' : '',
+  ].filter(Boolean)
+  const aura = seed.aura ?? Math.round(((visuals + pvp) / 2) * 10) / 10
+  const effectsIntensity = seed.effectsIntensity
+    ?? (combatTags.includes('Final boss') || combatTags.includes('Mage') ? 'Ridiculous'
+      : combatTags.includes('Lightning') || combatTags.includes('Shadow') ? 'High'
+        : visuals < 8 ? 'Low' : 'Medium')
   return {
     ...seed,
+    franchise: seed.franchise ?? franchiseFor(seed.series),
+    combatTags,
+    customTags: [],
+    effectsIntensity,
     image: `/characters/${seed.id}.jpg`,
     bloodlines: seed.bloodlines.map((name, index) => ({ name, purpose: purpose[index], useMode: name === (seed.cMode ?? seed.bloodlines[0]) })),
     cMode: seed.cMode ?? seed.bloodlines[0],
@@ -74,7 +110,7 @@ function makeBuild(seed: Seed): CharacterBuild {
     strengths: ['Clear character identity', 'Flexible pressure routes', seed.ratings[2] >= 8 ? 'Elite movement and chase' : 'Reliable neutral tools'],
     weaknesses: [difficulty >= 8 ? 'Strict timing and resource management' : 'Predictable when overextended', defense <= 6 ? 'Limited defensive margin' : 'Mode-dependent defense'],
     substitutions: [`${seed.bloodlines[0]} → a comparable mobility or pressure Bloodline`, `${seed.elements[0]} → Fire for a simpler block-break`],
-    ratings: { accuracy, pvp, mobility, combos, defense, visuals, difficulty },
+    ratings: { accuracy, pvp, mobility, combos, defense, visuals, aura, difficulty },
     slotAlternatives: {
       twoSlots: seed.bloodlines.slice(0, 2),
       threeSlots: seed.bloodlines.slice(0, 3),
@@ -112,6 +148,122 @@ const seeds: Seed[] = [
   { id: 'arthur-leywin', name: 'Arthur Leywin', series: 'The Beginning After the End', version: 'Realmheart', description: 'A technical elemental swordsman that adapts range, controls tempo, and invokes draconic power.', archetype: ['Elements', 'Sword', 'Dragon'], bloodlines: ['Tengoku-Platinum', 'Raion-Gaiden', 'Getsuga-Black', 'Dio-Senko'], elements: ['Fire', 'Water'], cMode: 'Tengoku-Platinum', zMode: 'Dragon Sage', combatArt: 'Kenjutsu', weapon: 'Dawn Sword', ratings: [8.9, 9.2, 9.0, 9.4, 8.3, 9.9, 9.3] },
   { id: 'gray-yeon', name: 'Gray Yeon', series: 'Weak Hero', version: 'Eunjang Strategist', description: 'A deliberately low-effects tactical build using prediction, traps, and improvised tools.', archetype: ['Prediction', 'Traps', 'Counter'], bloodlines: ['Doku-Tengoku', 'Akuma', 'Minakaze', 'Shiver-Akuma'], elements: ['Order', 'Earth'], cMode: 'Akuma', combatArt: 'Boxing', weapon: 'Improvised Pen', ratings: [9.2, 7.9, 7.4, 8.5, 6.8, 7.4, 8.9], status: 'Needs Testing' },
 ]
+
+type ExtraSpec = {
+  id: string
+  name: string
+  series: string
+  version: string
+  bloodlines: string[]
+  archetype: string[]
+  combatArt?: string
+  weapon?: string
+}
+
+const extraSpecs: ExtraSpec[] = [
+  { id: 'tom-lee', name: 'Tom Lee', series: 'Lookism', version: 'Ultimate King', bloodlines: ['Ryuji-Kenichi', 'Bruce-Kenichi', 'Minakaze'], archetype: ['Strength', 'Instinct', 'Grappling'], combatArt: 'Mixed Martial Arts' },
+  { id: 'gapryong-kim', name: 'Gapryong Kim', series: 'Lookism', version: 'Conviction', bloodlines: ['Ryuji-Kenichi', 'Ashura-Shizen', 'Bruce-Kenichi'], archetype: ['Conviction', 'Power', 'Durability'], combatArt: 'Boxing' },
+  { id: 'jinyoung-park', name: 'Jinyoung Park', series: 'Lookism', version: 'Copy Genius', bloodlines: ['Doku-Tengoku', 'Bruce-Kenichi', 'Dio-Senko-Rose', 'Ryuji-Kenichi'], archetype: ['Copy', 'Intelligence', 'Technique'], combatArt: 'Mixed Martial Arts' },
+  { id: 'charles-choi', name: 'Charles Choi', series: 'Lookism', version: 'Elite', bloodlines: ['Dio-Senko-Rose', 'Pika-Senko', 'Doku-Tengoku'], archetype: ['Speed', 'Technique', 'Intelligence'], combatArt: 'Jeet Kune Do' },
+  { id: 'shingen-yamazaki', name: 'Shingen Yamazaki', series: 'Lookism', version: 'Yamazaki Head', bloodlines: ['Shindai-Akuma', 'Ryuji-Kenichi', 'Ashura-Shizen'], archetype: ['UI', 'Strength', 'Final Boss'], combatArt: 'Mixed Martial Arts' },
+  { id: 'shintaro-yamazaki', name: 'Shintaro Yamazaki', series: 'Lookism', version: 'Controlled UI', bloodlines: ['Raion-Akuma', 'Bruce-Kenichi', 'Ryuji-Kenichi'], archetype: ['UI', 'Technique', 'Discipline'], combatArt: 'Mixed Martial Arts' },
+  { id: 'samuel-seo', name: 'Samuel Seo', series: 'Lookism', version: 'Heat Mode', bloodlines: ['Ryuji-Kenichi', 'Xeno-Dokei', 'Bruce-Kenichi'], archetype: ['Heat', 'Brutality', 'Durability'], combatArt: 'Mixed Martial Arts' },
+  { id: 'vasco', name: 'Vasco', series: 'Lookism', version: 'Hero of Burn Knuckles', bloodlines: ['Ryuji-Kenichi', 'Bruce-Kenichi', 'Ashura-Shizen'], archetype: ['Strength', 'Muay Thai', 'Hero'], combatArt: 'Muay Thai' },
+  { id: 'vin-jin', name: 'Vin Jin', series: 'Lookism', version: 'Cheonliang Kudo', bloodlines: ['Ryuji-Kenichi', 'Doku-Tengoku', 'Minakaze'], archetype: ['Grappling', 'Power', 'Speed'], combatArt: 'Mixed Martial Arts' },
+  { id: 'jaegyeon-na', name: 'Jaegyeon Na', series: 'Lookism', version: 'King of Incheon', bloodlines: ['Dio-Senko-Rose', 'Minakaze', 'Pika-Senko'], archetype: ['Speed', 'Mobility', 'Evasion'], combatArt: 'Jeet Kune Do' },
+  { id: 'jichang-kwak', name: 'Jichang Kwak', series: 'Lookism', version: 'White Snake', bloodlines: ['Ryuji-Kenichi', 'Doku-Tengoku', 'Bruce-Kenichi'], archetype: ['Precision', 'Power', 'Strategy'], combatArt: 'Karate' },
+  { id: 'taesoo-ma', name: 'Taesoo Ma', series: 'Lookism', version: 'One Fist', bloodlines: ['Ryuji-Kenichi', 'Ashura-Shizen'], archetype: ['Power', 'Conviction', 'One-Hit'], combatArt: 'Boxing' },
+  { id: 'gongseob-ji', name: 'Gongseob Ji', series: 'Lookism', version: 'Iron Boxer', bloodlines: ['Bruce-Kenichi', 'Ryuji-Kenichi', 'Doku-Tengoku'], archetype: ['Defense', 'Boxing', 'Counter'], combatArt: 'Boxing' },
+  { id: 'sinu-han', name: 'Sinu Han', series: 'Lookism', version: 'Boy of Promise', bloodlines: ['Dio-Senko-Rose', 'Pika-Senko', 'Bruce-Kenichi'], archetype: ['Speed', 'Technique', 'Pressure'], combatArt: 'Jeet Kune Do' },
+  { id: 'warren-chae', name: 'Warren Chae', series: 'Lookism', version: 'New CQC', bloodlines: ['Bruce-Kenichi', 'Doku-Tengoku', 'Ryuji-Kenichi'], archetype: ['CQC', 'Technique', 'Endurance'], combatArt: 'Mixed Martial Arts' },
+  { id: 'manager-kim', name: 'Manager Kim', series: 'Manager Kim', version: 'Black Ops Father', bloodlines: ['Doku-Tengoku', 'Minakaze', 'Bruce-Kenichi'], archetype: ['CQC', 'Assassin', 'Tactical'], combatArt: 'Mixed Martial Arts', weapon: 'Dagai Wire' },
+  { id: 'hansu-seong', name: 'Hansu Seong', series: 'Manager Kim', version: 'Technique Release', bloodlines: ['Bruce-Kenichi', 'Ryuji-Kenichi', 'Tetsuo-Kaijin'], archetype: ['Kicks', 'Technique', 'Power'], combatArt: 'Jeet Kune Do' },
+  { id: 'jincheol-park', name: 'Jincheol Park', series: 'Manager Kim', version: 'War Mode', bloodlines: ['Ryuji-Kenichi', 'Ashura-Shizen', 'Bruce-Kenichi'], archetype: ['Soldier', 'Power', 'Endurance'], combatArt: 'Mixed Martial Arts', weapon: 'Combat Knife' },
+  { id: 'hobin-yoo', name: 'Hobin Yoo', series: 'Viral Hit', version: 'How to Fight', bloodlines: ['Bruce-Kenichi', 'Doku-Tengoku', 'Minakaze'], archetype: ['Counter', 'Adaptation', 'Technique'], combatArt: 'Mixed Martial Arts' },
+  { id: 'taehoon-seong', name: 'Taehoon Seong', series: 'Viral Hit', version: 'Taekwondo Prodigy', bloodlines: ['Bruce-Kenichi', 'Pika-Senko', 'Dio-Senko-Rose'], archetype: ['Kicks', 'Speed', 'Technique'], combatArt: 'Jeet Kune Do' },
+  { id: 'suhyeon-kim', name: 'Suhyeon Kim', series: 'Questism', version: 'Card Master', bloodlines: ['Shindai-Rengoku', 'Dio-Senko-Rose', 'Bruce-Kenichi'], archetype: ['System', 'Copy', 'Versatility'], combatArt: 'Mixed Martial Arts' },
+  { id: 'choyun', name: 'Choyun', series: 'Questism', version: 'System Overlord', bloodlines: ['Aizden', 'Shindai-Rengoku', 'Code-Gaiden'], archetype: ['System', 'Control', 'Final Boss'], combatArt: 'Mixed Martial Arts' },
+  { id: 'daniel-questism', name: 'Daniel', series: 'Questism', version: 'Northern No. 2', bloodlines: ['Bruce-Kenichi', 'Dio-Senko-Rose', 'Doku-Tengoku'], archetype: ['Speed', 'Technique', 'Strategy'], combatArt: 'Mixed Martial Arts' },
+  { id: 'hajun-gu', name: 'Hajun Gu', series: 'Questism', version: 'Overlord', bloodlines: ['Ryuji-Kenichi', 'Bruce-Kenichi'], archetype: ['Strength', 'Pressure', 'Durability'], combatArt: 'Mixed Martial Arts' },
+  { id: 'dowan-ha', name: 'Dowan Ha', series: 'Reality Quest', version: 'Reality System', bloodlines: ['Dio-Senko-Rose', 'Bruce-Kenichi', 'Raion-Gaiden'], archetype: ['System', 'Speed', 'Growth'], combatArt: 'Mixed Martial Arts' },
+  { id: 'sung-il-hwan', name: 'Sung Il-Hwan', series: 'Solo Leveling', version: 'Ruler Vessel', bloodlines: ['Ashura-Shizen', 'Dio-Senko-Rose', 'Ryuji-Kenichi'], archetype: ['Ruler', 'Strength', 'Speed'], combatArt: 'Mixed Martial Arts' },
+  { id: 'thomas-andre', name: 'Thomas Andre', series: 'Solo Leveling', version: 'Goliath', bloodlines: ['Ashura-Shizen', 'Ryuji-Kenichi', 'Apollo-Sand'], archetype: ['Tank', 'Power', 'Destruction'], combatArt: 'Mixed Martial Arts' },
+  { id: 'liu-zhigang', name: 'Liu Zhigang', series: 'Solo Leveling', version: 'National Hunter', bloodlines: ['Getsuga-Black', 'Raion-Gaiden', 'Dio-Senko-Rose'], archetype: ['Sword', 'Speed', 'Aura'], combatArt: 'Kenjutsu', weapon: 'Sword' },
+  { id: 'beru', name: 'Beru', series: 'Solo Leveling', version: 'Shadow General', bloodlines: ['Xeno-Dokei', 'Aizden', 'Dio-Senko-Rose'], archetype: ['Monster', 'Speed', 'Regeneration', 'Shadow'], combatArt: 'Claw Arts' },
+  { id: 'igris', name: 'Igris', series: 'Solo Leveling', version: 'Blood-Red Commander', bloodlines: ['Bankai-Akuma', 'Getsuga-Black', 'Doom-Shado'], archetype: ['Knight', 'Sword', 'Shadow'], combatArt: 'Kenjutsu', weapon: 'Greatsword' },
+  { id: 'kim-dokja', name: 'Kim Dokja', series: 'Omniscient Reader', version: 'Demon King of Salvation', bloodlines: ['Shindai-Rengoku', 'Doku-Tengoku', 'Bankai-Akuma'], archetype: ['Scenario', 'Prediction', 'Control'], combatArt: 'Mixed Martial Arts' },
+  { id: 'yoo-joonghyuk', name: 'Yoo Joonghyuk', series: 'Omniscient Reader', version: 'Regressor', bloodlines: ['Getsuga-Black', 'Raion-Akuma', 'Ryuji-Kenichi'], archetype: ['Regression', 'Sword', 'Endurance'], combatArt: 'Kenjutsu', weapon: 'Sword' },
+  { id: 'secretive-plotter', name: 'Secretive Plotter', series: 'Omniscient Reader', version: 'Outer God', bloodlines: ['Aizden', 'Doom-Shado', 'Shindai-Rengoku'], archetype: ['Cosmic', 'Shadow', 'Final Boss'], combatArt: 'Reality Warping' },
+  { id: 'kyrgios-rodgraim', name: 'Kyrgios Rodgraim', series: 'Omniscient Reader', version: 'Electrification', bloodlines: ['Bruce-Kenichi', 'Pika-Senko', 'Raion-Gaiden'], archetype: ['Lightning', 'Speed', 'Martial Arts'], combatArt: 'Mixed Martial Arts' },
+  { id: 'jiwoo-seo', name: 'Jiwoo Seo', series: 'Eleceed', version: 'Kayden Force Control', bloodlines: ['Raion-Gaiden', 'Dio-Senko-Rose', 'Bruce-Kenichi'], archetype: ['Speed', 'Lightning', 'Close Combat'], combatArt: 'Boxing' },
+  { id: 'kartein', name: 'Kartein', series: 'Eleceed', version: 'Divine Healer', bloodlines: ['Light-Jokei', 'Shizen', 'Doku-Tengoku'], archetype: ['Healing', 'Defense', 'Technique'], combatArt: 'Precision Arts' },
+  { id: 'andrei', name: 'Andrei', series: 'Eleceed', version: 'World Awakener', bloodlines: ['Raion-Gaiden', 'Aizden', 'Shindai-Rengoku'], archetype: ['Lightning', 'Destruction', 'Boss'], combatArt: 'Force Control' },
+  { id: 'blade-god', name: 'Blade God', series: 'Nano Machine', version: 'Space-Cutting Demon', bloodlines: ['Getsuga-Black', 'Bankai-Akuma', 'Kamaki-Akuma'], archetype: ['Sword', 'Demon', 'Precision'], combatArt: 'Kenjutsu', weapon: 'Katana' },
+  { id: 'heavenly-demon-mmm', name: 'Heavenly Demon', series: 'Myst, Might, Mayhem', version: 'First Heavenly Demon', bloodlines: ['Aizden', 'Bankai-Akuma', 'Getsuga-Black'], archetype: ['Demon', 'Sword', 'Final Boss'], combatArt: 'Kenjutsu', weapon: 'Demon Sword' },
+  { id: 'mok-gyeong-woon', name: 'Mok Gyeong-Woon', series: 'Myst, Might, Mayhem', version: 'Demonic Sovereign', bloodlines: ['Bankai-Akuma', 'Doom-Shado', 'Aizden'], archetype: ['Dark', 'Sword', 'Necromancy'], combatArt: 'Kenjutsu', weapon: 'Sword' },
+  { id: 'chung-myung', name: 'Chung Myung', series: 'Return of the Mount Hua Sect', version: 'Plum Blossom Sword Saint', bloodlines: ['Getsuga', 'Bruce-Kenichi', 'Dio-Senko-Rose'], archetype: ['Sword', 'Speed', 'Technique'], combatArt: 'Kenjutsu', weapon: 'Sword' },
+  { id: 'jinhyeok-murim', name: 'Jinhyeok', series: 'Murim Login', version: 'System Ascendant', bloodlines: ['Bruce-Kenichi', 'Ryuji-Kenichi', 'Dio-Senko-Rose'], archetype: ['System', 'Martial Arts', 'Growth'], combatArt: 'Mixed Martial Arts', weapon: 'Spear' },
+  { id: 'jin-tae-kyung', name: 'Jin Tae-Kyung', series: 'Murim Login', version: 'Fire King Disciple', bloodlines: ['Ryuji-Kenichi', 'Bruce-Kenichi', 'Tetsuo-Kaijin'], archetype: ['Spear', 'Power', 'Martial Arts'], combatArt: 'Spear Arts', weapon: 'Spear' },
+  { id: 'lee-gwak', name: 'Lee Gwak', series: 'Martial Artist Lee Gwak', version: 'Quiet Master', bloodlines: ['Doom-Shado', 'Bruce-Kenichi', 'Doku-Tengoku'], archetype: ['Technique', 'Shadow', 'Counter'], combatArt: 'Mixed Martial Arts' },
+  { id: 'lee-geon', name: 'Lee Geon', series: 'Return of the Disaster-Class Hero', version: 'Serpent Bearer', bloodlines: ['Aizden', 'Shindai-Rengoku', 'Ryuji-Kenichi'], archetype: ['Divine', 'Power', 'Summoner'], combatArt: 'Mixed Martial Arts' },
+  { id: 'dam-soo-cheon', name: 'Dam Soo-Cheon', series: 'Legend of the Northern Blade', version: 'Cerulean Dragon', bloodlines: ['Raion-Gaiden', 'Ryuji-Kenichi', 'Bruce-Kenichi'], archetype: ['Spear', 'Lightning', 'Power'], combatArt: 'Spear Arts', weapon: 'Spear' },
+  { id: 'jo-cheon-woo', name: 'Jo Cheon-Woo', series: 'Legend of the Northern Blade', version: 'Great Four', bloodlines: ['Ryuji-Kenichi', 'Ashura-Shizen', 'Xeno-Dokei'], archetype: ['Power', 'Tank', 'Brutality'], combatArt: 'Mixed Martial Arts' },
+  { id: 'gang-ryong', name: 'Gang Ryong', series: 'Gosu', version: 'Heavenly Destroyer Disciple', bloodlines: ['Ryuji-Kenichi', 'Ashura-Shizen', 'Shindai-Rengoku'], archetype: ['Martial Arts', 'Power', 'Energy'], combatArt: 'Mixed Martial Arts' },
+  { id: 'yongbi', name: 'Yongbi', series: 'Gosu', version: 'Veteran Spearmaster', bloodlines: ['Bruce-Kenichi', 'Ryuji-Kenichi', 'Dio-Senko-Rose'], archetype: ['Spear', 'Technique', 'Speed'], combatArt: 'Spear Arts', weapon: 'Spear' },
+  { id: 'arthur-leywin-king-grey', name: 'Arthur Leywin', series: 'The Beginning After the End', version: 'King Grey', bloodlines: ['Rykan-Shizen', 'Raion-Gaiden', 'Getsuga-Black', 'Light-Jokei'], archetype: ['Elemental', 'Dragon', 'Sword'], combatArt: 'Kenjutsu', weapon: 'Sword' },
+  { id: 'regis', name: 'Regis', series: 'The Beginning After the End', version: 'Destruction Companion', bloodlines: ['Aizden', 'Doom-Shado', 'Getsuga-Black'], archetype: ['Destruction', 'Shadow', 'Companion'], combatArt: 'Claw Arts' },
+  { id: 'agrona-vritra', name: 'Agrona Vritra', series: 'The Beginning After the End', version: 'Vritra Sovereign', bloodlines: ['Aizden', 'Xeno-Dokei', 'Shindai-Rengoku'], archetype: ['Dragon', 'Control', 'Final Boss'], combatArt: 'Aether Arts' },
+  { id: 'zephyr', name: 'Zephyr', series: 'Doom Breaker', version: 'Dragon Slayer Regressor', bloodlines: ['Rykan-Shizen', 'Raion-Gaiden', 'Getsuga-Black'], archetype: ['Dragon', 'Sword', 'Regression'], combatArt: 'Kenjutsu', weapon: 'Sword' },
+  { id: 'vikir', name: 'Vikir', series: 'Revenge of the Iron-Blooded Sword Hound', version: 'Iron-Blooded Hound', bloodlines: ['Getsuga-Black', 'Bankai-Akuma', 'Dio-Senko-Rose'], archetype: ['Assassin', 'Sword', 'Revenge'], combatArt: 'Kenjutsu', weapon: 'Sword' },
+  { id: 'cale-henituse', name: 'Cale Henituse', series: 'Trash of the Count’s Family', version: 'Ancient Powers', bloodlines: ['Shindai-Rengoku', 'Apollo-Sand', 'Shizen'], archetype: ['Ancient Power', 'Defense', 'Strategy'], combatArt: 'Elemental Arts' },
+  { id: 'seo-gangrim', name: 'Seo Gangrim', series: 'SSS-Class Suicide Hunter', version: 'Death Copy', bloodlines: ['Bankai-Akuma', 'Doom-Shado', 'Getsuga-Black'], archetype: ['Copy', 'Death', 'Sword'], combatArt: 'Kenjutsu', weapon: 'Sword' },
+  { id: 'lucas-traumen', name: 'Lucas Traumen', series: 'The Great Mage Returns', version: 'Nine-Star Mage', bloodlines: ['Order', 'Chaos', 'Pyromania', 'Shindai-Rengoku'], archetype: ['Mage', 'Elemental', 'Destruction'], combatArt: 'Magic' },
+  { id: 'desir-arman', name: 'Desir Arman', series: 'A Returner’s Magic Should Be Special', version: 'Magic Analyst', bloodlines: ['Order', 'Doku-Tengoku', 'Dio-Senko-Rose'], archetype: ['Mage', 'Analysis', 'Counter'], combatArt: 'Magic' },
+  { id: 'ijin-yu', name: 'Ijin Yu', series: 'Mercenary Enrollment', version: 'Teenage Mercenary', bloodlines: ['Doku-Tengoku', 'Bruce-Kenichi', 'Minakaze'], archetype: ['Soldier', 'CQC', 'Assassin'], combatArt: 'Mixed Martial Arts', weapon: 'Combat Knife' },
+  { id: 'teenage-mercenary-002', name: '002', series: 'Mercenary Enrollment', version: 'Numbers Assassin', bloodlines: ['Minakaze', 'Doku-Tengoku', 'Dio-Senko-Rose'], archetype: ['Assassin', 'Speed', 'Tactical'], combatArt: 'Mixed Martial Arts', weapon: 'Knife and Sidearm' },
+  { id: 'gray-yeon-tools', name: 'Gray Yeon', series: 'Weak Hero', version: 'Environmental Weapons', bloodlines: ['Doku-Tengoku', 'Minakaze', 'Jokei'], archetype: ['Intelligence', 'Counter', 'Tools'], combatArt: 'Boxing', weapon: 'Improvised Tools' },
+  { id: 'donald-na', name: 'Donald Na', series: 'Weak Hero', version: 'Union Head', bloodlines: ['Bruce-Kenichi', 'Ryuji-Kenichi', 'Doku-Tengoku'], archetype: ['Strategy', 'Power', 'Technique'], combatArt: 'Mixed Martial Arts' },
+  { id: 'ben-park', name: 'Ben Park', series: 'Weak Hero', version: 'Big Ben', bloodlines: ['Ryuji-Kenichi', 'Ashura-Shizen'], archetype: ['Power', 'Durability', 'Brawler'], combatArt: 'Mixed Martial Arts' },
+  { id: 'nagyuun', name: 'Nagyuun', series: 'The Ember Knight', version: 'False Knight', bloodlines: ['Doku-Tengoku', 'Minakaze', 'Bankai-Akuma'], archetype: ['Strategy', 'Prediction', 'Trickery'], combatArt: 'Tactical Arts' },
+  { id: 'rania', name: 'Rania', series: 'The Ember Knight', version: 'Knight of Speed', bloodlines: ['Getsuga-Black', 'Dio-Senko-Rose', 'Bruce-Kenichi'], archetype: ['Knight', 'Sword', 'Speed'], combatArt: 'Kenjutsu', weapon: 'Sword' },
+  { id: 'hanbin-ryu', name: 'Hanbin Ryu', series: 'Latna Saga', version: 'Survival Sword King', bloodlines: ['Ryuji-Kenichi', 'Ashura-Shizen', 'Demon Gate Spirit'], archetype: ['Berserker', 'Strength', 'Tank'], combatArt: 'Greatsword Arts', weapon: 'Greatsword' },
+  { id: 'barolt-aura', name: 'Barolt', series: 'Latna Saga', version: 'Aura Sword King', bloodlines: ['Ryuji-Kenichi', 'Ashura-Shizen', 'Bruce-Kenichi'], archetype: ['Aura', 'Strength', 'Warrior'], combatArt: 'Greatsword Arts', weapon: 'Greatsword' },
+  { id: 'karsia', name: 'Karsia', series: 'The Great Mage Returns', version: 'Archmage', bloodlines: ['Order', 'Light-Jokei', 'Shindai-Rengoku'], archetype: ['Mage', 'Light', 'Control'], combatArt: 'Magic' },
+  { id: 'joo-seoh-cheon', name: 'Joo Seoh-Cheon', series: 'Volcanic Age', version: 'Regressed Plum Blossom', bloodlines: ['Getsuga', 'Dio-Senko-Rose', 'Bruce-Kenichi'], archetype: ['Sword', 'Regression', 'Technique'], combatArt: 'Kenjutsu', weapon: 'Sword' },
+  { id: 'yi-zaha', name: 'Yi Zaha', series: 'Return of the Mad Demon', version: 'Mad Demon', bloodlines: ['Bankai-Akuma', 'Bruce-Kenichi', 'Doom-Shado'], archetype: ['Madness', 'Martial Arts', 'Dark'], combatArt: 'Mixed Martial Arts' },
+]
+
+function elementsFor(archetype: string[]) {
+  const joined = archetype.join(' ').toLowerCase()
+  if (joined.includes('lightning')) return ['Lightning', 'Order']
+  if (joined.includes('shadow') || joined.includes('dark') || joined.includes('death')) return ['Fire', 'Order']
+  if (joined.includes('mage') || joined.includes('elemental')) return ['Order', 'Chaos']
+  if (joined.includes('speed')) return ['Gale', 'Lightning']
+  if (joined.includes('sword') || joined.includes('spear')) return ['Gale', 'Order']
+  return ['Earth', 'Fire']
+}
+
+function ratingsFor(spec: ExtraSpec, index: number): Seed['ratings'] {
+  const tags = spec.archetype.join(' ').toLowerCase()
+  const accuracy = Math.min(9.6, 8.3 + ((index * 3) % 12) / 10)
+  const pvp = Math.min(9.6, 8.1 + ((index * 5) % 14) / 10)
+  const mobility = /speed|lightning|evasion/.test(tags) ? 9.3 : 7.4 + (index % 13) / 10
+  const combos = /copy|system|technique|mage/.test(tags) ? 9.2 : 8 + (index % 12) / 10
+  const defense = /tank|durability|endurance|defense/.test(tags) ? 9.3 : 7.2 + (index % 14) / 10
+  const visuals = /final boss|cosmic|dragon|shadow|mage|lightning/.test(tags) ? 9.7 : 8.1 + (index % 14) / 10
+  const difficulty = /copy|system|mage|prediction|strategy/.test(tags) ? 8.9 : 7.3 + (index % 15) / 10
+  return [accuracy, pvp, mobility, combos, defense, visuals, difficulty].map((value) => Math.round(Math.min(9.9, value) * 10) / 10) as Seed['ratings']
+}
+
+seeds.push(...extraSpecs.map((spec, index) => ({
+  ...spec,
+  description: `${spec.version} translated into a ${spec.archetype.join(', ').toLowerCase()} loadout with character-first routing and practical PvP coverage.`,
+  elements: elementsFor(spec.archetype),
+  combatArt: spec.combatArt ?? (spec.archetype.includes('Sword') ? 'Kenjutsu' : 'Mixed Martial Arts'),
+  ratings: ratingsFor(spec, index),
+  aura: /final boss|cosmic|dragon|demon|aura/.test(spec.archetype.join(' ').toLowerCase()) ? 9.8 : undefined,
+  status: 'Needs Testing' as const,
+})))
 
 export const originalCharacters: CharacterBuild[] = seeds.map(makeBuild)
 
