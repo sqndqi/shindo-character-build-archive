@@ -45,7 +45,7 @@ export function BuildTable({ builds, slotLimit, onOpen, onClear }: Props) {
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc')
   const [visible, setVisible] = useState(initialVisible)
 
-  const slotsFor = (build: CharacterBuild) => build.slotAlternatives[slotLimit === 2 ? 'twoSlots' : slotLimit === 3 ? 'threeSlots' : 'fourSlots']
+  const slotsFor = (build: CharacterBuild) => (build.variants.find((variant) => variant.bloodlineSlotCount === slotLimit) ?? build.variants[0]).bloodlines.map((slot) => slot.name)
   const activeColumns = columns.filter((column) => visible.has(column.key))
   const sorted = (() => {
     const column = columns.find((item) => item.key === sortKey) ?? columns[0]

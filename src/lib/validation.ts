@@ -40,3 +40,9 @@ export const buildSchema = z.object({
 }).passthrough()
 
 export type ValidationResult = ReturnType<typeof buildSchema.safeParse>
+
+const placeholderMovePattern = /(?:\bBreaker\b|\bDrive\b|Generic Counter|Rose Flash|Dragon Heel|Pika Flash|Tengoku Pull)/i
+
+export function validateOfficialMoveNames(abilities: string[]) {
+  return abilities.filter((ability) => placeholderMovePattern.test(ability))
+}

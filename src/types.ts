@@ -2,6 +2,8 @@ export type BuildStatus = 'Complete' | 'Draft' | 'Needs Testing'
 export type EffectsIntensity = 'Low' | 'Medium' | 'High' | 'Ridiculous'
 export type TierRank = 'S+' | 'S' | 'A' | 'B' | 'C'
 export type VerificationStatus = 'Current' | 'Needs Retesting' | 'Outdated' | 'Archived'
+export type VariantVerificationStatus = 'Verified' | 'Needs Research' | 'Needs Retesting'
+export type ConfidenceLabel = 'Verified' | 'Strong Match' | 'Approximation' | 'Competitive Substitute' | 'Unverified'
 
 export interface BloodlineSlot {
   id: string
@@ -25,6 +27,54 @@ export interface Combo {
   name: string
   sequence: string[]
   explanation: string
+}
+
+export interface BuildEvidence {
+  category: 'Character' | 'Game' | 'Testing'
+  claim: string
+  sourceTitle: string
+  sourceReference: string
+  checkedAt: string
+  notes: string
+}
+
+export interface BuildVariant {
+  id: string
+  name: string
+  type: 'Primary' | 'Lore Accurate' | 'Competitive' | 'Beginner' | 'Owned Items' | 'Two Slot' | 'Three Slot' | 'Four Slot'
+  bloodlineSlotCount: 2 | 3 | 4
+  elementSlotCount: 2 | 3 | 4
+  bloodlines: {
+    name: string
+    purpose: string
+    exactMovesUsed: string[]
+    useMode: boolean
+    reason: string
+    represents: string
+    replacements: { lore: string[]; competitive: string[]; accessible: string[] }
+  }[]
+  elements: {
+    name: string
+    exactMovesUsed: string[]
+    purpose: string
+    replacements: string[]
+  }[]
+  cMode: string
+  zMode: string
+  combatArt: string
+  weapon: string
+  ninjaTool: string
+  consumable: string
+  mentor: string
+  race: string
+  hotbar: HotbarSlot[]
+  combos: Combo[]
+  ratings: CharacterBuild['ratings']
+  strengths: string[]
+  weaknesses: string[]
+  usageGuide: string[]
+  verificationStatus: VariantVerificationStatus
+  lastVerifiedUpdate: string
 }
 
 export interface CharacterBuild {
@@ -98,6 +148,13 @@ export interface CharacterBuild {
     date: string
     reason?: string
   }[]
+  chapterRange: string
+  characterAbilities: string[]
+  knownCompromises: string[]
+  confidence: ConfidenceLabel
+  publicationStatus: 'Reviewed' | 'Needs Research' | 'Hidden Draft' | 'Archived Placeholder'
+  variants: BuildVariant[]
+  evidence: BuildEvidence[]
 }
 
 export type SlotLimit = 2 | 3 | 4

@@ -11,25 +11,29 @@ type Props = {
 }
 
 export function ComparePanel({ builds, slotLimit, onRemove, onClose }: Props) {
-  const slotsFor = (build: CharacterBuild) => build.slotAlternatives[slotLimit === 2 ? 'twoSlots' : slotLimit === 3 ? 'threeSlots' : 'fourSlots']
+  const variantFor = (build: CharacterBuild) => build.variants.find((variant) => variant.bloodlineSlotCount === slotLimit) ?? build.variants[0]
+  const slotsFor = (build: CharacterBuild) => variantFor(build).bloodlines.map((slot) => slot.name)
   const shared = (() => {
     if (builds.length < 2) return new Set<string>()
     return new Set(slotsFor(builds[0]).filter((name) => builds.slice(1).every((build) => slotsFor(build).includes(name))))
   })()
 
   const rows: Array<[string, (build: CharacterBuild) => string | number]> = [
-    ['Elements', (b) => b.elements.join(' / ')],
-    ['C / Z Modes', (b) => `${b.cMode} / ${b.zMode}`],
-    ['Accuracy', (b) => b.ratings.accuracy.toFixed(1)],
-    ['PvP', (b) => b.ratings.pvp.toFixed(1)],
-    ['Mobility', (b) => b.ratings.mobility.toFixed(1)],
-    ['Defense', (b) => b.ratings.defense.toFixed(1)],
-    ['Aura', (b) => b.ratings.aura.toFixed(1)],
+    ['Elements', (b) => variantFor(b).elements.map((item) => item.name).join(' / ')],
+    ['C / Z Modes', (b) => `${variantFor(b).cMode} / ${variantFor(b).zMode}`],
+    ['Accuracy', (b) => variantFor(b).ratings.accuracy.toFixed(1)],
+    ['PvP', (b) => variantFor(b).ratings.pvp.toFixed(1)],
+    ['Mobility', (b) => variantFor(b).ratings.mobility.toFixed(1)],
+    ['Defense', (b) => variantFor(b).ratings.defense.toFixed(1)],
+    ['Aura', (b) => variantFor(b).ratings.aura.toFixed(1)],
     ['Effects', (b) => b.effectsIntensity],
-    ['Difficulty', (b) => b.ratings.difficulty.toFixed(1)],
+    ['Difficulty', (b) => variantFor(b).ratings.difficulty.toFixed(1)],
   ]
   const matchup = builds.length === 2 ? (() => {
-    const score = (build: CharacterBuild) => build.ratings.pvp + build.ratings.accuracy + build.ratings.mobility + build.ratings.defense + build.ratings.combos + build.ratings.aura
+    const score = (build: CharacterBuild) => {
+      const ratings = variantFor(build).ratings
+      return ratings.pvp + ratings.accuracy + ratings.mobility + ratings.defense + ratings.combos + ratings.aura
+    }
     const left = score(builds[0])
     const right = score(builds[1])
     return {

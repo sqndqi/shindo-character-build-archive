@@ -20,7 +20,7 @@ export class ErrorBoundary extends Component<Props, State> {
       <main className="recovery-page" role="alert">
         <span>ARCHIVE RECOVERY</span>
         <h1>This section hit a corrupted record.</h1>
-        <p>Your saved data has not been erased. Reload the section or open Diagnostics to export the damaged record.</p>
+        <p>Your personal preferences have not been erased. Reload this section and try again.</p>
         <button className="button button--primary" onClick={() => this.setState({ error: null })}>Try again</button>
       </main>
     )
