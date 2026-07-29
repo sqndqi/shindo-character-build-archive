@@ -8,6 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "sync:portraits": "node scripts/sync-portraits.mjs",
+    "thumbnails": "node scripts/generate-thumbnails.mjs",
+    "test": "vitest run",
     "test:smoke": "node tests/smoke.mjs",
     "preview": "vite preview"
   },
@@ -16,7 +18,8 @@
     "lucide-react": "^1.27.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "tailwindcss": "^4.3.3"
+    "tailwindcss": "^4.3.3",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^24.13.2",
@@ -27,6 +30,7 @@
     "playwright-core": "^1.62.0",
     "sharp": "^0.35.3",
     "typescript": "~6.0.2",
-    "vite": "^8.1.1"
+    "vite": "^8.1.1",
+    "vitest": "^4.1.10"
   }
 }

@@ -4,6 +4,8 @@ A polished, local-first archive for manhwa-inspired Shindo Life builds. The app 
 
 It includes a portrait gallery, sortable spreadsheet, franchise and combat-tag filters, slot-limit variants, favorites, weighted Accuracy-vs-Meta ranking, random selection, a spinning character wheel, matchup comparison, a drag-and-drop tier lab, structured editing, CSV export, and browser-local persistence.
 
+The performance upgrade adds compact/visual/table layouts, 12/24/48/96 pagination, lazy WebP card thumbnails, optional viewport rendering, debounced search, a one-time repair migration, Diagnostics, an Owned Bloodline workshop, validated JSON backup/import, synergy and completion analysis, and stable character/version/build identities.
+
 ## Run locally
 
 Requirements: Node.js 20.19+ or 22.12+.
@@ -21,6 +23,8 @@ Production verification:
 npm run build
 npm run preview
 ```
+
+Run automated checks with `npm test`, `npm run lint`, and `npm run test:smoke`.
 
 ## Project structure
 
@@ -60,6 +64,12 @@ npm run sync:portraits
 ## Local data and resets
 
 Edits, duplicates, deletions, and new builds are stored under `shindo-build-archive:v1` in localStorage. Favorites, tier placements, page size, and ranking preference are stored separately under `shindo-archive-prefs:v1`. Reset one build from its detail view, or restore the complete starter archive from the About page.
+
+Schema migration v2 creates a timestamped local backup before repairing duplicate IDs, repeated generated copy suffixes, and exact duplicate records. Distinct arc versions are retained. Large portrait binaries are never stored in localStorage.
+
+## Community
+
+Discord: https://discord.gg/agarthia
 
 ## Disclaimer
 

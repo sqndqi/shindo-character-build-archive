@@ -11,9 +11,11 @@ type Props = {
   onCompare: (id: string) => void
   onFavorite: (id: string) => void
   onClear: () => void
+  mode: 'compact' | 'visual'
+  performanceMode: boolean
 }
 
-export function Gallery({ builds, slotLimit, compareIds, favorites, onOpen, onCompare, onFavorite, onClear }: Props) {
+export function Gallery({ builds, slotLimit, compareIds, favorites, onOpen, onCompare, onFavorite, onClear, mode, performanceMode }: Props) {
   if (!builds.length) {
     return (
       <div className="empty-state">
@@ -26,7 +28,7 @@ export function Gallery({ builds, slotLimit, compareIds, favorites, onOpen, onCo
   }
 
   return (
-    <div className="gallery-grid">
+    <div className={`gallery-grid gallery-grid--${mode} ${performanceMode ? 'gallery-grid--virtualized' : ''}`}>
       {builds.map((build) => (
         <CharacterCard
           key={build.id}
@@ -35,9 +37,10 @@ export function Gallery({ builds, slotLimit, compareIds, favorites, onOpen, onCo
           selected={compareIds.includes(build.id)}
           favorite={favorites.includes(build.id)}
           comparisonDisabled={compareIds.length >= 3}
-          onOpen={() => onOpen(build)}
-          onCompare={() => onCompare(build.id)}
-          onFavorite={() => onFavorite(build.id)}
+          onOpen={onOpen}
+          onCompare={onCompare}
+          onFavorite={onFavorite}
+          mode={mode}
         />
       ))}
     </div>

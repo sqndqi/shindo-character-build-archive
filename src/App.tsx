@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from 'react'
-import { Archive, ChevronLeft, ChevronRight, Dice5, Disc3, Grid2X2, Heart, Info, ListFilter, Plus, Search, SlidersHorizontal, Swords, Table2, Trophy, X } from 'lucide-react'
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { Archive, Bug, ChevronLeft, ChevronRight, Dice5, Disc3, FlaskConical, Grid2X2, Heart, Info, ListFilter, Plus, Rows3, Search, SlidersHorizontal, Swords, Table2, Trophy, X } from 'lucide-react'
 import { createBlankBuild } from './data/characters'
 import { useBuilds } from './hooks/useBuilds'
 import { useArchivePrefs } from './hooks/useArchivePrefs'
@@ -8,11 +8,18 @@ import { Gallery } from './components/Gallery'
 import { BuildTable } from './components/BuildTable'
 import { BuildDetail } from './components/BuildDetail'
 import { BuildEditor } from './components/BuildEditor'
-import { ComparePanel } from './components/ComparePanel'
 import { WheelModal } from './components/WheelModal'
-import { TierListBoard } from './components/TierListBoard'
+import { createDuplicateName, createPermanentId } from './lib/identity'
+import { useDebouncedValue } from './hooks/useDebouncedValue'
+import { ErrorBoundary } from './components/ErrorBoundary'
+import { useBloodlineCollection } from './hooks/useBloodlineCollection'
 
-type View = 'gallery' | 'table' | 'tiers' | 'about'
+const ComparePanel = lazy(() => import('./components/ComparePanel').then((module) => ({ default: module.ComparePanel })))
+const TierListBoard = lazy(() => import('./components/TierListBoard').then((module) => ({ default: module.TierListBoard })))
+const DiagnosticsPage = lazy(() => import('./components/DiagnosticsPage'))
+const ArchiveWorkshop = lazy(() => import('./components/ArchiveWorkshop'))
+
+type View = 'gallery' | 'table' | 'tiers' | 'workshop' | 'diagnostics' | 'about'
 
 const emptyFilters = {
   search: '',
@@ -25,12 +32,19 @@ const emptyFilters = {
   type: '',
   effects: '',
   favorites: '',
+  owned: '',
 }
 
 function App() {
-  const { builds, save, add, remove, reset, resetAll } = useBuilds()
+  const { builds, save, add, remove, reset, resetAll, replaceAll } = useBuilds()
   const { prefs, toggleFavorite, setTier, setPageSize, setMetaBias } = useArchivePrefs()
+  const { collection, setStatus: setBloodlineStatus, toggleFavorite: toggleBloodlineFavorite } = useBloodlineCollection()
   const [view, setView] = useState<View>('gallery')
+  const [cardMode, setCardMode] = useState<'compact' | 'visual'>('compact')
+  const [performanceMode, setPerformanceMode] = useState(false)
+  const [searchInput, setSearchInput] = useState('')
+  const debouncedSearch = useDebouncedValue(searchInput)
+  const filteringDuration = useRef(0)
   const [slotLimit, setSlotLimit] = useState<SlotLimit>(4)
   const [filters, setFilters] = useState(emptyFilters)
   const [page, setPage] = useState(1)
@@ -40,6 +54,8 @@ function App() {
   const [compareIds, setCompareIds] = useState<string[]>([])
   const [compareOpen, setCompareOpen] = useState(false)
   const [wheelOpen, setWheelOpen] = useState(false)
+  const [notice, setNotice] = useState('')
+  const [lastDeleted, setLastDeleted] = useState<CharacterBuild | null>(null)
 
   const values = useMemo(() => ({
     franchise: [...new Set(builds.map((build) => build.franchise))].sort(),
@@ -51,9 +67,10 @@ function App() {
   }), [builds])
 
   const filtered = useMemo(() => {
+    const started = performance.now()
     const metaWeight = prefs.metaBias / 100
-    return builds.filter((build) => {
-      const query = filters.search.toLowerCase()
+    const result = builds.filter((build) => {
+      const query = debouncedSearch.toLowerCase()
       const searchMatch = !query || [
         build.name,
         build.series,
@@ -64,6 +81,7 @@ function App() {
         ...build.customTags,
         ...build.bloodlines.map((slot) => slot.name),
       ].join(' ').toLowerCase().includes(query)
+      const missingBloodlines = build.bloodlines.filter((slot) => collection.statuses[slot.name] !== 'Owned').length
       return searchMatch
         && (!filters.franchise || build.franchise === filters.franchise)
         && (!filters.series || build.series === filters.series)
@@ -74,16 +92,19 @@ function App() {
         && (!filters.type || build.archetype.includes(filters.type))
         && (!filters.effects || build.effectsIntensity === filters.effects)
         && (!filters.favorites || prefs.favorites.includes(build.id))
+        && (!filters.owned || (filters.owned === 'makeable' ? missingBloodlines === 0 : missingBloodlines <= 1))
     }).sort((left, right) => {
       const leftScore = left.ratings.accuracy * (1 - metaWeight) + left.ratings.pvp * metaWeight
       const rightScore = right.ratings.accuracy * (1 - metaWeight) + right.ratings.pvp * metaWeight
       return rightScore - leftScore
     })
-  }, [builds, filters, prefs.favorites, prefs.metaBias])
+    filteringDuration.current = performance.now() - started
+    return result
+  }, [builds, collection.statuses, debouncedSearch, filters, prefs.favorites, prefs.metaBias])
 
-  const pageSize = prefs.pageSize === 'all' ? filtered.length || 1 : Number(prefs.pageSize)
+  const pageSize = Number(prefs.pageSize)
   const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize))
-  const pageBuilds = prefs.pageSize === 'all' ? filtered : filtered.slice((page - 1) * pageSize, page * pageSize)
+  const pageBuilds = filtered.slice((page - 1) * pageSize, page * pageSize)
 
   useEffect(() => {
     setPage((current) => Math.min(current, pageCount))
@@ -93,23 +114,28 @@ function App() {
   }, [view])
 
   const compared = compareIds.map((id) => builds.find((build) => build.id === id)).filter(Boolean) as CharacterBuild[]
-  const clearFilters = () => { setFilters(emptyFilters); setPage(1) }
-  const hasFilters = Object.values(filters).some(Boolean)
+  const clearFilters = () => { setFilters(emptyFilters); setSearchInput(''); setPage(1) }
+  const hasFilters = Boolean(debouncedSearch) || Object.values(filters).some(Boolean)
   const setFilter = (key: keyof typeof filters, value: string) => {
     setFilters((current) => ({ ...current, [key]: value }))
     setPage(1)
   }
 
-  const toggleCompare = (id: string) => setCompareIds((current) => current.includes(id) ? current.filter((item) => item !== id) : current.length < 3 ? [...current, id] : current)
+  const toggleCompare = useCallback((id: string) => setCompareIds((current) => current.includes(id) ? current.filter((item) => item !== id) : current.length < 3 ? [...current, id] : current), [])
   const randomBuild = () => {
     if (!filtered.length) return
     setSelected(filtered[Math.floor(Math.random() * filtered.length)])
   }
   const duplicate = (build: CharacterBuild) => {
     const copy = structuredClone(build)
-    copy.id = `${build.id}-copy-${Date.now()}`
-    copy.name = `${build.name} Copy`
+    copy.id = createPermanentId('build')
+    copy.versionId = createPermanentId('version')
+    copy.name = createDuplicateName(build.name, builds.map((item) => item.name))
+    copy.buildName = copy.name
     copy.status = 'Draft'
+    copy.createdAt = new Date().toISOString()
+    copy.updatedAt = copy.createdAt
+    copy.changeHistory = []
     add(copy)
     setSelected(copy)
   }
@@ -117,6 +143,8 @@ function App() {
   const deleteBuild = (build: CharacterBuild) => {
     if (!window.confirm(`Delete ${build.name} from this local archive?`)) return
     remove(build.id)
+    setLastDeleted(structuredClone(build))
+    setNotice(`${build.name} deleted.`)
     setCompareIds((current) => current.filter((id) => id !== build.id))
     setSelected(null)
   }
@@ -125,7 +153,7 @@ function App() {
     <div className="pagination">
       <div>
         <span>SHOW</span>
-        {(['12', '24', '48', 'all'] as const).map((size) => <button className={prefs.pageSize === size ? 'active' : ''} key={size} onClick={() => { setPageSize(size); setPage(1) }}>{size === 'all' ? 'ALL' : size}</button>)}
+        {(['12', '24', '48', '96'] as const).map((size) => <button className={prefs.pageSize === size ? 'active' : ''} key={size} onClick={() => { setPageSize(size); setPage(1) }}>{size}</button>)}
       </div>
       <span>{filtered.length ? (page - 1) * pageSize + 1 : 0}—{Math.min(page * pageSize, filtered.length)} OF {filtered.length}</span>
       <div>
@@ -147,13 +175,19 @@ function App() {
           <button className={view === 'gallery' ? 'active' : ''} onClick={() => setView('gallery')}><Grid2X2 size={16} /> Gallery</button>
           <button className={view === 'table' ? 'active' : ''} onClick={() => setView('table')}><Table2 size={16} /> Database</button>
           <button className={view === 'tiers' ? 'active' : ''} onClick={() => setView('tiers')}><Trophy size={16} /> Tier Lab</button>
+          <button className={view === 'workshop' ? 'active' : ''} onClick={() => setView('workshop')}><FlaskConical size={16} /> Workshop</button>
+          <button className={view === 'diagnostics' ? 'active' : ''} onClick={() => setView('diagnostics')}><Bug size={16} /> Diagnostics</button>
           <button className={view === 'about' ? 'active' : ''} onClick={() => setView('about')}><Info size={16} /> About</button>
         </nav>
         <button className="button button--primary add-build" onClick={() => { setEditing(createBlankBuild()); setCreating(true) }}><Plus size={16} /> Add build</button>
       </header>
 
       {view === 'tiers' ? (
-        <main><TierListBoard builds={builds} assignments={prefs.tiers} onAssign={setTier} onOpen={setSelected} /></main>
+        <Suspense fallback={<main className="loading-page">Loading tier lab…</main>}><main><TierListBoard builds={builds} assignments={prefs.tiers} onAssign={setTier} onOpen={setSelected} /></main></Suspense>
+      ) : view === 'workshop' ? (
+        <Suspense fallback={<main className="loading-page">Opening workshop…</main>}><ArchiveWorkshop builds={builds} statuses={collection.statuses} favorites={collection.favorites} onStatus={setBloodlineStatus} onFavorite={toggleBloodlineFavorite} onImport={replaceAll} onCreate={() => { setEditing(createBlankBuild()); setCreating(true) }} /></Suspense>
+      ) : view === 'diagnostics' ? (
+        <Suspense fallback={<main className="loading-page">Reading archive health…</main>}><DiagnosticsPage builds={builds} visibleCount={pageBuilds.length} filteringDuration={filteringDuration.current} /></Suspense>
       ) : view !== 'about' ? (
         <main>
           <section className="archive-hero">
@@ -170,7 +204,7 @@ function App() {
           </section>
 
           <section className="controls-shell">
-            <div className="search-wrap"><Search size={18} /><input aria-label="Search builds" value={filters.search} onChange={(event) => setFilter('search', event.target.value)} placeholder="Search fighter, franchise, tag, Bloodline..." />{filters.search && <button onClick={() => setFilter('search', '')} aria-label="Clear search"><X size={15} /></button>}</div>
+            <div className="search-wrap"><Search size={18} /><input aria-label="Search builds" value={searchInput} onChange={(event) => { setSearchInput(event.target.value); setPage(1) }} placeholder="Search fighter, franchise, tag, Bloodline..." />{searchInput && <button onClick={() => setSearchInput('')} aria-label="Clear search"><X size={15} /></button>}</div>
             <div className="slot-control">
               <span>ACTIVE BLOODLINE SLOTS</span>
               <div>{([2, 3, 4] as SlotLimit[]).map((count) => <button className={slotLimit === count ? 'active' : ''} key={count} onClick={() => setSlotLimit(count)}>{count}</button>)}</div>
@@ -200,6 +234,7 @@ function App() {
             <select aria-label="Filter by Bloodline count" value={filters.slots} onChange={(event) => setFilter('slots', event.target.value)}><option value="">Any slot count</option><option value="2">2 Bloodlines</option><option value="3">3 Bloodlines</option><option value="4">4 Bloodlines</option></select>
             <select aria-label="Filter by build type" value={filters.type} onChange={(event) => setFilter('type', event.target.value)}><option value="">All build types</option>{values.type.map((value) => <option key={value}>{value}</option>)}</select>
             <select aria-label="Filter by effects intensity" value={filters.effects} onChange={(event) => setFilter('effects', event.target.value)}><option value="">Any effects level</option><option>Low</option><option>Medium</option><option>High</option><option>Ridiculous</option></select>
+            <select aria-label="Filter by owned Bloodlines" value={filters.owned} onChange={(event) => setFilter('owned', event.target.value)}><option value="">Any collection readiness</option><option value="makeable">Only builds I can make</option><option value="missing-one">Missing at most one Bloodline</option></select>
             <button className={`favorites-filter ${filters.favorites ? 'active' : ''}`} onClick={() => setFilter('favorites', filters.favorites ? '' : 'only')}><Heart size={13} fill={filters.favorites ? 'currentColor' : 'none'} /> Favorites</button>
             {hasFilters && <button className="clear-filter" onClick={clearFilters}>Clear all</button>}
           </section>
@@ -207,13 +242,15 @@ function App() {
           <div className="results-bar">
             <div><ListFilter size={14} /><strong>{filtered.length}</strong> RESULTS <span>/</span> {slotLimit}-SLOT CONFIGURATION</div>
             <div className="view-switch">
-              <button className={view === 'gallery' ? 'active' : ''} onClick={() => setView('gallery')} aria-label="Gallery view"><Grid2X2 size={16} /></button>
+              <button className={view === 'gallery' && cardMode === 'compact' ? 'active' : ''} onClick={() => { setView('gallery'); setCardMode('compact') }} aria-label="Compact cards"><Grid2X2 size={16} /></button>
+              <button className={view === 'gallery' && cardMode === 'visual' ? 'active' : ''} onClick={() => { setView('gallery'); setCardMode('visual') }} aria-label="Visual cards"><Rows3 size={16} /></button>
               <button className={view === 'table' ? 'active' : ''} onClick={() => setView('table')} aria-label="Table view"><Table2 size={16} /></button>
+              <button className={performanceMode ? 'active' : ''} onClick={() => setPerformanceMode((value) => !value)} aria-label="Toggle virtualized performance mode" title="Paint only cards near the viewport"><Bug size={16} /></button>
             </div>
           </div>
 
           {view === 'gallery'
-            ? <Gallery builds={pageBuilds} slotLimit={slotLimit} compareIds={compareIds} favorites={prefs.favorites} onOpen={setSelected} onCompare={toggleCompare} onFavorite={toggleFavorite} onClear={clearFilters} />
+            ? <ErrorBoundary section="gallery"><Gallery builds={pageBuilds} slotLimit={slotLimit} compareIds={compareIds} favorites={prefs.favorites} onOpen={setSelected} onCompare={toggleCompare} onFavorite={toggleFavorite} onClear={clearFilters} mode={cardMode} performanceMode={performanceMode} /></ErrorBoundary>
             : <BuildTable builds={pageBuilds} slotLimit={slotLimit} onOpen={setSelected} onClear={clearFilters} />}
           {pagination}
         </main>
@@ -230,7 +267,7 @@ function App() {
         </main>
       )}
 
-      <footer className="site-footer"><span>SHINDO CHARACTER BUILD ARCHIVE</span><p>Fan-made database · Balance can change · Data saved locally</p></footer>
+      <footer className="site-footer"><span>SHINDO CHARACTER BUILD ARCHIVE</span><p>Fan-made database · Balance can change · Data saved locally · <a href="https://discord.gg/agarthia" target="_blank" rel="noreferrer">discord.gg/agarthia</a></p></footer>
 
       {compareIds.length > 0 && !compareOpen && (
         <div className="compare-tray">
@@ -258,14 +295,16 @@ function App() {
           onSave={(build) => {
             if (creating) add(build)
             else save(build)
+            setNotice(`${build.name} saved locally.`)
             setSelected(build)
             setEditing(null)
             setCreating(false)
           }}
         />
       )}
-      {compareOpen && <ComparePanel builds={compared} slotLimit={slotLimit} onRemove={toggleCompare} onClose={() => setCompareOpen(false)} />}
+      {compareOpen && <Suspense fallback={null}><ComparePanel builds={compared} slotLimit={slotLimit} onRemove={toggleCompare} onClose={() => setCompareOpen(false)} /></Suspense>}
       {wheelOpen && <WheelModal builds={filtered} onClose={() => setWheelOpen(false)} onOpen={(build) => { setWheelOpen(false); setSelected(build) }} />}
+      {notice && <div className="toast" role="status"><span>{notice}</span>{lastDeleted && <button onClick={() => { add(lastDeleted); setNotice(`${lastDeleted.name} restored.`); setLastDeleted(null) }}>Undo</button>}<button aria-label="Dismiss notification" onClick={() => { setNotice(''); setLastDeleted(null) }}><X size={14} /></button></div>}
     </div>
   )
 }

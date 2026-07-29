@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Save, X } from 'lucide-react'
 import type { CharacterBuild } from '../types'
+import { validateBuildLab } from '../lib/buildLab'
 
 type Props = {
   build: CharacterBuild
@@ -15,6 +16,7 @@ export function BuildEditor({ build, title = 'Edit build', onSave, onClose }: Pr
 
   const set = <K extends keyof CharacterBuild>(key: K, value: CharacterBuild[K]) => setDraft((current) => ({ ...current, [key]: value }))
   const split = (value: string) => value.split(',').map((item) => item.trim()).filter(Boolean)
+  const warnings = validateBuildLab(draft)
 
   return (
     <div className="modal-layer editor-layer" role="dialog" aria-modal="true" aria-label={title}>
@@ -44,7 +46,7 @@ export function BuildEditor({ build, title = 'Edit build', onSave, onClose }: Pr
             <h3>Loadout</h3>
             <div className="bloodline-editor">
               {draft.bloodlines.map((bloodline, index) => (
-                <div key={index}>
+                <div key={bloodline.id}>
                   <b>0{index + 1}</b>
                   <input aria-label={`Bloodline ${index + 1}`} value={bloodline.name} onChange={(e) => set('bloodlines', draft.bloodlines.map((item, i) => i === index ? { ...item, name: e.target.value } : item))} />
                   <input aria-label={`Bloodline ${index + 1} purpose`} value={bloodline.purpose} onChange={(e) => set('bloodlines', draft.bloodlines.map((item, i) => i === index ? { ...item, purpose: e.target.value } : item))} />
@@ -72,7 +74,7 @@ export function BuildEditor({ build, title = 'Edit build', onSave, onClose }: Pr
             <h3>Exact hotbar</h3>
             <div className="hotbar-editor">
               {draft.hotbar.map((slot, index) => (
-                <div key={`${slot.key}-${index}`}>
+                <div key={slot.id}>
                   <kbd>{slot.key}</kbd>
                   <input aria-label={`${slot.key} ability`} value={slot.ability} onChange={(e) => set('hotbar', draft.hotbar.map((item, i) => i === index ? { ...item, ability: e.target.value } : item))} />
                   <input aria-label={`${slot.key} source`} value={slot.source} onChange={(e) => set('hotbar', draft.hotbar.map((item, i) => i === index ? { ...item, source: e.target.value } : item))} />
@@ -88,6 +90,7 @@ export function BuildEditor({ build, title = 'Edit build', onSave, onClose }: Pr
             <label>Notes<textarea value={draft.notes} onChange={(e) => set('notes', e.target.value)} /></label>
           </section>
         </div>
+        {warnings.length > 0 && <div className="editor-warnings" role="status">{warnings.map((warning) => <span key={warning}>{warning}</span>)}</div>}
         <footer>
           <span>Changes are stored only in this browser.</span>
           <div><button type="button" className="button button--outline" onClick={onClose}>Cancel</button><button className="button button--primary" type="submit"><Save size={15} /> Save build</button></div>

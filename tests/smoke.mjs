@@ -34,13 +34,15 @@ await page.screenshot({ path: path.join(artifacts, 'desktop-wheel.png'), fullPag
 await page.locator('.wheel-panel .icon-button').click()
 
 await page.getByLabel('Search builds').fill('James Lee')
+await page.waitForTimeout(250)
 await expectCount(page.locator('.character-card'), 1, 'search results')
-await page.getByRole('button', { name: 'View build' }).click()
+await page.getByRole('button', { name: 'Quick view James Lee' }).click()
 await page.getByRole('dialog', { name: 'James Lee build details' }).waitFor()
 await page.screenshot({ path: path.join(artifacts, 'desktop-detail.png'), fullPage: false })
 await page.getByRole('button', { name: 'Edit build' }).click()
 await page.getByLabel('Notes').fill('QA persistence verified.')
 await page.getByRole('button', { name: 'Save build' }).click()
+await page.waitForTimeout(250)
 const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('shindo-build-archive:v1') ?? '[]'))
 if (!stored.find((build) => build.id === 'james-lee' && build.notes === 'QA persistence verified.')) {
   throw new Error('localStorage edit did not persist')
@@ -66,17 +68,27 @@ await page.getByRole('button', { name: 'Tier Lab' }).click()
 await expectCount(page.locator('.tier-chip'), 90, 'tier lab character chips')
 await page.screenshot({ path: path.join(artifacts, 'desktop-tier-lab.png'), fullPage: false })
 
-await page.setViewportSize({ width: 390, height: 844 })
 await page.getByRole('button', { name: 'Gallery', exact: true }).click()
+for (const width of [1366, 1920, 2560]) {
+  await page.setViewportSize({ width, height: 1000 })
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)
+  if (overflow) throw new Error(`desktop page has horizontal overflow at ${width}px`)
+}
+
+for (const width of [320, 375, 430]) {
+  await page.setViewportSize({ width, height: 844 })
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)
+  if (overflow) throw new Error(`mobile page has horizontal overflow at ${width}px`)
+}
+await page.setViewportSize({ width: 375, height: 844 })
 await page.screenshot({ path: path.join(artifacts, 'mobile-home.png'), fullPage: true })
-const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)
-if (overflow) throw new Error('mobile page has horizontal document overflow')
 if (errors.length) throw new Error(`console errors: ${errors.join(' | ')}`)
 
 console.log(JSON.stringify({
   url: page.url(),
   desktopViewport: '1440x1000',
-  mobileViewport: '390x844',
+  mobileViewports: ['320x844', '375x844', '430x844'],
+  desktopViewports: ['1366x1000', '1920x1000', '2560x1000'],
   cards: 24,
   tableRows: 24,
   tierCharacters: 90,

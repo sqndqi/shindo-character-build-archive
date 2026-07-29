@@ -456,3 +456,124 @@ kbd { min-width: 26px; height: 26px; padding: 0 7px; display: inline-grid; place
   .wheel-panel { max-height: 100vh; height: 100vh; border: 0; }
   .wheel-stage { min-height: 420px; }
 }
+
+/* Performance and gallery redesign */
+.gallery-grid--compact { grid-template-columns: repeat(auto-fit, minmax(min(290px,100%), 1fr)); gap: 14px; }
+.gallery-grid--visual { grid-template-columns: repeat(auto-fit, minmax(min(330px,100%), 1fr)); gap: 18px; }
+.gallery-grid--virtualized .character-card { content-visibility: auto; contain-intrinsic-size: 420px; }
+.character-card { min-width: 0; transition: transform 180ms ease, border-color 180ms ease; }
+.character-card:hover { transform: translateY(-2px); box-shadow: none; }
+.character-card--compact .character-card__visual { aspect-ratio: 16 / 10; }
+.character-card--visual .character-card__visual { aspect-ratio: 4 / 3; }
+.character-card__visual > .portrait-frame { position: absolute; inset: 0; }
+.portrait-frame { position: relative; display: block; width: 100%; height: 100%; overflow: hidden; background: #151515; }
+.portrait-frame img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: top center; opacity: 0; transition: opacity 180ms ease, transform 180ms ease; }
+.portrait-frame.is-loaded img { opacity: 1; }
+.portrait-skeleton { position: absolute; inset: 0; background: linear-gradient(100deg,#151515 25%,#202020 45%,#151515 65%); background-size: 200% 100%; animation: skeleton-shift 1.1s linear infinite; }
+.portrait-frame.is-loaded .portrait-skeleton { display: none; }
+@keyframes skeleton-shift { to { background-position: -200% 0; } }
+.character-card:hover .portrait-frame img { transform: scale(1.015); }
+.character-card__identity { min-width: 0; }
+.character-card__identity h3 { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: clamp(24px,2vw,31px); }
+.character-card__identity p { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.character-card__body { padding: 13px 15px 12px; }
+.character-card--compact .tag-row { display: none; }
+.card-build-line { grid-template-columns: 92px 1fr; padding: 9px 0; }
+.card-build-line strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bloodline-chips { padding: 10px 0 2px; display: flex; gap: 4px; overflow: hidden; }
+.bloodline-chips span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 4px 6px; border: 1px solid #303030; color: #898989; font-size: 7px; }
+.card-scores { grid-template-columns: repeat(3,1fr); gap: 10px; padding: 11px 0; }
+.filter-row { position: sticky; top: 72px; z-index: 20; background: rgba(9,9,9,.97); }
+.portrait-fallback strong { color: #8c8c8c; font: 500 38px/1 Impact,sans-serif; letter-spacing: .08em; }
+.detail-hero > .portrait-frame { position: absolute; inset: 0; }
+.detail-hero > .portrait-frame img { object-position: center 18%; filter: saturate(.75) contrast(1.1); }
+.compare-character > .portrait-frame, .wheel-result > .portrait-frame { width: 150px; height: 190px; }
+.tier-chip__portrait .portrait-frame { width: 100%; height: 100%; }
+
+.diagnostics-page { padding: 80px 0 100px; }
+.systems-hero { padding: 20px 0 45px; border-bottom: 1px solid #2b2b2b; }
+.systems-hero h1 { margin: 15px 0; font: 400 clamp(48px,7vw,92px)/.9 Impact,sans-serif; text-transform: uppercase; }
+.systems-hero h1 i { color: var(--red); font-style: normal; }
+.systems-hero p { max-width: 700px; color: #999; line-height: 1.7; }
+.diagnostic-grid { margin-top: 24px; display: grid; grid-template-columns: repeat(5,1fr); border: 1px solid #2d2d2d; }
+.diagnostic-grid article { min-height: 105px; padding: 18px; display: grid; align-content: space-between; border-right: 1px solid #2d2d2d; border-bottom: 1px solid #2d2d2d; }
+.diagnostic-grid span, .performance-panel span { color: #777; font-size: 8px; letter-spacing: .12em; text-transform: uppercase; }
+.diagnostic-grid strong { font: 400 28px/1 Impact,sans-serif; }
+.performance-panel { margin-top: 16px; padding: 16px; display: flex; align-items: center; gap: 12px; border: 1px solid #2d2d2d; background: #101010; }
+.performance-panel > div { min-width: 120px; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 5px 8px; }
+.performance-panel > div svg { grid-row: 1 / 3; color: var(--red); }
+.performance-panel strong { font: 700 13px/1 monospace; }
+.performance-panel .button { margin-left: auto; }
+.diagnostic-details { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr auto; gap: 12px; }
+.diagnostic-details article { padding: 18px; border: 1px solid #2d2d2d; }
+.diagnostic-details h2 { margin: 0 0 8px; font-size: 14px; }
+.diagnostic-details p { margin: 0; color: #888; font-size: 11px; line-height: 1.6; }
+.analysis-summary { display: grid; grid-template-columns: repeat(4,1fr); border: 1px solid #303030; }
+.analysis-summary article { min-height: 85px; padding: 15px; display: grid; align-content: space-between; border-right: 1px solid #303030; }
+.analysis-summary span { color: #777; font-size: 8px; letter-spacing: .12em; }
+.analysis-summary strong { font: 400 24px/1 Impact,sans-serif; }
+.analysis-warnings { margin: 12px 0; display: grid; gap: 6px; }
+.analysis-warnings p { margin: 0; padding: 10px 12px; border-left: 2px solid #d64a56; background: #151112; color: #aaa; font-size: 10px; }
+.editor-warnings { padding: 10px 20px; display: flex; flex-wrap: wrap; gap: 6px; border-top: 1px solid #3b282a; background: #171011; }
+.editor-warnings span { padding: 6px 8px; border: 1px solid #603139; color: #ff9ca5; font-size: 8px; }
+.loading-page { min-height: 70vh; display: grid; place-items: center; color: #777; }
+.recovery-page { min-height: 60vh; padding: 80px 0; display: grid; place-content: center; justify-items: start; }
+.recovery-page span { color: var(--red); font: 800 9px/1 monospace; letter-spacing: .14em; }
+.recovery-page h1 { max-width: 720px; margin: 14px 0; font: 400 clamp(42px,6vw,80px)/.95 Impact,sans-serif; text-transform: uppercase; }
+.recovery-page p { max-width: 600px; color: #999; line-height: 1.7; }
+.site-footer a { color: #ef5360; }
+.toast { position: fixed; right: 20px; bottom: 20px; z-index: 90; min-width: 280px; min-height: 48px; padding: 10px 12px 10px 16px; display: flex; align-items: center; gap: 12px; border: 1px solid #4c3336; background: #171112; box-shadow: 0 12px 35px #000; color: #ddd; font-size: 10px; }
+.toast span { flex: 1; }
+.toast button { border: 0; background: none; color: #ff7a86; font-weight: 800; cursor: pointer; }
+.workshop-page { padding: 80px 0 100px; }
+.workshop-metrics { margin-top: 24px; display: grid; grid-template-columns: repeat(3,1fr); border: 1px solid #303030; }
+.workshop-metrics article { min-height: 125px; padding: 20px; display: grid; align-content: space-between; border-right: 1px solid #303030; }
+.workshop-metrics span, .workshop-metrics small { color: #777; font-size: 8px; letter-spacing: .11em; }
+.workshop-metrics strong { font: 400 34px/1 Impact,sans-serif; }
+.workshop-actions { margin: 16px 0; padding: 14px; display: flex; align-items: center; gap: 8px; border: 1px solid #303030; background: #101010; }
+.workshop-actions label { cursor: pointer; }
+.workshop-actions input[type=file] { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.workshop-actions p { margin-left: auto; color: #aaa; font-size: 10px; }
+.bloodline-vault { border: 1px solid #303030; }
+.bloodline-vault > header { min-height: 66px; padding: 12px 15px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #303030; }
+.bloodline-vault > header div { display: flex; align-items: center; gap: 9px; }
+.bloodline-vault h2 { margin: 0; font-size: 14px; }
+.bloodline-vault header input { width: min(320px,45%); height: 38px; padding: 0 12px; border: 1px solid #333; background: #111; color: white; }
+.bloodline-vault > div { display: grid; grid-template-columns: repeat(3,1fr); }
+.bloodline-vault article { min-width: 0; min-height: 58px; padding: 8px 10px; display: grid; grid-template-columns: 32px 1fr 100px; align-items: center; gap: 8px; border-right: 1px solid #292929; border-bottom: 1px solid #292929; }
+.bloodline-vault article button { width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid #333; background: #111; color: #777; }
+.bloodline-vault article button.is-favorite { color: #ff5965; }
+.bloodline-vault article strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 10px; }
+.bloodline-vault article select { height: 32px; border: 1px solid #333; background: #151515; color: #aaa; font-size: 9px; }
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid #ff6874; outline-offset: 3px; }
+
+@media (max-width: 900px) {
+  .diagnostic-grid { grid-template-columns: repeat(2,1fr); }
+  .performance-panel { align-items: stretch; flex-wrap: wrap; }
+  .diagnostic-details { grid-template-columns: 1fr; }
+  .site-header nav { overflow-x: auto; justify-content: flex-start; }
+  .bloodline-vault > div { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 560px) {
+  .gallery-grid--compact, .gallery-grid--visual { grid-template-columns: 1fr; }
+  .filter-row { top: 62px; }
+  .diagnostic-grid { grid-template-columns: 1fr 1fr; }
+  .systems-hero h1 { font-size: 46px; }
+  .site-header nav button { min-width: 42px; overflow: hidden; color: transparent; gap: 0; }
+  .site-header nav button svg { color: #888; flex: 0 0 auto; }
+  .site-header nav button.active svg { color: white; }
+  .archive-hero { overflow: hidden; }
+  .archive-stats { width: 100%; grid-template-columns: repeat(3,minmax(0,1fr)); overflow: hidden; }
+  .archive-stats div { min-width: 0; padding: 12px 8px; }
+  .results-bar { height: auto; min-height: 82px; align-items: flex-start; flex-direction: column; justify-content: center; gap: 10px; }
+  .view-switch { max-width: 100%; }
+  .workshop-metrics { grid-template-columns: 1fr; }
+  .workshop-actions { align-items: stretch; flex-direction: column; }
+  .bloodline-vault > header { align-items: stretch; flex-direction: column; gap: 10px; }
+  .bloodline-vault header input { width: 100%; }
+  .bloodline-vault > div { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portrait-skeleton { animation: none; }
+}

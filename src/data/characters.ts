@@ -1,6 +1,8 @@
 import type { CharacterBuild, HotbarSlot } from '../types'
+import { createPermanentId } from '../lib/identity'
 
 const keys = ['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q']
+const missingPortraitIds = new Set(['jinhyeok-murim', 'lee-gwak', 'vikir', 'seo-gangrim', 'lucas-traumen', 'rania', 'karsia', 'yi-zaha'])
 
 type Seed = {
   id: string
@@ -50,6 +52,7 @@ function hotbarFor(seed: Seed): HotbarSlot[] {
     const pool = abilityNames[source] ?? [`${source} Breaker`, `${source} Drive`, `${source} Counter`]
     const role = ['Opener', 'Extender', 'Launcher', 'Pressure', 'Counter', 'Finisher'][index % 6]
     return {
+      id: `${seed.id}-hotbar-${key}`,
       key,
       ability: key === 'C' ? `${seed.cMode ?? seed.bloodlines[0]} Mode` : key === 'Z' ? `${seed.zMode ?? 'Mobility'} Mode` : key === 'Q' ? `${seed.weapon ?? 'Perfect Guard'} Technique` : pool[index % pool.length],
       source: key === 'C' ? 'C-Mode' : key === 'Z' ? 'Z-Mode' : key === 'Q' ? (seed.weapon ?? 'Combat Art') : source,
@@ -86,12 +89,15 @@ function makeBuild(seed: Seed): CharacterBuild {
         : visuals < 8 ? 'Low' : 'Medium')
   return {
     ...seed,
+    characterId: `character-${seed.id.replace(/-(king-grey|tools|aura)$/, '')}`,
+    versionId: `version-${seed.id}`,
+    buildName: seed.version,
     franchise: seed.franchise ?? franchiseFor(seed.series),
     combatTags,
     customTags: [],
     effectsIntensity,
-    image: `/characters/${seed.id}.jpg`,
-    bloodlines: seed.bloodlines.map((name, index) => ({ name, purpose: purpose[index], useMode: name === (seed.cMode ?? seed.bloodlines[0]) })),
+    image: missingPortraitIds.has(seed.id) ? '' : `/characters/${seed.id}.jpg`,
+    bloodlines: seed.bloodlines.map((name, index) => ({ id: `${seed.id}-bloodline-${index + 1}`, name, purpose: purpose[index], useMode: name === (seed.cMode ?? seed.bloodlines[0]) })),
     cMode: seed.cMode ?? seed.bloodlines[0],
     zMode: seed.zMode ?? 'Demon Gate Spirit',
     weapon: seed.weapon ?? 'None',
@@ -123,6 +129,13 @@ function makeBuild(seed: Seed): CharacterBuild {
     },
     notes: `${seed.cMode ?? seed.bloodlines[0]} is the build's main identity. Balance patches may change exact move value.`,
     status: seed.status ?? 'Complete',
+    gameUpdate: 'Unverified',
+    lastVerifiedUpdate: '',
+    verificationStatus: 'Needs Retesting',
+    createdAt: '2026-07-29T00:00:00.000Z',
+    updatedAt: '2026-07-29T00:00:00.000Z',
+    testing: { status: 'Untested', contexts: [], tester: '', testDate: '', notes: '' },
+    changeHistory: [],
   }
 }
 
@@ -269,17 +282,24 @@ export const originalCharacters: CharacterBuild[] = seeds.map(makeBuild)
 
 export function createBlankBuild(): CharacterBuild {
   const base = structuredClone(originalCharacters[0])
-  const id = `custom-${Date.now()}`
+  const id = createPermanentId('custom')
+  const now = new Date().toISOString()
   return {
     ...base,
     id,
+    characterId: createPermanentId('character'),
+    versionId: createPermanentId('version'),
+    buildName: 'Original Build',
     name: 'Untitled Fighter',
     series: 'Custom',
     version: 'Original Build',
-    image: `/characters/${id}.jpg`,
+    image: '',
     description: 'Describe how this fighter approaches pressure, movement, and defense.',
     archetype: ['Custom'],
     status: 'Draft',
     notes: 'New local build.',
+    createdAt: now,
+    updatedAt: now,
+    changeHistory: [],
   }
 }

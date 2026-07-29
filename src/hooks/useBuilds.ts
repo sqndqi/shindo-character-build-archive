@@ -1,52 +1,35 @@
 import { useCallback, useEffect, useState } from 'react'
 import { originalCharacters } from '../data/characters'
+import { migrateStoredBuilds } from '../services/migration'
+import { flushBuildSave, scheduleBuildSave } from '../services/storage'
 import type { CharacterBuild } from '../types'
 
-const STORAGE_KEY = 'shindo-build-archive:v1'
-
-function normalizeBuild(build: CharacterBuild): CharacterBuild {
-  const original = originalCharacters.find((item) => item.id === build.id)
-  return {
-    ...original,
-    ...build,
-    franchise: build.franchise ?? original?.franchise ?? build.series,
-    combatTags: build.combatTags ?? original?.combatTags ?? ['Martial arts'],
-    customTags: build.customTags ?? [],
-    effectsIntensity: build.effectsIntensity ?? original?.effectsIntensity ?? 'Medium',
-    ratings: {
-      ...(original?.ratings ?? {}),
-      ...build.ratings,
-      aura: build.ratings?.aura ?? original?.ratings.aura ?? 8,
-    },
-  } as CharacterBuild
-}
-
-function loadBuilds(): CharacterBuild[] {
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY)
-    if (!saved) return structuredClone(originalCharacters)
-    const local = (JSON.parse(saved) as CharacterBuild[]).map(normalizeBuild)
-    const localIds = new Set(local.map((build) => build.id))
-    const additions = originalCharacters.filter((build) => !localIds.has(build.id))
-    return [...local, ...structuredClone(additions)]
-  } catch {
-    return structuredClone(originalCharacters)
-  }
-}
-
 export function useBuilds() {
-  const [builds, setBuilds] = useState<CharacterBuild[]>(loadBuilds)
+  const [builds, setBuilds] = useState<CharacterBuild[]>(migrateStoredBuilds)
 
   useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(builds))
-    } catch {
-      // The app remains usable if storage is full or unavailable.
+    scheduleBuildSave(builds)
+    return () => {
+      flushBuildSave()
     }
   }, [builds])
 
   const save = useCallback((build: CharacterBuild) => {
-    setBuilds((current) => current.map((item) => item.id === build.id ? build : item))
+    setBuilds((current) => current.map((item) => {
+      if (item.id !== build.id) return item
+      const changed = ['name', 'version', 'bloodlines', 'elements', 'cMode', 'zMode', 'combatArt', 'weapon', 'notes']
+        .find((field) => JSON.stringify(item[field as keyof CharacterBuild]) !== JSON.stringify(build[field as keyof CharacterBuild]))
+      return {
+        ...structuredClone(build),
+        updatedAt: new Date().toISOString(),
+        changeHistory: changed ? [...item.changeHistory, {
+          field: changed,
+          previousValue: JSON.stringify(item[changed as keyof CharacterBuild]),
+          newValue: JSON.stringify(build[changed as keyof CharacterBuild]),
+          date: new Date().toISOString(),
+        }] : item.changeHistory,
+      }
+    }))
   }, [])
 
   const add = useCallback((build: CharacterBuild) => setBuilds((current) => [...current, build]), [])
@@ -56,6 +39,7 @@ export function useBuilds() {
     if (original) setBuilds((current) => current.map((item) => item.id === id ? structuredClone(original) : item))
   }, [])
   const resetAll = useCallback(() => setBuilds(structuredClone(originalCharacters)), [])
+  const replaceAll = useCallback((next: CharacterBuild[]) => setBuilds(structuredClone(next)), [])
 
-  return { builds, save, add, remove, reset, resetAll }
+  return { builds, save, add, remove, reset, resetAll, replaceAll }
 }

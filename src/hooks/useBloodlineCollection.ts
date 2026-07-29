@@ -1,0 +1,22 @@
+import { useCallback, useEffect, useState } from 'react'
+import { readStorage, writeStorage } from '../services/storage'
+
+export type OwnershipStatus = 'Owned' | 'Not owned' | 'Locked' | 'Wanted'
+const KEY = 'shindo-build-archive:bloodlines:v1'
+
+type CollectionState = { statuses: Record<string, OwnershipStatus>; favorites: string[] }
+const defaults: CollectionState = { statuses: {}, favorites: [] }
+
+export function useBloodlineCollection() {
+  const [collection, setCollection] = useState<CollectionState>(() => readStorage(KEY, defaults))
+  useEffect(() => { writeStorage(KEY, collection) }, [collection])
+  const setStatus = useCallback((name: string, status: OwnershipStatus) => setCollection((current) => ({
+    ...current,
+    statuses: { ...current.statuses, [name]: status },
+  })), [])
+  const toggleFavorite = useCallback((name: string) => setCollection((current) => ({
+    ...current,
+    favorites: current.favorites.includes(name) ? current.favorites.filter((item) => item !== name) : [...current.favorites, name],
+  })), [])
+  return { collection, setStatus, toggleFavorite }
+}

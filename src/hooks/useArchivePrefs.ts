@@ -6,7 +6,7 @@ const PREFS_KEY = 'shindo-build-archive:prefs:v1'
 type ArchivePrefs = {
   favorites: string[]
   tiers: Record<string, TierRank>
-  pageSize: '12' | '24' | '48' | 'all'
+  pageSize: '12' | '24' | '48' | '96'
   metaBias: number
 }
 
@@ -20,7 +20,8 @@ const defaults: ArchivePrefs = {
 export function useArchivePrefs() {
   const [prefs, setPrefs] = useState<ArchivePrefs>(() => {
     try {
-      return { ...defaults, ...JSON.parse(localStorage.getItem(PREFS_KEY) ?? '{}') }
+      const saved = JSON.parse(localStorage.getItem(PREFS_KEY) ?? '{}')
+      return { ...defaults, ...saved, pageSize: saved.pageSize === 'all' ? '96' : saved.pageSize ?? defaults.pageSize }
     } catch {
       return defaults
     }

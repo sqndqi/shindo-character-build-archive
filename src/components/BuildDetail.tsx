@@ -3,6 +3,7 @@ import { Copy, Pencil, RotateCcw, Trash2, X } from 'lucide-react'
 import type { CharacterBuild, SlotLimit } from '../types'
 import { Portrait } from './Portrait'
 import { Score } from './Score'
+import { analyzeBuild, buildCompletion, hotbarText } from '../lib/buildAnalysis'
 
 type Props = {
   build: CharacterBuild
@@ -23,6 +24,8 @@ export function BuildDetail({ build, slotLimit, onClose, onEdit, onDuplicate, on
 
   const active = build.slotAlternatives[slotLimit === 2 ? 'twoSlots' : slotLimit === 3 ? 'threeSlots' : 'fourSlots']
   const ratingEntries = Object.entries(build.ratings).filter(([key]) => key !== 'difficulty')
+  const analysis = analyzeBuild(build)
+  const completion = buildCompletion(build)
 
   return (
     <div className="modal-layer" role="dialog" aria-modal="true" aria-label={`${build.name} build details`}>
@@ -58,7 +61,7 @@ export function BuildDetail({ build, slotLimit, onClose, onEdit, onDuplicate, on
                 <span>Bloodlines</span>
                 <div className="bloodline-list">
                   {Array.from({ length: slotLimit }).map((_, index) => (
-                    <div key={index}><b>0{index + 1}</b><strong>{active[index] ?? 'Open slot'}</strong><small>{build.bloodlines.find((item) => item.name === active[index])?.purpose ?? 'Flexible utility'}</small></div>
+                    <div key={build.bloodlines[index]?.id ?? active[index]}><b>0{index + 1}</b><strong>{active[index] ?? 'Open slot'}</strong><small>{build.bloodlines.find((item) => item.name === active[index])?.purpose ?? 'Flexible utility'}</small></div>
                   ))}
                 </div>
               </div>
@@ -78,10 +81,22 @@ export function BuildDetail({ build, slotLimit, onClose, onEdit, onDuplicate, on
           </section>
 
           <section>
+            <div className="section-heading"><div><span className="section-index">02A</span><h3>Build analysis assistant</h3></div><p>Rule-based guidance, not an exact game simulator.</p></div>
+            <div className="analysis-summary">
+              <article><span>SYNERGY</span><strong>{analysis.score}/10</strong></article>
+              <article><span>COMPLETION</span><strong>{completion}%</strong></article>
+              <article><span>BLOCK BREAKS</span><strong>{analysis.counts.blockBreaks}</strong></article>
+              <article><span>DEFENSIVE OPTIONS</span><strong>{analysis.counts.defense}</strong></article>
+            </div>
+            <div className="analysis-warnings">{analysis.warnings.length ? analysis.warnings.map((warning) => <p key={warning}>{warning}</p>) : <p>No major role-overlap warnings detected.</p>}</div>
+            <button className="button button--outline" onClick={() => navigator.clipboard.writeText(hotbarText(build))}>Copy plain-text hotbar</button>
+          </section>
+
+          <section>
             <div className="section-heading"><div><span className="section-index">02</span><h3>Exact hotbar</h3></div></div>
             <div className="hotbar-grid">
               {build.hotbar.map((slot) => (
-                <article className="hotbar-slot" key={slot.key}>
+                <article className="hotbar-slot" key={slot.id}>
                   <div className="hotbar-key">{slot.key}</div>
                   <div>
                     <span>{slot.source}</span>
