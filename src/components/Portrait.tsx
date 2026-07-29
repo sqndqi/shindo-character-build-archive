@@ -9,6 +9,7 @@ type Props = {
 
 export function Portrait({ src, alt, className = '' }: Props) {
   const [failed, setFailed] = useState(false)
+  const resolvedSrc = src.startsWith('/') ? `${import.meta.env.BASE_URL}${src.slice(1)}` : src
 
   if (failed || !src) {
     return (
@@ -19,5 +20,5 @@ export function Portrait({ src, alt, className = '' }: Props) {
     )
   }
 
-  return <img className={className} src={src} alt={alt} onError={() => setFailed(true)} />
+  return <img className={className} src={resolvedSrc} alt={alt} onError={() => setFailed(true)} />
 }
