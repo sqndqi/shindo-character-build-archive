@@ -1,4 +1,4 @@
-import { existsSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { completeRoster, restoredDraftBuilds } from '../src/data/restoredRoster'
@@ -11,6 +11,9 @@ import { comparePublicationStatus } from '../src/lib/publication'
 import { formatSuggestion } from '../src/repositories/SuggestionRepository'
 import { buildRepository } from '../src/repositories/BuildRepository'
 import { migratePublicData, PUBLIC_SCHEMA_VERSION } from '../src/services/publicMigration'
+import { defaultArchivePrefs, mergeArchivePrefs } from '../src/hooks/useArchivePrefs'
+import { auditVariant, findBloodlineFamilyDuplicates } from '../src/lib/buildQuality'
+import { resolveShindoAsset, shindoAssetManifest } from '../src/data/shindoAssetManifest'
 
 describe('full restored roster', () => {
   it('contains exactly 100 characters after preserving the original 90', () => {
@@ -175,8 +178,94 @@ describe('suggestions, migration and identity', () => {
     expect(migratePublicData().migrated).toBe(false)
     expect(localStorage.getItem('shindo-build-archive:public-schema-version')).toBe(String(PUBLIC_SCHEMA_VERSION))
   })
+  it('preserves inventory, favorites, and tier-list storage during migration', () => {
+    const inventory = JSON.stringify({ statuses: { Akuma: 'Owned' }, elementStatuses: { Fire: 'Owned' } })
+    const preferences = JSON.stringify({ favorites: ['james-lee'], theme: 'chakra-blue' })
+    const tiers = JSON.stringify([{ id: 'personal-tier', assignments: { 'james-lee': 's' } }])
+    localStorage.setItem('shindo-build-archive:bloodlines:v1', inventory)
+    localStorage.setItem('shindo-build-archive:prefs:v1', preferences)
+    localStorage.setItem('shindo-build-archive:tier-lists:v2', tiers)
+    migratePublicData()
+    expect(localStorage.getItem('shindo-build-archive:bloodlines:v1')).toBe(inventory)
+    expect(localStorage.getItem('shindo-build-archive:prefs:v1')).toBe(preferences)
+    expect(localStorage.getItem('shindo-build-archive:tier-lists:v2')).toBe(tiers)
+  })
   it('normalizes copy suffixes and creates unique IDs', () => {
     expect(createDuplicateName('Sung Jinwoo Copy Copy Copy', ['Sung Jinwoo', 'Sung Jinwoo Copy'])).toBe('Sung Jinwoo Copy 2')
     expect(new Set(Array.from({ length: 500 }, () => createPermanentId())).size).toBe(500)
+  })
+})
+
+describe('Shindo identity, assets, and build-quality checks', () => {
+  it('defaults to Shindo Green and preserves an existing theme preference', () => {
+    expect(defaultArchivePrefs.theme).toBe('shindo-green')
+    expect(mergeArchivePrefs({ theme: 'chakra-blue', favorites: ['james-lee'] })).toMatchObject({ theme: 'chakra-blue', favorites: ['james-lee'] })
+  })
+  it('defines all three themes through shared CSS variables', () => {
+    const css = readFileSync(resolve('src/index.css'), 'utf8')
+    expect(css).toContain('[data-theme="shindo-green"]')
+    expect(css).toContain('[data-theme="chakra-blue"]')
+    expect(css).toContain('[data-theme="ember-crimson"]')
+    expect(css).toContain('--accent: #72d64b')
+  })
+  it('has a unique, locally cached direct-asset manifest', () => {
+    expect(new Set(shindoAssetManifest.map((entry) => entry.id)).size).toBe(shindoAssetManifest.length)
+    const available = shindoAssetManifest.filter((entry) => entry.status === 'Available')
+    expect(available.length).toBeGreaterThan(75)
+    expect(available.every((entry) => entry.localPath.startsWith('/shindo-icons/'))).toBe(true)
+    expect(available.every((entry) => existsSync(resolve('public', entry.localPath.slice(1))))).toBe(true)
+    expect(available.every((entry) => !entry.localPath.startsWith('http'))).toBe(true)
+  })
+  it.each([
+    ['Dio-Senko-Rose', 'Bloodline'],
+    ['Gale', 'Element'],
+    ['Kor Tailed Spirit Generation 2', 'Mode'],
+  ] as const)('resolves the %s %s icon', (name, type) => {
+    const asset = resolveShindoAsset(name, type)
+    expect(asset?.status).not.toBe('Missing')
+    expect(asset?.localPath).toMatch(/^\/shindo-icons\//)
+  })
+  it('keeps missing assets as missing instead of assigning an unrelated icon', () => {
+    const asset = resolveShindoAsset('Definitely Not A Shindo Item', 'Bloodline')
+    expect(asset).toBeUndefined()
+  })
+  it('maps aliases without duplicate asset IDs', () => {
+    expect(resolveShindoAsset('Dio Senko Rose', 'Bloodline')?.id).toBe(resolveShindoAsset('Dio-Senko-Rose', 'Bloodline')?.id)
+  })
+  it('uses direct icons in cards, details, inventory, and the hotbar', () => {
+    for (const file of ['CharacterCard.tsx', 'BuildDetail.tsx', 'ArchiveWorkshop.tsx']) {
+      expect(readFileSync(resolve('src/components', file), 'utf8')).toContain('ShindoIcon')
+    }
+  })
+  it('detects Bloodline recolor families without automatically declaring them invalid', () => {
+    const luffy = animeMangaBuilds.find((build) => build.id === 'anime-monkey-d-luffy-snakeman')!
+    expect(findBloodlineFamilyDuplicates(luffy.variants.find((variant) => variant.type === 'Primary')!)).toContainEqual({ family: 'snakeman', bloodlines: ['SnakeMan', 'SnakeMan-Platinum'] })
+  })
+  it('detects filler equipment and simultaneous C/Z recommendations', () => {
+    const naruto = animeMangaBuilds.find((build) => build.id === 'anime-naruto-uzumaki')!
+    const variant = structuredClone(naruto.variants.find((item) => item.type === 'Primary')!)
+    variant.consumable = 'Chi Pot'
+    const codes = auditVariant(variant).map((issue) => issue.code)
+    expect(codes).toContain('filler-consumable')
+    expect(codes).toContain('mode-compatibility')
+  })
+  it('rejects duplicate hotbar moves and unequipped sources', () => {
+    const base = structuredClone(curatedBuilds[0].variants[0])
+    base.hotbar[1].ability = base.hotbar[0].ability
+    base.hotbar[1].source = 'Unequipped-Fake'
+    const codes = auditVariant(base).map((issue) => issue.code)
+    expect(codes).toContain('duplicate-hotbar-move')
+    expect(codes).toContain('unequipped-hotbar-source')
+  })
+  it('allows an intentionally empty control', () => {
+    const base = structuredClone(curatedBuilds[0].variants[0])
+    base.hotbar[10] = { ...base.hotbar[10], source: 'None', ability: 'Not used in this variant' }
+    expect(auditVariant(base).filter((issue) => issue.code === 'unequipped-hotbar-source' && issue.message.includes('Not used'))).toHaveLength(0)
+  })
+  it('keeps James Lee core unchanged and public authoring absent', () => {
+    expect(curatedBuilds[0].variants[0].bloodlines.map((slot) => slot.name)).toEqual(['Dio-Senko-Rose', 'Bruce-Kenichi', 'Pika-Senko', 'Doku-Tengoku'])
+    const app = readFileSync(resolve('src/App.tsx'), 'utf8')
+    expect(app).not.toMatch(/BuildEditor|Add Build|delete official|export official/i)
+    expect(existsSync(resolve('README.md'))).toBe(false)
   })
 })

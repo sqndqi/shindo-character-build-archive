@@ -4,8 +4,15 @@ import { readStorage, writeStorage } from '../services/storage'
 export type OwnershipStatus = 'Owned' | 'Not owned' | 'Locked' | 'Wanted'
 const KEY = 'shindo-build-archive:bloodlines:v1'
 
-type CollectionState = { statuses: Record<string, OwnershipStatus>; elementStatuses: Record<string, OwnershipStatus>; favorites: string[] }
-const defaults: CollectionState = { statuses: {}, elementStatuses: {}, favorites: [] }
+export type CollectionCategory = 'Bloodline' | 'Element' | 'Mode' | 'Equipment'
+export type CollectionState = {
+  statuses: Record<string, OwnershipStatus>
+  elementStatuses: Record<string, OwnershipStatus>
+  modeStatuses: Record<string, OwnershipStatus>
+  equipmentStatuses: Record<string, OwnershipStatus>
+  favorites: string[]
+}
+const defaults: CollectionState = { statuses: {}, elementStatuses: {}, modeStatuses: {}, equipmentStatuses: {}, favorites: [] }
 
 export function useBloodlineCollection() {
   const [collection, setCollection] = useState<CollectionState>(() => ({ ...defaults, ...readStorage(KEY, defaults) }))
@@ -22,5 +29,24 @@ export function useBloodlineCollection() {
     ...current,
     elementStatuses: { ...current.elementStatuses, [name]: status },
   })), [])
-  return { collection, setStatus, setElementStatus, toggleFavorite }
+  const setModeStatus = useCallback((name: string, status: OwnershipStatus) => setCollection((current) => ({
+    ...current,
+    modeStatuses: { ...current.modeStatuses, [name]: status },
+  })), [])
+  const setEquipmentStatus = useCallback((name: string, status: OwnershipStatus) => setCollection((current) => ({
+    ...current,
+    equipmentStatuses: { ...current.equipmentStatuses, [name]: status },
+  })), [])
+  const setMany = useCallback((category: CollectionCategory, names: string[], status: OwnershipStatus) => setCollection((current) => {
+    const field = category === 'Bloodline' ? 'statuses' : category === 'Element' ? 'elementStatuses' : category === 'Mode' ? 'modeStatuses' : 'equipmentStatuses'
+    return { ...current, [field]: { ...current[field], ...Object.fromEntries(names.map((name) => [name, status])) } }
+  }), [])
+  const importPreferences = useCallback((next: Partial<CollectionState>) => setCollection((current) => ({
+    statuses: { ...current.statuses, ...(next.statuses ?? {}) },
+    elementStatuses: { ...current.elementStatuses, ...(next.elementStatuses ?? {}) },
+    modeStatuses: { ...current.modeStatuses, ...(next.modeStatuses ?? {}) },
+    equipmentStatuses: { ...current.equipmentStatuses, ...(next.equipmentStatuses ?? {}) },
+    favorites: Array.isArray(next.favorites) ? [...new Set(next.favorites.filter((item): item is string => typeof item === 'string'))] : current.favorites,
+  })), [])
+  return { collection, setStatus, setElementStatus, setModeStatus, setEquipmentStatus, setMany, importPreferences, toggleFavorite }
 }

@@ -3,27 +3,33 @@ import type { TierRank } from '../types'
 
 const PREFS_KEY = 'shindo-build-archive:prefs:v1'
 
-type ArchivePrefs = {
+export type ArchivePrefs = {
   favorites: string[]
   tiers: Record<string, TierRank>
   pageSize: '12' | '24' | '48' | '96'
   metaBias: number
+  theme: 'shindo-green' | 'chakra-blue' | 'ember-crimson'
 }
 
-const defaults: ArchivePrefs = {
+export const defaultArchivePrefs: ArchivePrefs = {
   favorites: [],
   tiers: {},
   pageSize: '24',
   metaBias: 50,
+  theme: 'shindo-green',
+}
+
+export function mergeArchivePrefs(saved: Partial<ArchivePrefs>): ArchivePrefs {
+  return { ...defaultArchivePrefs, ...saved, pageSize: saved.pageSize === ('all' as ArchivePrefs['pageSize']) ? '96' : saved.pageSize ?? defaultArchivePrefs.pageSize }
 }
 
 export function useArchivePrefs() {
   const [prefs, setPrefs] = useState<ArchivePrefs>(() => {
     try {
       const saved = JSON.parse(localStorage.getItem(PREFS_KEY) ?? '{}')
-      return { ...defaults, ...saved, pageSize: saved.pageSize === 'all' ? '96' : saved.pageSize ?? defaults.pageSize }
+      return mergeArchivePrefs(saved)
     } catch {
-      return defaults
+      return defaultArchivePrefs
     }
   })
 
@@ -49,6 +55,7 @@ export function useArchivePrefs() {
 
   const setPageSize = (pageSize: ArchivePrefs['pageSize']) => setPrefs((current) => ({ ...current, pageSize }))
   const setMetaBias = (metaBias: number) => setPrefs((current) => ({ ...current, metaBias }))
+  const setTheme = (theme: ArchivePrefs['theme']) => setPrefs((current) => ({ ...current, theme }))
 
-  return { prefs, toggleFavorite, setTier, setPageSize, setMetaBias }
+  return { prefs, toggleFavorite, setTier, setPageSize, setMetaBias, setTheme }
 }

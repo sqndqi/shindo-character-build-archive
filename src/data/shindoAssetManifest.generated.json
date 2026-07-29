@@ -1,0 +1,1875 @@
+[
+  {
+    "id": "bloodline-aizden",
+    "type": "Bloodline",
+    "name": "Aizden",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Aizden",
+    "localPath": "/shindo-icons/bloodlines/aizden.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/a/a1/Aizden.png/revision/latest?cb=20230114225700"
+  },
+  {
+    "id": "bloodline-aizden-inverse",
+    "type": "Bloodline",
+    "name": "Aizden-Inverse",
+    "aliases": [
+      "Aizden Inverse"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Aizden-Inverse",
+    "localPath": "/shindo-icons/bloodlines/aizden-inverse.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/1/14/AizdenInverse.png/revision/latest?cb=20230114225713"
+  },
+  {
+    "id": "bloodline-akuma",
+    "type": "Bloodline",
+    "name": "Akuma",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Akuma",
+    "localPath": "/shindo-icons/bloodlines/akuma.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/1/16/Akuma.png/revision/latest?cb=20210825090338"
+  },
+  {
+    "id": "bloodline-apollo-sand",
+    "type": "Bloodline",
+    "name": "Apollo-Sand",
+    "aliases": [
+      "Apollo Sand"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Apollo-Sand",
+    "localPath": "/shindo-icons/bloodlines/apollo-sand.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/7/71/IronSand.png/revision/latest?cb=20210105210258"
+  },
+  {
+    "id": "bloodline-ashura-shizen",
+    "type": "Bloodline",
+    "name": "Ashura-Shizen",
+    "aliases": [
+      "Ashura Shizen"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Ashura-Shizen",
+    "localPath": "/shindo-icons/bloodlines/ashura-shizen.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/2/2e/AshuraShizen.png/revision/latest?cb=20221023151934"
+  },
+  {
+    "id": "bloodline-azarashi",
+    "type": "Bloodline",
+    "name": "Azarashi",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Azarashi",
+    "localPath": "/shindo-icons/bloodlines/azarashi.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/e/e3/Azarashi.png/revision/latest?cb=20201210052933"
+  },
+  {
+    "id": "bloodline-bankai-akuma",
+    "type": "Bloodline",
+    "name": "Bankai-Akuma",
+    "aliases": [
+      "Bankai Akuma"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Bankai-Akuma",
+    "localPath": "/shindo-icons/bloodlines/bankai-akuma.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/7/76/Bankai-Akuma.png/revision/latest?cb=20201210052341"
+  },
+  {
+    "id": "bloodline-borumaki",
+    "type": "Bloodline",
+    "name": "Borumaki",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Borumaki",
+    "localPath": "/shindo-icons/bloodlines/borumaki.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/02/Borumaki.png/revision/latest?cb=20210821181618"
+  },
+  {
+    "id": "bloodline-borumaki-gaiden",
+    "type": "Bloodline",
+    "name": "Borumaki-Gaiden",
+    "aliases": [
+      "Borumaki Gaiden"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Borumaki-Gaiden",
+    "localPath": "/shindo-icons/bloodlines/borumaki-gaiden.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/a/a2/Borumaki_Gaiden.png/revision/latest?cb=20230304162036"
+  },
+  {
+    "id": "bloodline-borumaki-shiki",
+    "type": "Bloodline",
+    "name": "Borumaki-Shiki",
+    "aliases": [
+      "Borumaki Shiki"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Borumaki-Shiki",
+    "localPath": "/shindo-icons/bloodlines/borumaki-shiki.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/1/1b/BorumakiShiki.png/revision/latest?cb=20230304162134"
+  },
+  {
+    "id": "bloodline-bruce-kenichi",
+    "type": "Bloodline",
+    "name": "Bruce-Kenichi",
+    "aliases": [
+      "Bruce Kenichi"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Bruce-Kenichi",
+    "localPath": "/shindo-icons/bloodlines/bruce-kenichi.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/37/BruceKen.png/revision/latest?cb=20220515212355"
+  },
+  {
+    "id": "bloodline-chaos",
+    "type": "Bloodline",
+    "name": "Chaos",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Chaos",
+    "localPath": "/shindo-icons/bloodlines/chaos.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/8/8f/Chaos.png/revision/latest?cb=20210626172330"
+  },
+  {
+    "id": "bloodline-code-gaiden",
+    "type": "Bloodline",
+    "name": "Code-Gaiden",
+    "aliases": [
+      "Code Gaiden"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Code-Gaiden",
+    "localPath": "/shindo-icons/bloodlines/code-gaiden.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/38/Code_Gaiden.png/revision/latest?cb=20230312064924"
+  },
+  {
+    "id": "bloodline-demon-gate-spirit",
+    "type": "Bloodline",
+    "name": "Demon Gate Spirit",
+    "aliases": [
+      "Demon-Gate-Spirit",
+      "Demon-Gate"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Demon_Gate_Spirit",
+    "localPath": "/shindo-icons/bloodlines/demon-gate-spirit.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/01/Eight_Inner_Gates.png/revision/latest?cb=20201031022959"
+  },
+  {
+    "id": "bloodline-demon-gate",
+    "type": "Bloodline",
+    "name": "Demon-Gate",
+    "aliases": [
+      "Demon Gate",
+      "Demon Gate Spirit"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Demon-Gate",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "bloodline-dio-senko",
+    "type": "Bloodline",
+    "name": "Dio-Senko",
+    "aliases": [
+      "Dio Senko"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Dio-Senko",
+    "localPath": "/shindo-icons/bloodlines/dio-senko.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/a/a3/Dio-Senko.png/revision/latest?cb=20210210190835"
+  },
+  {
+    "id": "bloodline-dio-senko-rose",
+    "type": "Bloodline",
+    "name": "Dio-Senko-Rose",
+    "aliases": [
+      "Dio Senko Rose"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Dio-Senko-Rose",
+    "localPath": "/shindo-icons/bloodlines/dio-senko-rose.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/c/cb/Dio-Senko-Rose.png/revision/latest?cb=20220425010019"
+  },
+  {
+    "id": "bloodline-doku-tengoku",
+    "type": "Bloodline",
+    "name": "Doku-Tengoku",
+    "aliases": [
+      "Doku Tengoku"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Doku-Tengoku",
+    "localPath": "/shindo-icons/bloodlines/doku-tengoku.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/6/6d/Doku-Tengoku.png/revision/latest?cb=20211129092500"
+  },
+  {
+    "id": "bloodline-doom-shado",
+    "type": "Bloodline",
+    "name": "Doom-Shado",
+    "aliases": [
+      "Doom Shado"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Doom-Shado",
+    "localPath": "/shindo-icons/bloodlines/doom-shado.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/31/DoomShado.png/revision/latest?cb=20220904153150"
+  },
+  {
+    "id": "bloodline-getsuga",
+    "type": "Bloodline",
+    "name": "Getsuga",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Getsuga",
+    "localPath": "/shindo-icons/bloodlines/getsuga.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/b/bd/Getsuga.png/revision/latest?cb=20230107221118"
+  },
+  {
+    "id": "bloodline-getsuga-black",
+    "type": "Bloodline",
+    "name": "Getsuga-Black",
+    "aliases": [
+      "Getsuga Black"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Getsuga-Black",
+    "localPath": "/shindo-icons/bloodlines/getsuga-black.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/e/e9/GetsugaBlack.png/revision/latest?cb=20221225170028"
+  },
+  {
+    "id": "bloodline-indra-akuma",
+    "type": "Bloodline",
+    "name": "Indra-Akuma",
+    "aliases": [
+      "Indra Akuma"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Indra-Akuma",
+    "localPath": "/shindo-icons/bloodlines/indra-akuma.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/4/47/Indra.png/revision/latest?cb=20221009150625"
+  },
+  {
+    "id": "bloodline-jokei",
+    "type": "Bloodline",
+    "name": "Jokei",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Jokei",
+    "localPath": "/shindo-icons/bloodlines/jokei.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/f/f2/Jokei2.png/revision/latest?cb=20201225182125"
+  },
+  {
+    "id": "bloodline-jotaro-shizen",
+    "type": "Bloodline",
+    "name": "Jotaro-Shizen",
+    "aliases": [
+      "Jotaro Shizen"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Jotaro-Shizen",
+    "localPath": "/shindo-icons/bloodlines/jotaro-shizen.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/6/6c/JotaroShizen.png/revision/latest?cb=20210619225557"
+  },
+  {
+    "id": "bloodline-kamaki-akuma",
+    "type": "Bloodline",
+    "name": "Kamaki-Akuma",
+    "aliases": [
+      "Kamaki Akuma"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Kamaki-Akuma",
+    "localPath": "/shindo-icons/bloodlines/kamaki-akuma.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/a/a1/Kamaki-Akuma.png/revision/latest?cb=20221210225058"
+  },
+  {
+    "id": "bloodline-kenichi",
+    "type": "Bloodline",
+    "name": "Kenichi",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Kenichi",
+    "localPath": "/shindo-icons/bloodlines/kenichi.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/1/16/Kenichi.png/revision/latest?cb=20210124010659"
+  },
+  {
+    "id": "bloodline-light-jokei",
+    "type": "Bloodline",
+    "name": "Light-Jokei",
+    "aliases": [
+      "Light Jokei"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Light-Jokei",
+    "localPath": "/shindo-icons/bloodlines/light-jokei.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/35/Light_Jokei.png/revision/latest?cb=20210523190301"
+  },
+  {
+    "id": "bloodline-minakaze",
+    "type": "Bloodline",
+    "name": "Minakaze",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Minakaze",
+    "localPath": "/shindo-icons/bloodlines/minakaze.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/d/dd/Minakaze.png/revision/latest?cb=20210918165059"
+  },
+  {
+    "id": "bloodline-minakaze-azure",
+    "type": "Bloodline",
+    "name": "Minakaze-Azure",
+    "aliases": [
+      "Minakaze Azure"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Minakaze-Azure",
+    "localPath": "/shindo-icons/bloodlines/minakaze-azure.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/2/2a/Azure-Minakaze.png/revision/latest?cb=20211003083255"
+  },
+  {
+    "id": "bloodline-minakaze-ruby",
+    "type": "Bloodline",
+    "name": "Minakaze-Ruby",
+    "aliases": [
+      "Minakaze Ruby"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Minakaze-Ruby",
+    "localPath": "/shindo-icons/bloodlines/minakaze-ruby.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/9/95/Ruby-Minakaze.png/revision/latest?cb=20220917145749"
+  },
+  {
+    "id": "bloodline-narumaki",
+    "type": "Bloodline",
+    "name": "Narumaki",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Narumaki",
+    "localPath": "/shindo-icons/bloodlines/narumaki.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/05/Narumaki.png/revision/latest?cb=20210717194105"
+  },
+  {
+    "id": "bloodline-narumaki-ruby",
+    "type": "Bloodline",
+    "name": "Narumaki-Ruby",
+    "aliases": [
+      "Narumaki Ruby"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Narumaki-Ruby",
+    "localPath": "/shindo-icons/bloodlines/narumaki-ruby.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/c/c2/Narumaki-Ruby.png/revision/latest?cb=20211010074743"
+  },
+  {
+    "id": "bloodline-order",
+    "type": "Bloodline",
+    "name": "Order",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Order",
+    "localPath": "/shindo-icons/bloodlines/order.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/5/58/Order.png/revision/latest?cb=20210711010247"
+  },
+  {
+    "id": "bloodline-pika-senko",
+    "type": "Bloodline",
+    "name": "Pika-Senko",
+    "aliases": [
+      "Pika Senko"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Pika-Senko",
+    "localPath": "/shindo-icons/bloodlines/pika-senko.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/9/98/PikaSenko.png/revision/latest?cb=20210606183128"
+  },
+  {
+    "id": "bloodline-pyromania",
+    "type": "Bloodline",
+    "name": "Pyromania",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Pyromania",
+    "localPath": "/shindo-icons/bloodlines/pyromania.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/2/28/Pyromania.png/revision/latest?cb=20220522164728"
+  },
+  {
+    "id": "bloodline-raion-akuma",
+    "type": "Bloodline",
+    "name": "Raion-Akuma",
+    "aliases": [
+      "Raion Akuma"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Raion-Akuma",
+    "localPath": "/shindo-icons/bloodlines/raion-akuma.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/0a/RaionAkuma.png/revision/latest?cb=20201225081159"
+  },
+  {
+    "id": "bloodline-raion-gaiden",
+    "type": "Bloodline",
+    "name": "Raion-Gaiden",
+    "aliases": [
+      "Raion Gaiden"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Raion-Gaiden",
+    "localPath": "/shindo-icons/bloodlines/raion-gaiden.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/c/c2/RaionGaidenLogo.png/revision/latest?cb=20220404125504"
+  },
+  {
+    "id": "bloodline-raion-rengoku",
+    "type": "Bloodline",
+    "name": "Raion-Rengoku",
+    "aliases": [
+      "Raion Rengoku"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Raion-Rengoku",
+    "localPath": "/shindo-icons/bloodlines/raion-rengoku.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/a/ae/RaionRengoku.png/revision/latest?cb=20210509035635"
+  },
+  {
+    "id": "bloodline-rengoku",
+    "type": "Bloodline",
+    "name": "Rengoku",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Rengoku",
+    "localPath": "/shindo-icons/bloodlines/rengoku.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/07/Rengoku2.png/revision/latest?cb=20201223143852"
+  },
+  {
+    "id": "bloodline-riser-akuma",
+    "type": "Bloodline",
+    "name": "Riser-Akuma",
+    "aliases": [
+      "Riser Akuma"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Riser-Akuma",
+    "localPath": "/shindo-icons/bloodlines/riser-akuma.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/2/25/Riser-Akuma.png/revision/latest?cb=20210206015502"
+  },
+  {
+    "id": "bloodline-rykan-shizen",
+    "type": "Bloodline",
+    "name": "Rykan-Shizen",
+    "aliases": [
+      "Rykan Shizen"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Rykan-Shizen",
+    "localPath": "/shindo-icons/bloodlines/rykan-shizen.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/8/84/Rykan-Shizen.png/revision/latest?cb=20201208131347"
+  },
+  {
+    "id": "bloodline-ryuji-kenichi",
+    "type": "Bloodline",
+    "name": "Ryuji-Kenichi",
+    "aliases": [
+      "Ryuji Kenichi"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Ryuji-Kenichi",
+    "localPath": "/shindo-icons/bloodlines/ryuji-kenichi.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/5/56/Ryuji-Kenichi.png/revision/latest?cb=20211003083256"
+  },
+  {
+    "id": "bloodline-shado",
+    "type": "Bloodline",
+    "name": "Shado",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Shado",
+    "localPath": "/shindo-icons/bloodlines/shado.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/39/Shado.PNG/revision/latest?cb=20210105204105"
+  },
+  {
+    "id": "bloodline-shindai-akuma",
+    "type": "Bloodline",
+    "name": "Shindai-Akuma",
+    "aliases": [
+      "Shindai Akuma"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Shindai-Akuma",
+    "localPath": "/shindo-icons/bloodlines/shindai-akuma.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/1/16/Shindai.png/revision/latest?cb=20210320202308"
+  },
+  {
+    "id": "bloodline-shindai-rengoku",
+    "type": "Bloodline",
+    "name": "Shindai-Rengoku",
+    "aliases": [
+      "Shindai Rengoku"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Shindai-Rengoku",
+    "localPath": "/shindo-icons/bloodlines/shindai-rengoku.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/35/Shindai-Ren.png/revision/latest?cb=20210925213646"
+  },
+  {
+    "id": "bloodline-shiver-akuma",
+    "type": "Bloodline",
+    "name": "Shiver-Akuma",
+    "aliases": [
+      "Shiver Akuma"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Shiver-Akuma",
+    "localPath": "/shindo-icons/bloodlines/shiver-akuma.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/a/a5/Shiver-Akuma.png/revision/latest?cb=20210711010237"
+  },
+  {
+    "id": "bloodline-shizen",
+    "type": "Bloodline",
+    "name": "Shizen",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Shizen",
+    "localPath": "/shindo-icons/bloodlines/shizen.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/00/Shizen.png/revision/latest?cb=20201210052733"
+  },
+  {
+    "id": "bloodline-six-paths-narumaki",
+    "type": "Bloodline",
+    "name": "Six-Paths-Narumaki",
+    "aliases": [
+      "Six Paths Narumaki"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Six-Paths-Narumaki",
+    "localPath": "/shindo-icons/bloodlines/six-paths-narumaki.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/3b/NarumakiSP.png/revision/latest?cb=20220320173424"
+  },
+  {
+    "id": "bloodline-snake-man",
+    "type": "Bloodline",
+    "name": "SnakeMan",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/SnakeMan",
+    "localPath": "/shindo-icons/bloodlines/snake-man.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/7/7b/SnakeMan.png/revision/latest?cb=20220813174754"
+  },
+  {
+    "id": "bloodline-snake-man-platinum",
+    "type": "Bloodline",
+    "name": "SnakeMan-Platinum",
+    "aliases": [
+      "SnakeMan Platinum"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/SnakeMan-Platinum",
+    "localPath": "/shindo-icons/bloodlines/snake-man-platinum.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/b/b2/SnakeMan-Platinum.png/revision/latest?cb=20220813174822"
+  },
+  {
+    "id": "bloodline-tengoku-platinum",
+    "type": "Bloodline",
+    "name": "Tengoku-Platinum",
+    "aliases": [
+      "Tengoku Platinum"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Tengoku-Platinum",
+    "localPath": "/shindo-icons/bloodlines/tengoku-platinum.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/30/TengokuPlat.png/revision/latest?cb=20220214015957"
+  },
+  {
+    "id": "bloodline-tetsuo-kaijin",
+    "type": "Bloodline",
+    "name": "Tetsuo-Kaijin",
+    "aliases": [
+      "Tetsuo Kaijin"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Tetsuo-Kaijin",
+    "localPath": "/shindo-icons/bloodlines/tetsuo-kaijin.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/e/e3/Tetsuo-Kaijin.png/revision/latest?cb=20230129162144"
+  },
+  {
+    "id": "bloodline-xeno-dokei",
+    "type": "Bloodline",
+    "name": "Xeno-Dokei",
+    "aliases": [
+      "Xeno Dokei"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Xeno-Dokei",
+    "localPath": "/shindo-icons/bloodlines/xeno-dokei.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/04/Xeno-Dokei.png/revision/latest?cb=20210717194105"
+  },
+  {
+    "id": "element-air",
+    "type": "Element",
+    "name": "Air",
+    "aliases": [
+      "Wind"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Air",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "element-chaos",
+    "type": "Element",
+    "name": "Chaos",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Chaos",
+    "localPath": "/shindo-icons/bloodlines/chaos.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Needs Review",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/8/8f/Chaos.png/revision/latest?cb=20210626172330"
+  },
+  {
+    "id": "element-earth",
+    "type": "Element",
+    "name": "Earth",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Earth",
+    "localPath": "/shindo-icons/elements/earth.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/03/StoneNew.png/revision/latest?cb=20201225182310"
+  },
+  {
+    "id": "element-fire",
+    "type": "Element",
+    "name": "Fire",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Fire",
+    "localPath": "/shindo-icons/elements/fire.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/9/96/FlameElement.png/revision/latest?cb=20201225145034"
+  },
+  {
+    "id": "element-gale",
+    "type": "Element",
+    "name": "Gale",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Gale",
+    "localPath": "/shindo-icons/elements/gale.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/f/fd/Gale.png/revision/latest?cb=20210403234948"
+  },
+  {
+    "id": "element-inferno",
+    "type": "Element",
+    "name": "Inferno",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Inferno",
+    "localPath": "/shindo-icons/elements/inferno.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/b/be/Inferno.png/revision/latest?cb=20210501211721"
+  },
+  {
+    "id": "element-lightning",
+    "type": "Element",
+    "name": "Lightning",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Lightning",
+    "localPath": "/shindo-icons/elements/lightning.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/7/71/ShockElement.png/revision/latest?cb=20201225145344"
+  },
+  {
+    "id": "element-order",
+    "type": "Element",
+    "name": "Order",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Order",
+    "localPath": "/shindo-icons/bloodlines/order.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Needs Review",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/5/58/Order.png/revision/latest?cb=20210711010247"
+  },
+  {
+    "id": "element-water",
+    "type": "Element",
+    "name": "Water",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Water",
+    "localPath": "/shindo-icons/elements/water.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/5/5b/LiquidNew.png/revision/latest?cb=20201225182141"
+  },
+  {
+    "id": "element-wind",
+    "type": "Element",
+    "name": "Wind",
+    "aliases": [
+      "Air"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Wind",
+    "localPath": "/shindo-icons/elements/wind.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/5/5f/Air.png/revision/latest?cb=20201225182155"
+  },
+  {
+    "id": "element-yang",
+    "type": "Element",
+    "name": "Yang",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Yang",
+    "localPath": "/shindo-icons/elements/yang.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/1/1d/Yang.png/revision/latest?cb=20210220034355"
+  },
+  {
+    "id": "mode-kor-tailed-spirit-generation-2",
+    "type": "Mode",
+    "name": "Kor Tailed Spirit Generation 2",
+    "aliases": [
+      "Kor-Tailed-Spirit-Generation-2"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Korama_Spirit",
+    "localPath": "/shindo-icons/modes/kor-tailed-spirit-generation-2.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/8/87/KoramaSpirit.png/revision/latest?cb=20221225170017"
+  },
+  {
+    "id": "mode-tyn-tailed-spirit-generation-2",
+    "type": "Mode",
+    "name": "Tyn Tailed Spirit Generation 2",
+    "aliases": [
+      "Tyn-Tailed-Spirit-Generation-2"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Tyn_Tailed_Spirit_Generation_2",
+    "localPath": "/shindo-icons/modes/tyn-tailed-spirit-generation-2.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/d/d4/TynSpiritNew.png/revision/latest?cb=20210528190115"
+  },
+  {
+    "id": "mode-dragon-sage",
+    "type": "Mode",
+    "name": "Dragon Sage",
+    "aliases": [
+      "Dragon-Sage"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Dragon%20Sage",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "mode-lightning-cloak",
+    "type": "Mode",
+    "name": "Lightning Cloak",
+    "aliases": [
+      "Lightning-Cloak"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Lightning%20Cloak",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "mode-maru-daggers",
+    "type": "Mode",
+    "name": "Maru Daggers",
+    "aliases": [
+      "Maru-Daggers"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Maru%20Daggers",
+    "localPath": "/shindo-icons/modes/maru-daggers.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/5/5c/MaruDaggers.png/revision/latest?cb=20220904153202"
+  },
+  {
+    "id": "combat-art-aether-arts",
+    "type": "Combat Art",
+    "name": "Aether Arts",
+    "aliases": [
+      "Aether-Arts"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Aether%20Arts",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-basic-combat",
+    "type": "Combat Art",
+    "name": "Basic Combat",
+    "aliases": [
+      "Basic-Combat"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Combat_Arts",
+    "localPath": "/shindo-icons/combat-arts/basic-combat.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/a/a7/BasicCombat.png/revision/latest?cb=20210724004330"
+  },
+  {
+    "id": "combat-art-boxing",
+    "type": "Combat Art",
+    "name": "Boxing",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Combat_Arts",
+    "localPath": "/shindo-icons/combat-arts/boxing.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/38/Boxing.png/revision/latest?cb=20210724004020"
+  },
+  {
+    "id": "combat-art-boxing-style",
+    "type": "Combat Art",
+    "name": "Boxing Style",
+    "aliases": [
+      "Boxing-Style"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Boxing%20Style",
+    "localPath": "/shindo-icons/combat-arts/boxing.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Needs Review",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/38/Boxing.png/revision/latest?cb=20210724004020"
+  },
+  {
+    "id": "combat-art-claw-arts",
+    "type": "Combat Art",
+    "name": "Claw Arts",
+    "aliases": [
+      "Claw-Arts"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Claw%20Arts",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-elemental-arts",
+    "type": "Combat Art",
+    "name": "Elemental Arts",
+    "aliases": [
+      "Elemental-Arts"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Elemental%20Arts",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-force-control",
+    "type": "Combat Art",
+    "name": "Force Control",
+    "aliases": [
+      "Force-Control"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Force%20Control",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-greatsword-arts",
+    "type": "Combat Art",
+    "name": "Greatsword Arts",
+    "aliases": [
+      "Greatsword-Arts"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Greatsword%20Arts",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-jeet-kune-do",
+    "type": "Combat Art",
+    "name": "Jeet Kune Do",
+    "aliases": [
+      "Jeet-Kune-Do"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Combat_Arts",
+    "localPath": "/shindo-icons/combat-arts/jeet-kune-do.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/4/48/Jeet_Kune_Do.png/revision/latest?cb=20210724004045"
+  },
+  {
+    "id": "combat-art-karate",
+    "type": "Combat Art",
+    "name": "Karate",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Combat_Arts",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-kenjutsu",
+    "type": "Combat Art",
+    "name": "Kenjutsu",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Combat_Arts",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-magic",
+    "type": "Combat Art",
+    "name": "Magic",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Magic",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-mixed-martial-arts",
+    "type": "Combat Art",
+    "name": "Mixed Martial Arts",
+    "aliases": [
+      "Mixed-Martial-Arts"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Combat_Arts",
+    "localPath": "/shindo-icons/combat-arts/mixed-martial-arts.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/e/eb/MMA.png/revision/latest?cb=20210724004135"
+  },
+  {
+    "id": "combat-art-muay-thai",
+    "type": "Combat Art",
+    "name": "Muay Thai",
+    "aliases": [
+      "Muay-Thai"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Muay%20Thai",
+    "localPath": "/shindo-icons/combat-arts/muay-thai.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/8/87/Muay_Thai.png/revision/latest?cb=20210724004112"
+  },
+  {
+    "id": "combat-art-precision-arts",
+    "type": "Combat Art",
+    "name": "Precision Arts",
+    "aliases": [
+      "Precision-Arts"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Precision%20Arts",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-reality-warping",
+    "type": "Combat Art",
+    "name": "Reality Warping",
+    "aliases": [
+      "Reality-Warping"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Reality%20Warping",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-spear-arts",
+    "type": "Combat Art",
+    "name": "Spear Arts",
+    "aliases": [
+      "Spear-Arts"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Spear%20Arts",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-tactical-arts",
+    "type": "Combat Art",
+    "name": "Tactical Arts",
+    "aliases": [
+      "Tactical-Arts"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Tactical%20Arts",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "combat-art-tanto-arts",
+    "type": "Combat Art",
+    "name": "Tanto Arts",
+    "aliases": [
+      "Tanto-Arts"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Tanto%20Arts",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-bankai-blade",
+    "type": "Weapon",
+    "name": "Bankai Blade",
+    "aliases": [
+      "Bankai-Blade"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Bankai%20Blade",
+    "localPath": "/shindo-icons/weapons/bankai-blade.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/0b/Gaidenv2.png.png/revision/latest?cb=20210106151425"
+  },
+  {
+    "id": "weapon-baton",
+    "type": "Weapon",
+    "name": "Baton",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Baton",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-black-katana",
+    "type": "Weapon",
+    "name": "Black Katana",
+    "aliases": [
+      "Black-Katana"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Black%20Katana",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-chi-blade",
+    "type": "Weapon",
+    "name": "Chi Blade",
+    "aliases": [
+      "Chi-Blade"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Chi%20Blade",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-combat-knife",
+    "type": "Weapon",
+    "name": "Combat Knife",
+    "aliases": [
+      "Combat-Knife"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Combat%20Knife",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-dawn-sword",
+    "type": "Weapon",
+    "name": "Dawn Sword",
+    "aliases": [
+      "Dawn-Sword"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Dawn%20Sword",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-demon-blade",
+    "type": "Weapon",
+    "name": "Demon Blade",
+    "aliases": [
+      "Demon-Blade"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Demon%20Blade",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-demon-sword",
+    "type": "Weapon",
+    "name": "Demon Sword",
+    "aliases": [
+      "Demon-Sword"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Demon%20Sword",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-dual-daggers",
+    "type": "Weapon",
+    "name": "Dual Daggers",
+    "aliases": [
+      "Dual-Daggers"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Dual%20Daggers",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-enra-staff",
+    "type": "Weapon",
+    "name": "Enra Staff",
+    "aliases": [
+      "Enra-Staff"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Enra%20Staff",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-executioner-axe",
+    "type": "Weapon",
+    "name": "Executioner Axe",
+    "aliases": [
+      "Executioner-Axe"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Executioner%20Axe",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-greatsword",
+    "type": "Weapon",
+    "name": "Greatsword",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Greatsword",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-improvised-pen",
+    "type": "Weapon",
+    "name": "Improvised Pen",
+    "aliases": [
+      "Improvised-Pen"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Improvised%20Pen",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-improvised-tools",
+    "type": "Weapon",
+    "name": "Improvised Tools",
+    "aliases": [
+      "Improvised-Tools"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Improvised%20Tools",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-katana",
+    "type": "Weapon",
+    "name": "Katana",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Katana",
+    "localPath": "/shindo-icons/weapons/katana.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/e/e9/Katana.png/revision/latest?cb=20201115065717"
+  },
+  {
+    "id": "weapon-knife-and-sidearm",
+    "type": "Weapon",
+    "name": "Knife and Sidearm",
+    "aliases": [
+      "Knife-and-Sidearm"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Knife%20and%20Sidearm",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-obelisk-chi-blade",
+    "type": "Weapon",
+    "name": "Obelisk Chi Blade",
+    "aliases": [
+      "Obelisk-Chi-Blade"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Obelisk%20Chi%20Blade",
+    "localPath": "/shindo-icons/weapons/obelisk-chi-blade.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/5/58/ObeliskChiBlade.png/revision/latest?cb=20210226223846"
+  },
+  {
+    "id": "weapon-raion-blade",
+    "type": "Weapon",
+    "name": "Raion Blade",
+    "aliases": [
+      "Raion-Blade"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Raion%20Blade",
+    "localPath": "/shindo-icons/weapons/raion-blade.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/d/d3/Shippuden_Kusanagi.png/revision/latest?cb=20210106151901"
+  },
+  {
+    "id": "weapon-senko-kunai",
+    "type": "Weapon",
+    "name": "Senko Kunai",
+    "aliases": [
+      "Senko-Kunai"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Senko%20Kunai",
+    "localPath": "/shindo-icons/weapons/senko-kunai.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/b/b3/Raijin_Kunai.png/revision/latest?cb=20210107130036"
+  },
+  {
+    "id": "weapon-shindai-umpire-fan",
+    "type": "Weapon",
+    "name": "Shindai Umpire Fan",
+    "aliases": [
+      "Shindai-Umpire-Fan"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Shindai%20Umpire%20Fan",
+    "localPath": "/shindo-icons/weapons/shindai-umpire-fan.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/2/20/ShindaiUmpireFan.png/revision/latest?cb=20210403232459"
+  },
+  {
+    "id": "weapon-spear",
+    "type": "Weapon",
+    "name": "Spear",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Spear",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "weapon-sword",
+    "type": "Weapon",
+    "name": "Sword",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Sword",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "ninja-tool-dagai",
+    "type": "Ninja Tool",
+    "name": "Dagai",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Dagai",
+    "localPath": "/shindo-icons/ninja-tools/dagai.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/d/d7/Kunai.png/revision/latest?cb=20201115065547"
+  },
+  {
+    "id": "ninja-tool-dagai-wire",
+    "type": "Ninja Tool",
+    "name": "Dagai Wire",
+    "aliases": [
+      "Dagai-Wire"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Dagai%20Wire",
+    "localPath": "/shindo-icons/ninja-tools/dagai-wire.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/d/d8/DagaiWire.png/revision/latest?cb=20220529155455"
+  },
+  {
+    "id": "ninja-tool-shock-bomb",
+    "type": "Ninja Tool",
+    "name": "Shock Bomb",
+    "aliases": [
+      "Shock-Bomb"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Shock%20Bomb",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "consumable-chi-pot",
+    "type": "Consumable",
+    "name": "Chi Pot",
+    "aliases": [
+      "Chi-Pot"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Chi%20Pot",
+    "localPath": "/shindo-icons/consumables/chi-pot.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/5/5b/Chakra_Pot.png/revision/latest?cb=20201115064816"
+  },
+  {
+    "id": "consumable-chi-stim",
+    "type": "Consumable",
+    "name": "Chi Stim",
+    "aliases": [
+      "Chi-Stim"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Chi%20Stim",
+    "localPath": "/shindo-icons/consumables/chi-stim.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/e/ea/Chakrastim.png.png/revision/latest?cb=20201115065039"
+  },
+  {
+    "id": "consumable-health-stim",
+    "type": "Consumable",
+    "name": "Health Stim",
+    "aliases": [
+      "Health-Stim"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Health%20Stim",
+    "localPath": "/shindo-icons/consumables/health-stim.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/f/f1/Health_Stim.png/revision/latest?cb=20201115065030"
+  },
+  {
+    "id": "mentor-bruce-kenichi",
+    "type": "Mentor",
+    "name": "Bruce Kenichi",
+    "aliases": [
+      "Bruce-Kenichi"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Bruce_Kenichi_(Companion)",
+    "localPath": "/shindo-icons/mentors/bruce-kenichi.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/35/BruceKenichi.png/revision/latest?cb=20210906074614"
+  },
+  {
+    "id": "mentor-jiso-seishin",
+    "type": "Mentor",
+    "name": "Jiso Seishin",
+    "aliases": [
+      "Jiso-Seishin"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Jiso%20Seishin",
+    "localPath": "",
+    "width": 0,
+    "height": 0,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Missing"
+  },
+  {
+    "id": "mentor-narumaki",
+    "type": "Mentor",
+    "name": "Narumaki",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Narumaki",
+    "localPath": "/shindo-icons/bloodlines/narumaki.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Needs Review",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/05/Narumaki.png/revision/latest?cb=20210717194105"
+  },
+  {
+    "id": "mentor-ryuji-kenichi",
+    "type": "Mentor",
+    "name": "Ryuji Kenichi",
+    "aliases": [
+      "Ryuji-Kenichi"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Ryuji_Kenichi_(Companion)",
+    "localPath": "/shindo-icons/mentors/ryuji-kenichi.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/6/68/RyujiKenichi.png/revision/latest?cb=20210906083020"
+  },
+  {
+    "id": "mentor-shindai-akuma",
+    "type": "Mentor",
+    "name": "Shindai Akuma",
+    "aliases": [
+      "Shindai-Akuma"
+    ],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Shindai_Akuma_(Companion)",
+    "localPath": "/shindo-icons/mentors/shindai-akuma.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/7/76/ShindaiAkumaC.png/revision/latest?cb=20210906083636"
+  },
+  {
+    "id": "race-celestial",
+    "type": "Race",
+    "name": "Celestial",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Celestial",
+    "localPath": "/shindo-icons/races/celestial.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/f/fc/Celestial.png/revision/latest?cb=20230427023746"
+  },
+  {
+    "id": "race-human",
+    "type": "Race",
+    "name": "Human",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Human",
+    "localPath": "/shindo-icons/races/human.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/6/6e/Human.png/revision/latest?cb=20230427023714"
+  },
+  {
+    "id": "race-shinobi",
+    "type": "Race",
+    "name": "Shinobi",
+    "aliases": [],
+    "sourceUrl": "https://shindo-life-rell.fandom.com/wiki/Shinobi",
+    "localPath": "/shindo-icons/races/shinobi.png",
+    "width": 256,
+    "height": 256,
+    "transparent": false,
+    "checkedAt": "2026-07-29",
+    "status": "Available",
+    "originalFileUrl": "https://static.wikia.nocookie.net/shinobi-life-2-reel/images/0/05/Shinobi.png/revision/latest?cb=20230427023727"
+  }
+]

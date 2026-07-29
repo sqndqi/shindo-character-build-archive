@@ -322,7 +322,7 @@ const naruto = build({
         bl('Narumaki', ['Narumaki Style: Time Jump Bomb', 'Narumaki Style: Spirit Bomb Cutter', 'Narumaki Style: Spirit Bomb Barrage'], 'Supplies the classic Rasengan family and clone-led pressure.', 'Rasengan and clone offense', 'Direct Match', false, 'Narumaki-Ruby'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Vortex'], 'Wind-nature projectile and displacement support.'), yang(['Light Style: Sword Flash'], 'Six Paths light-energy visual support.')],
-      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
       hotbar: [
         ['Six-Paths-Narumaki', 'Six Path: Spirit Bomb Air Combo', 'Rasengan aerial rush', 'Close neutral confirm.', 'Starter', 'Direct Match'],
         ['Narumaki', 'Narumaki Style: Spirit Bomb Cutter', 'Rasenshuriken', 'Mid-range punish.', 'Finisher', 'Direct Match'],
@@ -359,7 +359,7 @@ const naruto = build({
         bl('Ashura-Shizen', ['Wood Style: Golden Strike', 'Wood Style: Heavenly Barrage'], 'Six Paths lineage support and physical pressure.', 'Asura inheritance', 'Strong Match', false, 'Bruce-Kenichi'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Vortex'], 'Wind-nature neutral and defensive space.'), yang(['Light Style: Sword Flash'], 'Six Paths chakra visual.')],
-      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
       hotbar: [
         ['Six-Paths-Narumaki', 'Six Path: Spirit Bomb Air Combo', 'Aerial Rasengan rush', 'Fast identity starter.', 'Starter', 'Direct Match'],
         ['Narumaki', 'Narumaki Style: Spirit Bomb Cutter', 'Rasenshuriken', 'Ranged punish.', 'Finisher', 'Direct Match'],
@@ -397,7 +397,7 @@ const naruto = build({
         bl('Ashura-Shizen', ['Wood Style: Golden Strike', 'Wood Style: Golden Dragon'], 'Six Paths lineage and large-scale chakra support.', 'Asura inheritance', 'Strong Match'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Vortex'], 'Wind Release neutral and separation.'), yang(['Light Style: Sword Flash'], 'Six Paths chakra visual.')],
-      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
       hotbar: [
         ['Six-Paths-Narumaki', 'Six Path: Spirit Bomb Air Combo', 'Aerial Rasengan rush', 'Primary contact tool.', 'Starter', 'Direct Match'],
         ['Narumaki', 'Narumaki Style: Spirit Bomb Cutter', 'Rasenshuriken', 'Mid-range finisher.', 'Finisher', 'Direct Match'],
@@ -449,7 +449,7 @@ const sasuke = build({
         bl('Raion-Akuma', ['Copy Style: Blaze Illusion', 'Copy Style: Lightning Blaze', 'Copy Style: Arrow Blaze'], 'Mangekyō lightning, black flame, and Susanoo support.', 'Sharingan, Amaterasu, and Susanoo', 'Direct Match', false, 'Akuma'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Electro Control'], 'Chidori-like lightning control.'), inferno(['Inferno Style: Flame Blitz', 'Inferno Style: Burnout'], 'Amaterasu-colored flame pressure.')],
-      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Raion Blade', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Raion Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
       hotbar: [
         ['Raion-Rengoku', 'Rengoku Style: Inferno Engage', 'Rinnegan-assisted engagement', 'Primary close starter.', 'Starter', 'Direct Match'],
         ['Raion-Rengoku', 'Rengoku Style: Vanishing Replacement', 'Space switch', 'Reactive reposition.', 'Counter', 'Direct Match', 'counter'],
@@ -486,7 +486,7 @@ const sasuke = build({
         bl('Raion-Gaiden', ['Rengoku Style: Meteor Inferno Blade', 'Rengoku Style: Samurai Combo'], 'Adds sword-shaped inferno pressure.', 'Adult sword combat', 'Strong Match'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Dragon Bomb'], 'Lightning neutral and projectile control.'), inferno(['Inferno Style: Flame Blitz'], 'Black-flame movement approximation.')],
-      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Raion Blade', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Raion Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
       hotbar: [
         ['Raion-Rengoku', 'Rengoku Style: Inferno Engage', 'Rinnegan engagement', 'Close starter.', 'Starter', 'Direct Match'],
         ['Raion-Rengoku', 'Rengoku Style: Vanishing Replacement', 'Space switching', 'Defensive reposition.', 'Counter', 'Direct Match', 'counter'],
@@ -524,7 +524,7 @@ const sasuke = build({
         bl('Indra-Akuma', ['Copy Style: Inferno Blaze', 'Copy Style: Blades of Destiny'], 'Ancestral lightning and blade support.', 'Indra lineage', 'Strong Match'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Electro Control'], 'Chidori-like control.'), inferno(['Inferno Style: Flame Blitz'], 'Amaterasu movement support.')],
-      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Raion Blade', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Raion Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
       hotbar: [
         ['Raion-Rengoku', 'Rengoku Style: Inferno Engage', 'Rinnegan engagement', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Raion-Rengoku', 'Rengoku Style: Vanishing Replacement', 'Space switch', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
@@ -576,7 +576,7 @@ const madara = build({
         bl('Shindai-Akuma', ['Copy Style: Samurai Sekiro', 'Copy Style: Sunlight Devastation', 'Copy Style: Sunflower Desolation'], 'Susanoo and large-scale Uchiha pressure.', 'Perfect Susanoo and battlefield control', 'Direct Match', false, 'Akuma'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Dragon Bomb'], 'Massive Fire Release.'), earth(['Stone Style: Earth Wall'], 'Defensive earth support.')],
-      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'Basic Combat', weapon: 'Shindai Umpire Fan', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Celestial',
+      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'Basic Combat', weapon: 'Shindai Umpire Fan', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Celestial',
       hotbar: [
         ['Shindai-Rengoku', 'Rengoku Style: Under The Sun', 'Limbo-style pressure', 'Primary engagement.', 'Starter', 'Strong Match'],
         ['Shindai-Rengoku', 'Rengoku Style: Tailed Spirit Counter', 'Ten-Tails counterattack', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
@@ -613,7 +613,7 @@ const madara = build({
         bl('Rengoku', ['Rengoku Style: Gravity Push', 'Rengoku Style: Gravity Pull'], 'Universal pull and push support.', 'Rinnegan gravity control', 'Direct Match'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Dragon Bomb'], 'Massive Fire Release.'), earth(['Stone Style: Earth Wall'], 'Defensive earth support.')],
-      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'Basic Combat', weapon: 'Shindai Umpire Fan', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Celestial',
+      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'Basic Combat', weapon: 'Shindai Umpire Fan', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Celestial',
       hotbar: [
         ['Rengoku', 'Rengoku Style: Gravity Pull', 'Rinnegan attraction', 'Draw opponents into range.', 'Starter', 'Direct Match'],
         ['Shindai-Rengoku', 'Rengoku Style: Tailed Spirit Counter', 'Ten-Tails counter', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
@@ -651,7 +651,7 @@ const madara = build({
         bl('Rengoku', ['Rengoku Style: Gravity Pull', 'Rengoku Style: Gravity Push'], 'Rinnegan gravity control.', 'Universal pull and repulsion', 'Direct Match'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Dragon Bomb'], 'Massive Fire Release.'), earth(['Stone Style: Earth Wall'], 'Earth defense and terrain control.')],
-      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'Basic Combat', weapon: 'Shindai Umpire Fan', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Celestial',
+      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'Basic Combat', weapon: 'Shindai Umpire Fan', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Celestial',
       hotbar: [
         ['Rengoku', 'Rengoku Style: Gravity Pull', 'Rinnegan attraction', 'Primary control starter.', 'Starter', 'Direct Match'],
         ['Shindai-Rengoku', 'Rengoku Style: Tailed Spirit Counter', 'Ten-Tails counter', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
@@ -698,7 +698,7 @@ const minato = build({
         bl('Dio-Senko', ['Ultimate Flash', 'Time Style: Time Jump', 'Time Style: Time Stop'], 'Clean teleport support without an eye mode.', 'Instant repositioning', 'Strong Match', false, 'Senko'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Palm Blast'], 'Wind-nature neutral support.'), lightning(['Shock Style: Stream'], 'Fast close-range chakra pressure.')],
-      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
       hotbar: [
         ['Minakaze', 'Minakaze Style: Kunai Raijin', 'Flying Raijin', 'Marked teleport starter.', 'Starter', 'Direct Match'],
         ['Minakaze', 'Minakaze Style: Sunsengan Barrage', 'Rasengan chain', 'Close extension.', 'Extender', 'Direct Match'],
@@ -735,7 +735,7 @@ const minato = build({
         bl('Dio-Senko', ['Ultimate Flash', 'Time Style: Time Jump'], 'Fast reposition support.', 'Yellow Flash movement', 'Strong Match'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Palm Blast'], 'Wind neutral and separation.'), lightning(['Shock Style: Stream'], 'Fast close check.')],
-      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
       hotbar: [
         ['Minakaze', 'Minakaze Style: Kunai Raijin', 'Flying Raijin', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Minakaze', 'Minakaze Style: Sunsengan Barrage', 'Rasengan chain', 'Close extension.', 'Extender', 'Direct Match'],
@@ -773,7 +773,7 @@ const minato = build({
         bl('Dio-Senko', ['Ultimate Flash', 'Time Style: Time Jump'], 'Clean yellow movement support.', 'Yellow Flash speed', 'Strong Match'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Palm Blast'], 'Wind neutral and separation.'), lightning(['Shock Style: Stream'], 'Fast close pressure.')],
-      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
       hotbar: [
         ['Minakaze', 'Minakaze Style: Kunai Raijin', 'Flying Raijin', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Minakaze', 'Minakaze Style: Sunsengan Barrage', 'Rasengan chain', 'Close extension.', 'Extender', 'Direct Match'],
@@ -820,7 +820,7 @@ const itachi = build({
         bl('Riser-Akuma', ['Copy Style: Hawk Illusion', 'Copy Style: Pain', 'Copy Style: Fire Blaze'], 'Supports reactive illusion and black-flame punishment.', 'Genjutsu counters and Amaterasu', 'Strong Match', false, 'Akuma'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Pheonix Rising'], 'Itachi’s Fire Release.'), inferno(['Inferno Style: Burnout'], 'Amaterasu-colored pressure.')],
-      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
       hotbar: [
         ['Bankai-Akuma', 'Illusion Style: Tsukuyomi', 'Tsukuyomi', 'Primary control starter.', 'Starter', 'Direct Match'],
         ['Bankai-Akuma', 'Copy Style: Hawk Illusion', 'Crow-like illusion escape', 'Defensive reposition.', 'Counter', 'Strong Match', 'counter'],
@@ -857,7 +857,7 @@ const itachi = build({
         bl('Shiver-Akuma', ['Reality Style: Dimension', 'Reality Style: Control'], 'High-level genjutsu and evasive control approximation.', 'Layered illusion control', 'Visual Approximation'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Pheonix Rising'], 'Fire Release pressure.'), inferno(['Inferno Style: Burnout'], 'Amaterasu-colored mobility.')],
-      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
       hotbar: [
         ['Bankai-Akuma', 'Illusion Style: Tsukuyomi', 'Tsukuyomi', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Riser-Akuma', 'Copy Style: Hawk Illusion', 'Crow substitution', 'Defensive reposition.', 'Counter', 'Strong Match', 'counter'],
@@ -895,7 +895,7 @@ const itachi = build({
         bl('Akuma', ['Copy Style: Reality Control', 'Copy Style: Reflex Enhance'], 'Basic Sharingan prediction and reflex support.', 'Sharingan perception', 'Strong Match'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Pheonix Rising'], 'Fire Release.'), inferno(['Inferno Style: Burnout'], 'Black-flame mobility.')],
-      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
       hotbar: [
         ['Bankai-Akuma', 'Illusion Style: Tsukuyomi', 'Tsukuyomi', 'Primary control starter.', 'Starter', 'Direct Match'],
         ['Riser-Akuma', 'Copy Style: Hawk Illusion', 'Crow substitution', 'Reactive defense.', 'Counter', 'Strong Match', 'counter'],
@@ -942,7 +942,7 @@ const boruto = build({
         bl('Borumaki-Shiki', ['Maki Style: Portal Rasen', 'Maki Style: Pistol Rasen', 'Maki Style: Massive Counter Rasen'], 'Alternate Karma portal pressure.', 'Karma absorption and portals', 'Strong Match', false, 'Borumaki'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Senbon'], 'Boruto’s Lightning Release.'), air(['Air Style: Wind Cutter'], 'Wind Release support.')],
-      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Bankai Blade', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Bankai Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
       hotbar: [
         ['Borumaki-Gaiden', 'Maki Style: Pistol Rasen', 'Compressed Rasengan', 'Ranged starter.', 'Starter', 'Direct Match'],
         ['Borumaki-Gaiden', 'Maki Style: Massive Counter Rasen', 'Karma counter Rasengan', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
@@ -979,7 +979,7 @@ const boruto = build({
         bl('Borumaki', ['Borumaki Style: Portal Spirit Bomb Shock', 'Borumaki Style: Space Warp'], 'Additional Rasengan and space-warp options.', 'Rasengan and teleportation', 'Direct Match'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Senbon'], 'Lightning Release.'), air(['Air Style: Wind Cutter'], 'Wind Release.')],
-      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Bankai Blade', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Bankai Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
       hotbar: [
         ['Borumaki-Gaiden', 'Maki Style: Pistol Rasen', 'Compressed Rasengan', 'Primary ranged starter.', 'Starter', 'Direct Match'],
         ['Borumaki-Gaiden', 'Maki Style: Massive Counter Rasen', 'Karma counter', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
@@ -1017,7 +1017,7 @@ const boruto = build({
         bl('Raion-Gaiden', ['Rengoku Style: Samurai Combo', 'Rengoku Style: Meteor Inferno Blade'], 'Supporting lightning-sword pressure only.', 'Sword and lightning pressure', 'Competitive Substitute'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Senbon'], 'Lightning Release.'), air(['Air Style: Wind Cutter'], 'Wind Release.')],
-      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Bankai Blade', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Bankai Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
       hotbar: [
         ['Borumaki-Gaiden', 'Maki Style: Pistol Rasen', 'Compressed Rasengan', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Borumaki-Gaiden', 'Maki Style: Massive Counter Rasen', 'Karma counter', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
@@ -1064,7 +1064,7 @@ const ichigo = build({
         bl('Getsuga', ['Kor Style: Hand of Getsuga', 'Kor Style: Rasensuga', 'Kor Style: Getsuga Shuriken Blitz'], 'Secondary orange-blue spiritual blade pressure.', 'Getsuga Tenshō', 'Direct Match', false, 'Getsuga-Black'),
       ],
       elements: [order(['Order Style: Blade of Light', 'Order Style: Beam of Light'], 'High-density spiritual energy.'), chaos(['Chaos Style: Blade of Light'], 'Dark spiritual-energy visual.')],
-      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Obelisk Chi Blade', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Obelisk Chi Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
       hotbar: [
         ['Getsuga-Black', 'Kor Style: Hand of Getsuga', 'Black Getsuga strike', 'Primary close starter.', 'Starter', 'Direct Match'],
         ['Getsuga-Black', 'Kor Style: Rasensuga', 'Getsuga Tenshō', 'Mid-range punish.', 'Finisher', 'Direct Match'],
@@ -1101,7 +1101,7 @@ const ichigo = build({
         bl('Pika-Senko', ['Time Style: Star Kick', 'Time Style: Star Kick Rising'], 'Flash-step speed support only.', 'Shunpo mobility', 'Visual Approximation'),
       ],
       elements: [order(['Order Style: Blade of Light', 'Order Style: Beam of Light'], 'Spiritual-energy attacks.'), chaos(['Chaos Style: Blade of Light'], 'Dark spiritual visual.')],
-      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Obelisk Chi Blade', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Bruce Kenichi', race: 'Shinobi',
+      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Obelisk Chi Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Bruce Kenichi', race: 'Shinobi',
       hotbar: [
         ['Getsuga-Black', 'Kor Style: Hand of Getsuga', 'Black Getsuga strike', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Getsuga-Black', 'Kor Style: Rasensuga', 'Getsuga Tenshō', 'Confirmed finisher.', 'Finisher', 'Direct Match'],
@@ -1139,7 +1139,7 @@ const ichigo = build({
         bl('Doom-Shado', ['Gadget Style: Smoke Bomb', 'Gadget Style: Grappling Combo'], 'Dark-space defensive support.', 'Dark spiritual presence', 'Competitive Substitute'),
       ],
       elements: [order(['Order Style: Blade of Light', 'Order Style: Beam of Light'], 'Spiritual energy.'), chaos(['Chaos Style: Blade of Light'], 'Dark spiritual energy.')],
-      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Obelisk Chi Blade', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Bruce Kenichi', race: 'Shinobi',
+      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Obelisk Chi Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Bruce Kenichi', race: 'Shinobi',
       hotbar: [
         ['Getsuga-Black', 'Kor Style: Hand of Getsuga', 'Black Getsuga strike', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Getsuga-Black', 'Kor Style: Rasensuga', 'Getsuga Tenshō', 'Confirmed finisher.', 'Finisher', 'Direct Match'],
@@ -1186,7 +1186,7 @@ const aizen = build({
         bl('Aizden-Inverse', ['Tyn Art: Reign Dawn', 'Tyn Art: Vlad'], 'Alternate energy and regeneration visual support.', 'Hōgyoku regeneration', 'Strong Match', false, 'Aizden'),
       ],
       elements: [order(['Order Style: Gravity of Light', 'Order Style: Beam of Light', 'Order Style: Blade of Light'], 'Controlled spiritual pressure.'), chaos(['Chaos Style: Gravity of Light', 'Chaos Style: Blade of Light'], 'Dark transformation energy.')],
-      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Katana', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Jiso Seishin', race: 'Celestial',
+      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Katana', ninjaTool: 'None', consumable: 'None', mentor: 'Jiso Seishin', race: 'Celestial',
       hotbar: [
         ['Aizden', 'Tyn Art: Reign Dawn', 'Overwhelming spiritual pressure', 'Primary area starter.', 'Starter', 'Strong Match'],
         ['Aizden', 'Tyn Art: Vlad', 'Hōgyoku regeneration and destruction', 'Sustained punish.', 'Finisher', 'Direct Match'],
@@ -1223,7 +1223,7 @@ const aizen = build({
         bl('Bankai-Akuma', ['Illusion Style: Tsukuyomi', 'Copy Style: Hawk Illusion'], 'Hypnosis and deceptive escape approximation.', 'Kyōka Suigetsu hypnosis', 'Visual Approximation'),
       ],
       elements: [order(['Order Style: Gravity of Light', 'Order Style: Beam of Light'], 'Spiritual-pressure control.'), chaos(['Chaos Style: Blade of Light'], 'Dark spiritual sword energy.')],
-      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Katana', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Jiso Seishin', race: 'Celestial',
+      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Katana', ninjaTool: 'None', consumable: 'None', mentor: 'Jiso Seishin', race: 'Celestial',
       hotbar: [
         ['Bankai-Akuma', 'Illusion Style: Tsukuyomi', 'Complete hypnosis approximation', 'Control starter.', 'Starter', 'Visual Approximation'],
         ['Aizden', 'Tyn Art: Reign Dawn', 'Overwhelming spiritual pressure', 'Area pressure.', 'Extender', 'Strong Match'],
@@ -1261,7 +1261,7 @@ const aizen = build({
         bl('Tengoku-Platinum', ['Tengoku Style: Kami Blade', 'Tengoku Style: Kami Blitz'], 'Controlled spiritual-energy destruction.', 'Overwhelming Reiatsu', 'Competitive Substitute'),
       ],
       elements: [order(['Order Style: Gravity of Light', 'Order Style: Beam of Light'], 'Spiritual pressure.'), chaos(['Chaos Style: Blade of Light'], 'Dark sword energy.')],
-      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Katana', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Jiso Seishin', race: 'Celestial',
+      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Katana', ninjaTool: 'None', consumable: 'None', mentor: 'Jiso Seishin', race: 'Celestial',
       hotbar: [
         ['Bankai-Akuma', 'Illusion Style: Tsukuyomi', 'Complete hypnosis approximation', 'Control starter.', 'Starter', 'Visual Approximation'],
         ['Aizden', 'Tyn Art: Reign Dawn', 'Spiritual-pressure domination', 'Area extension.', 'Extender', 'Strong Match'],
@@ -1308,7 +1308,7 @@ const luffy = build({
         bl('Bruce-Kenichi', ['Fist Style: 6th Dance', 'Fist Style: 9th Dance', 'Fist Style: Tiger Lotus'], 'Fast close-range pursuit and martial pressure.', 'Haki-like brawling', 'Strong Match', false, 'Ryuji-Kenichi'),
       ],
       elements: [air(['Air Style: Vortex', 'Air Style: Palm Blast'], 'Airborne pursuit and displacement.'), fire(['Flame Style: Flame Bullet'], 'Heat and impact visual support.')],
-      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Bruce Kenichi', race: 'Human',
+      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Bruce Kenichi', race: 'Human',
       hotbar: [
         ['SnakeMan', 'Cobra Art: Form 1', 'Curving rubber punch', 'Primary neutral starter.', 'Starter', 'Direct Match'],
         ['SnakeMan', 'Cobra Art: Form 2', 'Accelerating Snakeman strike', 'Close extension.', 'Extender', 'Direct Match'],
@@ -1345,7 +1345,7 @@ const luffy = build({
         bl('Bruce-Kenichi', ['Fist Style: 6th Dance', 'Fist Style: 9th Dance'], 'Fast physical pursuit.', 'Haki-like brawling', 'Strong Match'),
       ],
       elements: [air(['Air Style: Vortex', 'Air Style: Palm Blast'], 'Airborne control.'), fire(['Flame Style: Flame Bullet'], 'Heat visual support.')],
-      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Bruce Kenichi', race: 'Human',
+      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Bruce Kenichi', race: 'Human',
       hotbar: [
         ['SnakeMan', 'Cobra Art: Form 1', 'Curving rubber punch', 'Primary starter.', 'Starter', 'Direct Match'],
         ['SnakeMan-Platinum', 'Cobra Art: Form 2', 'Accelerating strike', 'Close extension.', 'Extender', 'Visual Approximation'],
@@ -1383,7 +1383,7 @@ const luffy = build({
         bl('Ryuji-Kenichi', ['Fist Style: Dragon Demon Combo', 'Fist Style: Dragon Lotus'], 'Heavy durability and finishing support.', 'Armament Haki power', 'Competitive Substitute'),
       ],
       elements: [air(['Air Style: Vortex', 'Air Style: Palm Blast'], 'Airborne control.'), fire(['Flame Style: Flame Bullet'], 'Heat visual support.')],
-      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Bruce Kenichi', race: 'Human',
+      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Bruce Kenichi', race: 'Human',
       hotbar: [
         ['SnakeMan', 'Cobra Art: Form 1', 'Curving rubber punch', 'Primary starter.', 'Starter', 'Direct Match'],
         ['SnakeMan-Platinum', 'Cobra Art: Form 2', 'Accelerating punch', 'Close extension.', 'Extender', 'Visual Approximation'],
@@ -1430,7 +1430,7 @@ const jotaro = build({
         bl('Dio-Senko-Rose', ['Time Style: Ultimate Flash', 'Time Style: Time Jump', 'Time Style: Time Stop'], 'Time-stop mechanic only; mode remains disabled.', 'Time stop', 'Strong Match', false, 'Dio-Senko'),
       ],
       elements: [earth(['Stone Style: Earth Wall', 'Stone Style: Rage Trail'], 'Durability and grounded pressure.'), lightning(['Shock Style: Stream'], 'Stand-speed visual support.')],
-      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Ryuji Kenichi', race: 'Human',
+      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Ryuji Kenichi', race: 'Human',
       hotbar: [
         ['Jotaro-Shizen', 'Wood Style: Golem Vanishing Images', 'Star Platinum barrage', 'Primary close starter.', 'Starter', 'Direct Match'],
         ['Jotaro-Shizen', 'Wood Style: Worlding Invincible', 'Time-stop Stand pressure', 'Identity control move.', 'Counter', 'Direct Match', 'counter'],
@@ -1467,7 +1467,7 @@ const jotaro = build({
         bl('Ryuji-Kenichi', ['Fist Style: Dragon Demon Combo', 'Fist Style: Dragon Lotus'], 'Durable, powerful Stand-punch support.', 'Star Platinum power', 'Strong Match'),
       ],
       elements: [earth(['Stone Style: Earth Wall', 'Stone Style: Rage Trail'], 'Durability and impact.'), lightning(['Shock Style: Stream'], 'Stand speed.')],
-      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Ryuji Kenichi', race: 'Human',
+      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Ryuji Kenichi', race: 'Human',
       hotbar: [
         ['Jotaro-Shizen', 'Wood Style: Golem Vanishing Images', 'Star Platinum barrage', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Jotaro-Shizen', 'Wood Style: Worlding Invincible', 'Time-stop Stand control', 'Reactive control.', 'Counter', 'Direct Match', 'counter'],
@@ -1505,7 +1505,7 @@ const jotaro = build({
         bl('Bruce-Kenichi', ['Fist Style: 6th Dance', 'Fist Style: 9th Dance'], 'Fast barrage and precision support.', 'ORA-style close barrage', 'Competitive Substitute'),
       ],
       elements: [earth(['Stone Style: Earth Wall', 'Stone Style: Rage Trail'], 'Durability and impact.'), lightning(['Shock Style: Stream'], 'Stand speed.')],
-      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'Dagai', consumable: 'Chi Pot', mentor: 'Ryuji Kenichi', race: 'Human',
+      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Ryuji Kenichi', race: 'Human',
       hotbar: [
         ['Jotaro-Shizen', 'Wood Style: Golem Vanishing Images', 'Star Platinum barrage', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Jotaro-Shizen', 'Wood Style: Worlding Invincible', 'Time-stop Stand control', 'Reactive control.', 'Counter', 'Direct Match', 'counter'],
