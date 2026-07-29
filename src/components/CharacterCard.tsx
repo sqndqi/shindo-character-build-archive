@@ -9,7 +9,7 @@ type Props = { build: CharacterBuild; slotLimit: SlotLimit; selected: boolean; f
 export const CharacterCard = memo(function CharacterCard({ build, slotLimit, selected, favorite, comparisonDisabled, onOpen, onCompare, onFavorite, mode }: Props) {
   const variant = build.variants.find((item) => item.bloodlineSlotCount === slotLimit) ?? build.variants[0]
   return <article className={`character-card character-card--${mode}`}>
-    <div className="character-card__visual"><Portrait src={build.image} alt={build.name} thumbnail /><div className="character-card__scrim" /><div className="character-card__serial">{variant.verificationStatus.toUpperCase()} · {variant.lastVerifiedUpdate}</div>
+    <div className="character-card__visual"><Portrait src={build.thumbnail || build.image} alt={build.name} thumbnail /><div className="character-card__scrim" /><div className="character-card__serial">{build.publicationStatus.toUpperCase()} · {variant.lastVerifiedUpdate}</div>
       <button className={`compare-toggle ${selected ? 'is-selected' : ''}`} onClick={() => onCompare(build.id)} disabled={comparisonDisabled && !selected} aria-label={`${selected ? 'Remove' : 'Add'} ${build.name} ${selected ? 'from' : 'to'} comparison`}>{selected ? <Check size={15} /> : <Swords size={15} />}</button>
       <button className={`favorite-toggle ${favorite ? 'is-favorite' : ''}`} onClick={() => onFavorite(build.id)} aria-label={`${favorite ? 'Remove' : 'Add'} ${build.name} ${favorite ? 'from' : 'to'} favorites`}><Heart size={15} fill={favorite ? 'currentColor' : 'none'} /></button>
       <div className="character-card__identity"><span>{build.series}</span><h3 title={build.name}>{build.name}</h3><p>{build.version}</p></div>

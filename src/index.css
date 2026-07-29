@@ -601,7 +601,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .suggestion-form > div { grid-column: 1 / -1; display: flex; gap: 8px; }
 .compare-page { min-height: 70vh; padding: 80px 0; }
 .site-footer { justify-content: center; font-size: 12px; letter-spacing: 0; text-align: center; }
-.migration-notice { width: min(1500px,calc(100% - 32px)); margin: 12px auto 0; padding: 10px 12px; display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid #704047; background: #1b1113; color: #ddd; font-size: 12px; }
+.draft-notice { margin-top: 22px; padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px; border: 1px solid #765228; background: #21190f; }
+.draft-notice strong { flex: 0 0 auto; color: #ffbd69; text-transform: uppercase; font-size: 11px; }
+.draft-notice span { color: #d0b894; font-size: 12px; line-height: 1.55; }
 
 @media (max-width: 620px) {
   .bloodline-detail-grid, .tier-title-fields, .suggestion-form { grid-template-columns: 1fr; }

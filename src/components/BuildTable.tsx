@@ -28,7 +28,7 @@ const columns: Column[] = [
   { key: 'aura', label: 'Aura', value: (b) => b.ratings.aura },
   { key: 'effects', label: 'Effects', value: (b) => b.effectsIntensity },
   { key: 'difficulty', label: 'Difficulty', value: (b) => b.ratings.difficulty },
-  { key: 'status', label: 'Status', value: (b) => b.status },
+  { key: 'status', label: 'Status', value: (b) => b.publicationStatus },
 ]
 
 const initialVisible = new Set(columns.map((column) => column.key))

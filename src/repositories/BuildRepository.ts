@@ -1,5 +1,5 @@
 import type { BuildVariant, CharacterBuild } from '../types'
-import { curatedBuilds } from '../data/curatedBuilds'
+import { completeRoster } from '../data/restoredRoster'
 
 export interface BuildPreview {
   id: string
@@ -8,6 +8,8 @@ export interface BuildPreview {
   franchise: string
   version: string
   image: string
+  thumbnail?: string
+  publicationStatus: CharacterBuild['publicationStatus']
   verificationStatus: BuildVariant['verificationStatus']
   lastVerifiedUpdate: string
 }
@@ -19,10 +21,10 @@ export interface BuildRepository {
 }
 
 class LocalBuildRepository implements BuildRepository {
-  private readonly reviewed = curatedBuilds.filter((build) => build.publicationStatus === 'Reviewed')
+  private readonly roster = completeRoster
 
   async listBuildPreviews() {
-    return this.reviewed.map((build) => {
+    return this.roster.map((build) => {
       const primary = build.variants[0]
       return {
         id: build.id,
@@ -31,6 +33,8 @@ class LocalBuildRepository implements BuildRepository {
         franchise: build.franchise,
         version: build.version,
         image: build.image,
+        thumbnail: build.thumbnail,
+        publicationStatus: build.publicationStatus,
         verificationStatus: primary.verificationStatus,
         lastVerifiedUpdate: primary.lastVerifiedUpdate,
       }
@@ -38,8 +42,8 @@ class LocalBuildRepository implements BuildRepository {
   }
 
   async getBuild(id: string) {
-    const build = this.reviewed.find((item) => item.id === id)
-    if (!build) throw new Error('Build is not available in the reviewed archive.')
+    const build = this.roster.find((item) => item.id === id)
+    if (!build) throw new Error('Build is not available in the archive.')
     return structuredClone(build)
   }
 

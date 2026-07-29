@@ -149,6 +149,7 @@ function curatedBuild(input: CuratedInput): CharacterBuild {
   return {
     id: input.id, characterId: `character-${input.id}`, versionId: `version-${input.id}`, buildName: primary.name,
     name: input.name, series: 'Lookism', franchise: 'PTJ / Street Action', version: input.version, image: input.image,
+    thumbnail: `/characters/thumbs/${input.id}.webp`,
     description: input.description, archetype: input.archetype, combatTags: ['Hand-to-hand', 'Martial arts'], customTags: ['Curated'],
     effectsIntensity: 'Medium',
     bloodlines: primary.bloodlines.map((slot, index) => ({ id: `${input.id}-bloodline-${index + 1}`, name: slot.name, purpose: slot.purpose, useMode: slot.useMode })),

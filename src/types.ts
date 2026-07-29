@@ -87,6 +87,7 @@ export interface CharacterBuild {
   franchise: string
   version: string
   image: string
+  thumbnail?: string
   description: string
   archetype: string[]
   combatTags: string[]
@@ -152,7 +153,7 @@ export interface CharacterBuild {
   characterAbilities: string[]
   knownCompromises: string[]
   confidence: ConfidenceLabel
-  publicationStatus: 'Reviewed' | 'Needs Research' | 'Hidden Draft' | 'Archived Placeholder'
+  publicationStatus: 'Reviewed' | 'Draft' | 'Needs Research' | 'Needs Retesting'
   variants: BuildVariant[]
   evidence: BuildEvidence[]
 }
@@ -165,6 +166,7 @@ export interface Character {
   aliases: string[]
   series: string
   image: string
+  thumbnail?: string
   description: string
   tags: string[]
 }
