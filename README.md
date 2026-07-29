@@ -27,6 +27,7 @@ npm run preview
 - `src/components/` — gallery, table, details, editor, comparison, and shared UI
 - `src/hooks/useBuilds.ts` — localStorage persistence and reset helpers
 - `public/characters/` — local character portraits
+- `IMAGE_SOURCES.md` — portrait source pages and resolved original assets
 
 ## Add a character
 
@@ -46,7 +47,13 @@ Every build receives the required 12-key hotbar and five combo route templates. 
 2. Use a clear kebab-case filename such as `james-lee.jpg`.
 3. Set the build image field to `/characters/james-lee.jpg`.
 
-Missing or broken image paths render a styled fallback automatically. The included portraits are locally stored original concept art; the app does not depend on remote image hosts.
+Missing or broken image paths render a styled fallback automatically. The included portraits are normalized local copies of character images sourced from the linked community wikis; the app does not depend on remote image hosts at runtime. See `IMAGE_SOURCES.md` for attribution and direct asset links.
+
+Refresh the bundled images and source manifest with:
+
+```bash
+npm run sync:portraits
+```
 
 ## Local data and resets
 
