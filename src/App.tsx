@@ -45,7 +45,7 @@ export default function App() {
     migratePublicData()
     buildRepository.listBuildPreviews()
       .then((previews) => Promise.all(previews.map((preview) => buildRepository.getBuild(preview.id))))
-      .then(setBuilds).catch(() => setLoadError('The reviewed archive could not be loaded. Your personal preferences were not changed.')).finally(() => setLoading(false))
+      .then(setBuilds).catch(() => setLoadError('The archive could not be loaded. Your personal preferences were not changed.')).finally(() => setLoading(false))
   }, [])
   useEffect(() => { writeStorage(compareKey, compareIds.filter((id) => builds.some((build) => build.id === id))) }, [builds, compareIds])
 
@@ -86,12 +86,12 @@ export default function App() {
       <nav className={mobileOpen ? 'is-open' : ''} aria-label="Primary navigation">{nav.map(([key, label]) => <button key={key} className={view === key ? 'active' : ''} onClick={() => navigate(key)}>{label}</button>)}</nav>
     </header>
 
-    {loading ? <main className="loading-page">Loading reviewed builds…</main>
+    {loading ? <main className="loading-page">Loading archive…</main>
       : loadError ? <main className="empty-state"><h2>Archive unavailable</h2><p>{loadError}</p></main>
       : view === 'tiers' ? <Suspense fallback={<main className="loading-page">Loading your tier lists…</main>}><main><TierListBoard builds={builds} lists={tiers.lists} onCreate={tiers.create} onUpdate={tiers.update} onDuplicate={tiers.duplicate} onDelete={tiers.remove} onImportShared={tiers.addShared} /></main></Suspense>
       : view === 'inventory' ? <Suspense fallback={<main className="loading-page">Loading inventory…</main>}><ArchiveWorkshop builds={builds} statuses={collection.statuses} elementStatuses={collection.elementStatuses} favorites={collection.favorites} onStatus={setStatus} onElementStatus={setElementStatus} onFavorite={toggleBloodlineFavorite} /></Suspense>
       : view === 'suggestions' ? <Suspense fallback={<main className="loading-page">Loading suggestions…</main>}><SuggestionsPage /></Suspense>
-      : view === 'compare' ? <main className="compare-page"><header className="systems-hero"><span className="eyebrow"><Swords size={15} /> COMPARE</span><h1>Compare reviewed builds.</h1><p>Select up to three builds from the gallery, then review their prepared primary variants.</p></header>{compared.length >= 2 ? <Suspense fallback={null}><ComparePanel builds={compared} slotLimit={4} onRemove={toggleCompare} onClose={() => navigate('builds')} /></Suspense> : <div className="empty-state"><h3>Select at least two builds</h3><button className="button button--primary" onClick={() => navigate('builds')}>Browse builds</button></div>}</main>
+      : view === 'compare' ? <main className="compare-page"><header className="systems-hero"><span className="eyebrow"><Swords size={15} /> COMPARE</span><h1>Compare character builds.</h1><p>Select up to three builds from the gallery, then compare their available reviewed or draft variants.</p></header>{compared.length >= 2 ? <Suspense fallback={null}><ComparePanel builds={compared} slotLimit={4} onRemove={toggleCompare} onClose={() => navigate('builds')} /></Suspense> : <div className="empty-state"><h3>Select at least two builds</h3><button className="button button--primary" onClick={() => navigate('builds')}>Browse builds</button></div>}</main>
       : view === 'diagnostics' && import.meta.env.DEV && DiagnosticsPage ? <Suspense fallback={<main className="loading-page">Loading diagnostics…</main>}><DiagnosticsPage builds={builds} visibleCount={pageBuilds.length} filteringDuration={0} /></Suspense>
       : <main>
         <section className="archive-hero"><div className="archive-hero__copy"><span className="eyebrow">MULTI-MANHWA SHINDO LIFE ARCHIVE</span><h1>Build the fighter.<br /><i>Know the compromise.</i></h1><p>Reviewed setups and clearly labeled early drafts across Lookism, Solo Leveling, Eleceed, Murim, and more.</p></div><div className="archive-stats"><div><strong>{builds.length}</strong><span>Total characters</span></div><div><strong>{builds.filter((build) => build.publicationStatus === 'Reviewed').length}</strong><span>Reviewed builds</span></div><div><strong>{builds.filter((build) => build.publicationStatus === 'Draft').length}</strong><span>Draft builds</span></div><div><strong>{values.series.length}</strong><span>Series represented</span></div></div></section>
