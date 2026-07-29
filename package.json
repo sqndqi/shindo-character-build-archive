@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && tsx scripts/generate-route-shells.ts",
     "lint": "oxlint",
     "sync:portraits": "node scripts/sync-portraits.mjs",
     "thumbnails": "node scripts/generate-thumbnails.mjs",

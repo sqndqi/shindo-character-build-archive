@@ -8,8 +8,10 @@ await mkdir(artifacts, { recursive: true })
 const browser = await chromium.launch({ executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', headless: true })
 const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } })
 const errors = []
+const failedResponses = []
 page.on('console', (message) => message.type() === 'error' && errors.push(message.text()))
 page.on('pageerror', (error) => errors.push(error.message))
+page.on('response', (response) => response.status() >= 400 && failedResponses.push(`${response.status()} ${response.url()}`))
 const archiveUrl = process.env.SMOKE_URL ?? 'http://127.0.0.1:4173'
 await page.goto(archiveUrl, { waitUntil: 'networkidle' })
 
@@ -97,6 +99,6 @@ const archiveBase = archiveLocation.pathname.replace(/\/$/, '')
 await page.goto(`${archiveLocation.origin}${archiveBase}/build/goo-kim`, { waitUntil: 'networkidle' })
 await page.getByRole('heading', { name: 'Goo Kim', exact: true }).waitFor()
 if (await page.getByText('Wind-Kenjutsu', { exact: true }).count() < 1) throw new Error('Direct Goo build route does not expose Kenjutsu.')
-if (errors.length) throw new Error(`Console errors: ${errors.join(' | ')}`)
+if (errors.length) throw new Error(`Console errors: ${errors.join(' | ')}; failed responses: ${failedResponses.join(' | ')}`)
 console.log(JSON.stringify({ url: page.url(), roster: 100, firstPageCards: 24, tierCharacters: 100, consoleErrors: 0, viewports: [320, 375, 430, 1366, 1920, 2560], screenshots: ['public-desktop.png', 'public-detail-2-slot.png', 'public-mobile.png'] }))
 await browser.close()
