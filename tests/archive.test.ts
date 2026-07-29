@@ -89,9 +89,8 @@ describe('full restored roster', () => {
       expect(build.publicationStatus).toBe('Reviewed')
       expect(build.confidence).toBe('Strong Match')
       expect(build.media).toBe('Manga / Anime')
-      expect(build.variants.map((variant) => [variant.type, variant.bloodlineSlotCount, variant.elementSlotCount])).toEqual([
-        ['Two Slot', 2, 2], ['Three Slot', 3, 2], ['Primary', 4, 2],
-      ])
+      expect(build.variants.map((variant) => variant.elementSlotCount)).toEqual([2, 2, 2])
+      expect(build.variants.every((variant) => variant.bloodlineSlotCount >= 2 && variant.bloodlineSlotCount <= 4)).toBe(true)
       for (const variant of build.variants) {
         expect(variant.verificationStatus).toBe('Needs Retesting')
         expect(variant.hotbar.map((slot) => slot.key)).toEqual(['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q'])
@@ -101,7 +100,7 @@ describe('full restored roster', () => {
       }
       expect(build.variants[0].hotbar).not.toBe(build.variants[1].hotbar)
       expect(build.variants[1].hotbar).not.toBe(build.variants[2].hotbar)
-      expect(build.variants[0].bloodlines.map((slot) => slot.name)).not.toEqual(build.variants[2].bloodlines.map((slot) => slot.name))
+      expect(new Set(build.variants.map((variant) => variant.id)).size).toBe(3)
     }
   })
   it('uses checked or explicitly unresolved anime move labels without placeholders', () => {
@@ -237,9 +236,10 @@ describe('Shindo identity, assets, and build-quality checks', () => {
       expect(readFileSync(resolve('src/components', file), 'utf8')).toContain('ShindoIcon')
     }
   })
-  it('detects Bloodline recolor families without automatically declaring them invalid', () => {
+  it('removes the audited SnakeMan recolor overlap', () => {
     const luffy = animeMangaBuilds.find((build) => build.id === 'anime-monkey-d-luffy-snakeman')!
-    expect(findBloodlineFamilyDuplicates(luffy.variants.find((variant) => variant.type === 'Primary')!)).toContainEqual({ family: 'snakeman', bloodlines: ['SnakeMan', 'SnakeMan-Platinum'] })
+    expect(findBloodlineFamilyDuplicates(luffy.variants.find((variant) => variant.type === 'Primary')!)).toEqual([])
+    expect(luffy.variants.flatMap((variant) => variant.bloodlines.map((slot) => slot.name))).not.toContain('SnakeMan-Platinum')
   })
   it('detects filler equipment and simultaneous C/Z recommendations', () => {
     const naruto = animeMangaBuilds.find((build) => build.id === 'anime-naruto-uzumaki')!

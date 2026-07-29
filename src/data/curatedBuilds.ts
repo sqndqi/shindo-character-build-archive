@@ -1,4 +1,5 @@
 import type { BuildEvidence, BuildVariant, CharacterBuild, HotbarSlot } from '../types'
+import { priorityEvidence } from './priorityEvidence'
 
 const checkedAt = '2026-07-29'
 const gameUpdate = 'Live build reviewed 2026-07-29'
@@ -80,7 +81,7 @@ const jamesFour = variant({
   ],
   elements: [element('Gale', [0, 4], 'Movement control and wind-pressure extension.'), element('Order', [3, 4], 'Explosive light pressure and a blade-like visual substitute.')],
   cMode: 'Dio-Senko-Rose — Stage 1', zMode: 'None — avoids changing the build silhouette', combatArt: 'Jeet Kune Do', weapon: 'None',
-  ninjaTool: 'Shock Bomb', consumable: 'Chi Pot', mentor: 'Bruce Kenichi', race: 'Human',
+  ninjaTool: 'None', consumable: 'None', mentor: 'Bruce Kenichi', race: 'Human',
   hotbar: hotbar('james-current-4x2', [
     ['Order', moves.Order[3], 'Starter', 'Ranged guard pressure.', true],
     ['Gale', moves.Gale[0], 'Extender', 'Pulls movement into kick range.'],
@@ -108,30 +109,74 @@ const jamesFour = variant({
   usageGuide: ['Open with Order or Gale pressure.', 'Confirm before spending Pika-Senko.', 'Keep Doku-Tengoku counter available while Dio mode is active.'],
 })
 
-function reducedJames(id: string, count: 2 | 3, names: string[], type: 'Two Slot' | 'Three Slot'): BuildVariant {
-  const included = jamesFour.bloodlines.filter((slot) => names.includes(slot.name))
-  const choices = jamesFour.hotbar.filter((slot) => names.includes(slot.source) || ['Order', 'Gale', 'None', 'Combat Art'].includes(slot.source))
-  const authored = choices.filter((slot) => !['None', 'Combat Art'].includes(slot.source)).slice(0, 10)
-  const support: MoveChoice[] = [
-    ['Order', moves.Order[4], 'Finisher', 'Blade-like light finisher.', false],
-    ['Gale', moves.Gale[4], 'Guard break', 'Reduced-slot wind pressure.', true],
-  ]
-  while (authored.length < 10) {
-    const next = support[authored.length % support.length]
-    authored.push({ ...jamesFour.hotbar[0], id: `${id}-support-${authored.length}`, source: next[0], ability: next[1], comboRole: next[2], purpose: next[3], blockBreak: Boolean(next[4]) })
-  }
-  authored.push(jamesFour.hotbar[10], jamesFour.hotbar[11])
-  return variant({
-    ...jamesFour, id, name: `${count}-slot focused version`, type, bloodlineSlotCount: count, bloodlines: included,
-    hotbar: hotbar(id, authored.map((slot) => [slot.source, slot.ability, slot.comboRole, slot.purpose, slot.blockBreak])),
-    ratings: { ...jamesFour.ratings, pvp: jamesFour.ratings.pvp - .3, combos: jamesFour.ratings.combos - .4 },
-    strengths: [`Complete authored ${count}-slot route`, 'Keeps the approved speed-and-kick identity'],
-    weaknesses: [...jamesFour.weaknesses, `Drops ${jamesFour.bloodlines.filter((slot) => !names.includes(slot.name)).map((slot) => slot.name).join(' and ')}`],
-  })
-}
+const jamesThree = variant({
+  ...jamesFour,
+  id: 'james-current-3x2',
+  name: 'Three-slot speed, technique, and counter',
+  type: 'Three Slot',
+  bloodlineSlotCount: 3,
+  bloodlines: [
+    bloodline('Dio-Senko-Rose', 'Primary speed-threshold mode and engage.', true),
+    bloodline('Bruce-Kenichi', 'Precise kick combinations and close technique.'),
+    bloodline('Doku-Tengoku', 'Reactive counter and palm control.'),
+  ],
+  hotbar: hotbar('james-current-3x2', [
+    ['Order', moves.Order[3], 'Starter', 'Ranged guard pressure.', true],
+    ['Gale', moves.Gale[0], 'Extender', 'Pulls movement into kick range.'],
+    ['Dio-Senko-Rose', moves['Dio-Senko-Rose'][0], 'Mobility', 'Speed-threshold engage.'],
+    ['Bruce-Kenichi', moves['Bruce-Kenichi'][0], 'Starter', 'Kick-route launcher.'],
+    ['Doku-Tengoku', moves['Doku-Tengoku'][0], 'Pressure', 'Close palm check.'],
+    ['Doku-Tengoku', moves['Doku-Tengoku'][2], 'Counter', 'Reserved reversal.'],
+    ['Bruce-Kenichi', moves['Bruce-Kenichi'][1], 'Extender', 'Aerial kick continuation.'],
+    ['Dio-Senko-Rose', moves['Dio-Senko-Rose'][1], 'Mobility', 'Chase or reset.'],
+    ['Order', moves.Order[4], 'Finisher', 'Blade-like light cash-out.'],
+    ['Dio-Senko-Rose', 'Dio-Senko-Rose Mode — Stage 1', 'Mode ability', 'Main speed mode.'],
+    ['None', 'Not used in this variant', 'Empty', 'No accurate Z-mode is equipped.'],
+    ['Combat Art', 'Jeet Kune Do — Q Attack', 'Combat Art', 'Low-resource confirm.'],
+  ]),
+  combos: [
+    { name: 'Main proposed route', sequence: ['1', '3', '4', 'V', '9'], explanation: 'Confirm Order pressure before committing the kick chain.' },
+    { name: 'Counter route', sequence: ['T', '3', '4'], explanation: 'Continue only after the counter connects.' },
+    { name: 'Escape route', sequence: ['T', '8'], explanation: 'Counter, then use Time Jump to disengage.' },
+  ],
+  ratings: { ...jamesFour.ratings, pvp: 8.6, combos: 8.6 },
+  strengths: ['Keeps speed, kick technique, and a dedicated counter', 'No filler Bloodline or equipment'],
+  weaknesses: ['Drops Pika-Senko explosive kicks', 'No Z-mode', 'Timing remains untested'],
+})
 
-const jamesThree = reducedJames('james-current-3x2', 3, ['Dio-Senko-Rose', 'Bruce-Kenichi', 'Doku-Tengoku'], 'Three Slot')
-const jamesTwo = reducedJames('james-current-2x2', 2, ['Dio-Senko-Rose', 'Bruce-Kenichi'], 'Two Slot')
+const jamesTwo = variant({
+  ...jamesFour,
+  id: 'james-current-2x2',
+  name: 'Two-slot speed and technique core',
+  type: 'Two Slot',
+  bloodlineSlotCount: 2,
+  bloodlines: [
+    bloodline('Dio-Senko-Rose', 'Primary speed-threshold mode and engage.', true),
+    bloodline('Bruce-Kenichi', 'Precise kick combinations and close technique.'),
+  ],
+  hotbar: hotbar('james-current-2x2', [
+    ['Order', moves.Order[3], 'Starter', 'Ranged guard pressure.', true],
+    ['Gale', moves.Gale[0], 'Extender', 'Pulls movement into kick range.'],
+    ['Dio-Senko-Rose', moves['Dio-Senko-Rose'][0], 'Mobility', 'Speed-threshold engage.'],
+    ['Bruce-Kenichi', moves['Bruce-Kenichi'][0], 'Starter', 'Kick-route launcher.'],
+    ['Order', moves.Order[4], 'Finisher', 'Blade-like light cash-out.'],
+    ['Bruce-Kenichi', moves['Bruce-Kenichi'][1], 'Extender', 'Aerial kick continuation.'],
+    ['Dio-Senko-Rose', moves['Dio-Senko-Rose'][1], 'Mobility', 'Chase or reset.'],
+    ['Gale', moves.Gale[4], 'Pressure', 'Wind pressure for the reduced kit.', true],
+    ['Bruce-Kenichi', moves['Bruce-Kenichi'][2], 'Finisher', 'Confirmed physical cash-out.'],
+    ['Dio-Senko-Rose', 'Dio-Senko-Rose Mode — Stage 1', 'Mode ability', 'Main speed mode.'],
+    ['None', 'Not used in this variant', 'Empty', 'No accurate Z-mode is equipped.'],
+    ['Combat Art', 'Jeet Kune Do — Q Attack', 'Combat Art', 'Low-resource confirm.'],
+  ]),
+  combos: [
+    { name: 'Main proposed route', sequence: ['1', '3', '4', '6', '9'], explanation: 'Use Order pressure, then confirm the speed-and-kick route.' },
+    { name: 'Pressure route', sequence: ['8', '3', '4'], explanation: 'Wind pressure creates an opening; do not assume a guaranteed break.' },
+    { name: 'Escape route', sequence: ['7', '2'], explanation: 'Use Time Jump and Gale spacing to exit.' },
+  ],
+  ratings: { ...jamesFour.ratings, pvp: 8.2, combos: 8.1, defense: 7.1 },
+  strengths: ['Preserves the approved identity with two Bloodlines', 'No filler slot or equipment'],
+  weaknesses: ['No Doku counter', 'No Pika explosive kick', 'No Z-mode'],
+})
 const jamesFourElements = variant({
   ...jamesFour, id: 'james-current-4x4', name: 'Four-element compatibility', type: 'Four Slot', elementSlotCount: 4,
   elements: [...jamesFour.elements, element('Lightning', [0], 'Adds a low-commitment shock check.'), element('Earth', [0], 'Adds a defensive wall when extra element slots are available.')],
@@ -166,22 +211,35 @@ function curatedBuild(input: CuratedInput): CharacterBuild {
     changeHistory: [], chapterRange: 'Current Lookism continuity; exact chapter range needs editorial confirmation',
     characterAbilities: input.archetype, knownCompromises: ['Shindo Life substitutions cannot reproduce the character one-to-one.'],
     confidence: 'Strong Match', publicationStatus: 'Reviewed', variants: input.variants,
-    evidence: commonEvidence([...new Set(input.variants.flatMap((item) => item.bloodlines.map((slot) => slot.name)))]),
+    evidence: priorityEvidence[input.id]
+      ?? commonEvidence([...new Set(input.variants.flatMap((item) => item.bloodlines.map((slot) => slot.name)))]),
   }
 }
 
 function primaryVariant(id: string, bloodlineNames: string[], elementNames: string[], mode: string, combatArt: string, weapon = 'None'): BuildVariant {
+  const priorityAudit = ['seongji-yuk', 'gun-park', 'little-daniel-park', 'johan-seong'].includes(id)
   const selectedBloodlines = bloodlineNames.map((name, index) => bloodline(name, index === 0 ? 'Primary character identity and pressure engine.' : 'Reviewed supporting match.', name === mode))
   const selectedElements = elementNames.map((name) => element(name, [0, 1], 'Reviewed neutral or defensive support.'))
   const pool: MoveChoice[] = selectedBloodlines.flatMap((slot) => slot.exactMovesUsed.map((move, index) => [slot.name, move, index === 2 ? 'Counter' : index === 0 ? 'Starter' : 'Extender', slot.purpose, false] as MoveChoice))
   const elementPool: MoveChoice[] = selectedElements.flatMap((slot) => slot.exactMovesUsed.map((move) => [slot.name, move, 'Defense', slot.purpose, false] as MoveChoice))
-  const authored = [...pool, ...elementPool].slice(0, 10)
-  if (authored.length < 10) throw new Error(`${id} does not have enough reviewed moves for a complete hotbar`)
-  authored.push([mode, `${mode} Mode — Stage 1`, 'Mode ability', 'Recommended C-mode.', false], ['None', 'No Z-mode equipped', 'Defense', 'Avoids an inaccurate transformation.', false])
+  const authored = [...pool, ...elementPool].slice(0, priorityAudit ? 9 : 10)
+  if (authored.length < (priorityAudit ? 9 : 10)) throw new Error(`${id} does not have enough reviewed moves for a complete hotbar`)
+  if (priorityAudit) {
+    authored.push(
+      [mode, `${mode} Mode — Stage 1`, 'Mode ability', 'Recommended C-mode.', false],
+      ['None', 'Not used in this variant', 'Empty', 'No character-accurate Z-mode is equipped.', false],
+      ['Combat Art', `${combatArt} — Q Attack`, 'Combat Art', 'Low-resource weaponless pressure.', false],
+    )
+  } else {
+    authored.push([mode, `${mode} Mode — Stage 1`, 'Mode ability', 'Recommended C-mode.', false], ['None', 'No Z-mode equipped', 'Defense', 'Avoids an inaccurate transformation.', false])
+  }
   return variant({
     id: `${id}-4x2`, name: 'Reviewed primary version', type: 'Primary', bloodlineSlotCount: 4, elementSlotCount: 2,
     bloodlines: selectedBloodlines, elements: selectedElements, cMode: `${mode} — Stage 1`, zMode: 'None', combatArt, weapon,
-    ninjaTool: weapon === 'None' ? 'Shock Bomb' : 'Dagai Wire', consumable: 'Chi Pot', mentor: combatArt === 'Boxing' ? 'Ryuji Kenichi' : 'Bruce Kenichi', race: 'Human',
+    ninjaTool: priorityAudit ? 'None' : weapon === 'None' ? 'Shock Bomb' : 'Dagai Wire',
+    consumable: priorityAudit ? 'None' : 'Chi Pot',
+    mentor: priorityAudit ? 'None' : combatArt === 'Boxing' ? 'Ryuji Kenichi' : 'Bruce Kenichi',
+    race: 'Human',
     hotbar: hotbar(`${id}-4x2`, authored), combos: [{ name: 'Testing route', sequence: ['1', '2', '3', '4'], explanation: 'Move order is authored, but live connection timing remains marked for retesting.' }],
     ratings: { accuracy: 8.7, pvp: 8.4, mobility: 8.2, combos: 8.1, defense: 8.0, visuals: 8.6, aura: 8.8, difficulty: 8.3 },
     strengths: ['Reviewed Bloodline-to-character mapping', 'Only wiki-listed move names are displayed'],

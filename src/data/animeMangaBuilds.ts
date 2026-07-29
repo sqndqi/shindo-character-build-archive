@@ -6,6 +6,7 @@ import type {
   Combo,
   HotbarSlot,
 } from '../types'
+import { priorityEvidence } from './priorityEvidence'
 
 const REVIEW_DATE = '2026-07-29'
 const UPDATE_LABEL = 'Live update pending owner retest'
@@ -151,43 +152,6 @@ function authoredVariant(input: VariantInput): BuildVariant {
   }
 }
 
-function evidence(character: string, primaryChoice: string, compromise: string): BuildEvidence[] {
-  return [
-    {
-      category: 'Character',
-      claim: `${character}'s named version is represented through the listed identity abilities and visual priorities.`,
-      sourceTitle: `${character} community character reference`,
-      sourceReference: 'Editorial reference pending',
-      checkedAt: REVIEW_DATE,
-      notes: 'No unconfirmed chapter or episode number is presented.',
-    },
-    {
-      category: 'Game',
-      claim: primaryChoice,
-      sourceTitle: 'Shindo Life Wiki — Bloodlines and movesets',
-      sourceReference: 'https://shindo-life-rell.fandom.com/wiki/Bloodline',
-      checkedAt: REVIEW_DATE,
-      notes: 'Move names and sources were checked individually; live behavior can change after updates.',
-    },
-    {
-      category: 'Game',
-      claim: compromise,
-      sourceTitle: 'Shindo Life Wiki — game systems',
-      sourceReference: 'https://shindo-life-rell.fandom.com/wiki/Shindo_Life_Wiki',
-      checkedAt: REVIEW_DATE,
-      notes: 'Approximation and competitive-support choices are labeled in the authored variant.',
-    },
-    {
-      category: 'Testing',
-      claim: 'All combo routes remain proposed until the owner verifies current hit timing, guard behavior, and resource costs in-game.',
-      sourceTitle: 'Owner live test queue',
-      sourceReference: 'Internal testing pending',
-      checkedAt: REVIEW_DATE,
-      notes: 'Publication is Reviewed, but verification remains Needs Retesting.',
-    },
-  ]
-}
-
 function combos(
   main: [string[], string],
   counter: [string[], string],
@@ -322,7 +286,7 @@ const naruto = build({
         bl('Narumaki', ['Narumaki Style: Time Jump Bomb', 'Narumaki Style: Spirit Bomb Cutter', 'Narumaki Style: Spirit Bomb Barrage'], 'Supplies the classic Rasengan family and clone-led pressure.', 'Rasengan and clone offense', 'Direct Match', false, 'Narumaki-Ruby'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Vortex'], 'Wind-nature projectile and displacement support.'), yang(['Light Style: Sword Flash'], 'Six Paths light-energy visual support.')],
-      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Six-Paths-Narumaki', 'Six Path: Spirit Bomb Air Combo', 'Rasengan aerial rush', 'Close neutral confirm.', 'Starter', 'Direct Match'],
         ['Narumaki', 'Narumaki Style: Spirit Bomb Cutter', 'Rasenshuriken', 'Mid-range punish.', 'Finisher', 'Direct Match'],
@@ -359,7 +323,7 @@ const naruto = build({
         bl('Ashura-Shizen', ['Wood Style: Golden Strike', 'Wood Style: Heavenly Barrage'], 'Six Paths lineage support and physical pressure.', 'Asura inheritance', 'Strong Match', false, 'Bruce-Kenichi'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Vortex'], 'Wind-nature neutral and defensive space.'), yang(['Light Style: Sword Flash'], 'Six Paths chakra visual.')],
-      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Six-Paths-Narumaki', 'Six Path: Spirit Bomb Air Combo', 'Aerial Rasengan rush', 'Fast identity starter.', 'Starter', 'Direct Match'],
         ['Narumaki', 'Narumaki Style: Spirit Bomb Cutter', 'Rasenshuriken', 'Ranged punish.', 'Finisher', 'Direct Match'],
@@ -389,20 +353,19 @@ const naruto = build({
       compromises: ['Ashura-Shizen is a strong lineage match, not a literal move-for-move translation.', 'Yang remains visual support.'],
     }),
     authoredVariant({
-      id: 'anime-naruto-4x2', name: 'Four-slot war-arc arsenal', type: 'Primary',
+      id: 'anime-naruto-4x2', name: 'Three-slot war-arc arsenal', type: 'Primary',
       bloodlines: [
         bl('Six-Paths-Narumaki', ['Six Path: Spirit Bomb Air Combo', 'Six Path: Spirit Shuriken Barrage'], 'Primary Six Paths mode and aerial pressure.', 'Six Paths Sage Mode', 'Direct Match', true, 'Narumaki'),
         bl('Narumaki', ['Narumaki Style: Spirit Bomb Cutter', 'Narumaki Style: Spirit Bomb Barrage'], 'Classic Rasengan family.', 'Rasengan offense', 'Direct Match'),
-        bl('Narumaki-Ruby', ['Narumaki Style: Time Jump Bomb'], 'Alternate visual skin used for clone-assisted repositioning.', 'Clone and Kurama-colored pressure', 'Visual Approximation'),
         bl('Ashura-Shizen', ['Wood Style: Golden Strike', 'Wood Style: Golden Dragon'], 'Six Paths lineage and large-scale chakra support.', 'Asura inheritance', 'Strong Match'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Vortex'], 'Wind Release neutral and separation.'), yang(['Light Style: Sword Flash'], 'Six Paths chakra visual.')],
-      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Six-Paths-Narumaki — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Six-Paths-Narumaki', 'Six Path: Spirit Bomb Air Combo', 'Aerial Rasengan rush', 'Primary contact tool.', 'Starter', 'Direct Match'],
         ['Narumaki', 'Narumaki Style: Spirit Bomb Cutter', 'Rasenshuriken', 'Mid-range finisher.', 'Finisher', 'Direct Match'],
         ['Ashura-Shizen', 'Wood Style: Golden Strike', 'Asura-enhanced strike', 'Physical bridge.', 'Extender', 'Strong Match'],
-        ['Narumaki-Ruby', 'Narumaki Style: Time Jump Bomb', 'Clone-assisted Rasengan', 'Reposition and re-entry.', 'Mobility', 'Visual Approximation'],
+        ['Narumaki', 'Narumaki Style: Time Jump Bomb', 'Clone-assisted Rasengan', 'Reposition and re-entry.', 'Mobility', 'Visual Approximation'],
         ['Air', 'Air Style: Wind Cutter', 'Wind Release', 'Low-commitment check.', 'Neutral', 'Direct Match'],
         ['Narumaki', 'Narumaki Style: Spirit Bomb Barrage', 'Rasengan barrage', 'Close extension.', 'Extender', 'Direct Match'],
         ['Six-Paths-Narumaki', 'Six Path: Spirit Shuriken Barrage', 'Rasenshuriken barrage', 'Ranged pressure.', 'Pressure', 'Direct Match'],
@@ -422,12 +385,12 @@ const naruto = build({
       ),
       ratings: ratings(9, 9, 9, 9, 8, 10, 10, 8),
       strengths: ['Complete war-arc identity core.', 'Excellent range coverage and repositioning.', 'No unrelated eye Bloodline.'],
-      weaknesses: ['Narumaki and Narumaki-Ruby overlap mechanically.', 'Several large effects raise resource and visibility costs.', 'Full route timing is untested.'],
+      weaknesses: ['Several large effects raise resource and visibility costs.', 'The Kurama Z-mode may compete with the Six Paths mode plan.', 'Full route timing is untested.'],
       usageGuide: ['Use Air to enter neutral safely.', 'Reserve Ruby for repositioning rather than mode use.', 'Use only one mode layer at a time unless testing proves the resource cost sustainable.'],
-      compromises: ['Narumaki-Ruby is a visual skin used as support, not a separate canonical power.', 'Golden Dragon is a visual approximation of large Six Paths chakra output.'],
+      compromises: ['Narumaki-Ruby was excluded because it repeats the Narumaki family role.', 'Golden Dragon is a visual approximation of large Six Paths chakra output.'],
     }),
   ],
-  evidence: evidence('Naruto Uzumaki', 'Six-Paths-Narumaki supplies the closest direct Shindo representation of Naruto’s Six Paths Rasengan and Rasenshuriken toolkit.', 'Narumaki-Ruby and Yang are supporting visual choices; neither is presented as a separate canonical Naruto power.'),
+  evidence: priorityEvidence['anime-naruto-uzumaki'],
 })
 
 const sasuke = build({
@@ -449,7 +412,7 @@ const sasuke = build({
         bl('Raion-Akuma', ['Copy Style: Blaze Illusion', 'Copy Style: Lightning Blaze', 'Copy Style: Arrow Blaze'], 'Mangekyō lightning, black flame, and Susanoo support.', 'Sharingan, Amaterasu, and Susanoo', 'Direct Match', false, 'Akuma'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Electro Control'], 'Chidori-like lightning control.'), inferno(['Inferno Style: Flame Blitz', 'Inferno Style: Burnout'], 'Amaterasu-colored flame pressure.')],
-      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Raion Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Raion Blade', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Raion-Rengoku', 'Rengoku Style: Inferno Engage', 'Rinnegan-assisted engagement', 'Primary close starter.', 'Starter', 'Direct Match'],
         ['Raion-Rengoku', 'Rengoku Style: Vanishing Replacement', 'Space switch', 'Reactive reposition.', 'Counter', 'Direct Match', 'counter'],
@@ -461,7 +424,7 @@ const sasuke = build({
         ['Inferno', 'Inferno Style: Flame Blitz', 'Amaterasu movement', 'Flame-coated reposition.', 'Mobility', 'Strong Match'],
         ['Lightning', 'Shock Style: Electro Control', 'Lightning control', 'Space control before sword range.', 'Neutral', 'Strong Match'],
         ['Raion-Rengoku', 'Raion-Rengoku — Stage 1', 'Rinnegan mode', 'Activate the primary eye mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids an unrelated transformation', 'Preserve adult Sasuke accuracy.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids an unrelated transformation', 'Preserve adult Sasuke accuracy.', 'Mode', 'Direct Match', 'mode'],
         ['Raion Blade', 'Raion Blade — Q Ability', 'Kusanagi-style sword pressure', 'Weapon follow-up.', 'Weapon', 'Strong Match'],
       ],
       combos: combos(
@@ -486,7 +449,7 @@ const sasuke = build({
         bl('Raion-Gaiden', ['Rengoku Style: Meteor Inferno Blade', 'Rengoku Style: Samurai Combo'], 'Adds sword-shaped inferno pressure.', 'Adult sword combat', 'Strong Match'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Dragon Bomb'], 'Lightning neutral and projectile control.'), inferno(['Inferno Style: Flame Blitz'], 'Black-flame movement approximation.')],
-      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Raion Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Raion Blade', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Raion-Rengoku', 'Rengoku Style: Inferno Engage', 'Rinnegan engagement', 'Close starter.', 'Starter', 'Direct Match'],
         ['Raion-Rengoku', 'Rengoku Style: Vanishing Replacement', 'Space switching', 'Defensive reposition.', 'Counter', 'Direct Match', 'counter'],
@@ -498,7 +461,7 @@ const sasuke = build({
         ['Inferno', 'Inferno Style: Flame Blitz', 'Amaterasu movement', 'Reposition through pressure.', 'Mobility', 'Strong Match'],
         ['Lightning', 'Shock Style: Dragon Bomb', 'Lightning Release', 'Projectile neutral.', 'Neutral', 'Strong Match'],
         ['Raion-Rengoku', 'Raion-Rengoku — Stage 1', 'Rinnegan mode', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve visual accuracy.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve visual accuracy.', 'Mode', 'Direct Match', 'mode'],
         ['Raion Blade', 'Raion Blade — Q Ability', 'Kusanagi-style sword', 'Weapon input.', 'Weapon', 'Strong Match'],
       ],
       combos: combos(
@@ -524,7 +487,7 @@ const sasuke = build({
         bl('Indra-Akuma', ['Copy Style: Inferno Blaze', 'Copy Style: Blades of Destiny'], 'Ancestral lightning and blade support.', 'Indra lineage', 'Strong Match'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Electro Control'], 'Chidori-like control.'), inferno(['Inferno Style: Flame Blitz'], 'Amaterasu movement support.')],
-      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Raion Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Raion-Rengoku — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Raion Blade', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Raion-Rengoku', 'Rengoku Style: Inferno Engage', 'Rinnegan engagement', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Raion-Rengoku', 'Rengoku Style: Vanishing Replacement', 'Space switch', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
@@ -536,7 +499,7 @@ const sasuke = build({
         ['Raion-Gaiden', 'Rengoku Style: Meteor Inferno Blade', 'Inferno sword projection', 'High-commitment finisher.', 'Finisher', 'Strong Match'],
         ['Inferno', 'Inferno Style: Flame Blitz', 'Amaterasu movement', 'Mobile reset.', 'Mobility', 'Strong Match'],
         ['Raion-Rengoku', 'Raion-Rengoku — Stage 1', 'Rinnegan mode', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids an unrelated form', 'Preserve adult Sasuke identity.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids an unrelated form', 'Preserve adult Sasuke identity.', 'Mode', 'Direct Match', 'mode'],
         ['Raion Blade', 'Raion Blade — Q Ability', 'Kusanagi-style blade', 'Weapon pressure.', 'Weapon', 'Strong Match'],
       ],
       combos: combos(
@@ -554,7 +517,7 @@ const sasuke = build({
       compromises: ['Indra-Akuma is an ancestral strong match and competitive support, not a separate adult Sasuke ability.'],
     }),
   ],
-  evidence: evidence('Sasuke Uchiha', 'Raion-Rengoku and Raion-Akuma directly cover the closest Shindo Rinnegan, inferno, lightning, and Susanoo identity.', 'Raion-Gaiden and Indra-Akuma are supporting sword/lineage matches; their modes remain disabled.'),
+  evidence: priorityEvidence['anime-sasuke-uchiha'],
 })
 
 const madara = build({
@@ -576,7 +539,7 @@ const madara = build({
         bl('Shindai-Akuma', ['Copy Style: Samurai Sekiro', 'Copy Style: Sunlight Devastation', 'Copy Style: Sunflower Desolation'], 'Susanoo and large-scale Uchiha pressure.', 'Perfect Susanoo and battlefield control', 'Direct Match', false, 'Akuma'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Dragon Bomb'], 'Massive Fire Release.'), earth(['Stone Style: Earth Wall'], 'Defensive earth support.')],
-      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'Basic Combat', weapon: 'Shindai Umpire Fan', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Celestial',
+      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'None', weapon: 'Shindai Umpire Fan', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Celestial',
       hotbar: [
         ['Shindai-Rengoku', 'Rengoku Style: Under The Sun', 'Limbo-style pressure', 'Primary engagement.', 'Starter', 'Strong Match'],
         ['Shindai-Rengoku', 'Rengoku Style: Tailed Spirit Counter', 'Ten-Tails counterattack', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
@@ -613,7 +576,7 @@ const madara = build({
         bl('Rengoku', ['Rengoku Style: Gravity Push', 'Rengoku Style: Gravity Pull'], 'Universal pull and push support.', 'Rinnegan gravity control', 'Direct Match'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Dragon Bomb'], 'Massive Fire Release.'), earth(['Stone Style: Earth Wall'], 'Defensive earth support.')],
-      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'Basic Combat', weapon: 'Shindai Umpire Fan', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Celestial',
+      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'None', weapon: 'Shindai Umpire Fan', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Celestial',
       hotbar: [
         ['Rengoku', 'Rengoku Style: Gravity Pull', 'Rinnegan attraction', 'Draw opponents into range.', 'Starter', 'Direct Match'],
         ['Shindai-Rengoku', 'Rengoku Style: Tailed Spirit Counter', 'Ten-Tails counter', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
@@ -651,7 +614,7 @@ const madara = build({
         bl('Rengoku', ['Rengoku Style: Gravity Pull', 'Rengoku Style: Gravity Push'], 'Rinnegan gravity control.', 'Universal pull and repulsion', 'Direct Match'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Dragon Bomb'], 'Massive Fire Release.'), earth(['Stone Style: Earth Wall'], 'Earth defense and terrain control.')],
-      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'Basic Combat', weapon: 'Shindai Umpire Fan', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Celestial',
+      cMode: 'Shindai-Rengoku — Stage 1', zMode: 'Tyn Tailed Spirit Generation 2', combatArt: 'None', weapon: 'Shindai Umpire Fan', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Celestial',
       hotbar: [
         ['Rengoku', 'Rengoku Style: Gravity Pull', 'Rinnegan attraction', 'Primary control starter.', 'Starter', 'Direct Match'],
         ['Shindai-Rengoku', 'Rengoku Style: Tailed Spirit Counter', 'Ten-Tails counter', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
@@ -681,7 +644,7 @@ const madara = build({
       compromises: ['Ashura-Shizen’s golden Wood Style is a visual approximation of Madara’s Wood Release.', 'Celestial is a form-support choice, not a canonical race equivalence.'],
     }),
   ],
-  evidence: evidence('Madara Uchiha', 'Shindai-Rengoku and Shindai-Akuma provide the closest direct Shindo representation of Madara’s Rinnegan, Susanoo, fire, and Ten-Tails pressure.', 'Ashura-Shizen’s gold visuals are an approximation for Wood Release; Tyn Generation 2 is reserved for the Ten-Tails identity.'),
+  evidence: priorityEvidence['anime-madara-uchiha'],
 })
 
 const minato = build({
@@ -698,7 +661,7 @@ const minato = build({
         bl('Dio-Senko', ['Ultimate Flash', 'Time Style: Time Jump', 'Time Style: Time Stop'], 'Clean teleport support without an eye mode.', 'Instant repositioning', 'Strong Match', false, 'Senko'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Palm Blast'], 'Wind-nature neutral support.'), lightning(['Shock Style: Stream'], 'Fast close-range chakra pressure.')],
-      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Minakaze', 'Minakaze Style: Kunai Raijin', 'Flying Raijin', 'Marked teleport starter.', 'Starter', 'Direct Match'],
         ['Minakaze', 'Minakaze Style: Sunsengan Barrage', 'Rasengan chain', 'Close extension.', 'Extender', 'Direct Match'],
@@ -728,24 +691,23 @@ const minato = build({
       compromises: ['Dio-Senko supplies speed mechanics, not Minato’s canonical time manipulation.', 'Lightning is a competitive speed visual rather than a core Minato nature.'],
     }),
     authoredVariant({
-      id: 'anime-minato-3x2', name: 'Three-slot teleport chain', type: 'Three Slot',
+      id: 'anime-minato-3x2', name: 'Two-slot teleport route B', type: 'Two Slot',
       bloodlines: [
         bl('Minakaze', ['Minakaze Style: Kunai Raijin', 'Minakaze Style: Sunsengan Barrage'], 'Primary Flying Raijin source.', 'Marked teleport chains', 'Direct Match', true, 'Dio-Senko'),
-        bl('Minakaze-Azure', ['Minakaze Style: Sunsengan Overdrive'], 'Alternate visual path for high-speed Rasengan pressure.', 'Rasengan speed', 'Visual Approximation'),
         bl('Dio-Senko', ['Ultimate Flash', 'Time Style: Time Jump'], 'Fast reposition support.', 'Yellow Flash movement', 'Strong Match'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Palm Blast'], 'Wind neutral and separation.'), lightning(['Shock Style: Stream'], 'Fast close check.')],
-      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Minakaze', 'Minakaze Style: Kunai Raijin', 'Flying Raijin', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Minakaze', 'Minakaze Style: Sunsengan Barrage', 'Rasengan chain', 'Close extension.', 'Extender', 'Direct Match'],
         ['Dio-Senko', 'Time Style: Time Jump', 'Instant reposition', 'Angle change.', 'Mobility', 'Strong Match'],
         ['Air', 'Air Style: Wind Cutter', 'Wind Release', 'Safe poke.', 'Neutral', 'Strong Match'],
         ['Lightning', 'Shock Style: Stream', 'Fast chakra pressure', 'Close check.', 'Starter', 'Visual Approximation'],
-        ['Minakaze-Azure', 'Minakaze Style: Sunsengan Overdrive', 'High-speed Rasengan', 'Confirmed finisher.', 'Finisher', 'Visual Approximation'],
+        ['Minakaze', 'Minakaze Style: Sunsengan Overdrive', 'High-speed Rasengan', 'Confirmed finisher.', 'Finisher', 'Visual Approximation'],
         ['Dio-Senko', 'Ultimate Flash', 'Yellow Flash pursuit', 'Rapid re-entry.', 'Mobility', 'Strong Match'],
         ['Air', 'Air Style: Palm Blast', 'Wind Release', 'Defensive separation.', 'Defense', 'Strong Match'],
-        ['Minakaze-Azure', 'Minakaze Style: Kunai Raijin', 'Alternate marked teleport', 'Second approach angle.', 'Starter', 'Visual Approximation'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Minakaze', 'Minakaze — Stage 1', 'Flying Raijin mode', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
         ['Kor Tailed Spirit Generation 2', 'Kor Tailed Spirit Generation 2', 'Kurama Link Mode', 'Activate Kurama layer.', 'Mode', 'Strong Match', 'mode'],
         ['Senko Kunai', 'Senko Kunai — Q Ability', 'Marked kunai teleport', 'Weapon input.', 'Weapon', 'Direct Match'],
@@ -762,28 +724,26 @@ const minato = build({
       strengths: ['Multiple clean teleport angles.', 'Strong Rasengan routing.', 'Keeps the direct Minakaze mode.'],
       weaknesses: ['Azure duplicates part of the base kit.', 'Fragile if movement is baited.', 'High execution requirement.'],
       usageGuide: ['Rotate teleport angles rather than repeating one entry.', 'Use Azure only for its selected support move.', 'Keep the kunai Q ready for repositioning.'],
-      compromises: ['Minakaze-Azure is a visual skin and competitive support, not a distinct Minato ability.'],
+      compromises: ['Minakaze recolors were excluded because they repeat the same usable move list.', 'Dio-Senko supplies movement support rather than a canonical Minato power.'],
     }),
     authoredVariant({
-      id: 'anime-minato-4x2', name: 'Four-slot Yellow Flash network', type: 'Primary',
+      id: 'anime-minato-4x2', name: 'Two-slot Yellow Flash primary', type: 'Primary',
       bloodlines: [
         bl('Minakaze', ['Minakaze Style: Kunai Raijin', 'Minakaze Style: Sunsengan Barrage'], 'Primary Flying Raijin source.', 'Marked teleport chains', 'Direct Match', true, 'Dio-Senko'),
-        bl('Minakaze-Azure', ['Minakaze Style: Sunsengan Overdrive'], 'Supporting Rasengan pressure.', 'High-speed Rasengan', 'Visual Approximation'),
-        bl('Minakaze-Ruby', ['Minakaze Style: Kunai Raijin'], 'Extra marked-teleport visual route.', 'Flying Raijin network', 'Visual Approximation'),
         bl('Dio-Senko', ['Ultimate Flash', 'Time Style: Time Jump'], 'Clean yellow movement support.', 'Yellow Flash speed', 'Strong Match'),
       ],
       elements: [air(['Air Style: Wind Cutter', 'Air Style: Palm Blast'], 'Wind neutral and separation.'), lightning(['Shock Style: Stream'], 'Fast close pressure.')],
-      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'None', consumable: 'None', mentor: 'Narumaki', race: 'Shinobi',
+      cMode: 'Minakaze — Stage 1', zMode: 'Kor Tailed Spirit Generation 2', combatArt: 'MMA', weapon: 'Senko Kunai', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Minakaze', 'Minakaze Style: Kunai Raijin', 'Flying Raijin', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Minakaze', 'Minakaze Style: Sunsengan Barrage', 'Rasengan chain', 'Close extension.', 'Extender', 'Direct Match'],
         ['Dio-Senko', 'Time Style: Time Jump', 'Instant repositioning', 'Angle change.', 'Mobility', 'Strong Match'],
         ['Air', 'Air Style: Wind Cutter', 'Wind Release', 'Safe neutral check.', 'Neutral', 'Strong Match'],
         ['Lightning', 'Shock Style: Stream', 'Fast chakra pressure', 'Close check.', 'Starter', 'Visual Approximation'],
-        ['Minakaze-Azure', 'Minakaze Style: Sunsengan Overdrive', 'High-speed Rasengan', 'Confirmed finisher.', 'Finisher', 'Visual Approximation'],
+        ['Minakaze', 'Minakaze Style: Sunsengan Overdrive', 'High-speed Rasengan', 'Confirmed finisher.', 'Finisher', 'Visual Approximation'],
         ['Dio-Senko', 'Ultimate Flash', 'Yellow Flash pursuit', 'Rapid chase.', 'Mobility', 'Strong Match'],
         ['Air', 'Air Style: Palm Blast', 'Wind Release', 'Defensive separation.', 'Defense', 'Strong Match'],
-        ['Minakaze-Ruby', 'Minakaze Style: Kunai Raijin', 'Second marked teleport', 'Alternate re-entry.', 'Starter', 'Visual Approximation'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Minakaze', 'Minakaze — Stage 1', 'Flying Raijin mastery', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
         ['Kor Tailed Spirit Generation 2', 'Kor Tailed Spirit Generation 2', 'Kurama Link Mode', 'Activate Kurama layer.', 'Mode', 'Strong Match', 'mode'],
         ['Senko Kunai', 'Senko Kunai — Q Ability', 'Marked kunai teleport', 'Weapon input.', 'Weapon', 'Direct Match'],
@@ -803,7 +763,7 @@ const minato = build({
       compromises: ['Azure and Ruby are alternate skins used as competitive routing tools, not separate canonical powers.'],
     }),
   ],
-  evidence: evidence('Minato Namikaze', 'Minakaze and Senko Kunai provide the closest direct Shindo representation of Flying Raijin, marked kunai, and Rasengan chains.', 'Dio-Senko is used for clean speed and repositioning; its time mechanics are not presented as Minato’s canonical power.'),
+  evidence: priorityEvidence['anime-minato-namikaze'],
 })
 
 const itachi = build({
@@ -820,19 +780,19 @@ const itachi = build({
         bl('Riser-Akuma', ['Copy Style: Hawk Illusion', 'Copy Style: Pain', 'Copy Style: Fire Blaze'], 'Supports reactive illusion and black-flame punishment.', 'Genjutsu counters and Amaterasu', 'Strong Match', false, 'Akuma'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Pheonix Rising'], 'Itachi’s Fire Release.'), inferno(['Inferno Style: Burnout'], 'Amaterasu-colored pressure.')],
-      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Bankai-Akuma', 'Illusion Style: Tsukuyomi', 'Tsukuyomi', 'Primary control starter.', 'Starter', 'Direct Match'],
         ['Bankai-Akuma', 'Copy Style: Hawk Illusion', 'Crow-like illusion escape', 'Defensive reposition.', 'Counter', 'Strong Match', 'counter'],
         ['Bankai-Akuma', 'Copy Style: Fire Blaze', 'Amaterasu', 'Black-flame punish.', 'Finisher', 'Direct Match'],
         ['Riser-Akuma', 'Copy Style: Pain', 'Genjutsu punishment', 'Punish committed pressure.', 'Counter', 'Visual Approximation', 'counter'],
         ['Fire', 'Flame Style: Grand Flameball', 'Great Fireball Technique', 'Ranged pressure.', 'Neutral', 'Direct Match'],
-        ['Riser-Akuma', 'Copy Style: Fire Blaze', 'Amaterasu support', 'Secondary flame pressure.', 'Pressure', 'Strong Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Fire', 'Flame Style: Pheonix Rising', 'Phoenix Flower-style fire', 'Area check.', 'Pressure', 'Strong Match'],
         ['Inferno', 'Inferno Style: Burnout', 'Black-flame movement', 'Mobile disengage.', 'Mobility', 'Visual Approximation'],
-        ['Riser-Akuma', 'Copy Style: Hawk Illusion', 'Crow substitution', 'Second evasive angle.', 'Defense', 'Strong Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Bankai-Akuma', 'Bankai-Akuma — Stage 1', 'Mangekyō and Susanoo', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve Itachi’s silhouette.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve Itachi’s silhouette.', 'Mode', 'Direct Match', 'mode'],
         ['MMA', 'MMA — Q Attack', 'Measured close combat', 'Weapon-free punish.', 'Combat Art', 'Strong Match'],
       ],
       combos: combos(
@@ -857,7 +817,7 @@ const itachi = build({
         bl('Shiver-Akuma', ['Reality Style: Dimension', 'Reality Style: Control'], 'High-level genjutsu and evasive control approximation.', 'Layered illusion control', 'Visual Approximation'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Pheonix Rising'], 'Fire Release pressure.'), inferno(['Inferno Style: Burnout'], 'Amaterasu-colored mobility.')],
-      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Bankai-Akuma', 'Illusion Style: Tsukuyomi', 'Tsukuyomi', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Riser-Akuma', 'Copy Style: Hawk Illusion', 'Crow substitution', 'Defensive reposition.', 'Counter', 'Strong Match', 'counter'],
@@ -869,7 +829,7 @@ const itachi = build({
         ['Inferno', 'Inferno Style: Burnout', 'Black-flame movement', 'Escape and reposition.', 'Mobility', 'Visual Approximation'],
         ['Shiver-Akuma', 'Reality Style: Dimension', 'Genjutsu displacement', 'Alter spacing.', 'Defense', 'Visual Approximation'],
         ['Bankai-Akuma', 'Bankai-Akuma — Stage 1', 'Mangekyō and Susanoo', 'Activate main mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids an inaccurate form', 'Preserve visual identity.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids an inaccurate form', 'Preserve visual identity.', 'Mode', 'Direct Match', 'mode'],
         ['MMA', 'MMA — Q Attack', 'Calculated close combat', 'Close punish.', 'Combat Art', 'Strong Match'],
       ],
       combos: combos(
@@ -887,27 +847,26 @@ const itachi = build({
       compromises: ['Shiver-Akuma represents genjutsu control mechanically, not a literal Itachi dimension technique.'],
     }),
     authoredVariant({
-      id: 'anime-itachi-4x2', name: 'Four-slot Akatsuki control', type: 'Primary',
+      id: 'anime-itachi-4x2', name: 'Three-slot Akatsuki control', type: 'Primary',
       bloodlines: [
         bl('Bankai-Akuma', ['Illusion Style: Tsukuyomi', 'Copy Style: Fire Blaze'], 'Primary direct Itachi source.', 'Mangekyō Sharingan', 'Direct Match', true, 'Akuma'),
         bl('Riser-Akuma', ['Copy Style: Hawk Illusion', 'Copy Style: Pain'], 'Counter and substitution support.', 'Crow illusion', 'Strong Match'),
         bl('Shiver-Akuma', ['Reality Style: Dimension', 'Reality Style: Control'], 'Advanced illusion control approximation.', 'Genjutsu control', 'Visual Approximation'),
-        bl('Akuma', ['Copy Style: Reality Control', 'Copy Style: Reflex Enhance'], 'Basic Sharingan prediction and reflex support.', 'Sharingan perception', 'Strong Match'),
       ],
       elements: [fire(['Flame Style: Grand Flameball', 'Flame Style: Pheonix Rising'], 'Fire Release.'), inferno(['Inferno Style: Burnout'], 'Black-flame mobility.')],
-      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Bankai-Akuma — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Bankai-Akuma', 'Illusion Style: Tsukuyomi', 'Tsukuyomi', 'Primary control starter.', 'Starter', 'Direct Match'],
         ['Riser-Akuma', 'Copy Style: Hawk Illusion', 'Crow substitution', 'Reactive defense.', 'Counter', 'Strong Match', 'counter'],
         ['Bankai-Akuma', 'Copy Style: Fire Blaze', 'Amaterasu', 'Confirmed finisher.', 'Finisher', 'Direct Match'],
-        ['Akuma', 'Copy Style: Reflex Enhance', 'Sharingan prediction', 'Defensive enhancement.', 'Defense', 'Strong Match'],
+        ['Loadout', 'Not used in this variant', 'No base-Akuma filler', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Fire', 'Flame Style: Grand Flameball', 'Great Fireball Technique', 'Ranged check.', 'Neutral', 'Direct Match'],
         ['Riser-Akuma', 'Copy Style: Pain', 'Genjutsu punishment', 'Reactive extension.', 'Extender', 'Visual Approximation'],
         ['Shiver-Akuma', 'Reality Style: Control', 'Layered genjutsu', 'Secondary control.', 'Counter', 'Visual Approximation', 'counter'],
         ['Inferno', 'Inferno Style: Burnout', 'Black-flame movement', 'Mobile disengage.', 'Mobility', 'Visual Approximation'],
-        ['Akuma', 'Copy Style: Reality Control', 'Sharingan illusion control', 'Space-control support.', 'Pressure', 'Strong Match'],
+        ['Loadout', 'Not used in this variant', 'No fourth Bloodline filler', 'Intentionally keeps the control free.', 'Empty', 'Direct Match'],
         ['Bankai-Akuma', 'Bankai-Akuma — Stage 1', 'Mangekyō and Susanoo', 'Activate main mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids an unrelated form', 'Preserve Itachi accuracy.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids an unrelated form', 'Preserve Itachi accuracy.', 'Mode', 'Direct Match', 'mode'],
         ['MMA', 'MMA — Q Attack', 'Measured close combat', 'Close punish.', 'Combat Art', 'Strong Match'],
       ],
       combos: combos(
@@ -925,7 +884,7 @@ const itachi = build({
       compromises: ['Shiver-Akuma and base Akuma approximate perception and layered genjutsu; their modes remain disabled.'],
     }),
   ],
-  evidence: evidence('Itachi Uchiha', 'Bankai-Akuma supplies the closest direct Shindo representation of Itachi’s Mangekyō toolkit, including Tsukuyomi and Fire Blaze.', 'Riser, Shiver, and base Akuma are support approximations; only Bankai-Akuma is used as the identity mode.'),
+  evidence: priorityEvidence['anime-itachi-uchiha'],
 })
 
 const boruto = build({
@@ -939,22 +898,22 @@ const boruto = build({
       id: 'anime-boruto-2x2', name: 'Two-slot Karma identity', type: 'Two Slot',
       bloodlines: [
         bl('Borumaki-Gaiden', ['Maki Style: Pistol Rasen', 'Maki Style: Massive Counter Rasen', 'Maki Style: Portal Rasen'], 'Primary Karma, compressed Rasengan, and portal source.', 'Two Blue Vortex Karma', 'Direct Match', true, 'Borumaki'),
-        bl('Borumaki-Shiki', ['Maki Style: Portal Rasen', 'Maki Style: Pistol Rasen', 'Maki Style: Massive Counter Rasen'], 'Alternate Karma portal pressure.', 'Karma absorption and portals', 'Strong Match', false, 'Borumaki'),
+        bl('Borumaki', ['Borumaki Style: Portal Spirit Bomb Shock', 'Borumaki Style: Space Warp'], 'Distinct portal and Rasengan support.', 'Rasengan and teleportation', 'Direct Match'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Senbon'], 'Boruto’s Lightning Release.'), air(['Air Style: Wind Cutter'], 'Wind Release support.')],
-      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Bankai Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Bankai Blade', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Borumaki-Gaiden', 'Maki Style: Pistol Rasen', 'Compressed Rasengan', 'Ranged starter.', 'Starter', 'Direct Match'],
         ['Borumaki-Gaiden', 'Maki Style: Massive Counter Rasen', 'Karma counter Rasengan', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
         ['Borumaki-Gaiden', 'Maki Style: Portal Rasen', 'Portal Rasengan', 'Teleport extension.', 'Extender', 'Direct Match'],
         ['Lightning', 'Shock Style: Stream', 'Lightning Release', 'Close check.', 'Starter', 'Direct Match'],
         ['Air', 'Air Style: Wind Cutter', 'Wind Release', 'Low-commitment neutral.', 'Neutral', 'Direct Match'],
-        ['Borumaki-Shiki', 'Maki Style: Portal Rasen', 'Karma portal', 'Second approach angle.', 'Mobility', 'Strong Match'],
-        ['Borumaki-Shiki', 'Maki Style: Pistol Rasen', 'Compressed Rasengan support', 'Mid-range pressure.', 'Pressure', 'Strong Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
+        ['Borumaki', 'Borumaki Style: Portal Spirit Bomb Shock', 'Portal Rasengan shock', 'Distinct base-Borumaki pressure.', 'Extender', 'Strong Match'],
         ['Lightning', 'Shock Style: Senbon', 'Lightning projectiles', 'Ranged check.', 'Neutral', 'Strong Match'],
-        ['Borumaki-Shiki', 'Maki Style: Massive Counter Rasen', 'Karma defense', 'Secondary reversal.', 'Counter', 'Strong Match', 'counter'],
+        ['Borumaki', 'Borumaki Style: Space Warp', 'Space-time movement', 'Distinct base-Borumaki reposition.', 'Mobility', 'Direct Match'],
         ['Borumaki-Gaiden', 'Borumaki-Gaiden — Stage 1', 'Karma mode', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve Karma identity.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve Karma identity.', 'Mode', 'Direct Match', 'mode'],
         ['Bankai Blade', 'Bankai Blade — Q Ability', 'Black katana pressure', 'Weapon input.', 'Weapon', 'Visual Approximation'],
       ],
       combos: combos(
@@ -972,26 +931,25 @@ const boruto = build({
       compromises: ['Bankai Blade is the closest reviewed black-katana visual, not Boruto’s canonical sword model.'],
     }),
     authoredVariant({
-      id: 'anime-boruto-3x2', name: 'Three-slot Karma portal network', type: 'Three Slot',
+      id: 'anime-boruto-3x2', name: 'Two-slot Karma portal route B', type: 'Two Slot',
       bloodlines: [
         bl('Borumaki-Gaiden', ['Maki Style: Pistol Rasen', 'Maki Style: Massive Counter Rasen'], 'Primary Karma identity.', 'Two Blue Vortex Karma', 'Direct Match', true, 'Borumaki'),
-        bl('Borumaki-Shiki', ['Maki Style: Portal Rasen', 'Maki Style: Pistol Rasen'], 'Portal and absorption-styled support.', 'Karma portal control', 'Strong Match'),
         bl('Borumaki', ['Borumaki Style: Portal Spirit Bomb Shock', 'Borumaki Style: Space Warp'], 'Additional Rasengan and space-warp options.', 'Rasengan and teleportation', 'Direct Match'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Senbon'], 'Lightning Release.'), air(['Air Style: Wind Cutter'], 'Wind Release.')],
-      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Bankai Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Bankai Blade', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Borumaki-Gaiden', 'Maki Style: Pistol Rasen', 'Compressed Rasengan', 'Primary ranged starter.', 'Starter', 'Direct Match'],
         ['Borumaki-Gaiden', 'Maki Style: Massive Counter Rasen', 'Karma counter', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
-        ['Borumaki-Shiki', 'Maki Style: Portal Rasen', 'Portal Rasengan', 'Teleport extension.', 'Extender', 'Strong Match'],
+        ['Borumaki-Gaiden', 'Maki Style: Portal Rasen', 'Portal Rasengan', 'Teleport extension.', 'Extender', 'Strong Match'],
         ['Lightning', 'Shock Style: Stream', 'Lightning Release', 'Close check.', 'Starter', 'Direct Match'],
         ['Air', 'Air Style: Wind Cutter', 'Wind Release', 'Neutral poke.', 'Neutral', 'Direct Match'],
         ['Borumaki', 'Borumaki Style: Portal Spirit Bomb Shock', 'Portal Rasengan shock', 'Confirmed pressure.', 'Extender', 'Strong Match'],
         ['Borumaki', 'Borumaki Style: Space Warp', 'Space-time movement', 'Reposition.', 'Mobility', 'Direct Match'],
         ['Lightning', 'Shock Style: Senbon', 'Lightning projectiles', 'Range check.', 'Neutral', 'Strong Match'],
-        ['Borumaki-Shiki', 'Maki Style: Pistol Rasen', 'Compressed Rasengan support', 'Ranged finisher.', 'Finisher', 'Strong Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Borumaki-Gaiden', 'Borumaki-Gaiden — Stage 1', 'Karma mode', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids inaccurate transformation', 'Preserve Karma focus.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids inaccurate transformation', 'Preserve Karma focus.', 'Mode', 'Direct Match', 'mode'],
         ['Bankai Blade', 'Bankai Blade — Q Ability', 'Black katana pressure', 'Weapon input.', 'Weapon', 'Visual Approximation'],
       ],
       combos: combos(
@@ -1006,22 +964,21 @@ const boruto = build({
       strengths: ['Broad direct portal toolkit.', 'Good range and repositioning.', 'Clear primary Karma mode.'],
       weaknesses: ['Rasengan roles overlap.', 'Sword remains a visual substitute.', 'High Chi pressure.'],
       usageGuide: ['Use Space Warp defensively.', 'Confirm before chaining portals.', 'Keep the blade as neutral support rather than the main finisher.'],
-      compromises: ['Borumaki-Shiki is supporting Karma imagery; Borumaki-Gaiden remains the version-defining mode.'],
+      compromises: ['Borumaki-Shiki was excluded because it repeats the Borumaki-Gaiden move list.', 'Borumaki-Gaiden remains the version-defining mode.'],
     }),
     authoredVariant({
-      id: 'anime-boruto-4x2', name: 'Four-slot Two Blue Vortex arsenal', type: 'Primary',
+      id: 'anime-boruto-4x2', name: 'Three-slot Two Blue Vortex arsenal', type: 'Primary',
       bloodlines: [
         bl('Borumaki-Gaiden', ['Maki Style: Pistol Rasen', 'Maki Style: Massive Counter Rasen'], 'Primary Karma source.', 'Two Blue Vortex Karma', 'Direct Match', true, 'Borumaki'),
-        bl('Borumaki-Shiki', ['Maki Style: Portal Rasen'], 'Karma portal support.', 'Portal movement', 'Strong Match'),
         bl('Borumaki', ['Borumaki Style: Portal Spirit Bomb Shock', 'Borumaki Style: Space Warp'], 'Rasengan and space-warp support.', 'Rasengan and teleportation', 'Direct Match'),
         bl('Raion-Gaiden', ['Rengoku Style: Samurai Combo', 'Rengoku Style: Meteor Inferno Blade'], 'Supporting lightning-sword pressure only.', 'Sword and lightning pressure', 'Competitive Substitute'),
       ],
       elements: [lightning(['Shock Style: Stream', 'Shock Style: Senbon'], 'Lightning Release.'), air(['Air Style: Wind Cutter'], 'Wind Release.')],
-      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Bankai Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Borumaki-Gaiden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Bankai Blade', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Shinobi',
       hotbar: [
         ['Borumaki-Gaiden', 'Maki Style: Pistol Rasen', 'Compressed Rasengan', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Borumaki-Gaiden', 'Maki Style: Massive Counter Rasen', 'Karma counter', 'Reactive defense.', 'Counter', 'Direct Match', 'counter'],
-        ['Borumaki-Shiki', 'Maki Style: Portal Rasen', 'Portal Rasengan', 'Teleport extension.', 'Extender', 'Strong Match'],
+        ['Borumaki-Gaiden', 'Maki Style: Portal Rasen', 'Portal Rasengan', 'Teleport extension.', 'Extender', 'Strong Match'],
         ['Raion-Gaiden', 'Rengoku Style: Samurai Combo', 'Sword pressure', 'Close sword extension.', 'Extender', 'Competitive Substitute'],
         ['Air', 'Air Style: Wind Cutter', 'Wind Release', 'Neutral check.', 'Neutral', 'Direct Match'],
         ['Borumaki', 'Borumaki Style: Portal Spirit Bomb Shock', 'Portal Rasengan shock', 'Confirmed pressure.', 'Extender', 'Strong Match'],
@@ -1029,7 +986,7 @@ const boruto = build({
         ['Lightning', 'Shock Style: Stream', 'Lightning Release', 'Fast close check.', 'Starter', 'Direct Match'],
         ['Raion-Gaiden', 'Rengoku Style: Meteor Inferno Blade', 'Large sword-energy punish', 'Competitive finisher.', 'Finisher', 'Competitive Substitute'],
         ['Borumaki-Gaiden', 'Borumaki-Gaiden — Stage 1', 'Karma mode', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated form', 'Preserve Karma accuracy.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated form', 'Preserve Karma accuracy.', 'Mode', 'Direct Match', 'mode'],
         ['Bankai Blade', 'Bankai Blade — Q Ability', 'Black katana pressure', 'Weapon input.', 'Weapon', 'Visual Approximation'],
       ],
       combos: combos(
@@ -1047,7 +1004,7 @@ const boruto = build({
       compromises: ['Raion-Gaiden is explicitly a competitive substitute for sword/lightning pressure, not Boruto’s primary identity.'],
     }),
   ],
-  evidence: evidence('Boruto Uzumaki', 'Borumaki-Gaiden supplies the closest direct Shindo representation of Two Blue Vortex Karma, compressed Rasengan, and portal combat.', 'Raion-Gaiden is included only as a competitive sword/lightning substitute and its mode is disabled.'),
+  evidence: priorityEvidence['anime-boruto-uzumaki'],
 })
 
 const ichigo = build({
@@ -1061,22 +1018,22 @@ const ichigo = build({
       id: 'anime-ichigo-2x2', name: 'Two-slot Getsuga identity', type: 'Two Slot',
       bloodlines: [
         bl('Getsuga-Black', ['Kor Style: Hand of Getsuga', 'Kor Style: Rasensuga', 'Kor Style: Getsuga Shuriken Blitz'], 'Primary black Getsuga and transformation source.', 'True Bankai and Hollow energy', 'Direct Match', true, 'Getsuga'),
-        bl('Getsuga', ['Kor Style: Hand of Getsuga', 'Kor Style: Rasensuga', 'Kor Style: Getsuga Shuriken Blitz'], 'Secondary orange-blue spiritual blade pressure.', 'Getsuga Tenshō', 'Direct Match', false, 'Getsuga-Black'),
+        bl('Pika-Senko', ['Time Style: Star Kick Rising'], 'Flash-step movement support only.', 'Shunpo mobility', 'Visual Approximation'),
       ],
       elements: [order(['Order Style: Blade of Light', 'Order Style: Beam of Light'], 'High-density spiritual energy.'), chaos(['Chaos Style: Blade of Light'], 'Dark spiritual-energy visual.')],
-      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Obelisk Chi Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Shindai Akuma', race: 'Shinobi',
+      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Obelisk Chi Blade', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Human',
       hotbar: [
         ['Getsuga-Black', 'Kor Style: Hand of Getsuga', 'Black Getsuga strike', 'Primary close starter.', 'Starter', 'Direct Match'],
         ['Getsuga-Black', 'Kor Style: Rasensuga', 'Getsuga Tenshō', 'Mid-range punish.', 'Finisher', 'Direct Match'],
         ['Getsuga-Black', 'Kor Style: Getsuga Shuriken Blitz', 'Rapid Getsuga pressure', 'Ranged pressure.', 'Pressure', 'Strong Match'],
-        ['Getsuga', 'Kor Style: Hand of Getsuga', 'Blade pressure', 'Secondary close extension.', 'Extender', 'Direct Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Order', 'Order Style: Blade of Light', 'Spiritual blade energy', 'Fast blade-shaped check.', 'Neutral', 'Visual Approximation'],
-        ['Getsuga', 'Kor Style: Rasensuga', 'Getsuga Tenshō', 'Secondary projectile.', 'Pressure', 'Direct Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Order', 'Order Style: Beam of Light', 'Cero-like energy', 'Ranged punish.', 'Finisher', 'Visual Approximation'],
         ['Chaos', 'Chaos Style: Blade of Light', 'Dark spiritual blade', 'Close visual support.', 'Extender', 'Visual Approximation'],
-        ['Getsuga', 'Kor Style: Getsuga Shuriken Blitz', 'Flash-step sword pressure', 'Mobile barrage.', 'Mobility', 'Strong Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Getsuga-Black', 'Getsuga-Black — Stage 1', 'True Bankai / Hollow form', 'Activate identity mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve Ichigo identity.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve Ichigo identity.', 'Mode', 'Direct Match', 'mode'],
         ['Obelisk Chi Blade', 'Obelisk Chi Blade — Q Ability', 'Black Zangetsu-style blade', 'Weapon input.', 'Weapon', 'Visual Approximation'],
       ],
       combos: combos(
@@ -1094,26 +1051,25 @@ const ichigo = build({
       compromises: ['Obelisk Chi Blade approximates black Zangetsu; it is not an exact licensed weapon model.'],
     }),
     authoredVariant({
-      id: 'anime-ichigo-3x2', name: 'Three-slot flash-step pressure', type: 'Three Slot',
+      id: 'anime-ichigo-3x2', name: 'Two-slot flash-step route B', type: 'Two Slot',
       bloodlines: [
         bl('Getsuga-Black', ['Kor Style: Hand of Getsuga', 'Kor Style: Rasensuga'], 'Primary black Getsuga source.', 'True Bankai and Hollow energy', 'Direct Match', true, 'Getsuga'),
-        bl('Getsuga', ['Kor Style: Getsuga Shuriken Blitz', 'Kor Style: Rasensuga'], 'Alternate Getsuga pressure.', 'Getsuga Tenshō', 'Direct Match'),
         bl('Pika-Senko', ['Time Style: Star Kick', 'Time Style: Star Kick Rising'], 'Flash-step speed support only.', 'Shunpo mobility', 'Visual Approximation'),
       ],
       elements: [order(['Order Style: Blade of Light', 'Order Style: Beam of Light'], 'Spiritual-energy attacks.'), chaos(['Chaos Style: Blade of Light'], 'Dark spiritual visual.')],
-      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Obelisk Chi Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Bruce Kenichi', race: 'Shinobi',
+      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Obelisk Chi Blade', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Human',
       hotbar: [
         ['Getsuga-Black', 'Kor Style: Hand of Getsuga', 'Black Getsuga strike', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Getsuga-Black', 'Kor Style: Rasensuga', 'Getsuga Tenshō', 'Confirmed finisher.', 'Finisher', 'Direct Match'],
         ['Pika-Senko', 'Time Style: Star Kick', 'Flash-step pursuit', 'Fast approach.', 'Mobility', 'Visual Approximation'],
-        ['Getsuga', 'Kor Style: Getsuga Shuriken Blitz', 'Rapid Getsuga pressure', 'Mobile extension.', 'Extender', 'Strong Match'],
+        ['Getsuga-Black', 'Kor Style: Getsuga Shuriken Blitz', 'Rapid Getsuga pressure', 'Mobile extension.', 'Extender', 'Strong Match'],
         ['Order', 'Order Style: Blade of Light', 'Spiritual blade energy', 'Neutral check.', 'Neutral', 'Visual Approximation'],
-        ['Getsuga', 'Kor Style: Rasensuga', 'Getsuga Tenshō', 'Secondary ranged pressure.', 'Pressure', 'Direct Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Order', 'Order Style: Beam of Light', 'Cero-like energy', 'Ranged punish.', 'Finisher', 'Visual Approximation'],
         ['Chaos', 'Chaos Style: Blade of Light', 'Dark spiritual blade', 'Close extension.', 'Extender', 'Visual Approximation'],
         ['Pika-Senko', 'Time Style: Star Kick Rising', 'Flash-step rising attack', 'Aerial reposition.', 'Mobility', 'Visual Approximation'],
         ['Getsuga-Black', 'Getsuga-Black — Stage 1', 'True Bankai / Hollow form', 'Activate identity mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Keep the silhouette accurate.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Keep the silhouette accurate.', 'Mode', 'Direct Match', 'mode'],
         ['Obelisk Chi Blade', 'Obelisk Chi Blade — Q Ability', 'Black Zangetsu-style blade', 'Weapon input.', 'Weapon', 'Visual Approximation'],
       ],
       combos: combos(
@@ -1131,27 +1087,26 @@ const ichigo = build({
       compromises: ['Pika-Senko is a Shunpo approximation and its mode remains disabled.'],
     }),
     authoredVariant({
-      id: 'anime-ichigo-4x2', name: 'Four-slot Horn of Salvation arsenal', type: 'Primary',
+      id: 'anime-ichigo-4x2', name: 'Three-slot Horn of Salvation arsenal', type: 'Primary',
       bloodlines: [
         bl('Getsuga-Black', ['Kor Style: Hand of Getsuga', 'Kor Style: Rasensuga'], 'Primary black Getsuga and mode source.', 'True Bankai and Hollow power', 'Direct Match', true, 'Getsuga'),
-        bl('Getsuga', ['Kor Style: Getsuga Shuriken Blitz'], 'Secondary Getsuga pressure.', 'Getsuga Tenshō', 'Direct Match'),
         bl('Pika-Senko', ['Time Style: Star Kick Rising'], 'Flash-step mobility approximation.', 'Shunpo', 'Visual Approximation'),
         bl('Doom-Shado', ['Gadget Style: Smoke Bomb', 'Gadget Style: Grappling Combo'], 'Dark-space defensive support.', 'Dark spiritual presence', 'Competitive Substitute'),
       ],
       elements: [order(['Order Style: Blade of Light', 'Order Style: Beam of Light'], 'Spiritual energy.'), chaos(['Chaos Style: Blade of Light'], 'Dark spiritual energy.')],
-      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Obelisk Chi Blade', ninjaTool: 'None', consumable: 'None', mentor: 'Bruce Kenichi', race: 'Shinobi',
+      cMode: 'Getsuga-Black — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Obelisk Chi Blade', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Human',
       hotbar: [
         ['Getsuga-Black', 'Kor Style: Hand of Getsuga', 'Black Getsuga strike', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Getsuga-Black', 'Kor Style: Rasensuga', 'Getsuga Tenshō', 'Confirmed finisher.', 'Finisher', 'Direct Match'],
         ['Pika-Senko', 'Time Style: Star Kick Rising', 'Flash-step movement', 'Rapid reposition.', 'Mobility', 'Visual Approximation'],
-        ['Getsuga', 'Kor Style: Getsuga Shuriken Blitz', 'Rapid Getsuga pressure', 'Mobile extension.', 'Extender', 'Strong Match'],
+        ['Getsuga-Black', 'Kor Style: Getsuga Shuriken Blitz', 'Rapid Getsuga pressure', 'Mobile extension.', 'Extender', 'Strong Match'],
         ['Order', 'Order Style: Blade of Light', 'Spiritual blade energy', 'Neutral check.', 'Neutral', 'Visual Approximation'],
         ['Doom-Shado', 'Gadget Style: Grappling Combo', 'Close dark-energy pressure', 'Competitive extension.', 'Extender', 'Competitive Substitute'],
         ['Order', 'Order Style: Beam of Light', 'Cero-like energy', 'Ranged finisher.', 'Finisher', 'Visual Approximation'],
         ['Chaos', 'Chaos Style: Blade of Light', 'Dark spiritual blade', 'Close pressure.', 'Pressure', 'Visual Approximation'],
         ['Doom-Shado', 'Gadget Style: Smoke Bomb', 'Dark spiritual concealment', 'Defensive reset.', 'Defense', 'Competitive Substitute'],
         ['Getsuga-Black', 'Getsuga-Black — Stage 1', 'True Bankai / Hollow form', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve Ichigo accuracy.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve Ichigo accuracy.', 'Mode', 'Direct Match', 'mode'],
         ['Obelisk Chi Blade', 'Obelisk Chi Blade — Q Ability', 'Black Zangetsu-style blade', 'Weapon input.', 'Weapon', 'Visual Approximation'],
       ],
       combos: combos(
@@ -1169,7 +1124,7 @@ const ichigo = build({
       compromises: ['Doom-Shado is a competitive dark-energy substitute; Pika-Senko is a movement-only approximation.'],
     }),
   ],
-  evidence: evidence('Ichigo Kurosaki', 'Getsuga-Black supplies the closest direct Shindo representation of Ichigo’s black Getsuga toolkit and transformation.', 'Pika-Senko is used only for flash-step mobility and Doom-Shado only as competitive dark-space support; neither mode is used.'),
+  evidence: priorityEvidence['anime-ichigo-kurosaki'],
 })
 
 const aizen = build({
@@ -1183,22 +1138,22 @@ const aizen = build({
       id: 'anime-aizen-2x2', name: 'Two-slot Hōgyoku identity', type: 'Two Slot',
       bloodlines: [
         bl('Aizden', ['Tyn Art: Reign Dawn', 'Tyn Art: Vlad'], 'Primary transformation and overwhelming-energy source.', 'Hōgyoku evolution', 'Direct Match', true, 'Aizden-Inverse'),
-        bl('Aizden-Inverse', ['Tyn Art: Reign Dawn', 'Tyn Art: Vlad'], 'Alternate energy and regeneration visual support.', 'Hōgyoku regeneration', 'Strong Match', false, 'Aizden'),
+        bl('Bankai-Akuma', ['Illusion Style: Tsukuyomi', 'Copy Style: Hawk Illusion'], 'Hypnosis and deceptive escape approximation.', 'Kyoka Suigetsu hypnosis', 'Visual Approximation'),
       ],
       elements: [order(['Order Style: Gravity of Light', 'Order Style: Beam of Light', 'Order Style: Blade of Light'], 'Controlled spiritual pressure.'), chaos(['Chaos Style: Gravity of Light', 'Chaos Style: Blade of Light'], 'Dark transformation energy.')],
-      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Katana', ninjaTool: 'None', consumable: 'None', mentor: 'Jiso Seishin', race: 'Celestial',
+      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Katana', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Celestial',
       hotbar: [
         ['Aizden', 'Tyn Art: Reign Dawn', 'Overwhelming spiritual pressure', 'Primary area starter.', 'Starter', 'Strong Match'],
         ['Aizden', 'Tyn Art: Vlad', 'Hōgyoku regeneration and destruction', 'Sustained punish.', 'Finisher', 'Direct Match'],
         ['Order', 'Order Style: Gravity of Light', 'Spiritual-pressure control', 'Position control.', 'Starter', 'Visual Approximation'],
-        ['Aizden-Inverse', 'Tyn Art: Reign Dawn', 'Evolved energy pressure', 'Secondary area control.', 'Pressure', 'Strong Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Order', 'Order Style: Blade of Light', 'Spiritual sword energy', 'Fast neutral check.', 'Neutral', 'Visual Approximation'],
-        ['Aizden-Inverse', 'Tyn Art: Vlad', 'Regenerative evolution', 'Secondary punish.', 'Finisher', 'Strong Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Order', 'Order Style: Beam of Light', 'High-density energy blast', 'Ranged punish.', 'Pressure', 'Strong Match'],
         ['Chaos', 'Chaos Style: Gravity of Light', 'Dark spiritual control', 'Defensive spacing.', 'Defense', 'Visual Approximation'],
         ['Chaos', 'Chaos Style: Blade of Light', 'Dark sword energy', 'Close extension.', 'Extender', 'Visual Approximation'],
         ['Aizden', 'Aizden — Stage 1', 'Hōgyoku evolution', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve Aizen identity.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve Aizen identity.', 'Mode', 'Direct Match', 'mode'],
         ['Katana', 'Katana — Q Ability', 'Kyōka Suigetsu sword presence', 'Weapon input.', 'Weapon', 'Strong Match'],
       ],
       combos: combos(
@@ -1216,26 +1171,25 @@ const aizen = build({
       compromises: ['Order and Chaos approximate spiritual pressure rather than named Kidō spells.'],
     }),
     authoredVariant({
-      id: 'anime-aizen-3x2', name: 'Three-slot hypnosis control', type: 'Three Slot',
+      id: 'anime-aizen-3x2', name: 'Two-slot hypnosis route B', type: 'Two Slot',
       bloodlines: [
         bl('Aizden', ['Tyn Art: Reign Dawn', 'Tyn Art: Vlad'], 'Primary Hōgyoku source.', 'Hōgyoku evolution', 'Direct Match', true, 'Aizden-Inverse'),
-        bl('Aizden-Inverse', ['Tyn Art: Reign Dawn'], 'Alternate transformation pressure.', 'Evolved spiritual pressure', 'Strong Match'),
         bl('Bankai-Akuma', ['Illusion Style: Tsukuyomi', 'Copy Style: Hawk Illusion'], 'Hypnosis and deceptive escape approximation.', 'Kyōka Suigetsu hypnosis', 'Visual Approximation'),
       ],
       elements: [order(['Order Style: Gravity of Light', 'Order Style: Beam of Light'], 'Spiritual-pressure control.'), chaos(['Chaos Style: Blade of Light'], 'Dark spiritual sword energy.')],
-      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Katana', ninjaTool: 'None', consumable: 'None', mentor: 'Jiso Seishin', race: 'Celestial',
+      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Katana', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Celestial',
       hotbar: [
         ['Bankai-Akuma', 'Illusion Style: Tsukuyomi', 'Complete hypnosis approximation', 'Control starter.', 'Starter', 'Visual Approximation'],
         ['Aizden', 'Tyn Art: Reign Dawn', 'Overwhelming spiritual pressure', 'Area pressure.', 'Extender', 'Strong Match'],
         ['Aizden', 'Tyn Art: Vlad', 'Hōgyoku regeneration', 'Confirmed finisher.', 'Finisher', 'Direct Match'],
         ['Bankai-Akuma', 'Copy Style: Hawk Illusion', 'Deceptive substitution', 'Reactive defense.', 'Counter', 'Visual Approximation', 'counter'],
         ['Order', 'Order Style: Gravity of Light', 'Spiritual pressure', 'Position control.', 'Starter', 'Visual Approximation'],
-        ['Aizden-Inverse', 'Tyn Art: Reign Dawn', 'Evolved energy pressure', 'Secondary area attack.', 'Pressure', 'Strong Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Order', 'Order Style: Beam of Light', 'Energy destruction', 'Ranged punish.', 'Finisher', 'Strong Match'],
         ['Chaos', 'Chaos Style: Blade of Light', 'Dark sword energy', 'Close extension.', 'Extender', 'Visual Approximation'],
         ['Bankai-Akuma', 'Copy Style: Fire Blaze', 'High-energy destruction', 'Competitive pressure.', 'Pressure', 'Competitive Substitute'],
         ['Aizden', 'Aizden — Stage 1', 'Hōgyoku evolution', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve Hōgyoku focus.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve Hōgyoku focus.', 'Mode', 'Direct Match', 'mode'],
         ['Katana', 'Katana — Q Ability', 'Kyōka Suigetsu sword presence', 'Weapon input.', 'Weapon', 'Strong Match'],
       ],
       combos: combos(
@@ -1253,27 +1207,26 @@ const aizen = build({
       compromises: ['Bankai-Akuma approximates hypnosis; its mode is disabled because the appearance does not match Aizen.'],
     }),
     authoredVariant({
-      id: 'anime-aizen-4x2', name: 'Four-slot Hōgyoku sovereign', type: 'Primary',
+      id: 'anime-aizen-4x2', name: 'Three-slot Hōgyoku sovereign', type: 'Primary',
       bloodlines: [
         bl('Aizden', ['Tyn Art: Reign Dawn', 'Tyn Art: Vlad'], 'Primary Hōgyoku source.', 'Hōgyoku evolution', 'Direct Match', true, 'Aizden-Inverse'),
-        bl('Aizden-Inverse', ['Tyn Art: Reign Dawn'], 'Alternate evolved pressure.', 'Hōgyoku energy', 'Strong Match'),
         bl('Bankai-Akuma', ['Illusion Style: Tsukuyomi', 'Copy Style: Hawk Illusion'], 'Hypnosis approximation.', 'Kyōka Suigetsu', 'Visual Approximation'),
         bl('Tengoku-Platinum', ['Tengoku Style: Kami Blade', 'Tengoku Style: Kami Blitz'], 'Controlled spiritual-energy destruction.', 'Overwhelming Reiatsu', 'Competitive Substitute'),
       ],
       elements: [order(['Order Style: Gravity of Light', 'Order Style: Beam of Light'], 'Spiritual pressure.'), chaos(['Chaos Style: Blade of Light'], 'Dark sword energy.')],
-      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Basic Combat', weapon: 'Katana', ninjaTool: 'None', consumable: 'None', mentor: 'Jiso Seishin', race: 'Celestial',
+      cMode: 'Aizden — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'None', weapon: 'Katana', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Celestial',
       hotbar: [
         ['Bankai-Akuma', 'Illusion Style: Tsukuyomi', 'Complete hypnosis approximation', 'Control starter.', 'Starter', 'Visual Approximation'],
         ['Aizden', 'Tyn Art: Reign Dawn', 'Spiritual-pressure domination', 'Area extension.', 'Extender', 'Strong Match'],
         ['Aizden', 'Tyn Art: Vlad', 'Hōgyoku regeneration', 'Confirmed finisher.', 'Finisher', 'Direct Match'],
         ['Bankai-Akuma', 'Copy Style: Hawk Illusion', 'Deceptive substitution', 'Reactive defense.', 'Counter', 'Visual Approximation', 'counter'],
         ['Order', 'Order Style: Gravity of Light', 'Spiritual pressure', 'Position control.', 'Starter', 'Visual Approximation'],
-        ['Aizden-Inverse', 'Tyn Art: Reign Dawn', 'Evolved energy pressure', 'Secondary area attack.', 'Pressure', 'Strong Match'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Tengoku-Platinum', 'Tengoku Style: Kami Blitz', 'Overwhelming energy burst', 'Competitive punish.', 'Finisher', 'Competitive Substitute'],
         ['Chaos', 'Chaos Style: Blade of Light', 'Dark sword energy', 'Close extension.', 'Extender', 'Visual Approximation'],
         ['Tengoku-Platinum', 'Tengoku Style: Kami Blade', 'Spiritual-energy blade', 'Mid-range pressure.', 'Pressure', 'Competitive Substitute'],
         ['Aizden', 'Aizden — Stage 1', 'Hōgyoku evolution', 'Activate primary mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated form', 'Preserve Aizen identity.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated form', 'Preserve Aizen identity.', 'Mode', 'Direct Match', 'mode'],
         ['Katana', 'Katana — Q Ability', 'Kyōka Suigetsu sword presence', 'Weapon input.', 'Weapon', 'Strong Match'],
       ],
       combos: combos(
@@ -1291,7 +1244,7 @@ const aizen = build({
       compromises: ['Bankai-Akuma is a hypnosis approximation; Tengoku-Platinum is a competitive spiritual-pressure substitute.'],
     }),
   ],
-  evidence: evidence('Sōsuke Aizen', 'Aizden supplies the closest direct Shindo representation of Hōgyoku evolution and overwhelming energy pressure.', 'Bankai-Akuma is a hypnosis approximation and Tengoku-Platinum a competitive energy substitute; neither mode is used.'),
+  evidence: priorityEvidence['anime-sosuke-aizen'],
 })
 
 const luffy = build({
@@ -1308,7 +1261,7 @@ const luffy = build({
         bl('Bruce-Kenichi', ['Fist Style: 6th Dance', 'Fist Style: 9th Dance', 'Fist Style: Tiger Lotus'], 'Fast close-range pursuit and martial pressure.', 'Haki-like brawling', 'Strong Match', false, 'Ryuji-Kenichi'),
       ],
       elements: [air(['Air Style: Vortex', 'Air Style: Palm Blast'], 'Airborne pursuit and displacement.'), fire(['Flame Style: Flame Bullet'], 'Heat and impact visual support.')],
-      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Bruce Kenichi', race: 'Human',
+      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Human',
       hotbar: [
         ['SnakeMan', 'Cobra Art: Form 1', 'Curving rubber punch', 'Primary neutral starter.', 'Starter', 'Direct Match'],
         ['SnakeMan', 'Cobra Art: Form 2', 'Accelerating Snakeman strike', 'Close extension.', 'Extender', 'Direct Match'],
@@ -1320,7 +1273,7 @@ const luffy = build({
         ['Air', 'Air Style: Palm Blast', 'Airborne displacement', 'Defensive separation.', 'Defense', 'Visual Approximation'],
         ['Fire', 'Flame Style: Flame Bullet', 'Heated impact', 'Low-commitment projectile.', 'Neutral', 'Visual Approximation'],
         ['SnakeMan', 'SnakeMan — Stage 1', 'Gear 4 Snakeman', 'Activate identity mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve Snakeman form.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve Snakeman form.', 'Mode', 'Direct Match', 'mode'],
         ['MMA', 'MMA — Q Attack', 'Haki-like close combat', 'Weapon-free pressure.', 'Combat Art', 'Strong Match'],
       ],
       combos: combos(
@@ -1341,23 +1294,23 @@ const luffy = build({
       id: 'anime-luffy-3x2', name: 'Three-slot Snakeman pursuit', type: 'Three Slot',
       bloodlines: [
         bl('SnakeMan', ['Cobra Art: Form 1', 'Cobra Art: Form 3'], 'Primary Snakeman source.', 'Gear 4 Snakeman', 'Direct Match', true, 'SnakeMan-Platinum'),
-        bl('SnakeMan-Platinum', ['Cobra Art: Form 2'], 'Alternate visual path for changing-direction strikes.', 'Accelerating rubber punches', 'Visual Approximation'),
+        bl('Ryuji-Kenichi', ['Fist Style: Dragon Demon Combo', 'Fist Style: Dragon Lotus'], 'Distinct durability and finishing support.', 'Armament Haki power', 'Competitive Substitute'),
         bl('Bruce-Kenichi', ['Fist Style: 6th Dance', 'Fist Style: 9th Dance'], 'Fast physical pursuit.', 'Haki-like brawling', 'Strong Match'),
       ],
       elements: [air(['Air Style: Vortex', 'Air Style: Palm Blast'], 'Airborne control.'), fire(['Flame Style: Flame Bullet'], 'Heat visual support.')],
-      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Bruce Kenichi', race: 'Human',
+      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Human',
       hotbar: [
         ['SnakeMan', 'Cobra Art: Form 1', 'Curving rubber punch', 'Primary starter.', 'Starter', 'Direct Match'],
-        ['SnakeMan-Platinum', 'Cobra Art: Form 2', 'Accelerating strike', 'Close extension.', 'Extender', 'Visual Approximation'],
+        ['SnakeMan', 'Cobra Art: Form 2', 'Accelerating strike', 'Close extension.', 'Extender', 'Visual Approximation'],
         ['SnakeMan', 'Cobra Art: Form 3', 'Gear 4 finisher', 'Confirmed punish.', 'Finisher', 'Direct Match'],
         ['Bruce-Kenichi', 'Fist Style: 6th Dance', 'Fast brawling', 'Secondary starter.', 'Starter', 'Strong Match'],
         ['Air', 'Air Style: Vortex', 'Airborne control', 'Control the approach.', 'Pressure', 'Visual Approximation'],
         ['Bruce-Kenichi', 'Fist Style: 9th Dance', 'Haki-like pressure', 'Physical extension.', 'Extender', 'Strong Match'],
-        ['SnakeMan-Platinum', 'Cobra Art: Form 1', 'Alternate curving punch', 'Second pursuit angle.', 'Pressure', 'Visual Approximation'],
+        ['Loadout', 'Not used in this variant', 'No duplicate move', 'Intentionally leaves this control empty.', 'Empty', 'Direct Match'],
         ['Air', 'Air Style: Palm Blast', 'Airborne displacement', 'Defensive separation.', 'Defense', 'Visual Approximation'],
         ['Fire', 'Flame Style: Flame Bullet', 'Heated impact', 'Ranged check.', 'Neutral', 'Visual Approximation'],
         ['SnakeMan', 'SnakeMan — Stage 1', 'Gear 4 Snakeman', 'Activate identity mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated form', 'Preserve Snakeman identity.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated form', 'Preserve Snakeman identity.', 'Mode', 'Direct Match', 'mode'],
         ['MMA', 'MMA — Q Attack', 'Haki-like combat', 'Weapon-free input.', 'Combat Art', 'Strong Match'],
       ],
       combos: combos(
@@ -1372,21 +1325,20 @@ const luffy = build({
       strengths: ['More pursuit angles.', 'Strong no-weapon pressure.', 'Clear mode priority.'],
       weaknesses: ['Platinum duplicates the core kit.', 'Few defensive options.', 'High close-range commitment.'],
       usageGuide: ['Use Platinum only for selected moves.', 'Never replace the SnakeMan identity mode.', 'Confirm before Form 3.'],
-      compromises: ['SnakeMan-Platinum is an alternate skin used for routing, not a distinct Luffy power.'],
+      compromises: ['SnakeMan-Platinum was excluded because it repeats the same three Cobra forms.', 'Ryuji-Kenichi is a competitive Haki approximation.'],
     }),
     authoredVariant({
-      id: 'anime-luffy-4x2', name: 'Four-slot Snakeman pressure', type: 'Primary',
+      id: 'anime-luffy-4x2', name: 'Three-slot Snakeman pressure', type: 'Primary',
       bloodlines: [
         bl('SnakeMan', ['Cobra Art: Form 1', 'Cobra Art: Form 3'], 'Primary direct source.', 'Gear 4 Snakeman', 'Direct Match', true, 'SnakeMan-Platinum'),
-        bl('SnakeMan-Platinum', ['Cobra Art: Form 2'], 'Alternate curving-strike visual.', 'Changing attack direction', 'Visual Approximation'),
         bl('Bruce-Kenichi', ['Fist Style: 6th Dance', 'Fist Style: 9th Dance'], 'Fast physical pursuit.', 'Haki-like pressure', 'Strong Match'),
         bl('Ryuji-Kenichi', ['Fist Style: Dragon Demon Combo', 'Fist Style: Dragon Lotus'], 'Heavy durability and finishing support.', 'Armament Haki power', 'Competitive Substitute'),
       ],
       elements: [air(['Air Style: Vortex', 'Air Style: Palm Blast'], 'Airborne control.'), fire(['Flame Style: Flame Bullet'], 'Heat visual support.')],
-      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Bruce Kenichi', race: 'Human',
+      cMode: 'SnakeMan — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'MMA', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Human',
       hotbar: [
         ['SnakeMan', 'Cobra Art: Form 1', 'Curving rubber punch', 'Primary starter.', 'Starter', 'Direct Match'],
-        ['SnakeMan-Platinum', 'Cobra Art: Form 2', 'Accelerating punch', 'Close extension.', 'Extender', 'Visual Approximation'],
+        ['SnakeMan', 'Cobra Art: Form 2', 'Accelerating punch', 'Close extension.', 'Extender', 'Visual Approximation'],
         ['SnakeMan', 'Cobra Art: Form 3', 'Gear 4 finisher', 'Confirmed punish.', 'Finisher', 'Direct Match'],
         ['Bruce-Kenichi', 'Fist Style: 6th Dance', 'Fast brawling', 'Secondary starter.', 'Starter', 'Strong Match'],
         ['Air', 'Air Style: Vortex', 'Airborne control', 'Approach control.', 'Pressure', 'Visual Approximation'],
@@ -1395,7 +1347,7 @@ const luffy = build({
         ['Air', 'Air Style: Palm Blast', 'Airborne displacement', 'Defensive separation.', 'Defense', 'Visual Approximation'],
         ['Ryuji-Kenichi', 'Fist Style: Dragon Lotus', 'Heavy Haki-like finisher', 'Competitive punish.', 'Finisher', 'Competitive Substitute'],
         ['SnakeMan', 'SnakeMan — Stage 1', 'Gear 4 Snakeman', 'Activate identity mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve Snakeman form.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve Snakeman form.', 'Mode', 'Direct Match', 'mode'],
         ['MMA', 'MMA — Q Attack', 'Haki-like combat', 'Weapon-free input.', 'Combat Art', 'Strong Match'],
       ],
       combos: combos(
@@ -1413,7 +1365,7 @@ const luffy = build({
       compromises: ['Ryuji-Kenichi is a competitive substitute for Haki-like power and durability.'],
     }),
   ],
-  evidence: evidence('Monkey D. Luffy', 'SnakeMan directly supplies the closest Shindo representation of Gear 4 Snakeman and changing-direction rubber strikes.', 'Bruce and Ryuji Kenichi approximate Haki-backed physical pressure; neither changes the primary SnakeMan mode.'),
+  evidence: priorityEvidence['anime-monkey-d-luffy-snakeman'],
 })
 
 const jotaro = build({
@@ -1430,7 +1382,7 @@ const jotaro = build({
         bl('Dio-Senko-Rose', ['Time Style: Ultimate Flash', 'Time Style: Time Jump', 'Time Style: Time Stop'], 'Time-stop mechanic only; mode remains disabled.', 'Time stop', 'Strong Match', false, 'Dio-Senko'),
       ],
       elements: [earth(['Stone Style: Earth Wall', 'Stone Style: Rage Trail'], 'Durability and grounded pressure.'), lightning(['Shock Style: Stream'], 'Stand-speed visual support.')],
-      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Ryuji Kenichi', race: 'Human',
+      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Human',
       hotbar: [
         ['Jotaro-Shizen', 'Wood Style: Golem Vanishing Images', 'Star Platinum barrage', 'Primary close starter.', 'Starter', 'Direct Match'],
         ['Jotaro-Shizen', 'Wood Style: Worlding Invincible', 'Time-stop Stand pressure', 'Identity control move.', 'Counter', 'Direct Match', 'counter'],
@@ -1442,7 +1394,7 @@ const jotaro = build({
         ['Earth', 'Stone Style: Earth Wall', 'Jotaro’s durability', 'Defensive cover.', 'Defense', 'Visual Approximation'],
         ['Dio-Senko-Rose', 'Time Style: Ultimate Flash', 'Explosive Stand-speed punish', 'Confirmed finisher.', 'Finisher', 'Competitive Substitute'],
         ['Jotaro-Shizen', 'Jotaro-Shizen — Stage 1', 'Star Platinum', 'Activate identity mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve Stand identity.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve Stand identity.', 'Mode', 'Direct Match', 'mode'],
         ['Boxing Style', 'Boxing Style — Q Attack', 'Close-range Stand punches', 'Block-breaking Combat Art input.', 'Guard break', 'Strong Match', 'block-break'],
       ],
       combos: combos(
@@ -1467,7 +1419,7 @@ const jotaro = build({
         bl('Ryuji-Kenichi', ['Fist Style: Dragon Demon Combo', 'Fist Style: Dragon Lotus'], 'Durable, powerful Stand-punch support.', 'Star Platinum power', 'Strong Match'),
       ],
       elements: [earth(['Stone Style: Earth Wall', 'Stone Style: Rage Trail'], 'Durability and impact.'), lightning(['Shock Style: Stream'], 'Stand speed.')],
-      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Ryuji Kenichi', race: 'Human',
+      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Human',
       hotbar: [
         ['Jotaro-Shizen', 'Wood Style: Golem Vanishing Images', 'Star Platinum barrage', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Jotaro-Shizen', 'Wood Style: Worlding Invincible', 'Time-stop Stand control', 'Reactive control.', 'Counter', 'Direct Match', 'counter'],
@@ -1479,7 +1431,7 @@ const jotaro = build({
         ['Earth', 'Stone Style: Earth Wall', 'Jotaro durability', 'Defensive cover.', 'Defense', 'Visual Approximation'],
         ['Dio-Senko-Rose', 'Time Style: Time Jump', 'Stand-speed reposition', 'Angle change.', 'Mobility', 'Visual Approximation'],
         ['Jotaro-Shizen', 'Jotaro-Shizen — Stage 1', 'Star Platinum', 'Activate identity mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve Stand identity.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve Stand identity.', 'Mode', 'Direct Match', 'mode'],
         ['Boxing Style', 'Boxing Style — Q Attack', 'Star Platinum punching', 'Verified block-breaking input.', 'Guard break', 'Strong Match', 'block-break'],
       ],
       combos: combos(
@@ -1505,7 +1457,7 @@ const jotaro = build({
         bl('Bruce-Kenichi', ['Fist Style: 6th Dance', 'Fist Style: 9th Dance'], 'Fast barrage and precision support.', 'ORA-style close barrage', 'Competitive Substitute'),
       ],
       elements: [earth(['Stone Style: Earth Wall', 'Stone Style: Rage Trail'], 'Durability and impact.'), lightning(['Shock Style: Stream'], 'Stand speed.')],
-      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'Ryuji Kenichi', race: 'Human',
+      cMode: 'Jotaro-Shizen — Stage 1', zMode: 'No Z-mode equipped', combatArt: 'Boxing Style', weapon: 'None', ninjaTool: 'None', consumable: 'None', mentor: 'None', race: 'Human',
       hotbar: [
         ['Jotaro-Shizen', 'Wood Style: Golem Vanishing Images', 'Star Platinum barrage', 'Primary starter.', 'Starter', 'Direct Match'],
         ['Jotaro-Shizen', 'Wood Style: Worlding Invincible', 'Time-stop Stand control', 'Reactive control.', 'Counter', 'Direct Match', 'counter'],
@@ -1517,7 +1469,7 @@ const jotaro = build({
         ['Earth', 'Stone Style: Earth Wall', 'Jotaro durability', 'Defensive cover.', 'Defense', 'Visual Approximation'],
         ['Lightning', 'Shock Style: Stream', 'Stand speed', 'Fast neutral check.', 'Neutral', 'Visual Approximation'],
         ['Jotaro-Shizen', 'Jotaro-Shizen — Stage 1', 'Star Platinum', 'Activate identity mode.', 'Mode', 'Direct Match', 'mode'],
-        ['Loadout', 'No Z-mode equipped', 'Avoids unrelated transformation', 'Preserve Stand identity.', 'Mode', 'Direct Match', 'mode'],
+        ['Loadout', 'Not used in this variant', 'Avoids unrelated transformation', 'Preserve Stand identity.', 'Mode', 'Direct Match', 'mode'],
         ['Boxing Style', 'Boxing Style — Q Attack', 'Star Platinum punching', 'Verified block-breaking input.', 'Guard break', 'Strong Match', 'block-break'],
       ],
       combos: combos(
@@ -1535,7 +1487,7 @@ const jotaro = build({
       compromises: ['Bruce-Kenichi is a competitive substitute for rapid Stand barrages; Dio-Senko-Rose supplies only time stop.'],
     }),
   ],
-  evidence: evidence('Jotaro Kujo', 'Jotaro-Shizen supplies the closest direct Shindo representation of Star Platinum-style pressure and time control.', 'Dio-Senko-Rose is used only for time-stop functionality; its mode is disabled because the appearance does not match.'),
+  evidence: priorityEvidence['anime-jotaro-kujo'],
 })
 
 export const animeMangaBuilds: CharacterBuild[] = [
