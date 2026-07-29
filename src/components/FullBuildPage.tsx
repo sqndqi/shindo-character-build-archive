@@ -91,15 +91,15 @@ export function FullBuildPage({
     <header className="build-hero">
       <div className="build-hero__portrait"><Portrait src={build.image} alt={build.name} /></div>
       <div className="build-hero__content">
+        <div className="build-hero__actions">
+          <button className={`button button--outline ${variantFavorites.includes(variant.id) ? 'is-active' : ''}`} onClick={() => onFavoriteVariant(variant.id)}><Bookmark size={15} fill={variantFavorites.includes(variant.id) ? 'currentColor' : 'none'} /> Bookmark variant</button>
+          <button className={`button button--outline ${watchlist.includes(build.id) ? 'is-active' : ''}`} onClick={() => onWatch(build.id)}><Bell size={15} /> {watchlist.includes(build.id) ? 'On update watchlist' : 'Watch for retest'}</button>
+        </div>
         <div className="tag-row"><span className={`status-badge status-badge--${build.publicationStatus.toLowerCase().replaceAll(' ', '-')}`}>{build.publicationStatus}</span><span className="tag">{variant.verificationStatus}</span><span className="tag">{build.confidence}</span></div>
         <p className="eyebrow">{build.series} · {build.version}</p>
         <h1>{build.name}</h1>
         <p>{build.description}</p>
         <div className="build-hero__meta"><span><b>Arc</b>{build.version}</span><span><b>Last checked</b>{variant.lastVerifiedUpdate}</span><span><b>Owner test</b>{build.testing.status}</span></div>
-      </div>
-      <div className="build-hero__actions">
-        <button className={`button button--outline ${variantFavorites.includes(variant.id) ? 'is-active' : ''}`} onClick={() => onFavoriteVariant(variant.id)}><Bookmark size={15} fill={variantFavorites.includes(variant.id) ? 'currentColor' : 'none'} /> Bookmark variant</button>
-        <button className={`button button--outline ${watchlist.includes(build.id) ? 'is-active' : ''}`} onClick={() => onWatch(build.id)}><Bell size={15} /> {watchlist.includes(build.id) ? 'On update watchlist' : 'Watch for retest'}</button>
       </div>
     </header>
 
