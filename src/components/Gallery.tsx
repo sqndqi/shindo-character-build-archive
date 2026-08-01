@@ -8,6 +8,7 @@ type Props = {
   compareIds: string[]
   favorites: string[]
   onOpen: (build: CharacterBuild) => void
+  onUnlock: (id: string) => void
   onCompare: (id: string) => void
   onFavorite: (id: string) => void
   onClear: () => void
@@ -15,7 +16,7 @@ type Props = {
   performanceMode: boolean
 }
 
-export function Gallery({ builds, slotLimit, compareIds, favorites, onOpen, onCompare, onFavorite, onClear, mode, performanceMode }: Props) {
+export function Gallery({ builds, slotLimit, compareIds, favorites, onOpen, onUnlock, onCompare, onFavorite, onClear, mode, performanceMode }: Props) {
   if (!builds.length) {
     return (
       <div className="empty-state">
@@ -38,6 +39,7 @@ export function Gallery({ builds, slotLimit, compareIds, favorites, onOpen, onCo
           favorite={favorites.includes(build.id)}
           comparisonDisabled={compareIds.length >= 3}
           onOpen={onOpen}
+          onUnlock={onUnlock}
           onCompare={onCompare}
           onFavorite={onFavorite}
           mode={mode}

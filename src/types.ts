@@ -7,6 +7,19 @@ export type ConfidenceLabel = 'Verified' | 'Strong Match' | 'Approximation' | 'C
 export type AccuracyClassification = 'Direct Match' | 'Strong Match' | 'Visual Approximation' | 'Competitive Substitute' | 'Unresolved'
 export type MediaCategory = 'Manhwa' | 'Manga / Anime'
 
+export type {
+  CanonicalBuildDefinition,
+  CanonicalBuildVariant,
+  CanonicalEvidence,
+  CanonicalGameCatalog,
+  CanonicalHotbarSlot,
+  CanonicalItem,
+  CanonicalModeStage,
+  CanonicalMove,
+  CanonicalSource,
+  CanonicalSourceCategory,
+} from './types/canonicalBuild'
+
 export interface BloodlineSlot {
   id: string
   name: string
@@ -33,6 +46,8 @@ export interface HotbarSlot {
   modeRequirement?: string
   testingStatus?: 'Untested' | 'Needs Retesting' | 'Works' | 'Verified for update'
   resourceNotes?: string
+  canonicalMoveId?: string
+  emptyReason?: 'Intentionally unused' | 'No accurate option' | 'Placement unverified' | 'Requires owner testing' | 'Reserved for player preference'
 }
 
 export interface Combo {
@@ -109,6 +124,21 @@ export interface BuildVariant {
   compromises?: string[]
   verificationStatus: VariantVerificationStatus
   lastVerifiedUpdate: string
+  preparedHotbarProfileId?: string
+  hotbarLegalityStatus?: import('./types/shindoGame').HotbarLegalityStatus
+  ownerTestingStatus?: import('./types/shindoGame').OwnerTestingStatus
+  researchedGameVersion?: string
+  profilePurpose?: 'Identity Build' | 'Game-Legal Build' | 'Two-Slot Build' | 'Three-Slot Build' | 'Accessible Build' | 'Competitive Build'
+  carriedSourceReasons?: Record<string, string>
+  moveBankPlan?: {
+    moveId: string
+    replacesKey: string
+    situation: string
+    accuracy: AccuracyClassification
+    liveTested: boolean
+  }[]
+  /** Opt-in Phase 1 contract. Existing records remain untouched until their research batch is re-authored. */
+  canonicalDefinition?: import('./types/canonicalBuild').CanonicalBuildVariant
 }
 
 export interface CharacterBuild {

@@ -58,7 +58,8 @@ export function inventoryMatch(variant: BuildVariant, collection: CollectionStat
 }
 
 export function closestPreparedVariant(variants: BuildVariant[], collection: CollectionState) {
-  return variants.map((variant) => inventoryMatch(variant, collection)).sort((a, b) =>
+  const selectable = variants.filter((variant) => variant.hotbarLegalityStatus !== 'Invalid')
+  return (selectable.length ? selectable : variants).map((variant) => inventoryMatch(variant, collection)).sort((a, b) =>
     a.missing.length - b.missing.length
     || b.variant.ratings.accuracy - a.variant.ratings.accuracy
     || b.variant.bloodlineSlotCount - a.variant.bloodlineSlotCount)[0]

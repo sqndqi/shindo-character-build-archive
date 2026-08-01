@@ -16,7 +16,7 @@ const pages = [
   ['Compare', 'compare'],
   ['Suggestions', 'suggestions'],
 ]
-const builds = ['James Lee', 'Goo Kim', 'Gun Park', 'Naruto Uzumaki', 'Ichigo Kurosaki', 'Monkey D. Luffy']
+const builds = ['Zack Lee', 'Vasco', 'Gray Yeon', 'Yu', 'Jin Mori']
 
 await mkdir(artifacts, { recursive: true })
 const browser = await chromium.launch({ executablePath: chrome, headless: true })
@@ -47,6 +47,7 @@ async function inspect(label, width) {
         return style.visibility !== 'hidden' && style.display !== 'none' && rect.width > 0 && rect.height > 0
       })
     const outsideViewport = visible.filter((node) => {
+      if (node.closest('.table-scroll,.featured-free-builds > div,.recent-builds__list,[data-local-scroll]')) return false
       const rect = node.getBoundingClientRect()
       return rect.right > viewportWidth + tolerance || rect.left < -tolerance
     }).slice(0, 20).map((node) => ({
