@@ -868,9 +868,9 @@ export default function App() {
                       setTheme(event.target.value as typeof prefs.theme)
                     }
                   >
+                    <option value="ember-crimson">Ember Crimson (default)</option>
                     <option value="shindo-green">Shindo Green</option>
                     <option value="chakra-blue">Chakra Blue</option>
-                    <option value="ember-crimson">Ember Crimson</option>
                   </select>
                 </label>
                 <label className="bias-control">

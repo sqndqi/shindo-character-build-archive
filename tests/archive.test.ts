@@ -196,8 +196,8 @@ describe('suggestions, migration and identity', () => {
 })
 
 describe('Shindo identity, assets, and build-quality checks', () => {
-  it('defaults to Shindo Green and preserves an existing theme preference', () => {
-    expect(defaultArchivePrefs.theme).toBe('shindo-green')
+  it('defaults to Ember Crimson and preserves an existing theme preference', () => {
+    expect(defaultArchivePrefs.theme).toBe('ember-crimson')
     expect(mergeArchivePrefs({ theme: 'chakra-blue', favorites: ['james-lee'] })).toMatchObject({ theme: 'chakra-blue', favorites: ['james-lee'] })
   })
   it('defines all three themes through shared CSS variables', () => {

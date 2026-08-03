@@ -16,7 +16,7 @@ export const defaultArchivePrefs: ArchivePrefs = {
   tiers: {},
   pageSize: '24',
   metaBias: 50,
-  theme: 'shindo-green',
+  theme: 'ember-crimson',
 }
 
 export function mergeArchivePrefs(saved: Partial<ArchivePrefs>): ArchivePrefs {
