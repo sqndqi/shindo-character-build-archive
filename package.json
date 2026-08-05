@@ -12,6 +12,11 @@
     "test": "vitest run",
     "test:smoke": "node tests/smoke.mjs",
     "preview": "vite preview",
+    "server:install": "npm install --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "server:build": "npm run build --prefix server",
+    "server:test": "npm test --prefix server",
+    "hash:password": "node server/scripts/gen-password-hash.mjs",
     "taiyi:doctor": "taiyi doctor --strict-workspace",
     "taiyi:verify": "taiyi verify",
     "taiyi:smoke": "node -e \"const{spawnSync}=require('child_process');const r=spawnSync(process.execPath,['dist/cli/taiyi.js','--version']);process.exit(r.status)\""
