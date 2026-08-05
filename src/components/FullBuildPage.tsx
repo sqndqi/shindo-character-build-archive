@@ -184,7 +184,7 @@ export function FullBuildPage({
 
       <header className="dossier-hero">
         <div className="dossier-hero__portrait">
-          <Portrait src={build.image} alt={build.name} />
+          <Portrait src={build.image} alt={build.name} objectPosition={presentation.heroPosition} />
         </div>
         <div className="dossier-hero__content">
           <p className="eyebrow">

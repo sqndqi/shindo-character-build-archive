@@ -23,6 +23,8 @@ import {
   Table2,
   X,
 } from "lucide-react";
+import { DiscordLink, RobloxGroupLink } from "./components/CommunityLinks";
+import { DonationBar } from "./components/DonationBar";
 import type { CharacterBuild } from "./types";
 import {
   buildRepository,
@@ -535,6 +537,10 @@ export default function App() {
           >
             Account
           </button>
+          <div className="nav-community-links">
+            <DiscordLink />
+            <RobloxGroupLink />
+          </div>
         </nav>
       </header>
 
@@ -747,6 +753,7 @@ export default function App() {
                 >
                   Explore free builds
                 </button>
+                <DiscordLink className="button button--outline" />
               </div>
             </div>
             <div className="archive-hero__collage" aria-hidden="true">
@@ -778,6 +785,7 @@ export default function App() {
               </div>
             </div>
           </section>
+          <DonationBar />
           <section
             className="featured-free-builds"
             aria-label="Featured free builds"
@@ -1194,16 +1202,12 @@ export default function App() {
       )}
 
       <footer className="site-footer">
+        <div className="site-footer__links">
+          <DiscordLink />
+          <RobloxGroupLink />
+        </div>
         <p>
-          Unofficial fan-made build archive. Game balance and abilities may
-          change. ·{" "}
-          <a
-            href="https://discord.gg/agarthia"
-            target="_blank"
-            rel="noreferrer"
-          >
-            discord.gg/agarthia
-          </a>
+          Unofficial fan-made build archive. Not affiliated with RELL World or Roblox Corp. Game balance and abilities may change.
         </p>
       </footer>
       {selected && selected.variants.length > 0 && (

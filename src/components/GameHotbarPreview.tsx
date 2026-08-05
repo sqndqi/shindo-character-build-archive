@@ -21,7 +21,7 @@ export const GameHotbarPreview = memo(function GameHotbarPreview({
     </header>
     <div className="game-hotbar__scroller">
       <div className="game-hotbar__stage">
-        <picture><source srcSet="/shindo-ui/hotbar-frame.webp" type="image/webp" /><img src="/shindo-ui/hotbar-frame.png" alt="" width="754" height="139" decoding="async" /></picture>
+        <picture><source srcSet={`${import.meta.env.BASE_URL}shindo-ui/hotbar-frame.webp`} type="image/webp" /><img src={`${import.meta.env.BASE_URL}shindo-ui/hotbar-frame.png`} alt="" width="754" height="139" decoding="async" /></picture>
         {current249OwnerReference.anchors.map((anchor) => {
           const slot = anchor.sourceKey ? hotbar.find((item) => item.key === anchor.sourceKey) : undefined
           const empty = !slot?.canonicalMoveId

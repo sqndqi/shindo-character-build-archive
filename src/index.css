@@ -1567,3 +1567,80 @@ main { width: min(1540px, calc(100% - 40px)); margin-inline: auto; }
 .workshop-page :is(span, small) {
   font-size: 12px !important;
 }
+
+/* Phase 3B — community links, donation bar, Robux/Premium+ placeholders */
+
+/* Community links */
+.community-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+  transition: border-color 160ms ease, color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+.community-link:hover { color: var(--text-primary); border-color: var(--border-strong); background: var(--bg-surface-hover); transform: translateY(-1px); }
+.community-link--discord { color: #7289da; border-color: rgba(114,137,218,.35); background: rgba(114,137,218,.08); }
+.community-link--discord:hover { color: #8ea0e0; border-color: rgba(114,137,218,.55); background: rgba(114,137,218,.14); }
+.community-link--roblox { color: #e8432a; border-color: rgba(232,67,42,.35); background: rgba(232,67,42,.08); }
+.community-link--roblox:hover { color: #f05a42; border-color: rgba(232,67,42,.55); background: rgba(232,67,42,.14); }
+.community-link-bar { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* Nav community links (header) */
+.nav-community-links { display: flex; align-items: center; gap: 6px; margin-left: 8px; padding-left: 8px; border-left: 1px solid var(--border-subtle); }
+.nav-community-links .community-link { min-height: 34px; font-size: 12px; }
+@media (max-width: 820px) {
+  .nav-community-links { margin-left: 0; padding-left: 0; border-left: 0; }
+  .nav-community-links .community-link { width: 100%; min-height: 44px; font-size: 14px; }
+}
+
+/* Site footer */
+.site-footer { flex-direction: column; gap: 12px; }
+.site-footer__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.site-footer .community-link { min-height: 36px; }
+
+/* Donation / support bar */
+.donation-bar { margin: 16px 0 8px; padding: 0; border: 1px solid var(--border-subtle); border-radius: 12px; background: var(--bg-surface); overflow: hidden; }
+.donation-bar__inner { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding: 12px 16px; }
+.donation-bar__label { display: flex; align-items: center; gap: 7px; color: var(--accent); font-size: 12px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+.donation-bar__progress { flex: 1 1 220px; display: flex; align-items: center; gap: 10px; }
+.donation-bar__track { flex: 1; height: 5px; border-radius: 999px; background: var(--border-subtle); overflow: hidden; }
+.donation-bar__fill { height: 100%; border-radius: 999px; background: var(--accent); transition: width 600ms ease; }
+.donation-bar__numbers { color: var(--text-secondary); font-size: 12px; white-space: nowrap; }
+.donation-bar__neutral { flex: 1; margin: 0; color: var(--text-secondary); font-size: 13px; }
+.donation-bar__links { display: flex; flex-wrap: wrap; gap: 7px; margin-left: auto; }
+.donation-bar__links .community-link { min-height: 30px; font-size: 12px; padding: 0 10px; }
+@media (max-width: 640px) {
+  .donation-bar__inner { gap: 8px 12px; }
+  .donation-bar__label { flex: 1 1 100%; }
+  .donation-bar__links { margin-left: 0; }
+}
+
+/* Robux placeholder */
+.robux-placeholder { margin: 18px 0; padding: 16px; display: flex; align-items: flex-start; gap: 14px; border: 1px dashed var(--border-default); border-radius: 10px; background: var(--bg-input); }
+.robux-placeholder__badge { flex: 0 0 auto; padding: 5px 10px; border: 1px solid var(--border-strong); border-radius: 6px; color: var(--text-muted); background: var(--bg-surface); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.robux-placeholder__content > span { display: block; margin-bottom: 5px; color: var(--text-secondary); font-size: 13px; font-weight: 700; }
+.robux-placeholder__content > p { margin: 0; color: var(--text-muted); font-size: 13px; line-height: 1.55; }
+
+/* Premium+ placeholder */
+.premium-plus-placeholder { margin: 18px 0; padding: 18px; display: grid; gap: 10px; border: 1px solid color-mix(in srgb,var(--accent) 30%,var(--border-subtle)); border-radius: 12px; background: linear-gradient(135deg, var(--bg-surface-raised), var(--bg-surface)); }
+.premium-plus-placeholder__header { display: flex; align-items: center; gap: 8px; color: var(--accent); }
+.premium-plus-badge { padding: 3px 9px; border: 1px solid var(--accent-dark); border-radius: 999px; color: var(--accent); background: var(--accent-soft); font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.premium-plus-placeholder__badge { padding: 3px 8px; border: 1px solid var(--border-default); border-radius: 999px; color: var(--text-muted); background: var(--bg-input); font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.premium-plus-placeholder > p { margin: 0; color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
+.premium-plus-placeholder .community-link { justify-self: start; }
+
+/* Hero CTA community link inherits button outline look */
+.archive-hero__actions .community-link { min-height: 44px; font-size: 14px; padding: 0 16px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .community-link, .donation-bar__fill { transition: none; }
+  .community-link:hover { transform: none; }
+}
