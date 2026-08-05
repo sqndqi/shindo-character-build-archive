@@ -306,6 +306,27 @@ describe('Shindo identity, assets, and build-quality checks', () => {
     base.hotbar[10] = { ...base.hotbar[10], source: 'None', ability: 'Not used in this variant' }
     expect(auditVariant(base).filter((issue) => issue.code === 'unequipped-hotbar-source' && issue.message.includes('Not used'))).toHaveLength(0)
   })
+  it('detects weapon abilities without a weapon equipped', () => {
+    const base = structuredClone(curatedBuilds[0].variants[0])
+    base.weapon = 'None'
+    base.hotbar[0] = { ...base.hotbar[0], sourceType: 'Weapon', source: 'Bankai Blade', ability: 'Bankai Slash' }
+    const codes = auditVariant(base).map((issue) => issue.code)
+    expect(codes).toContain('weapon-ability-no-weapon')
+  })
+  it('detects vague placeholder abilities', () => {
+    const base = structuredClone(curatedBuilds[0].variants[0])
+    base.hotbar[0] = { ...base.hotbar[0], ability: 'best move' }
+    const codes = auditVariant(base).map((issue) => issue.code)
+    expect(codes).toContain('vague-placeholder-1')
+  })
+  it('detects mode moves referencing an unequipped mode', () => {
+    const base = structuredClone(curatedBuilds[0].variants[0])
+    base.hotbar[0] = { ...base.hotbar[0], sourceType: 'Mode', modeAbility: true, modeRequirement: 'Sengoku Mode', ability: 'Sengoku Strike' }
+    base.cMode = 'Kor Tailed Spirit'
+    base.zMode = 'None'
+    const codes = auditVariant(base).map((issue) => issue.code)
+    expect(codes).toContain('mode-not-equipped-1')
+  })
   it('keeps James Lee core unchanged and public authoring absent', () => {
     expect(curatedBuilds[0].variants[0].bloodlines.map((slot) => slot.name)).toEqual(['Dio-Senko-Rose', 'Bruce-Kenichi', 'Pika-Senko', 'Doku-Tengoku'])
     const app = readFileSync(resolve('src/App.tsx'), 'utf8')
