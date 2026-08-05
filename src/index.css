@@ -144,23 +144,23 @@ kbd { min-width: 26px; height: 26px; padding: 0 7px; display: inline-grid; place
 .tier-search { height: 52px; margin: 24px 0 14px; padding: 0 15px; display: flex; align-items: center; gap: 10px; border: 1px solid #303030; background: #111; }
 .tier-search svg { color: var(--accent); }
 .tier-search input { flex: 1; border: 0; outline: 0; color: white; background: transparent; font-size: 11px; }
-.tier-row { min-height: 120px; display: grid; grid-template-columns: 90px 1fr; border-bottom: 1px solid #303030; }
+.tier-row { min-height: 158px; display: grid; grid-template-columns: 120px 1fr; border-bottom: 1px solid #303030; }
 .tier-row:last-child { border: 0; }
-.tier-rank { display: grid; place-items: center; background: #171717; border-right: 1px solid #303030; font: 400 36px/1 "Roboto Condensed",sans-serif; }
+.tier-rank { display: grid; place-items: center; background: #171717; border-right: 1px solid #303030; font: 700 44px/1 "Roboto Condensed",sans-serif; letter-spacing: -.02em; }
 .tier-row--splus .tier-rank { color: #ff5260; background: #2b1014; }
 .tier-row--s .tier-rank { color: #ff8971; }
 .tier-row--a .tier-rank { color: #ffc66d; }
 .tier-row--b .tier-rank { color: #8dc4ff; }
 .tier-row--c .tier-rank { color: #aaa; }
-.tier-members, .unranked-pool > div:last-child { padding: 10px; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); align-content: start; gap: 7px; }
-.tier-chip { min-width: 0; height: 62px; padding: 6px; display: grid; grid-template-columns: 42px 1fr 48px; gap: 8px; align-items: center; border: 1px solid #292929; background: #121212; cursor: grab; }
-.tier-chip__portrait { width: 42px; height: 48px; padding: 0; border: 0; background: #171717; cursor: pointer; }
+.tier-members, .unranked-pool > div:last-child { padding: 12px; display: grid; grid-template-columns: repeat(auto-fill,minmax(192px,1fr)); align-content: start; gap: 9px; }
+.tier-chip { min-width: 0; height: 82px; padding: 8px; display: grid; grid-template-columns: 54px minmax(0,1fr) 52px; gap: 9px; align-items: center; border: 1px solid #292929; border-radius: 7px; background: #121212; cursor: grab; }
+.tier-chip__portrait { width: 54px; height: 62px; padding: 0; border: 0; background: #171717; cursor: pointer; }
 .tier-chip__portrait img, .tier-chip__portrait .portrait-fallback { width: 100%; height: 100%; min-height: 0; object-fit: cover; }
 .tier-chip > div { min-width: 0; display: grid; gap: 4px; }
-.tier-chip strong { overflow: hidden; color: #ddd; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; text-transform: uppercase; }
+.tier-chip strong { overflow: hidden; color: #ddd; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; text-transform: uppercase; }
 .tier-chip span { overflow: hidden; color: #666; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; }
 .tier-chip select { width: 45px; height: 30px; border: 1px solid #363636; color: #aaa; background: #171717; font-size: 11px; }
-.unranked-pool { margin-top: 14px; border: 1px solid #303030; background: #0e0e0e; }
+.unranked-pool { margin-top: 18px; border: 1px solid #303030; border-radius: 10px; overflow: hidden; background: #0e0e0e; }
 .unranked-pool > div:first-child { height: 50px; padding: 0 14px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #292929; color: #777; font-size: 11px; letter-spacing: .12em; }
 .unranked-pool > div:first-child strong { color: white; }
 
@@ -168,7 +168,7 @@ kbd { min-width: 26px; height: 26px; padding: 0 7px; display: inline-grid; place
   .bias-control strong { grid-column: 1/-1; }
   .tier-hero { align-items: flex-start; flex-direction: column; gap: 20px; }
   .tier-hero > p { width: 100%; }
-  .tier-members, .unranked-pool > div:last-child { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .tier-members, .unranked-pool > div:last-child { grid-template-columns: repeat(auto-fill,minmax(160px,1fr)); }
 }
 
 @media (max-width: 560px) {
@@ -178,8 +178,9 @@ kbd { min-width: 26px; height: 26px; padding: 0 7px; display: inline-grid; place
   .matchup-verdict { grid-template-columns: 1fr; }
   .matchup-verdict > div { min-height: 65px; text-align: center !important; border-right: 0; border-bottom: 1px solid #303030; }
   .tier-lab { padding-top: 55px; }
-  .tier-row { grid-template-columns: 56px 1fr; }
-  .tier-members, .unranked-pool > div:last-child { grid-template-columns: 1fr; }
+  .tier-row { grid-template-columns: 72px 1fr; min-height: 130px; }
+  .tier-rank { font-size: 32px; }
+  .tier-members, .unranked-pool > div:last-child { grid-template-columns: 1fr 1fr; }
 }
 
 /* Performance and gallery redesign */
@@ -491,10 +492,10 @@ body { font-size: 15px; }
 .bloodline-detail-grid strong { font-size: 12px; }
 .variant-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .tier-title-fields { display: grid; grid-template-columns: 1fr 1.5fr; gap: 8px; margin-bottom: 10px; }
-.tier-row-editor { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
-.tier-row-editor > div { display: flex; border: 1px solid #333; background: #121212; }
-.tier-row-editor input { width: 110px; padding: 0 8px; border: 0; color: #ddd; background: transparent; font-size: 11px; }
-.tier-row-editor button { width: 30px; height: 34px; display: grid; place-items: center; border: 0; border-left: 1px solid #333; color: #888; background: transparent; cursor: pointer; }
+.tier-row-editor { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0; }
+.tier-row-editor > div { display: flex; border: 1px solid #333; border-radius: 6px; overflow: hidden; background: #121212; }
+.tier-row-editor input { width: 130px; padding: 0 10px; border: 0; color: #ddd; background: transparent; font-size: 12px; }
+.tier-row-editor button { width: 34px; height: 38px; display: grid; place-items: center; border: 0; border-left: 1px solid #333; color: #888; background: transparent; cursor: pointer; }
 .tier-row-editor button:disabled { opacity: .25; }
 .suggestions-page { padding: 80px 0 100px; }
 .suggestion-form label { display: grid; gap: 7px; color: #bbb; font-size: 13px; }
@@ -775,7 +776,8 @@ main { width: min(1540px, calc(100% - 40px)); margin-inline: auto; }
 .inventory-build-list { display: grid; grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); }
 .inventory-build-list article { min-height: 92px; padding: 14px; display: grid; gap: 5px; border-right: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
 .inventory-build-list span, .inventory-build-list small { color: var(--text-secondary); font-size: 12px; }
-.suggestion-form, .tier-list-toolbar, .tier-board, .compare-table { width: min(840px,100%); margin-top: 24px; padding: 22px; display: flex; grid-template-columns: 1fr 1fr; gap: 8px; border: 1px solid #303030; background: var(--bg-surface); flex-wrap: wrap; margin: 18px 0 10px; border-color: var(--border-subtle); }
+.suggestion-form, .tier-list-toolbar, .compare-table { width: min(840px,100%); margin-top: 24px; padding: 22px; display: flex; grid-template-columns: 1fr 1fr; gap: 8px; border: 1px solid #303030; background: var(--bg-surface); flex-wrap: wrap; margin: 18px 0 10px; border-color: var(--border-subtle); }
+.tier-board { width: 100%; margin: 10px 0 18px; display: block; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; }
 .suggestion-form input, .suggestion-form textarea, .tier-title-fields input, .tier-list-toolbar select { min-height: 40px; padding: 0 10px; border: 1px solid #383838; color: var(--text-primary); background: var(--bg-input); resize: vertical; border-color: var(--border-default); border-radius: 6px; font-size: 14px; }
 
 @media (max-width: 1120px) {
