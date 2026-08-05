@@ -278,7 +278,7 @@ describe('Shindo identity, assets, and build-quality checks', () => {
     expect(app).toContain('/build/')
     expect(app).toContain('BuildQuickView')
     expect(app).toContain('FullBuildPage')
-    expect(readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')).toContain('Compare current variant with')
+    expect(readFileSync(resolve('src/components/build-sections/index.tsx'), 'utf8')).toContain('Compare current variant with')
   })
   it('removes the audited SnakeMan recolor overlap', () => {
     const luffy = animeMangaBuilds.find((build) => build.id === 'anime-monkey-d-luffy-snakeman')!
@@ -332,5 +332,106 @@ describe('Shindo identity, assets, and build-quality checks', () => {
     const app = readFileSync(resolve('src/App.tsx'), 'utf8')
     expect(app).not.toMatch(/BuildEditor|Add Build|delete official|export official/i)
     expect(existsSync(resolve('README.md'))).toBe(false)
+  })
+})
+
+describe('build page section architecture', () => {
+  it('exports all 12 build sections plus SectionHeading from build-sections', () => {
+    const source = readFileSync(resolve('src/components/build-sections/index.tsx'), 'utf8')
+    for (const name of [
+      'BuildOverviewSection', 'VariantSelectorSection', 'BloodlineElementsSection',
+      'ModesSection', 'UtilitySection', 'EquipmentSection', 'StatsPlaystyleSection',
+      'HotbarSection', 'ComboSection', 'AlternativesSection', 'BuildAuditPanel',
+      'ResearchEvidenceSection', 'SectionHeading',
+    ]) {
+      expect(source).toContain(`export function ${name}`)
+    }
+  })
+  it('imports all 12 sections into FullBuildPage', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    for (const name of [
+      'BuildOverviewSection', 'VariantSelectorSection', 'BloodlineElementsSection',
+      'ModesSection', 'UtilitySection', 'EquipmentSection', 'StatsPlaystyleSection',
+      'HotbarSection', 'ComboSection', 'AlternativesSection', 'BuildAuditPanel',
+      'ResearchEvidenceSection',
+    ]) {
+      expect(source).toContain(name)
+    }
+  })
+  it('renders a sticky section nav with 12 jump links', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    expect(source).toContain('dossier-section-nav')
+    expect(source).toContain('scrollIntoView')
+    const navIds = ['section-overview', 'section-variants', 'section-bloodlines', 'section-modes',
+      'section-utility', 'section-equipment', 'section-stats', 'section-hotbar',
+      'section-combos', 'section-alternatives', 'section-legality', 'section-research']
+    for (const id of navIds) expect(source).toContain(id)
+  })
+  it('removed the old tab navigation system', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    expect(source).not.toContain('activeView')
+    expect(source).not.toContain('dossier-nav')
+    expect(source).not.toMatch(/setActiveView/)
+  })
+  it('uses scrollable sections container not tabs', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    expect(source).toContain('dossier-sections')
+    expect(source).not.toContain('dossier-tabs')
+  })
+  it('keeps locked build page free of premium hotbar or variant data', () => {
+    const locked = readFileSync(resolve('src/components/LockedBuildPage.tsx'), 'utf8')
+    expect(locked).not.toContain('hotbar')
+    expect(locked).not.toContain('variant.bloodlines')
+    expect(locked).not.toContain('variant.hotbar')
+    expect(locked).not.toContain('combo')
+    expect(locked).toContain('Premium loadout hidden')
+  })
+  it('defines CSS for all build section components', () => {
+    const css = readFileSync(resolve('src/index.css'), 'utf8')
+    for (const selector of [
+      '.dossier-sections', '.build-section', '.dossier-section-nav',
+      '.overview-facts-grid', '.ability-slot-grid', '.modes-grid',
+      '.utility-slots', '.equipment-grid', '.stats-bars',
+      '.combo-list', '.audit-issues', '.research-status-grid',
+      '.hotbar-research-list', '.research-badge',
+    ]) {
+      expect(css).toContain(selector)
+    }
+  })
+  it('includes responsive breakpoints for build sections', () => {
+    const css = readFileSync(resolve('src/index.css'), 'utf8')
+    expect(css).toContain('.stat-bar__fill { transition: none; }')
+    expect(css).toContain('.evidence-toggle svg { transition: none; }')
+  })
+  it('handles missing optional fields with research status badges', () => {
+    const badge = readFileSync(resolve('src/components/build-sections/ResearchStatusBadge.tsx'), 'utf8')
+    expect(badge).toContain('Not researched')
+    expect(badge).toContain('status?: SlotResearchStatus')
+    const empty = readFileSync(resolve('src/components/build-sections/EmptyResearchState.tsx'), 'utf8')
+    expect(empty).toContain('empty-research-state')
+  })
+  it('preserves variant switching with View Transitions API', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    expect(source).toContain('transitionUpdate')
+    expect(source).toContain('startViewTransition')
+    expect(source).toContain('prefers-reduced-motion')
+  })
+  it('preserves hotbar view localStorage persistence', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    expect(source).toContain('shindo-build-archive:hotbar-view:v1')
+    expect(source).toContain('readStorage')
+    expect(source).toContain('writeStorage')
+  })
+  it('includes game hotbar preview with accessible text', () => {
+    const hotbar = readFileSync(resolve('src/components/GameHotbarPreview.tsx'), 'utf8')
+    expect(hotbar).toContain('game-hotbar__accessible-list')
+  })
+  it('has exactly five free builds defined in App routing', () => {
+    const app = readFileSync(resolve('src/App.tsx'), 'utf8')
+    const match = app.match(/freeBuildIds\s*=\s*\[([\s\S]*?)\]\s*as const/)
+    expect(match).not.toBeNull()
+    const ids = match![1].match(/["']([^"']+)["']/g)!.map((s) => s.replace(/["']/g, ''))
+    expect(ids).toHaveLength(5)
+    for (const id of ids) expect(completeRoster.some((build) => build.id === id)).toBe(true)
   })
 })
