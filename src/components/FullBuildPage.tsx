@@ -229,20 +229,20 @@ export function FullBuildPage({
               className={`legality-badge legality-badge--${legality.status.toLowerCase().replaceAll(" ", "-")}`}
             >
               <ShieldCheck size={14} />
-              <b>Hotbar legality</b>
+              <b>Hotbar legality: </b>
               {legality.status}
             </span>
             <span>
-              <b>Research confidence</b>
+              <b>Research confidence: </b>
               {build.confidence}
             </span>
             <span>
               <TestTube2 size={14} />
-              <b>Live testing status</b>
+              <b>Testing: </b>
               {variant.ownerTestingStatus ?? "Not tested"}
             </span>
             <span>
-              <b>Character accuracy</b>
+              <b>Accuracy: </b>
               {variant.ratings.accuracy.toFixed(1)} / 10
             </span>
           </div>
