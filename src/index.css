@@ -264,7 +264,7 @@ body { font-size: 15px; }
 .archive-hero__actions .button { min-height: 44px; font-size: 14px; }
 .archive-hero__collage { height: 250px; position: relative; align-self: end; }
 .archive-hero__collage .portrait-frame { width: 180px; height: 235px; position: absolute; bottom: -22px; overflow: hidden; border: 1px solid color-mix(in srgb,var(--accent) 40%,var(--border-default)); border-radius: 80px 80px 18px 18px; box-shadow: 0 20px 45px rgba(0,0,0,.35); }
-.archive-hero__collage .portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 17%; }
+.archive-hero__collage .portrait-frame img { width: 100%; height: 100%; object-fit: cover; }
 .archive-hero__collage .portrait-frame:nth-child(1) { left: 0; z-index: 2; transform: rotate(-5deg); }
 .archive-hero__collage .portrait-frame:nth-child(2) { left: 29%; z-index: 3; bottom: -8px; }
 .archive-hero__collage .portrait-frame:nth-child(3) { right: 0; z-index: 1; transform: rotate(5deg); }
@@ -456,6 +456,12 @@ body { font-size: 15px; }
 .account-access-card span { display: block; color: var(--text-muted); font-size: 12px; }
 .account-access-card strong { display: block; margin-top: 6px; font-size: 20px; }
 .account-message { color: var(--warning); }
+
+.account-parked { grid-template-columns: 1fr; max-width: 780px; margin: 0 auto; text-align: center; }
+.account-parked .archive-hero__copy { display: grid; justify-items: center; }
+.account-parked h1 { font-size: clamp(36px,5vw,58px); }
+.account-parked > p, .account-parked .archive-hero__copy > p { max-width: 520px; }
+.account-parked .archive-hero__actions { justify-content: center; }
 
 .inventory-roadmap { margin: 22px 0; padding: 24px; border: 1px solid var(--border-subtle); border-radius: 14px; background: var(--bg-surface); }
 .inventory-roadmap header span { color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }

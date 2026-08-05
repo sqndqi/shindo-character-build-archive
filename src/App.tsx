@@ -25,6 +25,8 @@ import {
 } from "lucide-react";
 import { DiscordLink, RobloxGroupLink } from "./components/CommunityLinks";
 import { DonationBar } from "./components/DonationBar";
+import { AUTH_ENABLED, PAYMENTS_ENABLED } from "./config/monetization";
+import { portraitPresentation } from "./data/portraitPresentation";
 import type { CharacterBuild } from "./types";
 import {
   buildRepository,
@@ -453,8 +455,8 @@ export default function App() {
     ["inventory", "My Inventory"],
     ["compare", "Compare"],
     ["suggestions", "Suggestions"],
-    ["packs", "Character Packs"],
   ];
+  if (PAYMENTS_ENABLED) nav.push(["packs", "Character Packs"]);
   if (import.meta.env.DEV) nav.push(["diagnostics", "Diagnostics"]);
   const activeFilterCount = Object.entries(filters).filter(
     ([key, value]) => key !== "sort" && value,
@@ -531,12 +533,14 @@ export default function App() {
               {label}
             </button>
           ))}
-          <button
-            className={view === "account" ? "active" : ""}
-            onClick={() => navigate("account")}
-          >
-            Account
-          </button>
+          {AUTH_ENABLED && (
+            <button
+              className={view === "account" ? "active" : ""}
+              onClick={() => navigate("account")}
+            >
+              Account
+            </button>
+          )}
           <div className="nav-community-links">
             <DiscordLink />
             <RobloxGroupLink />
@@ -651,11 +655,39 @@ export default function App() {
           <SuggestionsPage issueContext={suggestionBuild} />
         </Suspense>
       ) : view === "account" || accountPage ? (
-        <Suspense
-          fallback={<main className="loading-page">Loading account…</main>}
-        >
-          <AccountPages initialPage={accountPage ?? "signin"} />
-        </Suspense>
+        AUTH_ENABLED ? (
+          <Suspense
+            fallback={<main className="loading-page">Loading account…</main>}
+          >
+            <AccountPages initialPage={accountPage ?? "signin"} />
+          </Suspense>
+        ) : (
+          <main className="account-page">
+            <section className="archive-hero account-parked">
+              <div className="archive-hero__seal" aria-hidden="true">
+                <BrandMark />
+              </div>
+              <div className="archive-hero__copy">
+                <span className="eyebrow">Account access</span>
+                <h1>Accounts coming later.</h1>
+                <p>
+                  Sign-in, registration, and premium access are not available
+                  yet. The build archive, free characters, tier lists, and all
+                  public tools remain fully accessible.
+                </p>
+                <div className="archive-hero__actions">
+                  <button
+                    className="button button--primary"
+                    onClick={() => navigate("builds")}
+                  >
+                    Browse builds
+                  </button>
+                  <DiscordLink className="button button--outline" />
+                </div>
+              </div>
+            </section>
+          </main>
+        )
       ) : view === "packs" ? (
         <Suspense
           fallback={
@@ -737,22 +769,25 @@ export default function App() {
                 game icons, legal hotbars, and clearly labeled research.
               </p>
               <div className="archive-hero__actions">
-                <button
-                  className="button button--primary"
-                  onClick={() => navigate("account")}
-                >
-                  <LogIn size={16} /> Sign in for access
-                </button>
-                <button
-                  className="button button--outline"
-                  onClick={() =>
-                    document
-                      .querySelector(".featured-free-builds")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                >
-                  Explore free builds
-                </button>
+                {AUTH_ENABLED ? (
+                  <button
+                    className="button button--primary"
+                    onClick={() => navigate("account")}
+                  >
+                    <LogIn size={16} /> Sign in for access
+                  </button>
+                ) : (
+                  <button
+                    className="button button--primary"
+                    onClick={() =>
+                      document
+                        .querySelector(".featured-free-builds")
+                        ?.scrollIntoView({ behavior: "smooth" })
+                    }
+                  >
+                    Explore free builds
+                  </button>
+                )}
                 <DiscordLink className="button button--outline" />
               </div>
             </div>
@@ -761,8 +796,9 @@ export default function App() {
                 <Portrait
                   key={build.id}
                   src={build.thumbnail || build.image}
-                  alt=""
+                  alt={build.name}
                   thumbnail
+                  objectPosition={portraitPresentation(build.id).heroPosition}
                 />
               ))}
             </div>
