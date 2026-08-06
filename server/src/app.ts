@@ -7,55 +7,64 @@ import { archiveRouter } from './routes/archive'
 const sessionSecret = process.env.SESSION_SECRET
 if (!sessionSecret) throw new Error('SESSION_SECRET env var is required')
 
-const allowedOrigins: string[] = [
-  process.env.FRONTEND_ORIGIN,
-  ...(process.env.NODE_ENV !== 'production'
-    ? ['http://localhost:5173', 'http://localhost:4173', 'http://127.0.0.1:5173']
-    : []),
-].filter(Boolean) as string[]
+interface CookieOverrides {
+  sameSite?: boolean | 'lax' | 'none' | 'strict'
+  secure?: boolean
+}
 
-const app = express()
+export function createApp(cookieOverrides?: CookieOverrides) {
+  const isProd = process.env.NODE_ENV === 'production'
 
-app.set('trust proxy', 1)
-app.use(express.json())
+  const allowedOrigins: string[] = [
+    process.env.FRONTEND_ORIGIN,
+    ...(!isProd ? ['http://localhost:5173', 'http://localhost:4173', 'http://127.0.0.1:5173'] : []),
+  ].filter(Boolean) as string[]
 
-app.use(
-  cors({
-    origin(origin, callback) {
-      if (!origin) {
-        callback(null, false)
-        return
-      }
-      if (allowedOrigins.includes(origin)) {
-        callback(null, true)
-      } else {
-        callback(null, false)
-      }
-    },
-    credentials: true,
-  }),
-)
+  const app = express()
 
-app.use(
-  session({
-    name: 'archive_sid',
-    secret: sessionSecret,
-    resave: false,
-    saveUninitialized: false,
-    cookie: {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'lax',
-      maxAge: 7 * 24 * 60 * 60 * 1000,
-    },
-  }),
-)
+  app.set('trust proxy', 1)
+  app.use(express.json())
 
-app.get('/health', (_req, res) => {
-  res.json({ ok: true })
-})
+  app.use(
+    cors({
+      origin(origin, callback) {
+        if (!origin) {
+          callback(null, false)
+          return
+        }
+        if (allowedOrigins.includes(origin)) {
+          callback(null, true)
+        } else {
+          callback(null, false)
+        }
+      },
+      credentials: true,
+    }),
+  )
 
-app.use('/v1/auth', authRouter)
-app.use('/v1/archive', archiveRouter)
+  app.use(
+    session({
+      name: 'archive_sid',
+      secret: sessionSecret!,
+      resave: false,
+      saveUninitialized: false,
+      cookie: {
+        httpOnly: true,
+        secure: cookieOverrides?.secure ?? isProd,
+        sameSite: cookieOverrides?.sameSite ?? (isProd ? 'none' : 'lax'),
+        maxAge: 7 * 24 * 60 * 60 * 1000,
+      },
+    }),
+  )
 
-export { app }
+  app.get('/health', (_req, res) => {
+    res.json({ ok: true })
+  })
+
+  app.use('/v1/auth', authRouter)
+  app.use('/v1/archive', archiveRouter)
+
+  return app
+}
+
+export const app = createApp()
