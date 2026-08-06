@@ -57,12 +57,21 @@ export interface ComboKeyIssue {
   severity: ValidationSeverity
 }
 
+export interface BloodlineCompletenessIssue {
+  variantId: string
+  bloodlineName: string
+  code: 'missing-replacements'
+  severity: ValidationSeverity
+  message: string
+}
+
 export interface BuildValidationReport {
   buildId: string
   slotCounts: SlotCountResult[]
   sourceTrace: SourceTraceResult[][]
   modeConflicts: ModeConflictIssue[][]
   comboKeyIssues: ComboKeyIssue[][]
+  bloodlineCompleteness: BloodlineCompletenessIssue[][]
   inventedNames: InventedNameIssue[]
   privacyIssues: PrivacyIssue[]
   statsIssues: StatsIssue[][]
@@ -237,6 +246,27 @@ export function validateModeConflicts(variant: BuildVariant): ModeConflictIssue[
   return issues
 }
 
+// --- Bloodline completeness ---
+
+export function validateBloodlineCompleteness(variant: BuildVariant): BloodlineCompletenessIssue[] {
+  const issues: BloodlineCompletenessIssue[] = []
+  for (const slot of variant.bloodlines) {
+    if (!slot.exactMovesUsed?.length) continue
+    const rep = slot.replacements
+    const hasAny = rep && (rep.lore.length > 0 || rep.competitive.length > 0 || rep.accessible.length > 0)
+    if (!hasAny) {
+      issues.push({
+        variantId: variant.id,
+        bloodlineName: slot.name,
+        code: 'missing-replacements',
+        severity: 'Minor',
+        message: `Bloodline "${slot.name}" has exactMovesUsed but no alternatives listed. Add at least one lore, competitive, or accessible replacement.`,
+      })
+    }
+  }
+  return issues
+}
+
 // --- Invented name detection ---
 
 export function validateInventedNames(build: CharacterBuild): InventedNameIssue[] {
@@ -313,6 +343,7 @@ export function runBuildValidation(build: CharacterBuild): BuildValidationReport
   const sourceTrace = build.variants.map(validateSourceTraceability)
   const modeConflicts = build.variants.map(validateModeConflicts)
   const comboKeyIssues = build.variants.map(validateComboKeys)
+  const bloodlineCompleteness = build.variants.map(validateBloodlineCompleteness)
   const statsIssues = build.variants.map(validateStatsAllocation)
   const inventedNames = validateInventedNames(build)
   const privacyIssues = validatePremiumPrivacy(build)
@@ -326,5 +357,5 @@ export function runBuildValidation(build: CharacterBuild): BuildValidationReport
     inventedNames.some((issue) => issue.severity === 'Critical') ||
     privacyIssues.some((issue) => issue.severity === 'Critical')
 
-  return { buildId: build.id, slotCounts, sourceTrace, modeConflicts, comboKeyIssues, inventedNames, privacyIssues, statsIssues, hasBlocker }
+  return { buildId: build.id, slotCounts, sourceTrace, modeConflicts, comboKeyIssues, bloodlineCompleteness, inventedNames, privacyIssues, statsIssues, hasBlocker }
 }

@@ -445,10 +445,20 @@ import {
   validateInventedNames,
   validateStatsAllocation,
   validatePremiumPrivacy,
+  validateBloodlineCompleteness,
+  validateComboKeys,
   runBuildValidation,
 } from '../src/data/buildValidation'
-import { getElementSlots, normalizeBuildElements, isElementSlot, migrateComboSequence, migrateBloodlineSlot } from '../src/data/buildMigration'
-import { validateComboKeys } from '../src/data/buildValidation'
+import {
+  getElementSlots,
+  normalizeBuildElements,
+  isElementSlot,
+  migrateComboSequence,
+  migrateBloodlineSlot,
+  createVerifiedSlot,
+} from '../src/data/buildMigration'
+import { normalizeBuild } from '../src/services/migration'
+import { originalCharacters } from '../src/data/characters'
 import type { BuildVariant, CharacterBuild } from '../src/types'
 
 // Regression: hotfix for crash — signed-out archive must always produce arrays,
@@ -940,5 +950,126 @@ describe('Phase B: schema validation and legality auditing', () => {
       const slot = migrateBloodlineSlot({ name: 'X', purpose: '', useMode: false, verificationStatus: 'published' })
       expect(slot.verificationStatus).toBeUndefined()
     })
+  })
+})
+
+// B.1 hardening: runtime integration tests
+describe('B.1: originalCharacters combo key runtime integrity', () => {
+  it('every combo in originalCharacters uses only valid HotbarKeys at runtime', () => {
+    const violations: { buildId: string; comboName: string; invalidKeys: string[] }[] = []
+    for (const build of originalCharacters) {
+      for (const combo of build.combos) {
+        const { invalid } = migrateComboSequence(combo.sequence as string[])
+        if (invalid.length > 0) violations.push({ buildId: build.id, comboName: combo.name, invalidKeys: invalid })
+      }
+    }
+    expect(violations).toHaveLength(0)
+  })
+})
+
+describe('B.1: normalizeBuild migration integration', () => {
+  it('canonicalizes variant bloodlines — adds exactMovesUsed:[] when absent', () => {
+    const raw = structuredClone(curatedBuilds[0]) as CharacterBuild
+    // Strip exactMovesUsed to prove migration re-adds it
+    raw.variants[0].bloodlines = raw.variants[0].bloodlines.map(
+      ({ exactMovesUsed: _dropped, ...rest }) => rest as CharacterBuild['variants'][0]['bloodlines'][0],
+    )
+    const result = normalizeBuild(raw)
+    for (const slot of result.variants[0].bloodlines) {
+      expect(Array.isArray(slot.exactMovesUsed)).toBe(true)
+    }
+  })
+
+  it('does not mutate the original build object', () => {
+    const original = structuredClone(curatedBuilds[0]) as CharacterBuild
+    const snapshot = JSON.stringify(original)
+    normalizeBuild(original)
+    expect(JSON.stringify(original)).toBe(snapshot)
+  })
+
+  it('returns a distinct object from the input', () => {
+    const raw = structuredClone(curatedBuilds[0]) as CharacterBuild
+    const result = normalizeBuild(raw)
+    expect(result).not.toBe(raw)
+  })
+})
+
+describe('B.1: validateBloodlineCompleteness', () => {
+  const baseVariant = () => structuredClone(curatedBuilds[0].variants[0]) as BuildVariant
+
+  it('returns no issues when exactMovesUsed is empty', () => {
+    const variant = baseVariant()
+    variant.bloodlines = [{ name: 'Raion', purpose: '', useMode: true, exactMovesUsed: [] }]
+    expect(validateBloodlineCompleteness(variant)).toHaveLength(0)
+  })
+
+  it('returns Minor warning when exactMovesUsed is non-empty but replacements is absent', () => {
+    const variant = baseVariant()
+    variant.bloodlines = [{ name: 'Raion', purpose: '', useMode: true, exactMovesUsed: ['Raion Slash'] }]
+    const issues = validateBloodlineCompleteness(variant)
+    expect(issues).toHaveLength(1)
+    expect(issues[0].severity).toBe('Minor')
+    expect(issues[0].code).toBe('missing-replacements')
+  })
+
+  it('returns Minor warning when all replacement arrays are empty', () => {
+    const variant = baseVariant()
+    variant.bloodlines = [{ name: 'Raion', purpose: '', useMode: true, exactMovesUsed: ['Raion Slash'], replacements: { lore: [], competitive: [], accessible: [] } }]
+    const issues = validateBloodlineCompleteness(variant)
+    expect(issues).toHaveLength(1)
+    expect(issues[0].severity).toBe('Minor')
+  })
+
+  it('no warning when at least one replacement list is populated', () => {
+    const variant = baseVariant()
+    variant.bloodlines = [{ name: 'Raion', purpose: '', useMode: true, exactMovesUsed: ['Raion Slash'], replacements: { lore: ['Narumaki'], competitive: [], accessible: [] } }]
+    expect(validateBloodlineCompleteness(variant)).toHaveLength(0)
+  })
+
+  it('missing-replacements is never a blocker in runBuildValidation', () => {
+    const build = structuredClone(curatedBuilds[0]) as CharacterBuild
+    // Modify one slot in-place: add exactMovesUsed, clear replacements → triggers Minor warning only
+    build.variants[0].bloodlines[0].exactMovesUsed = ['Raion Slash']
+    build.variants[0].bloodlines[0].replacements = undefined
+    const report = runBuildValidation(build)
+    expect(report.bloodlineCompleteness[0].some((i) => i.code === 'missing-replacements')).toBe(true)
+    expect(report.hasBlocker).toBe(false)
+  })
+
+  it('report includes bloodlineCompleteness per variant', () => {
+    const build = structuredClone(curatedBuilds[0]) as CharacterBuild
+    const report = runBuildValidation(build)
+    expect(Array.isArray(report.bloodlineCompleteness)).toBe(true)
+    expect(report.bloodlineCompleteness).toHaveLength(build.variants.length)
+  })
+})
+
+describe('B.1: createVerifiedSlot', () => {
+  it('creates a valid HotbarSlot with all required fields', () => {
+    const slot = createVerifiedSlot({ key: '1', ability: 'Raion Slash', sourceId: 'Raion-Gaiden', sourceType: 'Bloodline', researchStatus: 'verified' })
+    expect(slot.key).toBe('1')
+    expect(slot.ability).toBe('Raion Slash')
+    expect(slot.sourceId).toBe('Raion-Gaiden')
+    expect(slot.source).toBe('Raion-Gaiden')
+    expect(slot.researchStatus).toBe('verified')
+    expect(slot.sourceType).toBe('Bloodline')
+  })
+
+  it('accepts owner-confirmed researchStatus', () => {
+    const slot = createVerifiedSlot({ key: 'V', ability: 'Ruby Storm', sourceId: 'Narumaki-Ruby', sourceType: 'Bloodline', researchStatus: 'owner-confirmed' })
+    expect(slot.researchStatus).toBe('owner-confirmed')
+  })
+
+  it('source defaults to sourceId when not provided', () => {
+    const slot = createVerifiedSlot({ key: '2', ability: 'Fire Wall', sourceId: 'Blaze', sourceType: 'Element', researchStatus: 'verified' })
+    expect(slot.source).toBe('Blaze')
+  })
+
+  it('throws when sourceId is empty string', () => {
+    expect(() => createVerifiedSlot({ key: '1', ability: 'Move', sourceId: '', sourceType: 'Bloodline', researchStatus: 'verified' })).toThrow(/sourceId/)
+  })
+
+  it('throws when sourceId is whitespace only', () => {
+    expect(() => createVerifiedSlot({ key: 'B', ability: 'Move', sourceId: '   ', sourceType: 'Element', researchStatus: 'owner-confirmed' })).toThrow(/sourceId/)
   })
 })

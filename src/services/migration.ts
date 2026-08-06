@@ -1,4 +1,5 @@
 import { originalCharacters } from '../data/characters'
+import { migrateBloodlineSlot } from '../data/buildMigration'
 import { createDuplicateName, createPermanentId } from '../lib/identity'
 import { buildSchema } from '../lib/validation'
 import type { CharacterBuild } from '../types'
@@ -32,6 +33,7 @@ export function normalizeBuild(build: CharacterBuild): CharacterBuild {
     hotbar: (build.hotbar ?? []).map((slot, index) => ({ ...slot, id: slot.id ?? `${build.id}-hotbar-${slot.key || index + 1}` })),
     variants: (build.variants ?? []).map((variant) => ({
       ...variant,
+      bloodlines: (variant.bloodlines ?? []).map((slot) => migrateBloodlineSlot(slot as unknown as Record<string, unknown>)),
       combatArtReason: variant.combatArtReason ?? 'Migrated legacy selection; editorial reason is still being reviewed.',
       kenjutsu: variant.kenjutsu ?? 'None',
       kenjutsuReason: variant.kenjutsuReason ?? 'No Kenjutsu was recorded in the legacy variant.',
