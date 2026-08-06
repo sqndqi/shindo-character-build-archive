@@ -596,33 +596,47 @@ function HotbarDossier({
     ['Bloodline row', ['V', 'B', 'N']],
     ['Modes and Q', ['C', 'Z', 'Q']],
   ]
+  const allKeys: HotbarKey[] = ['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q']
+  const unresolvedKeys = allKeys.filter((key) => {
+    const slot = hotbar.find((item) => item.key === key)
+    return !slot?.canonicalMoveId
+  })
+
   return (
     <div className="dossier-hotbar" role="list" aria-label="Technical hotbar view">
-      {rows.map(([label, keys]) => (
-        <div className={`dossier-hotbar__row row-${keys[0].toLowerCase()}`} key={label} role="listitem">
-          <span>{label}</span>
-          <div>
-            {keys.map((key) => {
-              const slot = hotbar.find((item) => item.key === key)!
-              const empty = !slot.canonicalMoveId
-              return (
+      {rows.map(([label, keys]) => {
+        const resolvedSlots = keys
+          .map((key) => hotbar.find((item) => item.key === key))
+          .filter((slot): slot is HotbarSlot => Boolean(slot?.canonicalMoveId))
+        if (resolvedSlots.length === 0) return null
+        return (
+          <div className={`dossier-hotbar__row row-${keys[0].toLowerCase()}`} key={label} role="listitem">
+            <span>{label}</span>
+            <div>
+              {resolvedSlots.map((slot) => (
                 <button
-                  key={key}
-                  className={`${empty ? 'is-empty' : ''} ${selectedMoveId === slot.canonicalMoveId ? 'is-active' : ''}`}
+                  key={slot.key}
+                  className={selectedMoveId === slot.canonicalMoveId ? 'is-active' : ''}
                   onClick={() => onSelect(slot.canonicalMoveId ?? null)}
-                  disabled={empty}
                 >
-                  <kbd>{key}</kbd>
-                  {!empty && <ShindoIcon name={slot.source} size="large" />}
+                  <kbd>{slot.key}</kbd>
+                  <ShindoIcon name={slot.source} size="large" />
                   <strong>{slot.ability}</strong>
-                  <small>{empty ? slot.usageNotes : `${slot.source} · ${slot.comboRole}`}</small>
+                  <small>{slot.source} · {slot.comboRole}</small>
                   <ResearchStatusBadge status={slot.researchStatus} />
                 </button>
-              )
-            })}
+              ))}
+            </div>
           </div>
+        )
+      })}
+      {unresolvedKeys.length > 0 && (
+        <div className="research-pending-summary" role="note">
+          <span>{unresolvedKeys.length} slot{unresolvedKeys.length === 1 ? '' : 's'} pending research</span>
+          <span className="research-pending-keys">{unresolvedKeys.map((k) => <kbd key={k}>{k}</kbd>)}</span>
+          <p>These slots have not been verified for this build. Only confirmed moves are shown above.</p>
         </div>
-      ))}
+      )}
     </div>
   )
 }
