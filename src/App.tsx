@@ -503,6 +503,7 @@ export default function App() {
 
   return (
     <div className="app-shell">
+      <DonationBar />
       <header className="site-header">
         <button className="brand" onClick={() => navigate("builds")}>
           <BrandMark />
@@ -616,7 +617,7 @@ export default function App() {
           fallback={<main className="loading-page">Loading inventory…</main>}
         >
           <ArchiveWorkshop
-            builds={accessibleBuilds}
+            builds={builds}
             collection={collection}
             onStatus={(...args) => {
               setStatus(...args);
@@ -790,7 +791,6 @@ export default function App() {
               </div>
             </div>
           </section>
-          <DonationBar />
           <section className="controls-shell">
             <div className="search-wrap">
               <Search size={21} />

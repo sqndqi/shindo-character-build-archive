@@ -60,7 +60,7 @@ export default function ArchiveWorkshop({
   const items = useMemo(() => {
     const records = new Map<string, InventoryItem>()
     const add = (name: string, category: CollectionCategory, reviewed: boolean) => {
-      if (!name || /^(none|no z-mode|unresolved)/i.test(name)) return
+      if (!name || /^(none|no z-mode|unresolved|locked)/i.test(name)) return
       const key = `${category}:${name}`
       const current = records.get(key) ?? { name, category, usedBy: 0, reviewedUse: 0 }
       current.usedBy += 1
@@ -69,6 +69,7 @@ export default function ArchiveWorkshop({
     }
     for (const build of builds) {
       const primary = build.variants.find((variant) => variant.type === 'Primary') ?? build.variants[0]
+      if (!primary) continue
       const reviewed = build.publicationStatus === 'Reviewed'
       primary.bloodlines.forEach((slot) => add(slot.name, 'Bloodline', reviewed))
       primary.elements.forEach((slot) => add(slot.name, 'Element', reviewed))
@@ -94,7 +95,8 @@ export default function ArchiveWorkshop({
         ? onModeStatus
         : onEquipmentStatus
 
-  const readiness = useMemo(() => builds.map((build) => {
+  const readiness = useMemo(() => builds.flatMap((build) => {
+    if (!build.variants.length) return []
     const variants = build.variants.map((variant) => {
       const missing = [
         ...variant.bloodlines.filter((slot) => collection.statuses[slot.name] !== 'Owned').map((slot) => slot.name),
@@ -103,7 +105,7 @@ export default function ArchiveWorkshop({
       return { variant, missing }
     })
     const best = variants.sort((a, b) => a.missing.length - b.missing.length)[0]
-    return { build, ...best }
+    return [{ build, ...best }]
   }), [builds, collection.elementStatuses, collection.statuses])
 
   const makeable = readiness.filter((item) => item.missing.length === 0)
@@ -156,7 +158,7 @@ export default function ArchiveWorkshop({
   }
 
   return <main className="workshop-page">
-    <header className="systems-hero"><span className="eyebrow"><PackageCheck size={15} /> My Inventory</span><h1>Your Shindo collection.</h1><p>Track ownership and see which archive builds your items unlock. This never changes official builds.</p></header>
+    <header className="systems-hero"><span className="eyebrow"><PackageCheck size={15} /> Planning Inventory</span><h1>Your Shindo collection.</h1><p>Track which items you own and see which free archive builds you can make. This is a local planning tool — it never affects official build data or account entitlements.</p></header>
     <section className="workshop-metrics">
       <article><span>Owned Bloodlines</span><strong>{items.filter((item) => item.category === 'Bloodline' && statusFor(item) === 'Owned').length}/{items.filter((item) => item.category === 'Bloodline').length}</strong></article>
       <article><span>Owned elements</span><strong>{items.filter((item) => item.category === 'Element' && statusFor(item) === 'Owned').length}/{items.filter((item) => item.category === 'Element').length}</strong></article>
