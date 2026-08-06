@@ -9,7 +9,7 @@ const bloodlineSchema = z.object({
 
 const hotbarSchema = z.object({
   id: z.string().min(1),
-  key: z.string().min(1),
+  key: z.enum(['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q']),
   ability: z.string(),
   source: z.string(),
   purpose: z.string(),
@@ -95,7 +95,9 @@ export const buildSchema = z.object({
 
 export type ValidationResult = ReturnType<typeof buildSchema.safeParse>
 
-const placeholderMovePattern = /(?:\bBreaker\b|\bDrive\b|Generic Counter|Rose Flash|Dragon Heel|Pika Flash|Tengoku Pull)/i
+// All names from the removed abilityNames object in characters.ts are quarantined here.
+// Any build containing these strings failed the no-inventing rule and must be flagged.
+const placeholderMovePattern = /(?:\bBreaker\b|\bDrive\b|Generic Counter|Rose Flash|Time Stop Counter|Crimson Overdrive|Dragon Heel|Axe Kick Barrage|Bruce Combo|Ryuji Slam|Iron Counter|Dragon Pressure|Venom Counter|Tengoku Pull|Reactive Guard|Pika Flash|Light Kick|Photon Rush|Reflex Genjutsu|Eye Counter|Warrior Guard|Shadow Vanish|Shade Army|Doom Descent|Raion Burst|Black Lightning|Gaiden Spear|Staff Cyclone|Kaijin Impact|Tetsuo Shift)/i
 
 export function validateOfficialMoveNames(abilities: string[]) {
   return abilities.filter((ability) => placeholderMovePattern.test(ability))

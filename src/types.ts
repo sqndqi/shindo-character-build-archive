@@ -1,3 +1,5 @@
+import type { HotbarKey } from './types/shindoGame'
+
 export type BuildStatus = 'Complete' | 'Draft' | 'Needs Testing'
 export type EffectsIntensity = 'Low' | 'Medium' | 'High' | 'Ridiculous'
 export type TierRank = 'S+' | 'S' | 'A' | 'B' | 'C'
@@ -19,6 +21,23 @@ export type {
   CanonicalSource,
   CanonicalSourceCategory,
 } from './types/canonicalBuild'
+
+export type { HotbarKey } from './types/shindoGame'
+
+export interface ElementSlot {
+  name: string
+  exactMovesUsed: string[]
+  purpose: string
+  replacements: string[]
+}
+
+export interface FidelityScores {
+  visual: number
+  ability: number
+  fighting: number
+  weapon: number
+  movement: number
+}
 
 export interface BloodlineSlot {
   id: string
@@ -53,7 +72,7 @@ export type SlotResearchStatus =
 
 export interface HotbarSlot {
   id: string
-  key: string
+  key: HotbarKey
   ability: string
   source: string
   purpose: string
@@ -107,12 +126,7 @@ export interface BuildVariant {
     represents: string
     replacements: { lore: string[]; competitive: string[]; accessible: string[] }
   }[]
-  elements: {
-    name: string
-    exactMovesUsed: string[]
-    purpose: string
-    replacements: string[]
-  }[]
+  elements: ElementSlot[]
   cMode: string
   zMode: string
   combatArt: string
@@ -188,6 +202,14 @@ export interface BuildVariant {
   researcherNotes?: string
   visualResemblance?: number
   targetShindoUpdate?: string
+
+  // Phase B: extended loadout metadata
+  arcVersion?: string
+  sourceChapterRange?: string
+  buildIntent?: 'Accuracy-First' | 'Balanced' | 'PvP-First'
+  fidelityScores?: FidelityScores
+  companion?: string
+  companionReason?: string
 }
 
 export interface CharacterBuild {
@@ -270,6 +292,12 @@ export interface CharacterBuild {
   publicationStatus: 'Reviewed' | 'Draft' | 'Needs Research' | 'Needs Retesting'
   variants: BuildVariant[]
   evidence: BuildEvidence[]
+
+  // Phase B: top-level loadout summary fields (mirrors primary variant for quick access)
+  kenjutsu?: string
+  submode?: string
+  companion?: string
+  elementSlots?: ElementSlot[]
 }
 
 export type SlotLimit = 2 | 3 | 4

@@ -438,6 +438,18 @@ describe('build page section architecture', () => {
   })
 })
 
+import {
+  validateSlotCount,
+  validateSourceTraceability,
+  validateModeConflicts,
+  validateInventedNames,
+  validateStatsAllocation,
+  validatePremiumPrivacy,
+  runBuildValidation,
+} from '../src/data/buildValidation'
+import { getElementSlots, normalizeBuildElements, isElementSlot } from '../src/data/buildMigration'
+import type { BuildVariant, CharacterBuild } from '../src/types'
+
 // Regression: hotfix for crash — signed-out archive must always produce arrays,
 // never undefined, so App.tsx can safely call characterIds.includes(...)
 describe('listAccess() defensive normalization', () => {
@@ -483,5 +495,299 @@ describe('listAccess() defensive normalization', () => {
     expect(Array.isArray(access.freeCharacterIds)).toBe(true)
     expect(Array.isArray(access.characterIds)).toBe(true)
     expect(access.fullArchive).toBe(false)
+  })
+})
+
+// Phase B: build schema validation, legality auditing, migration, and premium privacy
+describe('Phase B: schema validation and legality auditing', () => {
+  const baseVariant = () => structuredClone(curatedBuilds[0].variants[0]) as BuildVariant
+  const baseBuild = () => structuredClone(curatedBuilds[0]) as CharacterBuild
+
+  describe('slot count validation', () => {
+    it('passes when bloodline and element counts match their declared limits', () => {
+      const variant = baseVariant()
+      const result = validateSlotCount(variant)
+      expect(result.bloodlines.valid).toBe(true)
+      expect(result.elements.valid).toBe(true)
+      expect(result.bloodlines.equipped).toBe(variant.bloodlineSlotCount)
+      expect(result.elements.equipped).toBe(variant.elementSlotCount)
+    })
+
+    it('fails when more bloodlines are equipped than the slot limit allows', () => {
+      const variant = baseVariant()
+      variant.bloodlineSlotCount = 2
+      variant.bloodlines = [...variant.bloodlines, { name: 'Extra', purpose: '', exactMovesUsed: [] as string[], useMode: false, reason: '', represents: '', replacements: { lore: [] as string[], competitive: [] as string[], accessible: [] as string[] } }]
+      const result = validateSlotCount(variant)
+      expect(result.bloodlines.valid).toBe(false)
+      expect(result.bloodlines.equipped).toBeGreaterThan(result.bloodlines.limit)
+    })
+
+    it('fails when more elements are equipped than the slot limit allows', () => {
+      const variant = baseVariant()
+      variant.elementSlotCount = 2
+      variant.elements = [...variant.elements, { name: 'Chaos', exactMovesUsed: [], purpose: 'extra', replacements: [] }]
+      const result = validateSlotCount(variant)
+      expect(result.elements.valid).toBe(false)
+    })
+
+    it('passes for 2-slot, 3-slot, and 4-slot declared limits', () => {
+      for (const limit of [2, 3, 4] as const) {
+        const variant = baseVariant()
+        variant.bloodlineSlotCount = limit
+        variant.bloodlines = variant.bloodlines.slice(0, limit)
+        expect(validateSlotCount(variant).bloodlines.valid).toBe(true)
+      }
+    })
+  })
+
+  describe('source traceability', () => {
+    it('passes all unresolved slots without requiring a source', () => {
+      const variant = baseVariant()
+      variant.hotbar = variant.hotbar.map((slot) => ({ ...slot, ability: 'Unresolved — research required', source: 'Research pending' })) as typeof variant.hotbar
+      const results = validateSourceTraceability(variant)
+      expect(results.every((r) => r.traceable)).toBe(true)
+    })
+
+    it('flags a hotbar move whose source is not in the equipped loadout', () => {
+      const variant = baseVariant()
+      variant.hotbar[0] = { ...variant.hotbar[0], ability: 'Phantom Strike', source: 'Ghost-Bloodline-Not-Equipped' }
+      const results = validateSourceTraceability(variant)
+      expect(results[0].traceable).toBe(false)
+      expect(results[0].reason).toContain('Ghost-Bloodline-Not-Equipped')
+    })
+
+    it('passes a move whose source matches an equipped bloodline', () => {
+      const variant = baseVariant()
+      const firstBloodline = variant.bloodlines[0].name
+      variant.hotbar[0] = { ...variant.hotbar[0], ability: 'Some Move', source: firstBloodline }
+      const results = validateSourceTraceability(variant)
+      expect(results[0].traceable).toBe(true)
+    })
+
+    it('accepts generic source labels: None, Sub-Ability, Mode', () => {
+      const variant = baseVariant()
+      variant.hotbar[0] = { ...variant.hotbar[0], ability: 'Parry', source: 'None' }
+      variant.hotbar[1] = { ...variant.hotbar[1], ability: 'Sub move', source: 'Sub-Ability' }
+      const results = validateSourceTraceability(variant)
+      expect(results[0].traceable).toBe(true)
+      expect(results[1].traceable).toBe(true)
+    })
+  })
+
+  describe('mode conflict validation', () => {
+    it('returns no issues for a valid variant with untested mode compatibility', () => {
+      const variant = baseVariant()
+      variant.simultaneousModeLegality = 'untested'
+      expect(validateModeConflicts(variant)).toHaveLength(0)
+    })
+
+    it('raises Critical when simultaneousModeLegality is illegal but both modes are active', () => {
+      const variant = baseVariant()
+      variant.simultaneousModeLegality = 'illegal'
+      variant.cMode = 'Raion-Gaiden'
+      variant.zMode = 'Shock Cloak'
+      const issues = validateModeConflicts(variant)
+      expect(issues.some((i) => i.code === 'simultaneous-conflict' && i.severity === 'Critical')).toBe(true)
+    })
+
+    it('raises Major when C-mode and Z-mode are from the same Bloodline family', () => {
+      const variant = baseVariant()
+      variant.cMode = 'Raion-Gaiden'
+      variant.zMode = 'Raion-Akuma'
+      const issues = validateModeConflicts(variant)
+      expect(issues.some((i) => i.code === 'same-family' && i.severity === 'Major')).toBe(true)
+    })
+
+    it('does not flag same-family when one mode is None', () => {
+      const variant = baseVariant()
+      variant.cMode = 'Raion-Gaiden'
+      variant.zMode = 'None'
+      expect(validateModeConflicts(variant)).toHaveLength(0)
+    })
+  })
+
+  describe('invented name detection', () => {
+    it('flags quarantined names from the removed abilityNames object', () => {
+      const build = baseBuild()
+      build.variants[0].hotbar[0] = { ...build.variants[0].hotbar[0], ability: 'Rose Flash' }
+      const issues = validateInventedNames(build)
+      expect(issues.some((i) => i.ability === 'Rose Flash' && i.severity === 'Critical')).toBe(true)
+    })
+
+    it('does not flag unresolved slots', () => {
+      const build = baseBuild()
+      build.variants[0].hotbar = build.variants[0].hotbar.map((slot) => ({ ...slot, ability: 'Unresolved — research required' }))
+      expect(validateInventedNames(build)).toHaveLength(0)
+    })
+
+    it('passes the entire 100-build roster — no quarantined names remain after removing abilityNames', () => {
+      const issues = completeRoster.flatMap(validateInventedNames)
+      expect(issues.filter((i) => i.severity === 'Critical')).toHaveLength(0)
+    })
+
+    it('validateOfficialMoveNames catches all quarantined names', () => {
+      const allQuarantined = [
+        'Rose Flash', 'Time Stop Counter', 'Crimson Overdrive',
+        'Dragon Heel', 'Axe Kick Barrage', 'Bruce Combo',
+        'Ryuji Slam', 'Iron Counter', 'Dragon Pressure',
+        'Venom Counter', 'Tengoku Pull', 'Reactive Guard',
+        'Pika Flash', 'Light Kick', 'Photon Rush',
+        'Shadow Vanish', 'Shade Army', 'Doom Descent',
+        'Raion Burst', 'Gaiden Spear', 'Staff Cyclone',
+        'Kaijin Impact', 'Tetsuo Shift',
+      ]
+      expect(validateOfficialMoveNames(allQuarantined).length).toBeGreaterThan(0)
+    })
+  })
+
+  describe('stats allocation validation', () => {
+    it('returns empty for a variant with no statsAllocation', () => {
+      const variant = baseVariant()
+      delete variant.statsAllocation
+      expect(validateStatsAllocation(variant)).toHaveLength(0)
+    })
+
+    it('passes valid Shindo stat names with positive values', () => {
+      const variant = baseVariant()
+      variant.statsAllocation = { Ninjutsu: 200, Taijutsu: 150, Strength: 100, Defense: 100, Agility: 100 }
+      const issues = validateStatsAllocation(variant)
+      expect(issues.filter((i) => i.code === 'invalid-stat-value')).toHaveLength(0)
+    })
+
+    it('flags an unknown stat name as Minor', () => {
+      const variant = baseVariant()
+      variant.statsAllocation = { Ninjutsu: 200, FakeStatXYZ: 999 }
+      const issues = validateStatsAllocation(variant)
+      expect(issues.some((i) => i.code === 'unknown-stat-name' && i.stat === 'FakeStatXYZ' && i.severity === 'Minor')).toBe(true)
+    })
+
+    it('flags a negative stat value as Major', () => {
+      const variant = baseVariant()
+      variant.statsAllocation = { Strength: -50 }
+      const issues = validateStatsAllocation(variant)
+      expect(issues.some((i) => i.code === 'invalid-stat-value' && i.severity === 'Major')).toBe(true)
+    })
+
+    it('flags an unrealistically high total as Minor', () => {
+      const variant = baseVariant()
+      variant.statsAllocation = { Ninjutsu: 500, Taijutsu: 500, Strength: 500, Defense: 500 }
+      const issues = validateStatsAllocation(variant)
+      expect(issues.some((i) => i.code === 'stat-total-unrealistic')).toBe(true)
+    })
+  })
+
+  describe('premium privacy validation', () => {
+    it('passes all 100 builds — no ownership fields present', () => {
+      const issues = completeRoster.flatMap(validatePremiumPrivacy)
+      expect(issues.filter((i) => i.code === 'ownership-field-in-build')).toHaveLength(0)
+    })
+
+    it('flags a build containing a prohibited ownership field', () => {
+      const build = baseBuild() as unknown as Record<string, unknown>
+      build['ownedBy'] = 'user@example.com'
+      const issues = validatePremiumPrivacy(build as unknown as CharacterBuild)
+      expect(issues.some((i) => i.code === 'ownership-field-in-build' && i.severity === 'Critical')).toBe(true)
+    })
+
+    it('flags a non-reviewed build that has verified hotbar slots', () => {
+      const build = baseBuild()
+      build.publicationStatus = 'Draft'
+      build.variants[0].hotbar[0] = { ...build.variants[0].hotbar[0], researchStatus: 'verified' }
+      const issues = validatePremiumPrivacy(build)
+      expect(issues.some((i) => i.code === 'unreviewed-build-with-verified-slots' && i.severity === 'Major')).toBe(true)
+    })
+
+    it('does not flag a Reviewed build that has verified hotbar slots', () => {
+      const build = baseBuild()
+      expect(build.publicationStatus).toBe('Reviewed')
+      build.variants[0].hotbar[0] = { ...build.variants[0].hotbar[0], researchStatus: 'verified' }
+      const issues = validatePremiumPrivacy(build)
+      expect(issues.filter((i) => i.code === 'unreviewed-build-with-verified-slots')).toHaveLength(0)
+    })
+  })
+
+  describe('migration: getElementSlots and normalizeBuildElements', () => {
+    it('isElementSlot returns true for a valid ElementSlot object', () => {
+      expect(isElementSlot({ name: 'Fire', exactMovesUsed: [], purpose: '', replacements: [] })).toBe(true)
+    })
+
+    it('isElementSlot returns false for a plain string', () => {
+      expect(isElementSlot('Fire')).toBe(false)
+    })
+
+    it('getElementSlots wraps string elements into ElementSlot shape', () => {
+      const build = baseBuild()
+      build.elementSlots = undefined
+      const slots = getElementSlots(build)
+      expect(slots.every((s) => isElementSlot(s))).toBe(true)
+      expect(slots.map((s) => s.name)).toEqual(build.elements)
+    })
+
+    it('getElementSlots returns existing elementSlots when present', () => {
+      const build = baseBuild()
+      build.elementSlots = [{ name: 'Chaos', exactMovesUsed: ['Chaos Wave'], purpose: 'Pressure', replacements: [] }]
+      const slots = getElementSlots(build)
+      expect(slots[0].name).toBe('Chaos')
+      expect(slots[0].exactMovesUsed).toEqual(['Chaos Wave'])
+    })
+
+    it('normalizeBuildElements is idempotent — second call returns same reference', () => {
+      const build = baseBuild()
+      const once = normalizeBuildElements(build)
+      const twice = normalizeBuildElements(once)
+      expect(twice).toBe(once)
+    })
+  })
+
+  describe('HotbarKey type enforcement', () => {
+    it('all restored draft builds use only valid hotbar keys', () => {
+      const validKeys = new Set(['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q'])
+      for (const build of restoredDraftBuilds) {
+        for (const variant of build.variants) {
+          for (const slot of variant.hotbar) {
+            expect(validKeys.has(slot.key)).toBe(true)
+          }
+        }
+      }
+    })
+
+    it('all reviewed builds use only valid hotbar keys', () => {
+      const validKeys = new Set(['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q'])
+      for (const build of curatedBuilds) {
+        for (const variant of build.variants) {
+          for (const slot of variant.hotbar) {
+            expect(validKeys.has(slot.key)).toBe(true)
+          }
+        }
+      }
+    })
+  })
+
+  describe('runBuildValidation full report', () => {
+    it('produces a report with one entry per variant', () => {
+      const build = baseBuild()
+      const report = runBuildValidation(build)
+      expect(report.buildId).toBe(build.id)
+      expect(report.slotCounts).toHaveLength(build.variants.length)
+      expect(report.sourceTrace).toHaveLength(build.variants.length)
+      expect(report.modeConflicts).toHaveLength(build.variants.length)
+    })
+
+    it('hasBlocker is false for a valid reviewed build', () => {
+      expect(runBuildValidation(baseBuild()).hasBlocker).toBe(false)
+    })
+
+    it('hasBlocker is true when a quarantined name is present', () => {
+      const build = baseBuild()
+      build.variants[0].hotbar[0] = { ...build.variants[0].hotbar[0], ability: 'Tengoku Pull' }
+      expect(runBuildValidation(build).hasBlocker).toBe(true)
+    })
+
+    it('hasBlocker is true when slot count is violated', () => {
+      const build = baseBuild()
+      build.variants[0].bloodlineSlotCount = 2
+      build.variants[0].bloodlines = [...build.variants[0].bloodlines, { name: 'Overflow', purpose: '', exactMovesUsed: [], useMode: false, reason: '', represents: '', replacements: { lore: [], competitive: [], accessible: [] } }]
+      expect(runBuildValidation(build).hasBlocker).toBe(true)
+    })
   })
 })

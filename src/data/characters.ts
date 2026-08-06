@@ -1,7 +1,7 @@
-import type { CharacterBuild, HotbarSlot } from '../types'
+import type { CharacterBuild, HotbarSlot, HotbarKey } from '../types'
 import { createPermanentId } from '../lib/identity'
 
-const keys = ['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q']
+const HOTBAR_KEYS: HotbarKey[] = ['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q']
 const missingPortraitIds = new Set(['jinhyeok-murim', 'lee-gwak', 'vikir', 'seo-gangrim', 'lucas-traumen', 'rania', 'karsia', 'yi-zaha'])
 
 type Seed = {
@@ -25,18 +25,6 @@ type Seed = {
   status?: CharacterBuild['status']
 }
 
-const abilityNames: Record<string, string[]> = {
-  'Dio-Senko-Rose': ['Rose Flash', 'Time Stop Counter', 'Crimson Overdrive'],
-  'Bruce-Kenichi': ['Dragon Heel', 'Axe Kick Barrage', 'Bruce Combo'],
-  'Ryuji-Kenichi': ['Ryuji Slam', 'Iron Counter', 'Dragon Pressure'],
-  'Doku-Tengoku': ['Venom Counter', 'Tengoku Pull', 'Reactive Guard'],
-  'Pika-Senko': ['Pika Flash', 'Light Kick', 'Photon Rush'],
-  Akuma: ['Reflex Genjutsu', 'Eye Counter', 'Warrior Guard'],
-  'Doom-Shado': ['Shadow Vanish', 'Shade Army', 'Doom Descent'],
-  'Raion-Gaiden': ['Raion Burst', 'Black Lightning', 'Gaiden Spear'],
-  'Tetsuo-Kaijin': ['Staff Cyclone', 'Kaijin Impact', 'Tetsuo Shift'],
-}
-
 function franchiseFor(series: string) {
   if (['Lookism', 'Manager Kim', 'Viral Hit', 'Questism', 'Reality Quest', 'Mercenary Enrollment'].includes(series)) return 'PTJ / Street Action'
   if (['Nano Machine', 'Myst, Might, Mayhem', 'Return of the Mount Hua Sect', 'Murim Login', 'Martial Artist Lee Gwak', 'Volcanic Age', 'Return of the Mad Demon'].includes(series)) return 'Murim'
@@ -45,23 +33,20 @@ function franchiseFor(series: string) {
   return series
 }
 
+// Invented ability names removed. Seed builds receive unresolved stubs.
+// toDraft() in restoredRoster.ts also applies unresolvedHotbar(), making this doubly safe.
 function hotbarFor(seed: Seed): HotbarSlot[] {
-  const sources = [...seed.bloodlines, ...seed.elements, 'Sub-Ability']
-  return keys.map((key, index) => {
-    const source = sources[index % sources.length]
-    const pool = abilityNames[source] ?? [`${source} Breaker`, `${source} Drive`, `${source} Counter`]
-    const role = ['Opener', 'Extender', 'Launcher', 'Pressure', 'Counter', 'Finisher'][index % 6]
-    return {
-      id: `${seed.id}-hotbar-${key}`,
-      key,
-      ability: key === 'C' ? `${seed.cMode ?? seed.bloodlines[0]} Mode` : key === 'Z' ? `${seed.zMode ?? 'Mobility'} Mode` : key === 'Q' ? `${seed.weapon ?? 'Perfect Guard'} Technique` : pool[index % pool.length],
-      source: key === 'C' ? 'C-Mode' : key === 'Z' ? 'Z-Mode' : key === 'Q' ? (seed.weapon ?? 'Combat Art') : source,
-      purpose: index % 4 === 0 ? 'Catch movement and begin pressure.' : index % 4 === 1 ? 'Hold the target for the next input.' : index % 4 === 2 ? 'Punish guard or a missed attack.' : 'Convert damage and reset spacing.',
-      comboRole: role,
-      blockBreak: index === 2 || index === 7 || key === 'Q',
-      usageNotes: index % 3 === 0 ? 'Medium Chi; avoid throwing raw.' : index % 3 === 1 ? 'Low stamina; safe after hit confirm.' : 'High Chi; reserve for confirmed routes.',
-    }
-  })
+  return HOTBAR_KEYS.map((key) => ({
+    id: `${seed.id}-hotbar-${key}`,
+    key,
+    ability: 'Unresolved — research required',
+    source: 'Research pending',
+    purpose: 'This slot is intentionally unresolved until a real current-update ability is reviewed.',
+    comboRole: 'Unresolved',
+    blockBreak: false,
+    usageNotes: 'Not presented as an exact or tested move.',
+    researchStatus: 'unresolved' as const,
+  }))
 }
 
 function makeBuild(seed: Seed): CharacterBuild {

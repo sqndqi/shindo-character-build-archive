@@ -70,7 +70,7 @@ function applyProfile(variant: BuildVariant): BuildVariant {
   const hotbar = HOTBAR_KEYS.map((key) => materializeSlot(variant, key, profile.slots[key], previousByMove))
   const activeKeys = new Set(hotbar.filter((slot) => slot.sourceType !== 'None').map((slot) => slot.key))
   const combos = variant.combos
-    .map((combo) => ({ ...combo, sequence: combo.sequence.filter((key) => activeKeys.has(key)) }))
+    .map((combo) => ({ ...combo, sequence: combo.sequence.filter((key) => activeKeys.has(key as import('../types/shindoGame').HotbarKey)) }))
     .filter((combo) => combo.sequence.length >= 2)
     .filter((combo) => combo.sequence.join('') !== '12345')
     .map((combo) => ({

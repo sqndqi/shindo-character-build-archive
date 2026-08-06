@@ -1,10 +1,10 @@
-import type { BuildVariant, CharacterBuild, HotbarSlot } from '../types'
+import type { BuildVariant, CharacterBuild, HotbarKey, HotbarSlot } from '../types'
 import { originalCharacters } from './characters'
 import { curatedBuilds } from './curatedBuilds'
 import { animeMangaBuilds } from './animeMangaBuilds'
 
 const curatedIds = new Set(curatedBuilds.map((build) => build.id))
-const hotbarKeys = ['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q']
+const hotbarKeys: HotbarKey[] = ['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q']
 
 function unresolvedHotbar(id: string): HotbarSlot[] {
   return hotbarKeys.map((key) => ({
