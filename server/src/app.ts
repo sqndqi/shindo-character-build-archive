@@ -1,11 +1,20 @@
-import express from 'express'
+import express, { type Request } from 'express'
 import session from 'express-session'
 import cors from 'cors'
+import connectPgSimple from 'connect-pg-simple'
 import { authRouter } from './routes/auth'
 import { archiveRouter } from './routes/archive'
+import { accountRouter } from './routes/account'
+import { productsRouter } from './routes/products'
+import { paymentsRouter } from './routes/payments'
+import { webhooksRouter } from './routes/webhooks'
+import { adminRouter } from './routes/admin'
+import { csrfProtect } from './middleware/csrf'
 
 const sessionSecret = process.env.SESSION_SECRET
 if (!sessionSecret) throw new Error('SESSION_SECRET env var is required')
+
+const PgSession = connectPgSimple(session)
 
 interface CookieOverrides {
   sameSite?: boolean | 'lax' | 'none' | 'strict'
@@ -23,7 +32,15 @@ export function createApp(cookieOverrides?: CookieOverrides) {
   const app = express()
 
   app.set('trust proxy', 1)
-  app.use(express.json())
+
+  // Capture raw body for webhook HMAC-SHA512 verification before JSON parsing consumes the stream
+  app.use(
+    express.json({
+      verify: (req: Request, _res, buf) => {
+        ;(req as Request & { rawBody?: Buffer }).rawBody = buf
+      },
+    }),
+  )
 
   app.use(
     cors({
@@ -42,10 +59,19 @@ export function createApp(cookieOverrides?: CookieOverrides) {
     }),
   )
 
+  const sessionStore = process.env.DATABASE_URL
+    ? new PgSession({
+        conString: process.env.DATABASE_URL,
+        tableName: 'sessions',
+        createTableIfMissing: true,
+      })
+    : undefined
+
   app.use(
     session({
       name: 'archive_sid',
       secret: sessionSecret!,
+      store: sessionStore,
       resave: false,
       saveUninitialized: false,
       cookie: {
@@ -61,8 +87,16 @@ export function createApp(cookieOverrides?: CookieOverrides) {
     res.json({ ok: true })
   })
 
-  app.use('/v1/auth', authRouter)
+  // Webhooks: no CSRF — external POST verified by HMAC-SHA512 signature
+  app.use('/v1/webhooks', webhooksRouter)
+
+  // All other routes: CSRF protection on mutations (middleware skips GET/HEAD/OPTIONS automatically)
+  app.use('/v1/auth', csrfProtect, authRouter)
   app.use('/v1/archive', archiveRouter)
+  app.use('/v1/products', productsRouter)
+  app.use('/v1/account', csrfProtect, accountRouter)
+  app.use('/v1/payments', csrfProtect, paymentsRouter)
+  app.use('/v1/admin', csrfProtect, adminRouter)
 
   return app
 }
