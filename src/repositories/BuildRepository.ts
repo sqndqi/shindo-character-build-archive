@@ -49,10 +49,15 @@ class PublicBuildRepository implements BuildRepository {
   }
 
   async listAccess() {
-    if (!apiBase) return { freeCharacterIds: freeBuilds.map((build) => build.id), characterIds: [], fullArchive: false }
-    const response = await fetch(`${apiBase}/v1/archive/access`, { credentials: 'include' })
-    if (!response.ok) return { freeCharacterIds: freeBuilds.map((build) => build.id), characterIds: [], fullArchive: false }
-    return response.json() as Promise<{ freeCharacterIds: string[]; characterIds: string[]; fullArchive: boolean }>
+    const fallback = { freeCharacterIds: freeBuilds.map((build) => build.id), characterIds: [], fullArchive: false }
+    if (!apiBase) return fallback
+    try {
+      const response = await fetch(`${apiBase}/v1/archive/access`, { credentials: 'include' })
+      if (!response.ok) return fallback
+      return response.json() as Promise<{ freeCharacterIds: string[]; characterIds: string[]; fullArchive: boolean }>
+    } catch {
+      return fallback
+    }
   }
 }
 

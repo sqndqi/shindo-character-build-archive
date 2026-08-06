@@ -123,6 +123,50 @@ export function auditVariant(variant: BuildVariant): BuildQualityIssue[] {
   }
   if (variant.hotbar.length !== 12) push('hotbar-count', 'Critical', 'Hotbar control count is invalid', `Expected 12 controls but found ${variant.hotbar.length}.`)
 
+  // Phase 4D: weapon abilities without the weapon
+  const weaponSlots = activeMoves.filter((slot) => slot.sourceType === 'Weapon' || /weapon/i.test(slot.source))
+  if (weaponSlots.length && isNone(variant.weapon)) {
+    push('weapon-ability-no-weapon', 'Critical', 'Weapon ability without a weapon equipped', 'Hotbar uses weapon-sourced moves but no weapon is selected.')
+  }
+
+  // Phase 4D: kenjutsu moves without kenjutsu
+  const kenjutsuSlots = activeMoves.filter((slot) => slot.sourceType === 'Kenjutsu' || /kenjutsu/i.test(slot.source))
+  if (kenjutsuSlots.length && isNone(variant.kenjutsu ?? 'None')) {
+    push('kenjutsu-ability-no-kenjutsu', 'Critical', 'Kenjutsu ability without Kenjutsu equipped', 'Hotbar uses kenjutsu-sourced moves but no Kenjutsu is selected.')
+  }
+
+  // Phase 4D: vague placeholder abilities
+  const vaguePattern = /^(best move|strong attack|character move|good ability|any move|placeholder|tbd|todo)$/i
+  for (const slot of activeMoves) {
+    if (vaguePattern.test(slot.ability.trim())) {
+      push(`vague-placeholder-${slot.key}`, 'Major', `Hotbar ${slot.key} uses a vague placeholder`, `"${slot.ability}" is not a real Shindo move. Research or mark as unresolved.`)
+    }
+  }
+
+  // Phase 4D: mode referenced in hotbar but not in cMode/zMode
+  const modeSlots = activeMoves.filter((slot) => slot.sourceType === 'Mode' || slot.modeAbility)
+  for (const slot of modeSlots) {
+    const modeSource = normalized(slot.modeRequirement ?? slot.source)
+    const cNorm = normalized(variant.cMode)
+    const zNorm = normalized(variant.zMode)
+    if (modeSource && !isNone(modeSource) && modeSource !== cNorm && modeSource !== zNorm && !cNorm.includes(modeSource) && !zNorm.includes(modeSource)) {
+      push(`mode-not-equipped-${slot.key}`, 'Major', `Hotbar ${slot.key} references an unequipped mode`, `${slot.ability} requires ${slot.modeRequirement ?? slot.source}, which is not the C-mode or Z-mode.`)
+    }
+  }
+
+  // Phase 4D: missing mode recommendation when modes are used
+  if (modeSlots.length && isNone(variant.cMode) && isNone(variant.zMode)) {
+    push('missing-mode-recommendation', 'Minor', 'Mode abilities used but no mode is recommended', 'Hotbar includes mode-sourced moves. Specify a C-mode or Z-mode recommendation.')
+  }
+
+  // Phase 4D: missing weapon decision
+  if (isNone(variant.weapon) && !variant.weaponReason) {
+    const hasWeaponContext = [...variant.strengths, ...variant.weaknesses, ...variant.usageGuide].join(' ').toLowerCase().includes('weapon')
+    if (!hasWeaponContext) {
+      push('missing-weapon-decision', 'Editorial', 'No weapon decision documented', 'Either equip a weapon or explain why one is not used.')
+    }
+  }
+
   return issues
 }
 

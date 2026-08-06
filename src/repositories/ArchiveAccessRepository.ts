@@ -10,7 +10,7 @@ export type ArchiveAccessState =
   }
 
 export interface ArchiveAccessRepository {
-  signIn(email: string, password: string): Promise<ArchiveAccessState>
+  signIn(identifier: string, password: string): Promise<ArchiveAccessState>
   signUp(email: string, password: string): Promise<{ accepted: true }>
   requestPasswordReset(email: string): Promise<{ accepted: true }>
   getAccessState(): Promise<ArchiveAccessState>
@@ -34,20 +34,20 @@ async function apiRequest<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 class HttpArchiveAccessRepository implements ArchiveAccessRepository {
-  signIn(email: string, password: string) {
-    return apiRequest<ArchiveAccessState>('/v1/archive/auth/login', { method: 'POST', body: JSON.stringify({ email, password }) })
+  signIn(identifier: string, password: string) {
+    return apiRequest<ArchiveAccessState>('/v1/auth/login', { method: 'POST', body: JSON.stringify({ username: identifier, password }) })
   }
   signUp(email: string, password: string) {
-    return apiRequest<{ accepted: true }>('/v1/archive/auth/signup', { method: 'POST', body: JSON.stringify({ email, password }) })
+    return apiRequest<{ accepted: true }>('/v1/auth/signup', { method: 'POST', body: JSON.stringify({ email, password }) })
   }
   requestPasswordReset(email: string) {
-    return apiRequest<{ accepted: true }>('/v1/archive/auth/forgot-password', { method: 'POST', body: JSON.stringify({ email }) })
+    return apiRequest<{ accepted: true }>('/v1/auth/forgot-password', { method: 'POST', body: JSON.stringify({ email }) })
   }
   getAccessState() {
-    return apiRequest<ArchiveAccessState>('/v1/archive/account')
+    return apiRequest<ArchiveAccessState>('/v1/auth/me')
   }
   async signOut() {
-    await apiRequest('/v1/archive/auth/logout', { method: 'POST' })
+    await apiRequest('/v1/auth/logout', { method: 'POST' })
   }
 }
 

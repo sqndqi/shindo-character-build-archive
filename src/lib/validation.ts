@@ -18,6 +18,9 @@ const hotbarSchema = z.object({
   usageNotes: z.string(),
   sourceType: z.enum(['Bloodline', 'Element', 'Sub-Ability', 'Mode', 'Weapon', 'Combat Art', 'Kenjutsu', 'None']).optional(),
   testingStatus: z.enum(['Untested', 'Needs Retesting', 'Works', 'Verified for update']).optional(),
+  roleTags: z.array(z.enum(['starter', 'combo-extender', 'combo-ender', 'guard-break', 'counter', 'evasive', 'movement', 'ranged-pressure', 'area-control', 'defensive-utility', 'healing', 'transformation', 'signature'])).optional(),
+  researchStatus: z.enum(['verified', 'owner-confirmed', 'needs-retesting', 'unresolved', 'intentionally-unused', 'alternative-for-viability', 'alternative-for-accuracy']).optional(),
+  evidenceNote: z.string().optional(),
 }).passthrough()
 
 const fightingEquipmentSchema = z.object({
@@ -49,6 +52,23 @@ const variantSchema = z.object({
   }).optional(),
   equipment: fightingEquipmentSchema.optional(),
   hotbar: z.array(hotbarSchema),
+  primaryMode: z.string().optional(),
+  submode: z.string().optional(),
+  modeStage: z.string().optional(),
+  modeActivationKey: z.string().optional(),
+  modeCompatibilityWarning: z.string().optional(),
+  simultaneousModeLegality: z.enum(['legal', 'illegal', 'untested']).optional(),
+  statsAllocation: z.record(z.string(), z.number()).optional(),
+  opener: z.array(z.string()).optional(),
+  mainCombo: z.array(z.string()).optional(),
+  alternateCombo: z.array(z.string()).optional(),
+  escapeRoute: z.array(z.string()).optional(),
+  neutralGamePlan: z.string().optional(),
+  modeRecommendation: z.string().optional(),
+  submodeRecommendation: z.string().optional(),
+  researcherNotes: z.string().optional(),
+  visualResemblance: z.number().min(0).max(10).optional(),
+  targetShindoUpdate: z.string().optional(),
 }).passthrough()
 
 export const buildSchema = z.object({

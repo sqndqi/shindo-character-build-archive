@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: shindo-archive-server
+    runtime: node
+    rootDir: server
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OWNER_USERNAME
+        sync: false
+      - key: OWNER_PASSWORD_HASH
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: FRONTEND_ORIGIN
+        sync: false
+      - key: PORT
+        value: "10000"

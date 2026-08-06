@@ -1,5 +1,5 @@
 import { memo, type CSSProperties } from "react";
-import { ArrowUpRight, Check, Heart, Swords } from "lucide-react";
+import { ArrowUpRight, Check, Heart, Lock, Sparkles, Swords, Unlock } from "lucide-react";
 import type { CharacterBuild, SlotLimit } from "../types";
 import { Portrait } from "./Portrait";
 import { ShindoIcon } from "./ShindoIcon";
@@ -19,6 +19,23 @@ type Props = {
   onFavorite: (id: string) => void;
   mode: "compact" | "visual";
 };
+
+const accessIcon = {
+  Free: Unlock,
+  Locked: Lock,
+  Selected: Sparkles,
+  Owned: Check,
+} as const;
+
+function AccessSeal({ access }: { access: keyof typeof accessIcon }) {
+  const Icon = accessIcon[access];
+  return (
+    <span className={`access-seal access-seal--${access.toLowerCase()}`}>
+      <Icon size={11} aria-hidden="true" />
+      {access}
+    </span>
+  );
+}
 
 export const CharacterCard = memo(function CharacterCard({
   build,
@@ -52,9 +69,7 @@ export const CharacterCard = memo(function CharacterCard({
             thumbnail
           />
           <div className="character-card__scrim" />
-          <span className={`access-seal access-seal--${access.toLowerCase()}`}>
-            {access}
-          </span>
+          <AccessSeal access={access} />
           <button
             className={`favorite-toggle ${favorite ? "is-favorite" : ""}`}
             onClick={() => onFavorite(build.id)}
@@ -118,9 +133,7 @@ export const CharacterCard = memo(function CharacterCard({
           thumbnail
         />
         <div className="character-card__scrim" />
-        <span className={`access-seal access-seal--${access.toLowerCase()}`}>
-          {access}
-        </span>
+        <AccessSeal access={access} />
         <span
           className={`status-badge status-badge--${build.publicationStatus.toLowerCase().replace(" ", "-")}`}
         >

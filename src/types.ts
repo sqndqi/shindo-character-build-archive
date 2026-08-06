@@ -27,6 +27,30 @@ export interface BloodlineSlot {
   useMode: boolean
 }
 
+export type HotbarRoleTag =
+  | 'starter'
+  | 'combo-extender'
+  | 'combo-ender'
+  | 'guard-break'
+  | 'counter'
+  | 'evasive'
+  | 'movement'
+  | 'ranged-pressure'
+  | 'area-control'
+  | 'defensive-utility'
+  | 'healing'
+  | 'transformation'
+  | 'signature'
+
+export type SlotResearchStatus =
+  | 'verified'
+  | 'owner-confirmed'
+  | 'needs-retesting'
+  | 'unresolved'
+  | 'intentionally-unused'
+  | 'alternative-for-viability'
+  | 'alternative-for-accuracy'
+
 export interface HotbarSlot {
   id: string
   key: string
@@ -48,6 +72,9 @@ export interface HotbarSlot {
   resourceNotes?: string
   canonicalMoveId?: string
   emptyReason?: 'Intentionally unused' | 'No accurate option' | 'Placement unverified' | 'Requires owner testing' | 'Reserved for player preference'
+  roleTags?: HotbarRoleTag[]
+  researchStatus?: SlotResearchStatus
+  evidenceNote?: string
 }
 
 export interface Combo {
@@ -137,8 +164,30 @@ export interface BuildVariant {
     accuracy: AccuracyClassification
     liveTested: boolean
   }[]
-  /** Opt-in Phase 1 contract. Existing records remain untouched until their research batch is re-authored. */
   canonicalDefinition?: import('./types/canonicalBuild').CanonicalBuildVariant
+
+  // Phase 4C: mode detail
+  primaryMode?: string
+  submode?: string
+  modeStage?: string
+  modeActivationKey?: string
+  modeCompatibilityWarning?: string
+  simultaneousModeLegality?: 'legal' | 'illegal' | 'untested'
+
+  // Phase 4C: tactical plan
+  statsAllocation?: Record<string, number>
+  opener?: string[]
+  mainCombo?: string[]
+  alternateCombo?: string[]
+  escapeRoute?: string[]
+  neutralGamePlan?: string
+  modeRecommendation?: string
+  submodeRecommendation?: string
+
+  // Phase 4C: research and resemblance
+  researcherNotes?: string
+  visualResemblance?: number
+  targetShindoUpdate?: string
 }
 
 export interface CharacterBuild {
