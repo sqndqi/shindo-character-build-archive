@@ -1,21 +1,28 @@
 import { Router } from 'express'
-import type { ArchiveAccessState } from '../types'
+import { FREE_CHARACTER_IDS } from '../types'
 
 const router = Router()
 
 router.get('/access', (req, res) => {
+  const freeCharacterIds = [...FREE_CHARACTER_IDS]
   if (req.session.userId) {
-    const state: ArchiveAccessState = {
+    res.json({
       status: 'signed-in',
       email: req.session.userId,
       entitlement: 'active',
-      fullArchive: true,
+      freeCharacterIds,
       characterIds: [],
+      fullArchive: true,
       highestPackage: 'full',
-    }
-    res.json(state)
+    })
   } else {
-    res.json({ status: 'signed-out' } satisfies ArchiveAccessState)
+    res.json({
+      status: 'signed-out',
+      freeCharacterIds,
+      characterIds: [],
+      fullArchive: false,
+      highestPackage: null,
+    })
   }
 })
 

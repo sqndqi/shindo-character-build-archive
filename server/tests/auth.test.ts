@@ -88,6 +88,45 @@ describe('GET /v1/archive/access', () => {
     expect(res.status).toBe(200)
     expect(res.body.status).toBe('signed-out')
   })
+
+  // Regression: hotfix for crash — signed-out response must include all fields
+  // so frontend never receives undefined characterIds or freeCharacterIds.
+  it('signed-out response includes freeCharacterIds array of 5 free builds', async () => {
+    const res = await request(app).get('/v1/archive/access')
+    expect(res.status).toBe(200)
+    expect(Array.isArray(res.body.freeCharacterIds)).toBe(true)
+    expect(res.body.freeCharacterIds).toHaveLength(5)
+    expect(res.body.freeCharacterIds).toContain('zack-lee')
+    expect(res.body.freeCharacterIds).toContain('vasco')
+    expect(res.body.freeCharacterIds).toContain('gray-yeon')
+    expect(res.body.freeCharacterIds).toContain('yu')
+    expect(res.body.freeCharacterIds).toContain('jin-mori')
+  })
+
+  it('signed-out response includes characterIds: [] and fullArchive: false', async () => {
+    const res = await request(app).get('/v1/archive/access')
+    expect(res.status).toBe(200)
+    expect(Array.isArray(res.body.characterIds)).toBe(true)
+    expect(res.body.characterIds).toHaveLength(0)
+    expect(res.body.fullArchive).toBe(false)
+    expect(res.body.highestPackage).toBeNull()
+  })
+
+  it('signed-in response also includes freeCharacterIds array of 5', async () => {
+    const agent = request.agent(app)
+    await agent
+      .post('/v1/auth/login')
+      .set('X-Forwarded-For', '10.88.3.1')
+      .send({ username: VALID_USERNAME, password: VALID_PASSWORD })
+
+    const res = await agent.get('/v1/archive/access')
+    expect(res.status).toBe(200)
+    expect(res.body.status).toBe('signed-in')
+    expect(Array.isArray(res.body.freeCharacterIds)).toBe(true)
+    expect(res.body.freeCharacterIds).toHaveLength(5)
+    expect(Array.isArray(res.body.characterIds)).toBe(true)
+    expect(res.body.fullArchive).toBe(true)
+  })
 })
 
 describe('Rate limiting', () => {
@@ -192,14 +231,14 @@ describe('Full auth flow', () => {
 
     const accessRes = await agent.get('/v1/archive/access')
     expect(accessRes.body.status).toBe('signed-out')
-    expect(accessRes.body.fullArchive).toBeUndefined()
+    expect(accessRes.body.fullArchive).toBe(false)
   })
 
-  it('signed-out /archive/access never exposes fullArchive', async () => {
+  it('signed-out /archive/access returns fullArchive: false, never exposes premium data', async () => {
     const res = await request(app).get('/v1/archive/access')
     expect(res.status).toBe(200)
     expect(res.body.status).toBe('signed-out')
-    expect(res.body.fullArchive).toBeUndefined()
+    expect(res.body.fullArchive).toBe(false)
   })
 
   it('invalid credentials return generic 401 (not a cold-start 503 or network error)', async () => {
