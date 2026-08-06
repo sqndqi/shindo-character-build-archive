@@ -54,7 +54,12 @@ class PublicBuildRepository implements BuildRepository {
     try {
       const response = await fetch(`${apiBase}/v1/archive/access`, { credentials: 'include' })
       if (!response.ok) return fallback
-      return response.json() as Promise<{ freeCharacterIds: string[]; characterIds: string[]; fullArchive: boolean }>
+      const data = await response.json() as Record<string, unknown>
+      return {
+        freeCharacterIds: Array.isArray(data.freeCharacterIds) ? data.freeCharacterIds as string[] : fallback.freeCharacterIds,
+        characterIds: Array.isArray(data.characterIds) ? data.characterIds as string[] : [],
+        fullArchive: data.fullArchive === true,
+      }
     } catch {
       return fallback
     }
