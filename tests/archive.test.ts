@@ -196,16 +196,16 @@ describe('suggestions, migration and identity', () => {
 })
 
 describe('Shindo identity, assets, and build-quality checks', () => {
-  it('defaults to Shindo Green and preserves an existing theme preference', () => {
-    expect(defaultArchivePrefs.theme).toBe('shindo-green')
-    expect(mergeArchivePrefs({ theme: 'chakra-blue', favorites: ['james-lee'] })).toMatchObject({ theme: 'chakra-blue', favorites: ['james-lee'] })
+  it('defaults to Agarthia Crimson and preserves an existing theme preference', () => {
+    expect(defaultArchivePrefs.theme).toBe('agarthia-crimson')
+    expect(mergeArchivePrefs({ theme: 'ember-violet', favorites: ['james-lee'] })).toMatchObject({ theme: 'ember-violet', favorites: ['james-lee'] })
   })
   it('defines all three themes through shared CSS variables', () => {
     const css = readFileSync(resolve('src/index.css'), 'utf8')
-    expect(css).toContain('[data-theme="shindo-green"]')
-    expect(css).toContain('[data-theme="chakra-blue"]')
-    expect(css).toContain('[data-theme="ember-crimson"]')
-    expect(css).toContain('--accent: #72d64b')
+    expect(css).toContain('[data-theme="agarthia-crimson"]')
+    expect(css).toContain('[data-theme="ember-violet"]')
+    expect(css).toContain('[data-theme="midnight-steel"]')
+    expect(css).toContain('--accent: #e06b5c')
   })
   it('has a unique, locally cached direct-asset manifest', () => {
     expect(new Set(shindoAssetManifest.map((entry) => entry.id)).size).toBe(shindoAssetManifest.length)
@@ -278,7 +278,7 @@ describe('Shindo identity, assets, and build-quality checks', () => {
     expect(app).toContain('/build/')
     expect(app).toContain('BuildQuickView')
     expect(app).toContain('FullBuildPage')
-    expect(readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')).toContain('Compare current variant with')
+    expect(readFileSync(resolve('src/components/build-sections/index.tsx'), 'utf8')).toContain('Compare current variant with')
   })
   it('removes the audited SnakeMan recolor overlap', () => {
     const luffy = animeMangaBuilds.find((build) => build.id === 'anime-monkey-d-luffy-snakeman')!
@@ -306,10 +306,132 @@ describe('Shindo identity, assets, and build-quality checks', () => {
     base.hotbar[10] = { ...base.hotbar[10], source: 'None', ability: 'Not used in this variant' }
     expect(auditVariant(base).filter((issue) => issue.code === 'unequipped-hotbar-source' && issue.message.includes('Not used'))).toHaveLength(0)
   })
+  it('detects weapon abilities without a weapon equipped', () => {
+    const base = structuredClone(curatedBuilds[0].variants[0])
+    base.weapon = 'None'
+    base.hotbar[0] = { ...base.hotbar[0], sourceType: 'Weapon', source: 'Bankai Blade', ability: 'Bankai Slash' }
+    const codes = auditVariant(base).map((issue) => issue.code)
+    expect(codes).toContain('weapon-ability-no-weapon')
+  })
+  it('detects vague placeholder abilities', () => {
+    const base = structuredClone(curatedBuilds[0].variants[0])
+    base.hotbar[0] = { ...base.hotbar[0], ability: 'best move' }
+    const codes = auditVariant(base).map((issue) => issue.code)
+    expect(codes).toContain('vague-placeholder-1')
+  })
+  it('detects mode moves referencing an unequipped mode', () => {
+    const base = structuredClone(curatedBuilds[0].variants[0])
+    base.hotbar[0] = { ...base.hotbar[0], sourceType: 'Mode', modeAbility: true, modeRequirement: 'Sengoku Mode', ability: 'Sengoku Strike' }
+    base.cMode = 'Kor Tailed Spirit'
+    base.zMode = 'None'
+    const codes = auditVariant(base).map((issue) => issue.code)
+    expect(codes).toContain('mode-not-equipped-1')
+  })
   it('keeps James Lee core unchanged and public authoring absent', () => {
     expect(curatedBuilds[0].variants[0].bloodlines.map((slot) => slot.name)).toEqual(['Dio-Senko-Rose', 'Bruce-Kenichi', 'Pika-Senko', 'Doku-Tengoku'])
     const app = readFileSync(resolve('src/App.tsx'), 'utf8')
     expect(app).not.toMatch(/BuildEditor|Add Build|delete official|export official/i)
     expect(existsSync(resolve('README.md'))).toBe(false)
+  })
+})
+
+describe('build page section architecture', () => {
+  it('exports all 12 build sections plus SectionHeading from build-sections', () => {
+    const source = readFileSync(resolve('src/components/build-sections/index.tsx'), 'utf8')
+    for (const name of [
+      'BuildOverviewSection', 'VariantSelectorSection', 'BloodlineElementsSection',
+      'ModesSection', 'UtilitySection', 'EquipmentSection', 'StatsPlaystyleSection',
+      'HotbarSection', 'ComboSection', 'AlternativesSection', 'BuildAuditPanel',
+      'ResearchEvidenceSection', 'SectionHeading',
+    ]) {
+      expect(source).toContain(`export function ${name}`)
+    }
+  })
+  it('imports all 12 sections into FullBuildPage', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    for (const name of [
+      'BuildOverviewSection', 'VariantSelectorSection', 'BloodlineElementsSection',
+      'ModesSection', 'UtilitySection', 'EquipmentSection', 'StatsPlaystyleSection',
+      'HotbarSection', 'ComboSection', 'AlternativesSection', 'BuildAuditPanel',
+      'ResearchEvidenceSection',
+    ]) {
+      expect(source).toContain(name)
+    }
+  })
+  it('renders a sticky section nav with 10 jump links', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    expect(source).toContain('dossier-section-nav')
+    expect(source).toContain('scrollIntoView')
+    const navIds = ['section-overview', 'section-variants', 'section-bloodlines', 'section-modes',
+      'section-equipment', 'section-hotbar',
+      'section-combos', 'section-alternatives', 'section-legality', 'section-research']
+    for (const id of navIds) expect(source).toContain(id)
+  })
+  it('removed the old tab navigation system', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    expect(source).not.toContain('activeView')
+    expect(source).not.toContain('dossier-nav')
+    expect(source).not.toMatch(/setActiveView/)
+  })
+  it('uses scrollable sections container not tabs', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    expect(source).toContain('dossier-sections')
+    expect(source).not.toContain('dossier-tabs')
+  })
+  it('keeps locked build page free of premium hotbar or variant data', () => {
+    const locked = readFileSync(resolve('src/components/LockedBuildPage.tsx'), 'utf8')
+    expect(locked).not.toContain('hotbar')
+    expect(locked).not.toContain('variant.bloodlines')
+    expect(locked).not.toContain('variant.hotbar')
+    expect(locked).not.toContain('combo')
+    expect(locked).toContain('Premium loadout hidden')
+  })
+  it('defines CSS for all build section components', () => {
+    const css = readFileSync(resolve('src/index.css'), 'utf8')
+    for (const selector of [
+      '.dossier-sections', '.build-section', '.dossier-section-nav',
+      '.overview-facts-grid', '.ability-slot-grid', '.modes-grid',
+      '.utility-slots', '.equipment-grid', '.stats-bars',
+      '.combo-list', '.audit-issues', '.research-status-grid',
+      '.hotbar-research-list', '.research-badge',
+    ]) {
+      expect(css).toContain(selector)
+    }
+  })
+  it('includes responsive breakpoints for build sections', () => {
+    const css = readFileSync(resolve('src/index.css'), 'utf8')
+    expect(css).toContain('.stat-bar__fill { transition: none; }')
+    expect(css).toContain('.evidence-toggle svg { transition: none; }')
+  })
+  it('handles missing optional fields with research status badges', () => {
+    const badge = readFileSync(resolve('src/components/build-sections/ResearchStatusBadge.tsx'), 'utf8')
+    expect(badge).toContain('Not researched')
+    expect(badge).toContain('status?: SlotResearchStatus')
+    const empty = readFileSync(resolve('src/components/build-sections/EmptyResearchState.tsx'), 'utf8')
+    expect(empty).toContain('empty-research-state')
+  })
+  it('preserves variant switching with View Transitions API', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    expect(source).toContain('transitionUpdate')
+    expect(source).toContain('startViewTransition')
+    expect(source).toContain('prefers-reduced-motion')
+  })
+  it('tracks build views via onViewed callback and useEffect', () => {
+    const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
+    expect(source).toContain('onViewed')
+    expect(source).toContain('useEffect')
+    expect(source).toContain('build.id')
+  })
+  it('includes game hotbar preview with accessible text', () => {
+    const hotbar = readFileSync(resolve('src/components/GameHotbarPreview.tsx'), 'utf8')
+    expect(hotbar).toContain('game-hotbar__accessible-list')
+  })
+  it('has exactly five free builds defined in App routing', () => {
+    const app = readFileSync(resolve('src/App.tsx'), 'utf8')
+    const match = app.match(/freeBuildIds\s*=\s*\[([\s\S]*?)\]\s*as const/)
+    expect(match).not.toBeNull()
+    const ids = match![1].match(/["']([^"']+)["']/g)!.map((s) => s.replace(/["']/g, ''))
+    expect(ids).toHaveLength(5)
+    for (const id of ids) expect(completeRoster.some((build) => build.id === id)).toBe(true)
   })
 })

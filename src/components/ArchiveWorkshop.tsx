@@ -108,6 +108,8 @@ export default function ArchiveWorkshop({
 
   const makeable = readiness.filter((item) => item.missing.length === 0)
   const missingOne = readiness.filter((item) => item.missing.length === 1)
+  const missingTwo = readiness.filter((item) => item.missing.length === 2)
+  const closestBuilds = [...readiness].sort((a, b) => a.missing.length - b.missing.length).slice(0, 4)
   const unlockValues = items
     .filter((item) => item.category === 'Bloodline' && statusFor(item) !== 'Owned')
     .map((item) => ({
@@ -160,8 +162,10 @@ export default function ArchiveWorkshop({
       <article><span>Owned elements</span><strong>{items.filter((item) => item.category === 'Element' && statusFor(item) === 'Owned').length}/{items.filter((item) => item.category === 'Element').length}</strong></article>
       <article><span>Builds I can make</span><strong>{makeable.length}</strong></article>
       <article><span>Missing one item</span><strong>{missingOne.length}</strong></article>
+      <article><span>Missing two items</span><strong>{missingTwo.length}</strong></article>
       <article className="unlock-value"><span>Best archive unlock value</span><strong>{nextUnlock?.name ?? 'Own more items to calculate'}</strong><small>{nextUnlock ? nextUnlock.unlocks > 0 ? `Could complete ${nextUnlock.unlocks} near-ready build${nextUnlock.unlocks === 1 ? '' : 's'}. This is archive coverage, not meta advice.` : `Used by ${nextUnlock.usedBy} archive builds, including ${nextUnlock.reviewedUse} reviewed builds. This is archive coverage, not meta advice.` : 'No unowned Bloodline recommendation available.'}</small></article>
     </section>
+    <section className="inventory-roadmap" aria-labelledby="inventory-roadmap-heading"><header><span>Inventory roadmap</span><h2 id="inventory-roadmap-heading">Closest prepared builds</h2><p>These are existing archive variants, not dynamically generated loadouts.</p></header><div>{closestBuilds.map((entry) => <article key={entry.build.id}><strong>{entry.build.name}</strong><span>{entry.variant.name}</span><small>{entry.missing.length ? `${entry.missing.length} missing: ${entry.missing.join(', ')}` : 'Ready now'}</small></article>)}</div></section>
     <section className="inventory-shell">
       <div className="inventory-tabs" role="tablist">{(['Bloodlines', 'Elements', 'Modes', 'Equipment', 'Builds I Can Make', 'Missing One Item', 'Wanted', 'Locked'] as Tab[]).map((item) => <button role="tab" aria-selected={tab === item} className={tab === item ? 'active' : ''} key={item} onClick={() => setTab(item)}>{item}</button>)}</div>
       <div className="inventory-toolbar"><div><ShieldCheck size={18} /><input aria-label="Search inventory" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search inventory…" /></div><div>{isItemTab && <><button className="button button--outline" onClick={() => {

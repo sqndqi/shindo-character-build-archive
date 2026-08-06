@@ -23,3 +23,12 @@ artifacts/
 *.njsproj
 *.sln
 *.sw?
+
+# Local MCP observability
+weppy-project-sync/
+.claude/agent-metrics.jsonl
+.claude/command-history.log
+.claude/settings.local.json
+
+# Local TaiyiForge installation path
+.taiyi/forge-root

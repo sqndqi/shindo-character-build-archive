@@ -5,9 +5,11 @@ type Props = {
   alt: string
   className?: string
   thumbnail?: boolean
+  objectPosition?: string
+  lazy?: boolean
 }
 
-export const Portrait = memo(function Portrait({ src, alt, className = '', thumbnail = false }: Props) {
+export const Portrait = memo(function Portrait({ src, alt, className = '', thumbnail = false, objectPosition, lazy }: Props) {
   const [failed, setFailed] = useState(false)
   const [loaded, setLoaded] = useState(false)
   const cardSrc = thumbnail && src.endsWith('.jpg') ? src.replace('/characters/', '/characters/thumbs/').replace(/\.jpg$/, '.webp') : src
@@ -28,6 +30,8 @@ export const Portrait = memo(function Portrait({ src, alt, className = '', thumb
     )
   }
 
+  const loadingAttr = (lazy ?? thumbnail) ? 'lazy' : 'eager'
+
   return (
     <span className={`portrait-frame ${loaded ? 'is-loaded' : ''} ${className}`}>
       <span className="portrait-skeleton" aria-hidden="true" />
@@ -36,8 +40,9 @@ export const Portrait = memo(function Portrait({ src, alt, className = '', thumb
         alt={alt}
         width={thumbnail ? 480 : 700}
         height={thumbnail ? 300 : 920}
-        loading={thumbnail ? 'lazy' : 'eager'}
+        loading={loadingAttr}
         decoding="async"
+        style={objectPosition ? { objectPosition } : undefined}
         onLoad={() => setLoaded(true)}
         onError={() => setFailed(true)}
       />

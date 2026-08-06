@@ -1,6 +1,9 @@
 import { useState } from 'react'
-import { ArrowDown, ArrowUp, Download, Eye, SearchX } from 'lucide-react'
+import { ArrowDown, ArrowUp, Eye, SearchX } from 'lucide-react'
 import type { CharacterBuild, SlotLimit } from '../types'
+import { ShindoIcon } from './ShindoIcon'
+import { variantKenjutsu } from '../lib/variants'
+import type { ArchiveBuildRecord } from '../types/archiveAccess'
 
 type Column = {
   key: string
@@ -48,13 +51,16 @@ export function BuildTable({ builds, slotLimit, onOpen, onClear }: Props) {
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc')
   const [visible, setVisible] = useState(initialVisible)
 
-  const slotsFor = (build: CharacterBuild) => (build.variants.find((variant) => variant.bloodlineSlotCount === slotLimit) ?? build.variants[0]).bloodlines.map((slot) => slot.name)
+  const isLocked = (build: CharacterBuild) => ['Locked', 'Selected'].includes((build as ArchiveBuildRecord).accessState)
+  const slotsFor = (build: CharacterBuild) => isLocked(build) ? [] : (build.variants.find((variant) => variant.bloodlineSlotCount === slotLimit) ?? build.variants[0]).bloodlines.map((slot) => slot.name)
+  const safeKeys = new Set(['character', 'series', 'franchise', 'media', 'version', 'status'])
+  const valueFor = (column: Column, build: CharacterBuild) => isLocked(build) && !safeKeys.has(column.key) ? 'Locked' : column.value(build, slotsFor(build))
   const activeColumns = columns.filter((column) => visible.has(column.key))
   const sorted = (() => {
     const column = columns.find((item) => item.key === sortKey) ?? columns[0]
     return [...builds].sort((a, b) => {
-      const left = column.value(a, slotsFor(a))
-      const right = column.value(b, slotsFor(b))
+      const left = valueFor(column, a)
+      const right = valueFor(column, b)
       const result = typeof left === 'number' && typeof right === 'number'
         ? left - right
         : String(left).localeCompare(String(right))
@@ -68,20 +74,6 @@ export function BuildTable({ builds, slotLimit, onOpen, onClear }: Props) {
       setSortKey(key)
       setSortDirection('asc')
     }
-  }
-
-  const exportCsv = () => {
-    const escape = (value: string | number) => `"${String(value).replaceAll('"', '""')}"`
-    const rows = [
-      activeColumns.map((column) => escape(column.label)).join(','),
-      ...sorted.map((build) => activeColumns.map((column) => escape(column.value(build, slotsFor(build)))).join(',')),
-    ]
-    const url = URL.createObjectURL(new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8' }))
-    const link = document.createElement('a')
-    link.href = url
-    link.download = `shindo-builds-${slotLimit}-slots.csv`
-    link.click()
-    URL.revokeObjectURL(url)
   }
 
   return (
@@ -109,7 +101,6 @@ export function BuildTable({ builds, slotLimit, onOpen, onClear }: Props) {
               ))}
             </div>
           </details>
-          <button className="button button--outline" onClick={exportCsv}><Download size={15} /> Export CSV</button>
         </div>
       </div>
       {!sorted.length ? (
@@ -119,6 +110,19 @@ export function BuildTable({ builds, slotLimit, onOpen, onClear }: Props) {
           <button className="button button--outline" onClick={onClear}>Clear filters</button>
         </div>
       ) : (
+        <>
+        <div className="database-mobile-list" aria-label="Mobile database records">
+          {sorted.map((build) => {
+            if (isLocked(build)) return <article className="database-locked-record" key={build.id}><header><div><span>{build.series} · {build.version}</span><h3>{build.name}</h3></div><span className="access-seal access-seal--locked">Locked</span></header><p>{build.archetype.slice(0, 3).join(' · ')}</p><small>{(build as ArchiveBuildRecord).publicVariantCount} variants · premium loadout hidden</small><button className="button button--primary" onClick={() => onOpen(build)}>View preview</button></article>
+            const variant = build.variants.find((item) => item.bloodlineSlotCount === slotLimit) ?? build.variants[0]
+            return <article key={build.id}>
+              <header><div><span>{build.series} · {build.version}</span><h3>{build.name}</h3></div><span className={`status status--${build.publicationStatus.toLowerCase().replace(' ', '-')}`}>{build.publicationStatus}</span></header>
+              <div className="database-mobile-list__loadout"><ShindoIcon name={variant.bloodlines[0]?.name ?? 'Unresolved'} type="Bloodline" size="medium" /><p><small>Main Bloodline</small><strong>{variant.bloodlines[0]?.name ?? 'Unresolved'}</strong></p></div>
+              <dl><div><dt>Elements</dt><dd>{variant.elements.map((item) => item.name).join(', ') || 'None'}</dd></div><div><dt>Mode</dt><dd>{variant.cMode}</dd></div>{variant.weapon !== 'None' && <div><dt>Weapon</dt><dd>{variant.weapon}</dd></div>}{variantKenjutsu(variant) !== 'None' && <div><dt>Kenjutsu</dt><dd>{variantKenjutsu(variant)}</dd></div>}</dl>
+              <button className="button button--primary" onClick={() => onOpen(build)}>Open build</button>
+            </article>
+          })}
+        </div>
         <div className="table-scroll">
           <table>
             <thead>
@@ -137,7 +141,7 @@ export function BuildTable({ builds, slotLimit, onOpen, onClear }: Props) {
               {sorted.map((build) => (
                 <tr key={build.id} onClick={() => onOpen(build)}>
                   {activeColumns.map((column) => {
-                    const value = column.value(build, slotsFor(build))
+                    const value = valueFor(column, build)
                     return (
                       <td className={column.sticky ? 'sticky-cell character-cell' : ''} key={column.key}>
                         {column.key === 'status' ? <span className={`status status--${String(value).toLowerCase().replace(' ', '-')}`}>{value}</span> : value}
@@ -149,6 +153,7 @@ export function BuildTable({ builds, slotLimit, onOpen, onClear }: Props) {
             </tbody>
           </table>
         </div>
+        </>
       )}
     </div>
   )

@@ -7,12 +7,49 @@ export type ConfidenceLabel = 'Verified' | 'Strong Match' | 'Approximation' | 'C
 export type AccuracyClassification = 'Direct Match' | 'Strong Match' | 'Visual Approximation' | 'Competitive Substitute' | 'Unresolved'
 export type MediaCategory = 'Manhwa' | 'Manga / Anime'
 
+export type {
+  CanonicalBuildDefinition,
+  CanonicalBuildVariant,
+  CanonicalEvidence,
+  CanonicalGameCatalog,
+  CanonicalHotbarSlot,
+  CanonicalItem,
+  CanonicalModeStage,
+  CanonicalMove,
+  CanonicalSource,
+  CanonicalSourceCategory,
+} from './types/canonicalBuild'
+
 export interface BloodlineSlot {
   id: string
   name: string
   purpose: string
   useMode: boolean
 }
+
+export type HotbarRoleTag =
+  | 'starter'
+  | 'combo-extender'
+  | 'combo-ender'
+  | 'guard-break'
+  | 'counter'
+  | 'evasive'
+  | 'movement'
+  | 'ranged-pressure'
+  | 'area-control'
+  | 'defensive-utility'
+  | 'healing'
+  | 'transformation'
+  | 'signature'
+
+export type SlotResearchStatus =
+  | 'verified'
+  | 'owner-confirmed'
+  | 'needs-retesting'
+  | 'unresolved'
+  | 'intentionally-unused'
+  | 'alternative-for-viability'
+  | 'alternative-for-accuracy'
 
 export interface HotbarSlot {
   id: string
@@ -33,6 +70,11 @@ export interface HotbarSlot {
   modeRequirement?: string
   testingStatus?: 'Untested' | 'Needs Retesting' | 'Works' | 'Verified for update'
   resourceNotes?: string
+  canonicalMoveId?: string
+  emptyReason?: 'Intentionally unused' | 'No accurate option' | 'Placement unverified' | 'Requires owner testing' | 'Reserved for player preference'
+  roleTags?: HotbarRoleTag[]
+  researchStatus?: SlotResearchStatus
+  evidenceNote?: string
 }
 
 export interface Combo {
@@ -109,6 +151,43 @@ export interface BuildVariant {
   compromises?: string[]
   verificationStatus: VariantVerificationStatus
   lastVerifiedUpdate: string
+  preparedHotbarProfileId?: string
+  hotbarLegalityStatus?: import('./types/shindoGame').HotbarLegalityStatus
+  ownerTestingStatus?: import('./types/shindoGame').OwnerTestingStatus
+  researchedGameVersion?: string
+  profilePurpose?: 'Identity Build' | 'Game-Legal Build' | 'Two-Slot Build' | 'Three-Slot Build' | 'Accessible Build' | 'Competitive Build'
+  carriedSourceReasons?: Record<string, string>
+  moveBankPlan?: {
+    moveId: string
+    replacesKey: string
+    situation: string
+    accuracy: AccuracyClassification
+    liveTested: boolean
+  }[]
+  canonicalDefinition?: import('./types/canonicalBuild').CanonicalBuildVariant
+
+  // Phase 4C: mode detail
+  primaryMode?: string
+  submode?: string
+  modeStage?: string
+  modeActivationKey?: string
+  modeCompatibilityWarning?: string
+  simultaneousModeLegality?: 'legal' | 'illegal' | 'untested'
+
+  // Phase 4C: tactical plan
+  statsAllocation?: Record<string, number>
+  opener?: string[]
+  mainCombo?: string[]
+  alternateCombo?: string[]
+  escapeRoute?: string[]
+  neutralGamePlan?: string
+  modeRecommendation?: string
+  submodeRecommendation?: string
+
+  // Phase 4C: research and resemblance
+  researcherNotes?: string
+  visualResemblance?: number
+  targetShindoUpdate?: string
 }
 
 export interface CharacterBuild {
