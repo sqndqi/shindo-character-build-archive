@@ -12,7 +12,7 @@ import {
   Dice5,
   Grid2X2,
   Heart,
-  LogIn,
+
   Menu,
   Palette,
   Rows3,
@@ -26,7 +26,7 @@ import {
 import { DiscordLink, RobloxGroupLink } from "./components/CommunityLinks";
 import { DonationBar } from "./components/DonationBar";
 import { AUTH_ENABLED, PAYMENTS_ENABLED } from "./config/monetization";
-import { portraitPresentation } from "./data/portraitPresentation";
+
 import type { CharacterBuild } from "./types";
 import {
   buildRepository,
@@ -49,7 +49,6 @@ import { ErrorBoundary } from "./components/ErrorBoundary";
 import { ArchiveSkeleton } from "./components/ArchiveSkeleton";
 import { ToastRegion, type ToastMessage } from "./components/ToastRegion";
 import { LockedBuildPage } from "./components/LockedBuildPage";
-import { Portrait } from "./components/Portrait";
 import { BrandMark } from "./components/BrandMark";
 import { variantKenjutsu } from "./lib/variants";
 
@@ -533,14 +532,6 @@ export default function App() {
               {label}
             </button>
           ))}
-          {AUTH_ENABLED && (
-            <button
-              className={view === "account" ? "active" : ""}
-              onClick={() => navigate("account")}
-            >
-              Account
-            </button>
-          )}
           <div className="nav-community-links">
             <DiscordLink />
             <RobloxGroupLink />
@@ -755,128 +746,51 @@ export default function App() {
         </Suspense>
       ) : (
         <main>
-          <section className="archive-hero">
-            <div className="archive-hero__seal" aria-hidden="true">
-              <BrandMark />
-            </div>
-            <div className="archive-hero__copy">
-              <span className="eyebrow">
-                <Sparkles size={14} /> Premium Shindo loadout companion
-              </span>
-              <h1>Build like the character.</h1>
+          <section className="archive-compact-header">
+            <div className="archive-compact-header__info">
+              <h1>Shindo Archive</h1>
               <p>
-                A focused archive of character-inspired Shindo loadouts, direct
-                game icons, legal hotbars, and clearly labeled research.
+                {builds.length} character-inspired loadouts across{" "}
+                {values.series.length} series — direct game icons, researched
+                hotbars, and legality labels.
               </p>
-              <div className="archive-hero__actions">
-                {AUTH_ENABLED ? (
-                  <button
-                    className="button button--primary"
-                    onClick={() => navigate("account")}
-                  >
-                    <LogIn size={16} /> Sign in for access
-                  </button>
-                ) : (
-                  <button
-                    className="button button--primary"
-                    onClick={() =>
-                      document
-                        .querySelector(".featured-free-builds")
-                        ?.scrollIntoView({ behavior: "smooth" })
-                    }
-                  >
-                    Explore free builds
-                  </button>
-                )}
-                <DiscordLink className="button button--outline" />
+              <div className="archive-compact-stats">
+                <span>
+                  <strong>{builds.length}</strong> Characters
+                </span>
+                <span>
+                  <strong>{values.series.length}</strong> Series
+                </span>
+                <span>
+                  <strong>20</strong> Researched
+                </span>
+                <span>
+                  <strong>{freeBuilds.length}</strong> Free
+                </span>
               </div>
             </div>
-            <div className="archive-hero__collage" aria-hidden="true">
-              {freeBuilds.slice(0, 3).map((build) => (
-                <Portrait
-                  key={build.id}
-                  src={build.thumbnail || build.image}
-                  alt={build.name}
-                  thumbnail
-                  objectPosition={portraitPresentation(build.id).heroPosition}
-                />
-              ))}
-            </div>
-            <div className="archive-stats">
-              <div>
-                <strong>{builds.length}</strong>
-                <span>Characters</span>
+            <div className="archive-compact-header__cards">
+              <div className="premium-plus-card">
+                <div className="premium-plus-card__header">
+                  <Sparkles size={14} aria-hidden="true" />
+                  <strong>Premium+</strong>
+                  <span className="coming-soon-badge">Coming Soon</span>
+                </div>
+                <p>
+                  Additional benefits, clothing IDs, and pricing will be
+                  provided by the owner before launch.
+                </p>
               </div>
-              <div>
-                <strong>{values.series.length}</strong>
-                <span>Series</span>
-              </div>
-              <div>
-                <strong>20</strong>
-                <span>Researched</span>
-              </div>
-              <div>
-                <strong>{freeBuilds.length}</strong>
-                <span>Free builds</span>
+              <div className="accounts-later-card">
+                <span>Accounts coming later</span>
+                <p>
+                  Owner login, entitlements, and character packs are in
+                  development.
+                </p>
               </div>
             </div>
           </section>
           <DonationBar />
-          <section
-            className="featured-free-builds"
-            aria-label="Featured free builds"
-          >
-            <header>
-              <div>
-                <span className="eyebrow">Start here</span>
-                <h2>Five builds. Permanently free.</h2>
-              </div>
-              <p>
-                Open a complete build and see the archive’s game hotbar, direct
-                icons, and research structure.
-              </p>
-            </header>
-            <div>
-              {freeBuilds.map((build) => (
-                <button key={build.id} onClick={() => openFullBuild(build)}>
-                  <span className="featured-free-builds__portrait">
-                    <Portrait
-                      src={build.thumbnail || build.image}
-                      alt={build.name}
-                      thumbnail
-                    />
-                    <i>Free</i>
-                  </span>
-                  <span>
-                    <strong>{build.name}</strong>
-                    <small>{build.series}</small>
-                    <em>View build</em>
-                  </span>
-                </button>
-              ))}
-            </div>
-          </section>
-          {buildExperience.state.recentlyViewed.length > 0 && (
-            <section
-              className="recent-builds"
-              aria-label="Recently viewed builds"
-            >
-              <span>Recently viewed</span>
-              <div className="recent-builds__list">
-                {buildExperience.state.recentlyViewed
-                  .map((id) => builds.find((build) => build.id === id))
-                  .filter((build): build is ArchiveBuildRecord =>
-                    Boolean(build),
-                  )
-                  .map((build) => (
-                    <button key={build.id} onClick={() => openFullBuild(build)}>
-                      {build.name}
-                      <small>{build.version}</small>
-                    </button>
-                  ))}
-              </div>
-            </section>
-          )}
           <section className="controls-shell">
             <div className="search-wrap">
               <Search size={21} />
@@ -912,9 +826,9 @@ export default function App() {
                       setTheme(event.target.value as typeof prefs.theme)
                     }
                   >
-                    <option value="ember-crimson">Ember Crimson (default)</option>
-                    <option value="shindo-green">Shindo Green</option>
-                    <option value="chakra-blue">Chakra Blue</option>
+                    <option value="agarthia-crimson">Agarthia Crimson (default)</option>
+                    <option value="ember-violet">Ember Violet</option>
+                    <option value="midnight-steel">Midnight Steel</option>
                   </select>
                 </label>
                 <label className="bias-control">

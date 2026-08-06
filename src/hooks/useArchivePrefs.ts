@@ -8,7 +8,7 @@ export type ArchivePrefs = {
   tiers: Record<string, TierRank>
   pageSize: '12' | '24' | '48' | '96'
   metaBias: number
-  theme: 'shindo-green' | 'chakra-blue' | 'ember-crimson'
+  theme: 'agarthia-crimson' | 'ember-violet' | 'midnight-steel'
 }
 
 export const defaultArchivePrefs: ArchivePrefs = {
@@ -16,11 +16,18 @@ export const defaultArchivePrefs: ArchivePrefs = {
   tiers: {},
   pageSize: '24',
   metaBias: 50,
-  theme: 'ember-crimson',
+  theme: 'agarthia-crimson',
+}
+
+const themeMap: Record<string, ArchivePrefs['theme']> = {
+  'ember-crimson': 'agarthia-crimson',
+  'shindo-green': 'ember-violet',
+  'chakra-blue': 'midnight-steel',
 }
 
 export function mergeArchivePrefs(saved: Partial<ArchivePrefs>): ArchivePrefs {
-  return { ...defaultArchivePrefs, ...saved, pageSize: saved.pageSize === ('all' as ArchivePrefs['pageSize']) ? '96' : saved.pageSize ?? defaultArchivePrefs.pageSize }
+  const theme = themeMap[saved.theme as string] ?? saved.theme ?? defaultArchivePrefs.theme
+  return { ...defaultArchivePrefs, ...saved, theme: theme as ArchivePrefs['theme'], pageSize: saved.pageSize === ('all' as ArchivePrefs['pageSize']) ? '96' : saved.pageSize ?? defaultArchivePrefs.pageSize }
 }
 
 export function useArchivePrefs() {

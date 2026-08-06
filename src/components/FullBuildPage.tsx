@@ -21,7 +21,7 @@ import { createConservativeProfile } from "../data/reviewedLegalProfiles";
 import { validatePreparedHotbar } from "../lib/hotbarLegality";
 import { Portrait } from "./Portrait";
 import { ShindoIcon } from "./ShindoIcon";
-import { readStorage, writeStorage } from "../services/storage";
+
 import { portraitPresentation } from "../data/portraitPresentation";
 import {
   BuildOverviewSection,
@@ -43,13 +43,11 @@ const sectionNav = [
   ["section-variants", "Variants"],
   ["section-bloodlines", "Bloodlines"],
   ["section-modes", "Modes"],
-  ["section-utility", "Sub-Jutsu"],
   ["section-equipment", "Equipment"],
-  ["section-stats", "Stats"],
   ["section-hotbar", "Hotbar"],
   ["section-combos", "Combos"],
-  ["section-alternatives", "Alternatives"],
   ["section-legality", "Legality"],
+  ["section-alternatives", "Alternatives"],
   ["section-research", "Research"],
 ] as const;
 
@@ -107,9 +105,6 @@ export function FullBuildPage({
     build.variants.find((v) => v.id === initialVariantId) ?? recommended;
   const [variantId, setVariantId] = useState(initial.id);
   const [selectedMoveId, setSelectedMoveId] = useState<string | null>(null);
-  const [hotbarView, setHotbarView] = useState<"game" | "technical">(() =>
-    readStorage("shindo-build-archive:hotbar-view:v1", "game"),
-  );
   const variant =
     build.variants.find((v) => v.id === variantId) ?? recommended;
   const profile = useMemo(() => createConservativeProfile(variant), [variant]);
@@ -136,9 +131,6 @@ export function FullBuildPage({
     const found = build.variants.find((v) => v.id === initialVariantId);
     if (found) setVariantId(found.id);
   }, [build.variants, initialVariantId]);
-  useEffect(() => {
-    writeStorage("shindo-build-archive:hotbar-view:v1", hotbarView);
-  }, [hotbarView]);
 
   const selectVariant = (id: string) => {
     transitionUpdate(() => {
@@ -291,13 +283,9 @@ export function FullBuildPage({
         />
         <BloodlineElementsSection variant={variant} />
         <ModesSection variant={variant} />
-        <UtilitySection variant={variant} />
         <EquipmentSection variant={variant} />
-        <StatsPlaystyleSection variant={variant} />
         <HotbarSection
           variant={variant}
-          hotbarView={hotbarView}
-          onHotbarViewChange={setHotbarView}
           selectedMoveId={selectedMoveId}
           onSelectMove={setSelectedMoveId}
           onCopyHotbar={() =>
@@ -320,29 +308,54 @@ export function FullBuildPage({
             }
           />
         )}
-        <ComboSection variant={variant} />
-        <div className="section-actions">
-          <button
-            className="button button--outline"
-            onClick={() =>
-              copy(
-                variant.combos
-                  .map((c) => `${c.name}: ${c.sequence.join(" → ")}`)
-                  .join("\n"),
-                "Routes",
-              )
-            }
-          >
-            <Clipboard size={15} /> Copy routes
-          </button>
-        </div>
+        {hasUtilityData(variant) && <UtilitySection variant={variant} />}
+        {hasStatsData(variant) && (
+          <StatsPlaystyleSection variant={variant} />
+        )}
+        {hasComboData(variant) && (
+          <>
+            <ComboSection variant={variant} />
+            <div className="section-actions">
+              <button
+                className="button button--outline"
+                onClick={() =>
+                  copy(
+                    variant.combos
+                      .map((c) => `${c.name}: ${c.sequence.join(" → ")}`)
+                      .join("\n"),
+                    "Routes",
+                  )
+                }
+              >
+                <Clipboard size={15} /> Copy routes
+              </button>
+            </div>
+          </>
+        )}
+        <BuildAuditPanel variant={variant} legalityIssues={legality.issues} />
+        {(!hasUtilityData(variant) ||
+          !hasStatsData(variant) ||
+          !hasComboData(variant)) && (
+          <section className="build-section research-pending-summary">
+            <h3>Research pending</h3>
+            <p>
+              {[
+                !hasUtilityData(variant) && "tactical utility groupings",
+                !hasStatsData(variant) && "stat allocation and playstyle",
+                !hasComboData(variant) && "combo routes",
+              ]
+                .filter(Boolean)
+                .join(", ")}{" "}
+              have not been documented for this variant yet.
+            </p>
+          </section>
+        )}
         <AlternativesSection
           build={build}
           variant={variant}
           collection={collection}
           onSelectVariant={selectVariant}
         />
-        <BuildAuditPanel variant={variant} legalityIssues={legality.issues} />
         <ResearchEvidenceSection build={build} variant={variant} />
         <button
           className="button button--outline"
@@ -446,6 +459,33 @@ function MoveInspector({
         <MessageCircleWarning size={15} /> Report this mechanic
       </button>
     </aside>
+  );
+}
+
+function hasUtilityData(variant: import("../types").BuildVariant) {
+  return variant.hotbar.some(
+    (s) =>
+      s.ability &&
+      !/^(unresolved|none|not used)/i.test(s.ability.trim()) &&
+      (s.roleTags?.length || !/^general$/i.test(s.comboRole)),
+  );
+}
+
+function hasStatsData(variant: import("../types").BuildVariant) {
+  return (
+    (variant.statsAllocation &&
+      Object.keys(variant.statsAllocation).length > 0) ||
+    variant.neutralGamePlan ||
+    variant.strengths.length > 0 ||
+    variant.weaknesses.length > 0
+  );
+}
+
+function hasComboData(variant: import("../types").BuildVariant) {
+  return (
+    variant.combos.length > 0 ||
+    variant.opener?.length ||
+    variant.mainCombo?.length
   );
 }
 

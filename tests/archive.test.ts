@@ -196,16 +196,16 @@ describe('suggestions, migration and identity', () => {
 })
 
 describe('Shindo identity, assets, and build-quality checks', () => {
-  it('defaults to Ember Crimson and preserves an existing theme preference', () => {
-    expect(defaultArchivePrefs.theme).toBe('ember-crimson')
-    expect(mergeArchivePrefs({ theme: 'chakra-blue', favorites: ['james-lee'] })).toMatchObject({ theme: 'chakra-blue', favorites: ['james-lee'] })
+  it('defaults to Agarthia Crimson and preserves an existing theme preference', () => {
+    expect(defaultArchivePrefs.theme).toBe('agarthia-crimson')
+    expect(mergeArchivePrefs({ theme: 'ember-violet', favorites: ['james-lee'] })).toMatchObject({ theme: 'ember-violet', favorites: ['james-lee'] })
   })
   it('defines all three themes through shared CSS variables', () => {
     const css = readFileSync(resolve('src/index.css'), 'utf8')
-    expect(css).toContain('[data-theme="shindo-green"]')
-    expect(css).toContain('[data-theme="chakra-blue"]')
-    expect(css).toContain('[data-theme="ember-crimson"]')
-    expect(css).toContain('--accent: #72d64b')
+    expect(css).toContain('[data-theme="agarthia-crimson"]')
+    expect(css).toContain('[data-theme="ember-violet"]')
+    expect(css).toContain('[data-theme="midnight-steel"]')
+    expect(css).toContain('--accent: #e06b5c')
   })
   it('has a unique, locally cached direct-asset manifest', () => {
     expect(new Set(shindoAssetManifest.map((entry) => entry.id)).size).toBe(shindoAssetManifest.length)
@@ -358,12 +358,12 @@ describe('build page section architecture', () => {
       expect(source).toContain(name)
     }
   })
-  it('renders a sticky section nav with 12 jump links', () => {
+  it('renders a sticky section nav with 10 jump links', () => {
     const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
     expect(source).toContain('dossier-section-nav')
     expect(source).toContain('scrollIntoView')
     const navIds = ['section-overview', 'section-variants', 'section-bloodlines', 'section-modes',
-      'section-utility', 'section-equipment', 'section-stats', 'section-hotbar',
+      'section-equipment', 'section-hotbar',
       'section-combos', 'section-alternatives', 'section-legality', 'section-research']
     for (const id of navIds) expect(source).toContain(id)
   })
@@ -416,11 +416,11 @@ describe('build page section architecture', () => {
     expect(source).toContain('startViewTransition')
     expect(source).toContain('prefers-reduced-motion')
   })
-  it('preserves hotbar view localStorage persistence', () => {
+  it('tracks build views via onViewed callback and useEffect', () => {
     const source = readFileSync(resolve('src/components/FullBuildPage.tsx'), 'utf8')
-    expect(source).toContain('shindo-build-archive:hotbar-view:v1')
-    expect(source).toContain('readStorage')
-    expect(source).toContain('writeStorage')
+    expect(source).toContain('onViewed')
+    expect(source).toContain('useEffect')
+    expect(source).toContain('build.id')
   })
   it('includes game hotbar preview with accessible text', () => {
     const hotbar = readFileSync(resolve('src/components/GameHotbarPreview.tsx'), 'utf8')

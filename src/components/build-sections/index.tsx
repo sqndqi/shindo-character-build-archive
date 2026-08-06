@@ -6,7 +6,6 @@ import type { BuildQualityIssue } from '../../lib/buildQuality'
 import { auditVariant } from '../../lib/buildQuality'
 import { variantEquipment, variantKenjutsu, inventoryMatch, closestPreparedVariant } from '../../lib/variants'
 import type { HotbarKey } from '../../types/shindoGame'
-import { GameHotbarPreview } from '../GameHotbarPreview'
 import { ShindoIcon } from '../ShindoIcon'
 import { ResearchStatusBadge } from './ResearchStatusBadge'
 import { EmptyResearchState } from './EmptyResearchState'
@@ -630,33 +629,19 @@ function HotbarDossier({
 
 export function HotbarSection({
   variant,
-  hotbarView,
-  onHotbarViewChange,
   selectedMoveId,
   onSelectMove,
   onCopyHotbar,
 }: {
   variant: BuildVariant
-  hotbarView: 'game' | 'technical'
-  onHotbarViewChange: (view: 'game' | 'technical') => void
   selectedMoveId: string | null
   onSelectMove: (id: string | null) => void
   onCopyHotbar: () => void
 }) {
   return (
     <section className="build-section" id="section-hotbar">
-      <div className="hotbar-heading-row">
-        <SectionHeading id="h-hotbar" eyebrow="Section 8" title="Hotbar / Game view" subtitle="Game view follows the owner HUD reference; Technical view preserves canonical archive keys and legality." />
-        <div className="hotbar-view-toggle" role="group" aria-label="Hotbar display mode">
-          <button className={hotbarView === 'game' ? 'is-active' : ''} onClick={() => onHotbarViewChange('game')}>Game view</button>
-          <button className={hotbarView === 'technical' ? 'is-active' : ''} onClick={() => onHotbarViewChange('technical')}>Technical view</button>
-        </div>
-      </div>
-      {hotbarView === 'game' ? (
-        <GameHotbarPreview hotbar={variant.hotbar} selectedMoveId={selectedMoveId} onSelect={onSelectMove} />
-      ) : (
-        <HotbarDossier hotbar={variant.hotbar} selectedMoveId={selectedMoveId} onSelect={onSelectMove} />
-      )}
+      <SectionHeading id="h-hotbar" eyebrow="Section 7" title="Hotbar" subtitle="Canonical archive keys and legality status for each slot." />
+      <HotbarDossier hotbar={variant.hotbar} selectedMoveId={selectedMoveId} onSelect={onSelectMove} />
       <div className="section-actions">
         <button className="button button--outline" onClick={onCopyHotbar}><Clipboard size={15} /> Copy hotbar</button>
       </div>
