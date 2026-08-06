@@ -50,16 +50,26 @@ export interface StatsIssue {
   message: string
 }
 
+export interface ComboKeyIssue {
+  variantId: string
+  comboName: string
+  invalidKey: string
+  severity: ValidationSeverity
+}
+
 export interface BuildValidationReport {
   buildId: string
   slotCounts: SlotCountResult[]
   sourceTrace: SourceTraceResult[][]
   modeConflicts: ModeConflictIssue[][]
+  comboKeyIssues: ComboKeyIssue[][]
   inventedNames: InventedNameIssue[]
   privacyIssues: PrivacyIssue[]
   statsIssues: StatsIssue[][]
   hasBlocker: boolean
 }
+
+export const VALID_HOTBAR_KEY_SET = new Set<string>(['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q'])
 
 // All names invented in the removed abilityNames object in characters.ts.
 const QUARANTINED_NAMES = new Set([
@@ -114,8 +124,14 @@ export function validateSlotCount(variant: BuildVariant): SlotCountResult {
 
 // --- Source traceability ---
 
+// Generic labels that are always accepted without an exact loadout match.
+const GENERIC_SOURCES = new Set([
+  'none', 'sub-ability', 'mode', 'weapon', 'combat art', 'kenjutsu',
+  'c-mode', 'z-mode', 'research pending',
+])
+
 export function validateSourceTraceability(variant: BuildVariant): SourceTraceResult[] {
-  const equippedSources = new Set([
+  const equippedNames = new Set([
     ...variant.bloodlines.map((slot) => normalized(slot.name)),
     ...variant.elements.map((slot) => normalized(slot.name)),
     normalized(variant.cMode),
@@ -124,30 +140,63 @@ export function validateSourceTraceability(variant: BuildVariant): SourceTraceRe
     normalized(variant.kenjutsu ?? 'none'),
     normalized(variant.combatArt),
     normalized(variant.ninjaTool),
-    // Generic source labels always accepted
-    'none', 'sub-ability', 'mode', 'weapon', 'combat art', 'kenjutsu',
-    'c-mode', 'z-mode', 'research pending',
   ])
 
   return variant.hotbar.map((slot) => {
     const key = slot.key as HotbarKey
+
     if (isUnresolved(slot.ability)) {
       return { key, ability: slot.ability, source: slot.source, traceable: true, reason: 'Unresolved slot — traceability deferred to research phase.' }
     }
-    const src = normalized(slot.source).replace(/\s+mode$/, '')
-    const traceable = [...equippedSources].some(
-      (equipped) => src === equipped || src.includes(equipped) || equipped.includes(src),
-    )
+
+    const normSource = normalized(slot.source).replace(/\s+mode$/, '')
+
+    if (GENERIC_SOURCES.has(normSource)) {
+      return { key, ability: slot.ability, source: slot.source, traceable: true, reason: 'Generic source label accepted.' }
+    }
+
+    const isVerified = slot.researchStatus === 'verified' || slot.researchStatus === 'owner-confirmed'
+
+    if (isVerified) {
+      if (!slot.sourceId) {
+        return {
+          key, ability: slot.ability, source: slot.source, traceable: false,
+          reason: `Verified slot "${slot.ability}" is missing sourceId. Verified slots require an explicit sourceId matching the exact equipped bloodline, element, or mode name.`,
+        }
+      }
+      const normId = normalized(slot.sourceId)
+      const traceable = equippedNames.has(normId)
+      return {
+        key, ability: slot.ability, source: slot.source, traceable,
+        reason: traceable
+          ? `sourceId "${slot.sourceId}" confirmed in equipped loadout.`
+          : `sourceId "${slot.sourceId}" not found in equipped loadout. Partial or family names (e.g., "Raion" vs "Raion-Gaiden") are not accepted — use the full equipped name.`,
+      }
+    }
+
+    // Non-verified resolved slot: exact normalized match only (no substring).
+    const traceable = equippedNames.has(normSource)
     return {
-      key,
-      ability: slot.ability,
-      source: slot.source,
-      traceable,
+      key, ability: slot.ability, source: slot.source, traceable,
       reason: traceable
-        ? 'Source found in equipped loadout.'
-        : `"${slot.source}" is not among equipped bloodlines, elements, modes, weapon, or combat art for this variant.`,
+        ? 'Source exactly matched in equipped loadout.'
+        : `"${slot.source}" not found in equipped loadout (exact match required). Partial or family names (e.g., "Raion" vs "Raion-Gaiden") are not accepted.`,
     }
   })
+}
+
+// --- Combo key validation ---
+
+export function validateComboKeys(variant: BuildVariant): ComboKeyIssue[] {
+  const issues: ComboKeyIssue[] = []
+  for (const combo of variant.combos) {
+    for (const key of combo.sequence as string[]) {
+      if (!VALID_HOTBAR_KEY_SET.has(key)) {
+        issues.push({ variantId: variant.id, comboName: combo.name, invalidKey: key, severity: 'Major' })
+      }
+    }
+  }
+  return issues
 }
 
 // --- Mode conflicts ---
@@ -263,6 +312,7 @@ export function runBuildValidation(build: CharacterBuild): BuildValidationReport
   const slotCounts = build.variants.map(validateSlotCount)
   const sourceTrace = build.variants.map(validateSourceTraceability)
   const modeConflicts = build.variants.map(validateModeConflicts)
+  const comboKeyIssues = build.variants.map(validateComboKeys)
   const statsIssues = build.variants.map(validateStatsAllocation)
   const inventedNames = validateInventedNames(build)
   const privacyIssues = validatePremiumPrivacy(build)
@@ -271,9 +321,10 @@ export function runBuildValidation(build: CharacterBuild): BuildValidationReport
     slotCounts.some((r) => !r.bloodlines.valid || !r.elements.valid) ||
     sourceTrace.some((r) => r.some((slot) => !slot.traceable)) ||
     modeConflicts.some((r) => r.some((issue) => issue.severity === 'Critical')) ||
+    comboKeyIssues.some((r) => r.some((issue) => issue.severity === 'Critical' || issue.severity === 'Major')) ||
     statsIssues.some((r) => r.some((issue) => issue.severity === 'Critical' || issue.severity === 'Major')) ||
     inventedNames.some((issue) => issue.severity === 'Critical') ||
     privacyIssues.some((issue) => issue.severity === 'Critical')
 
-  return { buildId: build.id, slotCounts, sourceTrace, modeConflicts, inventedNames, privacyIssues, statsIssues, hasBlocker }
+  return { buildId: build.id, slotCounts, sourceTrace, modeConflicts, comboKeyIssues, inventedNames, privacyIssues, statsIssues, hasBlocker }
 }

@@ -40,10 +40,16 @@ export interface FidelityScores {
 }
 
 export interface BloodlineSlot {
-  id: string
+  id?: string
   name: string
   purpose: string
   useMode: boolean
+  exactMovesUsed?: string[]
+  reason?: string
+  represents?: string
+  replacements?: { lore: string[]; competitive: string[]; accessible: string[] }
+  evidence?: string[]
+  verificationStatus?: 'verified' | 'needs-research' | 'unresolved'
 }
 
 export type HotbarRoleTag =
@@ -94,11 +100,12 @@ export interface HotbarSlot {
   roleTags?: HotbarRoleTag[]
   researchStatus?: SlotResearchStatus
   evidenceNote?: string
+  sourceId?: string
 }
 
 export interface Combo {
   name: string
-  sequence: string[]
+  sequence: HotbarKey[]
   explanation: string
 }
 
@@ -117,15 +124,7 @@ export interface BuildVariant {
   type: 'Primary' | 'Lore Accurate' | 'Competitive' | 'Beginner' | 'Owned Items' | 'Two Slot' | 'Three Slot' | 'Four Slot'
   bloodlineSlotCount: 2 | 3 | 4
   elementSlotCount: 2 | 3 | 4
-  bloodlines: {
-    name: string
-    purpose: string
-    exactMovesUsed: string[]
-    useMode: boolean
-    reason: string
-    represents: string
-    replacements: { lore: string[]; competitive: string[]; accessible: string[] }
-  }[]
+  bloodlines: BloodlineSlot[]
   elements: ElementSlot[]
   cMode: string
   zMode: string

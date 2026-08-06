@@ -447,7 +447,8 @@ import {
   validatePremiumPrivacy,
   runBuildValidation,
 } from '../src/data/buildValidation'
-import { getElementSlots, normalizeBuildElements, isElementSlot } from '../src/data/buildMigration'
+import { getElementSlots, normalizeBuildElements, isElementSlot, migrateComboSequence, migrateBloodlineSlot } from '../src/data/buildMigration'
+import { validateComboKeys } from '../src/data/buildValidation'
 import type { BuildVariant, CharacterBuild } from '../src/types'
 
 // Regression: hotfix for crash — signed-out archive must always produce arrays,
@@ -788,6 +789,156 @@ describe('Phase B: schema validation and legality auditing', () => {
       build.variants[0].bloodlineSlotCount = 2
       build.variants[0].bloodlines = [...build.variants[0].bloodlines, { name: 'Overflow', purpose: '', exactMovesUsed: [], useMode: false, reason: '', represents: '', replacements: { lore: [], competitive: [], accessible: [] } }]
       expect(runBuildValidation(build).hasBlocker).toBe(true)
+    })
+
+    it('report includes comboKeyIssues per variant', () => {
+      const build = baseBuild()
+      const report = runBuildValidation(build)
+      expect(Array.isArray(report.comboKeyIssues)).toBe(true)
+      expect(report.comboKeyIssues).toHaveLength(build.variants.length)
+    })
+  })
+
+  describe('hardening: combo key validation', () => {
+    it('returns no issues for a variant with no combos', () => {
+      const variant = baseVariant()
+      variant.combos = []
+      expect(validateComboKeys(variant)).toHaveLength(0)
+    })
+
+    it('returns no issues when all combo keys are valid HotbarKeys', () => {
+      const variant = baseVariant()
+      variant.combos = [
+        { name: 'Standard', sequence: ['1', '2', 'V', 'B', 'C'], explanation: 'All valid.' },
+        { name: 'Mode combo', sequence: ['C', 'Z', 'N', 'T', 'Q'], explanation: 'Also valid.' },
+      ]
+      expect(validateComboKeys(variant)).toHaveLength(0)
+    })
+
+    it('flags invalid keys like X or 6 with Major severity', () => {
+      const variant = baseVariant()
+      variant.combos = [{ name: 'Bad combo', sequence: ['1', 'X' as '1', '6' as '1'], explanation: 'Has invalid keys.' }]
+      const issues = validateComboKeys(variant)
+      expect(issues).toHaveLength(2)
+      expect(issues.every((i) => i.severity === 'Major')).toBe(true)
+      expect(issues.map((i) => i.invalidKey)).toEqual(expect.arrayContaining(['X', '6']))
+    })
+
+    it('hasBlocker is true when a variant has invalid combo keys', () => {
+      const build = baseBuild()
+      build.variants[0].combos = [{ name: 'Invalid', sequence: ['X' as '1'], explanation: 'Bad key.' }]
+      expect(runBuildValidation(build).hasBlocker).toBe(true)
+    })
+  })
+
+  describe('hardening: migrateComboSequence', () => {
+    it('accepts all 12 valid HotbarKey values', () => {
+      const all = ['1', '2', '3', '4', '5', 'T', 'V', 'B', 'N', 'C', 'Z', 'Q']
+      const { valid, invalid } = migrateComboSequence(all)
+      expect(valid).toHaveLength(12)
+      expect(invalid).toHaveLength(0)
+    })
+
+    it('separates invalid keys from a mixed input', () => {
+      const { valid, invalid } = migrateComboSequence(['1', 'X', '2', 'M', 'Q'])
+      expect(valid).toEqual(['1', '2', 'Q'])
+      expect(invalid).toEqual(['X', 'M'])
+    })
+
+    it('returns empty valid array for all-invalid input', () => {
+      const { valid, invalid } = migrateComboSequence(['A', 'P', '9'])
+      expect(valid).toHaveLength(0)
+      expect(invalid).toEqual(['A', 'P', '9'])
+    })
+  })
+
+  describe('hardening: exact source traceability', () => {
+    it('Raion as source does not match Raion-Gaiden as equipped bloodline', () => {
+      const variant = baseVariant()
+      variant.bloodlines = [{ name: 'Raion-Gaiden', purpose: '', useMode: true }]
+      variant.hotbar[0] = { ...variant.hotbar[0], ability: 'Raion Strike', source: 'Raion', researchStatus: 'needs-retesting' }
+      const results = validateSourceTraceability(variant)
+      expect(results[0].traceable).toBe(false)
+      expect(results[0].reason).toContain('Raion-Gaiden')
+    })
+
+    it('Raion-Gaiden as source exactly matches Raion-Gaiden as equipped bloodline', () => {
+      const variant = baseVariant()
+      variant.bloodlines = [{ name: 'Raion-Gaiden', purpose: '', useMode: true }]
+      variant.hotbar[0] = { ...variant.hotbar[0], ability: 'Raion Strike', source: 'Raion-Gaiden', researchStatus: 'needs-retesting' }
+      const results = validateSourceTraceability(variant)
+      expect(results[0].traceable).toBe(true)
+    })
+
+    it('verified slot with sourceId exactly matching equipped bloodline passes', () => {
+      const variant = baseVariant()
+      variant.bloodlines = [{ name: 'Narumaki-Ruby', purpose: '', useMode: true }]
+      variant.hotbar[0] = { ...variant.hotbar[0], ability: 'Ruby Slash', source: 'Narumaki-Ruby', sourceId: 'Narumaki-Ruby', researchStatus: 'verified' }
+      const results = validateSourceTraceability(variant)
+      expect(results[0].traceable).toBe(true)
+    })
+
+    it('verified slot without sourceId is flagged as untraceable', () => {
+      const variant = baseVariant()
+      variant.bloodlines = [{ name: 'Narumaki-Ruby', purpose: '', useMode: true }]
+      variant.hotbar[0] = { ...variant.hotbar[0], ability: 'Ruby Slash', source: 'Narumaki-Ruby', researchStatus: 'verified' }
+      delete (variant.hotbar[0] as unknown as Record<string, unknown>).sourceId
+      const results = validateSourceTraceability(variant)
+      expect(results[0].traceable).toBe(false)
+      expect(results[0].reason).toContain('missing sourceId')
+    })
+
+    it('verified slot whose sourceId is a family prefix (Raion vs Raion-Gaiden) is flagged', () => {
+      const variant = baseVariant()
+      variant.bloodlines = [{ name: 'Raion-Gaiden', purpose: '', useMode: true }]
+      variant.hotbar[0] = { ...variant.hotbar[0], ability: 'Raion Move', source: 'Raion-Gaiden', sourceId: 'Raion', researchStatus: 'verified' }
+      const results = validateSourceTraceability(variant)
+      expect(results[0].traceable).toBe(false)
+      expect(results[0].reason).toMatch(/Raion.*Raion-Gaiden|Raion-Gaiden.*Raion/)
+    })
+
+    it('unresolved slots always pass regardless of source string', () => {
+      const variant = baseVariant()
+      variant.bloodlines = [{ name: 'Narumaki', purpose: '', useMode: true }]
+      variant.hotbar[0] = { ...variant.hotbar[0], ability: 'Unresolved — research required', source: 'SourceThatDoesNotExist' }
+      const results = validateSourceTraceability(variant)
+      expect(results[0].traceable).toBe(true)
+    })
+  })
+
+  describe('hardening: migrateBloodlineSlot', () => {
+    it('coerces a minimal slot with only required fields', () => {
+      const slot = migrateBloodlineSlot({ name: 'Raion', purpose: 'Speed', useMode: true })
+      expect(slot.name).toBe('Raion')
+      expect(slot.purpose).toBe('Speed')
+      expect(slot.useMode).toBe(true)
+      expect(slot.exactMovesUsed).toEqual([])
+      expect(slot.id).toBeUndefined()
+      expect(slot.verificationStatus).toBeUndefined()
+    })
+
+    it('preserves exact moves, replacements, and verificationStatus when present', () => {
+      const input = {
+        name: 'Narumaki-Ruby',
+        purpose: 'Lore match',
+        useMode: false,
+        exactMovesUsed: ['Ruby Slash', 'Ruby Storm'],
+        reason: 'Canonical lore technique.',
+        represents: 'Naruto bloodline upgrade',
+        replacements: { lore: ['Narumaki'], competitive: [], accessible: ['Getsuga'] },
+        evidence: ['Chapter 72 panel 3'],
+        verificationStatus: 'verified',
+      }
+      const slot = migrateBloodlineSlot(input)
+      expect(slot.exactMovesUsed).toEqual(['Ruby Slash', 'Ruby Storm'])
+      expect(slot.replacements?.lore).toEqual(['Narumaki'])
+      expect(slot.evidence).toEqual(['Chapter 72 panel 3'])
+      expect(slot.verificationStatus).toBe('verified')
+    })
+
+    it('rejects an invalid verificationStatus and leaves it undefined', () => {
+      const slot = migrateBloodlineSlot({ name: 'X', purpose: '', useMode: false, verificationStatus: 'published' })
+      expect(slot.verificationStatus).toBeUndefined()
     })
   })
 })

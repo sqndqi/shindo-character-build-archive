@@ -159,14 +159,14 @@ export function BloodlineElementsSection({ variant }: { variant: BuildVariant })
               <div><dt>Represents</dt><dd>{bl.represents || 'Not specified'}</dd></div>
               <div><dt>Mode</dt><dd>{bl.useMode ? 'Yes' : 'No'}</dd></div>
             </dl>
-            {bl.exactMovesUsed.length > 0 && (
+            {(bl.exactMovesUsed ?? []).length > 0 && (
               <>
                 <h4>Selected moves</h4>
-                <ul>{bl.exactMovesUsed.map((m) => <li key={m}>{m}</li>)}</ul>
+                <ul>{(bl.exactMovesUsed ?? []).map((m) => <li key={m}>{m}</li>)}</ul>
               </>
             )}
             {bl.reason && <p className="ability-slot__replacement">{bl.reason}</p>}
-            {(bl.replacements.lore.length > 0 || bl.replacements.competitive.length > 0 || bl.replacements.accessible.length > 0) && (
+            {bl.replacements && (bl.replacements.lore.length > 0 || bl.replacements.competitive.length > 0 || bl.replacements.accessible.length > 0) && (
               <>
                 <h4>Alternatives</h4>
                 {bl.replacements.lore.length > 0 && <p>Lore: {bl.replacements.lore.join(', ')}</p>}

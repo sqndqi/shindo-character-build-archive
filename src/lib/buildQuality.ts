@@ -58,7 +58,7 @@ export function auditVariant(variant: BuildVariant): BuildQualityIssue[] {
   for (const duplicate of findBloodlineFamilyDuplicates(variant)) {
     const documented = duplicate.bloodlines.every((name) => {
       const slot = variant.bloodlines.find((item) => item.name === name)
-      return Boolean(slot?.exactMovesUsed.length && slot.reason && slot.represents)
+      return Boolean(slot?.exactMovesUsed?.length && slot.reason && slot.represents)
     })
     push(
       `bloodline-family-${duplicate.family}`,

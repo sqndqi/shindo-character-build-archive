@@ -27,7 +27,7 @@ export function createConservativeProfile(variant: BuildVariant): PreparedHotbar
 
   const bloodlineMoves = uniqueMoves([
     ...current.filter((move) => move.sourceType === 'Bloodline' && variant.bloodlines.some((bloodline) => bloodline.name === move.sourceName)),
-    ...variant.bloodlines.flatMap((bloodline) => bloodline.exactMovesUsed.map((name) => findShindoMove(bloodline.name, name))).filter(isMove),
+    ...variant.bloodlines.flatMap((bloodline) => (bloodline.exactMovesUsed ?? []).map((name) => findShindoMove(bloodline.name, name))).filter(isMove),
   ]).slice(0, 3)
 
   const cMode = modeMove(variant.cMode, 'C')
@@ -70,7 +70,7 @@ function applyProfile(variant: BuildVariant): BuildVariant {
   const hotbar = HOTBAR_KEYS.map((key) => materializeSlot(variant, key, profile.slots[key], previousByMove))
   const activeKeys = new Set(hotbar.filter((slot) => slot.sourceType !== 'None').map((slot) => slot.key))
   const combos = variant.combos
-    .map((combo) => ({ ...combo, sequence: combo.sequence.filter((key) => activeKeys.has(key as import('../types/shindoGame').HotbarKey)) }))
+    .map((combo) => ({ ...combo, sequence: combo.sequence.filter((key) => activeKeys.has(key)) }))
     .filter((combo) => combo.sequence.length >= 2)
     .filter((combo) => combo.sequence.join('') !== '12345')
     .map((combo) => ({
