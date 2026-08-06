@@ -3,11 +3,13 @@ import { createHash, randomBytes, timingSafeEqual } from 'crypto'
 import { z } from 'zod'
 import { query, withTransaction, auditLog } from '../db/index'
 import { requireAuth } from '../middleware/auth'
+import { redeemRateLimit } from '../middleware/rateLimit'
 import { buildAccessState } from './auth'
 import type { EntitlementSummary, OrderSummary } from '../types'
 
 const router = Router()
 
+router.use('/redeem', redeemRateLimit)
 router.use(requireAuth)
 
 // ------------------------------------------------------------------ GET /entitlements

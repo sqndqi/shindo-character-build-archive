@@ -2,6 +2,7 @@ import { Router } from 'express'
 import { z } from 'zod'
 import { query, withTransaction, auditLog } from '../db/index'
 import { requireOwner } from '../middleware/auth'
+import { adminMutationRateLimit } from '../middleware/rateLimit'
 import { generateRedemptionCode } from './account'
 
 const router = Router()
@@ -94,7 +95,7 @@ router.get('/users/:id', async (req, res) => {
   }
 })
 
-router.post('/users/:id/suspend', async (req, res) => {
+router.post('/users/:id/suspend', adminMutationRateLimit, async (req, res) => {
   const actorId = req.session.userId!
   try {
     await withTransaction(async (client) => {
@@ -117,7 +118,7 @@ router.post('/users/:id/suspend', async (req, res) => {
   }
 })
 
-router.post('/users/:id/reactivate', async (req, res) => {
+router.post('/users/:id/reactivate', adminMutationRateLimit, async (req, res) => {
   const actorId = req.session.userId!
   try {
     await withTransaction(async (client) => {
@@ -152,7 +153,7 @@ const grantSchema = z.object({
   expiresAt: z.string().optional(),
 })
 
-router.post('/users/:id/entitlements', async (req, res) => {
+router.post('/users/:id/entitlements', adminMutationRateLimit, async (req, res) => {
   const parse = grantSchema.safeParse(req.body)
   if (!parse.success) {
     res.status(400).json({ error: parse.error.issues[0]?.message ?? 'Invalid input.' })
@@ -185,7 +186,7 @@ router.post('/users/:id/entitlements', async (req, res) => {
   }
 })
 
-router.delete('/entitlements/:id', async (req, res) => {
+router.delete('/entitlements/:id', adminMutationRateLimit, async (req, res) => {
   const actorId = req.session.userId!
   try {
     await withTransaction(async (client) => {
@@ -234,7 +235,7 @@ router.get('/products', async (_req, res) => {
   }
 })
 
-router.post('/products', async (req, res) => {
+router.post('/products', adminMutationRateLimit, async (req, res) => {
   const parse = productSchema.safeParse(req.body)
   if (!parse.success) {
     res.status(400).json({ error: parse.error.issues[0]?.message ?? 'Invalid input.' })
@@ -256,7 +257,7 @@ router.post('/products', async (req, res) => {
   }
 })
 
-router.patch('/products/:id', async (req, res) => {
+router.patch('/products/:id', adminMutationRateLimit, async (req, res) => {
   const parse = productSchema.partial().safeParse(req.body)
   if (!parse.success) {
     res.status(400).json({ error: parse.error.issues[0]?.message ?? 'Invalid input.' })
@@ -309,7 +310,7 @@ router.get('/payments', async (req, res) => {
   }
 })
 
-router.post('/payments/:id/reconcile', async (req, res) => {
+router.post('/payments/:id/reconcile', adminMutationRateLimit, async (req, res) => {
   const actorId = req.session.userId!
   const orderId = req.params.id
   try {
@@ -391,7 +392,7 @@ router.get('/codes', async (_req, res) => {
   }
 })
 
-router.post('/codes', async (req, res) => {
+router.post('/codes', adminMutationRateLimit, async (req, res) => {
   const parse = codeSchema.safeParse(req.body)
   if (!parse.success) {
     res.status(400).json({ error: parse.error.issues[0]?.message ?? 'Invalid input.' })
@@ -418,7 +419,7 @@ router.post('/codes', async (req, res) => {
   }
 })
 
-router.post('/codes/:id/deactivate', async (req, res) => {
+router.post('/codes/:id/deactivate', adminMutationRateLimit, async (req, res) => {
   const actorId = req.session.userId!
   try {
     await withTransaction(async (client) => {

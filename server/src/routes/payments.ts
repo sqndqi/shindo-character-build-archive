@@ -1,9 +1,11 @@
 import { Router } from 'express'
 import { query, auditLog } from '../db/index'
 import { requireAuth } from '../middleware/auth'
+import { checkoutRateLimit } from '../middleware/rateLimit'
 
 const router = Router()
 
+router.use('/checkout', checkoutRateLimit)
 router.use(requireAuth)
 
 // ------------------------------------------------------------------ GET /orders/:id

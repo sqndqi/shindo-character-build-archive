@@ -3,7 +3,7 @@ import bcrypt from 'bcryptjs'
 import { randomBytes } from 'crypto'
 import { z } from 'zod'
 import { query, withTransaction, auditLog } from '../db/index'
-import { loginRateLimit } from '../middleware/rateLimit'
+import { loginRateLimit, signupRateLimit } from '../middleware/rateLimit'
 import { FREE_CHARACTER_IDS, type ArchiveAccessState, type UserRole } from '../types'
 
 const router = Router()
@@ -215,7 +215,7 @@ router.get('/me', async (req, res) => {
 
 // ------------------------------------------------------------------ POST /signup
 
-router.post('/signup', async (req, res) => {
+router.post('/signup', signupRateLimit, async (req, res) => {
   if (!dbAvailable()) {
     res.status(403).json({ error: 'Account creation is not available in this environment.' })
     return

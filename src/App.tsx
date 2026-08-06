@@ -25,7 +25,8 @@ import {
 } from "lucide-react";
 import { DiscordLink, RobloxGroupLink } from "./components/CommunityLinks";
 import { DonationBar } from "./components/DonationBar";
-import { AUTH_ENABLED, PAYMENTS_ENABLED } from "./config/monetization";
+import { AUTH_ENABLED, PAYMENTS_ENABLED } from "./config/monetization"
+import { getAccessState, archiveAccountApiConfigured } from "./repositories/ArchiveAccessRepository";
 
 import type { CharacterBuild } from "./types";
 import {
@@ -65,6 +66,7 @@ const TierListBoard = lazy(() =>
 const ArchiveWorkshop = lazy(() => import("./components/ArchiveWorkshop"));
 const SuggestionsPage = lazy(() => import("./components/SuggestionsPage"));
 const AccountPages = lazy(() => import("./components/AccountPages"));
+const AdminPage = lazy(() => import("./components/AdminPage"));
 const SeriesHub = lazy(() => import("./components/SeriesHub"));
 const CharacterPackPicker = lazy(
   () => import("./components/CharacterPackPicker"),
@@ -82,6 +84,7 @@ type View =
   | "suggestions"
   | "packs"
   | "account"
+  | "admin"
   | "diagnostics";
 const emptyFilters = {
   media: "",
@@ -175,9 +178,14 @@ export default function App() {
   } = useBloodlineCollection();
   const tiers = useTierLists();
   const [view, setView] = useState<View>("builds");
+  const [authRole, setAuthRole] = useState<"owner" | "user" | null>(null);
+  useEffect(() => {
+    if (!archiveAccountApiConfigured) return
+    getAccessState().then((s) => { if (s.status === 'signed-in') setAuthRole(s.role) }).catch(() => undefined)
+  }, [])
   const accountPage = new URLSearchParams(window.location.search).get(
     "account",
-  ) as "signin" | "signup" | "account" | "premium" | null;
+  ) as "signin" | "signup" | "account" | null;
   const seriesPage = new URLSearchParams(window.location.search).get("series");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -456,6 +464,7 @@ export default function App() {
     ["suggestions", "Suggestions"],
   ];
   if (PAYMENTS_ENABLED) nav.push(["packs", "Character Packs"]);
+  if (authRole === "owner") nav.push(["admin", "Admin"]);
   if (import.meta.env.DEV) nav.push(["diagnostics", "Diagnostics"]);
   const activeFilterCount = Object.entries(filters).filter(
     ([key, value]) => key !== "sort" && value,
@@ -651,7 +660,10 @@ export default function App() {
           <Suspense
             fallback={<main className="loading-page">Loading account…</main>}
           >
-            <AccountPages initialPage={accountPage ?? "signin"} />
+            <AccountPages
+              initialPage={accountPage ?? "signin"}
+              onNavigateAdmin={() => { setAuthRole("owner"); navigate("admin"); }}
+            />
           </Suspense>
         ) : (
           <main className="account-page">
@@ -735,6 +747,17 @@ export default function App() {
             </div>
           )}
         </main>
+      ) : view === "admin" ? (
+        AUTH_ENABLED ? (
+          <Suspense fallback={<main className="loading-page">Loading admin…</main>}>
+            <AdminPage onBack={() => navigate("account")} />
+          </Suspense>
+        ) : (
+          <main className="empty-state">
+            <h2>Admin not available</h2>
+            <button className="button button--primary" onClick={() => navigate("builds")}>Back</button>
+          </main>
+        )
       ) : view === "diagnostics" && import.meta.env.DEV && DiagnosticsPage ? (
         <Suspense
           fallback={<main className="loading-page">Loading diagnostics…</main>}
