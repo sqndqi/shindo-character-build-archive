@@ -81,8 +81,8 @@ export async function runOwnerSeed(): Promise<SeedResult> {
       )
       await client.query(
         `INSERT INTO audit_logs (actor_user_id, action, target_type, target_id, metadata)
-         VALUES ($1, 'owner_seed_entitlement_created', 'user', $1, '{"source":"owner-seed"}')`,
-        [userId],
+         VALUES ($1, 'owner_seed_entitlement_created', 'user', $2, '{"source":"owner-seed"}')`,
+        [userId, userId],
       )
       entitlementAction = 'created'
     } else {
