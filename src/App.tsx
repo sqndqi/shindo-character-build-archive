@@ -25,7 +25,8 @@ import {
 } from "lucide-react";
 import { DiscordLink, RobloxGroupLink } from "./components/CommunityLinks";
 import { DonationBar } from "./components/DonationBar";
-import { AUTH_ENABLED, PAYMENTS_ENABLED } from "./config/monetization";
+import { AUTH_ENABLED } from "./config/monetization"
+import { getAccessState, archiveAccountApiConfigured } from "./repositories/ArchiveAccessRepository";
 
 import type { CharacterBuild } from "./types";
 import {
@@ -65,10 +66,9 @@ const TierListBoard = lazy(() =>
 const ArchiveWorkshop = lazy(() => import("./components/ArchiveWorkshop"));
 const SuggestionsPage = lazy(() => import("./components/SuggestionsPage"));
 const AccountPages = lazy(() => import("./components/AccountPages"));
+const AdminPage = lazy(() => import("./components/AdminPage"));
 const SeriesHub = lazy(() => import("./components/SeriesHub"));
-const CharacterPackPicker = lazy(
-  () => import("./components/CharacterPackPicker"),
-);
+const PremiumPage = lazy(() => import("./components/PremiumPage"));
 const DiagnosticsPage = import.meta.env.DEV
   ? lazy(() => import("./components/DiagnosticsPage"))
   : null;
@@ -80,8 +80,9 @@ type View =
   | "inventory"
   | "compare"
   | "suggestions"
-  | "packs"
+  | "premium"
   | "account"
+  | "admin"
   | "diagnostics";
 const emptyFilters = {
   media: "",
@@ -149,15 +150,6 @@ function withViewTransition(update: () => void) {
 
 export default function App() {
   const [builds, setBuilds] = useState<ArchiveBuildRecord[]>([]);
-  const [ownedCharacterIds, setOwnedCharacterIds] = useState<string[]>([]);
-  const [selectedPackIds, setSelectedPackIds] = useState<string[]>(() =>
-    Object.keys(
-      readStorage<{ selections?: Record<string, string> }>(
-        "shindo-build-archive:character-pack-draft:v1",
-        {},
-      ).selections ?? {},
-    ),
-  );
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState("");
   const { prefs, toggleFavorite, setPageSize, setMetaBias, setTheme } =
@@ -175,9 +167,14 @@ export default function App() {
   } = useBloodlineCollection();
   const tiers = useTierLists();
   const [view, setView] = useState<View>("builds");
+  const [authRole, setAuthRole] = useState<"owner" | "user" | null>(null);
+  useEffect(() => {
+    if (!archiveAccountApiConfigured) return
+    getAccessState().then((s) => { if (s.status === 'signed-in') setAuthRole(s.role) }).catch(() => undefined)
+  }, [])
   const accountPage = new URLSearchParams(window.location.search).get(
     "account",
-  ) as "signin" | "signup" | "account" | "premium" | null;
+  ) as "signin" | "signup" | "account" | null;
   const seriesPage = new URLSearchParams(window.location.search).get("series");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -215,16 +212,13 @@ export default function App() {
       buildRepository.listAccess(),
     ])
       .then(async ([previews, access]) => {
-        setOwnedCharacterIds(access.characterIds);
         const records = await Promise.all(
           previews.map(async (preview) => {
             const accessState = preview.free
               ? "Free"
               : access.fullArchive || access.characterIds.includes(preview.id)
                 ? "Owned"
-                : selectedPackIds.includes(preview.id)
-                  ? "Selected"
-                  : "Locked";
+                : "Locked";
             if (accessState === "Free" || accessState === "Owned") {
               try {
                 const full = await buildRepository.getBuild(preview.id);
@@ -252,22 +246,8 @@ export default function App() {
         ),
       )
       .finally(() => setLoading(false));
-    // Access is intentionally loaded once; local pack selections are applied below.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  useEffect(() => {
-    const selectedIds = new Set(selectedPackIds);
-    setBuilds((current) =>
-      current.map((build) => {
-        if (build.accessState === "Free" || build.accessState === "Owned")
-          return build;
-        const accessState = selectedIds.has(build.id) ? "Selected" : "Locked";
-        return accessState === build.accessState
-          ? build
-          : { ...build, accessState };
-      }),
-    );
-  }, [selectedPackIds]);
   useEffect(() => {
     const onPopState = () => setBuildRoute(readBuildRoute());
     addEventListener("popstate", onPopState);
@@ -455,7 +435,9 @@ export default function App() {
     ["compare", "Compare"],
     ["suggestions", "Suggestions"],
   ];
-  if (PAYMENTS_ENABLED) nav.push(["packs", "Character Packs"]);
+  nav.push(["premium", "Premium"]);
+  if (AUTH_ENABLED) nav.push(["account", authRole ? "Account" : "Sign In"]);
+  if (authRole === "owner") nav.push(["admin", "Admin"]);
   if (import.meta.env.DEV) nav.push(["diagnostics", "Diagnostics"]);
   const activeFilterCount = Object.entries(filters).filter(
     ([key, value]) => key !== "sort" && value,
@@ -554,7 +536,7 @@ export default function App() {
         <LockedBuildPage
           build={routedBuild}
           onBack={closeFullBuild}
-          onUnlock={() => navigate("packs")}
+          onUnlock={() => navigate("premium")}
         />
       ) : buildRoute && routedBuild ? (
         <FullBuildPage
@@ -651,7 +633,10 @@ export default function App() {
           <Suspense
             fallback={<main className="loading-page">Loading account…</main>}
           >
-            <AccountPages initialPage={accountPage ?? "signin"} />
+            <AccountPages
+              initialPage={accountPage ?? "signin"}
+              onNavigateAdmin={() => { setAuthRole("owner"); navigate("admin"); }}
+            />
           </Suspense>
         ) : (
           <main className="account-page">
@@ -680,17 +665,13 @@ export default function App() {
             </section>
           </main>
         )
-      ) : view === "packs" ? (
+      ) : view === "premium" ? (
         <Suspense
           fallback={
-            <main className="loading-page">Loading character packs…</main>
+            <main className="loading-page">Loading premium…</main>
           }
         >
-          <CharacterPackPicker
-            builds={builds}
-            ownedIds={ownedCharacterIds}
-            onDraftChange={setSelectedPackIds}
-          />
+          <PremiumPage onNavigateAccount={() => navigate("account")} />
         </Suspense>
       ) : seriesPage ? (
         <Suspense
@@ -735,6 +716,17 @@ export default function App() {
             </div>
           )}
         </main>
+      ) : view === "admin" ? (
+        AUTH_ENABLED ? (
+          <Suspense fallback={<main className="loading-page">Loading admin…</main>}>
+            <AdminPage onBack={() => navigate("account")} />
+          </Suspense>
+        ) : (
+          <main className="empty-state">
+            <h2>Admin not available</h2>
+            <button className="button button--primary" onClick={() => navigate("builds")}>Back</button>
+          </main>
+        )
       ) : view === "diagnostics" && import.meta.env.DEV && DiagnosticsPage ? (
         <Suspense
           fallback={<main className="loading-page">Loading diagnostics…</main>}
@@ -771,24 +763,11 @@ export default function App() {
               </div>
             </div>
             <div className="archive-compact-header__cards">
-              <div className="premium-plus-card">
-                <div className="premium-plus-card__header">
-                  <Sparkles size={14} aria-hidden="true" />
-                  <strong>Premium+</strong>
-                  <span className="coming-soon-badge">Coming Soon</span>
-                </div>
-                <p>
-                  Additional benefits, clothing IDs, and pricing will be
-                  provided by the owner before launch.
-                </p>
-              </div>
-              <div className="accounts-later-card">
-                <span>Accounts coming later</span>
-                <p>
-                  Owner login, entitlements, and character packs are in
-                  development.
-                </p>
-              </div>
+              <button className="premium-cta-card" onClick={() => navigate("premium")}>
+                <Sparkles size={14} aria-hidden="true" />
+                <strong>Premium builds available</strong>
+                <span>Unlock researched character loadouts with a crypto-powered account.</span>
+              </button>
             </div>
           </section>
           <section className="controls-shell">
