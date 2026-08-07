@@ -24,6 +24,13 @@ interface CookieOverrides {
 export function createApp(cookieOverrides?: CookieOverrides) {
   const isProd = process.env.NODE_ENV === 'production'
 
+  if (isProd && !process.env.DATABASE_URL) {
+    throw new Error('[server] DATABASE_URL is required in production. Set it before starting.')
+  }
+  if (!process.env.DATABASE_URL && process.env.NODE_ENV !== 'test') {
+    console.warn('[server] WARNING: DATABASE_URL not set — using in-memory session store. Sessions will not persist. Not suitable for production.')
+  }
+
   const allowedOrigins: string[] = [
     process.env.FRONTEND_ORIGIN,
     ...(!isProd ? ['http://localhost:5173', 'http://localhost:4173', 'http://127.0.0.1:5173'] : []),

@@ -122,8 +122,8 @@ router.post('/checkout', async (req, res) => {
         order_id: orderId,
         order_description: product.name,
         ipn_callback_url: `${backendUrl}/v1/webhooks/nowpayments`,
-        success_url: `${frontendUrl}/#account`,
-        cancel_url: `${frontendUrl}/#account`,
+        success_url: `${frontendUrl}/?account=account`,
+        cancel_url: `${frontendUrl}/?account=account`,
       }),
     })
 

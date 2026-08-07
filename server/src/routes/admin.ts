@@ -2,7 +2,7 @@ import { Router } from 'express'
 import { z } from 'zod'
 import { query, withTransaction, auditLog } from '../db/index'
 import { requireOwner } from '../middleware/auth'
-import { adminMutationRateLimit } from '../middleware/rateLimit'
+import { adminMutationRateLimit, reconcileRateLimit } from '../middleware/rateLimit'
 import { generateRedemptionCode } from './account'
 
 const router = Router()
@@ -59,7 +59,9 @@ router.get('/dashboard', async (_req, res) => {
 // ------------------------------------------------------------------ users
 
 router.get('/users', async (req, res) => {
-  const search = String(req.query.q ?? '').trim()
+  const search = String(req.query.q ?? '').trim().slice(0, 100)
+  const limit = Math.min(Number(req.query.limit ?? 100), 200)
+  const offset = Math.max(Number(req.query.offset ?? 0), 0)
   try {
     const result = await query<{
       id: string; username: string; email: string; role: string
@@ -69,8 +71,8 @@ router.get('/users', async (req, res) => {
        FROM users
        WHERE ($1 = '' OR username ILIKE $2 OR email ILIKE $2)
        ORDER BY created_at DESC
-       LIMIT 100`,
-      [search, `%${search}%`],
+       LIMIT $3 OFFSET $4`,
+      [search, `%${search}%`, limit, offset],
     )
     res.json({ users: result.rows })
   } catch {
@@ -217,7 +219,7 @@ const productSchema = z.object({
   name: z.string().min(1).max(200),
   description: z.string().max(2000).optional(),
   productType: z.enum(['single_character', 'character_pack', 'full_archive']),
-  priceAmount: z.number().min(0),
+  priceAmount: z.number().min(0.01),
   priceCurrency: z.string().min(3).max(3).default('usd'),
   resourceMapping: z.record(z.string(), z.unknown()).optional(),
   active: z.boolean().optional(),
@@ -243,6 +245,21 @@ router.post('/products', adminMutationRateLimit, async (req, res) => {
   }
   const actorId = req.session.userId!
   const d = parse.data
+
+  if (d.productType === 'single_character') {
+    const rm = d.resourceMapping ?? {}
+    if (!rm.characterId || typeof rm.characterId !== 'string') {
+      res.status(400).json({ error: 'single_character product requires a characterId string in resourceMapping.' })
+      return
+    }
+  } else if (d.productType === 'character_pack') {
+    const rm = d.resourceMapping ?? {}
+    if (!Array.isArray(rm.characterIds) || (rm.characterIds as unknown[]).length === 0) {
+      res.status(400).json({ error: 'character_pack product requires a non-empty characterIds array in resourceMapping.' })
+      return
+    }
+  }
+
   try {
     const result = await query<{ id: string }>(
       `INSERT INTO products (slug, name, description, product_type, price_amount, price_currency, resource_mapping, active)
@@ -288,7 +305,7 @@ router.patch('/products/:id', adminMutationRateLimit, async (req, res) => {
 // ------------------------------------------------------------------ payments
 
 router.get('/payments', async (req, res) => {
-  const search = String(req.query.q ?? '').trim()
+  const search = String(req.query.q ?? '').trim().slice(0, 100)
   const status = String(req.query.status ?? '').trim()
   try {
     const result = await query(
@@ -310,7 +327,7 @@ router.get('/payments', async (req, res) => {
   }
 })
 
-router.post('/payments/:id/reconcile', adminMutationRateLimit, async (req, res) => {
+router.post('/payments/:id/reconcile', adminMutationRateLimit, reconcileRateLimit, async (req, res) => {
   const actorId = req.session.userId!
   const orderId = req.params.id
   try {

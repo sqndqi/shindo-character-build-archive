@@ -44,3 +44,14 @@ export const adminMutationRateLimit = rateLimit({
   skipSuccessfulRequests: false,
   message: { error: 'Too many requests. Please try again later.' },
 })
+
+// Stricter limiter applied only to the reconcile endpoint (on top of adminMutationRateLimit).
+// Reconciliation grants entitlements — bursting it is high-risk so the window is tighter.
+export const reconcileRateLimit = rateLimit({
+  windowMs: 10 * 60 * 1000,
+  limit: Number(process.env.RECONCILE_RATE_LIMIT_MAX ?? 5),
+  standardHeaders: true,
+  legacyHeaders: false,
+  skipSuccessfulRequests: false,
+  message: { error: 'Too many reconciliation requests. Please try again later.' },
+})

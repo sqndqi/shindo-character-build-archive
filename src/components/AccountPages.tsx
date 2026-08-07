@@ -5,6 +5,7 @@ import {
   MailCheck,
   Shield,
   ShieldCheck,
+  ShoppingCart,
   Ticket,
   ChevronRight,
 } from 'lucide-react'
@@ -16,12 +17,18 @@ import {
   signOut,
   getEntitlements,
   getOrders,
+  getProducts,
+  createCheckout,
   redeemCode,
   ApiError,
   type ArchiveAccessState,
   type EntitlementSummary,
   type OrderSummary,
+  type Product,
 } from '../repositories/ArchiveAccessRepository'
+import { PAYMENTS_ENABLED } from '../config/monetization'
+import { getStoredOrderId, storeOrderId, validateCheckoutUrl } from '../lib/checkoutSession'
+import CheckoutFlow from './CheckoutFlow'
 
 export type AccountPage = 'signin' | 'signup' | 'account'
 
@@ -309,13 +316,23 @@ function AccountView({
 }) {
   const [entitlements, setEntitlements] = useState<EntitlementSummary[]>([])
   const [orders, setOrders] = useState<OrderSummary[]>([])
+  const [products, setProducts] = useState<Product[]>([])
   const [currentState, setCurrentState] = useState(state)
   const [loadingDetails, setLoadingDetails] = useState(archiveAccountApiConfigured)
+  const [pendingOrderId, setPendingOrderId] = useState<string | null>(() => getStoredOrderId())
+  const [checkoutBusy, setCheckoutBusy] = useState(false)
+  const [checkoutError, setCheckoutError] = useState('')
 
   useEffect(() => {
     if (!archiveAccountApiConfigured) return
-    Promise.all([getEntitlements(), getOrders()])
-      .then(([ents, ords]) => { setEntitlements(ents); setOrders(ords) })
+    const calls: Promise<unknown>[] = [getEntitlements(), getOrders()]
+    if (PAYMENTS_ENABLED) calls.push(getProducts())
+    Promise.all(calls)
+      .then(([ents, ords, prods]) => {
+        setEntitlements(ents as EntitlementSummary[])
+        setOrders(ords as OrderSummary[])
+        if (prods) setProducts(prods as Product[])
+      })
       .catch(() => undefined)
       .finally(() => setLoadingDetails(false))
   }, [])
@@ -325,6 +342,30 @@ function AccountView({
       try { await signOut() } catch { /* best effort */ }
     }
     onSignOut()
+  }
+
+  const initiateCheckout = async (productId: string) => {
+    setCheckoutBusy(true)
+    setCheckoutError('')
+    try {
+      const result = await createCheckout(productId)
+      if (!result.checkoutUrl || !validateCheckoutUrl(result.checkoutUrl)) {
+        setCheckoutError('Payment provider is currently unavailable. Please try again later.')
+        return
+      }
+      storeOrderId(result.orderId)
+      setPendingOrderId(result.orderId)
+      window.open(result.checkoutUrl, '_blank', 'noopener,noreferrer')
+    } catch (e) {
+      setCheckoutError(e instanceof ApiError ? e.message : 'Checkout failed. Please try again.')
+    } finally {
+      setCheckoutBusy(false)
+    }
+  }
+
+  const handleCheckoutComplete = (freshState: ArchiveAccessState) => {
+    if (freshState.status === 'signed-in') setCurrentState(freshState)
+    setPendingOrderId(null)
   }
 
   const isOwner = currentState.role === 'owner'
@@ -348,6 +389,14 @@ function AccountView({
         <h1>Your character access</h1>
         <p>Entitlements are validated server-side. Never stored in your browser.</p>
       </header>
+
+      {pendingOrderId && (
+        <CheckoutFlow
+          orderId={pendingOrderId}
+          onComplete={handleCheckoutComplete}
+          onDismiss={() => setPendingOrderId(null)}
+        />
+      )}
 
       <div className="account-access-card">
         <div>
@@ -401,6 +450,35 @@ function AccountView({
                   </li>
                 ))}
               </ul>
+            </div>
+          )}
+
+          {PAYMENTS_ENABLED && archiveAccountApiConfigured && products.filter((p) => p.active).length > 0 && (
+            <div className="account-products">
+              <h2><ShoppingCart size={16} aria-hidden="true" /> Available products</h2>
+              <ul>
+                {products.filter((p) => p.active).map((p) => (
+                  <li key={p.id} className="account-product-row">
+                    <div>
+                      <strong>{p.name}</strong>
+                      {p.description && <p>{p.description}</p>}
+                    </div>
+                    <div className="account-product-row__price">
+                      {p.price_amount} {p.price_currency.toUpperCase()}
+                    </div>
+                    <button
+                      className="button button--primary"
+                      disabled={checkoutBusy || !!pendingOrderId}
+                      onClick={() => initiateCheckout(p.id)}
+                    >
+                      {checkoutBusy ? <Loader size={14} className="spin" aria-hidden="true" /> : 'Purchase'}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+              {checkoutError && (
+                <p className="account-message account-message--error" role="alert">{checkoutError}</p>
+              )}
             </div>
           )}
         </>

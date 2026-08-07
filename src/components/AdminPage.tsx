@@ -1,4 +1,4 @@
-import { useEffect, useState, type FormEvent } from 'react'
+import { useEffect, useRef, useState, type FormEvent } from 'react'
 import {
   BarChart3,
   Check,
@@ -7,6 +7,7 @@ import {
   FileText,
   Loader,
   Package,
+  Plus,
   ShieldAlert,
   Ticket,
   Tags,
@@ -22,6 +23,7 @@ import {
   adminGrantEntitlement,
   adminRevokeEntitlement,
   adminGetProducts,
+  adminCreateProduct,
   adminUpdateProduct,
   adminGetPayments,
   adminReconcilePayment,
@@ -37,6 +39,7 @@ import {
   type AuditLog,
   type EntitlementSummary,
 } from '../repositories/ArchiveAccessRepository'
+import { completeRoster } from '../data/restoredRoster'
 
 type AdminTab = 'dashboard' | 'users' | 'products' | 'payments' | 'codes' | 'audit'
 
@@ -47,17 +50,19 @@ function useAsync<T>(
   const [data, setData] = useState<T | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
+  const fnRef = useRef(fn)
+  fnRef.current = fn
+  // oxlint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     let cancelled = false
     setLoading(true)
     setError('')
-    fn()
+    fnRef.current()
       .then((v) => { if (!cancelled) setData(v) })
       .catch((e: unknown) => { if (!cancelled) setError(e instanceof ApiError ? e.message : 'Failed to load.') })
       .finally(() => { if (!cancelled) setLoading(false) })
     return () => { cancelled = true }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, deps)
+  }, deps) // oxlint-disable-line react-hooks/exhaustive-deps
   return { data, loading, error }
 }
 
@@ -286,11 +291,22 @@ function UsersTab() {
 
 // ------------------------------------------------------------------ Products
 
+const CHARACTER_OPTIONS = completeRoster.map((c) => ({ id: c.id, name: c.name }))
+
+type ProductType = 'single_character' | 'character_pack' | 'full_archive'
+
 function ProductsTab() {
   const { data: products, loading, error } = useAsync<AdminProduct[]>(adminGetProducts, [])
   const [editing, setEditing] = useState<string | null>(null)
   const [patchMsg, setPatchMsg] = useState('')
   const [busy, setBusy] = useState(false)
+
+  // creation form state
+  const [showCreate, setShowCreate] = useState(false)
+  const [createMsg, setCreateMsg] = useState('')
+  const [createBusy, setCreateBusy] = useState(false)
+  const [formType, setFormType] = useState<ProductType>('single_character')
+  const [packCharIds, setPackCharIds] = useState<string[]>([])
 
   const doToggleActive = async (product: AdminProduct) => {
     if (busy) return
@@ -306,9 +322,143 @@ function ProductsTab() {
     }
   }
 
+  const doCreate = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const fd = new FormData(e.currentTarget)
+    const slug = String(fd.get('slug') ?? '').trim()
+    const name = String(fd.get('name') ?? '').trim()
+    const description = String(fd.get('description') ?? '').trim()
+    const productType = formType
+    const priceAmount = Number(fd.get('priceAmount') ?? 0)
+    const priceCurrency = String(fd.get('priceCurrency') ?? 'USD').trim().toUpperCase()
+    const active = fd.get('active') === 'on'
+
+    if (!slug) { setCreateMsg('Slug is required.'); return }
+    if (!name) { setCreateMsg('Name is required.'); return }
+    if (priceAmount < 0.01) { setCreateMsg('Price must be at least 0.01.'); return }
+    if (!priceCurrency) { setCreateMsg('Currency is required.'); return }
+
+    let resourceMapping: Record<string, unknown> | undefined
+    if (productType === 'single_character') {
+      const characterId = String(fd.get('characterId') ?? '').trim()
+      if (!characterId) { setCreateMsg('Select a character for single_character product.'); return }
+      resourceMapping = { characterId }
+    } else if (productType === 'character_pack') {
+      if (packCharIds.length === 0) { setCreateMsg('Select at least one character for character_pack.'); return }
+      resourceMapping = { characterIds: packCharIds }
+    }
+
+    setCreateBusy(true)
+    setCreateMsg('')
+    try {
+      await adminCreateProduct({ slug, name, description, productType, priceAmount, priceCurrency, resourceMapping, active })
+      setCreateMsg('Product created.')
+      setShowCreate(false)
+      setPackCharIds([])
+      setFormType('single_character')
+    } catch (err) {
+      setCreateMsg(err instanceof ApiError ? err.message : 'Failed.')
+    } finally {
+      setCreateBusy(false)
+    }
+  }
+
+  const togglePackChar = (id: string) => {
+    setPackCharIds((prev) => prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id])
+  }
+
   return (
     <div className="admin-section">
       <h2>Products</h2>
+
+      {!showCreate && (
+        <button
+          className="button button--outline"
+          onClick={() => { setShowCreate(true); setCreateMsg(''); setPatchMsg('') }}
+        >
+          <Plus size={14} aria-hidden="true" /> New product
+        </button>
+      )}
+
+      {showCreate && (
+        <form className="admin-product-form" onSubmit={doCreate}>
+          <h3>New product</h3>
+          <label>
+            Slug
+            <input name="slug" type="text" required placeholder="e.g. full-archive-access" />
+          </label>
+          <label>
+            Name
+            <input name="name" type="text" required placeholder="Display name" />
+          </label>
+          <label>
+            Description
+            <input name="description" type="text" placeholder="Short description (optional)" />
+          </label>
+          <label>
+            Type
+            <select name="productType" value={formType} onChange={(e) => setFormType(e.target.value as ProductType)}>
+              <option value="single_character">single_character</option>
+              <option value="character_pack">character_pack</option>
+              <option value="full_archive">full_archive</option>
+            </select>
+          </label>
+          <div className="admin-product-form__price">
+            <label>
+              Price
+              <input name="priceAmount" type="number" min="0.01" step="0.01" required defaultValue="9.99" />
+            </label>
+            <label>
+              Currency
+              <input name="priceCurrency" type="text" maxLength={10} defaultValue="USD" />
+            </label>
+          </div>
+          {formType === 'single_character' && (
+            <label>
+              Character
+              <select name="characterId">
+                <option value="">— select character —</option>
+                {CHARACTER_OPTIONS.map((c) => (
+                  <option key={c.id} value={c.id}>{c.name}</option>
+                ))}
+              </select>
+            </label>
+          )}
+          {formType === 'character_pack' && (
+            <div className="admin-character-picker">
+              <span>Characters ({packCharIds.length} selected)</span>
+              <div className="admin-character-picker__list">
+                {CHARACTER_OPTIONS.map((c) => (
+                  <label key={c.id} className="admin-character-option">
+                    <input
+                      type="checkbox"
+                      checked={packCharIds.includes(c.id)}
+                      onChange={() => togglePackChar(c.id)}
+                    />
+                    {c.name}
+                  </label>
+                ))}
+              </div>
+            </div>
+          )}
+          <label className="admin-product-form__active">
+            <input name="active" type="checkbox" defaultChecked />
+            Active (visible to users)
+          </label>
+          {createMsg && (
+            <p className="admin-action-msg" role={createMsg.startsWith('Product') ? 'status' : 'alert'}>
+              {createMsg}
+            </p>
+          )}
+          <div className="admin-actions">
+            <button className="button button--primary" disabled={createBusy}>Create</button>
+            <button type="button" className="button button--text" onClick={() => { setShowCreate(false); setCreateMsg('') }}>
+              Cancel
+            </button>
+          </div>
+        </form>
+      )}
+
       {patchMsg && <p className="admin-action-msg" role="status">{patchMsg}</p>}
       <AsyncSection loading={loading} error={error}>
         <ul className="admin-product-list">
@@ -317,7 +467,7 @@ function ProductsTab() {
               <div className="admin-product-row__info">
                 <strong>{p.name}</strong>
                 <span>{p.slug}</span>
-                <span>{p.product_type.replace('_', ' ')}</span>
+                <span>{p.product_type.replace(/_/g, ' ')}</span>
                 <span>{p.price_amount} {p.price_currency.toUpperCase()}</span>
                 <span className={`admin-badge admin-badge--${p.active ? 'active' : 'inactive'}`}>
                   {p.active ? 'Active' : 'Inactive'}

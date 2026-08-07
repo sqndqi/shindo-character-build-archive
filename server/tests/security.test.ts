@@ -151,6 +151,47 @@ describe('Redeem rate limit', () => {
   })
 })
 
+// ------------------------------------------------------------------ Reconcile rate limit
+
+describe('Reconcile rate limit', () => {
+  const RECONCILE_MAX = Number(process.env.RECONCILE_RATE_LIMIT_MAX ?? 5)
+  const RECONCILE_IP = '10.50.4.1'
+
+  it(`blocks reconcile after ${RECONCILE_MAX} attempts from same authenticated IP`, async () => {
+    // Login as owner via no-DB fallback path (session needed for requireOwner to pass).
+    const agent = request.agent(app)
+    const preRes = await agent.get('/v1/auth/csrf')
+    const preToken = (preRes.body as { csrfToken: string }).csrfToken
+    await agent
+      .post('/v1/auth/login')
+      .set('X-CSRF-Token', preToken)
+      .set('X-Forwarded-For', RECONCILE_IP)
+      .send({ username: 'sendai', password: 'TestPassword123!' })
+
+    // Session regenerated on login — fetch fresh CSRF token.
+    const csrfRes = await agent.get('/v1/auth/csrf')
+    const token = (csrfRes.body as { csrfToken: string }).csrfToken
+
+    const FAKE_ORDER_ID = '00000000-0000-0000-0000-000000000001'
+    for (let i = 0; i < RECONCILE_MAX; i++) {
+      await agent
+        .post(`/v1/admin/payments/${FAKE_ORDER_ID}/reconcile`)
+        .set('X-CSRF-Token', token)
+        .set('X-Forwarded-For', RECONCILE_IP)
+        .send({})
+      // Each fails 500 (no DB) but both rate limiters still count it.
+    }
+
+    const blocked = await agent
+      .post(`/v1/admin/payments/${FAKE_ORDER_ID}/reconcile`)
+      .set('X-CSRF-Token', token)
+      .set('X-Forwarded-For', RECONCILE_IP)
+      .send({})
+    expect(blocked.status).toBe(429)
+    expect((blocked.body as { error: string }).error).toMatch(/reconciliation/i)
+  })
+})
+
 // ------------------------------------------------------------------ Generic error messages
 
 describe('Generic error messages (no account-existence leakage)', () => {

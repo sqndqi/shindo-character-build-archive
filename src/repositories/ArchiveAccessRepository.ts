@@ -323,6 +323,7 @@ export async function adminGetProducts(): Promise<AdminProduct[]> {
 export async function adminCreateProduct(body: {
   slug: string; name: string; productType: string
   priceAmount: number; priceCurrency: string; description?: string
+  resourceMapping?: Record<string, unknown>; active?: boolean
 }): Promise<{ id: string }> {
   return apiRequest<{ id: string }>('/v1/admin/products', { method: 'POST', body: JSON.stringify(body) })
 }
