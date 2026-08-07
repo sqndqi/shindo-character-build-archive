@@ -374,7 +374,7 @@ export async function adminGetAudit(limit = 50, offset = 0): Promise<AuditLog[]>
   return data.logs
 }
 
-// ------------------------------------------------------------------ legacy compat (AccountPages.tsx + CharacterPackPicker.tsx)
+// ------------------------------------------------------------------ legacy compat (AccountPages.tsx)
 
 export const archiveAccessRepository = {
   signIn,

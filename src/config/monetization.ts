@@ -1,13 +1,5 @@
-/**
- * Feature flags.
- * Set ROBUX_PRODUCT_ID and ROBUX_PRODUCT_PRICE via environment variables or
- * a future admin config. Do not hardcode real prices or developer-product IDs.
- */
-
 export const AUTH_ENABLED = true
 export const PAYMENTS_ENABLED = false
-export const ROBUX_PAYMENT_ENABLED = false
-export const PREMIUM_PLUS_ENABLED = false
 
 export interface DonationConfig {
   current: number
