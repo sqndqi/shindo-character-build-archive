@@ -7,7 +7,7 @@ const bloodlineSchema = z.object({
   useMode: z.boolean(),
 })
 
-const hotbarSchema = z.object({
+const hotbarSchema = z.looseObject({
   id: z.string().min(1),
   key: z.string().min(1),
   ability: z.string(),
@@ -21,7 +21,7 @@ const hotbarSchema = z.object({
   roleTags: z.array(z.enum(['starter', 'combo-extender', 'combo-ender', 'guard-break', 'counter', 'evasive', 'movement', 'ranged-pressure', 'area-control', 'defensive-utility', 'healing', 'transformation', 'signature'])).optional(),
   researchStatus: z.enum(['verified', 'owner-confirmed', 'needs-retesting', 'unresolved', 'intentionally-unused', 'alternative-for-viability', 'alternative-for-accuracy']).optional(),
   evidenceNote: z.string().optional(),
-}).passthrough()
+})
 
 const fightingEquipmentSchema = z.object({
   ninjaTool: z.string(),
@@ -34,7 +34,7 @@ const fightingEquipmentSchema = z.object({
   raceReason: z.string(),
 })
 
-const variantSchema = z.object({
+const variantSchema = z.looseObject({
   id: z.string().min(1),
   name: z.string().min(1),
   bloodlineSlotCount: z.union([z.literal(2), z.literal(3), z.literal(4)]),
@@ -69,9 +69,9 @@ const variantSchema = z.object({
   researcherNotes: z.string().optional(),
   visualResemblance: z.number().min(0).max(10).optional(),
   targetShindoUpdate: z.string().optional(),
-}).passthrough()
+})
 
-export const buildSchema = z.object({
+export const buildSchema = z.looseObject({
   id: z.string().min(1),
   name: z.string().min(1),
   series: z.string().min(1),
@@ -91,7 +91,7 @@ export const buildSchema = z.object({
     aura: z.number().min(0).max(10),
     difficulty: z.number().min(0).max(10),
   }),
-}).passthrough()
+})
 
 export type ValidationResult = ReturnType<typeof buildSchema.safeParse>
 

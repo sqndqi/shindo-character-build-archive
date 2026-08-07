@@ -10,3 +10,4 @@ process.env.RATE_LIMIT_WINDOW_MS = '60000'
 
 // bcrypt rounds=4 is intentionally low for test speed
 process.env.OWNER_PASSWORD_HASH = bcrypt.hashSync('TestPassword123!', 4)
+process.env.NOWPAYMENTS_IPN_SECRET = 'test-ipn-secret-for-testing-only'
