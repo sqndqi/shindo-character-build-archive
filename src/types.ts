@@ -205,7 +205,7 @@ export interface BuildVariant {
   // Phase B: extended loadout metadata
   arcVersion?: string
   sourceChapterRange?: string
-  buildIntent?: 'Accuracy-First' | 'Balanced' | 'PvP-First'
+  buildIntent?: 'Accuracy-First' | 'Balanced' | 'PvP-First' | 'Accessible'
   fidelityScores?: FidelityScores
   companion?: string
   companionReason?: string
