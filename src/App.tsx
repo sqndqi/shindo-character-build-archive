@@ -99,6 +99,7 @@ const emptyFilters = {
   sort: "archive",
 };
 const compareKey = "shindo-build-archive:compare:v1";
+const unlockDraftKey = "shindo-archive:unlock-draft:v1";
 const freeBuildIds = [
   "zack-lee",
   "vasco",
@@ -168,6 +169,22 @@ export default function App() {
   const tiers = useTierLists();
   const [view, setView] = useState<View>("builds");
   const [authRole, setAuthRole] = useState<"owner" | "user" | null>(null);
+  const [selectedForUnlock, setSelectedForUnlock] = useState<string[]>(() =>
+    readStorage(unlockDraftKey, []),
+  );
+  useEffect(() => {
+    writeStorage(unlockDraftKey, selectedForUnlock);
+  }, [selectedForUnlock]);
+  const toggleSelectForUnlock = useCallback(
+    (id: string) => {
+      const build = builds.find((b) => b.id === id);
+      if (!build || build.accessState === "Free" || build.accessState === "Owned") return;
+      setSelectedForUnlock((prev) =>
+        prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
+      );
+    },
+    [builds],
+  );
   useEffect(() => {
     if (!archiveAccountApiConfigured) return
     getAccessState().then((s) => { if (s.status === 'signed-in') setAuthRole(s.role) }).catch(() => undefined)
@@ -239,6 +256,12 @@ export default function App() {
           }),
         );
         setBuilds(records);
+        setSelectedForUnlock((prev) =>
+          prev.filter((id) => {
+            const rec = records.find((r) => r.id === id);
+            return rec?.accessState === "Locked";
+          }),
+        );
       })
       .catch(() =>
         setLoadError(
@@ -435,7 +458,7 @@ export default function App() {
     ["compare", "Compare"],
     ["suggestions", "Suggestions"],
   ];
-  nav.push(["premium", "Premium"]);
+  nav.push(["premium", "Unlock Builds"]);
   if (AUTH_ENABLED) nav.push(["account", authRole ? "Account" : "Sign In"]);
   if (authRole === "owner") nav.push(["admin", "Admin"]);
   if (import.meta.env.DEV) nav.push(["diagnostics", "Diagnostics"]);
@@ -537,6 +560,8 @@ export default function App() {
           build={routedBuild}
           onBack={closeFullBuild}
           onUnlock={() => navigate("premium")}
+          isSelected={selectedForUnlock.includes(routedBuild.id)}
+          onToggleSelect={toggleSelectForUnlock}
         />
       ) : buildRoute && routedBuild ? (
         <FullBuildPage
@@ -636,6 +661,10 @@ export default function App() {
             <AccountPages
               initialPage={accountPage ?? "signin"}
               onNavigateAdmin={() => { setAuthRole("owner"); navigate("admin"); }}
+              onSignedIn={(state) => {
+                setAuthRole(state.role);
+                if (selectedForUnlock.length > 0) navigate("premium");
+              }}
             />
           </Suspense>
         ) : (
@@ -671,7 +700,12 @@ export default function App() {
             <main className="loading-page">Loading premium…</main>
           }
         >
-          <PremiumPage onNavigateAccount={() => navigate("account")} />
+          <PremiumPage
+              onNavigateAccount={() => navigate("account")}
+              selectedForUnlock={selectedForUnlock}
+              onDeselect={(id) => setSelectedForUnlock((prev) => prev.filter((x) => x !== id))}
+              builds={builds}
+            />
         </Suspense>
       ) : seriesPage ? (
         <Suspense
