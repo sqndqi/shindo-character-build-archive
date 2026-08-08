@@ -168,6 +168,11 @@ export default function App() {
   const tiers = useTierLists();
   const [view, setView] = useState<View>("builds");
   const [authRole, setAuthRole] = useState<"owner" | "user" | null>(null);
+  const [selectedForUnlock, setSelectedForUnlock] = useState<string[]>([]);
+  const toggleSelectForUnlock = (id: string) =>
+    setSelectedForUnlock((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
+    );
   useEffect(() => {
     if (!archiveAccountApiConfigured) return
     getAccessState().then((s) => { if (s.status === 'signed-in') setAuthRole(s.role) }).catch(() => undefined)
@@ -435,7 +440,7 @@ export default function App() {
     ["compare", "Compare"],
     ["suggestions", "Suggestions"],
   ];
-  nav.push(["premium", "Premium"]);
+  nav.push(["premium", "Unlock Builds"]);
   if (AUTH_ENABLED) nav.push(["account", authRole ? "Account" : "Sign In"]);
   if (authRole === "owner") nav.push(["admin", "Admin"]);
   if (import.meta.env.DEV) nav.push(["diagnostics", "Diagnostics"]);
@@ -537,6 +542,8 @@ export default function App() {
           build={routedBuild}
           onBack={closeFullBuild}
           onUnlock={() => navigate("premium")}
+          isSelected={selectedForUnlock.includes(routedBuild.id)}
+          onToggleSelect={toggleSelectForUnlock}
         />
       ) : buildRoute && routedBuild ? (
         <FullBuildPage
@@ -671,7 +678,12 @@ export default function App() {
             <main className="loading-page">Loading premium…</main>
           }
         >
-          <PremiumPage onNavigateAccount={() => navigate("account")} />
+          <PremiumPage
+              onNavigateAccount={() => navigate("account")}
+              selectedForUnlock={selectedForUnlock}
+              onDeselect={(id) => setSelectedForUnlock((prev) => prev.filter((x) => x !== id))}
+              builds={builds}
+            />
         </Suspense>
       ) : seriesPage ? (
         <Suspense

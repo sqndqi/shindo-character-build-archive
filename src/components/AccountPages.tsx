@@ -120,7 +120,7 @@ function SignInForm({
         </label>
         <label>
           Password
-          <input name="password" type="password" autoComplete="current-password" minLength={12} required />
+          <input name="password" type="password" autoComplete="current-password" required />
         </label>
         {error && <p className="account-message account-message--error" role="alert">{error}</p>}
         <button className="button button--primary" disabled={busy || backendStatus === 'checking'}>
