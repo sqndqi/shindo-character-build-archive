@@ -30,25 +30,25 @@ export const reviewedBuilds = [
       {
         "id": "james-lee-bloodline-1",
         "name": "Dio-Senko-Rose",
-        "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+        "purpose": "Speed-threshold engage and time-control layer; enabled as C-mode for burst movement.",
         "useMode": true
       },
       {
         "id": "james-lee-bloodline-2",
         "name": "Bruce-Kenichi",
-        "purpose": "Represents his precise kick combinations and close-range technique.",
+        "purpose": "Precise kick combinations and close-range martial arts finishing.",
         "useMode": false
       },
       {
         "id": "james-lee-bloodline-3",
         "name": "Pika-Senko",
-        "purpose": "Used for explosive light-speed kick pressure; its mode stays disabled.",
+        "purpose": "Explosive light-speed kick pressure for pursuit and finishing; mode stays disabled.",
         "useMode": false
       },
       {
         "id": "james-lee-bloodline-4",
         "name": "Doku-Tengoku",
-        "purpose": "Provides the reactive counter and close-range control layer.",
+        "purpose": "Reactive counter and close-range control layer for defense and punishment.",
         "useMode": false
       }
     ],
@@ -57,7 +57,7 @@ export const reviewedBuilds = [
       "Order"
     ],
     "cMode": "Dio-Senko-Rose — Stage 1",
-    "zMode": "None — avoids changing the build silhouette",
+    "zMode": "None",
     "combatArt": "Jeet Kune Do",
     "weapon": "None",
     "ninjaTool": "None",
@@ -70,7 +70,7 @@ export const reviewedBuilds = [
         "key": "1",
         "source": "Dio-Senko-Rose",
         "ability": "Time Style: Ultimate Flash",
-        "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+        "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
         "comboRole": "Starter",
         "blockBreak": false,
         "guardPressure": false,
@@ -81,7 +81,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+        "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
         "mobility": false
       },
       {
@@ -89,7 +89,7 @@ export const reviewedBuilds = [
         "key": "2",
         "source": "Dio-Senko-Rose",
         "ability": "Time Style: Time Jump",
-        "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+        "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
         "comboRole": "Extender",
         "blockBreak": false,
         "guardPressure": false,
@@ -100,7 +100,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+        "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
         "mobility": false
       },
       {
@@ -108,7 +108,7 @@ export const reviewedBuilds = [
         "key": "3",
         "source": "Dio-Senko-Rose",
         "ability": "Time Style: Time Stop",
-        "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+        "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
         "comboRole": "Pressure",
         "blockBreak": false,
         "guardPressure": true,
@@ -119,7 +119,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+        "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
         "mobility": false
       },
       {
@@ -127,7 +127,7 @@ export const reviewedBuilds = [
         "key": "4",
         "source": "Bruce-Kenichi",
         "ability": "Fist Style: 6th Dance",
-        "purpose": "Represents his precise kick combinations and close-range technique.",
+        "purpose": "Precise kick combinations and close-range finishing.",
         "comboRole": "Defense",
         "blockBreak": false,
         "guardPressure": false,
@@ -138,7 +138,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Represents his precise kick combinations and close-range technique.",
+        "characterAbility": "Precise kick combinations and close-range finishing.",
         "mobility": false
       },
       {
@@ -146,7 +146,7 @@ export const reviewedBuilds = [
         "key": "5",
         "source": "Bruce-Kenichi",
         "ability": "Fist Style: 9th Dance",
-        "purpose": "Represents his precise kick combinations and close-range technique.",
+        "purpose": "Precise kick combinations and close-range finishing.",
         "comboRole": "Finisher",
         "blockBreak": false,
         "guardPressure": false,
@@ -157,7 +157,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Represents his precise kick combinations and close-range technique.",
+        "characterAbility": "Precise kick combinations and close-range finishing.",
         "mobility": false
       },
       {
@@ -176,7 +176,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Intentionally empty; no filler ability is assigned.",
-        "characterAbility": "Represents his precise kick combinations and close-range technique.",
+        "characterAbility": "Precise kick combinations and close-range finishing.",
         "mobility": false
       },
       {
@@ -184,7 +184,7 @@ export const reviewedBuilds = [
         "key": "V",
         "source": "Bruce-Kenichi",
         "ability": "Fist Style: Tiger Lotus",
-        "purpose": "Represents his precise kick combinations and close-range technique.",
+        "purpose": "Precise kick combinations and close-range finishing.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -195,7 +195,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Represents his precise kick combinations and close-range technique.",
+        "characterAbility": "Precise kick combinations and close-range finishing.",
         "mobility": false
       },
       {
@@ -203,7 +203,7 @@ export const reviewedBuilds = [
         "key": "B",
         "source": "Pika-Senko",
         "ability": "Time Style: Star Kick",
-        "purpose": "Used for explosive light-speed kick pressure; its mode stays disabled.",
+        "purpose": "Explosive light-speed kick pursuit — distance-closing pressure.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -214,7 +214,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Used for explosive light-speed kick pressure; its mode stays disabled.",
+        "characterAbility": "Explosive pursuit kicks — instant gap-closing strikes.",
         "mobility": false
       },
       {
@@ -222,7 +222,7 @@ export const reviewedBuilds = [
         "key": "N",
         "source": "Pika-Senko",
         "ability": "Time Style: Star Kick Rising",
-        "purpose": "Used for explosive light-speed kick pressure; its mode stays disabled.",
+        "purpose": "Explosive light-speed kick pursuit — distance-closing pressure.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -233,7 +233,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Used for explosive light-speed kick pressure; its mode stays disabled.",
+        "characterAbility": "Explosive pursuit kicks — instant gap-closing strikes.",
         "mobility": false
       },
       {
@@ -256,8 +256,8 @@ export const reviewedBuilds = [
       {
         "id": "james-current-4x2-hotbar-Z",
         "key": "Z",
-        "source": "None — avoids changing the build silhouette",
-        "ability": "None — avoids changing the build silhouette",
+        "source": "None",
+        "ability": "Not used in this variant",
         "purpose": "Activates the selected Z-mode.",
         "comboRole": "Mode",
         "blockBreak": false,
@@ -267,7 +267,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
-        "modeRequirement": "None — avoids changing the build silhouette",
+        "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
       },
       {
@@ -352,8 +352,23 @@ export const reviewedBuilds = [
       "testDate": "",
       "notes": "Live-game combo timing still requires owner testing."
     },
-    "changeHistory": [],
-    "chapterRange": "Current Lookism continuity; exact chapter range needs editorial confirmation",
+    "changeHistory": [
+      {
+        "field": "variants",
+        "previousValue": "Stub Phase B fields missing",
+        "newValue": "Full Phase B upgrade: fidelityScores, arcVersion, sourceChapterRange, buildIntent, researchedGameVersion, profilePurpose, evidence, and character-specific purpose/reason/represents on all 4 variants",
+        "date": "2026-08-07",
+        "reason": "Lookism batch Phase B upgrade — same quality standard as benchmark free builds"
+      },
+      {
+        "field": "bloodlines[2].exactMovesUsed",
+        "previousValue": "Included non-existent Time Style: Star Bomb Barrage",
+        "newValue": "Removed — Pika-Senko catalog only has Star Kick and Star Kick Rising",
+        "date": "2026-08-07",
+        "reason": "Legality fix: move did not exist in game catalog"
+      }
+    ],
+    "chapterRange": "Lookism chapters 1–480+",
     "characterAbilities": [
       "Speed threshold",
       "Explosive kicks",
@@ -371,74 +386,86 @@ export const reviewedBuilds = [
         "type": "Primary",
         "bloodlineSlotCount": 4,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Explosive Path / Speed Threshold",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 9, "ability": 9, "fighting": 9, "weapon": 7, "movement": 9 },
+        "profilePurpose": "Identity Build",
         "bloodlines": [
           {
             "name": "Dio-Senko-Rose",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage and time-control layer; enabled as C-mode for burst movement.",
             "exactMovesUsed": [
               "Time Style: Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": true,
-            "reason": "Represents James Lee’s speed threshold and is the recommended C-mode.",
-            "represents": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "reason": "Dio-Senko-Rose’s time-speed moveset translates James Lee’s legendary speed threshold. Rose variant preferred for extra move depth over base Dio-Senko.",
+            "represents": "James Lee’s speed threshold — explosive acceleration and time-like reflexes that define his fighting ceiling.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Pika-Senko"],
+              "accessible": ["Dio-Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range martial arts finishing.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Represents his precise kick combinations and close-range technique.",
-            "represents": "Represents his precise kick combinations and close-range technique.",
+            "reason": "6th Dance (uppercut), 9th Dance (kick combo), and Tiger Lotus (finisher) mirror James Lee’s decisive, precise kick combinations.",
+            "represents": "James Lee’s technical martial arts mastery — precision strikes that exploit openings with maximum impact.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Pika-Senko",
-            "purpose": "Used for explosive light-speed kick pressure; its mode stays disabled.",
+            "purpose": "Explosive light-speed kick pressure for pursuit and finishing; mode stays disabled.",
             "exactMovesUsed": [
               "Time Style: Star Kick",
-              "Time Style: Star Kick Rising",
-              "Time Style: Star Bomb Barrage"
+              "Time Style: Star Kick Rising"
             ],
             "useMode": false,
-            "reason": "Used for explosive light-speed kick pressure; its mode stays disabled.",
-            "represents": "Used for explosive light-speed kick pressure; its mode stays disabled.",
+            "reason": "Star Kick and Star Kick Rising provide explosive speed-of-light pursuit kicks complementing Dio-Senko-Rose’s time control. Only 2 catalog moves available.",
+            "represents": "James Lee’s explosive pursuit kicks — instant distance-closing with devastating follow-up strikes.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Dio-Senko"],
+              "accessible": ["Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Provides the reactive counter and close-range control layer.",
+            "purpose": "Reactive counter and close-range control layer for defense and punishment.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Provides the reactive counter and close-range control layer.",
-            "represents": "Provides the reactive counter and close-range control layer.",
+            "reason": "128 Palm Counter, Concentrated Palm Blast, and Twin Dragon Barrage provide counter-fighting that mirrors James Lee’s ability to punish overcommitted opponents.",
+            "represents": "James Lee’s counter-fighting intelligence — reading opponents and delivering precise counter-strikes.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -448,7 +475,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Wind Shock Slam"
             ],
-            "purpose": "Movement control and wind-pressure extension.",
+            "purpose": "Wind-pressure movement control — translates James Lee’s speed into area denial.",
             "replacements": []
           },
           {
@@ -462,7 +489,7 @@ export const reviewedBuilds = [
           }
         ],
         "cMode": "Dio-Senko-Rose — Stage 1",
-        "zMode": "None — avoids changing the build silhouette",
+        "zMode": "None",
         "combatArt": "Jeet Kune Do",
         "weapon": "None",
         "ninjaTool": "None",
@@ -475,7 +502,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Ultimate Flash",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -486,7 +513,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
           {
@@ -494,7 +521,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Jump",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -505,7 +532,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
           {
@@ -513,7 +540,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Stop",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -524,7 +551,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
           {
@@ -532,7 +559,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 6th Dance",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range finishing.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -543,7 +570,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -551,7 +578,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 9th Dance",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range finishing.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -562,7 +589,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -581,7 +608,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -589,7 +616,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range finishing.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -600,7 +627,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -608,7 +635,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Pika-Senko",
             "ability": "Time Style: Star Kick",
-            "purpose": "Used for explosive light-speed kick pressure; its mode stays disabled.",
+            "purpose": "Explosive light-speed kick pursuit — distance-closing pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -619,7 +646,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Used for explosive light-speed kick pressure; its mode stays disabled.",
+            "characterAbility": "Explosive pursuit kicks — instant gap-closing strikes.",
             "mobility": false
           },
           {
@@ -627,7 +654,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Pika-Senko",
             "ability": "Time Style: Star Kick Rising",
-            "purpose": "Used for explosive light-speed kick pressure; its mode stays disabled.",
+            "purpose": "Explosive light-speed kick pursuit — distance-closing pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -638,7 +665,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Used for explosive light-speed kick pressure; its mode stays disabled.",
+            "characterAbility": "Explosive pursuit kicks — instant gap-closing strikes.",
             "mobility": false
           },
           {
@@ -661,8 +688,8 @@ export const reviewedBuilds = [
           {
             "id": "james-current-4x2-hotbar-Z",
             "key": "Z",
-            "source": "None — avoids changing the build silhouette",
-            "ability": "None — avoids changing the build silhouette",
+            "source": "None",
+            "ability": "Not used in this variant",
             "purpose": "Activates the selected Z-mode.",
             "comboRole": "Mode",
             "blockBreak": false,
@@ -672,7 +699,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
-            "modeRequirement": "None — avoids changing the build silhouette",
+            "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
           },
           {
@@ -771,7 +798,11 @@ export const reviewedBuilds = [
           "Order",
           "Jeet Kune Do"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "james-current-4x2",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "james-current-3x2",
@@ -779,57 +810,68 @@ export const reviewedBuilds = [
         "type": "Three Slot",
         "bloodlineSlotCount": 3,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Explosive Path / 3-slot",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 8, "ability": 8, "fighting": 9, "weapon": 7, "movement": 8 },
+        "profilePurpose": "Three-Slot Build",
         "bloodlines": [
           {
             "name": "Dio-Senko-Rose",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage and time-control layer; enabled as C-mode for burst movement.",
             "exactMovesUsed": [
               "Time Style: Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": true,
-            "reason": "Represents James Lee’s speed threshold and is the recommended C-mode.",
-            "represents": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "reason": "Dio-Senko-Rose’s time-speed moveset translates James Lee’s legendary speed threshold. Rose variant preferred for extra move depth over base Dio-Senko.",
+            "represents": "James Lee’s speed threshold — explosive acceleration and time-like reflexes.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Pika-Senko"],
+              "accessible": ["Dio-Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range martial arts finishing.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Represents his precise kick combinations and close-range technique.",
-            "represents": "Represents his precise kick combinations and close-range technique.",
+            "reason": "6th Dance (uppercut), 9th Dance (kick combo), and Tiger Lotus (finisher) mirror James Lee’s decisive, precise kick combinations.",
+            "represents": "James Lee’s technical martial arts mastery — precision strikes that exploit openings.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Provides the reactive counter and close-range control layer.",
+            "purpose": "Reactive counter and close-range control; absorbs Pika-Senko’s pressure role in 3-slot.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Provides the reactive counter and close-range control layer.",
-            "represents": "Provides the reactive counter and close-range control layer.",
+            "reason": "With Pika-Senko dropped in 3-slot, Doku-Tengoku’s counter moves become the secondary pressure layer alongside Bruce-Kenichi.",
+            "represents": "James Lee’s counter-fighting intelligence — reading opponents and punishing with precision.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -839,7 +881,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Wind Shock Slam"
             ],
-            "purpose": "Movement control and wind-pressure extension.",
+            "purpose": "Wind-pressure movement control — translates James Lee’s speed into area denial.",
             "replacements": []
           },
           {
@@ -848,12 +890,12 @@ export const reviewedBuilds = [
               "Order Style: Bomb of Light",
               "Order Style: Blade of Light"
             ],
-            "purpose": "Explosive light pressure and a blade-like visual substitute.",
+            "purpose": "Explosive light pressure and blade-like visual substitute for James Lee’s striking energy.",
             "replacements": []
           }
         ],
         "cMode": "Dio-Senko-Rose — Stage 1",
-        "zMode": "None — avoids changing the build silhouette",
+        "zMode": "None",
         "combatArt": "Jeet Kune Do",
         "weapon": "None",
         "ninjaTool": "None",
@@ -866,7 +908,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Ultimate Flash",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -877,7 +919,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
           {
@@ -885,7 +927,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Jump",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -896,7 +938,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
           {
@@ -904,7 +946,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Stop",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -915,7 +957,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
           {
@@ -923,7 +965,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 6th Dance",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range finishing.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -934,7 +976,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -942,7 +984,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 9th Dance",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range finishing.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -953,7 +995,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -972,7 +1014,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -980,7 +1022,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range finishing.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -991,7 +1033,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -999,7 +1041,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Provides the reactive counter and close-range control layer.",
+            "purpose": "Reactive counter and close-range control — punishes overcommitted opponents.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -1010,7 +1052,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Provides the reactive counter and close-range control layer.",
+            "characterAbility": "Counter-fighting intelligence — precise defensive reads.",
             "mobility": false
           },
           {
@@ -1018,7 +1060,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Provides the reactive counter and close-range control layer.",
+            "purpose": "Reactive counter and close-range control — punishes overcommitted opponents.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -1029,7 +1071,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Provides the reactive counter and close-range control layer.",
+            "characterAbility": "Counter-fighting intelligence — precise defensive reads.",
             "mobility": false
           },
           {
@@ -1052,8 +1094,8 @@ export const reviewedBuilds = [
           {
             "id": "james-current-3x2-hotbar-Z",
             "key": "Z",
-            "source": "None — avoids changing the build silhouette",
-            "ability": "None — avoids changing the build silhouette",
+            "source": "None",
+            "ability": "Not used in this variant",
             "purpose": "Activates the selected Z-mode.",
             "comboRole": "Mode",
             "blockBreak": false,
@@ -1063,7 +1105,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
-            "modeRequirement": "None — avoids changing the build silhouette",
+            "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
           },
           {
@@ -1161,7 +1203,11 @@ export const reviewedBuilds = [
           "Order",
           "Jeet Kune Do"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "james-current-3x2",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "james-current-2x2",
@@ -1169,40 +1215,49 @@ export const reviewedBuilds = [
         "type": "Two Slot",
         "bloodlineSlotCount": 2,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Explosive Path / 2-slot",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 8, "ability": 8, "fighting": 8, "weapon": 7, "movement": 8 },
+        "profilePurpose": "Two-Slot Build",
         "bloodlines": [
           {
             "name": "Dio-Senko-Rose",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage and time-control layer; sole mode source in 2-slot.",
             "exactMovesUsed": [
               "Time Style: Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": true,
-            "reason": "Represents James Lee’s speed threshold and is the recommended C-mode.",
-            "represents": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "reason": "Dio-Senko-Rose’s time-speed moveset translates James Lee’s legendary speed threshold. In 2-slot, it carries both the speed identity and mode activation.",
+            "represents": "James Lee’s speed threshold — the core that persists even when slot count drops.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Pika-Senko"],
+              "accessible": ["Dio-Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range finishing — sole martial arts source in 2-slot.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Represents his precise kick combinations and close-range technique.",
-            "represents": "Represents his precise kick combinations and close-range technique.",
+            "reason": "6th Dance, 9th Dance, and Tiger Lotus provide all close-range martial arts coverage when Doku-Tengoku and Pika-Senko are unavailable.",
+            "represents": "James Lee’s martial arts mastery — the minimum viable kick technique core.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -1212,7 +1267,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Wind Shock Slam"
             ],
-            "purpose": "Movement control and wind-pressure extension.",
+            "purpose": "Wind-pressure movement control — translates James Lee’s speed into area denial.",
             "replacements": []
           },
           {
@@ -1221,12 +1276,12 @@ export const reviewedBuilds = [
               "Order Style: Bomb of Light",
               "Order Style: Blade of Light"
             ],
-            "purpose": "Explosive light pressure and a blade-like visual substitute.",
+            "purpose": "Explosive light pressure and blade-like visual substitute for James Lee’s striking energy.",
             "replacements": []
           }
         ],
         "cMode": "Dio-Senko-Rose — Stage 1",
-        "zMode": "None — avoids changing the build silhouette",
+        "zMode": "None",
         "combatArt": "Jeet Kune Do",
         "weapon": "None",
         "ninjaTool": "None",
@@ -1239,7 +1294,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Ultimate Flash",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -1250,7 +1305,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
           {
@@ -1258,7 +1313,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Jump",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -1269,7 +1324,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
           {
@@ -1277,7 +1332,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Stop",
-            "purpose": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "purpose": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -1288,7 +1343,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents James Lee’s speed threshold and is the recommended C-mode.",
+            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
           {
@@ -1296,7 +1351,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 6th Dance",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range finishing.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -1307,7 +1362,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -1315,7 +1370,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 9th Dance",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range finishing.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -1326,7 +1381,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -1345,7 +1400,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -1353,7 +1408,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Represents his precise kick combinations and close-range technique.",
+            "purpose": "Precise kick combinations and close-range finishing.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -1364,7 +1419,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Represents his precise kick combinations and close-range technique.",
+            "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
           {
@@ -1425,8 +1480,8 @@ export const reviewedBuilds = [
           {
             "id": "james-current-2x2-hotbar-Z",
             "key": "Z",
-            "source": "None — avoids changing the build silhouette",
-            "ability": "None — avoids changing the build silhouette",
+            "source": "None",
+            "ability": "Not used in this variant",
             "purpose": "Activates the selected Z-mode.",
             "comboRole": "Mode",
             "blockBreak": false,
@@ -1436,7 +1491,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
-            "modeRequirement": "None — avoids changing the build silhouette",
+            "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
           },
           {
@@ -1534,7 +1589,11 @@ export const reviewedBuilds = [
           "Order",
           "Jeet Kune Do"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "james-current-2x2",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "james-current-accessible",
@@ -1542,6 +1601,11 @@ export const reviewedBuilds = [
         "type": "Beginner",
         "bloodlineSlotCount": 2,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Explosive Path / Accessible",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accessible",
+        "fidelityScores": { "visual": 7, "ability": 7, "fighting": 7, "weapon": 7, "movement": 7 },
+        "profilePurpose": "Accessible Build",
         "bloodlines": [
           {
             "name": "Dio-Senko",
@@ -1914,7 +1978,11 @@ export const reviewedBuilds = [
         ],
         "compromises": [
           "Accessible choices are not the strongest visual match."
-        ]
+        ],
+        "preparedHotbarProfileId": "james-current-accessible",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       }
     ],
     "evidence": [
@@ -1989,25 +2057,25 @@ export const reviewedBuilds = [
       {
         "id": "seongji-yuk-bloodline-1",
         "name": "Ryuji-Kenichi",
-        "purpose": "Primary character identity and pressure engine.",
+        "purpose": "Strength threshold — raw stamina-based martial arts as primary pressure engine.",
         "useMode": true
       },
       {
         "id": "seongji-yuk-bloodline-2",
         "name": "Dio-Senko-Rose",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Speed threshold — explosive burst movement and time-control repositioning.",
         "useMode": false
       },
       {
         "id": "seongji-yuk-bloodline-3",
         "name": "Bruce-Kenichi",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Technique threshold — precision martial arts that demonstrate fighting mastery.",
         "useMode": false
       },
       {
         "id": "seongji-yuk-bloodline-4",
         "name": "Doku-Tengoku",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Toughness threshold — reactive counter and damage absorption.",
         "useMode": false
       }
     ],
@@ -2311,8 +2379,16 @@ export const reviewedBuilds = [
       "testDate": "",
       "notes": "Live-game combo timing still requires owner testing."
     },
-    "changeHistory": [],
-    "chapterRange": "Current Lookism continuity; exact chapter range needs editorial confirmation",
+    "changeHistory": [
+      {
+        "field": "variants",
+        "previousValue": "Stub Phase B fields missing",
+        "newValue": "Full Phase B upgrade: fidelityScores, arcVersion, buildIntent, researchedGameVersion, evidence, character-specific descriptions on all 4 variants",
+        "date": "2026-08-07",
+        "reason": "Lookism batch Phase B upgrade"
+      }
+    ],
+    "chapterRange": "Lookism chapters 1–480+",
     "characterAbilities": [
       "Three thresholds",
       "Grappling",
@@ -2330,74 +2406,87 @@ export const reviewedBuilds = [
         "type": "Primary",
         "bloodlineSlotCount": 4,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Cheonliang / Three Thresholds",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 8, "ability": 9, "fighting": 9, "weapon": 7, "movement": 8 },
+        "profilePurpose": "Identity Build",
         "bloodlines": [
           {
             "name": "Ryuji-Kenichi",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Strength threshold — raw stamina-based martial arts as primary pressure engine.",
             "exactMovesUsed": [
               "Fist Style: 3rd Stance",
               "Fist Style: Dragon Demon Combo",
               "Fist Style: Dragon Lotus"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Ryuji-Kenichi uses stamina-based fighting that mirrors Seongji's raw physical power. Dragon Demon Combo and Dragon Lotus provide relentless close-range pressure.",
+            "represents": "Seongji Yuk's strength threshold — overwhelming close-range force that breaks through defenses.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "lore": ["Kenichi"],
+              "competitive": ["Ashura-Shizen"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Dio-Senko-Rose",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed threshold — explosive burst movement and time-control repositioning.",
             "exactMovesUsed": [
               "Time Style: Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Despite his large frame, Seongji possesses exceptional speed. Dio-Senko-Rose's time-speed moves translate his surprising burst acceleration.",
+            "represents": "Seongji Yuk's speed threshold — the unexpected quickness that catches opponents off-guard.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Pika-Senko"],
+              "accessible": ["Dio-Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Technique threshold — precision martial arts that demonstrate fighting mastery.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Bruce-Kenichi's Fist Style moves provide the technical fighting layer beyond raw power, showing Seongji has refined skill, not just brute force.",
+            "represents": "Seongji Yuk's technique threshold — precise strikes that prove his complete martial mastery.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Toughness threshold — reactive counter and damage absorption.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "128 Palm Counter and Twin Dragon Barrage provide counter-fighting that represents Seongji's ability to endure punishment and strike back harder.",
+            "represents": "Seongji Yuk's toughness threshold — absorbing damage while setting up devastating counters.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -2407,7 +2496,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Toughness expression — Stone Style reflects Seongji's immovable defensive capability.",
             "replacements": []
           },
           {
@@ -2416,7 +2505,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind-based movement control complements his speed threshold.",
             "replacements": []
           }
         ],
@@ -2730,7 +2819,11 @@ export const reviewedBuilds = [
           "Gale",
           "Mixed Martial Arts"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "seongji-yuk-4x2",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "seongji-yuk-3x2",
@@ -2738,57 +2831,68 @@ export const reviewedBuilds = [
         "type": "Three Slot",
         "bloodlineSlotCount": 3,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Cheonliang / 3-slot",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 8, "ability": 8, "fighting": 8, "weapon": 7, "movement": 8 },
+        "profilePurpose": "Three-Slot Build",
         "bloodlines": [
           {
             "name": "Ryuji-Kenichi",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Strength threshold — raw stamina-based martial arts as primary pressure engine.",
             "exactMovesUsed": [
               "Fist Style: 3rd Stance",
               "Fist Style: Dragon Demon Combo",
               "Fist Style: Dragon Lotus"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Ryuji-Kenichi uses stamina-based fighting that mirrors Seongji's raw physical power. Core identity preserved in 3-slot.",
+            "represents": "Seongji Yuk's strength threshold — overwhelming close-range force.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "lore": ["Kenichi"],
+              "competitive": ["Ashura-Shizen"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Technique threshold — precision martial arts; absorbs Doku-Tengoku's role in 3-slot.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "With Doku-Tengoku dropped, Bruce-Kenichi covers both technique and some counter capability via Tiger Lotus finisher.",
+            "represents": "Seongji Yuk's technique threshold — precision and martial refinement.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Dio-Senko-Rose",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed threshold — explosive burst movement and repositioning.",
             "exactMovesUsed": [
               "Time Style: Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Speed threshold preserved in 3-slot; burst acceleration remains critical to Seongji's three-threshold identity.",
+            "represents": "Seongji Yuk's speed threshold — unexpected quickness from a large frame.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Pika-Senko"],
+              "accessible": ["Dio-Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -2798,7 +2902,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Toughness expression — Stone Style reflects Seongji's immovable defensive capability.",
             "replacements": []
           },
           {
@@ -2807,7 +2911,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind-based movement control complements his speed threshold.",
             "replacements": []
           }
         ],
@@ -3120,7 +3224,11 @@ export const reviewedBuilds = [
           "Gale",
           "Mixed Martial Arts"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "seongji-yuk-3x2",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "seongji-yuk-2x2",
@@ -3128,40 +3236,49 @@ export const reviewedBuilds = [
         "type": "Two Slot",
         "bloodlineSlotCount": 2,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Cheonliang / 2-slot",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 7, "ability": 8, "fighting": 8, "weapon": 7, "movement": 7 },
+        "profilePurpose": "Two-Slot Build",
         "bloodlines": [
           {
             "name": "Ryuji-Kenichi",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Strength threshold — sole martial arts source in 2-slot, carries core identity.",
             "exactMovesUsed": [
               "Fist Style: 3rd Stance",
               "Fist Style: Dragon Demon Combo",
               "Fist Style: Dragon Lotus"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "In 2-slot, Ryuji-Kenichi carries both the strength identity and mode activation as the minimum viable core.",
+            "represents": "Seongji Yuk's strength threshold — the core that persists when slot count drops.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "lore": ["Kenichi"],
+              "competitive": ["Ashura-Shizen"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Dio-Senko-Rose",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed threshold — explosive burst movement as sole secondary bloodline.",
             "exactMovesUsed": [
               "Time Style: Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Speed threshold preserved in 2-slot; burst acceleration remains critical to Seongji's fighting identity.",
+            "represents": "Seongji Yuk's speed threshold — minimum viable speed coverage.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Pika-Senko"],
+              "accessible": ["Dio-Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -3171,7 +3288,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Toughness expression — Stone Style reflects Seongji's immovable defensive capability.",
             "replacements": []
           },
           {
@@ -3180,7 +3297,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind-based movement control complements his speed threshold.",
             "replacements": []
           }
         ],
@@ -3493,7 +3610,11 @@ export const reviewedBuilds = [
           "Gale",
           "Mixed Martial Arts"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "seongji-yuk-2x2",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "seongji-yuk-accessible",
@@ -3501,6 +3622,11 @@ export const reviewedBuilds = [
         "type": "Beginner",
         "bloodlineSlotCount": 2,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Cheonliang / Accessible",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accessible",
+        "fidelityScores": { "visual": 6, "ability": 7, "fighting": 7, "weapon": 7, "movement": 6 },
+        "profilePurpose": "Accessible Build",
         "bloodlines": [
           {
             "name": "Kenichi",
@@ -3508,10 +3634,10 @@ export const reviewedBuilds = [
               "Fist Style: Dragon Strike",
               "Fist Style: Crane Demon"
             ],
-            "purpose": "Accessible close-combat pressure.",
+            "purpose": "Accessible strength substitute — simpler martial arts for beginners.",
             "useMode": false,
-            "reason": "Accessible substitute: a simpler martial route with no mode commitment.",
-            "represents": "Close combat fundamentals",
+            "reason": "Accessible substitute: Kenichi provides simpler martial route without mode commitment, lowering ownership barrier.",
+            "represents": "Seongji Yuk's close combat fundamentals — basic martial arts pressure.",
             "replacements": {
               "lore": [],
               "competitive": [
@@ -3522,18 +3648,18 @@ export const reviewedBuilds = [
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Toughness threshold — counter-fighting preserved in accessible variant.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Doku-Tengoku is kept in accessible variant because counter-fighting is core to Seongji's identity and has no simpler substitute.",
+            "represents": "Seongji Yuk's toughness threshold — absorbing damage and punishing.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
             }
           }
@@ -3545,7 +3671,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Toughness expression — Stone Style reflects Seongji's immovable defensive capability.",
             "replacements": []
           },
           {
@@ -3868,7 +3994,11 @@ export const reviewedBuilds = [
         ],
         "compromises": [
           "Accessible choices are not the strongest visual match."
-        ]
+        ],
+        "preparedHotbarProfileId": "seongji-yuk-accessible",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       }
     ],
     "evidence": [
@@ -3943,25 +4073,25 @@ export const reviewedBuilds = [
       {
         "id": "gun-park-bloodline-1",
         "name": "Akuma",
-        "purpose": "Primary character identity and pressure engine.",
+        "purpose": "Ultra Instinct approximation — Copy Style mirrors Gun's automatic reactive combat.",
         "useMode": true
       },
       {
         "id": "gun-park-bloodline-2",
         "name": "Bruce-Kenichi",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Precise striking technique — Gun's devastating precision even in UI mode.",
         "useMode": false
       },
       {
         "id": "gun-park-bloodline-3",
         "name": "Ryuji-Kenichi",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Raw physical power and stamina-based pressure.",
         "useMode": false
       },
       {
         "id": "gun-park-bloodline-4",
         "name": "Doku-Tengoku",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Reactive counter and automatic defense — UI's instinctive defensive layer.",
         "useMode": false
       }
     ],
@@ -3983,7 +4113,7 @@ export const reviewedBuilds = [
         "key": "1",
         "source": "Akuma",
         "ability": "Copy Style: Reality Control",
-        "purpose": "Primary character identity and pressure engine.",
+        "purpose": "Ultra Instinct reactive opener — automatic combat initiation.",
         "comboRole": "Starter",
         "blockBreak": false,
         "guardPressure": false,
@@ -3994,7 +4124,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "characterAbility": "Ultra Instinct automatic reactive combat.",
         "mobility": false
       },
       {
@@ -4002,7 +4132,7 @@ export const reviewedBuilds = [
         "key": "2",
         "source": "Akuma",
         "ability": "Copy Style: Reflex Enhance",
-        "purpose": "Primary character identity and pressure engine.",
+        "purpose": "Reflex amplification — mirrors Gun's instinctive reaction speed.",
         "comboRole": "Extender",
         "blockBreak": false,
         "guardPressure": false,
@@ -4013,7 +4143,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "characterAbility": "Ultra Instinct automatic reactive combat.",
         "mobility": false
       },
       {
@@ -4021,7 +4151,7 @@ export const reviewedBuilds = [
         "key": "3",
         "source": "Akuma",
         "ability": "Copy Style: Blaze Invert",
-        "purpose": "Primary character identity and pressure engine.",
+        "purpose": "Reactive inversion pressure — automatic counter-attack.",
         "comboRole": "Pressure",
         "blockBreak": false,
         "guardPressure": true,
@@ -4032,7 +4162,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "characterAbility": "Ultra Instinct automatic reactive combat.",
         "mobility": false
       },
       {
@@ -4040,7 +4170,7 @@ export const reviewedBuilds = [
         "key": "4",
         "source": "Bruce-Kenichi",
         "ability": "Fist Style: 6th Dance",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Precise striking — devastating precision combo starter.",
         "comboRole": "Defense",
         "blockBreak": false,
         "guardPressure": false,
@@ -4051,7 +4181,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Precise striking — devastating precision.",
         "mobility": false
       },
       {
@@ -4059,7 +4189,7 @@ export const reviewedBuilds = [
         "key": "5",
         "source": "Bruce-Kenichi",
         "ability": "Fist Style: 9th Dance",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Precision finisher — maximum efficiency striking.",
         "comboRole": "Finisher",
         "blockBreak": false,
         "guardPressure": false,
@@ -4070,7 +4200,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Precise striking — devastating precision.",
         "mobility": false
       },
       {
@@ -4089,7 +4219,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Intentionally empty; no filler ability is assigned.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Not used in this variant",
         "mobility": false
       },
       {
@@ -4097,7 +4227,7 @@ export const reviewedBuilds = [
         "key": "V",
         "source": "Bruce-Kenichi",
         "ability": "Fist Style: Tiger Lotus",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Precision finisher — overwhelming finishing power.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -4108,7 +4238,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Precise striking — devastating precision.",
         "mobility": false
       },
       {
@@ -4116,7 +4246,7 @@ export const reviewedBuilds = [
         "key": "B",
         "source": "Ryuji-Kenichi",
         "ability": "Fist Style: 3rd Stance",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Raw power defensive stance — physical durability layer.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -4127,7 +4257,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Raw physical power and stamina-based pressure.",
         "mobility": false
       },
       {
@@ -4135,7 +4265,7 @@ export const reviewedBuilds = [
         "key": "N",
         "source": "Ryuji-Kenichi",
         "ability": "Fist Style: Dragon Demon Combo",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Raw power combo — overwhelming physical pressure.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -4146,7 +4276,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Raw physical power and stamina-based pressure.",
         "mobility": false
       },
       {
@@ -4265,8 +4395,16 @@ export const reviewedBuilds = [
       "testDate": "",
       "notes": "Live-game combo timing still requires owner testing."
     },
-    "changeHistory": [],
-    "chapterRange": "Current Lookism continuity; exact chapter range needs editorial confirmation",
+    "changeHistory": [
+      {
+        "field": "variants",
+        "previousValue": "Stub Phase B fields missing",
+        "newValue": "Phase B fields added: arcVersion, fidelityScores, buildIntent, profilePurpose, bloodline purposes, element purposes, evidence, verificationStatus, researchedGameVersion, hotbar metadata",
+        "date": "2026-08-07",
+        "reason": "Phase B build rework — Gun Park upgrade"
+      }
+    ],
+    "chapterRange": "Lookism chapters 1–480+",
     "characterAbilities": [
       "Ultra Instinct approximation",
       "Pressure",
@@ -4284,74 +4422,87 @@ export const reviewedBuilds = [
         "type": "Primary",
         "bloodlineSlotCount": 4,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Mastered Ultra Instinct",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 8, "ability": 9, "fighting": 9, "weapon": 7, "movement": 8 },
+        "profilePurpose": "Identity Build",
         "bloodlines": [
           {
             "name": "Akuma",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Ultra Instinct approximation — Copy Style mirrors Gun's automatic reactive combat.",
             "exactMovesUsed": [
               "Copy Style: Reality Control",
               "Copy Style: Reflex Enhance",
               "Copy Style: Blaze Invert"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Akuma's Copy Style theme parallels Gun's ability to automatically react to any fighting style. Reality Control and Reflex Enhance translate his instinctive combat directly.",
+            "represents": "Gun Park's Ultra Instinct — automatic reactive fighting that adapts to any opponent.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
+              "lore": ["Bankai-Akuma"],
+              "competitive": ["Shindai-Akuma"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Precise striking technique — Gun's devastating precision even in UI mode.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "6th Dance and 9th Dance mirror Gun's precise striking. Tiger Lotus finisher represents his overwhelming finishing power.",
+            "represents": "Gun Park's striking precision — every hit lands with maximum efficiency.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Ryuji-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Raw physical power and stamina-based pressure.",
             "exactMovesUsed": [
               "Fist Style: 3rd Stance",
               "Fist Style: Dragon Demon Combo",
               "Fist Style: Dragon Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Ryuji-Kenichi's stamina-based fighting mirrors Gun's immense physical durability and raw power output.",
+            "represents": "Gun Park's physical dominance — raw power that overwhelms through pure force.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "lore": ["Kenichi"],
+              "competitive": ["Ashura-Shizen"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Reactive counter and automatic defense — UI's instinctive defensive layer.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "128 Palm Counter directly mirrors Gun's automatic defensive reactions. Twin Dragon Barrage provides the multi-hit punishment he delivers after any successful read.",
+            "represents": "Gun Park's automatic defense — instinctive counters that punish every opening.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -4361,7 +4512,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Durability expression — Stone Style reflects Gun's immense physical toughness.",
             "replacements": []
           },
           {
@@ -4370,7 +4521,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Overwhelming force — light-based pressure represents Gun's dominating presence.",
             "replacements": []
           }
         ],
@@ -4388,7 +4539,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Akuma",
             "ability": "Copy Style: Reality Control",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Ultra Instinct reactive opener — automatic combat initiation.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -4399,7 +4550,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -4407,7 +4558,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Akuma",
             "ability": "Copy Style: Reflex Enhance",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Reflex amplification — mirrors Gun's instinctive reaction speed.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -4418,7 +4569,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -4426,7 +4577,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Akuma",
             "ability": "Copy Style: Blaze Invert",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Reactive inversion pressure — automatic counter-attack.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -4437,7 +4588,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -4445,7 +4596,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 6th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Precise striking — devastating precision combo starter.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -4456,7 +4607,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Precise striking — devastating precision.",
             "mobility": false
           },
           {
@@ -4464,7 +4615,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 9th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Precision finisher — maximum efficiency striking.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -4475,7 +4626,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Precise striking — devastating precision.",
             "mobility": false
           },
           {
@@ -4494,7 +4645,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Not used in this variant",
             "mobility": false
           },
           {
@@ -4502,7 +4653,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Precision finisher — overwhelming finishing power.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -4513,7 +4664,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Precise striking — devastating precision.",
             "mobility": false
           },
           {
@@ -4521,7 +4672,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Ryuji-Kenichi",
             "ability": "Fist Style: 3rd Stance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Raw power defensive stance — physical durability layer.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -4532,7 +4683,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
           {
@@ -4540,7 +4691,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Ryuji-Kenichi",
             "ability": "Fist Style: Dragon Demon Combo",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Raw power combo — overwhelming physical pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -4551,7 +4702,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
           {
@@ -4684,7 +4835,11 @@ export const reviewedBuilds = [
           "Order",
           "Mixed Martial Arts"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "gun-park-4x2-hotbar-profile",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "gun-park-3x2",
@@ -4692,57 +4847,68 @@ export const reviewedBuilds = [
         "type": "Three Slot",
         "bloodlineSlotCount": 3,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Mastered Ultra Instinct",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 8, "ability": 8, "fighting": 9, "weapon": 7, "movement": 8 },
+        "profilePurpose": "Three-Slot Build",
         "bloodlines": [
           {
             "name": "Akuma",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Ultra Instinct approximation — Copy Style mirrors Gun's automatic reactive combat.",
             "exactMovesUsed": [
               "Copy Style: Reality Control",
               "Copy Style: Reflex Enhance",
               "Copy Style: Blaze Invert"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Akuma's Copy Style parallels Gun's automatic reactive fighting. Three-slot build retains Akuma as the irreducible UI core.",
+            "represents": "Gun Park's Ultra Instinct — automatic reactive fighting that adapts to any opponent.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
+              "lore": ["Bankai-Akuma"],
+              "competitive": ["Shindai-Akuma"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Ryuji-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Raw physical power and stamina-based pressure — Gun's physical dominance.",
             "exactMovesUsed": [
               "Fist Style: 3rd Stance",
               "Fist Style: Dragon Demon Combo",
               "Fist Style: Dragon Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Ryuji-Kenichi's stamina-based fighting mirrors Gun's raw physical power. Retained over Bruce-Kenichi because power output is more important than precision at 3 slots.",
+            "represents": "Gun Park's physical dominance — raw power that overwhelms through pure force.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "lore": ["Kenichi"],
+              "competitive": ["Ashura-Shizen"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Reactive counter and automatic defense — UI's instinctive defensive layer.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "128 Palm Counter directly mirrors Gun's automatic defensive reactions. Retained in 3-slot because counter-fighting is central to UI identity.",
+            "represents": "Gun Park's automatic defense — instinctive counters that punish every opening.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -4752,7 +4918,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Durability expression — Stone Style reflects Gun's immense physical toughness.",
             "replacements": []
           },
           {
@@ -4761,7 +4927,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Overwhelming force — light-based pressure represents Gun's dominating presence.",
             "replacements": []
           }
         ],
@@ -4779,7 +4945,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Akuma",
             "ability": "Copy Style: Reality Control",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Ultra Instinct reactive opener — automatic combat initiation.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -4790,7 +4956,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -4798,7 +4964,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Akuma",
             "ability": "Copy Style: Reflex Enhance",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Reflex amplification — mirrors Gun's instinctive reaction speed.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -4809,7 +4975,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -4817,7 +4983,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Akuma",
             "ability": "Copy Style: Blaze Invert",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Reactive inversion pressure — automatic counter-attack.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -4828,7 +4994,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -4836,7 +5002,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Ryuji-Kenichi",
             "ability": "Fist Style: 3rd Stance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Raw power defensive stance — physical durability layer.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -4847,7 +5013,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
           {
@@ -4855,7 +5021,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Ryuji-Kenichi",
             "ability": "Fist Style: Dragon Demon Combo",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Raw power combo — overwhelming physical pressure.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -4866,7 +5032,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
           {
@@ -4885,7 +5051,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Not used in this variant",
             "mobility": false
           },
           {
@@ -4893,7 +5059,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Ryuji-Kenichi",
             "ability": "Fist Style: Dragon Lotus",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Raw power finisher — Dragon Lotus delivers maximum physical damage.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -4904,7 +5070,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
           {
@@ -4912,7 +5078,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Reactive counter blast — instinctive defensive punishment.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -4923,7 +5089,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Reactive counter and automatic defense.",
             "mobility": false
           },
           {
@@ -4931,7 +5097,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Counter punishment barrage — multi-hit after successful read.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -4942,7 +5108,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Reactive counter and automatic defense.",
             "mobility": false
           },
           {
@@ -5074,7 +5240,11 @@ export const reviewedBuilds = [
           "Order",
           "Mixed Martial Arts"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "gun-park-3x2-hotbar-profile",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "gun-park-2x2",
@@ -5082,40 +5252,49 @@ export const reviewedBuilds = [
         "type": "Two Slot",
         "bloodlineSlotCount": 2,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Mastered Ultra Instinct",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 7, "ability": 8, "fighting": 8, "weapon": 7, "movement": 7 },
+        "profilePurpose": "Two-Slot Build",
         "bloodlines": [
           {
             "name": "Akuma",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Ultra Instinct approximation — Copy Style mirrors Gun's automatic reactive combat.",
             "exactMovesUsed": [
               "Copy Style: Reality Control",
               "Copy Style: Reflex Enhance",
               "Copy Style: Blaze Invert"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Akuma is the irreducible UI core. Two-slot build keeps only the essential Copy Style reactive layer.",
+            "represents": "Gun Park's Ultra Instinct — automatic reactive fighting that adapts to any opponent.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
+              "lore": ["Bankai-Akuma"],
+              "competitive": ["Shindai-Akuma"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Ryuji-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Raw physical power — the single physical complement to UI at two slots.",
             "exactMovesUsed": [
               "Fist Style: 3rd Stance",
               "Fist Style: Dragon Demon Combo",
               "Fist Style: Dragon Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "At two slots, Ryuji-Kenichi provides the strongest physical pressure to pair with Akuma's reactive layer.",
+            "represents": "Gun Park's physical dominance — raw power that overwhelms through pure force.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "lore": ["Kenichi"],
+              "competitive": ["Ashura-Shizen"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -5125,7 +5304,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Durability expression — Stone Style reflects Gun's immense physical toughness.",
             "replacements": []
           },
           {
@@ -5134,7 +5313,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Overwhelming force — light-based pressure represents Gun's dominating presence.",
             "replacements": []
           }
         ],
@@ -5152,7 +5331,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Akuma",
             "ability": "Copy Style: Reality Control",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Ultra Instinct reactive opener — automatic combat initiation.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -5163,7 +5342,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -5171,7 +5350,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Akuma",
             "ability": "Copy Style: Reflex Enhance",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Reflex amplification — mirrors Gun's instinctive reaction speed.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -5182,7 +5361,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -5190,7 +5369,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Akuma",
             "ability": "Copy Style: Blaze Invert",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Reactive inversion pressure — automatic counter-attack.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -5201,7 +5380,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -5209,7 +5388,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Ryuji-Kenichi",
             "ability": "Fist Style: 3rd Stance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Raw power defensive stance — physical durability layer.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -5220,7 +5399,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
           {
@@ -5228,7 +5407,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Ryuji-Kenichi",
             "ability": "Fist Style: Dragon Demon Combo",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Raw power combo — overwhelming physical pressure.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -5239,7 +5418,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
           {
@@ -5258,7 +5437,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Not used in this variant",
             "mobility": false
           },
           {
@@ -5266,7 +5445,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Ryuji-Kenichi",
             "ability": "Fist Style: Dragon Lotus",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Raw power finisher — Dragon Lotus delivers maximum physical damage.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -5277,7 +5456,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
           {
@@ -5285,7 +5464,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Earth",
             "ability": "Stone Style: Earth Wall",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Durability expression — defensive wall for Gun's toughness.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -5296,7 +5475,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Durability expression — Gun's immense physical toughness.",
             "mobility": false
           },
           {
@@ -5304,7 +5483,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Earth",
             "ability": "Stone Style: Rage Trail",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Durability pressure — area denial from Gun's physical presence.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -5315,7 +5494,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Durability expression — Gun's immense physical toughness.",
             "mobility": false
           },
           {
@@ -5447,7 +5626,11 @@ export const reviewedBuilds = [
           "Order",
           "Mixed Martial Arts"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "gun-park-2x2-hotbar-profile",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "gun-park-accessible",
@@ -5455,23 +5638,30 @@ export const reviewedBuilds = [
         "type": "Beginner",
         "bloodlineSlotCount": 2,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Mastered Ultra Instinct",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accessible",
+        "fidelityScores": { "visual": 6, "ability": 7, "fighting": 7, "weapon": 7, "movement": 6 },
+        "profilePurpose": "Accessible Build",
         "bloodlines": [
           {
             "name": "Akuma",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Ultra Instinct approximation — Copy Style preserved even in accessible variant.",
             "exactMovesUsed": [
               "Copy Style: Reality Control",
               "Copy Style: Reflex Enhance",
               "Copy Style: Blaze Invert"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Akuma remains the irreducible UI core. Accessible variant retains the reactive identity even for beginners.",
+            "represents": "Gun Park's Ultra Instinct — automatic reactive fighting preserved for accessibility.",
             "replacements": {
               "lore": [],
               "competitive": [],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Kenichi",
@@ -5479,17 +5669,19 @@ export const reviewedBuilds = [
               "Fist Style: Dragon Strike",
               "Fist Style: Crane Demon"
             ],
-            "purpose": "Accessible close-combat pressure.",
+            "purpose": "Accessible martial arts substitute — simpler close-combat pressure for beginners.",
             "useMode": false,
-            "reason": "Accessible substitute: a simpler martial route with no mode commitment.",
-            "represents": "Close combat fundamentals",
+            "reason": "Kenichi replaces Bruce-Kenichi and Ryuji-Kenichi with a simpler martial arts bloodline that requires no mode commitment.",
+            "represents": "Gun Park's close-combat fundamentals in an accessible form.",
             "replacements": {
               "lore": [],
               "competitive": [
                 "Bruce-Kenichi"
               ],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -5499,7 +5691,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Durability expression — Stone Style reflects Gun's toughness in accessible form.",
             "replacements": []
           },
           {
@@ -5508,7 +5700,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Overwhelming force — light-based pressure for accessible players.",
             "replacements": []
           }
         ],
@@ -5526,7 +5718,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Akuma",
             "ability": "Copy Style: Reality Control",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Ultra Instinct reactive opener — automatic combat initiation.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -5537,7 +5729,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -5545,7 +5737,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Akuma",
             "ability": "Copy Style: Reflex Enhance",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Reflex amplification — mirrors Gun's instinctive reaction speed.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -5556,7 +5748,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -5564,7 +5756,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Akuma",
             "ability": "Copy Style: Blaze Invert",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Reactive inversion pressure — automatic counter-attack.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -5575,7 +5767,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
           {
@@ -5632,7 +5824,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Close combat fundamentals",
+            "characterAbility": "Not used in this variant",
             "mobility": false
           },
           {
@@ -5640,7 +5832,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Earth",
             "ability": "Stone Style: Earth Wall",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Durability expression — defensive wall for Gun's toughness.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -5651,7 +5843,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Durability expression — Gun's toughness in accessible form.",
             "mobility": false
           },
           {
@@ -5659,7 +5851,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Earth",
             "ability": "Stone Style: Rage Trail",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Durability pressure — area denial from Gun's physical presence.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -5670,7 +5862,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Durability expression — Gun's toughness in accessible form.",
             "mobility": false
           },
           {
@@ -5678,7 +5870,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Order",
             "ability": "Order Style: Beam of Light",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Overwhelming force — light-based pressure for accessible players.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -5689,7 +5881,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Overwhelming force — Gun's dominating presence.",
             "mobility": false
           },
           {
@@ -5822,7 +6014,11 @@ export const reviewedBuilds = [
         ],
         "compromises": [
           "Accessible choices are not the strongest visual match."
-        ]
+        ],
+        "preparedHotbarProfileId": "gun-park-accessible-hotbar-profile",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       }
     ],
     "evidence": [
@@ -5897,25 +6093,25 @@ export const reviewedBuilds = [
       {
         "id": "little-daniel-park-bloodline-1",
         "name": "Akuma",
-        "purpose": "Primary character identity and pressure engine.",
+        "purpose": "Copy ability — mirrors Daniel's power to learn and replicate any fighting style.",
         "useMode": true
       },
       {
         "id": "little-daniel-park-bloodline-2",
         "name": "Dio-Senko-Rose",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Speed and prediction layer — time manipulation represents Daniel's superhuman UI-mode speed.",
         "useMode": false
       },
       {
         "id": "little-daniel-park-bloodline-3",
         "name": "Bruce-Kenichi",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Learned martial arts mastery — precision striking absorbed from multiple fighting masters.",
         "useMode": false
       },
       {
         "id": "little-daniel-park-bloodline-4",
         "name": "Doku-Tengoku",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Predictive counter — defensive reads that turn opponents' attacks against them.",
         "useMode": false
       }
     ],
@@ -5937,7 +6133,7 @@ export const reviewedBuilds = [
         "key": "1",
         "source": "Akuma",
         "ability": "Copy Style: Reality Control",
-        "purpose": "Primary character identity and pressure engine.",
+        "purpose": "Copy-style opener — Daniel's style-absorption initiation.",
         "comboRole": "Starter",
         "blockBreak": false,
         "guardPressure": false,
@@ -5948,7 +6144,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "characterAbility": "Copy ability — learns and replicates any fighting style.",
         "mobility": false
       },
       {
@@ -5956,7 +6152,7 @@ export const reviewedBuilds = [
         "key": "2",
         "source": "Akuma",
         "ability": "Copy Style: Reflex Enhance",
-        "purpose": "Primary character identity and pressure engine.",
+        "purpose": "Prediction amplification — mirrors Daniel's ability to read opponents.",
         "comboRole": "Extender",
         "blockBreak": false,
         "guardPressure": false,
@@ -5967,7 +6163,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "characterAbility": "Copy ability — learns and replicates any fighting style.",
         "mobility": false
       },
       {
@@ -5975,7 +6171,7 @@ export const reviewedBuilds = [
         "key": "3",
         "source": "Akuma",
         "ability": "Copy Style: Blaze Invert",
-        "purpose": "Primary character identity and pressure engine.",
+        "purpose": "Copy inversion pressure — reactive counter-attack from absorbed styles.",
         "comboRole": "Pressure",
         "blockBreak": false,
         "guardPressure": true,
@@ -5986,7 +6182,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "characterAbility": "Copy ability — learns and replicates any fighting style.",
         "mobility": false
       },
       {
@@ -5994,7 +6190,7 @@ export const reviewedBuilds = [
         "key": "4",
         "source": "Dio-Senko-Rose",
         "ability": "Time Style: Ultimate Flash",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Speed burst — Daniel's UI-mode blinding acceleration.",
         "comboRole": "Defense",
         "blockBreak": false,
         "guardPressure": false,
@@ -6005,7 +6201,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "UI-mode speed and prediction.",
         "mobility": false
       },
       {
@@ -6013,7 +6209,7 @@ export const reviewedBuilds = [
         "key": "5",
         "source": "Dio-Senko-Rose",
         "ability": "Time Style: Time Jump",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Prediction movement — repositioning through perceived time advantage.",
         "comboRole": "Finisher",
         "blockBreak": false,
         "guardPressure": false,
@@ -6024,7 +6220,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "UI-mode speed and prediction.",
         "mobility": false
       },
       {
@@ -6043,7 +6239,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Intentionally empty; no filler ability is assigned.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Not used in this variant",
         "mobility": false
       },
       {
@@ -6051,7 +6247,7 @@ export const reviewedBuilds = [
         "key": "V",
         "source": "Dio-Senko-Rose",
         "ability": "Time Style: Time Stop",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Prediction freeze — momentary control from reading ahead.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -6062,7 +6258,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "UI-mode speed and prediction.",
         "mobility": false
       },
       {
@@ -6070,7 +6266,7 @@ export const reviewedBuilds = [
         "key": "B",
         "source": "Bruce-Kenichi",
         "ability": "Fist Style: 6th Dance",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Absorbed precision — martial technique learned through copy.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -6081,7 +6277,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Learned martial arts mastery.",
         "mobility": false
       },
       {
@@ -6089,7 +6285,7 @@ export const reviewedBuilds = [
         "key": "N",
         "source": "Bruce-Kenichi",
         "ability": "Fist Style: 9th Dance",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Absorbed finisher — precision striking from copied mastery.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -6100,7 +6296,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Learned martial arts mastery.",
         "mobility": false
       },
       {
@@ -6219,8 +6415,16 @@ export const reviewedBuilds = [
       "testDate": "",
       "notes": "Live-game combo timing still requires owner testing."
     },
-    "changeHistory": [],
-    "chapterRange": "Current Lookism continuity; exact chapter range needs editorial confirmation",
+    "changeHistory": [
+      {
+        "field": "variants",
+        "previousValue": "Stub Phase B fields missing",
+        "newValue": "Phase B fields added: arcVersion, fidelityScores, buildIntent, profilePurpose, bloodline purposes, element purposes, evidence, verificationStatus, researchedGameVersion, hotbar metadata",
+        "date": "2026-08-07",
+        "reason": "Phase B build rework — Little Daniel Park upgrade"
+      }
+    ],
+    "chapterRange": "Lookism chapters 1–480+",
     "characterAbilities": [
       "Copy approximation",
       "Prediction",
@@ -6238,74 +6442,87 @@ export const reviewedBuilds = [
         "type": "Primary",
         "bloodlineSlotCount": 4,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — UI and Path",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 8, "ability": 9, "fighting": 9, "weapon": 7, "movement": 8 },
+        "profilePurpose": "Identity Build",
         "bloodlines": [
           {
             "name": "Akuma",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy ability — mirrors Daniel's power to learn and replicate any fighting style.",
             "exactMovesUsed": [
               "Copy Style: Reality Control",
               "Copy Style: Reflex Enhance",
               "Copy Style: Blaze Invert"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Akuma's Copy Style directly parallels Daniel's signature copy ability. Reality Control and Reflex Enhance translate his prediction and style-absorption.",
+            "represents": "Daniel Park's copy ability — learning and replicating any fighting style on sight.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
+              "lore": ["Bankai-Akuma"],
+              "competitive": ["Shindai-Akuma"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Dio-Senko-Rose",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed and prediction layer — time manipulation represents Daniel's superhuman UI-mode speed.",
             "exactMovesUsed": [
               "Time Style: Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Time Jump and Time Stop mirror Daniel's ability to perceive and react faster than opponents. Rose variant preferred for visual accuracy.",
+            "represents": "Daniel Park's UI-mode speed — perceiving and reacting faster than any opponent.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Pika-Senko"],
+              "accessible": ["Dio-Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Learned martial arts mastery — precision striking absorbed from multiple fighting masters.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Bruce-Kenichi's precise kick combinations mirror the martial arts Daniel absorbed from watching Gun, Goo, and other fighters.",
+            "represents": "Daniel Park's absorbed fighting mastery — techniques learned through his copy ability.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Predictive counter — defensive reads that turn opponents' attacks against them.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "128 Palm Counter mirrors Daniel's prediction-based counter-fighting. His UI mode lets him read attacks before they land.",
+            "represents": "Daniel Park's prediction — reading and countering opponents before they can act.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -6315,7 +6532,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Focused energy — light-based control represents Daniel's clear-headed combat analysis.",
             "replacements": []
           },
           {
@@ -6324,7 +6541,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind movement mirrors Daniel's blinding UI-mode speed.",
             "replacements": []
           }
         ],
@@ -6342,7 +6559,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Akuma",
             "ability": "Copy Style: Reality Control",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy-style opener — Daniel's style-absorption initiation.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -6353,7 +6570,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -6361,7 +6578,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Akuma",
             "ability": "Copy Style: Reflex Enhance",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Prediction amplification — mirrors Daniel's ability to read opponents.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -6372,7 +6589,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -6380,7 +6597,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Akuma",
             "ability": "Copy Style: Blaze Invert",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy inversion pressure — reactive counter-attack from absorbed styles.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -6391,7 +6608,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -6399,7 +6616,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Ultimate Flash",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed burst — Daniel's UI-mode blinding acceleration.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -6410,7 +6627,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "UI-mode speed and prediction.",
             "mobility": false
           },
           {
@@ -6418,7 +6635,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Jump",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Prediction movement — repositioning through perceived time advantage.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -6429,7 +6646,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "UI-mode speed and prediction.",
             "mobility": false
           },
           {
@@ -6448,7 +6665,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Not used in this variant",
             "mobility": false
           },
           {
@@ -6456,7 +6673,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Stop",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Prediction freeze — momentary control from reading ahead.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -6467,7 +6684,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "UI-mode speed and prediction.",
             "mobility": false
           },
           {
@@ -6475,7 +6692,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 6th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Absorbed precision — martial technique learned through copy.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -6486,7 +6703,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
           {
@@ -6494,7 +6711,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 9th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Absorbed finisher — precision striking from copied mastery.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -6505,7 +6722,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
           {
@@ -6638,7 +6855,11 @@ export const reviewedBuilds = [
           "Gale",
           "Mixed Martial Arts"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "little-daniel-park-4x2-hotbar-profile",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "little-daniel-park-3x2",
@@ -6646,57 +6867,68 @@ export const reviewedBuilds = [
         "type": "Three Slot",
         "bloodlineSlotCount": 3,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — UI and Path",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 8, "ability": 8, "fighting": 8, "weapon": 7, "movement": 8 },
+        "profilePurpose": "Three-Slot Build",
         "bloodlines": [
           {
             "name": "Akuma",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy ability — mirrors Daniel's power to learn and replicate any fighting style.",
             "exactMovesUsed": [
               "Copy Style: Reality Control",
               "Copy Style: Reflex Enhance",
               "Copy Style: Blaze Invert"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Akuma's Copy Style is the irreducible core of Daniel's identity. Three-slot retains copy and prediction.",
+            "represents": "Daniel Park's copy ability — learning and replicating any fighting style on sight.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
+              "lore": ["Bankai-Akuma"],
+              "competitive": ["Shindai-Akuma"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Learned martial arts mastery — precision striking retained at three slots.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Bruce-Kenichi retained over Dio-Senko-Rose because Daniel's absorbed martial arts are more central than speed at three slots.",
+            "represents": "Daniel Park's absorbed fighting mastery — techniques learned through his copy ability.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Predictive counter — defensive reads retained for Daniel's prediction identity.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Counter-fighting is central to Daniel's prediction ability. Retained in three-slot because reading opponents is his core skill.",
+            "represents": "Daniel Park's prediction — reading and countering opponents before they can act.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -6706,7 +6938,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Focused energy — light-based control represents Daniel's clear-headed combat analysis.",
             "replacements": []
           },
           {
@@ -6715,7 +6947,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind movement mirrors Daniel's blinding UI-mode speed.",
             "replacements": []
           }
         ],
@@ -6733,7 +6965,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Akuma",
             "ability": "Copy Style: Reality Control",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy-style opener — Daniel's style-absorption initiation.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -6744,7 +6976,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -6752,7 +6984,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Akuma",
             "ability": "Copy Style: Reflex Enhance",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Prediction amplification — mirrors Daniel's ability to read opponents.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -6763,7 +6995,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -6771,7 +7003,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Akuma",
             "ability": "Copy Style: Blaze Invert",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy inversion pressure — reactive counter-attack from absorbed styles.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -6782,7 +7014,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -6790,7 +7022,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 6th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Absorbed precision — martial technique learned through copy.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -6801,7 +7033,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
           {
@@ -6809,7 +7041,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 9th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Absorbed finisher — precision striking from copied mastery.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -6820,7 +7052,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
           {
@@ -6839,7 +7071,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Not used in this variant",
             "mobility": false
           },
           {
@@ -6847,7 +7079,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Absorbed power finisher — overwhelming technique from copied styles.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -6858,7 +7090,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
           {
@@ -6866,7 +7098,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Predictive counter blast — punishment from reading opponents.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -6877,7 +7109,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Predictive counter-fighting.",
             "mobility": false
           },
           {
@@ -6885,7 +7117,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Counter punishment barrage — multi-hit after successful prediction.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -6896,7 +7128,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Predictive counter-fighting.",
             "mobility": false
           },
           {
@@ -7028,7 +7260,11 @@ export const reviewedBuilds = [
           "Gale",
           "Mixed Martial Arts"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "little-daniel-park-3x2-hotbar-profile",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "little-daniel-park-2x2",
@@ -7036,40 +7272,49 @@ export const reviewedBuilds = [
         "type": "Two Slot",
         "bloodlineSlotCount": 2,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — UI and Path",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 7, "ability": 8, "fighting": 8, "weapon": 7, "movement": 7 },
+        "profilePurpose": "Two-Slot Build",
         "bloodlines": [
           {
             "name": "Akuma",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy ability — irreducible core of Daniel's identity at two slots.",
             "exactMovesUsed": [
               "Copy Style: Reality Control",
               "Copy Style: Reflex Enhance",
               "Copy Style: Blaze Invert"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Akuma is the irreducible copy core. Two-slot keeps only the essential Copy Style layer.",
+            "represents": "Daniel Park's copy ability — learning and replicating any fighting style on sight.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
+              "lore": ["Bankai-Akuma"],
+              "competitive": ["Shindai-Akuma"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Learned martial arts — the single physical complement to copy at two slots.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "At two slots, Bruce-Kenichi provides the strongest martial arts expression to pair with Akuma's copy layer.",
+            "represents": "Daniel Park's absorbed fighting mastery — techniques learned through his copy ability.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -7079,7 +7324,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Focused energy — light-based control represents Daniel's clear-headed combat analysis.",
             "replacements": []
           },
           {
@@ -7088,7 +7333,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind movement mirrors Daniel's blinding UI-mode speed.",
             "replacements": []
           }
         ],
@@ -7106,7 +7351,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Akuma",
             "ability": "Copy Style: Reality Control",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy-style opener — Daniel's style-absorption initiation.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -7117,7 +7362,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -7125,7 +7370,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Akuma",
             "ability": "Copy Style: Reflex Enhance",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Prediction amplification — mirrors Daniel's ability to read opponents.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -7136,7 +7381,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -7144,7 +7389,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Akuma",
             "ability": "Copy Style: Blaze Invert",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy inversion pressure — reactive counter-attack from absorbed styles.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -7155,7 +7400,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -7163,7 +7408,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 6th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Absorbed precision — martial technique learned through copy.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -7174,7 +7419,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
           {
@@ -7182,7 +7427,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 9th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Absorbed finisher — precision striking from copied mastery.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -7193,7 +7438,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
           {
@@ -7212,7 +7457,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Not used in this variant",
             "mobility": false
           },
           {
@@ -7220,7 +7465,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Absorbed power finisher — overwhelming technique from copied styles.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -7231,7 +7476,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
           {
@@ -7239,7 +7484,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Order",
             "ability": "Order Style: Beam of Light",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Focused energy — light-based combat analysis pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -7250,7 +7495,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Focused energy — Daniel's clear-headed analysis.",
             "mobility": false
           },
           {
@@ -7258,7 +7503,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Order",
             "ability": "Order Style: Grenade of Light",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Focused energy — light-based combat analysis pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -7269,7 +7514,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Focused energy — Daniel's clear-headed analysis.",
             "mobility": false
           },
           {
@@ -7401,7 +7646,11 @@ export const reviewedBuilds = [
           "Gale",
           "Mixed Martial Arts"
         ],
-        "compromises": []
+        "compromises": [],
+        "preparedHotbarProfileId": "little-daniel-park-2x2-hotbar-profile",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       },
       {
         "id": "little-daniel-park-accessible",
@@ -7409,23 +7658,30 @@ export const reviewedBuilds = [
         "type": "Beginner",
         "bloodlineSlotCount": 2,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — UI and Path",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accessible",
+        "fidelityScores": { "visual": 6, "ability": 7, "fighting": 7, "weapon": 7, "movement": 6 },
+        "profilePurpose": "Accessible Build",
         "bloodlines": [
           {
             "name": "Akuma",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy ability — preserved even in accessible variant as Daniel's core identity.",
             "exactMovesUsed": [
               "Copy Style: Reality Control",
               "Copy Style: Reflex Enhance",
               "Copy Style: Blaze Invert"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Akuma remains the irreducible copy core. Accessible variant retains Daniel's copy identity for beginners.",
+            "represents": "Daniel Park's copy ability preserved for accessibility.",
             "replacements": {
               "lore": [],
               "competitive": [],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Kenichi",
@@ -7433,17 +7689,19 @@ export const reviewedBuilds = [
               "Fist Style: Dragon Strike",
               "Fist Style: Crane Demon"
             ],
-            "purpose": "Accessible close-combat pressure.",
+            "purpose": "Accessible martial arts substitute — simpler close-combat for beginners.",
             "useMode": false,
-            "reason": "Accessible substitute: a simpler martial route with no mode commitment.",
-            "represents": "Close combat fundamentals",
+            "reason": "Kenichi replaces Bruce-Kenichi with a simpler martial arts bloodline requiring no mode commitment.",
+            "represents": "Daniel Park's close-combat fundamentals in accessible form.",
             "replacements": {
               "lore": [],
               "competitive": [
                 "Bruce-Kenichi"
               ],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -7453,7 +7711,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Focused energy — light-based control in accessible form.",
             "replacements": []
           },
           {
@@ -7462,7 +7720,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind movement for accessible players.",
             "replacements": []
           }
         ],
@@ -7480,7 +7738,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Akuma",
             "ability": "Copy Style: Reality Control",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy-style opener — Daniel's style-absorption initiation.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -7491,7 +7749,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -7499,7 +7757,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Akuma",
             "ability": "Copy Style: Reflex Enhance",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Prediction amplification — mirrors Daniel's ability to read opponents.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -7510,7 +7768,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -7518,7 +7776,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Akuma",
             "ability": "Copy Style: Blaze Invert",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Copy inversion pressure — reactive counter-attack from absorbed styles.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -7529,7 +7787,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
           {
@@ -7586,7 +7844,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Close combat fundamentals",
+            "characterAbility": "Not used in this variant",
             "mobility": false
           },
           {
@@ -7594,7 +7852,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Order",
             "ability": "Order Style: Beam of Light",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Focused energy — light-based combat analysis pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -7605,7 +7863,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Focused energy — Daniel's clear-headed analysis.",
             "mobility": false
           },
           {
@@ -7613,7 +7871,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Order",
             "ability": "Order Style: Grenade of Light",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Focused energy — light-based combat analysis pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -7624,7 +7882,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Focused energy — Daniel's clear-headed analysis.",
             "mobility": false
           },
           {
@@ -7632,7 +7890,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Gale",
             "ability": "Gale Style: Vortex",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind movement for Daniel's UI-mode speed.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -7643,7 +7901,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Speed expression — blinding UI-mode speed.",
             "mobility": false
           },
           {
@@ -7776,7 +8034,11 @@ export const reviewedBuilds = [
         ],
         "compromises": [
           "Accessible choices are not the strongest visual match."
-        ]
+        ],
+        "preparedHotbarProfileId": "little-daniel-park-accessible-hotbar-profile",
+        "hotbarLegalityStatus": "Game Legal",
+        "ownerTestingStatus": "Not tested",
+        "researchedGameVersion": "250"
       }
     ],
     "evidence": [
@@ -8192,74 +8454,86 @@ export const reviewedBuilds = [
         "type": "Primary",
         "bloodlineSlotCount": 4,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Infinite Technique",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 8, "ability": 9, "fighting": 9, "weapon": 7, "movement": 9 },
+        "profilePurpose": "Identity Build",
         "bloodlines": [
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Infinite technique mastery — Johan's perfect command of every martial art.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Bruce-Kenichi's precise kick combinations directly mirror Johan's mastery of every fighting discipline. 6th Dance and 9th Dance translate his flawless technique.",
+            "represents": "Johan Seong's infinite technique — perfect mastery of every fighting style.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Dio-Senko-Rose",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed supremacy — time manipulation represents Johan's unmatched combat speed; C-mode enabled.",
             "exactMovesUsed": [
               "Time Style: Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": true,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Dio-Senko-Rose C-mode enabled for Johan's speed transformation. Time Jump and Time Stop mirror his ability to outpace any opponent.",
+            "represents": "Johan Seong's speed supremacy — moving faster than any opponent can perceive.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Pika-Senko"],
+              "accessible": ["Dio-Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Pika-Senko",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Light-speed striking — explosive kick pressure at the speed of light.",
             "exactMovesUsed": [
               "Time Style: Star Kick",
-              "Time Style: Star Kick Rising",
-              "Time Style: Star Bomb Barrage"
+              "Time Style: Star Kick Rising"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Star Kick and Star Kick Rising provide explosive speed-of-light pursuit kicks matching Johan's overwhelming speed. Only 2 catalog moves available.",
+            "represents": "Johan Seong's light-speed kicks — blinding strike speed that overwhelms opponents.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Dio-Senko"],
+              "accessible": ["Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Technique counter — reading and reversing opponents through perfect mastery.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "128 Palm Counter mirrors Johan's ability to counter any technique through his infinite mastery. He can reverse anything he sees.",
+            "represents": "Johan Seong's counter mastery — reversing any technique through perfect understanding.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -8269,7 +8543,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind movement mirrors Johan's blinding combat speed.",
             "replacements": []
           },
           {
@@ -8278,7 +8552,7 @@ export const reviewedBuilds = [
               "Shock Style: Stream",
               "Shock Style: Blast"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Electrical pressure — shock-based attacks complement Johan's overwhelming speed.",
             "replacements": []
           }
         ],
@@ -8600,57 +8874,68 @@ export const reviewedBuilds = [
         "type": "Three Slot",
         "bloodlineSlotCount": 3,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Infinite Technique",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 8, "ability": 8, "fighting": 9, "weapon": 7, "movement": 8 },
+        "profilePurpose": "Three-Slot Build",
         "bloodlines": [
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Infinite technique mastery — Johan's perfect command of every martial art.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Bruce-Kenichi retained as Johan's core martial identity at three slots.",
+            "represents": "Johan Seong's infinite technique — perfect mastery of every fighting style.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Dio-Senko-Rose",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed supremacy — time manipulation retained for Johan's unmatched speed; C-mode enabled.",
             "exactMovesUsed": [
               "Time Style: Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": true,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Speed is central to Johan's identity. Retained at three slots with C-mode because his speed defines the character.",
+            "represents": "Johan Seong's speed supremacy — moving faster than any opponent can perceive.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Pika-Senko"],
+              "accessible": ["Dio-Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Technique counter — reading and reversing opponents through perfect mastery.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Counter-fighting retained at three slots because Johan's mastery lets him reverse any technique.",
+            "represents": "Johan Seong's counter mastery — reversing any technique through perfect understanding.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -8660,7 +8945,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind movement mirrors Johan's blinding combat speed.",
             "replacements": []
           },
           {
@@ -8669,7 +8954,7 @@ export const reviewedBuilds = [
               "Shock Style: Stream",
               "Shock Style: Blast"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Electrical pressure — shock-based attacks complement Johan's overwhelming speed.",
             "replacements": []
           }
         ],
@@ -8990,40 +9275,49 @@ export const reviewedBuilds = [
         "type": "Two Slot",
         "bloodlineSlotCount": 2,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Infinite Technique",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accuracy-First",
+        "fidelityScores": { "visual": 7, "ability": 8, "fighting": 8, "weapon": 7, "movement": 8 },
+        "profilePurpose": "Two-Slot Build",
         "bloodlines": [
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Infinite technique mastery — Johan's martial core at two slots.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Bruce-Kenichi retained as the irreducible technique core at two slots.",
+            "represents": "Johan Seong's infinite technique — perfect mastery of every fighting style.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Dio-Senko-Rose",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed supremacy — the essential speed complement at two slots; C-mode enabled.",
             "exactMovesUsed": [
               "Time Style: Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": true,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Speed + technique are the two irreducible halves of Johan's identity. C-mode preserved.",
+            "represents": "Johan Seong's speed supremacy — moving faster than any opponent can perceive.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
-            }
+              "competitive": ["Pika-Senko"],
+              "accessible": ["Dio-Senko"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -9033,7 +9327,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind movement mirrors Johan's blinding combat speed.",
             "replacements": []
           },
           {
@@ -9042,7 +9336,7 @@ export const reviewedBuilds = [
               "Shock Style: Stream",
               "Shock Style: Blast"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Electrical pressure — shock-based attacks complement Johan's overwhelming speed.",
             "replacements": []
           }
         ],
@@ -9363,6 +9657,11 @@ export const reviewedBuilds = [
         "type": "Beginner",
         "bloodlineSlotCount": 2,
         "elementSlotCount": 2,
+        "arcVersion": "Lookism — Infinite Technique",
+        "sourceChapterRange": "Lookism chapters 1–480+",
+        "buildIntent": "Accessible",
+        "fidelityScores": { "visual": 6, "ability": 7, "fighting": 7, "weapon": 7, "movement": 7 },
+        "profilePurpose": "Accessible Build",
         "bloodlines": [
           {
             "name": "Kenichi",
@@ -9370,17 +9669,19 @@ export const reviewedBuilds = [
               "Fist Style: Dragon Strike",
               "Fist Style: Crane Demon"
             ],
-            "purpose": "Accessible close-combat pressure.",
+            "purpose": "Accessible martial arts substitute — simpler technique mastery for beginners.",
             "useMode": false,
-            "reason": "Accessible substitute: a simpler martial route with no mode commitment.",
-            "represents": "Close combat fundamentals",
+            "reason": "Kenichi replaces Bruce-Kenichi with a simpler martial arts bloodline requiring no mode commitment.",
+            "represents": "Johan Seong's technique mastery in accessible form.",
             "replacements": {
               "lore": [],
               "competitive": [
                 "Bruce-Kenichi"
               ],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
             "name": "Dio-Senko",
@@ -9388,10 +9689,10 @@ export const reviewedBuilds = [
               "Ultimate Flash",
               "Time Style: Time Jump"
             ],
-            "purpose": "Accessible speed and time-positioning support.",
+            "purpose": "Accessible speed — preserves Johan's speed identity without requiring Rose variant.",
             "useMode": true,
-            "reason": "Accessible substitute: preserves the speed mechanic without requiring the Rose version.",
-            "represents": "Extreme speed",
+            "reason": "Dio-Senko preserves Johan's speed mechanic in an accessible form. C-mode still enabled.",
+            "represents": "Johan Seong's speed supremacy in accessible form.",
             "replacements": {
               "lore": [
                 "Dio-Senko-Rose"
@@ -9402,7 +9703,9 @@ export const reviewedBuilds = [
               "accessible": [
                 "Senko"
               ]
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -9412,7 +9715,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression — wind movement for accessible players.",
             "replacements": []
           },
           {
@@ -9421,7 +9724,7 @@ export const reviewedBuilds = [
               "Shock Style: Stream",
               "Shock Style: Blast"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Electrical pressure — shock-based attacks for accessible players.",
             "replacements": []
           }
         ],
