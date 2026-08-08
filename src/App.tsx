@@ -99,6 +99,7 @@ const emptyFilters = {
   sort: "archive",
 };
 const compareKey = "shindo-build-archive:compare:v1";
+const unlockDraftKey = "shindo-archive:unlock-draft:v1";
 const freeBuildIds = [
   "zack-lee",
   "vasco",
@@ -168,11 +169,22 @@ export default function App() {
   const tiers = useTierLists();
   const [view, setView] = useState<View>("builds");
   const [authRole, setAuthRole] = useState<"owner" | "user" | null>(null);
-  const [selectedForUnlock, setSelectedForUnlock] = useState<string[]>([]);
-  const toggleSelectForUnlock = (id: string) =>
-    setSelectedForUnlock((prev) =>
-      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
-    );
+  const [selectedForUnlock, setSelectedForUnlock] = useState<string[]>(() =>
+    readStorage(unlockDraftKey, []),
+  );
+  useEffect(() => {
+    writeStorage(unlockDraftKey, selectedForUnlock);
+  }, [selectedForUnlock]);
+  const toggleSelectForUnlock = useCallback(
+    (id: string) => {
+      const build = builds.find((b) => b.id === id);
+      if (!build || build.accessState === "Free" || build.accessState === "Owned") return;
+      setSelectedForUnlock((prev) =>
+        prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
+      );
+    },
+    [builds],
+  );
   useEffect(() => {
     if (!archiveAccountApiConfigured) return
     getAccessState().then((s) => { if (s.status === 'signed-in') setAuthRole(s.role) }).catch(() => undefined)
@@ -244,6 +256,12 @@ export default function App() {
           }),
         );
         setBuilds(records);
+        setSelectedForUnlock((prev) =>
+          prev.filter((id) => {
+            const rec = records.find((r) => r.id === id);
+            return rec?.accessState === "Locked";
+          }),
+        );
       })
       .catch(() =>
         setLoadError(
@@ -643,6 +661,10 @@ export default function App() {
             <AccountPages
               initialPage={accountPage ?? "signin"}
               onNavigateAdmin={() => { setAuthRole("owner"); navigate("admin"); }}
+              onSignedIn={(state) => {
+                setAuthRole(state.role);
+                if (selectedForUnlock.length > 0) navigate("premium");
+              }}
             />
           </Suspense>
         ) : (

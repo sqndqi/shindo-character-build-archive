@@ -507,9 +507,11 @@ function AccountView({
 export default function AccountPages({
   initialPage = 'signin',
   onNavigateAdmin,
+  onSignedIn,
 }: {
   initialPage?: AccountPage
   onNavigateAdmin?: () => void
+  onSignedIn?: (state: SignedIn) => void
 }) {
   const [page, setPage] = useState<AccountPage>(initialPage)
   const [signedInState, setSignedInState] = useState<SignedIn | null>(null)
@@ -569,6 +571,7 @@ export default function AccountPages({
           if (state.status === 'signed-in') {
             setSignedInState(state)
             setPage('account')
+            onSignedIn?.(state)
           }
         }}
         onSwitch={() => setPage('signup')}

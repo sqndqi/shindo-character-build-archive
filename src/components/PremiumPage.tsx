@@ -65,6 +65,23 @@ export default function PremiumPage({
 
   if (loading) return <main className="loading-page">Loading…</main>
 
+  if (access.fullArchive) {
+    return (
+      <main className="premium-page">
+        <header className="premium-page__hero">
+          <Sparkles size={28} aria-hidden="true" />
+          <h1>Full Archive Active</h1>
+          <p>You have access to every character in the archive.</p>
+        </header>
+        <section className="premium-page__access">
+          <p className="premium-access-status premium-access-status--full">
+            <Sparkles size={16} aria-hidden="true" /> All characters unlocked — no purchase needed.
+          </p>
+        </section>
+      </main>
+    )
+  }
+
   return (
     <main className="premium-page">
       <header className="premium-page__hero">
