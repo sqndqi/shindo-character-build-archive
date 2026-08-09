@@ -202,28 +202,40 @@ export function FullBuildPage({
               className={`legality-badge legality-badge--${legality.status.toLowerCase().replaceAll(" ", "-")}`}
             >
               <ShieldCheck size={14} />
-              <b>Hotbar legality: </b>
               {legality.status}
             </span>
-            <span>
-              <b>Research confidence: </b>
-              {build.confidence}
+            <span className="hero-stat-chip">
+              <b>Accuracy</b>
+              <strong>{variant.ratings.accuracy.toFixed(1)}</strong>
             </span>
-            <span>
-              <TestTube2 size={14} />
-              <b>Testing: </b>
-              {variant.ownerTestingStatus ?? "Not tested"}
+            <span className="hero-stat-chip">
+              <b>PvP</b>
+              <strong>{variant.ratings.pvp.toFixed(1)}</strong>
             </span>
-            <span>
-              <b>Accuracy: </b>
-              {variant.ratings.accuracy.toFixed(1)} / 10
+            <span className="hero-stat-chip hero-stat-chip--secondary">
+              <b>Confidence</b>
+              <strong>{build.confidence}</strong>
             </span>
+            {variant.ownerTestingStatus &&
+              variant.ownerTestingStatus !== "Not tested" && (
+                <span>
+                  <TestTube2 size={14} />
+                  {variant.ownerTestingStatus}
+                </span>
+              )}
+            {variant.buildIntent && (
+              <span
+                className={`hero-intent-chip hero-intent-chip--${variant.buildIntent.toLowerCase().replace(/[^a-z]/g, "-")}`}
+              >
+                {variant.buildIntent}
+              </span>
+            )}
           </div>
           <p className="dossier-update">
-            <b>
-              Target update: {variant.researchedGameVersion ?? "249/249.5"}
-            </b>
-            <span>Official mechanic confirmation pending</span>
+            <b>{variant.researchedGameVersion ?? "Update 249/249.5"}</b>
+            {variant.lastVerifiedUpdate && (
+              <span>Verified {variant.lastVerifiedUpdate}</span>
+            )}
           </p>
           <label className="dossier-profile-picker">
             Selected profile
@@ -387,17 +399,35 @@ function HeroLoadoutSnapshot({
             <b>{slot.name}</b>
           </span>
         ))}
+        {variant.elements.map((el) => (
+          <span key={el.name} className="hero-loadout-snapshot__element">
+            <ShindoIcon name={el.name} type="Element" size="medium" />
+            <b>{el.name}</b>
+          </span>
+        ))}
       </div>
-      <p>
-        <strong>{variant.cMode}</strong>
+      <div className="hero-loadout-snapshot__gear">
         <span>
-          {variant.combatArt}
-          {variant.kenjutsu && variant.kenjutsu !== "None"
-            ? ` · ${variant.kenjutsu}`
-            : ""}
-          {variant.weapon !== "None" ? ` · ${variant.weapon}` : ""}
+          <em>Mode</em>
+          <strong>{variant.cMode}</strong>
         </span>
-      </p>
+        <span>
+          <em>Art</em>
+          <strong>{variant.combatArt}</strong>
+        </span>
+        {variant.kenjutsu && variant.kenjutsu !== "None" && (
+          <span>
+            <em>Kenjutsu</em>
+            <strong>{variant.kenjutsu}</strong>
+          </span>
+        )}
+        {variant.weapon !== "None" && (
+          <span>
+            <em>Weapon</em>
+            <strong>{variant.weapon}</strong>
+          </span>
+        )}
+      </div>
     </div>
   );
 }

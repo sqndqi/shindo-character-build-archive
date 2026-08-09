@@ -382,11 +382,19 @@ export function StatsPlaystyleSection({ variant }: { variant: BuildVariant }) {
       <div className="playstyle-columns">
         <article>
           <h3>Strengths</h3>
-          {variant.strengths.length > 0 ? <ul>{variant.strengths.map((s) => <li key={s}>{s}</li>)}</ul> : <EmptyResearchState label="Not documented" />}
+          {variant.strengths.length > 0 ? (
+            <ul className="strength-list">
+              {variant.strengths.map((s) => <li key={s}>{s}</li>)}
+            </ul>
+          ) : <EmptyResearchState label="Not documented" />}
         </article>
         <article>
           <h3>Weaknesses</h3>
-          {variant.weaknesses.length > 0 ? <ul>{variant.weaknesses.map((s) => <li key={s}>{s}</li>)}</ul> : <EmptyResearchState label="Not documented" />}
+          {variant.weaknesses.length > 0 ? (
+            <ul className="weakness-list">
+              {variant.weaknesses.map((s) => <li key={s}>{s}</li>)}
+            </ul>
+          ) : <EmptyResearchState label="Not documented" />}
         </article>
         <article>
           <h3>Usage guide</h3>
@@ -443,8 +451,13 @@ function ComboRoute({ label, steps }: { label: string; steps: string[] }) {
   return (
     <div className="combo-route">
       <h4>{label}</h4>
-      <div className="key-sequence">
-        {steps.map((step, i) => <kbd key={`${step}-${i}`}>{step}</kbd>)}
+      <div className="combo-flow">
+        {steps.map((step, i) => (
+          <span key={`${step}-${i}`} className="combo-flow__step">
+            <kbd>{step}</kbd>
+            {i < steps.length - 1 && <span className="combo-flow__arrow" aria-hidden="true">›</span>}
+          </span>
+        ))}
       </div>
     </div>
   )
@@ -629,7 +642,10 @@ function HotbarDossier({
                   <kbd>{slot.key}</kbd>
                   <ShindoIcon name={slot.source} size="large" />
                   <strong>{slot.ability}</strong>
-                  <small>{slot.source} · {slot.comboRole}</small>
+                  <small>{slot.source}</small>
+                  <span className={`hotbar-role-tag hotbar-role-tag--${slot.comboRole.toLowerCase().replace(/[^a-z]+/g, '-')}`}>
+                    {slot.comboRole}
+                  </span>
                   <ResearchStatusBadge status={slot.researchStatus} />
                 </button>
               ))}

@@ -1975,3 +1975,58 @@ main { width: min(1540px, calc(100% - 40px)); margin-inline: auto; }
 .evidence-collapse > .evidence-list { margin-top: 0; padding: 14px; border: 1px solid var(--border-default); border-top: 0; border-radius: 0; background: var(--bg-input); }
 .evidence-collapse > .hotbar-research-summary { margin-top: 0; padding: 14px; border: 1px solid var(--border-default); border-top: 1px solid var(--border-subtle); border-radius: 0 0 8px 8px; background: var(--bg-input); }
 @media (prefers-reduced-motion: reduce) { .evidence-collapse__chevron { transition: none; } }
+
+/* ================================================================
+   Phase 3B — Deep UI/UX rebuild
+   ================================================================ */
+
+/* Hero stat chips — compact numerical ratings in the dossier hero */
+.hero-stat-chip { flex-direction: column; align-items: flex-start; gap: 0; min-width: 52px; padding: 4px 10px; }
+.hero-stat-chip b { display: block; font-size: 10px; letter-spacing: .05em; text-transform: uppercase; color: var(--text-muted); font-weight: 800; }
+.hero-stat-chip strong { display: block; color: var(--build-accent); font-size: 20px; line-height: 1.1; font-weight: 700; }
+.hero-stat-chip--secondary strong { color: var(--text-secondary); font-size: 14px; }
+.hero-intent-chip { font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: 11px; }
+.hero-intent-chip--accuracy-first { color: #6ee7b7; border-color: rgba(110,231,183,.28); background: rgba(110,231,183,.08); }
+.hero-intent-chip--pvp-first { color: var(--build-accent); border-color: color-mix(in srgb,var(--build-accent) 35%,transparent); background: color-mix(in srgb,var(--build-accent) 10%,transparent); }
+.hero-intent-chip--balanced { color: #a78bfa; border-color: rgba(167,139,250,.28); background: rgba(167,139,250,.08); }
+.hero-intent-chip--accessible { color: #60a5fa; border-color: rgba(96,165,250,.28); background: rgba(96,165,250,.08); }
+
+/* Hero loadout snapshot — gear fact row replaces the old <p> */
+.hero-loadout-snapshot__gear { display: flex; flex-wrap: wrap; gap: 0; }
+.hero-loadout-snapshot__gear > span { min-height: 44px; padding: 5px 12px; display: grid; gap: 1px; border-left: 1px solid var(--border-subtle); }
+.hero-loadout-snapshot__gear > span:first-child { border-left: 0; padding-left: 4px; }
+.hero-loadout-snapshot__gear em { color: var(--text-muted); font-size: 10px; font-style: normal; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; }
+.hero-loadout-snapshot__gear strong { color: var(--build-accent); font-size: 13px; }
+.hero-loadout-snapshot__element b { color: var(--text-muted); }
+
+/* Combo flow — directional arrows between key chips */
+.combo-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 3px; }
+.combo-flow__step { display: inline-flex; align-items: center; gap: 3px; }
+.combo-flow__step kbd { min-width: 30px; height: 30px; display: inline-grid; place-items: center; border: 1px solid var(--border-default); border-radius: 6px; color: var(--text-primary); background: var(--bg-input); font: 700 13px/1 ui-monospace, monospace; }
+.combo-flow__arrow { color: var(--build-accent); font-size: 18px; font-weight: 700; line-height: 1; opacity: .75; user-select: none; }
+
+/* Hotbar role tag — colored chip per combo role */
+.hotbar-role-tag { max-width: 100%; overflow: hidden; padding: 2px 7px; border-radius: 4px; color: var(--text-muted); border: 1px solid var(--border-subtle); background: var(--bg-page); font-size: 11px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; text-align: center; }
+.hotbar-role-tag--opener, .hotbar-role-tag--combo-opener { color: #6ee7b7; border-color: rgba(110,231,183,.25); background: rgba(110,231,183,.08); }
+.hotbar-role-tag--extender, .hotbar-role-tag--combo-extender { color: #a78bfa; border-color: rgba(167,139,250,.25); background: rgba(167,139,250,.08); }
+.hotbar-role-tag--counter, .hotbar-role-tag--counter-move, .hotbar-role-tag--reversal { color: #f87171; border-color: rgba(248,113,113,.25); background: rgba(248,113,113,.08); }
+.hotbar-role-tag--mobility, .hotbar-role-tag--movement, .hotbar-role-tag--dash { color: #60a5fa; border-color: rgba(96,165,250,.25); background: rgba(96,165,250,.08); }
+.hotbar-role-tag--finisher, .hotbar-role-tag--ender, .hotbar-role-tag--combo-ender { color: #fb923c; border-color: rgba(251,146,60,.25); background: rgba(251,146,60,.08); }
+/* Updated hotbar button to accommodate role tag row */
+.dossier-hotbar button { grid-template-rows: 25px auto minmax(26px,auto) auto auto auto; min-height: 162px; }
+.dossier-hotbar button.is-empty { min-height: 112px; }
+@media (max-width: 768px) { .dossier-hotbar button { min-height: 140px; } }
+@media (max-width: 430px) { .dossier-hotbar button { min-height: 120px; } }
+
+/* Strengths and Weaknesses — visual +/− indicators */
+.strength-list, .weakness-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; }
+.strength-list li { padding: 5px 8px 5px 24px; position: relative; border-radius: 5px; color: var(--text-secondary); background: color-mix(in srgb, var(--verified, #69d69b) 7%, transparent); font-size: 13px; line-height: 1.45; }
+.strength-list li::before { content: "+"; position: absolute; left: 8px; color: var(--verified, #69d69b); font-weight: 800; }
+.weakness-list li { padding: 5px 8px 5px 24px; position: relative; border-radius: 5px; color: var(--text-secondary); background: color-mix(in srgb, var(--danger, #e06b6b) 7%, transparent); font-size: 13px; line-height: 1.45; }
+.weakness-list li::before { content: "−"; position: absolute; left: 8px; color: var(--danger, #e06b6b); font-weight: 800; }
+
+/* Variant selector — build-accent active state (overrides generic accent) */
+.build-section .variant-card-grid button.is-active { border-color: var(--build-accent); background: var(--build-accent-soft); }
+.build-section .variant-card-grid button span { color: var(--build-accent); }
+.build-section .variant-card-grid button:hover { border-color: color-mix(in srgb,var(--build-accent) 60%,var(--border-subtle)); }
+@media (prefers-reduced-motion: reduce) { .combo-flow__arrow { transition: none; } }
