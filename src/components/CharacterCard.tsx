@@ -105,8 +105,8 @@ export const CharacterCard = memo(function CharacterCard({
             onClick={() => onUnlock(build.id)}
           >
             {access === "Selected"
-              ? "Selected for pack"
-              : "Unlock in a character pack"}
+              ? "Selected ✓"
+              : "Select for Unlock"}
           </button>
         </div>
       </article>
@@ -241,7 +241,7 @@ export const CharacterCard = memo(function CharacterCard({
               : `${variant.bloodlineSlotCount} Bloodlines · alternatives researching`}
           </span>
           <button className="button button--text" onClick={() => onOpen(build)}>
-            Quick view <ArrowUpRight size={15} />
+            View Build <ArrowUpRight size={15} />
           </button>
         </div>
       </div>

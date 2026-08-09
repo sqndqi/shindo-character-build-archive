@@ -456,11 +456,11 @@ export default function App() {
     ["tiers", "Tier Lists"],
     ["inventory", "My Inventory"],
     ["compare", "Compare"],
-    ["suggestions", "Suggestions"],
   ];
   nav.push(["premium", "Unlock Builds"]);
   if (AUTH_ENABLED) nav.push(["account", authRole ? "Account" : "Sign In"]);
   if (authRole === "owner") nav.push(["admin", "Admin"]);
+  nav.push(["suggestions", "Suggestions"]);
   if (import.meta.env.DEV) nav.push(["diagnostics", "Diagnostics"]);
   const activeFilterCount = Object.entries(filters).filter(
     ([key, value]) => key !== "sort" && value,
@@ -800,7 +800,7 @@ export default function App() {
               <button className="premium-cta-card" onClick={() => navigate("premium")}>
                 <Sparkles size={14} aria-hidden="true" />
                 <strong>Premium builds available</strong>
-                <span>Unlock researched character loadouts with a crypto-powered account.</span>
+                <span>Full loadouts researched for lore accuracy and PvP — unlock in a character pack.</span>
               </button>
             </div>
           </section>

@@ -1962,3 +1962,16 @@ main { width: min(1540px, calc(100% - 40px)); margin-inline: auto; }
 .admin-character-option { display: flex; align-items: center; gap: 6px; padding: 4px 6px; border-radius: 4px; font-size: 12px; cursor: pointer; }
 .admin-character-option:hover { background: var(--bg-surface-hover, var(--bg-surface-raised)); }
 .admin-character-option input { flex-shrink: 0; accent-color: var(--accent); }
+
+/* ------------------------------------------------------------------ Evidence collapse */
+.evidence-collapse { margin-top: 16px; }
+.evidence-collapse > summary { padding: 10px 14px; display: flex; align-items: center; gap: 8px; list-style: none; border: 1px solid var(--border-default); border-radius: 8px; color: var(--text-secondary); background: var(--bg-surface-raised); font-size: 13px; font-weight: 700; cursor: pointer; transition: border-color 140ms ease, color 140ms ease; }
+.evidence-collapse > summary::-webkit-details-marker { display: none; }
+.evidence-collapse > summary:hover { color: var(--text-primary); border-color: var(--border-strong); }
+.evidence-collapse[open] > summary { border-radius: 8px 8px 0 0; border-bottom-color: var(--border-subtle); color: var(--text-primary); }
+.evidence-collapse__chevron { flex-shrink: 0; color: var(--text-muted); transition: transform 160ms ease; }
+.evidence-collapse[open] .evidence-collapse__chevron { transform: rotate(180deg); }
+.evidence-count { margin-left: auto; padding: 2px 7px; border: 1px solid var(--border-default); border-radius: 4px; color: var(--text-muted); font-size: 11px; font-weight: 650; }
+.evidence-collapse > .evidence-list { margin-top: 0; padding: 14px; border: 1px solid var(--border-default); border-top: 0; border-radius: 0; background: var(--bg-input); }
+.evidence-collapse > .hotbar-research-summary { margin-top: 0; padding: 14px; border: 1px solid var(--border-default); border-top: 1px solid var(--border-subtle); border-radius: 0 0 8px 8px; background: var(--bg-input); }
+@media (prefers-reduced-motion: reduce) { .evidence-collapse__chevron { transition: none; } }

@@ -538,46 +538,53 @@ export function ResearchEvidenceSection({ build, variant }: {
           <ul>{(variant.compromises ?? build.knownCompromises).map((c) => <li key={c}>{c}</li>)}</ul>
         </div>
       )}
-      {build.evidence.length > 0 ? (
-        <div className="evidence-list">
-          {build.evidence.map((ev) => {
-            const key = `${ev.category}-${ev.claim}`
-            const expanded = expandedEvidence === key
-            return (
-              <article key={key}>
-                <button className="evidence-toggle" onClick={() => setExpandedEvidence(expanded ? null : key)} aria-expanded={expanded}>
-                  <span className="evidence-category">{ev.category}</span>
-                  <strong>{ev.claim}</strong>
-                  <ChevronDown size={14} />
-                </button>
-                {expanded && (
-                  <div className="evidence-details">
-                    <p><b>Source:</b> {ev.sourceTitle}</p>
-                    <p><b>Reference:</b> {ev.sourceReference}</p>
-                    <p><b>Checked:</b> {ev.checkedAt}</p>
-                    <small>{ev.notes}</small>
-                  </div>
-                )}
-              </article>
-            )
-          })}
+      <details className="evidence-collapse">
+        <summary>
+          <ChevronDown size={14} aria-hidden="true" className="evidence-collapse__chevron" />
+          Research &amp; Evidence
+          <span className="evidence-count">{build.evidence.length} {build.evidence.length === 1 ? 'source' : 'sources'}</span>
+        </summary>
+        {build.evidence.length > 0 ? (
+          <div className="evidence-list">
+            {build.evidence.map((ev) => {
+              const key = `${ev.category}-${ev.claim}`
+              const expanded = expandedEvidence === key
+              return (
+                <article key={key}>
+                  <button className="evidence-toggle" onClick={() => setExpandedEvidence(expanded ? null : key)} aria-expanded={expanded}>
+                    <span className="evidence-category">{ev.category}</span>
+                    <strong>{ev.claim}</strong>
+                    <ChevronDown size={14} />
+                  </button>
+                  {expanded && (
+                    <div className="evidence-details">
+                      <p><b>Source:</b> {ev.sourceTitle}</p>
+                      <p><b>Reference:</b> {ev.sourceReference}</p>
+                      <p><b>Checked:</b> {ev.checkedAt}</p>
+                      <small>{ev.notes}</small>
+                    </div>
+                  )}
+                </article>
+              )
+            })}
+          </div>
+        ) : (
+          <EmptyResearchState label="No evidence sources have been documented for this build." />
+        )}
+        <div className="hotbar-research-summary">
+          <h3>Hotbar slot research status</h3>
+          <div className="hotbar-research-list" role="list" aria-label="Hotbar research status per slot">
+            {variant.hotbar.map((slot) => (
+              <div key={slot.id} className="hotbar-research-item" role="listitem">
+                <kbd>{slot.key}</kbd>
+                <span>{slot.ability || 'Empty'}</span>
+                <ResearchStatusBadge status={slot.researchStatus} />
+                {slot.evidenceNote && <small>{slot.evidenceNote}</small>}
+              </div>
+            ))}
+          </div>
         </div>
-      ) : (
-        <EmptyResearchState label="No evidence sources have been documented for this build." />
-      )}
-      <div className="hotbar-research-summary">
-        <h3>Hotbar slot research status</h3>
-        <div className="hotbar-research-list" role="list" aria-label="Hotbar research status per slot">
-          {variant.hotbar.map((slot) => (
-            <div key={slot.id} className="hotbar-research-item" role="listitem">
-              <kbd>{slot.key}</kbd>
-              <span>{slot.ability || 'Empty'}</span>
-              <ResearchStatusBadge status={slot.researchStatus} />
-              {slot.evidenceNote && <small>{slot.evidenceNote}</small>}
-            </div>
-          ))}
-        </div>
-      </div>
+      </details>
     </section>
   )
 }
