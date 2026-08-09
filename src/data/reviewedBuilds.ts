@@ -378,7 +378,7 @@ export const reviewedBuilds = [
       "Shindo Life substitutions cannot reproduce the character one-to-one."
     ],
     "confidence": "Strong Match",
-    "publicationStatus": "Reviewed",
+    "publicationStatus": "Draft",
     "variants": [
       {
         "id": "james-current-4x2",
@@ -2398,7 +2398,7 @@ export const reviewedBuilds = [
       "Shindo Life substitutions cannot reproduce the character one-to-one."
     ],
     "confidence": "Strong Match",
-    "publicationStatus": "Reviewed",
+    "publicationStatus": "Draft",
     "variants": [
       {
         "id": "seongji-yuk-4x2",
@@ -2580,7 +2580,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Ultimate Flash",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed threshold burst — Seongji's unexpected explosive acceleration, the ability that shocks opponents who underestimate his frame.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -2591,7 +2591,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's speed threshold — Ultimate Flash represents his ability to move with explosive quickness despite his powerful physique, catching enemies off-guard with sudden bursts of movement.",
             "mobility": false
           },
           {
@@ -2599,7 +2599,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Jump",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Repositioning finisher — Seongji closes the gap instantly after the opponent creates distance, preventing any escape from his pressure.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -2610,7 +2610,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's pursuit — Time Jump represents how his speed threshold keeps opponents from fleeing his range; he closes any distance before the enemy can reset.",
             "mobility": false
           },
           {
@@ -2637,7 +2637,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Stop",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Reaction-freeze utility — temporarily stops opponent movement to set up Seongji's decisive grappling approach.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -2648,7 +2648,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's speed dominance — Time Stop represents how his speed threshold so completely overwhelms opponents that their reactions cannot keep up with his approach.",
             "mobility": false
           },
           {
@@ -2656,7 +2656,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 6th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Technique threshold kick — precision martial arts strike demonstrating Seongji's fighting mastery beyond brute force.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -2667,7 +2667,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's technique threshold — 6th Dance represents the precision dimension of his fighting, showing he is not only powerful but technically masterful in ways that pure brawlers cannot match.",
             "mobility": false
           },
           {
@@ -2675,7 +2675,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 9th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Decisive technique finish — the highest-skill kick that proves Seongji's technique threshold is his true finishing power.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -2686,7 +2686,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's mastery finish — 9th Dance is the culmination of his technique threshold, the final precise blow that completes his three-threshold combination.",
             "mobility": false
           },
           {
@@ -4414,7 +4414,7 @@ export const reviewedBuilds = [
       "Shindo Life substitutions cannot reproduce the character one-to-one."
     ],
     "confidence": "Strong Match",
-    "publicationStatus": "Reviewed",
+    "publicationStatus": "Draft",
     "variants": [
       {
         "id": "gun-park-4x2",
@@ -6434,7 +6434,7 @@ export const reviewedBuilds = [
       "Shindo Life substitutions cannot reproduce the character one-to-one."
     ],
     "confidence": "Strong Match",
-    "publicationStatus": "Reviewed",
+    "publicationStatus": "Draft",
     "variants": [
       {
         "id": "little-daniel-park-4x2",
@@ -8446,7 +8446,7 @@ export const reviewedBuilds = [
       "Shindo Life substitutions cannot reproduce the character one-to-one."
     ],
     "confidence": "Strong Match",
-    "publicationStatus": "Reviewed",
+    "publicationStatus": "Draft",
     "variants": [
       {
         "id": "johan-seong-4x2",
@@ -8627,7 +8627,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Ultimate Flash",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed burst defense — Johan's explosive movement that allows him to escape unfavorable positions or reposition for his next copied technique.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -8638,7 +8638,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's exceptional speed — Ultimate Flash represents his ability to move faster than opponents can react, a key part of his copy-technician fighting that relies on perfect positioning.",
             "mobility": false
           },
           {
@@ -8646,7 +8646,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Jump",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Closing pursuit finisher — Johan never lets opponents escape once he has analyzed their pattern; Time Jump closes any gap instantly.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -8657,7 +8657,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's pursuit ability — Time Jump represents how his methodical approach leaves no escape route; once he has mapped the opponent's style, he closes in with precise speed.",
             "mobility": false
           },
           {
@@ -8684,7 +8684,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Stop",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Analysis pause — Johan's calm, precise nature; he creates space to observe the opponent and set up his next calculated technique.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -8695,7 +8695,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's cold calculation — Time Stop represents his ability to operate faster than opponents can process; his copy-technician method is most effective when he controls the tempo of the fight.",
             "mobility": false
           },
           {
@@ -8703,7 +8703,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Pika-Senko",
             "ability": "Time Style: Star Kick",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Copied lightning kick — Johan mirrors an opponent's fast-kick technique with perfect precision after a single observation.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -8714,7 +8714,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's copy ability — Star Kick represents his technique mirroring; he replicates an opponent's kick-based fighting style with such accuracy it becomes indistinguishable from the original.",
             "mobility": false
           },
           {
@@ -8722,7 +8722,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Pika-Senko",
             "ability": "Time Style: Star Kick Rising",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Copied rising kick — the launcher variation that Johan adds to his copied kick sequence to create an ascending combination.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -8733,7 +8733,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's perfected copy — Star Kick Rising extends the mirrored kick sequence with an upward launcher; Johan copies not just the basic move but the full follow-up combination with complete fidelity.",
             "mobility": false
           },
           {
@@ -10446,7 +10446,7 @@ export const reviewedBuilds = [
       "Shindo Life substitutions cannot reproduce the character one-to-one."
     ],
     "confidence": "Strong Match",
-    "publicationStatus": "Reviewed",
+    "publicationStatus": "Draft",
     "variants": [
       {
         "id": "kitae-kim-4x2",
@@ -10457,69 +10457,69 @@ export const reviewedBuilds = [
         "bloodlines": [
           {
             "name": "Ryuji-Kenichi",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Brutal stamina-based pressure — Direct Match for Kitae's relentless physical dominance and crushing forward aggression.",
             "exactMovesUsed": [
               "Fist Style: 3rd Stance",
               "Fist Style: Dragon Demon Combo",
               "Fist Style: Dragon Lotus"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Ryuji-Kenichi's stamina-based fighting matches Kitae's immense physical endurance. Dragon Demon Combo and Dragon Lotus translate his unstoppable forward pressure that overwhelms opponents through sheer force.",
+            "represents": "Kitae Kim's King of Seoul dominance — overwhelming close-range power that crushes all resistance.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
-              "accessible": []
+              "lore": ["Kenichi"],
+              "competitive": ["Ashura-Shizen"],
+              "accessible": ["Kenichi"]
             }
           },
           {
             "name": "Minakaze-Azure",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Explosive teleport pursuit — Partial Analogy for Kitae's overwhelming momentum and cross-range pressure.",
             "exactMovesUsed": [
               "Minakaze Style: Kunai Raijin",
               "Minakaze Style: Sunsengan Barrage",
               "Minakaze Style: Sunsengan Overdrive"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Minakaze-Azure's teleport and ranged projectiles provide cross-range control complementing Kitae's close-range dominance. Sunsengan Overdrive represents his explosive momentum acceleration that no opponent can outpace.",
+            "represents": "Kitae Kim's relentless advance — explosive cross-range pressure forcing all opponents into close range.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Pika-Senko"],
               "accessible": []
             }
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Precision finishing strikes — Strong Analogy for Kitae's decisive single blows after complete dominance.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Bruce-Kenichi's precise kick combinations provide finishing power that matches Kitae's ability to end fights decisively once he has established complete physical control.",
+            "represents": "Kitae Kim's King of Seoul finishing — decisive precision after overwhelming forward pressure.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
             }
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Endurance counter — Partial Analogy for Kitae's ability to absorb damage and retaliate with crushing force.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "128 Palm Counter and Twin Dragon Barrage represent Kitae's toughness — his ability to endure strikes and immediately respond with devastating counters while continuing his assault.",
+            "represents": "Kitae Kim's endurance — absorbing punishment while relentlessly continuing his overwhelming attack.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
             }
           }
@@ -10531,16 +10531,16 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Immovable presence — Stone Style reflects Kitae's physical indomitability and refusal to yield ground.",
             "replacements": []
           },
           {
             "name": "Fire",
             "exactMovesUsed": [
               "Flame Style: Flame Bullet",
-              "Flame Style: Flame Breath"
+              "Flame Style: Grand Flameball"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Aggressive pressure — fire-based attacks represent Kitae's ferocious fighting spirit and explosive forward aggression.",
             "replacements": []
           }
         ],
@@ -10615,7 +10615,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Minakaze-Azure",
             "ability": "Minakaze Style: Kunai Raijin",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Ranged interception — Kitae can close the gap by punishing enemy movement with thrown projectiles before entering close range.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -10626,7 +10626,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's relentless advance — he does not let opponents escape range; Kunai Raijin represents that cross-range pursuit before the decisive close-range assault.",
             "mobility": false
           },
           {
@@ -10634,7 +10634,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Minakaze-Azure",
             "ability": "Minakaze Style: Sunsengan Barrage",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Finishing barrage — sustained multi-hit pressure once Kitae has cornered the opponent.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -10645,7 +10645,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's overwhelming final attack — once he has broken the opponent's resistance through forward pressure, he finishes with a crushing sustained barrage they cannot escape.",
             "mobility": false
           },
           {
@@ -10672,7 +10672,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Minakaze-Azure",
             "ability": "Minakaze Style: Sunsengan Overdrive",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Momentum burst — explosive acceleration to close distance instantly or escape a dangerous situation.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -10683,7 +10683,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's explosive momentum — no one outpaces his advance; Sunsengan Overdrive represents the unstoppable acceleration that defines his King of Seoul reputation.",
             "mobility": false
           },
           {
@@ -10691,7 +10691,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 6th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Precise finishing kick — a decisive single strike used after full control is established.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -10702,7 +10702,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's surgical precision — after overwhelming opponents with raw power, he ends fights with a single targeted blow rather than continued brawling.",
             "mobility": false
           },
           {
@@ -10710,7 +10710,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 9th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Knockout blow — the highest-commitment finishing strike in the sequence.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -10721,7 +10721,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's decisive finish — 9th Dance represents his ability to end a fight with one final overwhelming strike once the opponent has been completely subdued.",
             "mobility": false
           },
           {
@@ -10866,52 +10866,52 @@ export const reviewedBuilds = [
         "bloodlines": [
           {
             "name": "Ryuji-Kenichi",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Brutal stamina-based pressure — Direct Match for Kitae's relentless physical dominance and crushing forward aggression.",
             "exactMovesUsed": [
               "Fist Style: 3rd Stance",
               "Fist Style: Dragon Demon Combo",
               "Fist Style: Dragon Lotus"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Ryuji-Kenichi's stamina-based fighting matches Kitae's immense physical endurance. Dragon Demon Combo and Dragon Lotus translate his unstoppable forward pressure that overwhelms opponents through sheer force.",
+            "represents": "Kitae Kim's King of Seoul dominance — overwhelming close-range power that crushes all resistance.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
-              "accessible": []
+              "lore": ["Kenichi"],
+              "competitive": ["Ashura-Shizen"],
+              "accessible": ["Kenichi"]
             }
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Precision finishing strikes — Strong Analogy for Kitae's decisive single blows after complete dominance.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Bruce-Kenichi's precise kick combinations provide finishing power that matches Kitae's ability to end fights decisively once he has established complete physical control.",
+            "represents": "Kitae Kim's King of Seoul finishing — decisive precision after overwhelming forward pressure.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
             }
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Endurance counter — Partial Analogy for Kitae's ability to absorb damage and retaliate with crushing force.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "128 Palm Counter and Twin Dragon Barrage represent Kitae's toughness — his ability to endure strikes and immediately respond with devastating counters while continuing his assault.",
+            "represents": "Kitae Kim's endurance — absorbing punishment while relentlessly continuing his overwhelming attack.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
             }
           }
@@ -10923,16 +10923,16 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Immovable presence — Stone Style reflects Kitae's physical indomitability and refusal to yield ground.",
             "replacements": []
           },
           {
             "name": "Fire",
             "exactMovesUsed": [
               "Flame Style: Flame Bullet",
-              "Flame Style: Flame Breath"
+              "Flame Style: Grand Flameball"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Aggressive pressure — fire-based attacks represent Kitae's ferocious fighting spirit and explosive forward aggression.",
             "replacements": []
           }
         ],
@@ -11007,7 +11007,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 6th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Precise finishing kick — a decisive single strike used after full control is established.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -11018,7 +11018,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's surgical precision — after overwhelming opponents with raw power, he ends fights with a single targeted blow rather than continued brawling.",
             "mobility": false
           },
           {
@@ -11026,7 +11026,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 9th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Knockout blow — the highest-commitment finishing strike in the sequence.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -11037,7 +11037,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's decisive finish — 9th Dance represents his ability to end a fight with one final overwhelming strike once the opponent has been completely subdued.",
             "mobility": false
           },
           {
@@ -11064,7 +11064,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Guard-breaking pressure — forces opponents to open up after Kitae's forward brawling has worn down their defense.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11075,7 +11075,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's controlled aggression — Tiger Lotus represents his ability to chain powerful strikes into a finishing sequence that leaves no escape route for the opponent.",
             "mobility": false
           },
           {
@@ -11083,7 +11083,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Point-blank counter — Kitae absorbs a strike and immediately responds with a focused counter that punishes the attacker's overcommitment.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11094,7 +11094,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's toughness counter — his ability to absorb damage and immediately respond with devastating force; Concentrated Palm Blast represents the instant retaliation after enduring a strike.",
             "mobility": false
           },
           {
@@ -11102,7 +11102,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Sustained retaliation — chains punishment into a full reversal once Kitae's endurance outlasts an exchange.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11113,7 +11113,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's retaliation barrage — after surviving the opponent's attack, he answers with both hands in a multi-hit combination that fully shifts momentum back to him.",
             "mobility": false
           },
           {
@@ -11257,35 +11257,35 @@ export const reviewedBuilds = [
         "bloodlines": [
           {
             "name": "Ryuji-Kenichi",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Brutal stamina-based pressure — Direct Match for Kitae's relentless physical dominance and crushing forward aggression.",
             "exactMovesUsed": [
               "Fist Style: 3rd Stance",
               "Fist Style: Dragon Demon Combo",
               "Fist Style: Dragon Lotus"
             ],
             "useMode": true,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Ryuji-Kenichi's stamina-based fighting matches Kitae's immense physical endurance. Dragon Demon Combo and Dragon Lotus translate his unstoppable forward pressure that overwhelms opponents through sheer force.",
+            "represents": "Kitae Kim's King of Seoul dominance — overwhelming close-range power that crushes all resistance.",
             "replacements": {
-              "lore": [],
-              "competitive": [],
-              "accessible": []
+              "lore": ["Kenichi"],
+              "competitive": ["Ashura-Shizen"],
+              "accessible": ["Kenichi"]
             }
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Endurance counter — Partial Analogy for Kitae's ability to absorb damage and retaliate with crushing force.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "128 Palm Counter and Twin Dragon Barrage represent Kitae's toughness — his ability to endure strikes and immediately respond with devastating counters while continuing his assault.",
+            "represents": "Kitae Kim's endurance — absorbing punishment while relentlessly continuing his overwhelming attack.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
             }
           }
@@ -11297,16 +11297,16 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Immovable presence — Stone Style reflects Kitae's physical indomitability and refusal to yield ground.",
             "replacements": []
           },
           {
             "name": "Fire",
             "exactMovesUsed": [
               "Flame Style: Flame Bullet",
-              "Flame Style: Flame Breath"
+              "Flame Style: Grand Flameball"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Aggressive pressure — fire-based attacks represent Kitae's ferocious fighting spirit and explosive forward aggression.",
             "replacements": []
           }
         ],
@@ -11381,7 +11381,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Point-blank counter — Kitae absorbs a strike and immediately responds with a focused counter that punishes the attacker's overcommitment.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -11392,7 +11392,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's toughness counter — his ability to absorb damage and immediately respond with devastating force; Concentrated Palm Blast represents the instant retaliation after enduring a strike.",
             "mobility": false
           },
           {
@@ -11400,7 +11400,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Sustained retaliation — chains punishment into a full reversal once Kitae's endurance outlasts an exchange.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -11411,7 +11411,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's retaliation barrage — after surviving the opponent's attack, he answers with both hands in a multi-hit combination that fully shifts momentum back to him.",
             "mobility": false
           },
           {
@@ -11438,7 +11438,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: 128 Palm Counter",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Full reversal counter — used when the opponent overextends into Kitae's range; he absorbs the attack and immediately fires back with 128 rapid strikes.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11449,7 +11449,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's endurance payoff — 128 Palm Counter embodies his philosophy of absorbing damage then delivering devastating multi-hit punishment that negates any advantage the attacker gained.",
             "mobility": false
           },
           {
@@ -11457,7 +11457,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Earth",
             "ability": "Stone Style: Earth Wall",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Immovable defensive wall — reflects Kitae's physical toughness and refusal to yield ground under pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11468,7 +11468,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Kitae's indomitability — Earth Wall represents his King of Seoul status as someone who cannot be moved or stopped regardless of the force brought against him.",
             "mobility": false
           },
           {
@@ -11476,7 +11476,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Earth",
             "ability": "Stone Style: Rage Trail",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Ground-control pressure — forces the opponent to deal with earth obstacles while Kitae closes range for his decisive close-combat.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11487,7 +11487,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Kitae's approach control — Rage Trail represents how he dominates the ground itself, forcing opponents into his range where his physical superiority is absolute.",
             "mobility": false
           },
           {
@@ -11648,18 +11648,18 @@ export const reviewedBuilds = [
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Endurance counter — Partial Analogy for Kitae's ability to absorb damage and retaliate with crushing force.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "128 Palm Counter and Twin Dragon Barrage represent Kitae's toughness — his ability to endure strikes and immediately respond with devastating counters while continuing his assault.",
+            "represents": "Kitae Kim's endurance — absorbing punishment while relentlessly continuing his overwhelming attack.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Tengoku-Platinum"],
               "accessible": []
             }
           }
@@ -11671,16 +11671,16 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Immovable presence — Stone Style reflects Kitae's physical indomitability and refusal to yield ground.",
             "replacements": []
           },
           {
             "name": "Fire",
             "exactMovesUsed": [
               "Flame Style: Flame Bullet",
-              "Flame Style: Flame Breath"
+              "Flame Style: Grand Flameball"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Aggressive pressure — fire-based attacks represent Kitae's ferocious fighting spirit and explosive forward aggression.",
             "replacements": []
           }
         ],
@@ -11736,7 +11736,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Point-blank guard pressure — Kitae forces through an opponent's defense with a focused palm strike at close range.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -11747,7 +11747,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's toughness counter — his ability to absorb damage and immediately respond with devastating force; Concentrated Palm Blast represents the instant retaliation after enduring a strike.",
             "mobility": false
           },
           {
@@ -11755,7 +11755,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Sustained retaliation — chains punishment after Kitae's endurance outlasts an exchange.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -11766,7 +11766,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's retaliation barrage — after surviving the opponent's attack, he answers with both hands in a multi-hit combination that fully shifts momentum back to him.",
             "mobility": false
           },
           {
@@ -11774,7 +11774,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: 128 Palm Counter",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Full reversal counter — the decisive counter-finishing move when the opponent overextends; 128 rapid strikes end the engagement.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -11785,7 +11785,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Kitae's endurance payoff — 128 Palm Counter embodies his philosophy of absorbing damage then delivering devastating multi-hit punishment that negates any advantage the attacker gained.",
             "mobility": false
           },
           {
@@ -11812,7 +11812,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Earth",
             "ability": "Stone Style: Earth Wall",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Immovable defensive wall — reflects Kitae's physical toughness and refusal to yield ground under pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11823,7 +11823,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Kitae's indomitability — Earth Wall represents his King of Seoul status as someone who cannot be moved or stopped regardless of the force brought against him.",
             "mobility": false
           },
           {
@@ -11831,7 +11831,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Earth",
             "ability": "Stone Style: Rage Trail",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Ground-control pressure — forces the opponent to deal with earth obstacles while Kitae closes range for his decisive close-combat.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11842,7 +11842,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Kitae's approach control — Rage Trail represents how he dominates the ground itself, forcing opponents into his range where his physical superiority is absolute.",
             "mobility": false
           },
           {
@@ -11850,7 +11850,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Fire",
             "ability": "Flame Style: Flame Bullet",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Ranged opener — forces opponents to react to a projectile before Kitae enters his dominant close-range engagement zone.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11861,7 +11861,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Kitae's aggressive spirit — Flame Bullet represents his ferocious fighting drive, the explosive force that precedes his full-power close-combat assault.",
             "mobility": false
           },
           {
@@ -12395,7 +12395,7 @@ export const reviewedBuilds = [
       "Shindo Life substitutions cannot reproduce the character one-to-one."
     ],
     "confidence": "Strong Match",
-    "publicationStatus": "Reviewed",
+    "publicationStatus": "Draft",
     "variants": [
       {
         "id": "goo-kim-4x2",
@@ -12513,7 +12513,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Hand of Getsuga",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Bankai signature opener — Goo's primary weapon strike, the technique that establishes his sword-genius identity from the first exchange.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -12524,7 +12524,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's weapon mastery opener — Hand of Getsuga represents his Bankai Blade genius; the first strike that demonstrates why he is recognized as a weapon specialist beyond his martial arts background.",
             "mobility": false
           },
           {
@@ -12532,7 +12532,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Rasensuga",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Spiral extension strike — a spiraling follow-up that keeps the opponent in range after the opening Getsuga contact.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -12543,7 +12543,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's weapon chain — Rasensuga extends the initial blade contact into a spiraling pressure sequence, demonstrating his genius with continuous weapon control.",
             "mobility": false
           },
           {
@@ -12551,7 +12551,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Getsuga Shuriken Blitz",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Ranged blade pressure — Goo forces the opponent to deal with projectile shuriken while his weapon control denies any safe retreat.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -12562,7 +12562,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's ranged weapon dominance — Getsuga Shuriken Blitz extends his blade control into ranged pressure, reflecting his weapon genius across all distances.",
             "mobility": false
           },
           {
@@ -12627,7 +12627,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Counter-punish close strike — when an opponent breaks through his weapon range, Goo answers with a decisive palm counter.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -12638,7 +12638,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's counter technician side — Concentrated Palm Blast represents his hand-to-hand counter ability that complements his weapon genius; he is dangerous at every range.",
             "mobility": false
           },
           {
@@ -12646,7 +12646,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Multi-hit retaliation — Goo shifts from weapon fighting to unarmed barrage when the engagement demands a different pressure type.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -12657,7 +12657,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's adaptability — Twin Dragon Barrage shows he is not limited to weapon range; when opponents close in, he answers with sustained unarmed pressure that chains into his counter game.",
             "mobility": false
           },
           {
@@ -12665,7 +12665,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: 128 Palm Counter",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Full reversal counter — Goo absorbs the opponent's attack and immediately delivers 128 rapid strikes that completely negate the incoming damage.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -12676,7 +12676,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's counter genius — 128 Palm Counter represents the counter-technician dimension of his fighting; his unpredictability means opponents never know if their attack will trigger this devastating full reversal.",
             "mobility": false
           },
           {

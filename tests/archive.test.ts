@@ -40,7 +40,7 @@ describe('full restored roster', () => {
   it('orders reviewed builds before restored drafts', () => {
     const sorted = [...completeRoster].sort(comparePublicationStatus)
     const ranks = sorted.map((build) => build.publicationStatus)
-    expect(ranks.slice(0, 20).every((status) => status === 'Reviewed')).toBe(true)
+    expect(ranks.slice(0, 13).every((status) => status === 'Reviewed')).toBe(true)
     expect(ranks.lastIndexOf('Needs Retesting')).toBeLessThan(ranks.indexOf('Draft'))
     expect(ranks.lastIndexOf('Draft')).toBeLessThan(ranks.indexOf('Needs Research'))
   })
@@ -50,7 +50,7 @@ describe('full restored roster', () => {
   })
   it('has the audited publication counts', () => {
     const count = (status: string) => completeRoster.filter((build) => build.publicationStatus === status).length
-    expect({ reviewed: count('Reviewed'), retesting: count('Needs Retesting'), draft: count('Draft'), research: count('Needs Research') }).toEqual({ reviewed: 20, retesting: 63, draft: 9, research: 8 })
+    expect({ reviewed: count('Reviewed'), retesting: count('Needs Retesting'), draft: count('Draft'), research: count('Needs Research') }).toEqual({ reviewed: 13, retesting: 63, draft: 16, research: 8 })
   })
   it('preserves the curated James Lee authority and approved core', () => {
     const james = completeRoster.find((build) => build.id === 'james-lee')!
@@ -243,9 +243,9 @@ describe('Shindo identity, assets, and build-quality checks', () => {
       expect(existsSync(resolve('public', asset!.localPath.slice(1)))).toBe(true)
     }
   })
-  it('gives all 20 reviewed builds prepared slot and accessible profiles', () => {
+  it('gives all 13 reviewed builds prepared slot and accessible profiles', () => {
     const reviewed = completeRoster.filter((build) => build.publicationStatus === 'Reviewed')
-    expect(reviewed).toHaveLength(20)
+    expect(reviewed).toHaveLength(13)
     for (const build of reviewed) {
       expect([2, 3, 4].every((count) => build.variants.some((variant) => variant.bloodlineSlotCount === count))).toBe(true)
       expect(build.variants.some((variant) => variant.type === 'Beginner' || /accessible/i.test(variant.name))).toBe(true)
@@ -710,7 +710,7 @@ describe('Phase B: schema validation and legality auditing', () => {
 
     it('does not flag a Reviewed build that has verified hotbar slots', () => {
       const build = baseBuild()
-      expect(build.publicationStatus).toBe('Reviewed')
+      build.publicationStatus = 'Reviewed'
       build.variants[0].hotbar[0] = { ...build.variants[0].hotbar[0], researchStatus: 'verified' }
       const issues = validatePremiumPrivacy(build)
       expect(issues.filter((i) => i.code === 'unreviewed-build-with-verified-slots')).toHaveLength(0)
