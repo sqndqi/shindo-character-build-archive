@@ -120,7 +120,7 @@ function SignInForm({
         </label>
         <label>
           Password
-          <input name="password" type="password" autoComplete="current-password" minLength={12} required />
+          <input name="password" type="password" autoComplete="current-password" required />
         </label>
         {error && <p className="account-message account-message--error" role="alert">{error}</p>}
         <button className="button button--primary" disabled={busy || backendStatus === 'checking'}>
@@ -507,9 +507,11 @@ function AccountView({
 export default function AccountPages({
   initialPage = 'signin',
   onNavigateAdmin,
+  onSignedIn,
 }: {
   initialPage?: AccountPage
   onNavigateAdmin?: () => void
+  onSignedIn?: (state: SignedIn) => void
 }) {
   const [page, setPage] = useState<AccountPage>(initialPage)
   const [signedInState, setSignedInState] = useState<SignedIn | null>(null)
@@ -569,6 +571,7 @@ export default function AccountPages({
           if (state.status === 'signed-in') {
             setSignedInState(state)
             setPage('account')
+            onSignedIn?.(state)
           }
         }}
         onSwitch={() => setPage('signup')}
