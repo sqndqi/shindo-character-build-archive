@@ -55,3 +55,13 @@ export const reconcileRateLimit = rateLimit({
   skipSuccessfulRequests: false,
   message: { error: 'Too many reconciliation requests. Please try again later.' },
 })
+
+// Prevent session-store flooding via the unauthenticated CSRF token endpoint
+export const csrfRateLimit = rateLimit({
+  windowMs: 60 * 1000,
+  limit: 60,
+  standardHeaders: true,
+  legacyHeaders: false,
+  skipSuccessfulRequests: false,
+  message: { error: 'Too many requests. Please try again later.' },
+})

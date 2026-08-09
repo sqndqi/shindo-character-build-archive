@@ -1,6 +1,7 @@
 import express, { type Request } from 'express'
 import session from 'express-session'
 import cors from 'cors'
+import helmet from 'helmet'
 import connectPgSimple from 'connect-pg-simple'
 import { authRouter } from './routes/auth'
 import { archiveRouter } from './routes/archive'
@@ -39,10 +40,12 @@ export function createApp(cookieOverrides?: CookieOverrides) {
   const app = express()
 
   app.set('trust proxy', 1)
+  app.use(helmet())
 
   // Capture raw body for webhook HMAC-SHA512 verification before JSON parsing consumes the stream
   app.use(
     express.json({
+      limit: '16kb',
       verify: (req: Request, _res, buf) => {
         ;(req as Request & { rawBody?: Buffer }).rawBody = buf
       },

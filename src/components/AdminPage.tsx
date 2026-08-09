@@ -39,7 +39,7 @@ import {
   type AuditLog,
   type EntitlementSummary,
 } from '../repositories/ArchiveAccessRepository'
-import { completeRoster } from '../data/restoredRoster'
+import { rosterIndex } from '../data/rosterIndex'
 
 type AdminTab = 'dashboard' | 'users' | 'products' | 'payments' | 'codes' | 'audit'
 
@@ -291,7 +291,7 @@ function UsersTab() {
 
 // ------------------------------------------------------------------ Products
 
-const CHARACTER_OPTIONS = completeRoster.map((c) => ({ id: c.id, name: c.name }))
+const CHARACTER_OPTIONS = rosterIndex.map((c) => ({ id: c.id, name: c.name }))
 
 type ProductType = 'single_character' | 'character_pack' | 'full_archive'
 

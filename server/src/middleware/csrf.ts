@@ -1,3 +1,4 @@
+import { timingSafeEqual } from 'crypto'
 import type { Request, Response, NextFunction } from 'express'
 
 const SAFE_METHODS = new Set(['GET', 'HEAD', 'OPTIONS'])
@@ -11,7 +12,7 @@ export function csrfProtect(req: Request, res: Response, next: NextFunction): vo
   const token = req.headers['x-csrf-token'] as string | undefined
   const sessionToken = req.session.csrfToken
 
-  if (!token || !sessionToken || token !== sessionToken) {
+  if (!token || !sessionToken || !timingSafeEqual(Buffer.from(token), Buffer.from(sessionToken))) {
     res.status(403).json({ error: 'Invalid or missing CSRF token.' })
     return
   }

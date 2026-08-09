@@ -3,7 +3,7 @@ import bcrypt from 'bcryptjs'
 import { randomBytes } from 'crypto'
 import { z } from 'zod'
 import { query, withTransaction, auditLog } from '../db/index'
-import { loginRateLimit, signupRateLimit } from '../middleware/rateLimit'
+import { loginRateLimit, signupRateLimit, csrfRateLimit } from '../middleware/rateLimit'
 import { FREE_CHARACTER_IDS, type ArchiveAccessState, type UserRole } from '../types'
 
 const router = Router()
@@ -111,7 +111,7 @@ function dbAvailable(): boolean {
 
 // ------------------------------------------------------------------ GET /csrf
 
-router.get('/csrf', (req, res) => {
+router.get('/csrf', csrfRateLimit, (req, res) => {
   if (!req.session.csrfToken) {
     req.session.csrfToken = randomBytes(32).toString('hex')
   }
@@ -124,6 +124,11 @@ router.post('/login', loginRateLimit, async (req, res) => {
   const { username, password } = req.body as { username?: string; password?: string }
 
   if (!username || !password) {
+    res.status(401).json({ error: 'Invalid credentials.' })
+    return
+  }
+
+  if (password.length > 1000) {
     res.status(401).json({ error: 'Invalid credentials.' })
     return
   }
@@ -171,7 +176,8 @@ router.post('/login', loginRateLimit, async (req, res) => {
       req.session.userId = user.id
       req.session.role = user.role
       const state = await buildAccessState(user.id)
-      res.json(state ?? ownerFallbackState())
+      if (!state) { res.status(500).json({ error: 'An error occurred. Please try again.' }); return }
+      res.json(state)
     })
   } catch {
     res.status(500).json({ error: 'An error occurred. Please try again.' })
