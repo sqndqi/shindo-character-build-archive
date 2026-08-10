@@ -14443,19 +14443,19 @@ export const reviewedBuilds = [
       {
         "id": "jake-kim-bloodline-2",
         "name": "Doku-Tengoku",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Ranged palm pressure — supplements Jake's brawling with mid-range striking force.",
         "useMode": false
       },
       {
         "id": "jake-kim-bloodline-3",
         "name": "Bruce-Kenichi",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Kick extension — dance kick combinations layered onto his brawling.",
         "useMode": false
       },
       {
         "id": "jake-kim-bloodline-4",
-        "name": "Minakaze",
-        "purpose": "Reviewed supporting match.",
+        "name": "Minakaze-Azure",
+        "purpose": "Speed burst finisher — explosive closing speed that ends confrontations with Sunsengan Overdrive.",
         "useMode": false
       }
     ],
@@ -14798,36 +14798,36 @@ export const reviewedBuilds = [
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Ranged palm pressure — supplements Jake's brawling with mid-range striking force that punishes defensive opponents.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Doku-Tengoku provides the ranged and counter layer Jake lacks as a pure brawler. Concentrated Palm Blast opens pressure at range; Twin Dragon Barrage sustains it; 128 Palm Counter punishes incoming attacks. Strong Analogy: palm-strike discipline imposed on a raw brawler's toolkit.",
+            "represents": "Jake Kim's supplementary striking range — overwhelming palm force that extends his reach beyond pure close-range brawling.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
+              "competitive": ["Rengoku"],
+              "accessible": ["Kenichi"]
             }
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Kick combination layer — dance kick techniques that extend Jake's combo routes beyond punching.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Bruce-Kenichi's dance kicks represent the kick techniques Jake incorporates from opponents he's studied and defeated. 6th and 9th Dance form the combo extension; Tiger Lotus is the heavy finisher. Strong Analogy: absorbed kick footwork layered onto base brawling.",
+            "represents": "Jake Kim's kick extension — the footwork and combination kicks he adds to his overwhelming punch pressure.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
             }
           },
           {
@@ -14855,7 +14855,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Defensive ground layer — provides cover and zone denial that protects Jake's aggressive advance.",
             "replacements": []
           },
           {
@@ -14864,7 +14864,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Ranged light pressure — supplements the melee-heavy kit with mid-range projectile options.",
             "replacements": []
           }
         ],
@@ -15246,7 +15246,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Defensive ground layer — provides cover and zone denial that protects Jake's aggressive advance.",
             "replacements": []
           },
           {
@@ -15255,7 +15255,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Ranged light pressure — supplements the melee-heavy kit with mid-range projectile options.",
             "replacements": []
           }
         ],
@@ -15619,7 +15619,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Defensive ground layer — provides cover and zone denial that protects Jake's aggressive advance.",
             "replacements": []
           },
           {
@@ -15628,7 +15628,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Ranged light pressure — supplements the melee-heavy kit with mid-range projectile options.",
             "replacements": []
           }
         ],
@@ -16389,19 +16389,19 @@ export const reviewedBuilds = [
       {
         "id": "eli-jang-bloodline-2",
         "name": "Dio-Senko",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Speed presence — time abilities representing Eli's overwhelming fighting pace.",
         "useMode": false
       },
       {
         "id": "eli-jang-bloodline-3",
         "name": "Doku-Tengoku",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Power supplement — palm strikes extending his raw brawling into mid-range.",
         "useMode": false
       },
       {
         "id": "eli-jang-bloodline-4",
         "name": "Azarashi",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Chain control — restraint techniques that prevent escape once he has the advantage.",
         "useMode": false
       }
     ],
@@ -16744,49 +16744,49 @@ export const reviewedBuilds = [
           },
           {
             "name": "Dio-Senko",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Overwhelming speed layer — time abilities that make Eli's raw power feel like it arrives before the opponent can process it.",
             "exactMovesUsed": [
               "Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Dio-Senko's time manipulation represents Eli's overwhelming fighting presence — opponents feel like they cannot move when he commits to an attack. Ultimate Flash is his burst entry; Time Jump repositions him; Time Stop creates total lockdown. Strong Analogy: time-based pressure maps to the feeling of fighting someone whose raw power leaves no reaction window.",
+            "represents": "Eli Jang's overwhelming fighting presence — the sensation that time stops when he decides to attack.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Pika-Senko"],
               "accessible": []
             }
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Palm power supplement — adds mid-range striking force to Eli's raw brawling arsenal.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Doku-Tengoku's palm strikes extend Eli's close-range dominance into mid-range territory. Concentrated Palm Blast opens pressure; Twin Dragon Barrage sustains it; 128 Palm Counter punishes incoming attacks. Strong Analogy: disciplined palm technique layered onto a raw brawler's instincts.",
+            "represents": "Eli Jang's power extension — overwhelming palm force that covers the gap between raw brawling and mid-range fighting.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Rengoku"],
               "accessible": []
             }
           },
           {
             "name": "Azarashi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Chain restraint and control — Eli's ability to trap opponents and prevent escape once he has the advantage.",
             "exactMovesUsed": [
               "Chain Style: Chains Of Guard",
               "Chain Style: Unchained",
               "Chain Style: Chain Chi Drain"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Azarashi's chain techniques represent Eli's controlling fighting style — once he gets hold of an opponent, escape is not possible. Chains Of Guard pins the target; Unchained releases a burst; Chain Chi Drain is a sustained drain. Strong Analogy: chain restraint maps to Eli's grip-based dominance in grapple range.",
+            "represents": "Eli Jang's control layer — the chain techniques that turn his raw power into inescapable restraint.",
             "replacements": {
               "lore": [],
               "competitive": [],
@@ -16801,7 +16801,7 @@ export const reviewedBuilds = [
               "Gale Style: Vortex",
               "Gale Style: Windshock"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Wind zone control — provides area disruption that complements Eli's forward-pressure fighting style.",
             "replacements": []
           },
           {
@@ -16810,7 +16810,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Defensive ground anchor — wall and trail moves that protect Eli's advance and punish retreating opponents.",
             "replacements": []
           }
         ],
@@ -18339,19 +18339,19 @@ export const reviewedBuilds = [
       {
         "id": "zack-lee-bloodline-2",
         "name": "Bruce-Kenichi",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Kick extension — dance kicks layered onto his boxing foundation.",
         "useMode": false
       },
       {
         "id": "zack-lee-bloodline-3",
         "name": "Dio-Senko",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Boxing speed amplification — time abilities representing the pace at which his punches land.",
         "useMode": false
       },
       {
         "id": "zack-lee-bloodline-4",
         "name": "Doku-Tengoku",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Power supplement — palm strikes covering range gaps that boxing cannot reach.",
         "useMode": false
       }
     ],
@@ -18694,52 +18694,52 @@ export const reviewedBuilds = [
           },
           {
             "name": "Bruce-Kenichi",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Kick extension layer — dance kicks that add aerial combo routes on top of Zack's boxing foundation.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Bruce-Kenichi's dance kicks extend Zack's boxing into aerial and kick territory. 6th Dance opens the kick sequence; 9th Dance extends it; Tiger Lotus is the heavy finishing kick. Strong Analogy: footwork-based kick combinations layered onto a pure boxing foundation.",
+            "represents": "Zack Lee's kick complement — the aerial kick combinations that expand his fighting options beyond pure boxing.",
             "replacements": {
               "lore": [],
-              "competitive": [],
-              "accessible": []
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
             }
           },
           {
             "name": "Dio-Senko",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed amplification — time-based abilities that represent the overwhelming pace at which Zack's boxing lands.",
             "exactMovesUsed": [
               "Ultimate Flash",
               "Time Style: Time Jump",
               "Time Style: Time Stop"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Dio-Senko's time abilities represent Zack's boxing speed — opponents describe his punches as arriving before they can see them. Ultimate Flash is the burst entry; Time Jump repositions him at boxing speed; Time Stop represents a full lockdown state. Strong Analogy: time manipulation maps to the experience of fighting a boxer whose speed leaves no reaction window.",
+            "represents": "Zack Lee's boxing speed ceiling — the overwhelming pace that makes his punches feel like they arrive before opponents can move.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Pika-Senko"],
               "accessible": []
             }
           },
           {
             "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Power supplement — palm strikes that extend Zack's range and add a non-boxing striking option.",
             "exactMovesUsed": [
               "Tengoku Style: Concentrated Palm Blast",
               "Tengoku Style: Twin Dragon Barrage",
               "Tengoku Style: 128 Palm Counter"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Doku-Tengoku adds mid-range palm force to Zack's close-range boxing dominance. Concentrated Palm Blast covers the gap; Twin Dragon Barrage sustains pressure; 128 Palm Counter punishes opponents trying to close in. Strong Analogy: disciplined palm discipline added to a boxing specialist's toolkit.",
+            "represents": "Zack Lee's power extension — overwhelming palm force that covers range gaps his boxing cannot.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Rengoku"],
               "accessible": []
             }
           }
@@ -18751,7 +18751,7 @@ export const reviewedBuilds = [
               "Shock Style: Stream",
               "Shock Style: Blast"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Electric pressure — lightning attacks that represent the shock of Zack's sudden explosive striking speed.",
             "replacements": []
           },
           {
@@ -18760,7 +18760,7 @@ export const reviewedBuilds = [
               "Stone Style: Earth Wall",
               "Stone Style: Rage Trail"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Defensive ground anchor — wall and trail coverage that holds space while Zack advances with boxing pressure.",
             "replacements": []
           }
         ],
