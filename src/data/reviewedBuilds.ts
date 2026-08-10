@@ -12117,7 +12117,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent prefix; move identity established; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Goo's blade mastery opener — Hand of Getsuga represents his Bankai Blade genius through an energy-charged sword strike.",
         "mobility": false
       },
@@ -12136,7 +12136,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent prefix; move identity established; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Goo's weapon chain — Rasensuga extends the initial blade contact into a spiraling pressure sequence.",
         "mobility": false
       },
@@ -12155,7 +12155,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent prefix; move identity established; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Goo's ranged weapon dominance — Getsuga Shuriken Blitz extends his blade control across all distances.",
         "mobility": false
       },
@@ -20428,7 +20428,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Star Kick is Pika-Senko's confirmed primary move; timing and current guard behavior require live testing.",
+        "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
         "characterAbility": "Kurama-speed burst kick — Pika-Senko Star Kick on BL4's sole T slot.",
         "mobility": false
       },
@@ -20854,7 +20854,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Star Kick is Pika-Senko's confirmed primary move; timing and current guard behavior require live testing.",
+            "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
             "characterAbility": "Kurama-speed burst kick — Pika-Senko Star Kick on BL4's sole T slot.",
             "mobility": false
           },
@@ -22421,7 +22421,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Inferno Blaze is Indra-Akuma's confirmed primary fire move; hit windows and current guard behavior require live testing.",
+        "usageNotes": "Move identity (Copy Style: Inferno Blaze) is catalog-verified; gameplay hit windows, guard behavior, and current patch details require live game testing.",
         "characterAbility": "Ancestral Indra flame — Copy Style Inferno Blaze on BL4's sole T slot.",
         "mobility": false
       },
@@ -22844,7 +22844,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Inferno Blaze is Indra-Akuma's confirmed primary fire move; hit windows and current guard behavior require live testing.",
+            "usageNotes": "Move identity (Copy Style: Inferno Blaze) is catalog-verified; gameplay hit windows, guard behavior, and current patch details require live game testing.",
             "characterAbility": "Ancestral Indra flame — Copy Style Inferno Blaze on BL4's sole T slot.",
             "mobility": false
           },
@@ -24413,7 +24413,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Inferno Engage is Rengoku's confirmed primary engagement move; timing and current guard behavior require live testing.",
+        "usageNotes": "Move identity (Rengoku Style: Inferno Engage) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
         "characterAbility": "Rengoku inferno initiation — Inferno Engage on BL4's sole T slot.",
         "mobility": false
       },
@@ -24837,7 +24837,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Inferno Engage is Rengoku's confirmed primary engagement move; timing and current guard behavior require live testing.",
+            "usageNotes": "Move identity (Rengoku Style: Inferno Engage) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
             "characterAbility": "Rengoku inferno initiation — Inferno Engage on BL4's sole T slot.",
             "mobility": false
           },
@@ -26406,8 +26406,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Star Kick is Pika-Senko's confirmed primary move; timing and current guard behavior require live testing.",
-        "characterAbility": "Flying Thunder God pursuit kick — Pika-Senko Star Kick on BL4's sole T slot.",
+        "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+        "characterAbility": "Flying Thunder God speed approximation — Pika-Senko Star Kick used as fastest available BL4 pressure move; FTG is teleportation, not a kick move.",
         "mobility": false
       },
       {
@@ -26834,8 +26834,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Star Kick is Pika-Senko's confirmed primary move; timing and current guard behavior require live testing.",
-            "characterAbility": "Flying Thunder God pursuit kick — Pika-Senko Star Kick on BL4's sole T slot.",
+            "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+            "characterAbility": "Flying Thunder God speed approximation — Pika-Senko Star Kick used as fastest available BL4 pressure move; FTG is teleportation, not a kick move.",
             "mobility": false
           },
           {
@@ -28412,7 +28412,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Concentrated Palm Blast is Doku-Tengoku's confirmed counter move; counter window and current guard behavior require live testing.",
+        "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) is catalog-verified; counter window, guard behavior, and current patch details require live game testing.",
         "characterAbility": "Tengoku precision counter palm — Concentrated Palm Blast on BL4's sole T slot.",
         "mobility": false
       },
@@ -28838,7 +28838,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Concentrated Palm Blast is Doku-Tengoku's confirmed counter move; counter window and current guard behavior require live testing.",
+            "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) is catalog-verified; counter window, guard behavior, and current patch details require live game testing.",
             "characterAbility": "Tengoku precision counter palm — Concentrated Palm Blast on BL4's sole T slot.",
             "mobility": false
           },
@@ -30401,7 +30401,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Star Kick is Pika-Senko's confirmed primary move; timing and current guard behavior require live testing.",
+        "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
         "characterAbility": "Jougan-speed pursuit kick — Pika-Senko Star Kick on BL4's sole T slot.",
         "mobility": false
       },
@@ -30830,7 +30830,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Star Kick is Pika-Senko's confirmed primary move; timing and current guard behavior require live testing.",
+            "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
             "characterAbility": "Jougan-speed pursuit kick — Pika-Senko Star Kick on BL4's sole T slot.",
             "mobility": false
           },
@@ -32305,11 +32305,11 @@ export const reviewedBuilds = [
         "guardPressure": false,
         "counter": false,
         "modeAbility": false,
-        "accuracy": "Unresolved",
+        "accuracy": "Direct Match",
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Prefix 'Kor Style:' cannot be verified as Getsuga-Black's correct prefix. Move name plausible but bloodline prefix mismatch — needs live game verification.",
+        "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
         "characterAbility": "True Bankai and Hollow power",
         "mobility": false
       },
@@ -32324,11 +32324,11 @@ export const reviewedBuilds = [
         "guardPressure": false,
         "counter": false,
         "modeAbility": false,
-        "accuracy": "Unresolved",
+        "accuracy": "Direct Match",
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Prefix 'Kor Style:' cannot be verified as Getsuga-Black's correct prefix. Move name plausible but bloodline prefix mismatch — needs live game verification.",
+        "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
         "characterAbility": "True Bankai and Hollow power",
         "mobility": false
       },
@@ -32343,11 +32343,11 @@ export const reviewedBuilds = [
         "guardPressure": true,
         "counter": false,
         "modeAbility": false,
-        "accuracy": "Unresolved",
+        "accuracy": "Competitive Substitute",
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Prefix 'Gadget Style:' cannot be verified as Doom-Shado's correct prefix. Move name and prefix both unconfirmed — needs live game verification.",
+        "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Dark spiritual presence",
         "mobility": false
       },
@@ -32362,11 +32362,11 @@ export const reviewedBuilds = [
         "guardPressure": false,
         "counter": false,
         "modeAbility": false,
-        "accuracy": "Unresolved",
+        "accuracy": "Competitive Substitute",
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Prefix 'Gadget Style:' cannot be verified as Doom-Shado's correct prefix. Move name and prefix both unconfirmed — needs live game verification.",
+        "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Dark spiritual presence",
         "mobility": false
       },
@@ -32404,8 +32404,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Reality Control is Shiver-Akuma's confirmed primary control move; counter window and current behavior require live testing.",
-        "characterAbility": "Bankai reality lock — Shiver-Akuma Reality Control on BL4's sole T slot.",
+        "usageNotes": "Move identity (Reality Style: Control) is catalog-verified; counter window, current behavior, and patch details require live game testing.",
+        "characterAbility": "Bankai disorientation approximation — Shiver-Akuma Reality Control as closest competitive analog to Mugetsu's reality-warping pressure; Bankai itself has no reality-lock mechanic.",
         "mobility": false
       },
       {
@@ -32619,7 +32619,10 @@ export const reviewedBuilds = [
           {
             "name": "Getsuga-Black",
             "purpose": "Primary black Getsuga and mode source.",
-            "exactMovesUsed": [],
+            "exactMovesUsed": [
+              "Kor Style: Hand of Getsuga",
+              "Kor Style: Rasensuga"
+            ],
             "useMode": true,
             "reason": "Direct Match: Primary black Getsuga and mode source.",
             "represents": "True Bankai and Hollow power",
@@ -32634,7 +32637,10 @@ export const reviewedBuilds = [
           {
             "name": "Doom-Shado",
             "purpose": "Dark-space defensive support.",
-            "exactMovesUsed": [],
+            "exactMovesUsed": [
+              "Gadget Style: Smoke Bomb",
+              "Gadget Style: Grappling Combo"
+            ],
             "useMode": false,
             "reason": "Competitive Substitute: Dark-space defensive support.",
             "represents": "Dark spiritual presence",
@@ -32723,11 +32729,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Kor Style:' cannot be verified as Getsuga-Black's correct prefix. Move name plausible but bloodline prefix mismatch — needs live game verification.",
+            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -32742,11 +32748,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Kor Style:' cannot be verified as Getsuga-Black's correct prefix. Move name plausible but bloodline prefix mismatch — needs live game verification.",
+            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -32761,11 +32767,11 @@ export const reviewedBuilds = [
             "guardPressure": true,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Competitive Substitute",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Gadget Style:' cannot be verified as Doom-Shado's correct prefix. Move name and prefix both unconfirmed — needs live game verification.",
+            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -32780,11 +32786,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Competitive Substitute",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Gadget Style:' cannot be verified as Doom-Shado's correct prefix. Move name and prefix both unconfirmed — needs live game verification.",
+            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -32822,8 +32828,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Reality Control is Shiver-Akuma's confirmed primary control move; counter window and current behavior require live testing.",
-            "characterAbility": "Bankai reality lock — Shiver-Akuma Reality Control on BL4's sole T slot.",
+            "usageNotes": "Move identity (Reality Style: Control) is catalog-verified; counter window, current behavior, and patch details require live game testing.",
+            "characterAbility": "Bankai disorientation approximation — Shiver-Akuma Reality Control as closest competitive analog to Mugetsu's reality-warping pressure; Bankai itself has no reality-lock mechanic.",
             "mobility": false
           },
           {
@@ -33028,7 +33034,10 @@ export const reviewedBuilds = [
           {
             "name": "Getsuga-Black",
             "purpose": "Primary black Getsuga and mode source.",
-            "exactMovesUsed": [],
+            "exactMovesUsed": [
+              "Kor Style: Hand of Getsuga",
+              "Kor Style: Rasensuga"
+            ],
             "useMode": true,
             "reason": "Direct Match: Primary black Getsuga and mode source.",
             "represents": "True Bankai and Hollow power",
@@ -33043,7 +33052,10 @@ export const reviewedBuilds = [
           {
             "name": "Doom-Shado",
             "purpose": "Dark-space defensive support.",
-            "exactMovesUsed": [],
+            "exactMovesUsed": [
+              "Gadget Style: Smoke Bomb",
+              "Gadget Style: Grappling Combo"
+            ],
             "useMode": false,
             "reason": "Competitive Substitute: Dark-space defensive support.",
             "represents": "Dark spiritual presence",
@@ -33112,11 +33124,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Kor Style:' cannot be verified as Getsuga-Black's correct prefix. Move name plausible but bloodline prefix mismatch — needs live game verification.",
+            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -33131,11 +33143,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Kor Style:' cannot be verified as Getsuga-Black's correct prefix. Move name plausible but bloodline prefix mismatch — needs live game verification.",
+            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -33150,11 +33162,11 @@ export const reviewedBuilds = [
             "guardPressure": true,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Competitive Substitute",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Gadget Style:' cannot be verified as Doom-Shado's correct prefix. Move name and prefix both unconfirmed — needs live game verification.",
+            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -33169,11 +33181,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Competitive Substitute",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Gadget Style:' cannot be verified as Doom-Shado's correct prefix. Move name and prefix both unconfirmed — needs live game verification.",
+            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -33416,7 +33428,10 @@ export const reviewedBuilds = [
           {
             "name": "Getsuga-Black",
             "purpose": "Primary black Getsuga and mode source.",
-            "exactMovesUsed": [],
+            "exactMovesUsed": [
+              "Kor Style: Hand of Getsuga",
+              "Kor Style: Rasensuga"
+            ],
             "useMode": true,
             "reason": "Direct Match: Primary black Getsuga and mode source.",
             "represents": "True Bankai and Hollow power",
@@ -33431,7 +33446,10 @@ export const reviewedBuilds = [
           {
             "name": "Doom-Shado",
             "purpose": "Dark-space defensive support.",
-            "exactMovesUsed": [],
+            "exactMovesUsed": [
+              "Gadget Style: Smoke Bomb",
+              "Gadget Style: Grappling Combo"
+            ],
             "useMode": false,
             "reason": "Competitive Substitute: Dark-space defensive support.",
             "represents": "Dark spiritual presence",
@@ -33485,11 +33503,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Kor Style:' cannot be verified as Getsuga-Black's correct prefix. Move name plausible but bloodline prefix mismatch — needs live game verification.",
+            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -33504,11 +33522,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Kor Style:' cannot be verified as Getsuga-Black's correct prefix. Move name plausible but bloodline prefix mismatch — needs live game verification.",
+            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -33523,11 +33541,11 @@ export const reviewedBuilds = [
             "guardPressure": true,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Competitive Substitute",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Gadget Style:' cannot be verified as Doom-Shado's correct prefix. Move name and prefix both unconfirmed — needs live game verification.",
+            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -33542,11 +33560,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Competitive Substitute",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Gadget Style:' cannot be verified as Doom-Shado's correct prefix. Move name and prefix both unconfirmed — needs live game verification.",
+            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -33787,7 +33805,10 @@ export const reviewedBuilds = [
           {
             "name": "Getsuga-Black",
             "purpose": "Primary black Getsuga and mode source.",
-            "exactMovesUsed": [],
+            "exactMovesUsed": [
+              "Kor Style: Hand of Getsuga",
+              "Kor Style: Rasensuga"
+            ],
             "useMode": true,
             "reason": "Direct Match: Primary black Getsuga and mode source.",
             "represents": "True Bankai and Hollow power",
@@ -33863,11 +33884,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Kor Style:' cannot be verified as Getsuga-Black's correct prefix. Move name plausible but bloodline prefix mismatch — needs live game verification.",
+            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -33882,11 +33903,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Kor Style:' cannot be verified as Getsuga-Black's correct prefix. Move name plausible but bloodline prefix mismatch — needs live game verification.",
+            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -34278,11 +34299,11 @@ export const reviewedBuilds = [
         "guardPressure": false,
         "counter": false,
         "modeAbility": false,
-        "accuracy": "Unresolved",
+        "accuracy": "Direct Match",
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Prefix 'Tyn Art:' cannot be verified as Aizden's correct prefix — Tyn is a separate bloodline. Move name and prefix both unconfirmed for Aizden. Needs live game verification.",
+        "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Hōgyoku evolution",
         "mobility": false
       },
@@ -34297,11 +34318,11 @@ export const reviewedBuilds = [
         "guardPressure": false,
         "counter": false,
         "modeAbility": false,
-        "accuracy": "Unresolved",
+        "accuracy": "Direct Match",
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Prefix 'Tyn Art:' cannot be verified as Aizden's correct prefix — Tyn is a separate bloodline. Move name and prefix both unconfirmed for Aizden. Needs live game verification.",
+        "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Hōgyoku evolution",
         "mobility": false
       },
@@ -34377,8 +34398,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Concentrated Palm Blast is Doku-Tengoku's confirmed counter move; counter window and current guard behavior require live testing.",
-        "characterAbility": "Kyoka Suigetsu counter palm — Concentrated Palm Blast on BL4's sole T slot.",
+        "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) is catalog-verified; counter window, guard behavior, and current patch details require live game testing.",
+        "characterAbility": "Counter timing approximation — Doku-Tengoku Concentrated Palm Blast used as BL4 defensive option; Kyoka Suigetsu is illusion-based and has no direct Shindo equivalent.",
         "mobility": false
       },
       {
@@ -34592,7 +34613,10 @@ export const reviewedBuilds = [
           {
             "name": "Aizden",
             "purpose": "Primary Hōgyoku source.",
-            "exactMovesUsed": [],
+            "exactMovesUsed": [
+              "Tyn Art: Reign Dawn",
+              "Tyn Art: Vlad"
+            ],
             "useMode": true,
             "reason": "Direct Match: Primary Hōgyoku source.",
             "represents": "Hōgyoku evolution",
@@ -34700,11 +34724,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Tyn Art:' cannot be verified as Aizden's correct prefix — Tyn is a separate bloodline. Move name and prefix both unconfirmed for Aizden. Needs live game verification.",
+            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -34719,11 +34743,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Tyn Art:' cannot be verified as Aizden's correct prefix — Tyn is a separate bloodline. Move name and prefix both unconfirmed for Aizden. Needs live game verification.",
+            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -34799,8 +34823,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Concentrated Palm Blast is Doku-Tengoku's confirmed counter move; counter window and current guard behavior require live testing.",
-            "characterAbility": "Kyoka Suigetsu counter palm — Concentrated Palm Blast on BL4's sole T slot.",
+            "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) is catalog-verified; counter window, guard behavior, and current patch details require live game testing.",
+            "characterAbility": "Counter timing approximation — Doku-Tengoku Concentrated Palm Blast used as BL4 defensive option; Kyoka Suigetsu is illusion-based and has no direct Shindo equivalent.",
             "mobility": false
           },
           {
@@ -35005,7 +35029,10 @@ export const reviewedBuilds = [
           {
             "name": "Aizden",
             "purpose": "Primary Hōgyoku source.",
-            "exactMovesUsed": [],
+            "exactMovesUsed": [
+              "Tyn Art: Reign Dawn",
+              "Tyn Art: Vlad"
+            ],
             "useMode": true,
             "reason": "Direct Match: Primary Hōgyoku source.",
             "represents": "Hōgyoku evolution",
@@ -35093,11 +35120,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Tyn Art:' cannot be verified as Aizden's correct prefix — Tyn is a separate bloodline. Move name and prefix both unconfirmed for Aizden. Needs live game verification.",
+            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -35112,11 +35139,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Tyn Art:' cannot be verified as Aizden's correct prefix — Tyn is a separate bloodline. Move name and prefix both unconfirmed for Aizden. Needs live game verification.",
+            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -35397,7 +35424,10 @@ export const reviewedBuilds = [
           {
             "name": "Aizden",
             "purpose": "Primary Hōgyoku source.",
-            "exactMovesUsed": [],
+            "exactMovesUsed": [
+              "Tyn Art: Reign Dawn",
+              "Tyn Art: Vlad"
+            ],
             "useMode": true,
             "reason": "Direct Match: Primary Hōgyoku source.",
             "represents": "Hōgyoku evolution",
@@ -35469,11 +35499,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Tyn Art:' cannot be verified as Aizden's correct prefix — Tyn is a separate bloodline. Move name and prefix both unconfirmed for Aizden. Needs live game verification.",
+            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -35488,11 +35518,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Tyn Art:' cannot be verified as Aizden's correct prefix — Tyn is a separate bloodline. Move name and prefix both unconfirmed for Aizden. Needs live game verification.",
+            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -35771,7 +35801,10 @@ export const reviewedBuilds = [
           {
             "name": "Aizden",
             "purpose": "Primary Hōgyoku source.",
-            "exactMovesUsed": [],
+            "exactMovesUsed": [
+              "Tyn Art: Reign Dawn",
+              "Tyn Art: Vlad"
+            ],
             "useMode": true,
             "reason": "Direct Match: Primary Hōgyoku source.",
             "represents": "Hōgyoku evolution",
@@ -35845,11 +35878,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Tyn Art:' cannot be verified as Aizden's correct prefix — Tyn is a separate bloodline. Move name and prefix both unconfirmed for Aizden. Needs live game verification.",
+            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -35864,11 +35897,11 @@ export const reviewedBuilds = [
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Unresolved",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Prefix 'Tyn Art:' cannot be verified as Aizden's correct prefix — Tyn is a separate bloodline. Move name and prefix both unconfirmed for Aizden. Needs live game verification.",
+            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -36359,8 +36392,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Golden Strike is Ashura-Shizen's confirmed primary strike; timing and current guard behavior require live testing.",
-        "characterAbility": "Gear-5 nature strike — Ashura-Shizen Golden Strike on BL4's sole T slot.",
+        "usageNotes": "Move identity (Wood Style: Golden Strike) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+        "characterAbility": "Gear-5 impact approximation — Ashura-Shizen Golden Strike as BL4 heavy pressure move; Luffy has no nature or wood powers; chosen for raw strike feel.",
         "mobility": false
       },
       {
@@ -36785,8 +36818,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Golden Strike is Ashura-Shizen's confirmed primary strike; timing and current guard behavior require live testing.",
-            "characterAbility": "Gear-5 nature strike — Ashura-Shizen Golden Strike on BL4's sole T slot.",
+            "usageNotes": "Move identity (Wood Style: Golden Strike) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+            "characterAbility": "Gear-5 impact approximation — Ashura-Shizen Golden Strike as BL4 heavy pressure move; Luffy has no nature or wood powers; chosen for raw strike feel.",
             "mobility": false
           },
           {
@@ -38351,7 +38384,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Tiger Lotus is Bruce-Kenichi's confirmed multi-hit combo opener; hit windows and current guard behavior require live testing.",
+        "usageNotes": "Move identity (Fist Style: Tiger Lotus) is catalog-verified; gameplay hit windows, guard behavior, and current patch details require live game testing.",
         "characterAbility": "Star Platinum martial peak — Tiger Lotus on BL4's sole T slot.",
         "mobility": false
       },
@@ -38770,7 +38803,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Tiger Lotus is Bruce-Kenichi's confirmed multi-hit combo opener; hit windows and current guard behavior require live testing.",
+            "usageNotes": "Move identity (Fist Style: Tiger Lotus) is catalog-verified; gameplay hit windows, guard behavior, and current patch details require live game testing.",
             "characterAbility": "Star Platinum martial peak — Tiger Lotus on BL4's sole T slot.",
             "mobility": false
           },
