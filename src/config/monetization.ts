@@ -1,5 +1,6 @@
 export const AUTH_ENABLED = true
 export const PAYMENTS_ENABLED = false
+export const PREMIUM_PLUS_ENABLED = false
 
 export interface DonationConfig {
   current: number

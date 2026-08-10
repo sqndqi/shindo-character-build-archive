@@ -68,7 +68,8 @@ const SuggestionsPage = lazy(() => import("./components/SuggestionsPage"));
 const AccountPages = lazy(() => import("./components/AccountPages"));
 const AdminPage = lazy(() => import("./components/AdminPage"));
 const SeriesHub = lazy(() => import("./components/SeriesHub"));
-const PremiumPage = lazy(() => import("./components/PremiumPage"));
+const UnlockBuildsPage = lazy(() => import("./components/UnlockBuildsPage"));
+const PremiumPlusPage = lazy(() => import("./components/PremiumPlusPage"));
 const DiagnosticsPage = import.meta.env.DEV
   ? lazy(() => import("./components/DiagnosticsPage"))
   : null;
@@ -81,6 +82,7 @@ type View =
   | "compare"
   | "suggestions"
   | "premium"
+  | "premium-plus"
   | "account"
   | "admin"
   | "diagnostics";
@@ -458,6 +460,7 @@ export default function App() {
     ["compare", "Compare"],
   ];
   nav.push(["premium", "Unlock Builds"]);
+  nav.push(["premium-plus", "Premium+"]);
   if (AUTH_ENABLED) nav.push(["account", authRole ? "Account" : "Sign In"]);
   if (authRole === "owner") nav.push(["admin", "Admin"]);
   nav.push(["suggestions", "Suggestions"]);
@@ -697,15 +700,23 @@ export default function App() {
       ) : view === "premium" ? (
         <Suspense
           fallback={
-            <main className="loading-page">Loading premium…</main>
+            <main className="loading-page">Loading…</main>
           }
         >
-          <PremiumPage
+          <UnlockBuildsPage
               onNavigateAccount={() => navigate("account")}
               selectedForUnlock={selectedForUnlock}
-              onDeselect={(id) => setSelectedForUnlock((prev) => prev.filter((x) => x !== id))}
+              onDeselect={(id: string) => setSelectedForUnlock((prev) => prev.filter((x) => x !== id))}
               builds={builds}
             />
+        </Suspense>
+      ) : view === "premium-plus" ? (
+        <Suspense
+          fallback={
+            <main className="loading-page">Loading…</main>
+          }
+        >
+          <PremiumPlusPage onNavigateAccount={() => navigate("account")} />
         </Suspense>
       ) : seriesPage ? (
         <Suspense

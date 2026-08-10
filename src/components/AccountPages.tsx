@@ -26,7 +26,7 @@ import {
   type OrderSummary,
   type Product,
 } from '../repositories/ArchiveAccessRepository'
-import { PAYMENTS_ENABLED } from '../config/monetization'
+import { PAYMENTS_ENABLED, PREMIUM_PLUS_ENABLED } from '../config/monetization'
 import { getStoredOrderId, storeOrderId, validateCheckoutUrl } from '../lib/checkoutSession'
 import CheckoutFlow from './CheckoutFlow'
 
@@ -400,7 +400,7 @@ function AccountView({
 
       <div className="account-access-card">
         <div>
-          <span>Access level</span>
+          <span>Build access</span>
           <strong>{accessLabel}</strong>
           <p>{characterCount} characters accessible</p>
         </div>
@@ -410,6 +410,20 @@ function AccountView({
           <p>Entitlement status: {currentState.entitlement}</p>
         </div>
       </div>
+
+      {!isOwner && (
+        <div className="account-access-card">
+          <div>
+            <span>Premium+</span>
+            <strong>{PREMIUM_PLUS_ENABLED ? 'Not active' : 'Coming soon'}</strong>
+            <p>
+              {PREMIUM_PLUS_ENABLED
+                ? 'No Premium+ membership active on this account.'
+                : 'Premium+ is an upcoming tier — details will be announced on Discord.'}
+            </p>
+          </div>
+        </div>
+      )}
 
       {loadingDetails ? (
         <div className="account-callout account-callout--loading" aria-live="polite">
