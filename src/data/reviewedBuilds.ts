@@ -4078,8 +4078,8 @@ export const reviewedBuilds = [
       },
       {
         "id": "gun-park-bloodline-2",
-        "name": "Bruce-Kenichi",
-        "purpose": "Precise striking technique — Gun's devastating precision even in UI mode.",
+        "name": "Rengoku",
+        "purpose": "Crushing gravity pressure — overwhelming forward force that no opponent can escape.",
         "useMode": false
       },
       {
@@ -4168,12 +4168,12 @@ export const reviewedBuilds = [
       {
         "id": "gun-park-4x2-hotbar-4",
         "key": "4",
-        "source": "Bruce-Kenichi",
-        "ability": "Fist Style: 6th Dance",
-        "purpose": "Precise striking — devastating precision combo starter.",
+        "source": "Rengoku",
+        "ability": "Rengoku Style: Gravity Pull",
+        "purpose": "Crushing gravity pressure — pulls opponent into Gun's attack range.",
         "comboRole": "Defense",
         "blockBreak": false,
-        "guardPressure": false,
+        "guardPressure": true,
         "counter": false,
         "modeAbility": false,
         "accuracy": "Strong Match",
@@ -4181,15 +4181,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Precise striking — devastating precision.",
+        "characterAbility": "Crushing forward pressure — inescapable gravity force.",
         "mobility": false
       },
       {
         "id": "gun-park-4x2-hotbar-5",
         "key": "5",
-        "source": "Bruce-Kenichi",
-        "ability": "Fist Style: 9th Dance",
-        "purpose": "Precision finisher — maximum efficiency striking.",
+        "source": "Rengoku",
+        "ability": "Rengoku Style: Gravity Push",
+        "purpose": "Overwhelming push pressure — drives the opponent back with unstoppable force.",
         "comboRole": "Finisher",
         "blockBreak": false,
         "guardPressure": false,
@@ -4200,7 +4200,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Precise striking — devastating precision.",
+        "characterAbility": "Crushing forward pressure — inescapable gravity force.",
         "mobility": false
       },
       {
@@ -4225,9 +4225,9 @@ export const reviewedBuilds = [
       {
         "id": "gun-park-4x2-hotbar-V",
         "key": "V",
-        "source": "Bruce-Kenichi",
-        "ability": "Fist Style: Tiger Lotus",
-        "purpose": "Precision finisher — overwhelming finishing power.",
+        "source": "Ryuji-Kenichi",
+        "ability": "Fist Style: Dragon Lotus",
+        "purpose": "Raw power finisher — overwhelming physical finishing blow.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -4238,7 +4238,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Precise striking — devastating precision.",
+        "characterAbility": "Raw physical power and stamina-based pressure.",
         "mobility": false
       },
       {
@@ -4333,7 +4333,7 @@ export const reviewedBuilds = [
     ],
     "combos": [
       {
-        "name": "Reactive pressure fighter main testing route",
+        "name": "UI reactive pressure main route",
         "sequence": [
           "1",
           "2",
@@ -4341,16 +4341,17 @@ export const reviewedBuilds = [
           "4",
           "5"
         ],
-        "explanation": "Proposed Gun Park route using this profile’s selected sources. Continue only after the first hit confirms; live timing remains unverified."
+        "explanation": "Akuma Copy Style opener into gravity pressure. Continue only after the first hit confirms; live timing remains unverified."
       },
       {
-        "name": "Defensive reset route",
+        "name": "Power finishing route",
         "sequence": [
+          "V",
           "B",
           "N",
           "Q"
         ],
-        "explanation": "Use the final prepared utility controls to reset pressure. This route is not claimed to be guaranteed."
+        "explanation": "Ryuji-Kenichi power chain for raw physical dominance. Route is untested; confirm timing before use."
       }
     ],
     "strengths": [
@@ -4448,19 +4449,18 @@ export const reviewedBuilds = [
             "verificationStatus": "needs-research"
           },
           {
-            "name": "Bruce-Kenichi",
-            "purpose": "Precise striking technique — Gun's devastating precision even in UI mode.",
+            "name": "Rengoku",
+            "purpose": "Crushing gravity pressure — overwhelming forward force that no opponent can escape.",
             "exactMovesUsed": [
-              "Fist Style: 6th Dance",
-              "Fist Style: 9th Dance",
-              "Fist Style: Tiger Lotus"
+              "Rengoku Style: Gravity Pull",
+              "Rengoku Style: Gravity Push"
             ],
             "useMode": false,
-            "reason": "6th Dance and 9th Dance mirror Gun's precise striking. Tiger Lotus finisher represents his overwhelming finishing power.",
-            "represents": "Gun Park's striking precision — every hit lands with maximum efficiency.",
+            "reason": "Gravity Pull and Gravity Push translate Gun Park's overwhelming forward pressure in UI mode — every attack drives the opponent into a corner with inescapable force. Strong Analogy: gravity manipulation represents the unstoppable momentum of mastered UI combat.",
+            "represents": "Gun Park's crushing pressure — the inevitable forward force of his mastered Ultra Instinct.",
             "replacements": {
-              "lore": [],
-              "competitive": ["Raion-Gaiden"],
+              "lore": ["Bruce-Kenichi"],
+              "competitive": ["Shindai-Rengoku"],
               "accessible": ["Kenichi"]
             },
             "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
@@ -4594,12 +4594,12 @@ export const reviewedBuilds = [
           {
             "id": "gun-park-4x2-hotbar-4",
             "key": "4",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 6th Dance",
-            "purpose": "Precise striking — devastating precision combo starter.",
+            "source": "Rengoku",
+            "ability": "Rengoku Style: Gravity Pull",
+            "purpose": "Crushing gravity pressure — pulls opponent into Gun's attack range.",
             "comboRole": "Defense",
             "blockBreak": false,
-            "guardPressure": false,
+            "guardPressure": true,
             "counter": false,
             "modeAbility": false,
             "accuracy": "Strong Match",
@@ -4607,15 +4607,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Precise striking — devastating precision.",
+            "characterAbility": "Crushing forward pressure — inescapable gravity force.",
             "mobility": false
           },
           {
             "id": "gun-park-4x2-hotbar-5",
             "key": "5",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 9th Dance",
-            "purpose": "Precision finisher — maximum efficiency striking.",
+            "source": "Rengoku",
+            "ability": "Rengoku Style: Gravity Push",
+            "purpose": "Overwhelming push pressure — drives the opponent back with unstoppable force.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -4626,7 +4626,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Precise striking — devastating precision.",
+            "characterAbility": "Crushing forward pressure — inescapable gravity force.",
             "mobility": false
           },
           {
@@ -4651,9 +4651,9 @@ export const reviewedBuilds = [
           {
             "id": "gun-park-4x2-hotbar-V",
             "key": "V",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Precision finisher — overwhelming finishing power.",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Lotus",
+            "purpose": "Raw power finisher — overwhelming physical finishing blow.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -4664,7 +4664,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Precise striking — devastating precision.",
+            "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
           {
@@ -4759,7 +4759,7 @@ export const reviewedBuilds = [
         ],
         "combos": [
           {
-            "name": "Reactive pressure fighter main testing route",
+            "name": "UI reactive pressure main route",
             "sequence": [
               "1",
               "2",
@@ -4767,16 +4767,17 @@ export const reviewedBuilds = [
               "4",
               "5"
             ],
-            "explanation": "Proposed Gun Park route using this profile’s selected sources. Continue only after the first hit confirms; live timing remains unverified."
+            "explanation": "Akuma Copy Style opener into gravity pressure. Continue only after the first hit confirms; live timing remains unverified."
           },
           {
-            "name": "Defensive reset route",
+            "name": "Power finishing route",
             "sequence": [
+              "V",
               "B",
               "N",
               "Q"
             ],
-            "explanation": "Use the final prepared utility controls to reset pressure. This route is not claimed to be guaranteed."
+            "explanation": "Ryuji-Kenichi power chain for raw physical dominance. Route is untested; confirm timing before use."
           }
         ],
         "ratings": {
@@ -4828,7 +4829,7 @@ export const reviewedBuilds = [
         },
         "ownershipRequirements": [
           "Akuma",
-          "Bruce-Kenichi",
+          "Rengoku",
           "Ryuji-Kenichi",
           "Doku-Tengoku",
           "Earth",
@@ -6110,8 +6111,8 @@ export const reviewedBuilds = [
       },
       {
         "id": "little-daniel-park-bloodline-4",
-        "name": "Doku-Tengoku",
-        "purpose": "Predictive counter — defensive reads that turn opponents' attacks against them.",
+        "name": "Raion-Rengoku",
+        "purpose": "Ultra Instinct automatic dodge-counter — instantaneous evasion that turns every attack into a counter opportunity.",
         "useMode": false
       }
     ],
@@ -6506,20 +6507,19 @@ export const reviewedBuilds = [
             "verificationStatus": "needs-research"
           },
           {
-            "name": "Doku-Tengoku",
-            "purpose": "Predictive counter — defensive reads that turn opponents' attacks against them.",
+            "name": "Raion-Rengoku",
+            "purpose": "Ultra Instinct automatic dodge-counter — instantaneous evasion that turns every attack into a counter opportunity.",
             "exactMovesUsed": [
-              "Tengoku Style: Concentrated Palm Blast",
-              "Tengoku Style: Twin Dragon Barrage",
-              "Tengoku Style: 128 Palm Counter"
+              "Rengoku Style: Inferno Engage",
+              "Rengoku Style: Vanishing Replacement"
             ],
             "useMode": false,
-            "reason": "128 Palm Counter mirrors Daniel's prediction-based counter-fighting. His UI mode lets him read attacks before they land.",
-            "represents": "Daniel Park's prediction — reading and countering opponents before they can act.",
+            "reason": "Vanishing Replacement directly represents Daniel's Ultra Instinct automatic dodge — the body moves before the mind decides. Inferno Engage represents his explosive counter-engagement after the dodge. Strong Analogy: this is the closest available mechanic to UI automatic evasion-counter.",
+            "represents": "Little Daniel Park's Ultra Instinct automatic dodge — perfect evasion and immediate counter that defines UI mode.",
             "replacements": {
               "lore": [],
-              "competitive": ["Tengoku-Platinum"],
-              "accessible": []
+              "competitive": ["Doku-Tengoku"],
+              "accessible": ["Rengoku"]
             },
             "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
             "verificationStatus": "needs-research"
@@ -6850,7 +6850,7 @@ export const reviewedBuilds = [
           "Akuma",
           "Dio-Senko-Rose",
           "Bruce-Kenichi",
-          "Doku-Tengoku",
+          "Raion-Rengoku",
           "Order",
           "Gale",
           "Mixed Martial Arts"
@@ -6912,20 +6912,19 @@ export const reviewedBuilds = [
             "verificationStatus": "needs-research"
           },
           {
-            "name": "Doku-Tengoku",
-            "purpose": "Predictive counter — defensive reads retained for Daniel's prediction identity.",
+            "name": "Raion-Rengoku",
+            "purpose": "Ultra Instinct automatic dodge-counter — instantaneous evasion that turns every attack into a counter opportunity. In this 3-slot build it fills the counter layer previously occupied by predictive defense.",
             "exactMovesUsed": [
-              "Tengoku Style: Concentrated Palm Blast",
-              "Tengoku Style: Twin Dragon Barrage",
-              "Tengoku Style: 128 Palm Counter"
+              "Rengoku Style: Vanishing Replacement",
+              "Rengoku Style: Inferno Engage"
             ],
             "useMode": false,
-            "reason": "Counter-fighting is central to Daniel's prediction ability. Retained in three-slot because reading opponents is his core skill.",
-            "represents": "Daniel Park's prediction — reading and countering opponents before they can act.",
+            "reason": "Vanishing Replacement represents Daniel's automatic dodge — the body moves before the mind decides. Inferno Engage represents his explosive counter-engagement after the dodge. Retained in three-slot because evasion-counter is central to UI identity.",
+            "represents": "Little Daniel Park's UI automatic dodge — perfect evasion and immediate counter defining UI mode.",
             "replacements": {
               "lore": [],
-              "competitive": ["Tengoku-Platinum"],
-              "accessible": []
+              "competitive": ["Doku-Tengoku"],
+              "accessible": ["Rengoku"]
             },
             "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
             "verificationStatus": "needs-research"
@@ -7096,28 +7095,28 @@ export const reviewedBuilds = [
           {
             "id": "little-daniel-park-3x2-hotbar-B",
             "key": "B",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Predictive counter blast — punishment from reading opponents.",
+            "source": "Raion-Rengoku",
+            "ability": "Rengoku Style: Vanishing Replacement",
+            "purpose": "Ultra Instinct automatic dodge — instantaneous evasion before the mind decides.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
-            "counter": false,
+            "counter": true,
             "modeAbility": false,
             "accuracy": "Strong Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Predictive counter-fighting.",
+            "characterAbility": "UI automatic dodge-counter.",
             "mobility": false
           },
           {
             "id": "little-daniel-park-3x2-hotbar-N",
             "key": "N",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Counter punishment barrage — multi-hit after successful prediction.",
+            "source": "Raion-Rengoku",
+            "ability": "Rengoku Style: Inferno Engage",
+            "purpose": "Explosive counter-engage — Daniel's decisive attack after the automatic dodge.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -7128,7 +7127,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Predictive counter-fighting.",
+            "characterAbility": "UI explosive counter-engagement.",
             "mobility": false
           },
           {
@@ -7255,7 +7254,7 @@ export const reviewedBuilds = [
         "ownershipRequirements": [
           "Akuma",
           "Bruce-Kenichi",
-          "Doku-Tengoku",
+          "Raion-Rengoku",
           "Order",
           "Gale",
           "Mixed Martial Arts"
@@ -8112,26 +8111,26 @@ export const reviewedBuilds = [
     "bloodlines": [
       {
         "id": "johan-seong-bloodline-1",
-        "name": "Bruce-Kenichi",
-        "purpose": "Primary character identity and pressure engine.",
-        "useMode": false
-      },
-      {
-        "id": "johan-seong-bloodline-2",
-        "name": "Dio-Senko-Rose",
-        "purpose": "Reviewed supporting match.",
+        "name": "Bankai-Akuma",
+        "purpose": "Primary identity — Johan's ability to copy and absorb any fighting style perfectly.",
         "useMode": true
       },
       {
-        "id": "johan-seong-bloodline-3",
+        "id": "johan-seong-bloodline-2",
         "name": "Pika-Senko",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Copied speed-kick technique — explosive light-speed kicks drawn from speed-type fighters.",
+        "useMode": false
+      },
+      {
+        "id": "johan-seong-bloodline-3",
+        "name": "Ryuji-Kenichi",
+        "purpose": "Copied heavy-power striking — powerful fighting style absorbed from strength-type masters.",
         "useMode": false
       },
       {
         "id": "johan-seong-bloodline-4",
-        "name": "Doku-Tengoku",
-        "purpose": "Reviewed supporting match.",
+        "name": "Bruce-Kenichi",
+        "purpose": "James Lee's specific kick technique — the dance kicks Johan copied directly from the one fighter who surpassed him.",
         "useMode": false
       }
     ],
@@ -8139,7 +8138,7 @@ export const reviewedBuilds = [
       "Gale",
       "Lightning"
     ],
-    "cMode": "Dio-Senko-Rose — Stage 1",
+    "cMode": "Bankai-Akuma — Stage 1",
     "zMode": "None",
     "combatArt": "Mixed Martial Arts",
     "weapon": "None",
@@ -8151,12 +8150,12 @@ export const reviewedBuilds = [
       {
         "id": "johan-seong-4x2-hotbar-1",
         "key": "1",
-        "source": "Bruce-Kenichi",
-        "ability": "Fist Style: 6th Dance",
-        "purpose": "Primary character identity and pressure engine.",
+        "source": "Bankai-Akuma",
+        "ability": "Copy Style: Fire Blaze",
+        "purpose": "Copied technique pressure — Johan's adaptive combat opener using absorbed fire-technique.",
         "comboRole": "Starter",
         "blockBreak": false,
-        "guardPressure": false,
+        "guardPressure": true,
         "counter": false,
         "modeAbility": false,
         "accuracy": "Strong Match",
@@ -8164,15 +8163,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "characterAbility": "Johan's copying identity — absorbing and deploying any technique.",
         "mobility": false
       },
       {
         "id": "johan-seong-4x2-hotbar-2",
         "key": "2",
-        "source": "Bruce-Kenichi",
-        "ability": "Fist Style: 9th Dance",
-        "purpose": "Primary character identity and pressure engine.",
+        "source": "Bankai-Akuma",
+        "ability": "Copy Style: Hawk Illusion",
+        "purpose": "Unreadable copied technique — opponents cannot predict which style Johan deploys.",
         "comboRole": "Extender",
         "blockBreak": false,
         "guardPressure": false,
@@ -8183,15 +8182,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "characterAbility": "Johan's copying identity — absorbing and deploying any technique.",
         "mobility": false
       },
       {
         "id": "johan-seong-4x2-hotbar-3",
         "key": "3",
-        "source": "Bruce-Kenichi",
-        "ability": "Fist Style: Tiger Lotus",
-        "purpose": "Primary character identity and pressure engine.",
+        "source": "Bankai-Akuma",
+        "ability": "Illusion Style: Tsukuyomi",
+        "purpose": "Technique illusion — overwhelming the opponent with a copied ability they cannot counter.",
         "comboRole": "Pressure",
         "blockBreak": false,
         "guardPressure": true,
@@ -8202,15 +8201,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "characterAbility": "Johan's copying identity — absorbing and deploying any technique.",
         "mobility": false
       },
       {
         "id": "johan-seong-4x2-hotbar-4",
         "key": "4",
-        "source": "Dio-Senko-Rose",
-        "ability": "Time Style: Ultimate Flash",
-        "purpose": "Reviewed supporting match.",
+        "source": "Ryuji-Kenichi",
+        "ability": "Fist Style: Dragon Demon Combo",
+        "purpose": "Copied power combo — overwhelming physical technique from absorbed heavy-fighter styles.",
         "comboRole": "Defense",
         "blockBreak": false,
         "guardPressure": false,
@@ -8221,15 +8220,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Copied heavy-power striking — overwhelming physical technique.",
         "mobility": false
       },
       {
         "id": "johan-seong-4x2-hotbar-5",
         "key": "5",
-        "source": "Dio-Senko-Rose",
-        "ability": "Time Style: Time Jump",
-        "purpose": "Reviewed supporting match.",
+        "source": "Ryuji-Kenichi",
+        "ability": "Fist Style: Dragon Lotus",
+        "purpose": "Copied power finisher — maximum impact from absorbed strength-type technique.",
         "comboRole": "Finisher",
         "blockBreak": false,
         "guardPressure": false,
@@ -8240,7 +8239,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Copied heavy-power striking — overwhelming physical technique.",
         "mobility": false
       },
       {
@@ -8259,15 +8258,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Intentionally empty; no filler ability is assigned.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Not used in this variant",
         "mobility": false
       },
       {
         "id": "johan-seong-4x2-hotbar-V",
         "key": "V",
-        "source": "Dio-Senko-Rose",
-        "ability": "Time Style: Time Stop",
-        "purpose": "Reviewed supporting match.",
+        "source": "Pika-Senko",
+        "ability": "Time Style: Star Kick",
+        "purpose": "Copied speed kick — explosive light-speed kick drawn from speed-type fighters.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -8278,15 +8277,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Copied speed-kick technique — explosive kicks drawn from speed masters.",
         "mobility": false
       },
       {
         "id": "johan-seong-4x2-hotbar-B",
         "key": "B",
         "source": "Pika-Senko",
-        "ability": "Time Style: Star Kick",
-        "purpose": "Reviewed supporting match.",
+        "ability": "Time Style: Star Kick Rising",
+        "purpose": "Copied rising speed kick — aerial follow-up from absorbed speed-kick technique.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -8297,15 +8296,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Copied speed-kick technique — explosive kicks drawn from speed masters.",
         "mobility": false
       },
       {
         "id": "johan-seong-4x2-hotbar-N",
         "key": "N",
-        "source": "Pika-Senko",
-        "ability": "Time Style: Star Kick Rising",
-        "purpose": "Reviewed supporting match.",
+        "source": "Bruce-Kenichi",
+        "ability": "Fist Style: 6th Dance",
+        "purpose": "James Lee's dance kick — the specific technique Johan copied from his greatest rival.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -8316,14 +8315,14 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "James Lee's copied dance kicks — the specific technique that defines Johan's most personal rivalry.",
         "mobility": false
       },
       {
         "id": "johan-seong-4x2-hotbar-C",
         "key": "C",
-        "source": "Dio-Senko-Rose",
-        "ability": "Dio-Senko-Rose — Stage 1",
+        "source": "Bankai-Akuma",
+        "ability": "Bankai-Akuma — Stage 1",
         "purpose": "Activates the selected C-mode.",
         "comboRole": "Mode",
         "blockBreak": false,
@@ -8333,7 +8332,7 @@ export const reviewedBuilds = [
         "accuracy": "Direct Match",
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
-        "modeRequirement": "Dio-Senko-Rose — Stage 1",
+        "modeRequirement": "Bankai-Akuma — Stage 1",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
       },
       {
@@ -8373,7 +8372,7 @@ export const reviewedBuilds = [
     ],
     "combos": [
       {
-        "name": "High-execution copy technician main testing route",
+        "name": "Copy identity pressure main route",
         "sequence": [
           "1",
           "2",
@@ -8381,16 +8380,17 @@ export const reviewedBuilds = [
           "4",
           "5"
         ],
-        "explanation": "Proposed Johan Seong route using this profile’s selected sources. Continue only after the first hit confirms; live timing remains unverified."
+        "explanation": "Bankai-Akuma Copy Style opener into Ryuji-Kenichi power combo. Continue only after the first hit confirms; live timing remains unverified."
       },
       {
-        "name": "Defensive reset route",
+        "name": "Speed-kick and James Lee kick route",
         "sequence": [
+          "V",
           "B",
           "N",
           "Q"
         ],
-        "explanation": "Use the final prepared utility controls to reset pressure. This route is not claimed to be guaranteed."
+        "explanation": "Speed kick pursuit into James Lee’s copied dance kick. Route is untested; confirm timing before use."
       }
     ],
     "strengths": [
@@ -8461,76 +8461,76 @@ export const reviewedBuilds = [
         "profilePurpose": "Identity Build",
         "bloodlines": [
           {
-            "name": "Bruce-Kenichi",
-            "purpose": "Infinite technique mastery — Johan's perfect command of every martial art.",
+            "name": "Bankai-Akuma",
+            "purpose": "Primary identity — Copy Style directly represents Johan's defining ability to learn and absorb any fighting technique.",
             "exactMovesUsed": [
-              "Fist Style: 6th Dance",
-              "Fist Style: 9th Dance",
-              "Fist Style: Tiger Lotus"
-            ],
-            "useMode": false,
-            "reason": "Bruce-Kenichi's precise kick combinations directly mirror Johan's mastery of every fighting discipline. 6th Dance and 9th Dance translate his flawless technique.",
-            "represents": "Johan Seong's infinite technique — perfect mastery of every fighting style.",
-            "replacements": {
-              "lore": [],
-              "competitive": ["Raion-Gaiden"],
-              "accessible": ["Kenichi"]
-            },
-            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
-            "verificationStatus": "needs-research"
-          },
-          {
-            "name": "Dio-Senko-Rose",
-            "purpose": "Speed supremacy — time manipulation represents Johan's unmatched combat speed; C-mode enabled.",
-            "exactMovesUsed": [
-              "Time Style: Ultimate Flash",
-              "Time Style: Time Jump",
-              "Time Style: Time Stop"
+              "Copy Style: Fire Blaze",
+              "Copy Style: Hawk Illusion",
+              "Illusion Style: Tsukuyomi"
             ],
             "useMode": true,
-            "reason": "Dio-Senko-Rose C-mode enabled for Johan's speed transformation. Time Jump and Time Stop mirror his ability to outpace any opponent.",
-            "represents": "Johan Seong's speed supremacy — moving faster than any opponent can perceive.",
+            "reason": "Bankai-Akuma's Copy Style moves represent Johan's primary identity as a fighter who copies everything he sees. Hawk Illusion represents the unreadable quality of his copied techniques — opponents cannot predict which style he will deploy next. Strong Analogy: Copy Style naming directly mirrors his canonical copying ability.",
+            "represents": "Johan Seong's copying identity — the ability to absorb any fighting style and deploy it flawlessly.",
             "replacements": {
-              "lore": [],
-              "competitive": ["Pika-Senko"],
-              "accessible": ["Dio-Senko"]
+              "lore": ["Akuma", "Shindai-Akuma"],
+              "competitive": ["Akuma"],
+              "accessible": ["Akuma"]
             },
             "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
             "verificationStatus": "needs-research"
           },
           {
             "name": "Pika-Senko",
-            "purpose": "Light-speed striking — explosive kick pressure at the speed of light.",
+            "purpose": "Copied speed-kick technique — explosive light-speed kicks absorbed from speed-type fighters.",
             "exactMovesUsed": [
               "Time Style: Star Kick",
               "Time Style: Star Kick Rising"
             ],
             "useMode": false,
-            "reason": "Star Kick and Star Kick Rising provide explosive speed-of-light pursuit kicks matching Johan's overwhelming speed. Only 2 catalog moves available.",
-            "represents": "Johan Seong's light-speed kicks — blinding strike speed that overwhelms opponents.",
+            "reason": "Star Kick and Star Kick Rising represent Johan's copied speed-kick techniques from exposure to speed-type fighters. Partial Analogy: this is a speed layer drawn from his broad martial arts copying, not a single canonical source. Only 2 catalog moves available.",
+            "represents": "Johan Seong's copied speed layer — explosive kick speed drawn from multiple speed-type masters.",
             "replacements": {
               "lore": [],
-              "competitive": ["Dio-Senko"],
+              "competitive": ["Dio-Senko-Rose"],
               "accessible": ["Senko"]
             },
             "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
             "verificationStatus": "needs-research"
           },
           {
-            "name": "Doku-Tengoku",
-            "purpose": "Technique counter — reading and reversing opponents through perfect mastery.",
+            "name": "Ryuji-Kenichi",
+            "purpose": "Copied heavy-power striking — Johan's absorption of powerful fighting styles from strength-type masters.",
             "exactMovesUsed": [
-              "Tengoku Style: Concentrated Palm Blast",
-              "Tengoku Style: Twin Dragon Barrage",
-              "Tengoku Style: 128 Palm Counter"
+              "Fist Style: 3rd Stance",
+              "Fist Style: Dragon Demon Combo",
+              "Fist Style: Dragon Lotus"
             ],
             "useMode": false,
-            "reason": "128 Palm Counter mirrors Johan's ability to counter any technique through his infinite mastery. He can reverse anything he sees.",
-            "represents": "Johan Seong's counter mastery — reversing any technique through perfect understanding.",
+            "reason": "Ryuji-Kenichi's stamina-based powerful striking represents Johan's copied heavy-power fighting style. Dragon Demon Combo and Dragon Lotus translate the overwhelming physical techniques he absorbed from strength-type fighters. Strong Analogy: copying raw power through a stamina-based system.",
+            "represents": "Johan Seong's copied power layer — overwhelming physical technique drawn from heavy-power fighters.",
+            "replacements": {
+              "lore": ["Kenichi"],
+              "competitive": ["Ryuji-Kenichi"],
+              "accessible": ["Kenichi"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
+          },
+          {
+            "name": "Bruce-Kenichi",
+            "purpose": "James Lee's specific dance kicks — the exact kick technique Johan copied from the one fighter who outpaced him.",
+            "exactMovesUsed": [
+              "Fist Style: 6th Dance",
+              "Fist Style: 9th Dance",
+              "Fist Style: Tiger Lotus"
+            ],
+            "useMode": false,
+            "reason": "Bruce-Kenichi's dance kick moves specifically represent the kicks Johan copied from James Lee — not generic martial arts, but the specific Dance technique that defines James Lee's fighting. Johan's copying of James Lee's kicks is a canonical story moment. Strong Analogy: the Dance move naming directly mirrors the canonical kick style.",
+            "represents": "Johan Seong's copied James Lee kicks — specifically the dance kick technique that Johan absorbed from his greatest rival.",
             "replacements": {
               "lore": [],
-              "competitive": ["Tengoku-Platinum"],
-              "accessible": []
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
             },
             "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
             "verificationStatus": "needs-research"
@@ -8556,7 +8556,7 @@ export const reviewedBuilds = [
             "replacements": []
           }
         ],
-        "cMode": "Dio-Senko-Rose — Stage 1",
+        "cMode": "Bankai-Akuma — Stage 1",
         "zMode": "None",
         "combatArt": "Mixed Martial Arts",
         "weapon": "None",
@@ -8568,12 +8568,12 @@ export const reviewedBuilds = [
           {
             "id": "johan-seong-4x2-hotbar-1",
             "key": "1",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 6th Dance",
-            "purpose": "Primary character identity and pressure engine.",
+            "source": "Bankai-Akuma",
+            "ability": "Copy Style: Fire Blaze",
+            "purpose": "Copy identity opener — Johan deploys his copied fire technique as the primary pressure opener.",
             "comboRole": "Starter",
             "blockBreak": false,
-            "guardPressure": false,
+            "guardPressure": true,
             "counter": false,
             "modeAbility": false,
             "accuracy": "Strong Match",
@@ -8581,15 +8581,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Johan's copying identity — deploys absorbed fire techniques with perfect fidelity.",
             "mobility": false
           },
           {
             "id": "johan-seong-4x2-hotbar-2",
             "key": "2",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 9th Dance",
-            "purpose": "Primary character identity and pressure engine.",
+            "source": "Bankai-Akuma",
+            "ability": "Copy Style: Hawk Illusion",
+            "purpose": "Unreadable copy extension — the illusion quality of Johan's copying makes opponents unable to predict which technique comes next.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -8600,15 +8600,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Johan's unreadable copies — Hawk Illusion represents the unpredictable quality of his absorbed techniques.",
             "mobility": false
           },
           {
             "id": "johan-seong-4x2-hotbar-3",
             "key": "3",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Primary character identity and pressure engine.",
+            "source": "Bankai-Akuma",
+            "ability": "Illusion Style: Tsukuyomi",
+            "purpose": "Illusion pressure — Johan's mental dominance; opponents cannot read his copied technique sequence.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -8619,15 +8619,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Johan's mental dominance — Tsukuyomi represents the psychological pressure of fighting someone who has perfectly copied your style.",
             "mobility": false
           },
           {
             "id": "johan-seong-4x2-hotbar-4",
             "key": "4",
-            "source": "Dio-Senko-Rose",
-            "ability": "Time Style: Ultimate Flash",
-            "purpose": "Speed burst defense — Johan's explosive movement that allows him to escape unfavorable positions or reposition for his next copied technique.",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Demon Combo",
+            "purpose": "Copied heavy-power combo — Johan's absorbed power-type striking deployed as a defensive interrupt.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -8638,15 +8638,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Johan's exceptional speed — Ultimate Flash represents his ability to move faster than opponents can react, a key part of his copy-technician fighting that relies on perfect positioning.",
+            "characterAbility": "Johan's copied power layer — Dragon Demon Combo represents overwhelming physical technique drawn from heavy-power fighters.",
             "mobility": false
           },
           {
             "id": "johan-seong-4x2-hotbar-5",
             "key": "5",
-            "source": "Dio-Senko-Rose",
-            "ability": "Time Style: Time Jump",
-            "purpose": "Closing pursuit finisher — Johan never lets opponents escape once he has analyzed their pattern; Time Jump closes any gap instantly.",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Lotus",
+            "purpose": "Copied power finisher — Johan's absorbed stamina-based striking as a heavy combo-ender.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -8657,7 +8657,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Johan's pursuit ability — Time Jump represents how his methodical approach leaves no escape route; once he has mapped the opponent's style, he closes in with precise speed.",
+            "characterAbility": "Johan's copied power layer — Dragon Lotus closes out the heavy-power combo sequence absorbed from strength-type masters.",
             "mobility": false
           },
           {
@@ -8676,15 +8676,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
             "id": "johan-seong-4x2-hotbar-V",
             "key": "V",
-            "source": "Dio-Senko-Rose",
-            "ability": "Time Style: Time Stop",
-            "purpose": "Analysis pause — Johan's calm, precise nature; he creates space to observe the opponent and set up his next calculated technique.",
+            "source": "Pika-Senko",
+            "ability": "Time Style: Star Kick",
+            "purpose": "Copied speed kick — Johan's absorbed explosive kick technique deployed as a speed-layer utility tool.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -8695,15 +8695,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Johan's cold calculation — Time Stop represents his ability to operate faster than opponents can process; his copy-technician method is most effective when he controls the tempo of the fight.",
+            "characterAbility": "Johan's copied speed layer — Star Kick represents explosive kick speed drawn from multiple speed-type masters.",
             "mobility": false
           },
           {
             "id": "johan-seong-4x2-hotbar-B",
             "key": "B",
             "source": "Pika-Senko",
-            "ability": "Time Style: Star Kick",
-            "purpose": "Copied lightning kick — Johan mirrors an opponent's fast-kick technique with perfect precision after a single observation.",
+            "ability": "Time Style: Star Kick Rising",
+            "purpose": "Copied rising speed kick — the ascending follow-up Johan adds to the speed-kick sequence.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -8714,15 +8714,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Johan's copy ability — Star Kick represents his technique mirroring; he replicates an opponent's kick-based fighting style with such accuracy it becomes indistinguishable from the original.",
+            "characterAbility": "Johan's copied speed layer — Star Kick Rising extends the absorbed kick sequence with an upward launcher.",
             "mobility": false
           },
           {
             "id": "johan-seong-4x2-hotbar-N",
             "key": "N",
-            "source": "Pika-Senko",
-            "ability": "Time Style: Star Kick Rising",
-            "purpose": "Copied rising kick — the launcher variation that Johan adds to his copied kick sequence to create an ascending combination.",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: 6th Dance",
+            "purpose": "James Lee's copied dance kicks — the specific kick technique Johan absorbed directly from his greatest rival.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -8733,14 +8733,14 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Johan's perfected copy — Star Kick Rising extends the mirrored kick sequence with an upward launcher; Johan copies not just the basic move but the full follow-up combination with complete fidelity.",
+            "characterAbility": "Johan's copied James Lee kicks — the 6th Dance technique is the specific kick style absorbed from the one fighter who outpaced him.",
             "mobility": false
           },
           {
             "id": "johan-seong-4x2-hotbar-C",
             "key": "C",
-            "source": "Dio-Senko-Rose",
-            "ability": "Dio-Senko-Rose — Stage 1",
+            "source": "Bankai-Akuma",
+            "ability": "Bankai-Akuma — Stage 1",
             "purpose": "Activates the selected C-mode.",
             "comboRole": "Mode",
             "blockBreak": false,
@@ -8750,7 +8750,7 @@ export const reviewedBuilds = [
             "accuracy": "Direct Match",
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
-            "modeRequirement": "Dio-Senko-Rose — Stage 1",
+            "modeRequirement": "Bankai-Akuma — Stage 1",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
           },
           {
@@ -8790,7 +8790,7 @@ export const reviewedBuilds = [
         ],
         "combos": [
           {
-            "name": "High-execution copy technician main testing route",
+            "name": "Copy identity pressure main route",
             "sequence": [
               "1",
               "2",
@@ -8798,16 +8798,17 @@ export const reviewedBuilds = [
               "4",
               "5"
             ],
-            "explanation": "Proposed Johan Seong route using this profile’s selected sources. Continue only after the first hit confirms; live timing remains unverified."
+            "explanation": "Bankai-Akuma Copy Style opener into Ryuji-Kenichi power combo. Continue only after the first hit confirms; live timing remains unverified."
           },
           {
-            "name": "Defensive reset route",
+            "name": "Speed-kick and James Lee kick route",
             "sequence": [
+              "V",
               "B",
               "N",
               "Q"
             ],
-            "explanation": "Use the final prepared utility controls to reset pressure. This route is not claimed to be guaranteed."
+            "explanation": "Speed kick pursuit into James Lee’s copied dance kick. Route is untested; confirm timing before use."
           }
         ],
         "ratings": {
@@ -8858,10 +8859,10 @@ export const reviewedBuilds = [
           "raceReason": "Race is left open because no available race is required for the character match."
         },
         "ownershipRequirements": [
-          "Bruce-Kenichi",
-          "Dio-Senko-Rose",
+          "Bankai-Akuma",
           "Pika-Senko",
-          "Doku-Tengoku",
+          "Ryuji-Kenichi",
+          "Bruce-Kenichi",
           "Gale",
           "Lightning",
           "Mixed Martial Arts"
@@ -8881,58 +8882,57 @@ export const reviewedBuilds = [
         "profilePurpose": "Three-Slot Build",
         "bloodlines": [
           {
-            "name": "Bruce-Kenichi",
-            "purpose": "Infinite technique mastery — Johan's perfect command of every martial art.",
+            "name": "Bankai-Akuma",
+            "purpose": "Primary identity — Copy Style directly represents Johan's defining ability to learn and absorb any fighting technique.",
             "exactMovesUsed": [
-              "Fist Style: 6th Dance",
-              "Fist Style: 9th Dance",
-              "Fist Style: Tiger Lotus"
+              "Copy Style: Fire Blaze",
+              "Copy Style: Hawk Illusion",
+              "Illusion Style: Tsukuyomi"
+            ],
+            "useMode": true,
+            "reason": "Bankai-Akuma's Copy Style moves represent Johan's primary identity as a fighter who copies everything he sees. Retained as the anchor at three slots because copying is his core ability. Strong Analogy: Copy Style naming directly mirrors his canonical copying ability.",
+            "represents": "Johan Seong's copying identity — the ability to absorb any fighting style and deploy it flawlessly.",
+            "replacements": {
+              "lore": ["Akuma", "Shindai-Akuma"],
+              "competitive": ["Akuma"],
+              "accessible": ["Akuma"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
+          },
+          {
+            "name": "Ryuji-Kenichi",
+            "purpose": "Copied heavy-power striking — Johan's absorption of powerful fighting styles from strength-type masters. At three slots this is the power-combo layer.",
+            "exactMovesUsed": [
+              "Fist Style: Dragon Demon Combo",
+              "Fist Style: Dragon Lotus"
             ],
             "useMode": false,
-            "reason": "Bruce-Kenichi retained as Johan's core martial identity at three slots.",
-            "represents": "Johan Seong's infinite technique — perfect mastery of every fighting style.",
+            "reason": "Ryuji-Kenichi's stamina-based powerful striking represents Johan's copied heavy-power fighting style at three slots. Dragon Demon Combo and Dragon Lotus provide the power-finisher layer. Strong Analogy: copying raw power through a stamina-based system.",
+            "represents": "Johan Seong's copied power layer — overwhelming physical technique drawn from heavy-power fighters.",
             "replacements": {
-              "lore": [],
-              "competitive": ["Raion-Gaiden"],
+              "lore": ["Kenichi"],
+              "competitive": ["Ryuji-Kenichi"],
               "accessible": ["Kenichi"]
             },
             "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
             "verificationStatus": "needs-research"
           },
           {
-            "name": "Dio-Senko-Rose",
-            "purpose": "Speed supremacy — time manipulation retained for Johan's unmatched speed; C-mode enabled.",
+            "name": "Bruce-Kenichi",
+            "purpose": "James Lee's specific dance kicks — the exact kick technique Johan copied from the one fighter who outpaced him. At three slots this is the kick-identity layer.",
             "exactMovesUsed": [
-              "Time Style: Ultimate Flash",
-              "Time Style: Time Jump",
-              "Time Style: Time Stop"
-            ],
-            "useMode": true,
-            "reason": "Speed is central to Johan's identity. Retained at three slots with C-mode because his speed defines the character.",
-            "represents": "Johan Seong's speed supremacy — moving faster than any opponent can perceive.",
-            "replacements": {
-              "lore": [],
-              "competitive": ["Pika-Senko"],
-              "accessible": ["Dio-Senko"]
-            },
-            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
-            "verificationStatus": "needs-research"
-          },
-          {
-            "name": "Doku-Tengoku",
-            "purpose": "Technique counter — reading and reversing opponents through perfect mastery.",
-            "exactMovesUsed": [
-              "Tengoku Style: Concentrated Palm Blast",
-              "Tengoku Style: Twin Dragon Barrage",
-              "Tengoku Style: 128 Palm Counter"
+              "Fist Style: 6th Dance",
+              "Fist Style: 9th Dance",
+              "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Counter-fighting retained at three slots because Johan's mastery lets him reverse any technique.",
-            "represents": "Johan Seong's counter mastery — reversing any technique through perfect understanding.",
+            "reason": "Bruce-Kenichi's dance kick moves specifically represent the kicks Johan copied from James Lee. Retained at three slots because the James Lee kick connection is a canonical story moment. Strong Analogy: Dance move naming directly mirrors the canonical kick style.",
+            "represents": "Johan Seong's copied James Lee kicks — specifically the dance kick technique absorbed from his greatest rival.",
             "replacements": {
               "lore": [],
-              "competitive": ["Tengoku-Platinum"],
-              "accessible": []
+              "competitive": ["Raion-Gaiden"],
+              "accessible": ["Kenichi"]
             },
             "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
             "verificationStatus": "needs-research"
@@ -8958,7 +8958,7 @@ export const reviewedBuilds = [
             "replacements": []
           }
         ],
-        "cMode": "Dio-Senko-Rose — Stage 1",
+        "cMode": "Bankai-Akuma — Stage 1",
         "zMode": "None",
         "combatArt": "Mixed Martial Arts",
         "weapon": "None",
@@ -8970,12 +8970,12 @@ export const reviewedBuilds = [
           {
             "id": "johan-seong-3x2-hotbar-1",
             "key": "1",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 6th Dance",
-            "purpose": "Primary character identity and pressure engine.",
+            "source": "Bankai-Akuma",
+            "ability": "Copy Style: Fire Blaze",
+            "purpose": "Copy identity opener — Johan deploys his copied fire technique as the primary pressure opener.",
             "comboRole": "Starter",
             "blockBreak": false,
-            "guardPressure": false,
+            "guardPressure": true,
             "counter": false,
             "modeAbility": false,
             "accuracy": "Strong Match",
@@ -8983,15 +8983,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Johan's copying identity — deploys absorbed fire techniques with perfect fidelity.",
             "mobility": false
           },
           {
             "id": "johan-seong-3x2-hotbar-2",
             "key": "2",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 9th Dance",
-            "purpose": "Primary character identity and pressure engine.",
+            "source": "Bankai-Akuma",
+            "ability": "Copy Style: Hawk Illusion",
+            "purpose": "Unreadable copy extension — the illusion quality of Johan's copying makes opponents unable to predict which technique comes next.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -9002,15 +9002,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Johan's unreadable copies — Hawk Illusion represents the unpredictable quality of his absorbed techniques.",
             "mobility": false
           },
           {
             "id": "johan-seong-3x2-hotbar-3",
             "key": "3",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Primary character identity and pressure engine.",
+            "source": "Bankai-Akuma",
+            "ability": "Illusion Style: Tsukuyomi",
+            "purpose": "Illusion pressure — Johan's mental dominance; opponents cannot read his copied technique sequence.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -9021,15 +9021,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Johan's mental dominance — Tsukuyomi represents the psychological pressure of fighting someone who has perfectly copied your style.",
             "mobility": false
           },
           {
             "id": "johan-seong-3x2-hotbar-4",
             "key": "4",
-            "source": "Dio-Senko-Rose",
-            "ability": "Time Style: Ultimate Flash",
-            "purpose": "Reviewed supporting match.",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Demon Combo",
+            "purpose": "Copied heavy-power combo — Johan's absorbed power-type striking deployed as a defensive interrupt.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -9040,15 +9040,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's copied power layer — Dragon Demon Combo represents overwhelming physical technique drawn from heavy-power fighters.",
             "mobility": false
           },
           {
             "id": "johan-seong-3x2-hotbar-5",
             "key": "5",
-            "source": "Dio-Senko-Rose",
-            "ability": "Time Style: Time Jump",
-            "purpose": "Reviewed supporting match.",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Lotus",
+            "purpose": "Copied power finisher — Johan's absorbed stamina-based striking as a heavy combo-ender.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -9059,7 +9059,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's copied power layer — Dragon Lotus closes out the heavy-power combo sequence absorbed from strength-type masters.",
             "mobility": false
           },
           {
@@ -9078,15 +9078,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
             "id": "johan-seong-3x2-hotbar-V",
             "key": "V",
-            "source": "Dio-Senko-Rose",
-            "ability": "Time Style: Time Stop",
-            "purpose": "Reviewed supporting match.",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: 6th Dance",
+            "purpose": "James Lee's copied dance kick — the first dance in the kick sequence Johan absorbed from his greatest rival.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -9097,15 +9097,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's copied James Lee kicks — the 6th Dance technique is the specific kick style absorbed from the one fighter who outpaced him.",
             "mobility": false
           },
           {
             "id": "johan-seong-3x2-hotbar-B",
             "key": "B",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Reviewed supporting match.",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: 9th Dance",
+            "purpose": "James Lee's copied dance kick continuation — the extended dance sequence in Johan's kick repertoire.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -9116,15 +9116,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's copied James Lee kicks — the 9th Dance extends the absorbed kick sequence with a higher-count dance variation.",
             "mobility": false
           },
           {
             "id": "johan-seong-3x2-hotbar-N",
             "key": "N",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Reviewed supporting match.",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: Tiger Lotus",
+            "purpose": "James Lee's kick finisher — the powerful closing technique in Johan's absorbed dance-kick sequence.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -9135,14 +9135,14 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's copied James Lee kicks — Tiger Lotus closes the dance-kick sequence absorbed from his greatest rival.",
             "mobility": false
           },
           {
             "id": "johan-seong-3x2-hotbar-C",
             "key": "C",
-            "source": "Dio-Senko-Rose",
-            "ability": "Dio-Senko-Rose — Stage 1",
+            "source": "Bankai-Akuma",
+            "ability": "Bankai-Akuma — Stage 1",
             "purpose": "Activates the selected C-mode.",
             "comboRole": "Mode",
             "blockBreak": false,
@@ -9152,7 +9152,7 @@ export const reviewedBuilds = [
             "accuracy": "Direct Match",
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
-            "modeRequirement": "Dio-Senko-Rose — Stage 1",
+            "modeRequirement": "Bankai-Akuma — Stage 1",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
           },
           {
@@ -9192,7 +9192,7 @@ export const reviewedBuilds = [
         ],
         "combos": [
           {
-            "name": "High-execution copy technician main testing route",
+            "name": "Copy identity pressure main route",
             "sequence": [
               "1",
               "2",
@@ -9200,16 +9200,17 @@ export const reviewedBuilds = [
               "4",
               "5"
             ],
-            "explanation": "Proposed Johan Seong route using this profile’s selected sources. Continue only after the first hit confirms; live timing remains unverified."
+            "explanation": "Bankai-Akuma Copy Style opener into Ryuji-Kenichi power combo. Continue only after the first hit confirms; live timing remains unverified."
           },
           {
-            "name": "Defensive reset route",
+            "name": "James Lee dance kick route",
             "sequence": [
+              "V",
               "B",
               "N",
               "Q"
             ],
-            "explanation": "Use the final prepared utility controls to reset pressure. This route is not claimed to be guaranteed."
+            "explanation": "Full Bruce-Kenichi dance kick sequence — 6th Dance, 9th Dance, Tiger Lotus. Route is untested; confirm timing before use."
           }
         ],
         "ratings": {
@@ -9230,9 +9231,9 @@ export const reviewedBuilds = [
           "Live combo timing remains unverified."
         ],
         "usageGuide": [
-          "Lead with Fist Style: 6th Dance.",
-          "Keep the defensive control available for reversals.",
-          "Use Q only after confirming the weapon or fighting-system range."
+          "Lead with Copy Style: Fire Blaze to establish copy identity pressure.",
+          "Follow with Ryuji-Kenichi power combo (4, 5) to close the main route.",
+          "Use James Lee dance kick sequence (V, B, N) as a utility tool for kick-pressure reads."
         ],
         "verificationStatus": "Needs Retesting",
         "lastVerifiedUpdate": "Live update pending owner retest",
@@ -9260,9 +9261,9 @@ export const reviewedBuilds = [
           "raceReason": "Race is left open because no available race is required for the character match."
         },
         "ownershipRequirements": [
+          "Bankai-Akuma",
+          "Ryuji-Kenichi",
           "Bruce-Kenichi",
-          "Dio-Senko-Rose",
-          "Doku-Tengoku",
           "Gale",
           "Lightning",
           "Mixed Martial Arts"
@@ -9282,39 +9283,39 @@ export const reviewedBuilds = [
         "profilePurpose": "Two-Slot Build",
         "bloodlines": [
           {
+            "name": "Bankai-Akuma",
+            "purpose": "Primary identity — Copy Style is Johan's irreducible core at two slots; every technique he uses is copied.",
+            "exactMovesUsed": [
+              "Copy Style: Fire Blaze",
+              "Copy Style: Hawk Illusion",
+              "Illusion Style: Tsukuyomi"
+            ],
+            "useMode": true,
+            "reason": "At two slots, Bankai-Akuma remains because copying is Johan's defining trait — it cannot be dropped. Strong Analogy: Copy Style naming directly mirrors his canonical copying ability.",
+            "represents": "Johan Seong's copying identity — the ability to absorb any fighting style and deploy it flawlessly.",
+            "replacements": {
+              "lore": ["Akuma", "Shindai-Akuma"],
+              "competitive": ["Akuma"],
+              "accessible": ["Akuma"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
+          },
+          {
             "name": "Bruce-Kenichi",
-            "purpose": "Infinite technique mastery — Johan's martial core at two slots.",
+            "purpose": "James Lee's specific dance kicks — at two slots this is the sole physical technique layer, representing the most iconic copying moment in Johan's story.",
             "exactMovesUsed": [
               "Fist Style: 6th Dance",
               "Fist Style: 9th Dance",
               "Fist Style: Tiger Lotus"
             ],
             "useMode": false,
-            "reason": "Bruce-Kenichi retained as the irreducible technique core at two slots.",
-            "represents": "Johan Seong's infinite technique — perfect mastery of every fighting style.",
+            "reason": "Bruce-Kenichi is retained at two slots because the James Lee kick-copying is the most canonical technique event in Johan's arc. Strong Analogy: Dance move naming directly mirrors the canonical kick style.",
+            "represents": "Johan Seong's copied James Lee kicks — the dance kick technique absorbed from the one fighter who outpaced him.",
             "replacements": {
               "lore": [],
               "competitive": ["Raion-Gaiden"],
               "accessible": ["Kenichi"]
-            },
-            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
-            "verificationStatus": "needs-research"
-          },
-          {
-            "name": "Dio-Senko-Rose",
-            "purpose": "Speed supremacy — the essential speed complement at two slots; C-mode enabled.",
-            "exactMovesUsed": [
-              "Time Style: Ultimate Flash",
-              "Time Style: Time Jump",
-              "Time Style: Time Stop"
-            ],
-            "useMode": true,
-            "reason": "Speed + technique are the two irreducible halves of Johan's identity. C-mode preserved.",
-            "represents": "Johan Seong's speed supremacy — moving faster than any opponent can perceive.",
-            "replacements": {
-              "lore": [],
-              "competitive": ["Pika-Senko"],
-              "accessible": ["Dio-Senko"]
             },
             "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
             "verificationStatus": "needs-research"
@@ -9340,7 +9341,7 @@ export const reviewedBuilds = [
             "replacements": []
           }
         ],
-        "cMode": "Dio-Senko-Rose — Stage 1",
+        "cMode": "Bankai-Akuma — Stage 1",
         "zMode": "None",
         "combatArt": "Mixed Martial Arts",
         "weapon": "None",
@@ -9352,12 +9353,12 @@ export const reviewedBuilds = [
           {
             "id": "johan-seong-2x2-hotbar-1",
             "key": "1",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 6th Dance",
-            "purpose": "Primary character identity and pressure engine.",
+            "source": "Bankai-Akuma",
+            "ability": "Copy Style: Fire Blaze",
+            "purpose": "Copy identity opener — Johan deploys his copied fire technique as the primary pressure opener.",
             "comboRole": "Starter",
             "blockBreak": false,
-            "guardPressure": false,
+            "guardPressure": true,
             "counter": false,
             "modeAbility": false,
             "accuracy": "Strong Match",
@@ -9365,15 +9366,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Johan's copying identity — deploys absorbed fire techniques with perfect fidelity.",
             "mobility": false
           },
           {
             "id": "johan-seong-2x2-hotbar-2",
             "key": "2",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 9th Dance",
-            "purpose": "Primary character identity and pressure engine.",
+            "source": "Bankai-Akuma",
+            "ability": "Copy Style: Hawk Illusion",
+            "purpose": "Unreadable copy extension — the illusion quality of Johan's copying makes opponents unable to predict which technique comes next.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -9384,15 +9385,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Johan's unreadable copies — Hawk Illusion represents the unpredictable quality of his absorbed techniques.",
             "mobility": false
           },
           {
             "id": "johan-seong-2x2-hotbar-3",
             "key": "3",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Primary character identity and pressure engine.",
+            "source": "Bankai-Akuma",
+            "ability": "Illusion Style: Tsukuyomi",
+            "purpose": "Illusion pressure — Johan's mental dominance; opponents cannot read his copied technique sequence.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -9403,15 +9404,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Johan's mental dominance — Tsukuyomi represents the psychological pressure of fighting someone who has perfectly copied your style.",
             "mobility": false
           },
           {
             "id": "johan-seong-2x2-hotbar-4",
             "key": "4",
-            "source": "Dio-Senko-Rose",
-            "ability": "Time Style: Ultimate Flash",
-            "purpose": "Reviewed supporting match.",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: 6th Dance",
+            "purpose": "James Lee's copied dance kick — the first dance in the kick sequence Johan absorbed from his greatest rival.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -9422,15 +9423,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's copied James Lee kicks — the 6th Dance technique absorbed from the one fighter who outpaced him.",
             "mobility": false
           },
           {
             "id": "johan-seong-2x2-hotbar-5",
             "key": "5",
-            "source": "Dio-Senko-Rose",
-            "ability": "Time Style: Time Jump",
-            "purpose": "Reviewed supporting match.",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: 9th Dance",
+            "purpose": "James Lee's copied dance kick continuation — the extended sequence in Johan's two-slot kick layer.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -9441,7 +9442,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's copied James Lee kicks — the 9th Dance extends the absorbed kick sequence.",
             "mobility": false
           },
           {
@@ -9460,15 +9461,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
             "id": "johan-seong-2x2-hotbar-V",
             "key": "V",
-            "source": "Dio-Senko-Rose",
-            "ability": "Time Style: Time Stop",
-            "purpose": "Reviewed supporting match.",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: Tiger Lotus",
+            "purpose": "James Lee's kick finisher — the powerful closing technique in Johan's absorbed dance-kick sequence.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -9479,7 +9480,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Johan's copied James Lee kicks — Tiger Lotus closes the dance-kick sequence at two slots.",
             "mobility": false
           },
           {
@@ -9487,7 +9488,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Gale",
             "ability": "Gale Style: Vortex",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed expression utility — wind movement mirrors Johan's blinding combat speed.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -9498,7 +9499,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Speed expression — wind vortex mirrors Johan's rapid movement between copied techniques.",
             "mobility": false
           },
           {
@@ -9506,7 +9507,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Gale",
             "ability": "Gale Style: Windshock",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed disruption — wind shock pressure complements Johan's speed-based fighting.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -9517,14 +9518,14 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Speed disruption — Windshock extends Johan's wind-speed pressure layer at two slots.",
             "mobility": false
           },
           {
             "id": "johan-seong-2x2-hotbar-C",
             "key": "C",
-            "source": "Dio-Senko-Rose",
-            "ability": "Dio-Senko-Rose — Stage 1",
+            "source": "Bankai-Akuma",
+            "ability": "Bankai-Akuma — Stage 1",
             "purpose": "Activates the selected C-mode.",
             "comboRole": "Mode",
             "blockBreak": false,
@@ -9534,7 +9535,7 @@ export const reviewedBuilds = [
             "accuracy": "Direct Match",
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
-            "modeRequirement": "Dio-Senko-Rose — Stage 1",
+            "modeRequirement": "Bankai-Akuma — Stage 1",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
           },
           {
@@ -9574,7 +9575,7 @@ export const reviewedBuilds = [
         ],
         "combos": [
           {
-            "name": "High-execution copy technician main testing route",
+            "name": "Copy identity pressure main route",
             "sequence": [
               "1",
               "2",
@@ -9582,16 +9583,17 @@ export const reviewedBuilds = [
               "4",
               "5"
             ],
-            "explanation": "Proposed Johan Seong route using this profile’s selected sources. Continue only after the first hit confirms; live timing remains unverified."
+            "explanation": "Bankai-Akuma Copy Style opener into Bruce-Kenichi dance kick combo. Continue only after the first hit confirms; live timing remains unverified."
           },
           {
-            "name": "Defensive reset route",
+            "name": "Tiger Lotus and wind route",
             "sequence": [
+              "V",
               "B",
               "N",
               "Q"
             ],
-            "explanation": "Use the final prepared utility controls to reset pressure. This route is not claimed to be guaranteed."
+            "explanation": "Tiger Lotus kick finisher into Gale wind pressure. Route is untested; confirm timing before use."
           }
         ],
         "ratings": {
@@ -9613,9 +9615,9 @@ export const reviewedBuilds = [
           "Reduced role coverage requires more careful cooldown use."
         ],
         "usageGuide": [
-          "Lead with Fist Style: 6th Dance.",
-          "Keep the defensive control available for reversals.",
-          "Use Q only after confirming the weapon or fighting-system range."
+          "Lead with Copy Style: Fire Blaze to establish copy identity pressure.",
+          "Follow with Bruce-Kenichi dance kicks (4, 5) to close the main route.",
+          "Use Tiger Lotus (V) as a kick finisher; wind tools (B, N) for speed disruption."
         ],
         "verificationStatus": "Needs Retesting",
         "lastVerifiedUpdate": "Live update pending owner retest",
@@ -9643,8 +9645,8 @@ export const reviewedBuilds = [
           "raceReason": "Race is left open because no available race is required for the character match."
         },
         "ownershipRequirements": [
+          "Bankai-Akuma",
           "Bruce-Kenichi",
-          "Dio-Senko-Rose",
           "Gale",
           "Lightning",
           "Mixed Martial Arts"
@@ -9818,7 +9820,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Gale",
             "ability": "Gale Style: Vortex",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Wind speed pressure — accessible wind vortex mirrors Johan's rapid movement.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -9829,7 +9831,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Speed expression — wind vortex accessible layer.",
             "mobility": false
           },
           {
@@ -9848,7 +9850,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -9856,7 +9858,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Gale",
             "ability": "Gale Style: Windshock",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Wind disruption — shock wave speed pressure for accessible players.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -9867,7 +9869,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Speed disruption — Windshock accessible wind pressure layer.",
             "mobility": false
           },
           {
@@ -9875,7 +9877,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Lightning",
             "ability": "Shock Style: Stream",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Electrical pressure — shock stream for accessible electrical offense.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -9886,7 +9888,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Electrical pressure — Shock Stream accessible lightning layer.",
             "mobility": false
           },
           {
@@ -9894,7 +9896,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Lightning",
             "ability": "Shock Style: Blast",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Electrical burst — shock blast closes the accessible electrical sequence.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -9905,7 +9907,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Electrical burst — Shock Blast accessible lightning finisher.",
             "mobility": false
           },
           {
@@ -9962,7 +9964,7 @@ export const reviewedBuilds = [
         ],
         "combos": [
           {
-            "name": "High-execution copy technician main testing route",
+            "name": "Accessible copy technician main route",
             "sequence": [
               "1",
               "2",
@@ -9970,16 +9972,16 @@ export const reviewedBuilds = [
               "4",
               "5"
             ],
-            "explanation": "Proposed Johan Seong route using this profile’s selected sources. Continue only after the first hit confirms; live timing remains unverified."
+            "explanation": "Kenichi martial arts into Dio-Senko speed combo. Continue only after the first hit confirms; live timing remains unverified."
           },
           {
-            "name": "Defensive reset route",
+            "name": "Wind and lightning utility route",
             "sequence": [
               "B",
               "N",
               "Q"
             ],
-            "explanation": "Use the final prepared utility controls to reset pressure. This route is not claimed to be guaranteed."
+            "explanation": "Lightning stream into blast close confirm. Route is untested; confirm timing before use."
           }
         ],
         "ratings": {
@@ -10118,20 +10120,20 @@ export const reviewedBuilds = [
       },
       {
         "id": "kitae-kim-bloodline-2",
-        "name": "Minakaze-Azure",
-        "purpose": "Reviewed supporting match.",
+        "name": "Rengoku",
+        "purpose": "Crushing gravity pressure — overwhelming forward force that no opponent can escape.",
         "useMode": false
       },
       {
         "id": "kitae-kim-bloodline-3",
-        "name": "Bruce-Kenichi",
-        "purpose": "Reviewed supporting match.",
+        "name": "Kenichi",
+        "purpose": "Precise martial arts strikes — controlled technique that complements Kitae's brutal pressure.",
         "useMode": false
       },
       {
         "id": "kitae-kim-bloodline-4",
-        "name": "Doku-Tengoku",
-        "purpose": "Reviewed supporting match.",
+        "name": "Shindai-Rengoku",
+        "purpose": "Tailed beast counter power — enhanced gravity force with counter capability.",
         "useMode": false
       }
     ],
@@ -10208,12 +10210,12 @@ export const reviewedBuilds = [
       {
         "id": "kitae-kim-4x2-hotbar-4",
         "key": "4",
-        "source": "Minakaze-Azure",
-        "ability": "Minakaze Style: Kunai Raijin",
-        "purpose": "Reviewed supporting match.",
+        "source": "Rengoku",
+        "ability": "Rengoku Style: Gravity Pull",
+        "purpose": "Crushing gravity pressure — pulls opponent into Kitae's attack range with inescapable force.",
         "comboRole": "Defense",
         "blockBreak": false,
-        "guardPressure": false,
+        "guardPressure": true,
         "counter": false,
         "modeAbility": false,
         "accuracy": "Strong Match",
@@ -10221,15 +10223,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Crushing forward pressure — inescapable gravity force that no opponent can escape.",
         "mobility": false
       },
       {
         "id": "kitae-kim-4x2-hotbar-5",
         "key": "5",
-        "source": "Minakaze-Azure",
-        "ability": "Minakaze Style: Sunsengan Barrage",
-        "purpose": "Reviewed supporting match.",
+        "source": "Rengoku",
+        "ability": "Rengoku Style: Gravity Push",
+        "purpose": "Overwhelming push pressure — drives the opponent back with unstoppable forward force.",
         "comboRole": "Finisher",
         "blockBreak": false,
         "guardPressure": false,
@@ -10240,7 +10242,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Crushing forward pressure — Gravity Push drives opponents into corners with unstoppable force.",
         "mobility": false
       },
       {
@@ -10259,15 +10261,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Intentionally empty; no filler ability is assigned.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "No ability assigned to this slot.",
         "mobility": false
       },
       {
         "id": "kitae-kim-4x2-hotbar-V",
         "key": "V",
-        "source": "Minakaze-Azure",
-        "ability": "Minakaze Style: Sunsengan Overdrive",
-        "purpose": "Reviewed supporting match.",
+        "source": "Kenichi",
+        "ability": "Fist Style: Crane Demon",
+        "purpose": "Precise martial arts strike — controlled technique that complements Kitae's brutal forward pressure.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -10278,15 +10280,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Precise martial arts — Crane Demon provides a controlled strike in Kitae's brutal pressure flow.",
         "mobility": false
       },
       {
         "id": "kitae-kim-4x2-hotbar-B",
         "key": "B",
-        "source": "Bruce-Kenichi",
-        "ability": "Fist Style: 6th Dance",
-        "purpose": "Reviewed supporting match.",
+        "source": "Kenichi",
+        "ability": "Fist Style: Dragon Strike",
+        "purpose": "Powerful martial arts blow — Dragon Strike delivers heavy physical impact in the utility slot.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -10297,26 +10299,26 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Precise martial arts — Dragon Strike delivers concentrated physical power.",
         "mobility": false
       },
       {
         "id": "kitae-kim-4x2-hotbar-N",
         "key": "N",
-        "source": "Bruce-Kenichi",
-        "ability": "Fist Style: 9th Dance",
-        "purpose": "Reviewed supporting match.",
+        "source": "Shindai-Rengoku",
+        "ability": "Rengoku Style: Tailed Spirit Counter",
+        "purpose": "Endurance counter — absorbs the opponent's strike and responds with definitive punishment.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
-        "counter": false,
+        "counter": true,
         "modeAbility": false,
         "accuracy": "Strong Match",
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Endurance counter — absorbs punishment and delivers decisive retaliation when opponent overcommits.",
         "mobility": false
       },
       {
@@ -10373,7 +10375,7 @@ export const reviewedBuilds = [
     ],
     "combos": [
       {
-        "name": "Brutal power brawler main testing route",
+        "name": "Brutal power brawler main route",
         "sequence": [
           "1",
           "2",
@@ -10381,16 +10383,17 @@ export const reviewedBuilds = [
           "4",
           "5"
         ],
-        "explanation": "Proposed Kitae Kim route using this profile’s selected sources. Continue only after the first hit confirms; live timing remains unverified."
+        "explanation": "Ryuji-Kenichi power opener into Rengoku gravity pressure. Continue only after the first hit confirms; live timing remains unverified."
       },
       {
-        "name": "Defensive reset route",
+        "name": "Kenichi martial and counter route",
         "sequence": [
+          "V",
           "B",
           "N",
           "Q"
         ],
-        "explanation": "Use the final prepared utility controls to reset pressure. This route is not claimed to be guaranteed."
+        "explanation": "Kenichi Crane Demon and Dragon Strike into Shindai-Rengoku Tailed Spirit Counter. Route is untested; confirm timing before use."
       }
     ],
     "strengths": [
@@ -10473,55 +10476,58 @@ export const reviewedBuilds = [
             }
           },
           {
-            "name": "Minakaze-Azure",
-            "purpose": "Explosive teleport pursuit — Partial Analogy for Kitae's overwhelming momentum and cross-range pressure.",
+            "name": "Rengoku",
+            "purpose": "Crushing gravity pressure — Partial Analogy for Kitae's overwhelming forward force that no opponent can escape.",
             "exactMovesUsed": [
-              "Minakaze Style: Kunai Raijin",
-              "Minakaze Style: Sunsengan Barrage",
-              "Minakaze Style: Sunsengan Overdrive"
+              "Rengoku Style: Gravity Pull",
+              "Rengoku Style: Gravity Push"
             ],
             "useMode": false,
-            "reason": "Minakaze-Azure's teleport and ranged projectiles provide cross-range control complementing Kitae's close-range dominance. Sunsengan Overdrive represents his explosive momentum acceleration that no opponent can outpace.",
-            "represents": "Kitae Kim's relentless advance — explosive cross-range pressure forcing all opponents into close range.",
+            "reason": "Gravity Pull and Gravity Push translate Kitae's overwhelming forward pressure — every attack drives the opponent into a corner with inescapable force. Partial Analogy: gravity manipulation represents the unstoppable momentum of his King of Seoul dominance.",
+            "represents": "Kitae Kim's crushing pressure — the inevitable forward force of his mastered fighting style.",
             "replacements": {
               "lore": [],
-              "competitive": ["Pika-Senko"],
-              "accessible": []
-            }
+              "competitive": ["Shindai-Rengoku"],
+              "accessible": ["Rengoku"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
-            "name": "Bruce-Kenichi",
-            "purpose": "Precision finishing strikes — Strong Analogy for Kitae's decisive single blows after complete dominance.",
+            "name": "Kenichi",
+            "purpose": "Precise martial arts strikes — Strong Analogy for Kitae's controlled technique that complements his brutal forward pressure.",
             "exactMovesUsed": [
-              "Fist Style: 6th Dance",
-              "Fist Style: 9th Dance",
-              "Fist Style: Tiger Lotus"
+              "Fist Style: Crane Demon",
+              "Fist Style: Dragon Strike"
             ],
             "useMode": false,
-            "reason": "Bruce-Kenichi's precise kick combinations provide finishing power that matches Kitae's ability to end fights decisively once he has established complete physical control.",
-            "represents": "Kitae Kim's King of Seoul finishing — decisive precision after overwhelming forward pressure.",
+            "reason": "Kenichi's precise fist techniques represent the controlled striking layer in Kitae's fighting — after overwhelming forward pressure, he deploys precise individual blows. Strong Analogy: Crane Demon and Dragon Strike represent focused martial arts technique within a power-focused build.",
+            "represents": "Kitae Kim's precise finishing — targeted technique after overwhelming forward pressure.",
             "replacements": {
-              "lore": [],
-              "competitive": ["Raion-Gaiden"],
-              "accessible": ["Kenichi"]
-            }
+              "lore": ["Bruce-Kenichi"],
+              "competitive": ["Ryuji-Kenichi"],
+              "accessible": []
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
-            "name": "Doku-Tengoku",
-            "purpose": "Endurance counter — Partial Analogy for Kitae's ability to absorb damage and retaliate with crushing force.",
+            "name": "Shindai-Rengoku",
+            "purpose": "Endurance counter — Partial Analogy for Kitae's ability to absorb damage and retaliate with concentrated force.",
             "exactMovesUsed": [
-              "Tengoku Style: Concentrated Palm Blast",
-              "Tengoku Style: Twin Dragon Barrage",
-              "Tengoku Style: 128 Palm Counter"
+              "Rengoku Style: Tailed Spirit Counter",
+              "Rengoku Style: Under The Sun"
             ],
             "useMode": false,
-            "reason": "128 Palm Counter and Twin Dragon Barrage represent Kitae's toughness — his ability to endure strikes and immediately respond with devastating counters while continuing his assault.",
-            "represents": "Kitae Kim's endurance — absorbing punishment while relentlessly continuing his overwhelming attack.",
+            "reason": "Tailed Spirit Counter represents Kitae's endurance and retaliation — his ability to absorb strikes and immediately respond with devastating counters. Under The Sun represents his overwhelming sustained pressure when fully committed to an exchange. Partial Analogy: gravity-amplified force mirrors Kitae's physically overwhelming fighting style.",
+            "represents": "Kitae Kim's endurance counter — absorbing punishment and retaliating with overwhelming concentrated force.",
             "replacements": {
               "lore": [],
-              "competitive": ["Tengoku-Platinum"],
-              "accessible": []
-            }
+              "competitive": ["Doku-Tengoku"],
+              "accessible": ["Rengoku"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -10613,12 +10619,12 @@ export const reviewedBuilds = [
           {
             "id": "kitae-kim-4x2-hotbar-4",
             "key": "4",
-            "source": "Minakaze-Azure",
-            "ability": "Minakaze Style: Kunai Raijin",
-            "purpose": "Ranged interception — Kitae can close the gap by punishing enemy movement with thrown projectiles before entering close range.",
+            "source": "Rengoku",
+            "ability": "Rengoku Style: Gravity Pull",
+            "purpose": "Crushing gravity pressure — pulls opponent into Kitae's attack range with inescapable force.",
             "comboRole": "Defense",
             "blockBreak": false,
-            "guardPressure": false,
+            "guardPressure": true,
             "counter": false,
             "modeAbility": false,
             "accuracy": "Strong Match",
@@ -10626,15 +10632,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's relentless advance — he does not let opponents escape range; Kunai Raijin represents that cross-range pursuit before the decisive close-range assault.",
+            "characterAbility": "Crushing forward pressure — inescapable gravity force that no opponent can escape.",
             "mobility": false
           },
           {
             "id": "kitae-kim-4x2-hotbar-5",
             "key": "5",
-            "source": "Minakaze-Azure",
-            "ability": "Minakaze Style: Sunsengan Barrage",
-            "purpose": "Finishing barrage — sustained multi-hit pressure once Kitae has cornered the opponent.",
+            "source": "Rengoku",
+            "ability": "Rengoku Style: Gravity Push",
+            "purpose": "Overwhelming push pressure — drives the opponent back with unstoppable forward force.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -10645,7 +10651,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's overwhelming final attack — once he has broken the opponent's resistance through forward pressure, he finishes with a crushing sustained barrage they cannot escape.",
+            "characterAbility": "Crushing forward pressure — Gravity Push drives opponents into corners with unstoppable force.",
             "mobility": false
           },
           {
@@ -10664,15 +10670,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
             "id": "kitae-kim-4x2-hotbar-V",
             "key": "V",
-            "source": "Minakaze-Azure",
-            "ability": "Minakaze Style: Sunsengan Overdrive",
-            "purpose": "Momentum burst — explosive acceleration to close distance instantly or escape a dangerous situation.",
+            "source": "Kenichi",
+            "ability": "Fist Style: Crane Demon",
+            "purpose": "Precise martial arts strike — controlled technique that complements Kitae's brutal forward pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -10683,15 +10689,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's explosive momentum — no one outpaces his advance; Sunsengan Overdrive represents the unstoppable acceleration that defines his King of Seoul reputation.",
+            "characterAbility": "Precise martial arts — Crane Demon provides a controlled strike in Kitae's brutal pressure flow.",
             "mobility": false
           },
           {
             "id": "kitae-kim-4x2-hotbar-B",
             "key": "B",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 6th Dance",
-            "purpose": "Precise finishing kick — a decisive single strike used after full control is established.",
+            "source": "Kenichi",
+            "ability": "Fist Style: Dragon Strike",
+            "purpose": "Powerful martial arts blow — Dragon Strike delivers heavy physical impact in the utility slot.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -10702,30 +10708,30 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's surgical precision — after overwhelming opponents with raw power, he ends fights with a single targeted blow rather than continued brawling.",
+            "characterAbility": "Precise martial arts — Dragon Strike delivers concentrated physical power.",
             "mobility": false
           },
           {
-            "id": "kitae-kim-4x2-hotbar-N",
+            "id": "kitae-kim-3x2-hotbar-N",
             "key": "N",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 9th Dance",
-            "purpose": "Knockout blow — the highest-commitment finishing strike in the sequence.",
+            "source": "Shindai-Rengoku",
+            "ability": "Rengoku Style: Tailed Spirit Counter",
+            "purpose": "Endurance counter — absorbs the opponent's strike and responds with definitive punishment.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
-            "counter": false,
+            "counter": true,
             "modeAbility": false,
             "accuracy": "Strong Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's decisive finish — 9th Dance represents his ability to end a fight with one final overwhelming strike once the opponent has been completely subdued.",
+            "characterAbility": "Endurance counter — absorbs punishment and delivers decisive retaliation when opponent overcommits.",
             "mobility": false
           },
           {
-            "id": "kitae-kim-4x2-hotbar-C",
+            "id": "kitae-kim-3x2-hotbar-C",
             "key": "C",
             "source": "Ryuji-Kenichi",
             "ability": "Ryuji-Kenichi — Stage 1",
@@ -10786,16 +10792,17 @@ export const reviewedBuilds = [
               "4",
               "5"
             ],
-            "explanation": "Proposed Kitae Kim route using this profile’s selected sources. Continue only after the first hit confirms; live timing remains unverified."
+            "explanation": "Ryuji-Kenichi power opener into Rengoku gravity pressure. Continue only after the first hit confirms; live timing remains unverified."
           },
           {
-            "name": "Defensive reset route",
+            "name": "Kenichi martial and counter route",
             "sequence": [
+              "V",
               "B",
               "N",
               "Q"
             ],
-            "explanation": "Use the final prepared utility controls to reset pressure. This route is not claimed to be guaranteed."
+            "explanation": "Kenichi Crane Demon and Dragon Strike into Shindai-Rengoku Tailed Spirit Counter. Route is untested; confirm timing before use."
           }
         ],
         "ratings": {
@@ -10816,9 +10823,9 @@ export const reviewedBuilds = [
           "Live combo timing remains unverified."
         ],
         "usageGuide": [
-          "Lead with Fist Style: 3rd Stance.",
-          "Keep the defensive control available for reversals.",
-          "Use Q only after confirming the weapon or fighting-system range."
+          "Lead with Fist Style: 3rd Stance to establish Ryuji-Kenichi power pressure.",
+          "Follow with Rengoku gravity tools (4, 5) to lock down the opponent.",
+          "Use Kenichi precision strikes (V, B) and Shindai-Rengoku counter (N) as reads."
         ],
         "verificationStatus": "Needs Retesting",
         "lastVerifiedUpdate": "Live update pending owner retest",
@@ -10847,9 +10854,9 @@ export const reviewedBuilds = [
         },
         "ownershipRequirements": [
           "Ryuji-Kenichi",
-          "Minakaze-Azure",
-          "Bruce-Kenichi",
-          "Doku-Tengoku",
+          "Rengoku",
+          "Kenichi",
+          "Shindai-Rengoku",
           "Earth",
           "Fire",
           "Mixed Martial Arts",
@@ -10882,38 +10889,41 @@ export const reviewedBuilds = [
             }
           },
           {
-            "name": "Bruce-Kenichi",
-            "purpose": "Precision finishing strikes — Strong Analogy for Kitae's decisive single blows after complete dominance.",
+            "name": "Rengoku",
+            "purpose": "Crushing gravity pressure — Partial Analogy for Kitae's overwhelming forward force at three slots. Gravity Pull and Push replace the old kick-finisher layer with inescapable pressure.",
             "exactMovesUsed": [
-              "Fist Style: 6th Dance",
-              "Fist Style: 9th Dance",
-              "Fist Style: Tiger Lotus"
+              "Rengoku Style: Gravity Pull",
+              "Rengoku Style: Gravity Push"
             ],
             "useMode": false,
-            "reason": "Bruce-Kenichi's precise kick combinations provide finishing power that matches Kitae's ability to end fights decisively once he has established complete physical control.",
-            "represents": "Kitae Kim's King of Seoul finishing — decisive precision after overwhelming forward pressure.",
+            "reason": "Gravity Pull and Gravity Push translate Kitae's overwhelming forward pressure at three slots. Partial Analogy: gravity manipulation represents the unstoppable momentum of his King of Seoul dominance.",
+            "represents": "Kitae Kim's crushing pressure — the inevitable forward force of his mastered fighting style.",
             "replacements": {
               "lore": [],
-              "competitive": ["Raion-Gaiden"],
-              "accessible": ["Kenichi"]
-            }
+              "competitive": ["Shindai-Rengoku"],
+              "accessible": ["Rengoku"]
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           },
           {
-            "name": "Doku-Tengoku",
-            "purpose": "Endurance counter — Partial Analogy for Kitae's ability to absorb damage and retaliate with crushing force.",
+            "name": "Kenichi",
+            "purpose": "Precise martial arts strikes — Strong Analogy for Kitae's controlled technique at three slots. Replaces the old counter layer with focused striking.",
             "exactMovesUsed": [
-              "Tengoku Style: Concentrated Palm Blast",
-              "Tengoku Style: Twin Dragon Barrage",
-              "Tengoku Style: 128 Palm Counter"
+              "Fist Style: Crane Demon",
+              "Fist Style: Dragon Strike",
+              "Fist Style: Ultimate Tempo"
             ],
             "useMode": false,
-            "reason": "128 Palm Counter and Twin Dragon Barrage represent Kitae's toughness — his ability to endure strikes and immediately respond with devastating counters while continuing his assault.",
-            "represents": "Kitae Kim's endurance — absorbing punishment while relentlessly continuing his overwhelming attack.",
+            "reason": "Kenichi's precise fist techniques represent controlled striking within Kitae's power-focused build at three slots. Crane Demon, Dragon Strike, and Ultimate Tempo provide concentrated technique as the third-slot utility layer.",
+            "represents": "Kitae Kim's precise finishing — targeted technique deployed after overwhelming forward pressure.",
             "replacements": {
-              "lore": [],
-              "competitive": ["Tengoku-Platinum"],
+              "lore": ["Bruce-Kenichi"],
+              "competitive": ["Ryuji-Kenichi"],
               "accessible": []
-            }
+            },
+            "evidence": ["Move names verified via Shindo Life Wiki (August 2026)"],
+            "verificationStatus": "needs-research"
           }
         ],
         "elements": [
@@ -11005,12 +11015,12 @@ export const reviewedBuilds = [
           {
             "id": "kitae-kim-3x2-hotbar-4",
             "key": "4",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 6th Dance",
-            "purpose": "Precise finishing kick — a decisive single strike used after full control is established.",
+            "source": "Rengoku",
+            "ability": "Rengoku Style: Gravity Pull",
+            "purpose": "Crushing gravity pressure — pulls opponent into Kitae's attack range with inescapable force.",
             "comboRole": "Defense",
             "blockBreak": false,
-            "guardPressure": false,
+            "guardPressure": true,
             "counter": false,
             "modeAbility": false,
             "accuracy": "Strong Match",
@@ -11018,15 +11028,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's surgical precision — after overwhelming opponents with raw power, he ends fights with a single targeted blow rather than continued brawling.",
+            "characterAbility": "Crushing forward pressure — inescapable gravity force that no opponent can escape.",
             "mobility": false
           },
           {
             "id": "kitae-kim-3x2-hotbar-5",
             "key": "5",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: 9th Dance",
-            "purpose": "Knockout blow — the highest-commitment finishing strike in the sequence.",
+            "source": "Rengoku",
+            "ability": "Rengoku Style: Gravity Push",
+            "purpose": "Overwhelming push pressure — drives the opponent back with unstoppable forward force.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -11037,7 +11047,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's decisive finish — 9th Dance represents his ability to end a fight with one final overwhelming strike once the opponent has been completely subdued.",
+            "characterAbility": "Crushing forward pressure — Gravity Push drives opponents into corners with unstoppable force.",
             "mobility": false
           },
           {
@@ -11056,15 +11066,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
             "id": "kitae-kim-3x2-hotbar-V",
             "key": "V",
-            "source": "Bruce-Kenichi",
-            "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Guard-breaking pressure — forces opponents to open up after Kitae's forward brawling has worn down their defense.",
+            "source": "Kenichi",
+            "ability": "Fist Style: Crane Demon",
+            "purpose": "Precise martial arts strike — controlled technique that complements Kitae's brutal forward pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11075,15 +11085,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's controlled aggression — Tiger Lotus represents his ability to chain powerful strikes into a finishing sequence that leaves no escape route for the opponent.",
+            "characterAbility": "Precise martial arts — Crane Demon provides a controlled strike in Kitae's brutal pressure flow.",
             "mobility": false
           },
           {
             "id": "kitae-kim-3x2-hotbar-B",
             "key": "B",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Point-blank counter — Kitae absorbs a strike and immediately responds with a focused counter that punishes the attacker's overcommitment.",
+            "source": "Kenichi",
+            "ability": "Fist Style: Dragon Strike",
+            "purpose": "Powerful martial arts blow — Dragon Strike delivers heavy physical impact in the utility slot.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11094,15 +11104,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's toughness counter — his ability to absorb damage and immediately respond with devastating force; Concentrated Palm Blast represents the instant retaliation after enduring a strike.",
+            "characterAbility": "Precise martial arts — Dragon Strike delivers concentrated physical power.",
             "mobility": false
           },
           {
             "id": "kitae-kim-3x2-hotbar-N",
             "key": "N",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Sustained retaliation — chains punishment into a full reversal once Kitae's endurance outlasts an exchange.",
+            "source": "Kenichi",
+            "ability": "Fist Style: Ultimate Tempo",
+            "purpose": "Ultimate tempo finisher — the highest-commitment Kenichi technique closing the three-slot martial arts layer.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -11113,7 +11123,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's retaliation barrage — after surviving the opponent's attack, he answers with both hands in a multi-hit combination that fully shifts momentum back to him.",
+            "characterAbility": "Precise martial arts — Ultimate Tempo closes the Kenichi technique sequence with maximum striking force.",
             "mobility": false
           },
           {
@@ -11178,16 +11188,17 @@ export const reviewedBuilds = [
               "4",
               "5"
             ],
-            "explanation": "Proposed Kitae Kim route using this profile’s selected sources. Continue only after the first hit confirms; live timing remains unverified."
+            "explanation": "Ryuji-Kenichi power opener into Rengoku gravity pressure. Continue only after the first hit confirms; live timing remains unverified."
           },
           {
-            "name": "Defensive reset route",
+            "name": "Kenichi martial arts route",
             "sequence": [
+              "V",
               "B",
               "N",
               "Q"
             ],
-            "explanation": "Use the final prepared utility controls to reset pressure. This route is not claimed to be guaranteed."
+            "explanation": "Kenichi Crane Demon into Dragon Strike and Ultimate Tempo. Route is untested; confirm timing before use."
           }
         ],
         "ratings": {
@@ -11239,8 +11250,8 @@ export const reviewedBuilds = [
         },
         "ownershipRequirements": [
           "Ryuji-Kenichi",
-          "Bruce-Kenichi",
-          "Doku-Tengoku",
+          "Kenichi",
+          "Shindai-Rengoku",
           "Earth",
           "Fire",
           "Mixed Martial Arts",
@@ -11273,19 +11284,18 @@ export const reviewedBuilds = [
             }
           },
           {
-            "name": "Doku-Tengoku",
-            "purpose": "Endurance counter — Partial Analogy for Kitae's ability to absorb damage and retaliate with crushing force.",
+            "name": "Rengoku",
+            "purpose": "Crushing gravity pressure — Strong Analogy for Kitae's physical dominance that bends opponents under overwhelming force.",
             "exactMovesUsed": [
-              "Tengoku Style: Concentrated Palm Blast",
-              "Tengoku Style: Twin Dragon Barrage",
-              "Tengoku Style: 128 Palm Counter"
+              "Rengoku Style: Gravity Pull",
+              "Rengoku Style: Gravity Push"
             ],
             "useMode": false,
-            "reason": "128 Palm Counter and Twin Dragon Barrage represent Kitae's toughness — his ability to endure strikes and immediately respond with devastating counters while continuing his assault.",
-            "represents": "Kitae Kim's endurance — absorbing punishment while relentlessly continuing his overwhelming attack.",
+            "reason": "Gravity Pull and Gravity Push represent Kitae's absolute physical control over any engagement — dragging opponents into his range or driving them back on his terms. Strong Analogy: gravity-manipulated force mirrors the way Kitae's presence warps every exchange around his immovable will.",
+            "represents": "Kitae Kim's gravitational dominance — the opponent cannot escape his range or dictate their own positioning.",
             "replacements": {
               "lore": [],
-              "competitive": ["Tengoku-Platinum"],
+              "competitive": ["Shindai-Rengoku"],
               "accessible": []
             }
           }
@@ -11379,10 +11389,10 @@ export const reviewedBuilds = [
           {
             "id": "kitae-kim-2x2-hotbar-4",
             "key": "4",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Point-blank counter — Kitae absorbs a strike and immediately responds with a focused counter that punishes the attacker's overcommitment.",
-            "comboRole": "Defense",
+            "source": "Rengoku",
+            "ability": "Rengoku Style: Gravity Pull",
+            "purpose": "Gravitational draw — yanks the opponent into Kitae's close range where his physical superiority is absolute.",
+            "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
             "counter": false,
@@ -11392,18 +11402,18 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's toughness counter — his ability to absorb damage and immediately respond with devastating force; Concentrated Palm Blast represents the instant retaliation after enduring a strike.",
+            "characterAbility": "Kitae's gravitational control — drags the opponent into his domain where escape is impossible.",
             "mobility": false
           },
           {
             "id": "kitae-kim-2x2-hotbar-5",
             "key": "5",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Sustained retaliation — chains punishment into a full reversal once Kitae's endurance outlasts an exchange.",
-            "comboRole": "Finisher",
+            "source": "Rengoku",
+            "ability": "Rengoku Style: Gravity Push",
+            "purpose": "Gravitational expulsion — drives the opponent away to reset on Kitae's terms or creates distance for approach.",
+            "comboRole": "Utility",
             "blockBreak": false,
-            "guardPressure": false,
+            "guardPressure": true,
             "counter": false,
             "modeAbility": false,
             "accuracy": "Strong Match",
@@ -11411,7 +11421,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's retaliation barrage — after surviving the opponent's attack, he answers with both hands in a multi-hit combination that fully shifts momentum back to him.",
+            "characterAbility": "Kitae's dominance of space — forces the opponent into a position Kitae dictates, not one they choose.",
             "mobility": false
           },
           {
@@ -11430,26 +11440,26 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Not used — Rengoku occupies only two element-row slots.",
             "mobility": false
           },
           {
             "id": "kitae-kim-2x2-hotbar-V",
             "key": "V",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: 128 Palm Counter",
-            "purpose": "Full reversal counter — used when the opponent overextends into Kitae's range; he absorbs the attack and immediately fires back with 128 rapid strikes.",
-            "comboRole": "Utility",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "Rengoku has only two moves; no third bloodline-row ability is available.",
+            "comboRole": "Empty",
             "blockBreak": false,
             "guardPressure": false,
-            "counter": true,
+            "counter": false,
             "modeAbility": false,
-            "accuracy": "Strong Match",
-            "sourceType": "Bloodline",
+            "accuracy": "Unresolved",
+            "sourceType": "None",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's endurance payoff — 128 Palm Counter embodies his philosophy of absorbing damage then delivering devastating multi-hit punishment that negates any advantage the attacker gained.",
+            "usageNotes": "Intentionally empty; Rengoku provides only Gravity Pull and Gravity Push.",
+            "characterAbility": "Not used — Rengoku has no third move.",
             "mobility": false
           },
           {
@@ -11584,7 +11594,7 @@ export const reviewedBuilds = [
         ],
         "usageGuide": [
           "Lead with Fist Style: 3rd Stance.",
-          "Keep Tengoku Style: 128 Palm Counter available for reversals.",
+          "Use Gravity Pull to drag opponents into close range, then chain Ryuji-Kenichi moves.",
           "Use Q only after confirming the weapon or fighting-system range."
         ],
         "verificationStatus": "Needs Retesting",
@@ -11614,7 +11624,7 @@ export const reviewedBuilds = [
         },
         "ownershipRequirements": [
           "Ryuji-Kenichi",
-          "Doku-Tengoku",
+          "Rengoku",
           "Earth",
           "Fire",
           "Mixed Martial Arts"
@@ -11647,19 +11657,18 @@ export const reviewedBuilds = [
             }
           },
           {
-            "name": "Doku-Tengoku",
-            "purpose": "Endurance counter — Partial Analogy for Kitae's ability to absorb damage and retaliate with crushing force.",
+            "name": "Rengoku",
+            "purpose": "Crushing gravity pressure — Strong Analogy for Kitae's physical dominance that bends opponents under overwhelming force.",
             "exactMovesUsed": [
-              "Tengoku Style: Concentrated Palm Blast",
-              "Tengoku Style: Twin Dragon Barrage",
-              "Tengoku Style: 128 Palm Counter"
+              "Rengoku Style: Gravity Pull",
+              "Rengoku Style: Gravity Push"
             ],
             "useMode": false,
-            "reason": "128 Palm Counter and Twin Dragon Barrage represent Kitae's toughness — his ability to endure strikes and immediately respond with devastating counters while continuing his assault.",
-            "represents": "Kitae Kim's endurance — absorbing punishment while relentlessly continuing his overwhelming attack.",
+            "reason": "Gravity Pull and Gravity Push give the accessible build position control on top of Kenichi's raw striking. Kitae dictates range: he either drags opponents into his striking zone or shoves them back to reset on his terms. Strong Analogy: gravity-manipulated force mirrors his physical dominance.",
+            "represents": "Kitae Kim's gravitational dominance — no opponent can choose their own position in a fight with him.",
             "replacements": {
               "lore": [],
-              "competitive": ["Tengoku-Platinum"],
+              "competitive": ["Shindai-Rengoku"],
               "accessible": []
             }
           }
@@ -11734,10 +11743,29 @@ export const reviewedBuilds = [
           {
             "id": "kitae-kim-accessible-hotbar-3",
             "key": "3",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Point-blank guard pressure — Kitae forces through an opponent's defense with a focused palm strike at close range.",
-            "comboRole": "Pressure",
+            "source": "Rengoku",
+            "ability": "Rengoku Style: Gravity Pull",
+            "purpose": "Gravitational draw — yanks the opponent into Kitae's close range where his physical superiority is absolute.",
+            "comboRole": "Starter",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "characterAbility": "Kitae's gravitational control — drags the opponent into his domain where escape is impossible.",
+            "mobility": false
+          },
+          {
+            "id": "kitae-kim-accessible-hotbar-4",
+            "key": "4",
+            "source": "Rengoku",
+            "ability": "Rengoku Style: Gravity Push",
+            "purpose": "Gravitational expulsion — drives the opponent away to reset on Kitae's terms or creates distance for approach.",
+            "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": true,
             "counter": false,
@@ -11747,45 +11775,26 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's toughness counter — his ability to absorb damage and immediately respond with devastating force; Concentrated Palm Blast represents the instant retaliation after enduring a strike.",
-            "mobility": false
-          },
-          {
-            "id": "kitae-kim-accessible-hotbar-4",
-            "key": "4",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Sustained retaliation — chains punishment after Kitae's endurance outlasts an exchange.",
-            "comboRole": "Defense",
-            "blockBreak": false,
-            "guardPressure": false,
-            "counter": false,
-            "modeAbility": false,
-            "accuracy": "Strong Match",
-            "sourceType": "Bloodline",
-            "testingStatus": "Needs Retesting",
-            "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's retaliation barrage — after surviving the opponent's attack, he answers with both hands in a multi-hit combination that fully shifts momentum back to him.",
+            "characterAbility": "Kitae's dominance of space — forces the opponent into a position Kitae dictates, not one they choose.",
             "mobility": false
           },
           {
             "id": "kitae-kim-accessible-hotbar-5",
             "key": "5",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: 128 Palm Counter",
-            "purpose": "Full reversal counter — the decisive counter-finishing move when the opponent overextends; 128 rapid strikes end the engagement.",
-            "comboRole": "Finisher",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "Rengoku has only two moves; no third element-row ability is available for this bloodline.",
+            "comboRole": "Empty",
             "blockBreak": false,
             "guardPressure": false,
-            "counter": true,
+            "counter": false,
             "modeAbility": false,
-            "accuracy": "Strong Match",
-            "sourceType": "Bloodline",
+            "accuracy": "Unresolved",
+            "sourceType": "None",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Kitae's endurance payoff — 128 Palm Counter embodies his philosophy of absorbing damage then delivering devastating multi-hit punishment that negates any advantage the attacker gained.",
+            "usageNotes": "Intentionally empty; Rengoku provides only Gravity Pull and Gravity Push.",
+            "characterAbility": "Not used — Rengoku has no third move.",
             "mobility": false
           },
           {
@@ -11804,7 +11813,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Not used in this variant.",
             "mobility": false
           },
           {
@@ -11957,7 +11966,7 @@ export const reviewedBuilds = [
         ],
         "usageGuide": [
           "Lead with Fist Style: Dragon Strike.",
-          "Keep Tengoku Style: 128 Palm Counter available for reversals.",
+          "Use Gravity Pull to draw opponents into Kenichi close-combat range.",
           "Use Q only after confirming the weapon or fighting-system range."
         ],
         "verificationStatus": "Needs Retesting",
@@ -11987,7 +11996,7 @@ export const reviewedBuilds = [
         },
         "ownershipRequirements": [
           "Kenichi",
-          "Doku-Tengoku",
+          "Rengoku",
           "Earth",
           "Fire",
           "Mixed Martial Arts",
@@ -12062,7 +12071,7 @@ export const reviewedBuilds = [
       {
         "id": "goo-kim-bloodline-1",
         "name": "Getsuga-Black",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Blade-technique mastery — Kor Style projectile slashes directly represent Goo Kim's Bankai Blade genius.",
         "useMode": false
       },
       {
@@ -12073,14 +12082,14 @@ export const reviewedBuilds = [
       },
       {
         "id": "goo-kim-bloodline-3",
-        "name": "Doku-Tengoku",
-        "purpose": "Reviewed supporting match.",
+        "name": "Tengoku-Platinum",
+        "purpose": "Divine blade technique — Kami Blade is a literal bladed attack, Direct Match for Goo Kim's weapon genius identity.",
         "useMode": false
       },
       {
         "id": "goo-kim-bloodline-4",
-        "name": "Pika-Senko",
-        "purpose": "Explosive high-speed pursuit support.",
+        "name": "Raion-Gaiden",
+        "purpose": "Elite samurai technique — Samurai Combo represents Goo Kim's mastery-level sword technique sequence.",
         "useMode": false
       }
     ],
@@ -12102,7 +12111,7 @@ export const reviewedBuilds = [
         "key": "1",
         "source": "Getsuga-Black",
         "ability": "Kor Style: Hand of Getsuga",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Bankai signature opener — primary blade-energy strike that establishes Goo's weapon genius identity from the first exchange.",
         "comboRole": "Starter",
         "blockBreak": false,
         "guardPressure": false,
@@ -12113,7 +12122,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Goo's blade mastery opener — Hand of Getsuga represents his Bankai Blade genius through an energy-charged sword strike.",
         "mobility": false
       },
       {
@@ -12121,7 +12130,7 @@ export const reviewedBuilds = [
         "key": "2",
         "source": "Getsuga-Black",
         "ability": "Kor Style: Rasensuga",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Spiral extension strike — spiraling follow-up that sustains weapon pressure after initial contact.",
         "comboRole": "Extender",
         "blockBreak": false,
         "guardPressure": false,
@@ -12132,7 +12141,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Goo's weapon chain — Rasensuga extends the initial blade contact into a spiraling pressure sequence.",
         "mobility": false
       },
       {
@@ -12140,7 +12149,7 @@ export const reviewedBuilds = [
         "key": "3",
         "source": "Getsuga-Black",
         "ability": "Kor Style: Getsuga Shuriken Blitz",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Ranged blade pressure — projectile shuriken extended from his Bankai Blade mastery denies any safe retreat.",
         "comboRole": "Pressure",
         "blockBreak": false,
         "guardPressure": true,
@@ -12151,7 +12160,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Goo's ranged weapon dominance — Getsuga Shuriken Blitz extends his blade control across all distances.",
         "mobility": false
       },
       {
@@ -12159,7 +12168,7 @@ export const reviewedBuilds = [
         "key": "4",
         "source": "Shiver-Akuma",
         "ability": "Reality Style: Control",
-        "purpose": "Unpredictable control and a reactive warp.",
+        "purpose": "Dimensional control — Reality Style's unpredictable dimension warping mirrors the confusion Goo Kim imposes through his reading of opponents.",
         "comboRole": "Defense",
         "blockBreak": false,
         "guardPressure": false,
@@ -12170,7 +12179,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Unpredictable counterplay",
+        "characterAbility": "Goo's unpredictable counterplay — Reality Control represents the dimensional reading he applies to every weapon exchange.",
         "mobility": false
       },
       {
@@ -12178,7 +12187,7 @@ export const reviewedBuilds = [
         "key": "5",
         "source": "Shiver-Akuma",
         "ability": "Reality Style: Warp",
-        "purpose": "Unpredictable control and a reactive warp.",
+        "purpose": "Reactive warp escape — repositions Goo instantaneously when his weapon read tells him the engagement should reset.",
         "comboRole": "Finisher",
         "blockBreak": false,
         "guardPressure": false,
@@ -12189,8 +12198,8 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Unpredictable counterplay",
-        "mobility": false
+        "characterAbility": "Goo's unpredictable repositioning — Warp represents his ability to vanish from predictable positions and reengage on his own terms.",
+        "mobility": true
       },
       {
         "id": "goo-kim-4x2-hotbar-T",
@@ -12208,34 +12217,53 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Intentionally empty; no filler ability is assigned.",
-        "characterAbility": "Unpredictable counterplay",
+        "characterAbility": "Not used in this variant.",
         "mobility": false
       },
       {
         "id": "goo-kim-4x2-hotbar-V",
         "key": "V",
-        "source": "Doku-Tengoku",
-        "ability": "Tengoku Style: Concentrated Palm Blast",
-        "purpose": "Reviewed supporting match.",
+        "source": "Tengoku-Platinum",
+        "ability": "Tengoku Style: Kami Blade",
+        "purpose": "Divine blade strike — Kami Blade is a literal bladed attack; Direct Match for Goo Kim's weapon genius identity.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
         "counter": false,
         "modeAbility": false,
-        "accuracy": "Strong Match",
+        "accuracy": "Direct Match",
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Goo's divine blade technique — Kami Blade is the pinnacle of his weapon mastery; a strike so refined it transcends ordinary sword skill.",
         "mobility": false
       },
       {
         "id": "goo-kim-4x2-hotbar-B",
         "key": "B",
-        "source": "Doku-Tengoku",
-        "ability": "Tengoku Style: Twin Dragon Barrage",
-        "purpose": "Reviewed supporting match.",
+        "source": "Tengoku-Platinum",
+        "ability": "Tengoku Style: Kami Blitz",
+        "purpose": "Lightning blade burst — rapid blade sequence representing the speed dimension of Goo's sword mastery.",
+        "comboRole": "Utility",
+        "blockBreak": false,
+        "guardPressure": true,
+        "counter": false,
+        "modeAbility": false,
+        "accuracy": "Direct Match",
+        "sourceType": "Bloodline",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "None",
+        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "characterAbility": "Goo's speed-of-mastery blade work — Kami Blitz demonstrates his weapon genius in sustained rapid execution.",
+        "mobility": false
+      },
+      {
+        "id": "goo-kim-4x2-hotbar-N",
+        "key": "N",
+        "source": "Raion-Gaiden",
+        "ability": "Rengoku Style: Samurai Combo",
+        "purpose": "Elite samurai technique — Samurai Combo represents Goo Kim's mastery-level sword combination sequences that mark him as a weapon genius.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -12246,26 +12274,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
-        "mobility": false
-      },
-      {
-        "id": "goo-kim-4x2-hotbar-N",
-        "key": "N",
-        "source": "Doku-Tengoku",
-        "ability": "Tengoku Style: 128 Palm Counter",
-        "purpose": "Reviewed supporting match.",
-        "comboRole": "Utility",
-        "blockBreak": false,
-        "guardPressure": false,
-        "counter": true,
-        "modeAbility": false,
-        "accuracy": "Strong Match",
-        "sourceType": "Bloodline",
-        "testingStatus": "Needs Retesting",
-        "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Goo's mastery sequence — Samurai Combo is the elite technique chain that proves his weapon genius in execution.",
         "mobility": false
       },
       {
@@ -12442,40 +12451,35 @@ export const reviewedBuilds = [
             }
           },
           {
-            "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "name": "Tengoku-Platinum",
+            "purpose": "Divine blade technique — Kami Blade is a literal bladed attack, Direct Match for Goo Kim's weapon genius identity.",
             "exactMovesUsed": [
-              "Tengoku Style: Concentrated Palm Blast",
-              "Tengoku Style: Twin Dragon Barrage",
-              "Tengoku Style: 128 Palm Counter"
+              "Tengoku Style: Kami Blade",
+              "Tengoku Style: Kami Blitz"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Kami Blade is a divine bladed attack — the name literally describes Goo Kim's weapon mastery. Kami Blitz is lightning-fast blade technique that represents his speed-of-mastery sword work. Direct Match: both moves are blade-type techniques that align exactly with his weapon genius archetype.",
+            "represents": "Goo Kim's divine blade mastery — his sword technique elevated to an art form beyond what normal fighters can perceive.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Doku-Tengoku"],
               "accessible": []
             }
           },
           {
-            "name": "Pika-Senko",
+            "name": "Raion-Gaiden",
             "exactMovesUsed": [
-              "Time Style: Star Kick",
-              "Time Style: Star Kick Rising"
+              "Rengoku Style: Samurai Combo",
+              "Rengoku Style: Meteor Inferno Blade"
             ],
-            "purpose": "Explosive high-speed pursuit support.",
+            "purpose": "Elite samurai technique — Samurai Combo represents Goo Kim's mastery-level sword technique sequence.",
             "useMode": false,
-            "reason": "Visual Approximation: used only for movement and kick pressure.",
-            "represents": "Exceptional speed",
+            "reason": "Samurai Combo is an elite sword technique sequence that directly represents Goo's ability to chain devastating blade combinations — this is exactly what a weapon genius does. Meteor Inferno Blade adds a powerful finisher dimension to the weapon combo. Strong Analogy: samurai-style precision weapon sequences mirror Goo's actual sword-expert fighting approach.",
+            "represents": "Goo Kim's elite sword technique — the layered combination sequences that mark him as a weapon genius beyond simple power.",
             "replacements": {
               "lore": [],
-              "competitive": [
-                "Dio-Senko"
-              ],
-              "accessible": [
-                "Senko"
-              ]
+              "competitive": ["Pika-Senko"],
+              "accessible": []
             }
           }
         ],
@@ -12486,7 +12490,7 @@ export const reviewedBuilds = [
               "Shock Style: Stream",
               "Shock Style: Blast"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed-of-lightning support — Lightning element reflects the rapid strike tempo of Goo's sword exchanges.",
             "replacements": []
           },
           {
@@ -12495,7 +12499,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Precise ranged control — Order element represents the calculated, methodical precision behind Goo's weapon techniques.",
             "replacements": []
           }
         ],
@@ -12619,34 +12623,53 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Unpredictable counterplay",
+            "characterAbility": "Not used in this variant.",
             "mobility": false
           },
           {
             "id": "goo-kim-4x2-hotbar-V",
             "key": "V",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Counter-punish close strike — when an opponent breaks through his weapon range, Goo answers with a decisive palm counter.",
+            "source": "Tengoku-Platinum",
+            "ability": "Tengoku Style: Kami Blade",
+            "purpose": "Divine blade strike — Kami Blade is a literal bladed attack that directly represents Goo Kim's weapon genius; this is the technique that marks him as a master beyond ordinary fighters.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Strong Match",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Goo's counter technician side — Concentrated Palm Blast represents his hand-to-hand counter ability that complements his weapon genius; he is dangerous at every range.",
+            "characterAbility": "Goo's divine blade mastery — Kami Blade represents the pinnacle of his weapon technique, a strike so refined it transcends ordinary sword skill.",
             "mobility": false
           },
           {
             "id": "goo-kim-4x2-hotbar-B",
             "key": "B",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Multi-hit retaliation — Goo shifts from weapon fighting to unarmed barrage when the engagement demands a different pressure type.",
+            "source": "Tengoku-Platinum",
+            "ability": "Tengoku Style: Kami Blitz",
+            "purpose": "Lightning blade burst — Kami Blitz represents the speed dimension of Goo Kim's sword mastery; a rapid sequence of blade strikes that overwhelms any defense.",
+            "comboRole": "Utility",
+            "blockBreak": false,
+            "guardPressure": true,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Direct Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "characterAbility": "Goo's speed-of-mastery blade work — Kami Blitz shows his weapon genius in sustained rapid execution; his sword movements are too fast for opponents to track individually.",
+            "mobility": false
+          },
+          {
+            "id": "goo-kim-4x2-hotbar-N",
+            "key": "N",
+            "source": "Raion-Gaiden",
+            "ability": "Rengoku Style: Samurai Combo",
+            "purpose": "Elite samurai technique sequence — Samurai Combo represents Goo Kim's ability to chain devastating sword combinations that demonstrate mastery-level technique.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -12657,26 +12680,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Goo's adaptability — Twin Dragon Barrage shows he is not limited to weapon range; when opponents close in, he answers with sustained unarmed pressure that chains into his counter game.",
-            "mobility": false
-          },
-          {
-            "id": "goo-kim-4x2-hotbar-N",
-            "key": "N",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: 128 Palm Counter",
-            "purpose": "Full reversal counter — Goo absorbs the opponent's attack and immediately delivers 128 rapid strikes that completely negate the incoming damage.",
-            "comboRole": "Utility",
-            "blockBreak": false,
-            "guardPressure": false,
-            "counter": true,
-            "modeAbility": false,
-            "accuracy": "Strong Match",
-            "sourceType": "Bloodline",
-            "testingStatus": "Needs Retesting",
-            "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Goo's counter genius — 128 Palm Counter represents the counter-technician dimension of his fighting; his unpredictability means opponents never know if their attack will trigger this devastating full reversal.",
+            "characterAbility": "Goo's mastery sequence — Samurai Combo embodies his weapon genius through elite technique; the opponent faces a chained sword sequence from someone who has elevated blade work to its highest form.",
             "mobility": false
           },
           {
@@ -12803,8 +12807,8 @@ export const reviewedBuilds = [
         "ownershipRequirements": [
           "Getsuga-Black",
           "Shiver-Akuma",
-          "Doku-Tengoku",
-          "Pika-Senko",
+          "Tengoku-Platinum",
+          "Raion-Gaiden",
           "Lightning",
           "Order",
           "Wind-Kenjutsu",
@@ -12857,19 +12861,18 @@ export const reviewedBuilds = [
             }
           },
           {
-            "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "name": "Tengoku-Platinum",
+            "purpose": "Divine blade technique — Kami Blade is a literal bladed attack, Direct Match for Goo Kim's weapon genius identity.",
             "exactMovesUsed": [
-              "Tengoku Style: Concentrated Palm Blast",
-              "Tengoku Style: Twin Dragon Barrage",
-              "Tengoku Style: 128 Palm Counter"
+              "Tengoku Style: Kami Blade",
+              "Tengoku Style: Kami Blitz"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Kami Blade is a divine bladed attack — directly represents Goo Kim's weapon mastery. Kami Blitz is lightning-fast blade technique representing his speed-of-mastery sword work. Direct Match: both moves are blade-type techniques that align exactly with his weapon genius archetype.",
+            "represents": "Goo Kim's divine blade mastery — his sword technique elevated to an art form beyond what normal fighters can perceive.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Doku-Tengoku"],
               "accessible": []
             }
           }
@@ -12881,7 +12884,7 @@ export const reviewedBuilds = [
               "Shock Style: Stream",
               "Shock Style: Blast"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed-of-lightning support — Lightning element reflects the rapid strike tempo of Goo's sword exchanges.",
             "replacements": []
           },
           {
@@ -12890,7 +12893,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Precise ranged control — Order element represents the calculated precision behind Goo's weapon techniques.",
             "replacements": []
           }
         ],
@@ -12908,7 +12911,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Hand of Getsuga",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Bankai signature opener — primary blade-energy strike that establishes Goo's weapon genius identity from the first exchange.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -12919,7 +12922,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's blade mastery opener — Hand of Getsuga represents his Bankai Blade genius through an energy-charged sword strike.",
             "mobility": false
           },
           {
@@ -12927,7 +12930,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Rasensuga",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Spiral extension strike — spiraling follow-up that sustains weapon pressure after initial contact.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -12938,7 +12941,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's weapon chain — Rasensuga extends initial blade contact into a spiraling pressure sequence.",
             "mobility": false
           },
           {
@@ -12946,7 +12949,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Getsuga Shuriken Blitz",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Ranged blade pressure — projectile shuriken extended from his Bankai Blade mastery denies any safe retreat.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -12957,7 +12960,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's ranged weapon dominance — Getsuga Shuriken Blitz extends blade control across all distances.",
             "mobility": false
           },
           {
@@ -13014,64 +13017,64 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Unpredictable counterplay",
+            "characterAbility": "Not used in this variant.",
             "mobility": false
           },
           {
             "id": "goo-kim-3x2-hotbar-V",
             "key": "V",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Reviewed supporting match.",
+            "source": "Tengoku-Platinum",
+            "ability": "Tengoku Style: Kami Blade",
+            "purpose": "Divine blade strike — Kami Blade is a literal bladed attack; Direct Match for Goo Kim's weapon genius identity.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Strong Match",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's divine blade technique — Kami Blade represents the pinnacle of his weapon mastery.",
             "mobility": false
           },
           {
             "id": "goo-kim-3x2-hotbar-B",
             "key": "B",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Reviewed supporting match.",
+            "source": "Tengoku-Platinum",
+            "ability": "Tengoku Style: Kami Blitz",
+            "purpose": "Lightning blade burst — rapid blade sequence representing the speed dimension of Goo's sword mastery.",
             "comboRole": "Utility",
             "blockBreak": false,
-            "guardPressure": false,
+            "guardPressure": true,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Strong Match",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's speed-of-mastery blade work — Kami Blitz demonstrates his weapon genius in sustained rapid execution.",
             "mobility": false
           },
           {
             "id": "goo-kim-3x2-hotbar-N",
             "key": "N",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: 128 Palm Counter",
-            "purpose": "Reviewed supporting match.",
-            "comboRole": "Utility",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "Tengoku-Platinum has only two moves; no third bloodline-row ability is available.",
+            "comboRole": "Empty",
             "blockBreak": false,
             "guardPressure": false,
-            "counter": true,
+            "counter": false,
             "modeAbility": false,
-            "accuracy": "Strong Match",
-            "sourceType": "Bloodline",
+            "accuracy": "Unresolved",
+            "sourceType": "None",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Intentionally empty; Tengoku-Platinum provides only Kami Blade and Kami Blitz.",
+            "characterAbility": "Not used — Tengoku-Platinum has no third move.",
             "mobility": false
           },
           {
@@ -13198,7 +13201,7 @@ export const reviewedBuilds = [
         "ownershipRequirements": [
           "Getsuga-Black",
           "Shiver-Akuma",
-          "Doku-Tengoku",
+          "Tengoku-Platinum",
           "Lightning",
           "Order",
           "Wind-Kenjutsu",
@@ -13215,15 +13218,15 @@ export const reviewedBuilds = [
         "bloodlines": [
           {
             "name": "Getsuga-Black",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Blade-technique mastery — Kor Style projectile slashes directly represent Goo Kim's Bankai Blade genius.",
             "exactMovesUsed": [
               "Kor Style: Hand of Getsuga",
               "Kor Style: Rasensuga",
               "Kor Style: Getsuga Shuriken Blitz"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Hand of Getsuga (opening blade strike), Rasensuga (spiraling chain extension), and Getsuga Shuriken Blitz (ranged blade pressure) collectively represent Goo Kim's weapon genius — his mastery of blade-energy techniques at all distances. Direct Match: Kor Style moves are blade-type attacks that align exactly with his Bankai Blade identity.",
+            "represents": "Goo Kim's Bankai Blade mastery — the foundation of his weapon genius identity across all distances.",
             "replacements": {
               "lore": [],
               "competitive": [],
@@ -13258,7 +13261,7 @@ export const reviewedBuilds = [
               "Shock Style: Stream",
               "Shock Style: Blast"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed-of-lightning support — Lightning element reflects the rapid strike tempo of Goo's sword exchanges.",
             "replacements": []
           },
           {
@@ -13267,7 +13270,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Precise ranged control — Order element represents the calculated precision behind Goo's weapon techniques.",
             "replacements": []
           }
         ],
@@ -13285,7 +13288,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Hand of Getsuga",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Bankai signature opener — primary blade-energy strike that establishes Goo's weapon genius identity.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -13296,7 +13299,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's blade mastery opener — Hand of Getsuga represents his Bankai Blade genius through an energy-charged sword strike.",
             "mobility": false
           },
           {
@@ -13304,7 +13307,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Rasensuga",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Spiral extension strike — spiraling follow-up that sustains weapon pressure after initial contact.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -13315,7 +13318,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's weapon chain — Rasensuga extends initial blade contact into a spiraling pressure sequence.",
             "mobility": false
           },
           {
@@ -13323,7 +13326,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Getsuga Shuriken Blitz",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Ranged blade pressure — projectile shuriken extended from his Bankai Blade mastery denies any safe retreat.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -13334,7 +13337,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's ranged weapon dominance — Getsuga Shuriken Blitz extends blade control across all distances.",
             "mobility": false
           },
           {
@@ -13391,7 +13394,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Unpredictable counterplay",
+            "characterAbility": "Not used in this variant.",
             "mobility": false
           },
           {
@@ -13399,7 +13402,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Lightning",
             "ability": "Shock Style: Stream",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed-of-lightning pressure — rapid electrical stream reflects the tempo of Goo's quick blade exchanges.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -13410,7 +13413,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Goo's speed-of-lightning tempo — Stream represents the rapid-fire pace of his weapon exchanges.",
             "mobility": false
           },
           {
@@ -13418,7 +13421,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Lightning",
             "ability": "Shock Style: Blast",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Explosive ranged answer — lightning blast creates distance or opens gaps in the opponent's defense.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -13429,7 +13432,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Goo's explosive elemental follow-up — Shock Blast confirms hits or forces repositioning.",
             "mobility": false
           },
           {
@@ -13437,7 +13440,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Order",
             "ability": "Order Style: Beam of Light",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Precise ranged beam — calculated light-beam attack represents the methodical precision behind Goo's technique.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -13448,7 +13451,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Goo's calculated precision — Beam of Light reflects the methodical, technique-first approach behind his weapon genius.",
             "mobility": false
           },
           {
@@ -13612,15 +13615,15 @@ export const reviewedBuilds = [
           },
           {
             "name": "Kenichi",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Martial arts baseline — accessible substitute for Goo's hand-to-hand combat capabilities; he fights with fists as well as weapons.",
             "exactMovesUsed": [
               "Fist Style: Dragon Strike",
               "Fist Style: Crane Demon",
               "Fist Style: Ultimate Tempo"
             ],
             "useMode": false,
-            "reason": "Primary character identity and pressure engine.",
-            "represents": "Primary character identity and pressure engine.",
+            "reason": "Kenichi's base fist techniques provide an accessible martial arts option for Goo Kim's unarmed combat dimension. Dragon Strike = precision strike, Crane Demon = defensive counter, Ultimate Tempo = sustained pressure sequence. Accessible Substitute: Goo Kim's weapon genius extends to hand-to-hand; Kenichi approximates that without requiring premium bloodlines.",
+            "represents": "Goo Kim's unarmed martial arts foundation — he is skilled beyond just his weapon genius.",
             "replacements": {
               "lore": [],
               "competitive": [],
@@ -13635,7 +13638,7 @@ export const reviewedBuilds = [
               "Shock Style: Stream",
               "Shock Style: Blast"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed-of-lightning support — Lightning element reflects the rapid strike tempo of Goo's exchanges.",
             "replacements": []
           },
           {
@@ -13644,7 +13647,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Precise ranged control — Order element represents the calculated precision behind Goo's technique.",
             "replacements": []
           }
         ],
@@ -13700,7 +13703,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Kenichi",
             "ability": "Fist Style: Dragon Strike",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Precision unarmed strike — Dragon Strike represents Goo Kim's targeted, deliberate unarmed attacks that complement his weapon genius.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -13711,7 +13714,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Goo's unarmed precision — Dragon Strike shows he is lethal at close range without a weapon.",
             "mobility": false
           },
           {
@@ -13719,18 +13722,18 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Kenichi",
             "ability": "Fist Style: Crane Demon",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Counter-capable strike — Crane Demon represents the defensive counter dimension of Goo's unarmed fighting.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
-            "counter": false,
+            "counter": true,
             "modeAbility": false,
             "accuracy": "Strong Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Goo's unarmed counter capability — Crane Demon represents the reactive, reading-based dimension of his martial arts.",
             "mobility": false
           },
           {
@@ -13738,7 +13741,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Kenichi",
             "ability": "Fist Style: Ultimate Tempo",
-            "purpose": "Primary character identity and pressure engine.",
+            "purpose": "Sustained unarmed sequence — Ultimate Tempo represents Goo Kim's ability to chain sustained pressure even in unarmed exchanges.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -13749,7 +13752,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Goo's sustained unarmed tempo — Ultimate Tempo shows his technical mastery extends beyond weapon-range fighting.",
             "mobility": false
           },
           {
@@ -13768,7 +13771,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "characterAbility": "Not used in this variant.",
             "mobility": false
           },
           {
@@ -13776,7 +13779,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Lightning",
             "ability": "Shock Style: Stream",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed-of-lightning pressure — rapid electrical stream reflects the tempo of Goo's quick exchanges.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -13787,7 +13790,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Goo's speed tempo — Stream mirrors the rapid-fire pace of his weapon and unarmed exchanges.",
             "mobility": false
           },
           {
@@ -13795,7 +13798,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Lightning",
             "ability": "Shock Style: Blast",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Explosive ranged answer — lightning blast creates distance or opens gaps in the opponent's defense.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -13806,7 +13809,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Goo's explosive elemental follow-up — Shock Blast confirms hits or forces repositioning.",
             "mobility": false
           },
           {
@@ -13814,7 +13817,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Order",
             "ability": "Order Style: Beam of Light",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Precise ranged beam — calculated light-beam attack represents the methodical precision behind Goo's technique.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -13825,7 +13828,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Goo's calculated precision — Beam of Light reflects the methodical, technique-first approach behind his fighting.",
             "mobility": false
           },
           {
@@ -13970,15 +13973,15 @@ export const reviewedBuilds = [
         "bloodlines": [
           {
             "name": "Getsuga-Black",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Blade-technique mastery — Kor Style projectile slashes directly represent Goo Kim's Bankai Blade genius.",
             "exactMovesUsed": [
               "Kor Style: Hand of Getsuga",
               "Kor Style: Rasensuga",
               "Kor Style: Getsuga Shuriken Blitz"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Hand of Getsuga (opening blade strike), Rasensuga (spiraling chain), and Getsuga Shuriken Blitz (ranged blade pressure) collectively represent Goo Kim's weapon genius — his mastery of blade-energy techniques at all distances. Direct Match: Kor Style moves are blade-type attacks that align exactly with his Bankai Blade identity.",
+            "represents": "Goo Kim's Bankai Blade mastery — the foundation of his weapon genius identity across all distances.",
             "replacements": {
               "lore": [],
               "competitive": [],
@@ -13986,40 +13989,35 @@ export const reviewedBuilds = [
             }
           },
           {
-            "name": "Doku-Tengoku",
-            "purpose": "Reviewed supporting match.",
+            "name": "Tengoku-Platinum",
+            "purpose": "Divine blade technique — Kami Blade is a literal bladed attack, Direct Match for Goo Kim's weapon genius identity.",
             "exactMovesUsed": [
-              "Tengoku Style: Concentrated Palm Blast",
-              "Tengoku Style: Twin Dragon Barrage",
-              "Tengoku Style: 128 Palm Counter"
+              "Tengoku Style: Kami Blade",
+              "Tengoku Style: Kami Blitz"
             ],
             "useMode": false,
-            "reason": "Reviewed supporting match.",
-            "represents": "Reviewed supporting match.",
+            "reason": "Kami Blade is a divine bladed attack that directly represents Goo Kim's weapon mastery. Kami Blitz is lightning-fast blade technique representing speed-of-mastery sword work. Competitive: Tengoku-Platinum's blade-type moves give stronger visual accuracy than Doku-Tengoku while maintaining competitive utility.",
+            "represents": "Goo Kim's divine blade mastery — his sword technique elevated to an art form beyond what normal fighters can perceive.",
             "replacements": {
               "lore": [],
-              "competitive": [],
+              "competitive": ["Doku-Tengoku"],
               "accessible": []
             }
           },
           {
-            "name": "Pika-Senko",
+            "name": "Raion-Gaiden",
             "exactMovesUsed": [
-              "Time Style: Star Kick",
-              "Time Style: Star Kick Rising"
+              "Rengoku Style: Samurai Combo",
+              "Rengoku Style: Meteor Inferno Blade"
             ],
-            "purpose": "Explosive high-speed pursuit support.",
+            "purpose": "Elite samurai technique — Samurai Combo is a blade combination sequence, Direct Match for Goo Kim's mastery-level sword technique.",
             "useMode": false,
-            "reason": "Visual Approximation: used only for movement and kick pressure.",
-            "represents": "Exceptional speed",
+            "reason": "Samurai Combo is an elite sword technique sequence that directly represents Goo's blade combination mastery. Meteor Inferno Blade is a powerful weapon-powered finisher. Competitive: Raion-Gaiden's samurai-style precision weapon sequences match Goo's actual fighting approach while adding competitive mobility.",
+            "represents": "Goo Kim's elite sword technique — the layered combination sequences that mark him as a weapon genius beyond simple power.",
             "replacements": {
               "lore": [],
-              "competitive": [
-                "Dio-Senko"
-              ],
-              "accessible": [
-                "Senko"
-              ]
+              "competitive": ["Pika-Senko"],
+              "accessible": []
             }
           },
           {
@@ -14050,7 +14048,7 @@ export const reviewedBuilds = [
               "Shock Style: Stream",
               "Shock Style: Blast"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Speed-of-lightning support — Lightning element reflects the rapid strike tempo of Goo's sword exchanges.",
             "replacements": []
           },
           {
@@ -14059,7 +14057,7 @@ export const reviewedBuilds = [
               "Order Style: Beam of Light",
               "Order Style: Grenade of Light"
             ],
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Precise ranged control — Order element represents the calculated precision behind Goo's weapon techniques.",
             "replacements": []
           }
         ],
@@ -14077,7 +14075,7 @@ export const reviewedBuilds = [
             "key": "1",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Hand of Getsuga",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Bankai signature opener — primary blade-energy strike that establishes Goo's weapon genius identity.",
             "comboRole": "Starter",
             "blockBreak": false,
             "guardPressure": false,
@@ -14088,7 +14086,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's blade mastery opener — Hand of Getsuga represents his Bankai Blade genius through an energy-charged sword strike.",
             "mobility": false
           },
           {
@@ -14096,7 +14094,7 @@ export const reviewedBuilds = [
             "key": "2",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Rasensuga",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Spiral extension strike — spiraling follow-up that sustains weapon pressure after initial contact.",
             "comboRole": "Extender",
             "blockBreak": false,
             "guardPressure": false,
@@ -14107,7 +14105,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's weapon chain — Rasensuga extends initial blade contact into a spiraling pressure sequence.",
             "mobility": false
           },
           {
@@ -14115,7 +14113,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Getsuga-Black",
             "ability": "Kor Style: Getsuga Shuriken Blitz",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Ranged blade pressure — projectile shuriken extended from his Bankai Blade mastery denies any safe retreat.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -14126,45 +14124,45 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's ranged weapon dominance — Getsuga Shuriken Blitz extends blade control across all distances.",
             "mobility": false
           },
           {
             "id": "goo-kim-competitive-hotbar-4",
             "key": "4",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Reviewed supporting match.",
+            "source": "Tengoku-Platinum",
+            "ability": "Tengoku Style: Kami Blade",
+            "purpose": "Divine blade strike — Kami Blade is a literal bladed attack; Direct Match for Goo Kim's weapon genius identity.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Strong Match",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's divine blade technique — Kami Blade represents the pinnacle of his weapon mastery.",
             "mobility": false
           },
           {
             "id": "goo-kim-competitive-hotbar-5",
             "key": "5",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Reviewed supporting match.",
+            "source": "Tengoku-Platinum",
+            "ability": "Tengoku Style: Kami Blitz",
+            "purpose": "Lightning blade burst — rapid blade sequence representing the speed dimension of Goo's sword mastery.",
             "comboRole": "Finisher",
             "blockBreak": false,
-            "guardPressure": false,
+            "guardPressure": true,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Strong Match",
+            "accuracy": "Direct Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Goo's speed-of-mastery blade work — Kami Blitz demonstrates his weapon genius in sustained rapid execution.",
             "mobility": false
           },
           {
@@ -14183,64 +14181,64 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Not used in this variant.",
             "mobility": false
           },
           {
             "id": "goo-kim-competitive-hotbar-V",
             "key": "V",
-            "source": "Doku-Tengoku",
-            "ability": "Tengoku Style: 128 Palm Counter",
-            "purpose": "Reviewed supporting match.",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "Tengoku-Platinum has only two moves; no third bloodline-row ability is available.",
+            "comboRole": "Empty",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Intentionally empty; Tengoku-Platinum provides only Kami Blade and Kami Blitz.",
+            "characterAbility": "Not used — Tengoku-Platinum has no third move.",
+            "mobility": false
+          },
+          {
+            "id": "goo-kim-competitive-hotbar-B",
+            "key": "B",
+            "source": "Raion-Gaiden",
+            "ability": "Rengoku Style: Samurai Combo",
+            "purpose": "Elite samurai technique — Samurai Combo represents Goo Kim's mastery-level sword combination sequences.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
-            "counter": true,
+            "counter": false,
             "modeAbility": false,
             "accuracy": "Strong Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
-            "mobility": false
-          },
-          {
-            "id": "goo-kim-competitive-hotbar-B",
-            "key": "B",
-            "source": "Pika-Senko",
-            "ability": "Time Style: Star Kick",
-            "purpose": "Explosive high-speed pursuit support.",
-            "comboRole": "Utility",
-            "blockBreak": false,
-            "guardPressure": false,
-            "counter": false,
-            "modeAbility": false,
-            "accuracy": "Visual Approximation",
-            "sourceType": "Bloodline",
-            "testingStatus": "Needs Retesting",
-            "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Exceptional speed",
+            "characterAbility": "Goo's mastery sequence — Samurai Combo is the elite technique chain that proves his weapon genius in execution.",
             "mobility": false
           },
           {
             "id": "goo-kim-competitive-hotbar-N",
             "key": "N",
-            "source": "Pika-Senko",
-            "ability": "Time Style: Star Kick Rising",
-            "purpose": "Explosive high-speed pursuit support.",
+            "source": "Raion-Gaiden",
+            "ability": "Rengoku Style: Meteor Inferno Blade",
+            "purpose": "Devastating weapon finisher — Meteor Inferno Blade closes the combination sequence with maximum blade impact.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
             "counter": false,
             "modeAbility": false,
-            "accuracy": "Visual Approximation",
+            "accuracy": "Strong Match",
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Exceptional speed",
+            "characterAbility": "Goo's weapon combination finisher — Meteor Inferno Blade is the devastating closing strike in his elite sword sequence.",
             "mobility": false
           },
           {
@@ -14336,7 +14334,7 @@ export const reviewedBuilds = [
         ],
         "usageGuide": [
           "Lead with Kor Style: Hand of Getsuga.",
-          "Keep Tengoku Style: 128 Palm Counter available for reversals.",
+          "Use Kami Blade on key 4 for the divine blade technique follow-up.",
           "Use Q only after confirming the weapon or fighting-system range."
         ],
         "verificationStatus": "Needs Retesting",
@@ -14366,8 +14364,8 @@ export const reviewedBuilds = [
         },
         "ownershipRequirements": [
           "Getsuga-Black",
-          "Doku-Tengoku",
-          "Pika-Senko",
+          "Tengoku-Platinum",
+          "Raion-Gaiden",
           "Shiver-Akuma",
           "Lightning",
           "Order",
