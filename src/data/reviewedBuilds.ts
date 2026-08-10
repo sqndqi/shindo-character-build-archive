@@ -80,7 +80,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
         "mobility": false
       },
@@ -99,7 +99,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
         "mobility": false
       },
@@ -118,7 +118,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
         "mobility": false
       },
@@ -137,7 +137,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Precise kick combinations and close-range finishing.",
         "mobility": false
       },
@@ -156,7 +156,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Precise kick combinations and close-range finishing.",
         "mobility": false
       },
@@ -194,7 +194,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Precise kick combinations and close-range finishing.",
         "mobility": false
       },
@@ -213,7 +213,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Explosive pursuit kicks — instant gap-closing strikes.",
         "mobility": false
       },
@@ -232,7 +232,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Explosive pursuit kicks — instant gap-closing strikes.",
         "mobility": false
       },
@@ -251,7 +251,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Dio-Senko-Rose — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "james-current-4x2-hotbar-Z",
@@ -268,7 +268,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "james-current-4x2-hotbar-Q",
@@ -284,7 +284,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Combat Art"
       }
     ],
@@ -512,7 +512,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
@@ -531,7 +531,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
@@ -550,7 +550,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
@@ -569,7 +569,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
@@ -588,7 +588,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
@@ -626,7 +626,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
@@ -645,7 +645,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Explosive pursuit kicks — instant gap-closing strikes.",
             "mobility": false
           },
@@ -664,7 +664,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Explosive pursuit kicks — instant gap-closing strikes.",
             "mobility": false
           },
@@ -683,7 +683,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Dio-Senko-Rose — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "james-current-4x2-hotbar-Z",
@@ -700,7 +700,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "james-current-4x2-hotbar-Q",
@@ -716,7 +716,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -918,7 +918,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
@@ -937,7 +937,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
@@ -956,7 +956,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
@@ -975,7 +975,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
@@ -994,7 +994,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
@@ -1032,7 +1032,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
@@ -1051,7 +1051,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Counter-fighting intelligence — precise defensive reads.",
             "mobility": false
           },
@@ -1070,7 +1070,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Counter-fighting intelligence — precise defensive reads.",
             "mobility": false
           },
@@ -1089,7 +1089,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Dio-Senko-Rose — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "james-current-3x2-hotbar-Z",
@@ -1106,7 +1106,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "james-current-3x2-hotbar-Q",
@@ -1122,7 +1122,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -1304,7 +1304,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
@@ -1323,7 +1323,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
@@ -1342,7 +1342,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
             "mobility": false
           },
@@ -1361,7 +1361,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
@@ -1380,7 +1380,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
@@ -1418,7 +1418,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise kick combinations and close-range finishing.",
             "mobility": false
           },
@@ -1437,7 +1437,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Movement control and wind-pressure extension.",
             "mobility": false
           },
@@ -1456,7 +1456,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Movement control and wind-pressure extension.",
             "mobility": false
           },
@@ -1475,7 +1475,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Dio-Senko-Rose — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "james-current-2x2-hotbar-Z",
@@ -1492,7 +1492,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "james-current-2x2-hotbar-Q",
@@ -1508,7 +1508,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -1692,7 +1692,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Extreme speed",
             "mobility": false
           },
@@ -1711,7 +1711,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Extreme speed",
             "mobility": false
           },
@@ -1730,7 +1730,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -1749,7 +1749,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -1768,7 +1768,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Movement control and wind-pressure extension.",
             "mobility": false
           },
@@ -1806,7 +1806,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Movement control and wind-pressure extension.",
             "mobility": false
           },
@@ -1825,7 +1825,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Explosive light pressure and a blade-like visual substitute.",
             "mobility": false
           },
@@ -1844,7 +1844,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Explosive light pressure and a blade-like visual substitute.",
             "mobility": false
           },
@@ -1863,7 +1863,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Dio-Senko — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "james-current-accessible-hotbar-Z",
@@ -1896,7 +1896,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -2107,8 +2107,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Seongji's strength threshold opener — 3rd Stance is the first display of his abnormal physical power, the initial surge that proves his body has exceeded the human limits that constrain everyone else in the fight.",
         "mobility": false
       },
       {
@@ -2126,8 +2126,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Seongji's strength threshold chain — Dragon Demon Combo represents his stamina-based dominance sustaining beyond the point where most fighters would slow, the relentless output that embodies his power threshold.",
         "mobility": false
       },
       {
@@ -2145,8 +2145,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Seongji's strength threshold climax — Dragon Lotus delivers the concentrated force that demonstrates his physical ceiling is categorically higher than his opponents', closing the pressure sequence with the full weight of his strength threshold.",
         "mobility": false
       },
       {
@@ -2164,7 +2164,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Seongji's speed entry — Ultimate Flash represents the sudden burst that makes her movement feel instantaneous.",
         "mobility": true
       },
@@ -2183,7 +2183,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Seongji's footwork — Time Jump represents the sudden positional shifts that leave opponents striking empty space.",
         "mobility": true
       },
@@ -2221,7 +2221,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Seongji's control peak — Time Stop represents the moment her speed completely negates the opponent's ability to act.",
         "mobility": false
       },
@@ -2240,7 +2240,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Seongji's kick entry — 6th Dance opens the kick combination that extends her attack reach beyond direct striking distance.",
         "mobility": false
       },
@@ -2259,7 +2259,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Seongji's kick close — 9th Dance ends the kick combination and resets position for the next pressure sequence.",
         "mobility": false
       },
@@ -2278,7 +2278,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Ryuji-Kenichi — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "seongji-yuk-4x2-hotbar-Z",
@@ -2311,7 +2311,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Combat Art"
       }
     ],
@@ -2533,8 +2533,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Seongji's strength threshold opener — 3rd Stance is the first display of his abnormal physical power, the initial surge that proves his body has exceeded the human limits that constrain everyone else in the fight.",
             "mobility": false
           },
           {
@@ -2552,8 +2552,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Seongji's strength threshold chain — Dragon Demon Combo represents his stamina-based dominance sustaining beyond the point where most fighters would slow, the relentless output that embodies his power threshold.",
             "mobility": false
           },
           {
@@ -2571,8 +2571,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Seongji's strength threshold climax — Dragon Lotus delivers the concentrated force that demonstrates his physical ceiling is categorically higher than his opponents', closing the pressure sequence with the full weight of his strength threshold.",
             "mobility": false
           },
           {
@@ -2590,7 +2590,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's speed threshold — Ultimate Flash represents his ability to move with explosive quickness despite his powerful physique, catching enemies off-guard with sudden bursts of movement.",
             "mobility": false
           },
@@ -2609,7 +2609,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's pursuit — Time Jump represents how his speed threshold keeps opponents from fleeing his range; he closes any distance before the enemy can reset.",
             "mobility": false
           },
@@ -2647,7 +2647,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's speed dominance — Time Stop represents how his speed threshold so completely overwhelms opponents that their reactions cannot keep up with his approach.",
             "mobility": false
           },
@@ -2666,7 +2666,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's technique threshold — 6th Dance represents the precision dimension of his fighting, showing he is not only powerful but technically masterful in ways that pure brawlers cannot match.",
             "mobility": false
           },
@@ -2685,7 +2685,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's mastery finish — 9th Dance is the culmination of his technique threshold, the final precise blow that completes his three-threshold combination.",
             "mobility": false
           },
@@ -2704,7 +2704,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "seongji-yuk-4x2-hotbar-Z",
@@ -2737,7 +2737,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -2939,8 +2939,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Seongji's strength threshold opener — 3rd Stance is the first display of his abnormal physical power, the initial surge that proves his body has exceeded the human limits that constrain everyone else in the fight.",
             "mobility": false
           },
           {
@@ -2958,8 +2958,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Seongji's strength threshold chain — Dragon Demon Combo represents his stamina-based dominance sustaining beyond the point where most fighters would slow, the relentless output that embodies his power threshold.",
             "mobility": false
           },
           {
@@ -2977,8 +2977,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Seongji's strength threshold climax — Dragon Lotus delivers the concentrated force that demonstrates his physical ceiling is categorically higher than his opponents', closing the pressure sequence with the full weight of his strength threshold.",
             "mobility": false
           },
           {
@@ -2996,7 +2996,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's kick entry — 6th Dance opens the kick combination that extends her reach beyond the immediate striking zone.",
             "mobility": false
           },
@@ -3015,7 +3015,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's kick continuation — 9th Dance carries the kick combination forward and compounds the positional damage.",
             "mobility": false
           },
@@ -3053,7 +3053,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's kick close — Tiger Lotus ends the kick combination with a heavy impact that punishes opponents who failed to escape the sequence.",
             "mobility": false
           },
@@ -3072,7 +3072,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's speed supplement — Ultimate Flash provides an instant burst entry alongside the kick combination routes.",
             "mobility": true
           },
@@ -3091,7 +3091,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's pursuit — Time Jump eliminates the distance opponents try to create when escaping the kick combination.",
             "mobility": true
           },
@@ -3110,7 +3110,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "seongji-yuk-3x2-hotbar-Z",
@@ -3143,7 +3143,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -3325,8 +3325,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Seongji's strength threshold opener — 3rd Stance is the first display of his abnormal physical power, the initial surge that proves his body has exceeded the human limits that constrain everyone else in the fight.",
             "mobility": false
           },
           {
@@ -3344,8 +3344,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Seongji's strength threshold chain — Dragon Demon Combo represents his stamina-based dominance sustaining beyond the point where most fighters would slow, the relentless output that embodies his power threshold.",
             "mobility": false
           },
           {
@@ -3363,8 +3363,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Seongji's strength threshold climax — Dragon Lotus delivers the concentrated force that demonstrates his physical ceiling is categorically higher than his opponents', closing the pressure sequence with the full weight of his strength threshold.",
             "mobility": false
           },
           {
@@ -3382,7 +3382,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's speed burst — Ultimate Flash delivers an instant entry that catches opponents reacting to the primary pressure.",
             "mobility": true
           },
@@ -3401,7 +3401,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's angle reset — Time Jump closes or changes position to prevent the opponent from stabilizing their defense.",
             "mobility": true
           },
@@ -3439,7 +3439,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's control moment — Time Stop represents the complete denial of the opponent's ability to respond during her committed attack.",
             "mobility": false
           },
@@ -3458,7 +3458,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's defensive anchor — Earth Wall blocks incoming pressure and creates a positional barrier during neutral.",
             "mobility": false
           },
@@ -3477,7 +3477,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's zone tool — Rage Trail punishes opponents who try to advance through the contested space without caution.",
             "mobility": false
           },
@@ -3496,7 +3496,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "seongji-yuk-2x2-hotbar-Z",
@@ -3529,7 +3529,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -3708,7 +3708,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -3727,7 +3727,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -3746,7 +3746,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's range opener — Concentrated Palm Blast extends pressure beyond the close-range striking that Kenichi provides.",
             "mobility": false
           },
@@ -3765,7 +3765,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's sustained push — Twin Dragon Barrage keeps continuous pressure on opponents who try to stabilize their defense.",
             "mobility": false
           },
@@ -3784,7 +3784,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's counter read — 128 Palm Counter punishes aggressive opponents who overcommit into her accessible-build pressure.",
             "mobility": false
           },
@@ -3822,7 +3822,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's defensive anchor — Earth Wall blocks incoming aggression and secures space during neutral.",
             "mobility": false
           },
@@ -3841,7 +3841,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's zone denial — Rage Trail punishes reckless approaches into her neutral space.",
             "mobility": false
           },
@@ -3860,7 +3860,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Seongji's wind disruption — Vortex interrupts opponent approach patterns and creates openings for follow-up pressure.",
             "mobility": false
           },
@@ -3912,7 +3912,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -4123,7 +4123,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Ultra Instinct automatic reactive combat.",
         "mobility": false
       },
@@ -4142,7 +4142,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Ultra Instinct automatic reactive combat.",
         "mobility": false
       },
@@ -4161,7 +4161,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Ultra Instinct automatic reactive combat.",
         "mobility": false
       },
@@ -4180,7 +4180,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Crushing forward pressure — inescapable gravity force.",
         "mobility": false
       },
@@ -4199,7 +4199,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Crushing forward pressure — inescapable gravity force.",
         "mobility": false
       },
@@ -4237,7 +4237,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Raw physical power and stamina-based pressure.",
         "mobility": false
       },
@@ -4256,7 +4256,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Raw physical power and stamina-based pressure.",
         "mobility": false
       },
@@ -4275,7 +4275,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Raw physical power and stamina-based pressure.",
         "mobility": false
       },
@@ -4294,7 +4294,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Akuma — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "gun-park-4x2-hotbar-Z",
@@ -4327,7 +4327,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Combat Art"
       }
     ],
@@ -4549,7 +4549,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -4568,7 +4568,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -4587,7 +4587,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -4606,7 +4606,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crushing forward pressure — inescapable gravity force.",
             "mobility": false
           },
@@ -4625,7 +4625,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crushing forward pressure — inescapable gravity force.",
             "mobility": false
           },
@@ -4663,7 +4663,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
@@ -4682,7 +4682,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
@@ -4701,7 +4701,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
@@ -4720,7 +4720,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "gun-park-4x2-hotbar-Z",
@@ -4753,7 +4753,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -4956,7 +4956,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -4975,7 +4975,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -4994,7 +4994,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -5013,7 +5013,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
@@ -5032,7 +5032,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
@@ -5070,7 +5070,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
@@ -5089,7 +5089,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Reactive counter and automatic defense.",
             "mobility": false
           },
@@ -5108,7 +5108,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Reactive counter and automatic defense.",
             "mobility": false
           },
@@ -5127,7 +5127,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "gun-park-3x2-hotbar-Z",
@@ -5160,7 +5160,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -5342,7 +5342,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -5361,7 +5361,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -5380,7 +5380,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -5399,7 +5399,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
@@ -5418,7 +5418,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
@@ -5456,7 +5456,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Raw physical power and stamina-based pressure.",
             "mobility": false
           },
@@ -5475,7 +5475,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Durability expression — Gun's immense physical toughness.",
             "mobility": false
           },
@@ -5494,7 +5494,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Durability expression — Gun's immense physical toughness.",
             "mobility": false
           },
@@ -5513,7 +5513,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "gun-park-2x2-hotbar-Z",
@@ -5546,7 +5546,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -5729,7 +5729,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -5748,7 +5748,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -5767,7 +5767,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ultra Instinct automatic reactive combat.",
             "mobility": false
           },
@@ -5786,7 +5786,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -5805,7 +5805,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -5843,7 +5843,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Durability expression — Gun's toughness in accessible form.",
             "mobility": false
           },
@@ -5862,7 +5862,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Durability expression — Gun's toughness in accessible form.",
             "mobility": false
           },
@@ -5881,7 +5881,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Overwhelming force — Gun's dominating presence.",
             "mobility": false
           },
@@ -5900,7 +5900,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "gun-park-accessible-hotbar-Z",
@@ -5933,7 +5933,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -6144,7 +6144,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Copy ability — learns and replicates any fighting style.",
         "mobility": false
       },
@@ -6163,7 +6163,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Copy ability — learns and replicates any fighting style.",
         "mobility": false
       },
@@ -6182,7 +6182,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Copy ability — learns and replicates any fighting style.",
         "mobility": false
       },
@@ -6201,7 +6201,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "UI-mode speed and prediction.",
         "mobility": false
       },
@@ -6220,7 +6220,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "UI-mode speed and prediction.",
         "mobility": false
       },
@@ -6258,7 +6258,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "UI-mode speed and prediction.",
         "mobility": false
       },
@@ -6277,7 +6277,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Learned martial arts mastery.",
         "mobility": false
       },
@@ -6296,7 +6296,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Learned martial arts mastery.",
         "mobility": false
       },
@@ -6315,7 +6315,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Akuma — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "little-daniel-park-4x2-hotbar-Z",
@@ -6348,7 +6348,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Combat Art"
       }
     ],
@@ -6568,7 +6568,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -6587,7 +6587,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -6606,7 +6606,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -6625,7 +6625,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "UI-mode speed and prediction.",
             "mobility": false
           },
@@ -6644,7 +6644,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "UI-mode speed and prediction.",
             "mobility": false
           },
@@ -6682,7 +6682,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "UI-mode speed and prediction.",
             "mobility": false
           },
@@ -6701,7 +6701,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
@@ -6720,7 +6720,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
@@ -6739,7 +6739,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "little-daniel-park-4x2-hotbar-Z",
@@ -6772,7 +6772,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -6973,7 +6973,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -6992,7 +6992,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -7011,7 +7011,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -7030,7 +7030,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
@@ -7049,7 +7049,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
@@ -7087,7 +7087,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
@@ -7106,7 +7106,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "UI automatic dodge-counter.",
             "mobility": false
           },
@@ -7125,7 +7125,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "UI explosive counter-engagement.",
             "mobility": false
           },
@@ -7144,7 +7144,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "little-daniel-park-3x2-hotbar-Z",
@@ -7177,7 +7177,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -7359,7 +7359,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -7378,7 +7378,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -7397,7 +7397,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -7416,7 +7416,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
@@ -7435,7 +7435,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
@@ -7473,7 +7473,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Learned martial arts mastery.",
             "mobility": false
           },
@@ -7492,7 +7492,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Focused energy — Daniel's clear-headed analysis.",
             "mobility": false
           },
@@ -7511,7 +7511,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Focused energy — Daniel's clear-headed analysis.",
             "mobility": false
           },
@@ -7530,7 +7530,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "little-daniel-park-2x2-hotbar-Z",
@@ -7563,7 +7563,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -7746,7 +7746,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -7765,7 +7765,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -7784,7 +7784,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Copy ability — learns and replicates any fighting style.",
             "mobility": false
           },
@@ -7803,7 +7803,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -7822,7 +7822,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -7860,7 +7860,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Focused energy — Daniel's clear-headed analysis.",
             "mobility": false
           },
@@ -7879,7 +7879,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Focused energy — Daniel's clear-headed analysis.",
             "mobility": false
           },
@@ -7898,7 +7898,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed expression — blinding UI-mode speed.",
             "mobility": false
           },
@@ -7917,7 +7917,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "little-daniel-park-accessible-hotbar-Z",
@@ -7950,7 +7950,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -8161,7 +8161,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Johan's copying identity — absorbing and deploying any technique.",
         "mobility": false
       },
@@ -8180,7 +8180,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Johan's copying identity — absorbing and deploying any technique.",
         "mobility": false
       },
@@ -8199,7 +8199,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Johan's copying identity — absorbing and deploying any technique.",
         "mobility": false
       },
@@ -8218,7 +8218,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Copied heavy-power striking — overwhelming physical technique.",
         "mobility": false
       },
@@ -8237,7 +8237,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Copied heavy-power striking — overwhelming physical technique.",
         "mobility": false
       },
@@ -8275,7 +8275,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Copied speed-kick technique — explosive kicks drawn from speed masters.",
         "mobility": false
       },
@@ -8294,7 +8294,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Copied speed-kick technique — explosive kicks drawn from speed masters.",
         "mobility": false
       },
@@ -8313,7 +8313,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "James Lee's copied dance kicks — the specific technique that defines Johan's most personal rivalry.",
         "mobility": false
       },
@@ -8332,7 +8332,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Bankai-Akuma — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "johan-seong-4x2-hotbar-Z",
@@ -8365,7 +8365,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Combat Art"
       }
     ],
@@ -8576,7 +8576,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copying identity — deploys absorbed fire techniques with perfect fidelity.",
             "mobility": false
           },
@@ -8595,7 +8595,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's unreadable copies — Hawk Illusion represents the unpredictable quality of his absorbed techniques.",
             "mobility": false
           },
@@ -8614,7 +8614,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's mental dominance — Tsukuyomi represents the psychological pressure of fighting someone who has perfectly copied your style.",
             "mobility": false
           },
@@ -8633,7 +8633,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied power layer — Dragon Demon Combo represents overwhelming physical technique drawn from heavy-power fighters.",
             "mobility": false
           },
@@ -8652,7 +8652,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied power layer — Dragon Lotus closes out the heavy-power combo sequence absorbed from strength-type masters.",
             "mobility": false
           },
@@ -8690,7 +8690,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied speed layer — Star Kick represents explosive kick speed drawn from multiple speed-type masters.",
             "mobility": false
           },
@@ -8709,7 +8709,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied speed layer — Star Kick Rising extends the absorbed kick sequence with an upward launcher.",
             "mobility": false
           },
@@ -8728,7 +8728,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied James Lee kicks — the 6th Dance technique is the specific kick style absorbed from the one fighter who outpaced him.",
             "mobility": false
           },
@@ -8747,7 +8747,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Bankai-Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "johan-seong-4x2-hotbar-Z",
@@ -8780,7 +8780,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -8978,7 +8978,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copying identity — deploys absorbed fire techniques with perfect fidelity.",
             "mobility": false
           },
@@ -8997,7 +8997,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's unreadable copies — Hawk Illusion represents the unpredictable quality of his absorbed techniques.",
             "mobility": false
           },
@@ -9016,7 +9016,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's mental dominance — Tsukuyomi represents the psychological pressure of fighting someone who has perfectly copied your style.",
             "mobility": false
           },
@@ -9035,7 +9035,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied power layer — Dragon Demon Combo represents overwhelming physical technique drawn from heavy-power fighters.",
             "mobility": false
           },
@@ -9054,7 +9054,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied power layer — Dragon Lotus closes out the heavy-power combo sequence absorbed from strength-type masters.",
             "mobility": false
           },
@@ -9092,7 +9092,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied James Lee kicks — the 6th Dance technique is the specific kick style absorbed from the one fighter who outpaced him.",
             "mobility": false
           },
@@ -9111,7 +9111,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied James Lee kicks — the 9th Dance extends the absorbed kick sequence with a higher-count dance variation.",
             "mobility": false
           },
@@ -9130,7 +9130,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied James Lee kicks — Tiger Lotus closes the dance-kick sequence absorbed from his greatest rival.",
             "mobility": false
           },
@@ -9149,7 +9149,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Bankai-Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "johan-seong-3x2-hotbar-Z",
@@ -9182,7 +9182,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -9361,7 +9361,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copying identity — deploys absorbed fire techniques with perfect fidelity.",
             "mobility": false
           },
@@ -9380,7 +9380,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's unreadable copies — Hawk Illusion represents the unpredictable quality of his absorbed techniques.",
             "mobility": false
           },
@@ -9399,7 +9399,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's mental dominance — Tsukuyomi represents the psychological pressure of fighting someone who has perfectly copied your style.",
             "mobility": false
           },
@@ -9418,7 +9418,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied James Lee kicks — the 6th Dance technique absorbed from the one fighter who outpaced him.",
             "mobility": false
           },
@@ -9437,7 +9437,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied James Lee kicks — the 9th Dance extends the absorbed kick sequence.",
             "mobility": false
           },
@@ -9475,7 +9475,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Johan's copied James Lee kicks — Tiger Lotus closes the dance-kick sequence at two slots.",
             "mobility": false
           },
@@ -9494,7 +9494,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed expression — wind vortex mirrors Johan's rapid movement between copied techniques.",
             "mobility": false
           },
@@ -9513,7 +9513,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed disruption — Windshock extends Johan's wind-speed pressure layer at two slots.",
             "mobility": false
           },
@@ -9532,7 +9532,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Bankai-Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "johan-seong-2x2-hotbar-Z",
@@ -9565,7 +9565,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -9750,7 +9750,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -9769,7 +9769,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -9788,7 +9788,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Extreme speed",
             "mobility": false
           },
@@ -9807,7 +9807,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Extreme speed",
             "mobility": false
           },
@@ -9826,7 +9826,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed expression — wind vortex accessible layer.",
             "mobility": false
           },
@@ -9864,7 +9864,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Speed disruption — Windshock accessible wind pressure layer.",
             "mobility": false
           },
@@ -9883,7 +9883,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Electrical pressure — Shock Stream accessible lightning layer.",
             "mobility": false
           },
@@ -9902,7 +9902,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Electrical burst — Shock Blast accessible lightning finisher.",
             "mobility": false
           },
@@ -9921,7 +9921,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Dio-Senko — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "johan-seong-accessible-hotbar-Z",
@@ -9954,7 +9954,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -10161,8 +10161,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Kitae's King of Seoul advance — 3rd Stance is the forward step that begins his relentless brawl, the move that signals to every opponent that retreating will not save them from his endurance-fueled pressure.",
         "mobility": false
       },
       {
@@ -10180,8 +10180,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Kitae's endurance chain — Dragon Demon Combo represents his sustained physical dominance, the stamina-fueled multi-hit sequence that erodes any defense through sheer repetition and refusal to relent.",
         "mobility": false
       },
       {
@@ -10199,8 +10199,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Kitae's decisive blow — Dragon Lotus is the culminating strike in his forward advance, the moment when his relentless pressure collapses the opponent's last resistance and proves his King of Seoul dominance complete.",
         "mobility": false
       },
       {
@@ -10218,7 +10218,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Crushing forward pressure — inescapable gravity force that no opponent can escape.",
         "mobility": false
       },
@@ -10237,7 +10237,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Crushing forward pressure — Gravity Push drives opponents into corners with unstoppable force.",
         "mobility": false
       },
@@ -10275,7 +10275,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Precise martial arts — Crane Demon provides a controlled strike in Kitae's brutal pressure flow.",
         "mobility": false
       },
@@ -10294,7 +10294,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Precise martial arts — Dragon Strike delivers concentrated physical power.",
         "mobility": false
       },
@@ -10313,7 +10313,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Endurance counter — absorbs punishment and delivers decisive retaliation when opponent overcommits.",
         "mobility": false
       },
@@ -10332,7 +10332,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Ryuji-Kenichi — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "kitae-kim-4x2-hotbar-Z",
@@ -10365,7 +10365,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Weapon"
       }
     ],
@@ -10570,8 +10570,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Kitae's King of Seoul advance — 3rd Stance is the forward step that begins his relentless brawl, the move that signals to every opponent that retreating will not save them from his endurance-fueled pressure.",
             "mobility": false
           },
           {
@@ -10589,8 +10589,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Kitae's endurance chain — Dragon Demon Combo represents his sustained physical dominance, the stamina-fueled multi-hit sequence that erodes any defense through sheer repetition and refusal to relent.",
             "mobility": false
           },
           {
@@ -10608,8 +10608,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Kitae's decisive blow — Dragon Lotus is the culminating strike in his forward advance, the moment when his relentless pressure collapses the opponent's last resistance and proves his King of Seoul dominance complete.",
             "mobility": false
           },
           {
@@ -10627,7 +10627,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crushing forward pressure — inescapable gravity force that no opponent can escape.",
             "mobility": false
           },
@@ -10646,7 +10646,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crushing forward pressure — Gravity Push drives opponents into corners with unstoppable force.",
             "mobility": false
           },
@@ -10684,7 +10684,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise martial arts — Crane Demon provides a controlled strike in Kitae's brutal pressure flow.",
             "mobility": false
           },
@@ -10703,7 +10703,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise martial arts — Dragon Strike delivers concentrated physical power.",
             "mobility": false
           },
@@ -10722,7 +10722,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Endurance counter — absorbs punishment and delivers decisive retaliation when opponent overcommits.",
             "mobility": false
           },
@@ -10741,7 +10741,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "kitae-kim-4x2-hotbar-Z",
@@ -10774,7 +10774,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -10966,8 +10966,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Kitae's King of Seoul advance — 3rd Stance is the forward step that begins his relentless brawl, the move that signals to every opponent that retreating will not save them from his endurance-fueled pressure.",
             "mobility": false
           },
           {
@@ -10985,8 +10985,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Kitae's endurance chain — Dragon Demon Combo represents his sustained physical dominance, the stamina-fueled multi-hit sequence that erodes any defense through sheer repetition and refusal to relent.",
             "mobility": false
           },
           {
@@ -11004,8 +11004,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Kitae's decisive blow — Dragon Lotus is the culminating strike in his forward advance, the moment when his relentless pressure collapses the opponent's last resistance and proves his King of Seoul dominance complete.",
             "mobility": false
           },
           {
@@ -11023,7 +11023,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crushing forward pressure — inescapable gravity force that no opponent can escape.",
             "mobility": false
           },
@@ -11042,7 +11042,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crushing forward pressure — Gravity Push drives opponents into corners with unstoppable force.",
             "mobility": false
           },
@@ -11080,7 +11080,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise martial arts — Crane Demon provides a controlled strike in Kitae's brutal pressure flow.",
             "mobility": false
           },
@@ -11099,7 +11099,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise martial arts — Dragon Strike delivers concentrated physical power.",
             "mobility": false
           },
@@ -11118,7 +11118,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Precise martial arts — Ultimate Tempo closes the Kenichi technique sequence with maximum striking force.",
             "mobility": false
           },
@@ -11137,7 +11137,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "kitae-kim-3x2-hotbar-Z",
@@ -11170,7 +11170,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -11340,8 +11340,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Kitae's King of Seoul advance — 3rd Stance is the forward step that begins his relentless brawl, the move that signals to every opponent that retreating will not save them from his endurance-fueled pressure.",
             "mobility": false
           },
           {
@@ -11359,8 +11359,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Kitae's endurance chain — Dragon Demon Combo represents his sustained physical dominance, the stamina-fueled multi-hit sequence that erodes any defense through sheer repetition and refusal to relent.",
             "mobility": false
           },
           {
@@ -11378,8 +11378,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Kitae's decisive blow — Dragon Lotus is the culminating strike in his forward advance, the moment when his relentless pressure collapses the opponent's last resistance and proves his King of Seoul dominance complete.",
             "mobility": false
           },
           {
@@ -11397,7 +11397,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kitae's gravitational control — drags the opponent into his domain where escape is impossible.",
             "mobility": false
           },
@@ -11416,7 +11416,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kitae's dominance of space — forces the opponent into a position Kitae dictates, not one they choose.",
             "mobility": false
           },
@@ -11473,7 +11473,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kitae's indomitability — Earth Wall represents his King of Seoul status as someone who cannot be moved or stopped regardless of the force brought against him.",
             "mobility": false
           },
@@ -11492,7 +11492,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kitae's approach control — Rage Trail represents how he dominates the ground itself, forcing opponents into his range where his physical superiority is absolute.",
             "mobility": false
           },
@@ -11511,7 +11511,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "kitae-kim-2x2-hotbar-Z",
@@ -11544,7 +11544,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -11713,7 +11713,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -11732,7 +11732,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -11751,7 +11751,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kitae's gravitational control — drags the opponent into his domain where escape is impossible.",
             "mobility": false
           },
@@ -11770,7 +11770,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kitae's dominance of space — forces the opponent into a position Kitae dictates, not one they choose.",
             "mobility": false
           },
@@ -11827,7 +11827,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kitae's indomitability — Earth Wall represents his King of Seoul status as someone who cannot be moved or stopped regardless of the force brought against him.",
             "mobility": false
           },
@@ -11846,7 +11846,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kitae's approach control — Rage Trail represents how he dominates the ground itself, forcing opponents into his range where his physical superiority is absolute.",
             "mobility": false
           },
@@ -11865,7 +11865,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kitae's aggressive spirit — Flame Bullet represents his ferocious fighting drive, the explosive force that precedes his full-power close-combat assault.",
             "mobility": false
           },
@@ -11917,7 +11917,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -12117,7 +12117,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent prefix; move identity established; gameplay timing and guard behavior require live testing.",
+        "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Goo's blade mastery opener — Hand of Getsuga represents his Bankai Blade genius through an energy-charged sword strike.",
         "mobility": false
       },
@@ -12136,7 +12136,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent prefix; move identity established; gameplay timing and guard behavior require live testing.",
+        "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Goo's weapon chain — Rasensuga extends the initial blade contact into a spiraling pressure sequence.",
         "mobility": false
       },
@@ -12155,7 +12155,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent prefix; move identity established; gameplay timing and guard behavior require live testing.",
+        "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Goo's ranged weapon dominance — Getsuga Shuriken Blitz extends his blade control across all distances.",
         "mobility": false
       },
@@ -12174,7 +12174,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Goo's unpredictable counterplay — Reality Control represents the dimensional reading he applies to every weapon exchange.",
         "mobility": false
       },
@@ -12193,7 +12193,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Goo's unpredictable repositioning — Warp represents his ability to vanish from predictable positions and reengage on his own terms.",
         "mobility": true
       },
@@ -12231,7 +12231,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Goo's divine blade technique — Kami Blade is the pinnacle of his weapon mastery; a strike so refined it transcends ordinary sword skill.",
         "mobility": false
       },
@@ -12250,7 +12250,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Goo's speed-of-mastery blade work — Kami Blitz demonstrates his weapon genius in sustained rapid execution.",
         "mobility": false
       },
@@ -12269,7 +12269,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Goo's mastery sequence — Samurai Combo is the elite technique chain that proves his weapon genius in execution.",
         "mobility": false
       },
@@ -12321,7 +12321,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Weapon"
       }
     ],
@@ -12523,7 +12523,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's weapon mastery opener — Hand of Getsuga represents his Bankai Blade genius; the first strike that demonstrates why he is recognized as a weapon specialist beyond his martial arts background.",
             "mobility": false
           },
@@ -12542,7 +12542,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's weapon chain — Rasensuga extends the initial blade contact into a spiraling pressure sequence, demonstrating his genius with continuous weapon control.",
             "mobility": false
           },
@@ -12561,7 +12561,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's ranged weapon dominance — Getsuga Shuriken Blitz extends his blade control into ranged pressure, reflecting his weapon genius across all distances.",
             "mobility": false
           },
@@ -12580,7 +12580,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -12599,7 +12599,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -12637,7 +12637,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's divine blade mastery — Kami Blade represents the pinnacle of his weapon technique, a strike so refined it transcends ordinary sword skill.",
             "mobility": false
           },
@@ -12656,7 +12656,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's speed-of-mastery blade work — Kami Blitz shows his weapon genius in sustained rapid execution; his sword movements are too fast for opponents to track individually.",
             "mobility": false
           },
@@ -12675,7 +12675,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's mastery sequence — Samurai Combo embodies his weapon genius through elite technique; the opponent faces a chained sword sequence from someone who has elevated blade work to its highest form.",
             "mobility": false
           },
@@ -12727,7 +12727,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -12917,7 +12917,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's blade mastery opener — Hand of Getsuga represents his Bankai Blade genius through an energy-charged sword strike.",
             "mobility": false
           },
@@ -12936,7 +12936,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's weapon chain — Rasensuga extends initial blade contact into a spiraling pressure sequence.",
             "mobility": false
           },
@@ -12955,7 +12955,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's ranged weapon dominance — Getsuga Shuriken Blitz extends blade control across all distances.",
             "mobility": false
           },
@@ -12974,7 +12974,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -12993,7 +12993,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -13031,7 +13031,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's divine blade technique — Kami Blade represents the pinnacle of his weapon mastery.",
             "mobility": false
           },
@@ -13050,7 +13050,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's speed-of-mastery blade work — Kami Blitz demonstrates his weapon genius in sustained rapid execution.",
             "mobility": false
           },
@@ -13121,7 +13121,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -13294,7 +13294,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's blade mastery opener — Hand of Getsuga represents his Bankai Blade genius through an energy-charged sword strike.",
             "mobility": false
           },
@@ -13313,7 +13313,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's weapon chain — Rasensuga extends initial blade contact into a spiraling pressure sequence.",
             "mobility": false
           },
@@ -13332,7 +13332,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's ranged weapon dominance — Getsuga Shuriken Blitz extends blade control across all distances.",
             "mobility": false
           },
@@ -13351,7 +13351,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -13370,7 +13370,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -13408,7 +13408,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's speed-of-lightning tempo — Stream represents the rapid-fire pace of his weapon exchanges.",
             "mobility": false
           },
@@ -13427,7 +13427,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's explosive elemental follow-up — Shock Blast confirms hits or forces repositioning.",
             "mobility": false
           },
@@ -13446,7 +13446,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's calculated precision — Beam of Light reflects the methodical, technique-first approach behind his weapon genius.",
             "mobility": false
           },
@@ -13498,7 +13498,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -13671,7 +13671,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -13690,7 +13690,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -13709,7 +13709,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's unarmed precision — Dragon Strike shows he is lethal at close range without a weapon.",
             "mobility": false
           },
@@ -13728,7 +13728,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's unarmed counter capability — Crane Demon represents the reactive, reading-based dimension of his martial arts.",
             "mobility": false
           },
@@ -13747,7 +13747,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's sustained unarmed tempo — Ultimate Tempo shows his technical mastery extends beyond weapon-range fighting.",
             "mobility": false
           },
@@ -13785,7 +13785,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's speed tempo — Stream mirrors the rapid-fire pace of his weapon and unarmed exchanges.",
             "mobility": false
           },
@@ -13804,7 +13804,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's explosive elemental follow-up — Shock Blast confirms hits or forces repositioning.",
             "mobility": false
           },
@@ -13823,7 +13823,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's calculated precision — Beam of Light reflects the methodical, technique-first approach behind his fighting.",
             "mobility": false
           },
@@ -13875,7 +13875,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -14081,7 +14081,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's blade mastery opener — Hand of Getsuga represents his Bankai Blade genius through an energy-charged sword strike.",
             "mobility": false
           },
@@ -14100,7 +14100,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's weapon chain — Rasensuga extends initial blade contact into a spiraling pressure sequence.",
             "mobility": false
           },
@@ -14119,7 +14119,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's ranged weapon dominance — Getsuga Shuriken Blitz extends blade control across all distances.",
             "mobility": false
           },
@@ -14138,7 +14138,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's divine blade technique — Kami Blade represents the pinnacle of his weapon mastery.",
             "mobility": false
           },
@@ -14157,7 +14157,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's speed-of-mastery blade work — Kami Blitz demonstrates his weapon genius in sustained rapid execution.",
             "mobility": false
           },
@@ -14214,7 +14214,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's mastery sequence — Samurai Combo is the elite technique chain that proves his weapon genius in execution.",
             "mobility": false
           },
@@ -14233,7 +14233,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Goo's weapon combination finisher — Meteor Inferno Blade is the devastating closing strike in his elite sword sequence.",
             "mobility": false
           },
@@ -14285,7 +14285,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -14487,8 +14487,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Jake's conviction-forward brawl — 3rd Stance represents his all-in commitment when protecting Big Deal, coming forward from the first exchange with no hesitation and no intention of giving ground.",
         "mobility": false
       },
       {
@@ -14506,8 +14506,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Jake's endurance combo — Dragon Demon Combo represents his street-fighting durability, the sustained punch chain that keeps coming even after opponents believe the initial pressure has passed.",
         "mobility": false
       },
       {
@@ -14525,8 +14525,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Jake's brawl climax — Dragon Lotus delivers the full weight of his conviction-driven striking, the culminating blow in his forward-press sequence that proves he came for the result, not the exchange.",
         "mobility": false
       },
       {
@@ -14544,8 +14544,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Jake's reach extension — Concentrated Palm Blast represents his ability to punish defensive opponents at mid-range, refusing to let them create safety by staying just outside his punching distance.",
         "mobility": false
       },
       {
@@ -14563,8 +14563,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Jake's sustained palm pressure — Twin Dragon Barrage extends the assault at range, the multi-hit sequence that denies opponents any moment to reset between the first hit and his next punching advance.",
         "mobility": false
       },
       {
@@ -14601,8 +14601,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Jake's conviction counter — 128 Palm Counter represents his willingness to absorb a strike and respond with overwhelming force, the defensive expression of his all-in brawling that punishes overcommitted attacks.",
         "mobility": false
       },
       {
@@ -14620,8 +14620,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Jake's kick angle opener — 6th Dance adds a kick entry that approaches from a different angle than his punches, preventing opponents from defending only against his straight-ahead brawling advance.",
         "mobility": false
       },
       {
@@ -14639,8 +14639,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Jake's kick extension — 9th Dance extends the kick sequence with height and arc, adding angles to his combination so that opponents cannot guard low and expect to survive his forward press.",
         "mobility": false
       },
       {
@@ -14658,7 +14658,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Ryuji-Kenichi — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "jake-kim-4x2-hotbar-Z",
@@ -14691,7 +14691,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Combat Art"
       }
     ],
@@ -14892,8 +14892,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's conviction-forward brawl — 3rd Stance represents his all-in commitment when protecting Big Deal, coming forward from the first exchange with no hesitation and no intention of giving ground.",
             "mobility": false
           },
           {
@@ -14911,8 +14911,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's endurance combo — Dragon Demon Combo represents his street-fighting durability, the sustained punch chain that keeps coming even after opponents believe the initial pressure has passed.",
             "mobility": false
           },
           {
@@ -14930,8 +14930,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's brawl climax — Dragon Lotus delivers the full weight of his conviction-driven striking, the culminating blow in his forward-press sequence that proves he came for the result, not the exchange.",
             "mobility": false
           },
           {
@@ -14949,8 +14949,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's reach extension — Concentrated Palm Blast represents his ability to punish defensive opponents at mid-range, refusing to let them create safety by staying just outside his punching distance.",
             "mobility": false
           },
           {
@@ -14968,8 +14968,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's sustained palm pressure — Twin Dragon Barrage extends the assault at range, the multi-hit sequence that denies opponents any moment to reset between the first hit and his next punching advance.",
             "mobility": false
           },
           {
@@ -15006,8 +15006,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's conviction counter — 128 Palm Counter represents his willingness to absorb a strike and respond with overwhelming force, the defensive expression of his all-in brawling that punishes overcommitted attacks.",
             "mobility": false
           },
           {
@@ -15025,8 +15025,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's kick angle opener — 6th Dance adds a kick entry that approaches from a different angle than his punches, preventing opponents from defending only against his straight-ahead brawling advance.",
             "mobility": false
           },
           {
@@ -15044,8 +15044,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's kick extension — 9th Dance extends the kick sequence with height and arc, adding angles to his combination so that opponents cannot guard low and expect to survive his forward press.",
             "mobility": false
           },
           {
@@ -15063,7 +15063,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "jake-kim-4x2-hotbar-Z",
@@ -15096,7 +15096,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -15283,8 +15283,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's conviction-forward brawl — 3rd Stance represents his all-in commitment when protecting Big Deal, coming forward from the first exchange with no hesitation and no intention of giving ground.",
             "mobility": false
           },
           {
@@ -15302,8 +15302,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's endurance combo — Dragon Demon Combo represents his street-fighting durability, the sustained punch chain that keeps coming even after opponents believe the initial pressure has passed.",
             "mobility": false
           },
           {
@@ -15321,8 +15321,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's brawl climax — Dragon Lotus delivers the full weight of his conviction-driven striking, the culminating blow in his forward-press sequence that proves he came for the result, not the exchange.",
             "mobility": false
           },
           {
@@ -15340,8 +15340,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's reach extension — Concentrated Palm Blast represents his ability to punish defensive opponents at mid-range, refusing to let them create safety by staying just outside his punching distance.",
             "mobility": false
           },
           {
@@ -15359,8 +15359,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's sustained palm pressure — Twin Dragon Barrage extends the assault at range, the multi-hit sequence that denies opponents any moment to reset between the first hit and his next punching advance.",
             "mobility": false
           },
           {
@@ -15379,7 +15379,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -15397,8 +15397,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's conviction counter — 128 Palm Counter represents his willingness to absorb a strike and respond with overwhelming force, the defensive expression of his all-in brawling that punishes overcommitted attacks.",
             "mobility": false
           },
           {
@@ -15416,8 +15416,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's kick angle opener — 6th Dance adds a kick entry that approaches from a different angle than his punches, preventing opponents from defending only against his straight-ahead brawling advance.",
             "mobility": false
           },
           {
@@ -15435,8 +15435,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's kick extension — 9th Dance extends the kick sequence with height and arc, adding angles to his combination so that opponents cannot guard low and expect to survive his forward press.",
             "mobility": false
           },
           {
@@ -15454,7 +15454,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "jake-kim-3x2-hotbar-Z",
@@ -15487,7 +15487,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -15656,8 +15656,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's conviction-forward brawl — 3rd Stance represents his all-in commitment when protecting Big Deal, coming forward from the first exchange with no hesitation and no intention of giving ground.",
             "mobility": false
           },
           {
@@ -15675,8 +15675,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's endurance combo — Dragon Demon Combo represents his street-fighting durability, the sustained punch chain that keeps coming even after opponents believe the initial pressure has passed.",
             "mobility": false
           },
           {
@@ -15694,8 +15694,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's brawl climax — Dragon Lotus delivers the full weight of his conviction-driven striking, the culminating blow in his forward-press sequence that proves he came for the result, not the exchange.",
             "mobility": false
           },
           {
@@ -15713,8 +15713,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's reach extension — Concentrated Palm Blast represents his ability to punish defensive opponents at mid-range, refusing to let them create safety by staying just outside his punching distance.",
             "mobility": false
           },
           {
@@ -15732,8 +15732,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's sustained palm pressure — Twin Dragon Barrage extends the assault at range, the multi-hit sequence that denies opponents any moment to reset between the first hit and his next punching advance.",
             "mobility": false
           },
           {
@@ -15752,7 +15752,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -15770,8 +15770,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's conviction counter — 128 Palm Counter represents his willingness to absorb a strike and respond with overwhelming force, the defensive expression of his all-in brawling that punishes overcommitted attacks.",
             "mobility": false
           },
           {
@@ -15789,8 +15789,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake Kim's durability anchor — Earth element provides a defensive layer matching his absorb-and-advance brawling. He takes hits and keeps coming forward.",
             "mobility": false
           },
           {
@@ -15808,8 +15808,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake Kim's forward ground coverage — Earth element pursuit representing his relentless advance. He presses the terrain as hard as he presses his opponents.",
             "mobility": false
           },
           {
@@ -15827,7 +15827,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "jake-kim-2x2-hotbar-Z",
@@ -15860,7 +15860,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -16030,7 +16030,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -16049,7 +16049,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -16068,8 +16068,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's reach extension — Concentrated Palm Blast represents his ability to punish defensive opponents at mid-range, refusing to let them create safety by staying just outside his punching distance.",
             "mobility": false
           },
           {
@@ -16087,8 +16087,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's sustained palm pressure — Twin Dragon Barrage extends the assault at range, the multi-hit sequence that denies opponents any moment to reset between the first hit and his next advance.",
             "mobility": false
           },
           {
@@ -16106,8 +16106,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake's conviction counter — 128 Palm Counter represents his willingness to absorb a strike and respond with overwhelming force, the defensive expression of his all-in brawling commitment.",
             "mobility": false
           },
           {
@@ -16126,7 +16126,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -16144,8 +16144,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake Kim's durability anchor — Earth element defensive grounding matching his absorb-and-advance brawl style. Takes hits; keeps coming.",
             "mobility": false
           },
           {
@@ -16163,8 +16163,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake Kim's forward ground coverage — Earth element representing his relentless advance into the fight. He presses the terrain as hard as he presses his opponents.",
             "mobility": false
           },
           {
@@ -16182,8 +16182,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Jake Kim's ranged presence — Order element light pressure extending his threat beyond melee range. Represents his ability to control space in multi-opponent street scenarios.",
             "mobility": false
           },
           {
@@ -16234,7 +16234,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -16433,8 +16433,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Eli's feral first strike — 3rd Stance represents his wilderness-honed instinct to immediately close and commit, the animalistic forward burst that shocks opponents expecting hesitation from a fighter of his size.",
         "mobility": false
       },
       {
@@ -16452,8 +16452,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Eli's ferocious pursuit chain — Dragon Demon Combo represents his unrelenting forward aggression, the multi-hit assault that continues even as opponents scramble to create distance from his grappling range.",
         "mobility": false
       },
       {
@@ -16471,8 +16471,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Eli's savage culmination — Dragon Lotus delivers the peak force of his wild fighting style, the devastating close-range burst that ends the pursuit for opponents who could not escape before he closed the distance.",
         "mobility": false
       },
       {
@@ -16490,8 +16490,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Eli's reaction-eliminating speed — Ultimate Flash represents the sudden acceleration that makes his attacks feel like they arrive before opponents can process his commitment, his abnormal physical development producing a pace that outstrips normal human reaction windows.",
         "mobility": false
       },
       {
@@ -16509,8 +16509,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Eli's pursuit repositioning — Time Jump represents how he tracks opponents who flee his grappling range, the instant positional shift that eliminates the distance they tried to open and forces the fight back into his dangerous close-range territory.",
         "mobility": false
       },
       {
@@ -16547,8 +16547,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Eli's fighting pace peak — Time Stop represents the moment his overwhelming pace completely freezes the opponent's ability to act, the sensation opponents describe when fighting someone whose physical gifts create a tempo gap they simply cannot close.",
         "mobility": false
       },
       {
@@ -16566,8 +16566,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Eli's raw power eruption — Concentrated Palm Blast represents the explosive force that his abnormal physical development produces at mid-range, a single-strike output that most fighters at his level cannot match.",
         "mobility": false
       },
       {
@@ -16585,8 +16585,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Eli's sustained power surge — Twin Dragon Barrage continues the palm eruption with relentless output, demonstrating that his power is not a one-shot peak but a sustained physical reality from his wilderness development.",
         "mobility": false
       },
       {
@@ -16604,7 +16604,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Ryuji-Kenichi — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "eli-jang-4x2-hotbar-Z",
@@ -16637,7 +16637,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Weapon"
       }
     ],
@@ -16838,8 +16838,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's feral first strike — 3rd Stance represents his wilderness-honed instinct to immediately close and commit, the animalistic forward burst that shocks opponents expecting hesitation from a fighter of his size.",
             "mobility": false
           },
           {
@@ -16857,8 +16857,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's ferocious pursuit chain — Dragon Demon Combo represents his unrelenting forward aggression, the multi-hit assault that continues even as opponents scramble to create distance from his grappling range.",
             "mobility": false
           },
           {
@@ -16876,8 +16876,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's savage culmination — Dragon Lotus delivers the peak force of his wild fighting style, the devastating close-range burst that ends the pursuit for opponents who could not escape before he closed the distance.",
             "mobility": false
           },
           {
@@ -16895,8 +16895,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's reaction-eliminating speed — Ultimate Flash represents the sudden acceleration that makes his attacks feel like they arrive before opponents can process his commitment, his abnormal physical development producing a pace that outstrips normal human reaction windows.",
             "mobility": false
           },
           {
@@ -16914,8 +16914,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's pursuit repositioning — Time Jump represents how he tracks opponents who flee his grappling range, the instant positional shift that eliminates the distance they tried to open and forces the fight back into his dangerous close-range territory.",
             "mobility": false
           },
           {
@@ -16952,8 +16952,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's fighting pace peak — Time Stop represents the moment his overwhelming pace completely freezes the opponent's ability to act, the sensation opponents describe when fighting someone whose physical gifts create a tempo gap they simply cannot close.",
             "mobility": false
           },
           {
@@ -16971,8 +16971,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's raw power eruption — Concentrated Palm Blast represents the explosive force that his abnormal physical development produces at mid-range, a single-strike output that most fighters at his level cannot match.",
             "mobility": false
           },
           {
@@ -16990,8 +16990,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's sustained power surge — Twin Dragon Barrage continues the palm eruption with relentless output, demonstrating that his power is not a one-shot peak but a sustained physical reality from his wilderness development.",
             "mobility": false
           },
           {
@@ -17009,7 +17009,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "eli-jang-4x2-hotbar-Z",
@@ -17042,7 +17042,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -17230,8 +17230,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's feral first strike — 3rd Stance represents his wilderness-honed instinct to immediately close and commit, the animalistic forward burst that shocks opponents expecting hesitation from a fighter of his size.",
             "mobility": false
           },
           {
@@ -17249,8 +17249,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's ferocious pursuit chain — Dragon Demon Combo represents his unrelenting forward aggression, the multi-hit assault that continues even as opponents scramble to create distance from his grappling range.",
             "mobility": false
           },
           {
@@ -17268,8 +17268,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's savage culmination — Dragon Lotus delivers the peak force of his wild fighting style, the devastating close-range burst that ends the pursuit for opponents who could not escape before he closed the distance.",
             "mobility": false
           },
           {
@@ -17287,8 +17287,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's raw power eruption — Concentrated Palm Blast represents the explosive force that his abnormal physical development produces at mid-range, a single-strike output that most fighters at his level cannot match.",
             "mobility": false
           },
           {
@@ -17306,8 +17306,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's sustained power surge — Twin Dragon Barrage continues the palm eruption with relentless output, demonstrating that his power is not a one-shot peak but a sustained physical reality from his wilderness development.",
             "mobility": false
           },
           {
@@ -17326,7 +17326,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -17344,8 +17344,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's power counter — 128 Palm Counter represents his ability to absorb an incoming strike and respond from his abnormal physical reserves, punishing opponents who think they can land cleanly against his wild fighting style.",
             "mobility": false
           },
           {
@@ -17363,8 +17363,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's chain restraint — Chains Of Guard represents his ability to lock opponents down once he has closed the distance, the control mechanism that converts his pursuit into inescapable dominance.",
             "mobility": false
           },
           {
@@ -17382,8 +17382,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's chain burst — Unchained represents the sudden explosive release of built-up restraint force, the decisive output that follows once he has trapped the opponent and they have no remaining escape.",
             "mobility": false
           },
           {
@@ -17401,7 +17401,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "eli-jang-3x2-hotbar-Z",
@@ -17434,7 +17434,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -17604,8 +17604,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's feral first strike — 3rd Stance represents his wilderness-honed instinct to immediately close and commit, the animalistic forward burst that shocks opponents expecting hesitation from a fighter of his size.",
             "mobility": false
           },
           {
@@ -17623,8 +17623,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's ferocious pursuit chain — Dragon Demon Combo represents his unrelenting forward aggression, the multi-hit assault that continues even as opponents scramble to create distance from his grappling range.",
             "mobility": false
           },
           {
@@ -17642,8 +17642,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's savage culmination — Dragon Lotus delivers the peak force of his wild fighting style, the devastating close-range burst that ends the pursuit for opponents who could not escape before he closed the distance.",
             "mobility": false
           },
           {
@@ -17661,8 +17661,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's chain trap — Chains Of Guard represents his brutal restraint style once he has closed the distance, locking opponents in place and removing any remaining escape option from his grip.",
             "mobility": false
           },
           {
@@ -17680,8 +17680,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's chain burst release — Unchained represents the sudden explosive output following the restraint, converting his trap into decisive damage at close range.",
             "mobility": false
           },
           {
@@ -17700,7 +17700,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -17718,8 +17718,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's sustained chain drain — Chain Chi Drain represents the attrition dimension of his control style, maintaining his grip advantage while slowly exhausting the trapped opponent through sustained contact.",
             "mobility": false
           },
           {
@@ -17737,8 +17737,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli Jang's wild disorientation — Gale vortex matching the chaotic unpredictability of his wilderness-forged movement. No set pattern; pure instinct from fighting to survive.",
             "mobility": false
           },
           {
@@ -17756,8 +17756,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli Jang's disorienting impact — Gale wind shock representing the jarring, unpredictable hits of his animalistic attack style. Fast and unreadable, not formal or trained.",
             "mobility": false
           },
           {
@@ -17775,7 +17775,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "eli-jang-2x2-hotbar-Z",
@@ -17808,7 +17808,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -17979,7 +17979,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -17998,7 +17998,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -18017,8 +18017,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's chain trap — Chains Of Guard represents his brutal restraint style once he has closed the distance, locking opponents in place and removing their escape from his grip.",
             "mobility": false
           },
           {
@@ -18036,8 +18036,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's chain burst release — Unchained represents the sudden explosive output following the restraint, converting his trap into decisive close-range damage.",
             "mobility": false
           },
           {
@@ -18055,8 +18055,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli's sustained chain drain — Chain Chi Drain represents the attrition dimension of his control, maintaining his grip advantage while exhausting the trapped opponent.",
             "mobility": false
           },
           {
@@ -18075,7 +18075,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -18093,8 +18093,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli Jang's wild disorientation — Gale vortex representing the chaotic movement he developed in the wilderness. Unreadable, untrained, purely instinctual.",
             "mobility": false
           },
           {
@@ -18112,8 +18112,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli Jang's disorienting strike — Gale wind shock representing the sudden, jarring impact of his feral attack style. No telegraph; all wild reflex.",
             "mobility": false
           },
           {
@@ -18131,8 +18131,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Eli Jang's wilderness toughness — Earth element representing the raw physical endurance built from surviving conditions that tried to kill him. Not martial conditioning; survival-forged resilience.",
             "mobility": false
           },
           {
@@ -18183,7 +18183,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -18383,8 +18383,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Zack's Iron Fortress advance — 3rd Stance represents the disciplined forward step of his boxing foundation, the structured approach from a trained stance that initiates his combination sequence rather than raw aggression.",
         "mobility": false
       },
       {
@@ -18402,8 +18402,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Zack's boxing combination — Dragon Demon Combo represents the sustained punch sequence of Iron Fortress, the disciplined multi-hit flow that comes from years of formal boxing training, not instinct.",
         "mobility": false
       },
       {
@@ -18421,8 +18421,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Primary character identity and pressure engine.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Zack's boxing pressure burst — Dragon Lotus represents the guard-breaking output of his boxing, the push through defensive postures achieved through technical footwork and precise timing rather than raw strength.",
         "mobility": false
       },
       {
@@ -18440,8 +18440,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Zack's footwork approximation — 6th Dance represents his lower-body ring work in Shindo's system, not kick techniques; his disciplined footwork angles his punches from positions opponents cannot cleanly counter.",
         "mobility": false
       },
       {
@@ -18459,8 +18459,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Zack's footwork extension — 9th Dance continues the positional ring work, the second movement layer that repositions him to the counterpunching angle that Iron Fortress boxing depends on.",
         "mobility": false
       },
       {
@@ -18497,8 +18497,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Zack's heavy footwork entry — Tiger Lotus approximates the powerful stance shift that precedes his hardest counterpunching, the moment Iron Fortress defense converts to overwhelming offense.",
         "mobility": false
       },
       {
@@ -18516,8 +18516,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Zack's boxing speed — Ultimate Flash represents the overwhelming pace at which his punches land; opponents describe them as arriving before they can react, making this his Iron Fortress speed ceiling without supernatural explanation.",
         "mobility": false
       },
       {
@@ -18535,8 +18535,8 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Zack's boxing footwork pace — Time Jump represents his ring movement speed, closing or creating distance at a rate that prevents opponents from establishing defensive footwork before his next combination arrives.",
         "mobility": false
       },
       {
@@ -18554,7 +18554,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Ryuji-Kenichi — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "zack-lee-4x2-hotbar-Z",
@@ -18587,7 +18587,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Combat Art"
       }
     ],
@@ -18788,8 +18788,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's Iron Fortress advance — 3rd Stance represents the disciplined forward step of his boxing foundation, the structured approach from a trained stance that initiates his combination sequence rather than raw aggression.",
             "mobility": false
           },
           {
@@ -18807,8 +18807,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's boxing combination — Dragon Demon Combo represents the sustained punch sequence of Iron Fortress, the disciplined multi-hit flow that comes from years of formal boxing training, not instinct.",
             "mobility": false
           },
           {
@@ -18826,8 +18826,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's boxing pressure burst — Dragon Lotus represents the guard-breaking output of his boxing, the push through defensive postures achieved through technical footwork and precise timing rather than raw strength.",
             "mobility": false
           },
           {
@@ -18845,8 +18845,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's footwork approximation — 6th Dance represents his lower-body ring work in Shindo's system, not kick techniques; his disciplined footwork angles his punches from positions opponents cannot cleanly counter.",
             "mobility": false
           },
           {
@@ -18864,8 +18864,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's footwork extension — 9th Dance continues the positional ring work, the second movement layer that repositions him to the counterpunching angle that Iron Fortress boxing depends on.",
             "mobility": false
           },
           {
@@ -18902,8 +18902,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's heavy footwork entry — Tiger Lotus approximates the powerful stance shift that precedes his hardest counterpunching, the moment Iron Fortress defense converts to overwhelming offense.",
             "mobility": false
           },
           {
@@ -18921,8 +18921,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's boxing speed — Ultimate Flash represents the overwhelming pace at which his punches land; opponents describe them as arriving before they can react, making this his Iron Fortress speed ceiling without supernatural explanation.",
             "mobility": false
           },
           {
@@ -18940,8 +18940,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's boxing footwork pace — Time Jump represents his ring movement speed, closing or creating distance at a rate that prevents opponents from establishing defensive footwork before his next combination arrives.",
             "mobility": false
           },
           {
@@ -18959,7 +18959,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "zack-lee-4x2-hotbar-Z",
@@ -18992,7 +18992,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -19179,8 +19179,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's Iron Fortress advance — 3rd Stance represents the disciplined forward step of his boxing foundation, the structured approach from a trained stance that initiates his combination sequence rather than raw aggression.",
             "mobility": false
           },
           {
@@ -19198,8 +19198,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's boxing combination — Dragon Demon Combo represents the sustained punch sequence of Iron Fortress, the disciplined multi-hit flow that comes from years of formal boxing training, not instinct.",
             "mobility": false
           },
           {
@@ -19217,8 +19217,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's boxing pressure burst — Dragon Lotus represents the guard-breaking output of his boxing, the push through defensive postures achieved through technical footwork and precise timing rather than raw strength.",
             "mobility": false
           },
           {
@@ -19236,8 +19236,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's footwork approximation — 6th Dance represents his lower-body ring work in Shindo's system, not kick techniques; his disciplined footwork angles his punches from positions opponents cannot cleanly counter.",
             "mobility": false
           },
           {
@@ -19255,8 +19255,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's footwork extension — 9th Dance continues the positional ring work, the second movement layer that repositions him to the counterpunching angle that Iron Fortress boxing depends on.",
             "mobility": false
           },
           {
@@ -19275,7 +19275,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -19293,8 +19293,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's heavy footwork entry — Tiger Lotus approximates the powerful stance shift that precedes his hardest counterpunching, the moment Iron Fortress defense converts to overwhelming offense.",
             "mobility": false
           },
           {
@@ -19312,8 +19312,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's boxing range extension — Concentrated Palm Blast supplements his close-range boxing by punishing opponents who try to create distance, covering the gap between boxing range and mid-range fighters.",
             "mobility": false
           },
           {
@@ -19331,8 +19331,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's sustained range pressure — Twin Dragon Barrage extends the mid-range supplement, the multi-hit output that keeps defensive opponents from resetting safely outside boxing distance.",
             "mobility": false
           },
           {
@@ -19350,7 +19350,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "zack-lee-3x2-hotbar-Z",
@@ -19383,7 +19383,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -19552,8 +19552,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's Iron Fortress advance — 3rd Stance represents the disciplined forward step of his boxing foundation, the structured approach from a trained stance that initiates his combination sequence rather than raw aggression.",
             "mobility": false
           },
           {
@@ -19571,8 +19571,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's boxing combination — Dragon Demon Combo represents the sustained punch sequence of Iron Fortress, the disciplined multi-hit flow that comes from years of formal boxing training, not instinct.",
             "mobility": false
           },
           {
@@ -19590,8 +19590,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Primary character identity and pressure engine.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's boxing pressure burst — Dragon Lotus represents the guard-breaking output of his boxing, the push through defensive postures achieved through technical footwork and precise timing rather than raw strength.",
             "mobility": false
           },
           {
@@ -19609,8 +19609,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's footwork approximation — 6th Dance represents his lower-body ring work in Shindo's system, not kick techniques; his disciplined footwork angles his punches from positions opponents cannot cleanly counter.",
             "mobility": false
           },
           {
@@ -19628,8 +19628,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's footwork extension — 9th Dance continues the positional ring work, the movement layer that repositions him to the counterpunching angle Iron Fortress boxing depends on.",
             "mobility": false
           },
           {
@@ -19648,7 +19648,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -19666,8 +19666,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's heavy footwork entry — Tiger Lotus approximates the powerful stance shift that precedes his hardest counterpunching, the moment Iron Fortress defense converts to offense.",
             "mobility": false
           },
           {
@@ -19685,8 +19685,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack Lee's Iron Fortress foundation — Earth element representing the defensive durability accumulated through his boxing career. The longer the fight, the stronger his position.",
             "mobility": false
           },
           {
@@ -19704,8 +19704,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack Lee's boxing speed approximation — Lightning element represents the split-second timing his Iron Fortress punches operate at. Gameplay compromise for punch velocity; not a supernatural power.",
             "mobility": false
           },
           {
@@ -19723,7 +19723,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Ryuji-Kenichi — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "zack-lee-2x2-hotbar-Z",
@@ -19756,7 +19756,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -19926,7 +19926,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -19945,7 +19945,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -19964,8 +19964,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's boxing range extension — Concentrated Palm Blast supplements his close-range boxing by punishing opponents who try to create distance outside his punch range.",
             "mobility": false
           },
           {
@@ -19983,8 +19983,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's sustained range pressure — Twin Dragon Barrage extends the mid-range supplement, keeping opponents from resetting safely beyond his boxing distance.",
             "mobility": false
           },
           {
@@ -20002,8 +20002,8 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack's boxing counter supplement — 128 Palm Counter represents a disciplined counter response punishing opponents who overcommit to attacking his defensive boxing posture.",
             "mobility": false
           },
           {
@@ -20022,7 +20022,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -20040,8 +20040,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack Lee's Iron Fortress durability — Earth element represents the sustained defensive toughness his boxing style builds over a fight. He outlasts his opponents.",
             "mobility": false
           },
           {
@@ -20059,8 +20059,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack Lee's boxing speed approximation — Lightning element represents his punch timing precision. Gameplay compromise; his speed is human-level boxing speed, not supernatural.",
             "mobility": false
           },
           {
@@ -20078,8 +20078,8 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Zack Lee's Iron Fortress ground — Earth element defensive anchor matching his durability-focused boxing approach. Takes the fight on his terms, not the opponent's.",
             "mobility": false
           },
           {
@@ -20130,7 +20130,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -20333,7 +20333,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Six Paths Sage Mode",
         "mobility": false
       },
@@ -20352,7 +20352,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Six Paths Sage Mode",
         "mobility": false
       },
@@ -20371,7 +20371,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Rasengan offense",
         "mobility": false
       },
@@ -20390,7 +20390,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Rasengan offense",
         "mobility": false
       },
@@ -20409,7 +20409,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Asura inheritance",
         "mobility": false
       },
@@ -20428,7 +20428,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+        "usageNotes": "Move identity (Time Style: Star Kick) matches the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Kurama-speed burst kick — Pika-Senko Star Kick on BL4's sole T slot.",
         "mobility": false
       },
@@ -20447,7 +20447,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Asura inheritance",
         "mobility": false
       },
@@ -20466,7 +20466,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Exceptional speed",
         "mobility": false
       },
@@ -20485,7 +20485,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Exceptional speed",
         "mobility": false
       },
@@ -20504,7 +20504,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Six-Paths-Narumaki — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-naruto-4x2-hotbar-Z",
@@ -20521,7 +20521,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Kor Tailed Spirit Generation 2",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-naruto-4x2-hotbar-Q",
@@ -20537,7 +20537,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Combat Art"
       }
     ],
@@ -20759,7 +20759,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Six Paths Sage Mode",
             "mobility": false
           },
@@ -20778,7 +20778,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Six Paths Sage Mode",
             "mobility": false
           },
@@ -20797,7 +20797,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan offense",
             "mobility": false
           },
@@ -20816,7 +20816,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan offense",
             "mobility": false
           },
@@ -20835,7 +20835,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Asura inheritance",
             "mobility": false
           },
@@ -20854,7 +20854,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+            "usageNotes": "Move identity (Time Style: Star Kick) matches the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kurama-speed burst kick — Pika-Senko Star Kick on BL4's sole T slot.",
             "mobility": false
           },
@@ -20873,7 +20873,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Asura inheritance",
             "mobility": false
           },
@@ -20892,7 +20892,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Exceptional speed",
             "mobility": false
           },
@@ -20911,7 +20911,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Exceptional speed",
             "mobility": false
           },
@@ -20930,7 +20930,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Six-Paths-Narumaki — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-naruto-4x2-hotbar-Z",
@@ -20947,7 +20947,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Kor Tailed Spirit Generation 2",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-naruto-4x2-hotbar-Q",
@@ -20963,7 +20963,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -21155,7 +21155,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Six Paths Sage Mode",
             "mobility": false
           },
@@ -21174,7 +21174,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Six Paths Sage Mode",
             "mobility": false
           },
@@ -21193,7 +21193,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan offense",
             "mobility": false
           },
@@ -21212,7 +21212,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan offense",
             "mobility": false
           },
@@ -21231,7 +21231,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Asura inheritance",
             "mobility": false
           },
@@ -21269,7 +21269,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Asura inheritance",
             "mobility": false
           },
@@ -21288,7 +21288,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind Release neutral and separation.",
             "mobility": false
           },
@@ -21307,7 +21307,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind Release neutral and separation.",
             "mobility": false
           },
@@ -21326,7 +21326,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Six-Paths-Narumaki — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-naruto-3x2-hotbar-Z",
@@ -21343,7 +21343,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Kor Tailed Spirit Generation 2",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-naruto-3x2-hotbar-Q",
@@ -21359,7 +21359,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -21534,7 +21534,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Six Paths Sage Mode",
             "mobility": false
           },
@@ -21553,7 +21553,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Six Paths Sage Mode",
             "mobility": false
           },
@@ -21572,7 +21572,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan offense",
             "mobility": false
           },
@@ -21591,7 +21591,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan offense",
             "mobility": false
           },
@@ -21610,7 +21610,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind Release neutral and separation.",
             "mobility": false
           },
@@ -21648,7 +21648,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind Release neutral and separation.",
             "mobility": false
           },
@@ -21667,7 +21667,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Six Paths chakra visual.",
             "mobility": false
           },
@@ -21703,7 +21703,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Six-Paths-Narumaki — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-naruto-2x2-hotbar-Z",
@@ -21720,7 +21720,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Kor Tailed Spirit Generation 2",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-naruto-2x2-hotbar-Q",
@@ -21736,7 +21736,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -21911,7 +21911,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan offense",
             "mobility": false
           },
@@ -21930,7 +21930,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan offense",
             "mobility": false
           },
@@ -21949,7 +21949,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Physical control",
             "mobility": false
           },
@@ -21968,7 +21968,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Physical control",
             "mobility": false
           },
@@ -21987,7 +21987,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind Release neutral and separation.",
             "mobility": false
           },
@@ -22025,7 +22025,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind Release neutral and separation.",
             "mobility": false
           },
@@ -22044,7 +22044,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Six Paths chakra visual.",
             "mobility": false
           },
@@ -22080,7 +22080,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Narumaki — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-naruto-accessible-hotbar-Z",
@@ -22097,7 +22097,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Kor Tailed Spirit Generation 2",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-naruto-accessible-hotbar-Q",
@@ -22113,7 +22113,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -22326,7 +22326,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Rinnegan switching",
         "mobility": false
       },
@@ -22345,7 +22345,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Rinnegan switching",
         "mobility": false
       },
@@ -22364,7 +22364,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Sharingan arsenal",
         "mobility": false
       },
@@ -22383,7 +22383,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Sharingan arsenal",
         "mobility": false
       },
@@ -22402,7 +22402,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Sword pressure",
         "mobility": false
       },
@@ -22421,7 +22421,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Move identity (Copy Style: Inferno Blaze) is catalog-verified; gameplay hit windows, guard behavior, and current patch details require live game testing.",
+        "usageNotes": "Move identity (Copy Style: Inferno Blaze) matches the archive's Shindo catalog. No independent external verification completed; gameplay hit windows and guard behavior require live testing.",
         "characterAbility": "Ancestral Indra flame — Copy Style Inferno Blaze on BL4's sole T slot.",
         "mobility": false
       },
@@ -22440,7 +22440,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Sword pressure",
         "mobility": false
       },
@@ -22459,7 +22459,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Indra lineage",
         "mobility": false
       },
@@ -22478,7 +22478,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Indra lineage",
         "mobility": false
       },
@@ -22497,7 +22497,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Raion-Rengoku — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-sasuke-4x2-hotbar-Z",
@@ -22530,7 +22530,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Weapon"
       }
     ],
@@ -22749,7 +22749,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rinnegan switching",
             "mobility": false
           },
@@ -22768,7 +22768,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rinnegan switching",
             "mobility": false
           },
@@ -22787,7 +22787,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sharingan arsenal",
             "mobility": false
           },
@@ -22806,7 +22806,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sharingan arsenal",
             "mobility": false
           },
@@ -22825,7 +22825,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sword pressure",
             "mobility": false
           },
@@ -22844,7 +22844,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Move identity (Copy Style: Inferno Blaze) is catalog-verified; gameplay hit windows, guard behavior, and current patch details require live game testing.",
+            "usageNotes": "Move identity (Copy Style: Inferno Blaze) matches the archive's Shindo catalog. No independent external verification completed; gameplay hit windows and guard behavior require live testing.",
             "characterAbility": "Ancestral Indra flame — Copy Style Inferno Blaze on BL4's sole T slot.",
             "mobility": false
           },
@@ -22863,7 +22863,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sword pressure",
             "mobility": false
           },
@@ -22882,7 +22882,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Indra lineage",
             "mobility": false
           },
@@ -22901,7 +22901,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Indra lineage",
             "mobility": false
           },
@@ -22920,7 +22920,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Raion-Rengoku — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-sasuke-4x2-hotbar-Z",
@@ -22953,7 +22953,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -23145,7 +23145,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rinnegan switching",
             "mobility": false
           },
@@ -23164,7 +23164,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rinnegan switching",
             "mobility": false
           },
@@ -23183,7 +23183,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sharingan arsenal",
             "mobility": false
           },
@@ -23202,7 +23202,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sharingan arsenal",
             "mobility": false
           },
@@ -23221,7 +23221,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sword pressure",
             "mobility": false
           },
@@ -23259,7 +23259,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sword pressure",
             "mobility": false
           },
@@ -23278,7 +23278,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Chidori-like control.",
             "mobility": false
           },
@@ -23297,7 +23297,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Chidori-like control.",
             "mobility": false
           },
@@ -23316,7 +23316,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Raion-Rengoku — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-sasuke-3x2-hotbar-Z",
@@ -23349,7 +23349,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -23524,7 +23524,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rinnegan switching",
             "mobility": false
           },
@@ -23543,7 +23543,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rinnegan switching",
             "mobility": false
           },
@@ -23562,7 +23562,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sharingan arsenal",
             "mobility": false
           },
@@ -23581,7 +23581,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sharingan arsenal",
             "mobility": false
           },
@@ -23600,7 +23600,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Chidori-like control.",
             "mobility": false
           },
@@ -23638,7 +23638,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Chidori-like control.",
             "mobility": false
           },
@@ -23657,7 +23657,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Amaterasu movement support.",
             "mobility": false
           },
@@ -23693,7 +23693,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Raion-Rengoku — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-sasuke-2x2-hotbar-Z",
@@ -23726,7 +23726,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -23902,7 +23902,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Prediction and reactions",
             "mobility": false
           },
@@ -23921,7 +23921,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Prediction and reactions",
             "mobility": false
           },
@@ -23940,7 +23940,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sharingan arsenal",
             "mobility": false
           },
@@ -23959,7 +23959,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sharingan arsenal",
             "mobility": false
           },
@@ -23978,7 +23978,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Chidori-like control.",
             "mobility": false
           },
@@ -24016,7 +24016,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Chidori-like control.",
             "mobility": false
           },
@@ -24035,7 +24035,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Amaterasu movement support.",
             "mobility": false
           },
@@ -24071,7 +24071,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Raion-Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-sasuke-accessible-hotbar-Z",
@@ -24104,7 +24104,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -24318,7 +24318,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Ten-Tails Madara",
         "mobility": false
       },
@@ -24337,7 +24337,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Ten-Tails Madara",
         "mobility": false
       },
@@ -24356,7 +24356,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Perfect Susanoo",
         "mobility": false
       },
@@ -24375,7 +24375,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Perfect Susanoo",
         "mobility": false
       },
@@ -24394,7 +24394,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Wood Release and Six Paths power",
         "mobility": false
       },
@@ -24413,7 +24413,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Move identity (Rengoku Style: Inferno Engage) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+        "usageNotes": "Move identity (Rengoku Style: Inferno Engage) matches the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Rengoku inferno initiation — Inferno Engage on BL4's sole T slot.",
         "mobility": false
       },
@@ -24432,7 +24432,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Wood Release and Six Paths power",
         "mobility": false
       },
@@ -24451,7 +24451,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Universal pull and repulsion",
         "mobility": false
       },
@@ -24470,7 +24470,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Universal pull and repulsion",
         "mobility": false
       },
@@ -24489,7 +24489,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Shindai-Rengoku — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-madara-4x2-hotbar-Z",
@@ -24506,7 +24506,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Tyn Tailed Spirit Generation 2",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-madara-4x2-hotbar-Q",
@@ -24522,7 +24522,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Weapon"
       }
     ],
@@ -24742,7 +24742,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ten-Tails Madara",
             "mobility": false
           },
@@ -24761,7 +24761,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ten-Tails Madara",
             "mobility": false
           },
@@ -24780,7 +24780,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Perfect Susanoo",
             "mobility": false
           },
@@ -24799,7 +24799,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Perfect Susanoo",
             "mobility": false
           },
@@ -24818,7 +24818,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wood Release and Six Paths power",
             "mobility": false
           },
@@ -24837,7 +24837,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Move identity (Rengoku Style: Inferno Engage) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+            "usageNotes": "Move identity (Rengoku Style: Inferno Engage) matches the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rengoku inferno initiation — Inferno Engage on BL4's sole T slot.",
             "mobility": false
           },
@@ -24856,7 +24856,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wood Release and Six Paths power",
             "mobility": false
           },
@@ -24875,7 +24875,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Universal pull and repulsion",
             "mobility": false
           },
@@ -24894,7 +24894,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Universal pull and repulsion",
             "mobility": false
           },
@@ -24913,7 +24913,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Shindai-Rengoku — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-madara-4x2-hotbar-Z",
@@ -24930,7 +24930,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Tyn Tailed Spirit Generation 2",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-madara-4x2-hotbar-Q",
@@ -24946,7 +24946,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -25139,7 +25139,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ten-Tails Madara",
             "mobility": false
           },
@@ -25158,7 +25158,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ten-Tails Madara",
             "mobility": false
           },
@@ -25177,7 +25177,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Perfect Susanoo",
             "mobility": false
           },
@@ -25196,7 +25196,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Perfect Susanoo",
             "mobility": false
           },
@@ -25215,7 +25215,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Universal pull and repulsion",
             "mobility": false
           },
@@ -25253,7 +25253,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Universal pull and repulsion",
             "mobility": false
           },
@@ -25272,7 +25272,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Massive Fire Release.",
             "mobility": false
           },
@@ -25291,7 +25291,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Massive Fire Release.",
             "mobility": false
           },
@@ -25310,7 +25310,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Shindai-Rengoku — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-madara-3x2-hotbar-Z",
@@ -25327,7 +25327,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Tyn Tailed Spirit Generation 2",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-madara-3x2-hotbar-Q",
@@ -25343,7 +25343,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -25518,7 +25518,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ten-Tails Madara",
             "mobility": false
           },
@@ -25537,7 +25537,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Ten-Tails Madara",
             "mobility": false
           },
@@ -25556,7 +25556,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Perfect Susanoo",
             "mobility": false
           },
@@ -25575,7 +25575,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Perfect Susanoo",
             "mobility": false
           },
@@ -25594,7 +25594,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Massive Fire Release.",
             "mobility": false
           },
@@ -25632,7 +25632,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Massive Fire Release.",
             "mobility": false
           },
@@ -25651,7 +25651,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Earth defense and terrain control.",
             "mobility": false
           },
@@ -25687,7 +25687,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Shindai-Rengoku — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-madara-2x2-hotbar-Z",
@@ -25704,7 +25704,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Tyn Tailed Spirit Generation 2",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-madara-2x2-hotbar-Q",
@@ -25720,7 +25720,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -25896,7 +25896,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Prediction and reactions",
             "mobility": false
           },
@@ -25915,7 +25915,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Prediction and reactions",
             "mobility": false
           },
@@ -25934,7 +25934,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Universal pull and repulsion",
             "mobility": false
           },
@@ -25953,7 +25953,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Universal pull and repulsion",
             "mobility": false
           },
@@ -25972,7 +25972,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Massive Fire Release.",
             "mobility": false
           },
@@ -26010,7 +26010,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Massive Fire Release.",
             "mobility": false
           },
@@ -26029,7 +26029,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Earth defense and terrain control.",
             "mobility": false
           },
@@ -26065,7 +26065,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Rengoku — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-madara-accessible-hotbar-Z",
@@ -26082,7 +26082,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Tyn Tailed Spirit Generation 2",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-madara-accessible-hotbar-Q",
@@ -26098,7 +26098,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -26311,7 +26311,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Marked teleport chains",
         "mobility": false
       },
@@ -26330,7 +26330,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Marked teleport chains",
         "mobility": false
       },
@@ -26349,7 +26349,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Yellow Flash speed",
         "mobility": false
       },
@@ -26368,7 +26368,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Yellow Flash speed",
         "mobility": false
       },
@@ -26387,7 +26387,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Rasengan technique",
         "mobility": false
       },
@@ -26406,7 +26406,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+        "usageNotes": "Move identity (Time Style: Star Kick) matches the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Flying Thunder God speed approximation — Pika-Senko Star Kick used as fastest available BL4 pressure move; FTG is teleportation, not a kick move.",
         "mobility": false
       },
@@ -26425,7 +26425,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Rasengan technique",
         "mobility": false
       },
@@ -26444,7 +26444,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Exceptional speed",
         "mobility": false
       },
@@ -26463,7 +26463,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Exceptional speed",
         "mobility": false
       },
@@ -26482,7 +26482,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Minakaze — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-minato-4x2-hotbar-Z",
@@ -26499,7 +26499,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Kor Tailed Spirit Generation 2",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-minato-4x2-hotbar-Q",
@@ -26515,7 +26515,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Weapon"
       }
     ],
@@ -26739,7 +26739,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Marked teleport chains",
             "mobility": false
           },
@@ -26758,7 +26758,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Marked teleport chains",
             "mobility": false
           },
@@ -26777,7 +26777,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Yellow Flash speed",
             "mobility": false
           },
@@ -26796,7 +26796,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Yellow Flash speed",
             "mobility": false
           },
@@ -26815,7 +26815,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan technique",
             "mobility": false
           },
@@ -26834,7 +26834,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+            "usageNotes": "Move identity (Time Style: Star Kick) matches the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Flying Thunder God speed approximation — Pika-Senko Star Kick used as fastest available BL4 pressure move; FTG is teleportation, not a kick move.",
             "mobility": false
           },
@@ -26853,7 +26853,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan technique",
             "mobility": false
           },
@@ -26872,7 +26872,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Exceptional speed",
             "mobility": false
           },
@@ -26891,7 +26891,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Exceptional speed",
             "mobility": false
           },
@@ -26910,7 +26910,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Minakaze — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-minato-4x2-hotbar-Z",
@@ -26927,7 +26927,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Kor Tailed Spirit Generation 2",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-minato-4x2-hotbar-Q",
@@ -26943,7 +26943,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -27139,7 +27139,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Marked teleport chains",
             "mobility": false
           },
@@ -27158,7 +27158,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Marked teleport chains",
             "mobility": false
           },
@@ -27177,7 +27177,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Yellow Flash speed",
             "mobility": false
           },
@@ -27196,7 +27196,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Yellow Flash speed",
             "mobility": false
           },
@@ -27215,7 +27215,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan technique",
             "mobility": false
           },
@@ -27253,7 +27253,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan technique",
             "mobility": false
           },
@@ -27272,7 +27272,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind neutral and separation.",
             "mobility": false
           },
@@ -27291,7 +27291,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind neutral and separation.",
             "mobility": false
           },
@@ -27310,7 +27310,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Minakaze — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-minato-3x2-hotbar-Z",
@@ -27327,7 +27327,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Kor Tailed Spirit Generation 2",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-minato-3x2-hotbar-Q",
@@ -27343,7 +27343,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -27519,7 +27519,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Marked teleport chains",
             "mobility": false
           },
@@ -27538,7 +27538,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Marked teleport chains",
             "mobility": false
           },
@@ -27557,7 +27557,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Yellow Flash speed",
             "mobility": false
           },
@@ -27576,7 +27576,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Yellow Flash speed",
             "mobility": false
           },
@@ -27595,7 +27595,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind neutral and separation.",
             "mobility": false
           },
@@ -27633,7 +27633,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind neutral and separation.",
             "mobility": false
           },
@@ -27652,7 +27652,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Fast close pressure.",
             "mobility": false
           },
@@ -27688,7 +27688,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Minakaze — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-minato-2x2-hotbar-Z",
@@ -27705,7 +27705,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Kor Tailed Spirit Generation 2",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-minato-2x2-hotbar-Q",
@@ -27721,7 +27721,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -27901,7 +27901,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "High-speed movement",
             "mobility": false
           },
@@ -27920,7 +27920,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "High-speed movement",
             "mobility": false
           },
@@ -27939,7 +27939,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan technique",
             "mobility": false
           },
@@ -27958,7 +27958,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan technique",
             "mobility": false
           },
@@ -27977,7 +27977,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind neutral and separation.",
             "mobility": false
           },
@@ -28015,7 +28015,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind neutral and separation.",
             "mobility": false
           },
@@ -28034,7 +28034,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Fast close pressure.",
             "mobility": false
           },
@@ -28103,7 +28103,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -28317,7 +28317,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Mangekyō Sharingan",
         "mobility": false
       },
@@ -28336,7 +28336,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Mangekyō Sharingan",
         "mobility": false
       },
@@ -28355,7 +28355,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Crow illusion",
         "mobility": false
       },
@@ -28374,7 +28374,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Crow illusion",
         "mobility": false
       },
@@ -28393,7 +28393,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Genjutsu control",
         "mobility": false
       },
@@ -28412,7 +28412,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) is catalog-verified; counter window, guard behavior, and current patch details require live game testing.",
+        "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) matches the archive's Shindo catalog. No independent external verification completed; counter window and guard behavior require live testing.",
         "characterAbility": "Tengoku precision counter palm — Concentrated Palm Blast on BL4's sole T slot.",
         "mobility": false
       },
@@ -28431,7 +28431,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Genjutsu control",
         "mobility": false
       },
@@ -28450,7 +28450,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Reactive defense",
         "mobility": false
       },
@@ -28469,7 +28469,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Reactive defense",
         "mobility": false
       },
@@ -28488,7 +28488,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Bankai-Akuma — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-itachi-4x2-hotbar-Z",
@@ -28521,7 +28521,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Combat Art"
       }
     ],
@@ -28743,7 +28743,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Mangekyō Sharingan",
             "mobility": false
           },
@@ -28762,7 +28762,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Mangekyō Sharingan",
             "mobility": false
           },
@@ -28781,7 +28781,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crow illusion",
             "mobility": false
           },
@@ -28800,7 +28800,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crow illusion",
             "mobility": false
           },
@@ -28819,7 +28819,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Genjutsu control",
             "mobility": false
           },
@@ -28838,7 +28838,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) is catalog-verified; counter window, guard behavior, and current patch details require live game testing.",
+            "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) matches the archive's Shindo catalog. No independent external verification completed; counter window and guard behavior require live testing.",
             "characterAbility": "Tengoku precision counter palm — Concentrated Palm Blast on BL4's sole T slot.",
             "mobility": false
           },
@@ -28857,7 +28857,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Genjutsu control",
             "mobility": false
           },
@@ -28876,7 +28876,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Reactive defense",
             "mobility": false
           },
@@ -28895,7 +28895,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Reactive defense",
             "mobility": false
           },
@@ -28914,7 +28914,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Bankai-Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-itachi-4x2-hotbar-Z",
@@ -28947,7 +28947,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -29138,7 +29138,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Mangekyō Sharingan",
             "mobility": false
           },
@@ -29157,7 +29157,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Mangekyō Sharingan",
             "mobility": false
           },
@@ -29176,7 +29176,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crow illusion",
             "mobility": false
           },
@@ -29195,7 +29195,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crow illusion",
             "mobility": false
           },
@@ -29214,7 +29214,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Genjutsu control",
             "mobility": false
           },
@@ -29252,7 +29252,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Genjutsu control",
             "mobility": false
           },
@@ -29271,7 +29271,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Fire Release.",
             "mobility": false
           },
@@ -29290,7 +29290,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Fire Release.",
             "mobility": false
           },
@@ -29309,7 +29309,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Bankai-Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-itachi-3x2-hotbar-Z",
@@ -29342,7 +29342,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -29516,7 +29516,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Mangekyō Sharingan",
             "mobility": false
           },
@@ -29535,7 +29535,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Mangekyō Sharingan",
             "mobility": false
           },
@@ -29554,7 +29554,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crow illusion",
             "mobility": false
           },
@@ -29573,7 +29573,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Crow illusion",
             "mobility": false
           },
@@ -29592,7 +29592,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Fire Release.",
             "mobility": false
           },
@@ -29630,7 +29630,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Fire Release.",
             "mobility": false
           },
@@ -29649,7 +29649,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Black-flame mobility.",
             "mobility": false
           },
@@ -29685,7 +29685,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Bankai-Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-itachi-2x2-hotbar-Z",
@@ -29718,7 +29718,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -29892,7 +29892,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Prediction and reactions",
             "mobility": false
           },
@@ -29911,7 +29911,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Prediction and reactions",
             "mobility": false
           },
@@ -29930,7 +29930,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Genjutsu control",
             "mobility": false
           },
@@ -29949,7 +29949,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Genjutsu control",
             "mobility": false
           },
@@ -29968,7 +29968,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Fire Release.",
             "mobility": false
           },
@@ -30006,7 +30006,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Fire Release.",
             "mobility": false
           },
@@ -30025,7 +30025,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Black-flame mobility.",
             "mobility": false
           },
@@ -30061,7 +30061,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Akuma — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-itachi-accessible-hotbar-Z",
@@ -30094,7 +30094,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -30306,7 +30306,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Two Blue Vortex Karma",
         "mobility": false
       },
@@ -30325,7 +30325,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Two Blue Vortex Karma",
         "mobility": false
       },
@@ -30344,7 +30344,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Sword and lightning pressure",
         "mobility": false
       },
@@ -30363,7 +30363,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Sword and lightning pressure",
         "mobility": false
       },
@@ -30382,7 +30382,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Teleportation and compressed sphere attacks",
         "mobility": false
       },
@@ -30401,7 +30401,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+        "usageNotes": "Move identity (Time Style: Star Kick) matches the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Jougan-speed pursuit kick — Pika-Senko Star Kick on BL4's sole T slot.",
         "mobility": false
       },
@@ -30420,7 +30420,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Teleportation and compressed sphere attacks",
         "mobility": false
       },
@@ -30439,7 +30439,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Exceptional speed",
         "mobility": false
       },
@@ -30458,7 +30458,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Exceptional speed",
         "mobility": false
       },
@@ -30477,7 +30477,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Borumaki-Gaiden — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-boruto-4x2-hotbar-Z",
@@ -30510,7 +30510,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Weapon"
       }
     ],
@@ -30735,7 +30735,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Two Blue Vortex Karma",
             "mobility": false
           },
@@ -30754,7 +30754,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Two Blue Vortex Karma",
             "mobility": false
           },
@@ -30773,7 +30773,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sword and lightning pressure",
             "mobility": false
           },
@@ -30792,7 +30792,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sword and lightning pressure",
             "mobility": false
           },
@@ -30811,7 +30811,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Teleportation and compressed sphere attacks",
             "mobility": false
           },
@@ -30830,7 +30830,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Move identity (Time Style: Star Kick) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+            "usageNotes": "Move identity (Time Style: Star Kick) matches the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Jougan-speed pursuit kick — Pika-Senko Star Kick on BL4's sole T slot.",
             "mobility": false
           },
@@ -30849,7 +30849,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Teleportation and compressed sphere attacks",
             "mobility": false
           },
@@ -30868,7 +30868,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Exceptional speed",
             "mobility": false
           },
@@ -30887,7 +30887,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Exceptional speed",
             "mobility": false
           },
@@ -30906,7 +30906,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Borumaki-Gaiden — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-boruto-4x2-hotbar-Z",
@@ -30939,7 +30939,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -31135,7 +31135,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Two Blue Vortex Karma",
             "mobility": false
           },
@@ -31154,7 +31154,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Two Blue Vortex Karma",
             "mobility": false
           },
@@ -31173,7 +31173,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sword and lightning pressure",
             "mobility": false
           },
@@ -31192,7 +31192,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sword and lightning pressure",
             "mobility": false
           },
@@ -31211,7 +31211,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Teleportation and compressed sphere attacks",
             "mobility": false
           },
@@ -31249,7 +31249,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Teleportation and compressed sphere attacks",
             "mobility": false
           },
@@ -31268,7 +31268,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Lightning Release.",
             "mobility": false
           },
@@ -31287,7 +31287,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Lightning Release.",
             "mobility": false
           },
@@ -31306,7 +31306,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Borumaki-Gaiden — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-boruto-3x2-hotbar-Z",
@@ -31339,7 +31339,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -31515,7 +31515,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Two Blue Vortex Karma",
             "mobility": false
           },
@@ -31534,7 +31534,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Two Blue Vortex Karma",
             "mobility": false
           },
@@ -31553,7 +31553,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sword and lightning pressure",
             "mobility": false
           },
@@ -31572,7 +31572,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Sword and lightning pressure",
             "mobility": false
           },
@@ -31591,7 +31591,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Lightning Release.",
             "mobility": false
           },
@@ -31629,7 +31629,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Lightning Release.",
             "mobility": false
           },
@@ -31648,7 +31648,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind Release.",
             "mobility": false
           },
@@ -31684,7 +31684,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Borumaki-Gaiden — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-boruto-2x2-hotbar-Z",
@@ -31717,7 +31717,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -31894,7 +31894,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan and teleportation",
             "mobility": false
           },
@@ -31913,7 +31913,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Rasengan and teleportation",
             "mobility": false
           },
@@ -31932,7 +31932,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Teleportation and compressed sphere attacks",
             "mobility": false
           },
@@ -31951,7 +31951,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Teleportation and compressed sphere attacks",
             "mobility": false
           },
@@ -31970,7 +31970,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Lightning Release.",
             "mobility": false
           },
@@ -32008,7 +32008,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Lightning Release.",
             "mobility": false
           },
@@ -32027,7 +32027,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Wind Release.",
             "mobility": false
           },
@@ -32063,7 +32063,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Borumaki — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-boruto-accessible-hotbar-Z",
@@ -32096,7 +32096,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -32309,7 +32309,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
+        "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "True Bankai and Hollow power",
         "mobility": false
       },
@@ -32328,7 +32328,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
+        "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "True Bankai and Hollow power",
         "mobility": false
       },
@@ -32347,7 +32347,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+        "usageNotes": "Gadget Style: is the archive-cataloged prefix for Doom-Shado. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Dark spiritual presence",
         "mobility": false
       },
@@ -32366,7 +32366,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+        "usageNotes": "Gadget Style: is the archive-cataloged prefix for Doom-Shado. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Dark spiritual presence",
         "mobility": false
       },
@@ -32385,7 +32385,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Shunpo",
         "mobility": false
       },
@@ -32404,7 +32404,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Move identity (Reality Style: Control) is catalog-verified; counter window, current behavior, and patch details require live game testing.",
+        "usageNotes": "Move identity (Reality Style: Control) matches the archive's Shindo catalog. No independent external verification completed; counter window and current behavior require live testing.",
         "characterAbility": "Bankai disorientation approximation — Shiver-Akuma Reality Control as closest competitive analog to Mugetsu's reality-warping pressure; Bankai itself has no reality-lock mechanic.",
         "mobility": false
       },
@@ -32423,7 +32423,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Unpredictable counterplay",
         "mobility": false
       },
@@ -32442,7 +32442,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Unpredictable counterplay",
         "mobility": false
       },
@@ -32461,7 +32461,7 @@ export const reviewedBuilds = [
         "sourceType": "Element",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Spiritual energy.",
         "mobility": false
       },
@@ -32480,7 +32480,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Getsuga-Black — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-ichigo-4x2-hotbar-Z",
@@ -32513,7 +32513,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Weapon"
       }
     ],
@@ -32733,7 +32733,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -32752,7 +32752,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -32771,7 +32771,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Gadget Style: is the archive-cataloged prefix for Doom-Shado. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -32790,7 +32790,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Gadget Style: is the archive-cataloged prefix for Doom-Shado. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -32809,7 +32809,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Shunpo",
             "mobility": false
           },
@@ -32828,7 +32828,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Move identity (Reality Style: Control) is catalog-verified; counter window, current behavior, and patch details require live game testing.",
+            "usageNotes": "Move identity (Reality Style: Control) matches the archive's Shindo catalog. No independent external verification completed; counter window and current behavior require live testing.",
             "characterAbility": "Bankai disorientation approximation — Shiver-Akuma Reality Control as closest competitive analog to Mugetsu's reality-warping pressure; Bankai itself has no reality-lock mechanic.",
             "mobility": false
           },
@@ -32847,7 +32847,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -32866,7 +32866,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -32885,7 +32885,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual energy.",
             "mobility": false
           },
@@ -32904,7 +32904,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Getsuga-Black — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-ichigo-4x2-hotbar-Z",
@@ -32937,7 +32937,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -33128,7 +33128,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -33147,7 +33147,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -33166,7 +33166,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Gadget Style: is the archive-cataloged prefix for Doom-Shado. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -33185,7 +33185,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Gadget Style: is the archive-cataloged prefix for Doom-Shado. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -33204,7 +33204,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Shunpo",
             "mobility": false
           },
@@ -33242,7 +33242,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual energy.",
             "mobility": false
           },
@@ -33261,7 +33261,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual energy.",
             "mobility": false
           },
@@ -33280,7 +33280,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual energy.",
             "mobility": false
           },
@@ -33299,7 +33299,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Getsuga-Black — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-ichigo-3x2-hotbar-Z",
@@ -33332,7 +33332,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -33507,7 +33507,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -33526,7 +33526,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -33545,7 +33545,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Gadget Style: is the archive-cataloged prefix for Doom-Shado. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -33564,7 +33564,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Gadget Style: is Doom-Shado's catalog-consistent move prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Gadget Style: is the archive-cataloged prefix for Doom-Shado. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual presence",
             "mobility": false
           },
@@ -33583,7 +33583,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual energy.",
             "mobility": false
           },
@@ -33621,7 +33621,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual energy.",
             "mobility": false
           },
@@ -33640,7 +33640,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual energy.",
             "mobility": false
           },
@@ -33676,7 +33676,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Getsuga-Black — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-ichigo-2x2-hotbar-Z",
@@ -33709,7 +33709,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -33888,7 +33888,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -33907,7 +33907,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Kor Style: is Getsuga-Black's catalog-consistent move prefix, verified from consistent usage across multiple builds. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Kor Style: is the archive-cataloged prefix for Getsuga-Black. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "True Bankai and Hollow power",
             "mobility": false
           },
@@ -33926,7 +33926,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -33945,7 +33945,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Unpredictable counterplay",
             "mobility": false
           },
@@ -33964,7 +33964,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual energy.",
             "mobility": false
           },
@@ -34002,7 +34002,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual energy.",
             "mobility": false
           },
@@ -34021,7 +34021,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark spiritual energy.",
             "mobility": false
           },
@@ -34057,7 +34057,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Getsuga-Black — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-ichigo-accessible-hotbar-Z",
@@ -34090,7 +34090,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -34303,7 +34303,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+        "usageNotes": "Tyn Art: is the archive-cataloged prefix for Aizden; 'Tyn' is not a separate bloodline but Aizden's in-game style name. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Hōgyoku evolution",
         "mobility": false
       },
@@ -34322,7 +34322,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+        "usageNotes": "Tyn Art: is the archive-cataloged prefix for Aizden; 'Tyn' is not a separate bloodline but Aizden's in-game style name. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Hōgyoku evolution",
         "mobility": false
       },
@@ -34341,7 +34341,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Kyōka Suigetsu",
         "mobility": false
       },
@@ -34360,7 +34360,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Kyōka Suigetsu",
         "mobility": false
       },
@@ -34379,7 +34379,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Overwhelming Reiatsu",
         "mobility": false
       },
@@ -34398,7 +34398,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) is catalog-verified; counter window, guard behavior, and current patch details require live game testing.",
+        "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) matches the archive's Shindo catalog. No independent external verification completed; counter window and guard behavior require live testing.",
         "characterAbility": "Counter timing approximation — Doku-Tengoku Concentrated Palm Blast used as BL4 defensive option; Kyoka Suigetsu is illusion-based and has no direct Shindo equivalent.",
         "mobility": false
       },
@@ -34417,7 +34417,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Overwhelming Reiatsu",
         "mobility": false
       },
@@ -34436,7 +34436,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Reactive defense",
         "mobility": false
       },
@@ -34455,7 +34455,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Reactive defense",
         "mobility": false
       },
@@ -34474,7 +34474,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Aizden — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-aizen-4x2-hotbar-Z",
@@ -34507,7 +34507,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Weapon"
       }
     ],
@@ -34728,7 +34728,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Tyn Art: is the archive-cataloged prefix for Aizden; 'Tyn' is not a separate bloodline but Aizden's in-game style name. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -34747,7 +34747,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Tyn Art: is the archive-cataloged prefix for Aizden; 'Tyn' is not a separate bloodline but Aizden's in-game style name. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -34766,7 +34766,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kyōka Suigetsu",
             "mobility": false
           },
@@ -34785,7 +34785,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kyōka Suigetsu",
             "mobility": false
           },
@@ -34804,7 +34804,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Overwhelming Reiatsu",
             "mobility": false
           },
@@ -34823,7 +34823,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) is catalog-verified; counter window, guard behavior, and current patch details require live game testing.",
+            "usageNotes": "Move identity (Tengoku Style: Concentrated Palm Blast) matches the archive's Shindo catalog. No independent external verification completed; counter window and guard behavior require live testing.",
             "characterAbility": "Counter timing approximation — Doku-Tengoku Concentrated Palm Blast used as BL4 defensive option; Kyoka Suigetsu is illusion-based and has no direct Shindo equivalent.",
             "mobility": false
           },
@@ -34842,7 +34842,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Overwhelming Reiatsu",
             "mobility": false
           },
@@ -34861,7 +34861,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Reactive defense",
             "mobility": false
           },
@@ -34880,7 +34880,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Reactive defense",
             "mobility": false
           },
@@ -34899,7 +34899,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Aizden — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-aizen-4x2-hotbar-Z",
@@ -34932,7 +34932,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -35124,7 +35124,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Tyn Art: is the archive-cataloged prefix for Aizden; 'Tyn' is not a separate bloodline but Aizden's in-game style name. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -35143,7 +35143,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Tyn Art: is the archive-cataloged prefix for Aizden; 'Tyn' is not a separate bloodline but Aizden's in-game style name. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -35162,7 +35162,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kyōka Suigetsu",
             "mobility": false
           },
@@ -35181,7 +35181,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kyōka Suigetsu",
             "mobility": false
           },
@@ -35200,7 +35200,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Overwhelming Reiatsu",
             "mobility": false
           },
@@ -35238,7 +35238,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Overwhelming Reiatsu",
             "mobility": false
           },
@@ -35257,7 +35257,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual pressure.",
             "mobility": false
           },
@@ -35276,7 +35276,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual pressure.",
             "mobility": false
           },
@@ -35295,7 +35295,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Aizden — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-aizen-3x2-hotbar-Z",
@@ -35328,7 +35328,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -35503,7 +35503,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Tyn Art: is the archive-cataloged prefix for Aizden; 'Tyn' is not a separate bloodline but Aizden's in-game style name. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -35522,7 +35522,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Tyn Art: is the archive-cataloged prefix for Aizden; 'Tyn' is not a separate bloodline but Aizden's in-game style name. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -35541,7 +35541,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kyōka Suigetsu",
             "mobility": false
           },
@@ -35560,7 +35560,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Kyōka Suigetsu",
             "mobility": false
           },
@@ -35579,7 +35579,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual pressure.",
             "mobility": false
           },
@@ -35617,7 +35617,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual pressure.",
             "mobility": false
           },
@@ -35636,7 +35636,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark sword energy.",
             "mobility": false
           },
@@ -35672,7 +35672,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Aizden — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-aizen-2x2-hotbar-Z",
@@ -35705,7 +35705,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -35882,7 +35882,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Tyn Art: is the archive-cataloged prefix for Aizden; 'Tyn' is not a separate bloodline but Aizden's in-game style name. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -35901,7 +35901,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Tyn Art: is Aizden's catalog-consistent move prefix; 'Tyn' is not a separate bloodline here but Aizden's in-game style prefix. Move identity established; gameplay timing and guard behavior require live testing.",
+            "usageNotes": "Tyn Art: is the archive-cataloged prefix for Aizden; 'Tyn' is not a separate bloodline but Aizden's in-game style name. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Hōgyoku evolution",
             "mobility": false
           },
@@ -35920,7 +35920,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Prediction and reactions",
             "mobility": false
           },
@@ -35939,7 +35939,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Prediction and reactions",
             "mobility": false
           },
@@ -35958,7 +35958,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual pressure.",
             "mobility": false
           },
@@ -35996,7 +35996,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Spiritual pressure.",
             "mobility": false
           },
@@ -36015,7 +36015,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Dark sword energy.",
             "mobility": false
           },
@@ -36051,7 +36051,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Aizden — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-aizen-accessible-hotbar-Z",
@@ -36084,7 +36084,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Weapon"
           }
         ],
@@ -36297,7 +36297,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Gear 4 Snakeman",
         "mobility": false
       },
@@ -36316,7 +36316,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Gear 4 Snakeman",
         "mobility": false
       },
@@ -36335,7 +36335,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Haki-like pressure",
         "mobility": false
       },
@@ -36354,7 +36354,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Haki-like pressure",
         "mobility": false
       },
@@ -36373,7 +36373,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Armament Haki power",
         "mobility": false
       },
@@ -36392,7 +36392,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Move identity (Wood Style: Golden Strike) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+        "usageNotes": "Move identity (Wood Style: Golden Strike) matches the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Gear-5 impact approximation — Ashura-Shizen Golden Strike as BL4 heavy pressure move; Luffy has no nature or wood powers; chosen for raw strike feel.",
         "mobility": false
       },
@@ -36411,7 +36411,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Armament Haki power",
         "mobility": false
       },
@@ -36430,7 +36430,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Overwhelming physical force",
         "mobility": false
       },
@@ -36449,7 +36449,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Overwhelming physical force",
         "mobility": false
       },
@@ -36468,7 +36468,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "SnakeMan — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-luffy-4x2-hotbar-Z",
@@ -36501,7 +36501,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Combat Art"
       }
     ],
@@ -36723,7 +36723,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Gear 4 Snakeman",
             "mobility": false
           },
@@ -36742,7 +36742,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Gear 4 Snakeman",
             "mobility": false
           },
@@ -36761,7 +36761,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Haki-like pressure",
             "mobility": false
           },
@@ -36780,7 +36780,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Haki-like pressure",
             "mobility": false
           },
@@ -36799,7 +36799,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Armament Haki power",
             "mobility": false
           },
@@ -36818,7 +36818,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Move identity (Wood Style: Golden Strike) is catalog-verified; gameplay timing, guard behavior, and current patch details require live game testing.",
+            "usageNotes": "Move identity (Wood Style: Golden Strike) matches the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Gear-5 impact approximation — Ashura-Shizen Golden Strike as BL4 heavy pressure move; Luffy has no nature or wood powers; chosen for raw strike feel.",
             "mobility": false
           },
@@ -36837,7 +36837,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Armament Haki power",
             "mobility": false
           },
@@ -36856,7 +36856,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Overwhelming physical force",
             "mobility": false
           },
@@ -36875,7 +36875,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Overwhelming physical force",
             "mobility": false
           },
@@ -36894,7 +36894,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "SnakeMan — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-luffy-4x2-hotbar-Z",
@@ -36927,7 +36927,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -37118,7 +37118,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Gear 4 Snakeman",
             "mobility": false
           },
@@ -37137,7 +37137,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Gear 4 Snakeman",
             "mobility": false
           },
@@ -37156,7 +37156,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Haki-like pressure",
             "mobility": false
           },
@@ -37175,7 +37175,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Haki-like pressure",
             "mobility": false
           },
@@ -37194,7 +37194,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Armament Haki power",
             "mobility": false
           },
@@ -37232,7 +37232,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Armament Haki power",
             "mobility": false
           },
@@ -37251,7 +37251,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Airborne control.",
             "mobility": false
           },
@@ -37270,7 +37270,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Airborne control.",
             "mobility": false
           },
@@ -37289,7 +37289,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "SnakeMan — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-luffy-3x2-hotbar-Z",
@@ -37322,7 +37322,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -37497,7 +37497,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Gear 4 Snakeman",
             "mobility": false
           },
@@ -37516,7 +37516,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Gear 4 Snakeman",
             "mobility": false
           },
@@ -37535,7 +37535,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Haki-like pressure",
             "mobility": false
           },
@@ -37554,7 +37554,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Haki-like pressure",
             "mobility": false
           },
@@ -37573,7 +37573,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Airborne control.",
             "mobility": false
           },
@@ -37611,7 +37611,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Airborne control.",
             "mobility": false
           },
@@ -37630,7 +37630,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Heat visual support.",
             "mobility": false
           },
@@ -37666,7 +37666,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "SnakeMan — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-luffy-2x2-hotbar-Z",
@@ -37699,7 +37699,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -37875,7 +37875,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Gear 4 Snakeman",
             "mobility": false
           },
@@ -37894,7 +37894,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Gear 4 Snakeman",
             "mobility": false
           },
@@ -37913,7 +37913,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -37932,7 +37932,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -37951,7 +37951,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Airborne control.",
             "mobility": false
           },
@@ -37989,7 +37989,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Airborne control.",
             "mobility": false
           },
@@ -38008,7 +38008,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Heat visual support.",
             "mobility": false
           },
@@ -38044,7 +38044,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "SnakeMan — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-luffy-accessible-hotbar-Z",
@@ -38077,7 +38077,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -38327,7 +38327,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Time stop",
         "mobility": false
       },
@@ -38346,7 +38346,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Star Platinum strength",
         "mobility": false
       },
@@ -38365,7 +38365,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Star Platinum strength",
         "mobility": false
       },
@@ -38384,7 +38384,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Move identity (Fist Style: Tiger Lotus) is catalog-verified; gameplay hit windows, guard behavior, and current patch details require live game testing.",
+        "usageNotes": "Move identity (Fist Style: Tiger Lotus) matches the archive's Shindo catalog. No independent external verification completed; gameplay hit windows and guard behavior require live testing.",
         "characterAbility": "Star Platinum martial peak — Tiger Lotus on BL4's sole T slot.",
         "mobility": false
       },
@@ -38403,7 +38403,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "ORA-style close barrage",
         "mobility": false
       },
@@ -38422,7 +38422,7 @@ export const reviewedBuilds = [
         "sourceType": "Bloodline",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "ORA-style close barrage",
         "mobility": false
       },
@@ -38441,7 +38441,7 @@ export const reviewedBuilds = [
         "sourceType": "Element",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "characterAbility": "Durability and impact.",
         "mobility": false
       },
@@ -38460,7 +38460,7 @@ export const reviewedBuilds = [
         "sourceType": "Mode",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "Jotaro-Shizen — Stage 1",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
       },
       {
         "id": "anime-jotaro-4x2-hotbar-Z",
@@ -38493,7 +38493,7 @@ export const reviewedBuilds = [
         "accuracy": "Strong Match",
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
-        "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
         "sourceType": "Combat Art"
       }
     ],
@@ -38746,7 +38746,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Time stop",
             "mobility": false
           },
@@ -38765,7 +38765,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Star Platinum strength",
             "mobility": false
           },
@@ -38784,7 +38784,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Star Platinum strength",
             "mobility": false
           },
@@ -38803,7 +38803,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Move identity (Fist Style: Tiger Lotus) is catalog-verified; gameplay hit windows, guard behavior, and current patch details require live game testing.",
+            "usageNotes": "Move identity (Fist Style: Tiger Lotus) matches the archive's Shindo catalog. No independent external verification completed; gameplay hit windows and guard behavior require live testing.",
             "characterAbility": "Star Platinum martial peak — Tiger Lotus on BL4's sole T slot.",
             "mobility": false
           },
@@ -38822,7 +38822,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "ORA-style close barrage",
             "mobility": false
           },
@@ -38841,7 +38841,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "ORA-style close barrage",
             "mobility": false
           },
@@ -38860,7 +38860,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Durability and impact.",
             "mobility": false
           },
@@ -38879,7 +38879,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Jotaro-Shizen — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-jotaro-4x2-hotbar-Z",
@@ -38912,7 +38912,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -39137,7 +39137,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Time stop",
             "mobility": false
           },
@@ -39156,7 +39156,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Star Platinum strength",
             "mobility": false
           },
@@ -39175,7 +39175,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Star Platinum strength",
             "mobility": false
           },
@@ -39213,7 +39213,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Durability and impact.",
             "mobility": false
           },
@@ -39232,7 +39232,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Durability and impact.",
             "mobility": false
           },
@@ -39251,7 +39251,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Stand speed.",
             "mobility": false
           },
@@ -39270,7 +39270,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Jotaro-Shizen — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-jotaro-3x2-hotbar-Z",
@@ -39303,7 +39303,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -39511,7 +39511,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Time stop",
             "mobility": false
           },
@@ -39530,7 +39530,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Durability and impact.",
             "mobility": false
           },
@@ -39549,7 +39549,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Durability and impact.",
             "mobility": false
           },
@@ -39587,7 +39587,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Stand speed.",
             "mobility": false
           },
@@ -39640,7 +39640,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Jotaro-Shizen — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-jotaro-2x2-hotbar-Z",
@@ -39673,7 +39673,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],
@@ -39884,7 +39884,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -39903,7 +39903,7 @@ export const reviewedBuilds = [
             "sourceType": "Bloodline",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Close combat fundamentals",
             "mobility": false
           },
@@ -39922,7 +39922,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Durability and impact.",
             "mobility": false
           },
@@ -39960,7 +39960,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Durability and impact.",
             "mobility": false
           },
@@ -39979,7 +39979,7 @@ export const reviewedBuilds = [
             "sourceType": "Element",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "characterAbility": "Stand speed.",
             "mobility": false
           },
@@ -40015,7 +40015,7 @@ export const reviewedBuilds = [
             "sourceType": "Mode",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "Jotaro-Shizen — Stage 1",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing."
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing."
           },
           {
             "id": "anime-jotaro-accessible-hotbar-Z",
@@ -40048,7 +40048,7 @@ export const reviewedBuilds = [
             "accuracy": "Strong Match",
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
-            "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
             "sourceType": "Combat Art"
           }
         ],

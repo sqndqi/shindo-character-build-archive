@@ -1073,3 +1073,115 @@ describe('B.1: createVerifiedSlot', () => {
     expect(() => createVerifiedSlot({ key: 'B', ability: 'Move', sourceId: '   ', sourceType: 'Element', researchStatus: 'owner-confirmed' })).toThrow(/sourceId/)
   })
 })
+
+describe('data provenance and fidelity validators', () => {
+  const PLACEHOLDER_PHRASES = [
+    'Primary character identity and pressure engine.',
+    'Reviewed supporting match.',
+    'Reviewed neutral or defensive support.',
+    'Defensive support.',
+    'Mobility option.',
+    'Combo extender.',
+    'Primary pressure.',
+    'Supporting character identity.',
+  ]
+
+  const CIRCULAR_EVIDENCE_PATTERNS = [
+    'catalog-verified',
+    'catalog-consistent',
+    'verified from consistent usage',
+    'Exact source is authored',
+    'Move identity established',
+  ]
+
+  const KNOWN_PREFIX_MAP: Record<string, string> = {
+    'Getsuga-Black': 'Kor Style:',
+    'Doom-Shado': 'Gadget Style:',
+    'Aizden': 'Tyn Art:',
+    'Pika-Senko': 'Time Style:',
+    'Rengoku': 'Rengoku Style:',
+    'Doku-Tengoku': 'Tengoku Style:',
+    'Shiver-Akuma': 'Reality Style:',
+    'Bruce-Kenichi': 'Fist Style:',
+    'Ryuji-Kenichi': 'Fist Style:',
+    'Ashura-Shizen': 'Wood Style:',
+    'Indra-Akuma': 'Copy Style:',
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  type HotbarSlot = Record<string, any>
+
+  function allSlots(): { buildId: string; variantId: string; slot: HotbarSlot }[] {
+    return completeRoster.flatMap((build) =>
+      build.variants.flatMap((variant) =>
+        variant.hotbar
+          .filter((slot: HotbarSlot) => !slot.modeAbility)
+          .map((slot: HotbarSlot) => ({ buildId: build.id, variantId: variant.id, slot }))
+      )
+    )
+  }
+
+  it('has no characterAbility identical to purpose in any non-mode slot', () => {
+    const violations: string[] = []
+    for (const { buildId, variantId, slot } of allSlots()) {
+      if (slot.characterAbility && slot.purpose && slot.characterAbility === slot.purpose) {
+        violations.push(`${buildId}/${variantId}/key:${slot.key} — characterAbility duplicates purpose`)
+      }
+    }
+    expect(violations).toEqual([])
+  })
+
+  it('has no known placeholder characterAbility phrases', () => {
+    const violations: string[] = []
+    for (const { buildId, variantId, slot } of allSlots()) {
+      for (const phrase of PLACEHOLDER_PHRASES) {
+        if (slot.characterAbility === phrase) {
+          violations.push(`${buildId}/${variantId}/key:${slot.key} — placeholder: "${phrase}"`)
+        }
+      }
+    }
+    expect(violations).toEqual([])
+  })
+
+  it('has no circular evidence language in usageNotes', () => {
+    const violations: string[] = []
+    for (const { buildId, variantId, slot } of allSlots()) {
+      const notes: string = slot['usageNotes'] ?? ''
+      for (const pattern of CIRCULAR_EVIDENCE_PATTERNS) {
+        if (notes.includes(pattern)) {
+          violations.push(`${buildId}/${variantId}/key:${slot.key} — circular evidence: "${pattern}"`)
+        }
+      }
+    }
+    expect(violations).toEqual([])
+  })
+
+  it('has no bloodline slot with a known-mismatched prefix', () => {
+    const violations: string[] = []
+    for (const { buildId, variantId, slot } of allSlots()) {
+      if (slot.sourceType !== 'Bloodline') continue
+      const expectedPrefix = KNOWN_PREFIX_MAP[slot.source]
+      if (!expectedPrefix) continue
+      if (!slot.ability || slot.ability === 'Unresolved — research required') continue
+      if (!slot.ability.startsWith(expectedPrefix)) {
+        violations.push(`${buildId}/${variantId}/key:${slot.key} — "${slot.source}" expects "${expectedPrefix}" but got "${slot.ability}"`)
+      }
+    }
+    expect(violations).toEqual([])
+  })
+
+  it('has no empty characterAbility in authored non-mode non-placeholder slots', () => {
+    const SKIP_ABILITIES = new Set(['Unresolved — research required', 'Not used in this variant'])
+    // Weapon and Combat Art slots (Q key) are physical attacks, not character trait — characterAbility not required
+    const SKIP_SOURCE_TYPES = new Set(['Combat Art', 'Weapon'])
+    const violations: string[] = []
+    for (const { buildId, variantId, slot } of allSlots()) {
+      if (SKIP_ABILITIES.has(slot.ability)) continue
+      if (SKIP_SOURCE_TYPES.has(slot.sourceType)) continue
+      if (!slot.characterAbility || slot.characterAbility.trim() === '') {
+        violations.push(`${buildId}/${variantId}/key:${slot.key} — empty characterAbility`)
+      }
+    }
+    expect(violations).toEqual([])
+  })
+})
