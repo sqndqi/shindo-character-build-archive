@@ -2154,7 +2154,7 @@ export const reviewedBuilds = [
         "key": "4",
         "source": "Dio-Senko-Rose",
         "ability": "Time Style: Ultimate Flash",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Speed burst opener — Ultimate Flash represents the explosive sudden acceleration that makes Seongji's attack timing unpredictable.",
         "comboRole": "Defense",
         "blockBreak": false,
         "guardPressure": false,
@@ -2165,15 +2165,15 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
-        "mobility": false
+        "characterAbility": "Seongji's speed entry — Ultimate Flash represents the sudden burst that makes her movement feel instantaneous.",
+        "mobility": true
       },
       {
         "id": "seongji-yuk-4x2-hotbar-5",
         "key": "5",
         "source": "Dio-Senko-Rose",
         "ability": "Time Style: Time Jump",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Repositioning — Time Jump maps to fluid footwork and unexpected angle changes in her movement.",
         "comboRole": "Finisher",
         "blockBreak": false,
         "guardPressure": false,
@@ -2184,8 +2184,8 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
-        "mobility": false
+        "characterAbility": "Seongji's footwork — Time Jump represents the sudden positional shifts that leave opponents striking empty space.",
+        "mobility": true
       },
       {
         "id": "seongji-yuk-4x2-hotbar-T",
@@ -2203,7 +2203,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Intentionally empty; no filler ability is assigned.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "No ability assigned to this slot.",
         "mobility": false
       },
       {
@@ -2211,7 +2211,7 @@ export const reviewedBuilds = [
         "key": "V",
         "source": "Dio-Senko-Rose",
         "ability": "Time Style: Time Stop",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Total lockdown — Time Stop represents the moment when Seongji's speed advantage overwhelms the opponent's ability to respond.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -2222,7 +2222,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Seongji's control peak — Time Stop represents the moment her speed completely negates the opponent's ability to act.",
         "mobility": false
       },
       {
@@ -2230,7 +2230,7 @@ export const reviewedBuilds = [
         "key": "B",
         "source": "Bruce-Kenichi",
         "ability": "Fist Style: 6th Dance",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Kick opener — 6th Dance initiates the footwork-based kick combination that extends her striking range.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -2241,7 +2241,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Seongji's kick entry — 6th Dance opens the kick combination that extends her attack reach beyond direct striking distance.",
         "mobility": false
       },
       {
@@ -2249,7 +2249,7 @@ export const reviewedBuilds = [
         "key": "N",
         "source": "Bruce-Kenichi",
         "ability": "Fist Style: 9th Dance",
-        "purpose": "Reviewed supporting match.",
+        "purpose": "Kick finisher — 9th Dance closes out the kick sequence with a sweeping follow-up.",
         "comboRole": "Utility",
         "blockBreak": false,
         "guardPressure": false,
@@ -2260,7 +2260,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-        "characterAbility": "Reviewed supporting match.",
+        "characterAbility": "Seongji's kick close — 9th Dance ends the kick combination and resets position for the next pressure sequence.",
         "mobility": false
       },
       {
@@ -2629,7 +2629,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -2986,7 +2986,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 6th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Kick combination opener — 6th Dance initiates the aerial kick sequence that extends past the primary striking pressure.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -2997,7 +2997,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's kick entry — 6th Dance opens the kick combination that extends her reach beyond the immediate striking zone.",
             "mobility": false
           },
           {
@@ -3005,7 +3005,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: 9th Dance",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Kick sequence continuation — 9th Dance extends the combination and forces the opponent to handle multi-hit kick pressure.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -3016,7 +3016,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's kick continuation — 9th Dance carries the kick combination forward and compounds the positional damage.",
             "mobility": false
           },
           {
@@ -3035,7 +3035,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -3043,7 +3043,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Bruce-Kenichi",
             "ability": "Fist Style: Tiger Lotus",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Heavy kick finisher — Tiger Lotus delivers the decisive closing strike after the dance kick sequence.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -3054,7 +3054,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's kick close — Tiger Lotus ends the kick combination with a heavy impact that punishes opponents who failed to escape the sequence.",
             "mobility": false
           },
           {
@@ -3062,7 +3062,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Ultimate Flash",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed burst supplement — Ultimate Flash adds a time-based entry option to the 3x2 variant's kick-focused pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -3073,15 +3073,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
-            "mobility": false
+            "characterAbility": "Seongji's speed supplement — Ultimate Flash provides an instant burst entry alongside the kick combination routes.",
+            "mobility": true
           },
           {
             "id": "seongji-yuk-3x2-hotbar-N",
             "key": "N",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Jump",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Pursuit repositioning — Time Jump closes any gap an opponent creates while escaping the kick pressure.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -3092,8 +3092,8 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
-            "mobility": false
+            "characterAbility": "Seongji's pursuit — Time Jump eliminates the distance opponents try to create when escaping the kick combination.",
+            "mobility": true
           },
           {
             "id": "seongji-yuk-3x2-hotbar-C",
@@ -3372,7 +3372,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Ultimate Flash",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Speed burst entry — Ultimate Flash represents Seongji's sudden acceleration that denies opponent approach.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -3383,15 +3383,15 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
-            "mobility": false
+            "characterAbility": "Seongji's speed burst — Ultimate Flash delivers an instant entry that catches opponents reacting to the primary pressure.",
+            "mobility": true
           },
           {
             "id": "seongji-yuk-2x2-hotbar-5",
             "key": "5",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Jump",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Repositioning — Time Jump closes the gap or resets angle after the opponent escapes the initial pressure.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -3402,8 +3402,8 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
-            "mobility": false
+            "characterAbility": "Seongji's angle reset — Time Jump closes or changes position to prevent the opponent from stabilizing their defense.",
+            "mobility": true
           },
           {
             "id": "seongji-yuk-2x2-hotbar-T",
@@ -3421,7 +3421,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -3429,7 +3429,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Dio-Senko-Rose",
             "ability": "Time Style: Time Stop",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Lockdown utility — Time Stop freezes the opponent's options during Seongji's offensive commitment.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -3440,7 +3440,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's control moment — Time Stop represents the complete denial of the opponent's ability to respond during her committed attack.",
             "mobility": false
           },
           {
@@ -3448,7 +3448,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Earth",
             "ability": "Stone Style: Earth Wall",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Defensive cover — Earth Wall provides a protective barrier that guards against projectile or charging approaches.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -3459,7 +3459,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Seongji's defensive anchor — Earth Wall blocks incoming pressure and creates a positional barrier during neutral.",
             "mobility": false
           },
           {
@@ -3467,7 +3467,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Earth",
             "ability": "Stone Style: Rage Trail",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Zone denial — Rage Trail leaves a damaging trail that discourages opponents from advancing through the space.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -3478,7 +3478,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Seongji's zone tool — Rage Trail punishes opponents who try to advance through the contested space without caution.",
             "mobility": false
           },
           {
@@ -3736,7 +3736,7 @@ export const reviewedBuilds = [
             "key": "3",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Concentrated Palm Blast",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Ranged pressure entry — Concentrated Palm Blast opens mid-range offensive pressure for the accessible build.",
             "comboRole": "Pressure",
             "blockBreak": false,
             "guardPressure": true,
@@ -3747,7 +3747,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's range opener — Concentrated Palm Blast extends pressure beyond the close-range striking that Kenichi provides.",
             "mobility": false
           },
           {
@@ -3755,7 +3755,7 @@ export const reviewedBuilds = [
             "key": "4",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: Twin Dragon Barrage",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Sustained palm pressure — Twin Dragon Barrage maintains offensive tempo and prevents the opponent from resetting.",
             "comboRole": "Defense",
             "blockBreak": false,
             "guardPressure": false,
@@ -3766,7 +3766,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's sustained push — Twin Dragon Barrage keeps continuous pressure on opponents who try to stabilize their defense.",
             "mobility": false
           },
           {
@@ -3774,7 +3774,7 @@ export const reviewedBuilds = [
             "key": "5",
             "source": "Doku-Tengoku",
             "ability": "Tengoku Style: 128 Palm Counter",
-            "purpose": "Reviewed supporting match.",
+            "purpose": "Counter punish — 128 Palm Counter rewards the read of an opponent's aggressive approach.",
             "comboRole": "Finisher",
             "blockBreak": false,
             "guardPressure": false,
@@ -3785,7 +3785,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "Seongji's counter read — 128 Palm Counter punishes aggressive opponents who overcommit into her accessible-build pressure.",
             "mobility": false
           },
           {
@@ -3804,7 +3804,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Intentionally empty; no filler ability is assigned.",
-            "characterAbility": "Reviewed supporting match.",
+            "characterAbility": "No ability assigned to this slot.",
             "mobility": false
           },
           {
@@ -3812,7 +3812,7 @@ export const reviewedBuilds = [
             "key": "V",
             "source": "Earth",
             "ability": "Stone Style: Earth Wall",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Defensive barrier — Earth Wall provides protective cover for the accessible build's forward approach.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -3823,7 +3823,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Seongji's defensive anchor — Earth Wall blocks incoming aggression and secures space during neutral.",
             "mobility": false
           },
           {
@@ -3831,7 +3831,7 @@ export const reviewedBuilds = [
             "key": "B",
             "source": "Earth",
             "ability": "Stone Style: Rage Trail",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Zone denial — Rage Trail discourages opponents from advancing through contested space.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -3842,7 +3842,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Seongji's zone denial — Rage Trail punishes reckless approaches into her neutral space.",
             "mobility": false
           },
           {
@@ -3850,7 +3850,7 @@ export const reviewedBuilds = [
             "key": "N",
             "source": "Gale",
             "ability": "Gale Style: Vortex",
-            "purpose": "Reviewed neutral or defensive support.",
+            "purpose": "Wind disruption — Vortex creates an area of wind pressure that interrupts opponent positioning.",
             "comboRole": "Utility",
             "blockBreak": false,
             "guardPressure": false,
@@ -3861,7 +3861,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Exact source is authored; timing, resource cost, and current guard behavior still require live testing.",
-            "characterAbility": "Reviewed neutral or defensive support.",
+            "characterAbility": "Seongji's wind disruption — Vortex interrupts opponent approach patterns and creates openings for follow-up pressure.",
             "mobility": false
           },
           {
