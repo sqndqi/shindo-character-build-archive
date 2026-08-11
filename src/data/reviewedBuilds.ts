@@ -138,7 +138,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "James Lee's disciplined Jeet Kune Do rhythmic striking chains, honed through underground combat.",
+        "characterAbility": "James Lee's precise striking chains — rhythmic combinations built from underground martial arts mastery.",
         "mobility": false
       },
       {
@@ -157,7 +157,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "James Lee's Jeet Kune Do chain finishing kicks — the decisive closing pressure of his combinations.",
+        "characterAbility": "James Lee's closing combination kicks — the decisive finishing pressure that ends his striking chains.",
         "mobility": false
       },
       {
@@ -195,7 +195,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "James Lee's Tiger Lotus — a tight Jeet Kune Do multi-hit combination blending offense and defense.",
+        "characterAbility": "The Shindo move Tiger Lotus (Bruce-Kenichi bloodline) is used as an analogue for James Lee's rapid multi-hit close-range kick pressure — Tiger Lotus is a Shindo move name, not a canonical Lookism technique.",
         "mobility": false
       },
       {
@@ -570,7 +570,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "James Lee's disciplined Jeet Kune Do rhythmic striking chains, honed through underground combat.",
+            "characterAbility": "James Lee's precise striking chains — rhythmic combinations built from underground martial arts mastery.",
             "mobility": false
           },
           {
@@ -589,7 +589,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "James Lee's Jeet Kune Do chain finishing kicks — the decisive closing pressure of his combinations.",
+            "characterAbility": "James Lee's closing combination kicks — the decisive finishing pressure that ends his striking chains.",
             "mobility": false
           },
           {
@@ -627,7 +627,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "James Lee's Tiger Lotus — a tight Jeet Kune Do multi-hit combination blending offense and defense.",
+            "characterAbility": "The Shindo move Tiger Lotus (Bruce-Kenichi bloodline) is used as an analogue for James Lee's rapid multi-hit close-range kick pressure — Tiger Lotus is a Shindo move name, not a canonical Lookism technique.",
             "mobility": false
           },
           {
@@ -976,7 +976,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "James Lee's disciplined Jeet Kune Do rhythmic striking chains, honed through underground combat.",
+            "characterAbility": "James Lee's precise striking chains — rhythmic combinations built from underground martial arts mastery.",
             "mobility": false
           },
           {
@@ -995,7 +995,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "James Lee's Jeet Kune Do chain finishing kicks — the decisive closing pressure of his combinations.",
+            "characterAbility": "James Lee's closing combination kicks — the decisive finishing pressure that ends his striking chains.",
             "mobility": false
           },
           {
@@ -1033,7 +1033,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "James Lee's Tiger Lotus — a tight Jeet Kune Do multi-hit combination blending offense and defense.",
+            "characterAbility": "The Shindo move Tiger Lotus (Bruce-Kenichi bloodline) is used as an analogue for James Lee's rapid multi-hit close-range kick pressure — Tiger Lotus is a Shindo move name, not a canonical Lookism technique.",
             "mobility": false
           },
           {
@@ -1362,7 +1362,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "James Lee's disciplined Jeet Kune Do rhythmic striking chains, honed through underground combat.",
+            "characterAbility": "James Lee's precise striking chains — rhythmic combinations built from underground martial arts mastery.",
             "mobility": false
           },
           {
@@ -1381,7 +1381,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "James Lee's Jeet Kune Do chain finishing kicks — the decisive closing pressure of his combinations.",
+            "characterAbility": "James Lee's closing combination kicks — the decisive finishing pressure that ends his striking chains.",
             "mobility": false
           },
           {
@@ -1419,7 +1419,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "James Lee's Tiger Lotus — a tight Jeet Kune Do multi-hit combination blending offense and defense.",
+            "characterAbility": "The Shindo move Tiger Lotus (Bruce-Kenichi bloodline) is used as an analogue for James Lee's rapid multi-hit close-range kick pressure — Tiger Lotus is a Shindo move name, not a canonical Lookism technique.",
             "mobility": false
           },
           {
@@ -2165,7 +2165,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Seongji's speed entry — Ultimate Flash represents the sudden burst that makes her movement feel instantaneous.",
+        "characterAbility": "Seongji's speed entry — Ultimate Flash represents the sudden burst that makes his movement feel instantaneous.",
         "mobility": true
       },
       {
@@ -2222,7 +2222,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Seongji's control peak — Time Stop represents the moment her speed completely negates the opponent's ability to act.",
+        "characterAbility": "Seongji's control peak — Time Stop represents the moment his speed completely negates the opponent's ability to act.",
         "mobility": false
       },
       {
@@ -2241,7 +2241,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Seongji's kick entry — 6th Dance opens the kick combination that extends her attack reach beyond direct striking distance.",
+        "characterAbility": "Seongji's kick entry — 6th Dance opens the kick combination that extends his attack reach beyond direct striking distance.",
         "mobility": false
       },
       {
@@ -14583,7 +14583,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "BL4 maps to T in the four-bloodline hotbar layout. Sunsengan Overdrive is a Minakaze-Azure move — prior data incorrectly listed it under base Minakaze. Key assignment needs live testing.",
-        "characterAbility": "Jake's closing burst — Sunsengan Overdrive is the speed ceiling move that punishes any gap left in an opponent's defense.",
+        "characterAbility": "Jake's closing burst — the Shindo move Sunsengan Overdrive (Minakaze-Azure bloodline) represents the explosive speed burst that punishes any gap in an opponent's defense.",
         "mobility": true
       },
       {
@@ -14988,7 +14988,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "BL4 maps to T in the four-bloodline hotbar layout. Sunsengan Overdrive is a Minakaze-Azure move — prior data incorrectly listed it under base Minakaze. Key assignment needs live testing.",
-            "characterAbility": "Jake's closing burst — Sunsengan Overdrive is the speed ceiling move that punishes any gap left in an opponent's defense.",
+            "characterAbility": "Jake's closing burst — the Shindo move Sunsengan Overdrive (Minakaze-Azure bloodline) represents the explosive speed burst that punishes any gap in an opponent's defense.",
             "mobility": true
           },
           {

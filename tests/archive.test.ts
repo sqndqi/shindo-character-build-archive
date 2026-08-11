@@ -1184,4 +1184,30 @@ describe('data provenance and fidelity validators', () => {
     }
     expect(violations).toEqual([])
   })
+
+  it('has no characterAbility presenting a Shindo move name as the character\'s canonical technique', () => {
+    // Catches "[Character]'s [Shindo move name]" possessive pattern where a Shindo Life move name
+    // is attributed directly to the fictional character as if it were their canonical named technique.
+    const SHINDO_MOVE_NAMES = [
+      'Tiger Lotus', 'Star Kick', 'Star Kick Rising', 'Time Stop', 'Time Jump', 'Ultimate Flash',
+      'Inferno Blaze', 'Inferno Engage', 'Concentrated Palm Blast', '128 Palm Counter',
+      'Sunsengan Overdrive', 'Kami Blade', 'Kami Blitz', 'Samurai Combo',
+      'Dragon Lotus', 'Dragon Demon Combo', '3rd Stance', '6th Dance', '9th Dance',
+      'Chains Of Guard', 'Gravity Push', 'Twin Dragon Barrage',
+      'Hand of Getsuga', 'Rasensuga', 'Getsuga Shuriken Blitz',
+      'Reality Control', 'Crane Demon', 'Dragon Strike',
+    ]
+    const violations: string[] = []
+    for (const { buildId, variantId, slot } of allSlots()) {
+      const ca: string = slot['characterAbility'] ?? ''
+      for (const moveName of SHINDO_MOVE_NAMES) {
+        // Flag "[possessive]'s [Shindo move name]" where the move name immediately follows the possessive
+        const pattern = new RegExp(`'s ${moveName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^a-z]`, 'i')
+        if (pattern.test(ca)) {
+          violations.push(`${buildId}/${variantId}/key:${slot.key} — possessive Shindo move name "${moveName}" in characterAbility`)
+        }
+      }
+    }
+    expect(violations).toEqual([])
+  })
 })
