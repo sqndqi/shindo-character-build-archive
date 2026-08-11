@@ -81,7 +81,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+        "characterAbility": "James Lee's explosive burst speed — the raw acceleration that defines his fighting peak in Lookism.",
         "mobility": false
       },
       {
@@ -100,7 +100,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+        "characterAbility": "James Lee's instantaneous repositioning, slipping out of exchanges with inhuman quickness.",
         "mobility": false
       },
       {
@@ -119,7 +119,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+        "characterAbility": "James Lee's capacity to freeze an opponent's rhythm through overwhelming speed pressure.",
         "mobility": false
       },
       {
@@ -138,7 +138,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Precise kick combinations and close-range finishing.",
+        "characterAbility": "James Lee's disciplined Jeet Kune Do rhythmic striking chains, honed through underground combat.",
         "mobility": false
       },
       {
@@ -157,7 +157,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Precise kick combinations and close-range finishing.",
+        "characterAbility": "James Lee's Jeet Kune Do chain finishing kicks — the decisive closing pressure of his combinations.",
         "mobility": false
       },
       {
@@ -195,7 +195,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Precise kick combinations and close-range finishing.",
+        "characterAbility": "James Lee's Tiger Lotus — a tight Jeet Kune Do multi-hit combination blending offense and defense.",
         "mobility": false
       },
       {
@@ -513,7 +513,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+            "characterAbility": "James Lee's explosive burst speed — the raw acceleration that defines his fighting peak in Lookism.",
             "mobility": false
           },
           {
@@ -532,7 +532,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+            "characterAbility": "James Lee's instantaneous repositioning, slipping out of exchanges with inhuman quickness.",
             "mobility": false
           },
           {
@@ -551,7 +551,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+            "characterAbility": "James Lee's capacity to freeze an opponent's rhythm through overwhelming speed pressure.",
             "mobility": false
           },
           {
@@ -570,7 +570,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Precise kick combinations and close-range finishing.",
+            "characterAbility": "James Lee's disciplined Jeet Kune Do rhythmic striking chains, honed through underground combat.",
             "mobility": false
           },
           {
@@ -589,7 +589,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Precise kick combinations and close-range finishing.",
+            "characterAbility": "James Lee's Jeet Kune Do chain finishing kicks — the decisive closing pressure of his combinations.",
             "mobility": false
           },
           {
@@ -627,7 +627,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Precise kick combinations and close-range finishing.",
+            "characterAbility": "James Lee's Tiger Lotus — a tight Jeet Kune Do multi-hit combination blending offense and defense.",
             "mobility": false
           },
           {
@@ -919,7 +919,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+            "characterAbility": "James Lee's explosive burst speed — the raw acceleration that defines his fighting peak in Lookism.",
             "mobility": false
           },
           {
@@ -938,7 +938,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+            "characterAbility": "James Lee's instantaneous repositioning, slipping out of exchanges with inhuman quickness.",
             "mobility": false
           },
           {
@@ -957,7 +957,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+            "characterAbility": "James Lee's capacity to freeze an opponent's rhythm through overwhelming speed pressure.",
             "mobility": false
           },
           {
@@ -976,7 +976,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Precise kick combinations and close-range finishing.",
+            "characterAbility": "James Lee's disciplined Jeet Kune Do rhythmic striking chains, honed through underground combat.",
             "mobility": false
           },
           {
@@ -995,7 +995,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Precise kick combinations and close-range finishing.",
+            "characterAbility": "James Lee's Jeet Kune Do chain finishing kicks — the decisive closing pressure of his combinations.",
             "mobility": false
           },
           {
@@ -1033,7 +1033,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Precise kick combinations and close-range finishing.",
+            "characterAbility": "James Lee's Tiger Lotus — a tight Jeet Kune Do multi-hit combination blending offense and defense.",
             "mobility": false
           },
           {
@@ -1305,7 +1305,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+            "characterAbility": "James Lee's explosive burst speed — the raw acceleration that defines his fighting peak in Lookism.",
             "mobility": false
           },
           {
@@ -1324,7 +1324,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+            "characterAbility": "James Lee's instantaneous repositioning, slipping out of exchanges with inhuman quickness.",
             "mobility": false
           },
           {
@@ -1343,7 +1343,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Speed-threshold engage — James Lee’s explosive acceleration.",
+            "characterAbility": "James Lee's capacity to freeze an opponent's rhythm through overwhelming speed pressure.",
             "mobility": false
           },
           {
@@ -1362,7 +1362,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Precise kick combinations and close-range finishing.",
+            "characterAbility": "James Lee's disciplined Jeet Kune Do rhythmic striking chains, honed through underground combat.",
             "mobility": false
           },
           {
@@ -1381,7 +1381,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Precise kick combinations and close-range finishing.",
+            "characterAbility": "James Lee's Jeet Kune Do chain finishing kicks — the decisive closing pressure of his combinations.",
             "mobility": false
           },
           {
@@ -1419,7 +1419,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Precise kick combinations and close-range finishing.",
+            "characterAbility": "James Lee's Tiger Lotus — a tight Jeet Kune Do multi-hit combination blending offense and defense.",
             "mobility": false
           },
           {
@@ -1438,7 +1438,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Movement control and wind-pressure extension.",
+            "characterAbility": "James Lee's wind-step agility — the spatial control that lets him dictate engagement distance.",
             "mobility": false
           },
           {
@@ -1457,7 +1457,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Movement control and wind-pressure extension.",
+            "characterAbility": "James Lee's gale-force follow-up, converting spatial control into sustained offensive pressure.",
             "mobility": false
           },
           {
@@ -1769,7 +1769,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Movement control and wind-pressure extension.",
+            "characterAbility": "James Lee's wind vortex footwork — his ability to create and control space in close-range exchanges.",
             "mobility": false
           },
           {
@@ -1807,7 +1807,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Movement control and wind-pressure extension.",
+            "characterAbility": "James Lee's wind shock technique, converting momentum into sustained forward pressure.",
             "mobility": false
           },
           {
@@ -1826,7 +1826,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Explosive light pressure and a blade-like visual substitute.",
+            "characterAbility": "James Lee's explosive striking precision — the raw force he channels through Jeet Kune Do's direct attack philosophy.",
             "mobility": false
           },
           {
@@ -1845,7 +1845,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Explosive light pressure and a blade-like visual substitute.",
+            "characterAbility": "James Lee's blade-edge precision strike — the clean, decisive finishing quality of his close-range game.",
             "mobility": false
           },
           {
@@ -21289,7 +21289,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind Release neutral and separation.",
+            "characterAbility": "Naruto's Wind Release affinity — the natural element that amplifies his Rasenshuriken into a chakra blade.",
             "mobility": false
           },
           {
@@ -21308,7 +21308,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind Release neutral and separation.",
+            "characterAbility": "Naruto's wind chakra mastery, the elemental basis he refined through sage training with Fukasaku.",
             "mobility": false
           },
           {
@@ -21611,7 +21611,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind Release neutral and separation.",
+            "characterAbility": "Naruto's Wind Release nature — the elemental foundation that transforms his Rasengan into Rasenshuriken.",
             "mobility": false
           },
           {
@@ -21649,7 +21649,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind Release neutral and separation.",
+            "characterAbility": "Naruto's wind-nature chakra control, refined through sage mode and Six Paths empowerment.",
             "mobility": false
           },
           {
@@ -21668,7 +21668,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Six Paths chakra visual.",
+            "characterAbility": "Naruto's Six Paths golden chakra — the divine energy granted by Hagoromo Otsutsuki.",
             "mobility": false
           },
           {
@@ -21988,7 +21988,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind Release neutral and separation.",
+            "characterAbility": "Naruto's Wind Release elemental nature, channeling the wind chakra that empowers his Rasengan variants.",
             "mobility": false
           },
           {
@@ -22026,7 +22026,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind Release neutral and separation.",
+            "characterAbility": "Naruto's wind-nature mastery, the chakra element he channels through sage mode and Six Paths power.",
             "mobility": false
           },
           {
@@ -22045,7 +22045,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Six Paths chakra visual.",
+            "characterAbility": "Naruto's Six Paths chakra manifestation — the golden divine energy from the Sage of Six Paths.",
             "mobility": false
           },
           {
@@ -23279,7 +23279,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Chidori-like control.",
+            "characterAbility": "Sasuke's Chidori mastery — lightning-natured chakra wielded as both thrust and blade in combat.",
             "mobility": false
           },
           {
@@ -23298,7 +23298,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Chidori-like control.",
+            "characterAbility": "Sasuke's Raikiri-class lightning techniques, the cutting edge of his lightning nature release arsenal.",
             "mobility": false
           },
           {
@@ -23601,7 +23601,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Chidori-like control.",
+            "characterAbility": "Sasuke's Chidori — his signature lightning jutsu honed from Kakashi's tutelage into deadly variants.",
             "mobility": false
           },
           {
@@ -23639,7 +23639,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Chidori-like control.",
+            "characterAbility": "Sasuke's lightning chakra nature, the element he forged through countless Chidori refinements.",
             "mobility": false
           },
           {
@@ -23658,7 +23658,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Amaterasu movement support.",
+            "characterAbility": "Sasuke's Amaterasu — inextinguishable black flames manifested through his Mangekyō Sharingan.",
             "mobility": false
           },
           {
@@ -23979,7 +23979,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Chidori-like control.",
+            "characterAbility": "Sasuke's Chidori-based lightning techniques, the elemental core of his offensive arsenal.",
             "mobility": false
           },
           {
@@ -24017,7 +24017,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Chidori-like control.",
+            "characterAbility": "Sasuke's lightning nature release, expanded from the Chidori through his Sharingan genius.",
             "mobility": false
           },
           {
@@ -24036,7 +24036,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Amaterasu movement support.",
+            "characterAbility": "Sasuke's Amaterasu — eternal black flames that he activates through his left Mangekyō Sharingan.",
             "mobility": false
           },
           {
@@ -25273,7 +25273,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Massive Fire Release.",
+            "characterAbility": "Madara's Fire Release — the Uchiha clan's signature element, wielded by Madara at catastrophic scale.",
             "mobility": false
           },
           {
@@ -25292,7 +25292,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Massive Fire Release.",
+            "characterAbility": "Madara's inferno techniques — fire nature release that only he can sustain at Great Fire Annihilation scale.",
             "mobility": false
           },
           {
@@ -25595,7 +25595,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Massive Fire Release.",
+            "characterAbility": "Madara's massive Fire Release — the Uchiha's elemental heritage amplified by his god-tier chakra reserves.",
             "mobility": false
           },
           {
@@ -25633,7 +25633,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Massive Fire Release.",
+            "characterAbility": "Madara's fire nature mastery — devastating chakra-infused flames that reflect his absolute dominance.",
             "mobility": false
           },
           {
@@ -25652,7 +25652,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Earth defense and terrain control.",
+            "characterAbility": "Madara's Wood Release — the First Hokage's kekkei genkai he implanted in himself for additional power.",
             "mobility": false
           },
           {
@@ -25973,7 +25973,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Massive Fire Release.",
+            "characterAbility": "Madara's Uchiha fire nature — wielded at the absolute pinnacle of Fire Release mastery.",
             "mobility": false
           },
           {
@@ -26011,7 +26011,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Massive Fire Release.",
+            "characterAbility": "Madara's destructive Fire Release — the catastrophic fire techniques that mirror his overwhelming might.",
             "mobility": false
           },
           {
@@ -26030,7 +26030,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Earth defense and terrain control.",
+            "characterAbility": "Madara's Wood Release — the First Hokage's stolen kekkei genkai he added through forbidden self-modification.",
             "mobility": false
           },
           {
@@ -27273,7 +27273,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind neutral and separation.",
+            "characterAbility": "Minato's Wind Release — the natural chakra affinity he used to develop his signature Rasengan technique.",
             "mobility": false
           },
           {
@@ -27292,7 +27292,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind neutral and separation.",
+            "characterAbility": "Minato's wind chakra control, the elemental nature he channeled through his legendary spatial techniques.",
             "mobility": false
           },
           {
@@ -27596,7 +27596,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind neutral and separation.",
+            "characterAbility": "Minato's Wind Release nature — the chakra affinity that connects his elemental power to his Rasengan lineage.",
             "mobility": false
           },
           {
@@ -27634,7 +27634,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind neutral and separation.",
+            "characterAbility": "Minato's wind nature mastery, the elemental component of his legendary speed-based combat.",
             "mobility": false
           },
           {
@@ -27653,7 +27653,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Fast close pressure.",
+            "characterAbility": "Minato's Flying Thunder God — the space-time ninjutsu that made him the fastest shinobi in his era.",
             "mobility": false
           },
           {
@@ -27978,7 +27978,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind neutral and separation.",
+            "characterAbility": "Minato's Wind Release chakra — the elemental affinity that enhances his signature speed-based combat.",
             "mobility": false
           },
           {
@@ -28016,7 +28016,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind neutral and separation.",
+            "characterAbility": "Minato's wind nature techniques, the elemental dimension of his legendary offensive arsenal.",
             "mobility": false
           },
           {
@@ -28035,7 +28035,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Fast close pressure.",
+            "characterAbility": "Minato's Flying Raijin — the space-time jutsu that made him the fastest Hokage of the Hidden Leaf.",
             "mobility": false
           },
           {
@@ -29272,7 +29272,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Fire Release.",
+            "characterAbility": "Itachi's Fire Release mastery — the Uchiha's signature element he commanded with prodigious precision.",
             "mobility": false
           },
           {
@@ -29291,7 +29291,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Fire Release.",
+            "characterAbility": "Itachi's fire nature techniques, part of the Uchiha kekkei he wielded alongside his genjutsu arsenal.",
             "mobility": false
           },
           {
@@ -29593,7 +29593,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Fire Release.",
+            "characterAbility": "Itachi's Fire Release heritage — the Uchiha's elemental identity he mastered as a child prodigy.",
             "mobility": false
           },
           {
@@ -29631,7 +29631,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Fire Release.",
+            "characterAbility": "Itachi's fire chakra, the element he wielded alongside Amaterasu to define his offensive identity.",
             "mobility": false
           },
           {
@@ -29650,7 +29650,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Black-flame mobility.",
+            "characterAbility": "Itachi's Amaterasu — the inextinguishable black flames of his left Mangekyō Sharingan eye.",
             "mobility": false
           },
           {
@@ -29969,7 +29969,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Fire Release.",
+            "characterAbility": "Itachi's Uchiha fire nature — the elemental affinity he commanded with characteristic calm precision.",
             "mobility": false
           },
           {
@@ -30007,7 +30007,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Fire Release.",
+            "characterAbility": "Itachi's fire chakra control — the Uchiha's signature element wielded alongside his genjutsu genius.",
             "mobility": false
           },
           {
@@ -30026,7 +30026,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Black-flame mobility.",
+            "characterAbility": "Itachi's Amaterasu — black flames from his left Mangekyō eye that burn whatever they fall upon.",
             "mobility": false
           },
           {
@@ -31269,7 +31269,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Lightning Release.",
+            "characterAbility": "Boruto's Lightning Release — the nature transformation he combines with his Karma seal techniques.",
             "mobility": false
           },
           {
@@ -31288,7 +31288,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Lightning Release.",
+            "characterAbility": "Boruto's lightning chakra affinity, a core element in his developing ninja tool and Rasengan combos.",
             "mobility": false
           },
           {
@@ -31592,7 +31592,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Lightning Release.",
+            "characterAbility": "Boruto's Lightning Release nature — the elemental affinity he uses alongside his Karma seal power.",
             "mobility": false
           },
           {
@@ -31630,7 +31630,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Lightning Release.",
+            "characterAbility": "Boruto's lightning-style techniques, reflecting his inheritance and scientific ninja tool development.",
             "mobility": false
           },
           {
@@ -31649,7 +31649,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind Release.",
+            "characterAbility": "Boruto's Wind Release inheritance — the natural affinity from Naruto that empowers his Rasengan variants.",
             "mobility": false
           },
           {
@@ -31971,7 +31971,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Lightning Release.",
+            "characterAbility": "Boruto's Lightning Release chakra — the element he combines with Karma seal techniques in combat.",
             "mobility": false
           },
           {
@@ -32009,7 +32009,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Lightning Release.",
+            "characterAbility": "Boruto's lightning nature mastery, developed alongside his scientific ninja tools and Otsutsuki power.",
             "mobility": false
           },
           {
@@ -32028,7 +32028,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Wind Release.",
+            "characterAbility": "Boruto's Wind Release from Naruto — the inherited chakra nature that amplifies his Rasengan family moves.",
             "mobility": false
           },
           {
@@ -32462,7 +32462,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Spiritual energy.",
+        "characterAbility": "Ichigo's raw Reiatsu output — the overwhelming spiritual energy that defines his combined Shinigami and Hollow power.",
         "mobility": false
       },
       {
@@ -32886,7 +32886,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual energy.",
+            "characterAbility": "Ichigo's raw Reiatsu output — the overwhelming spiritual energy that defines his combined Shinigami and Hollow power.",
             "mobility": false
           },
           {
@@ -33243,7 +33243,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual energy.",
+            "characterAbility": "Ichigo's Bankai Reiatsu — the condensed spiritual energy unleashed when Tensa Zangetsu enters the fight.",
             "mobility": false
           },
           {
@@ -33262,7 +33262,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual energy.",
+            "characterAbility": "Ichigo's Shinigami spiritual pressure — the Reiatsu that takes physical form through Zangetsu's power.",
             "mobility": false
           },
           {
@@ -33281,7 +33281,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Dark spiritual energy.",
+            "characterAbility": "Ichigo's Hollow spiritual energy — the dark Reiatsu of his inner Hollow that amplifies Getsuga Tensho.",
             "mobility": false
           },
           {
@@ -33584,7 +33584,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual energy.",
+            "characterAbility": "Ichigo's Shinigami Reiatsu — the spiritual energy that marks him as captain-class or beyond.",
             "mobility": false
           },
           {
@@ -33622,7 +33622,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual energy.",
+            "characterAbility": "Ichigo's Bankai spiritual pressure — the condensed Reiatsu of Tensa Zangetsu's full manifestation.",
             "mobility": false
           },
           {
@@ -33641,7 +33641,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Dark spiritual energy.",
+            "characterAbility": "Ichigo's inner Hollow Reiatsu — the dark spiritual energy of his Hollow inheritance under pressure.",
             "mobility": false
           },
           {
@@ -33965,7 +33965,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual energy.",
+            "characterAbility": "Ichigo's Shinigami spiritual energy — the Reiatsu powering his Getsuga Tensho and Zangetsu techniques.",
             "mobility": false
           },
           {
@@ -34003,7 +34003,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual energy.",
+            "characterAbility": "Ichigo's condensed Bankai Reiatsu — the spiritual pressure of Tensa Zangetsu at full power.",
             "mobility": false
           },
           {
@@ -34022,7 +34022,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Dark spiritual energy.",
+            "characterAbility": "Ichigo's Hollow Reiatsu — the dark spiritual energy of his Hollow nature amplifying his Getsuga variants.",
             "mobility": false
           },
           {
@@ -35258,7 +35258,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual pressure.",
+            "characterAbility": "Aizen's crushing Reiatsu — the overwhelming spiritual pressure that paralyzes most opponents without Kyoka Suigetsu.",
             "mobility": false
           },
           {
@@ -35277,7 +35277,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual pressure.",
+            "characterAbility": "Aizen's immense spiritual pressure — the force of his Reiatsu that surpasses all but the most powerful Shinigami.",
             "mobility": false
           },
           {
@@ -35580,7 +35580,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual pressure.",
+            "characterAbility": "Aizen's commanding Reiatsu — the transcendent spiritual pressure that signals his power beyond Shinigami limits.",
             "mobility": false
           },
           {
@@ -35618,7 +35618,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual pressure.",
+            "characterAbility": "Aizen's Hogyoku-enhanced spiritual pressure — the evolved Reiatsu of his transformation beyond Shinigami classification.",
             "mobility": false
           },
           {
@@ -35637,7 +35637,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Dark sword energy.",
+            "characterAbility": "Aizen's Kyoka Suigetsu — his complete hypnosis zanpakuto that rewrites all five senses for every witness.",
             "mobility": false
           },
           {
@@ -35959,7 +35959,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual pressure.",
+            "characterAbility": "Aizen's crushing Reiatsu — spiritual pressure alone enough to overwhelm captain-class Shinigami.",
             "mobility": false
           },
           {
@@ -35997,7 +35997,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Spiritual pressure.",
+            "characterAbility": "Aizen's transcendent spiritual energy — his Hogyoku-evolved Reiatsu beyond Shinigami classification.",
             "mobility": false
           },
           {
@@ -36016,7 +36016,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Dark sword energy.",
+            "characterAbility": "Aizen's Kyoka Suigetsu — the complete hypnosis that has never been broken once released.",
             "mobility": false
           },
           {
@@ -37252,7 +37252,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Airborne control.",
+            "characterAbility": "Luffy's Gear Fourth Snake-Man — the Python stretching technique that sends attacks on unpredictable arcing paths.",
             "mobility": false
           },
           {
@@ -37271,7 +37271,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Airborne control.",
+            "characterAbility": "Luffy's Culverin — the Snake-Man punch that bends around blocks and curves back to track its target.",
             "mobility": false
           },
           {
@@ -37574,7 +37574,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Airborne control.",
+            "characterAbility": "Luffy's Snake-Man Gear Fourth — the rubber body's airborne form enabling Python and Culverin attacks.",
             "mobility": false
           },
           {
@@ -37612,7 +37612,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Airborne control.",
+            "characterAbility": "Luffy's Gear Fourth reach — the Snake-Man form that maximizes range through his elasticized rubber body.",
             "mobility": false
           },
           {
@@ -37631,7 +37631,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Heat visual support.",
+            "characterAbility": "Luffy's Gear Second heat — the blood-pumping speed boost that supercharges his rubber body's striking force.",
             "mobility": false
           },
           {
@@ -37952,7 +37952,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Airborne control.",
+            "characterAbility": "Luffy's Snake-Man aerial stance — the Gear Fourth form enabling trajectory-manipulated Python attacks.",
             "mobility": false
           },
           {
@@ -37990,7 +37990,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Airborne control.",
+            "characterAbility": "Luffy's Gear Fourth flight — the inflated Snake-Man form that keeps him airborne delivering Culverin strikes.",
             "mobility": false
           },
           {
@@ -38009,7 +38009,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Heat visual support.",
+            "characterAbility": "Luffy's Gear Second steam — the heat-driven acceleration that amplifies his rubber body's speed and power.",
             "mobility": false
           },
           {
@@ -38442,7 +38442,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Durability and impact.",
+        "characterAbility": "Jotaro's iron willpower — the resolve that lets him endure lethal blows and continue fighting regardless.",
         "mobility": false
       },
       {
@@ -38861,7 +38861,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Durability and impact.",
+            "characterAbility": "Jotaro's iron willpower — the resolve that lets him endure lethal blows and continue fighting regardless.",
             "mobility": false
           },
           {
@@ -39214,7 +39214,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Durability and impact.",
+            "characterAbility": "Jotaro's physical endurance — Star Platinum's defense that lets him tank blows no normal human could survive.",
             "mobility": false
           },
           {
@@ -39233,7 +39233,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Durability and impact.",
+            "characterAbility": "Star Platinum's crushing impact — the overwhelming physical force delivered in each punch of its ORA barrage.",
             "mobility": false
           },
           {
@@ -39252,7 +39252,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Stand speed.",
+            "characterAbility": "Star Platinum's legendary speed — near-limitless velocity that underpins Jotaro's time-stop reversal.",
             "mobility": false
           },
           {
@@ -39531,7 +39531,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Durability and impact.",
+            "characterAbility": "Jotaro's battle endurance — the ironclad resolve that lets him absorb punishment and stay in the fight.",
             "mobility": false
           },
           {
@@ -39550,7 +39550,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Durability and impact.",
+            "characterAbility": "Star Platinum's raw striking force — the immense power that shattered Dio's barrage with a single counter.",
             "mobility": false
           },
           {
@@ -39588,7 +39588,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Stand speed.",
+            "characterAbility": "Star Platinum's precision speed — the Stand's near-limitless velocity enabling Jotaro's time-stop advantage.",
             "mobility": false
           },
           {
@@ -39923,7 +39923,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Durability and impact.",
+            "characterAbility": "Jotaro's physical toughness — enduring extreme punishment through sheer willpower and Star Platinum's defense.",
             "mobility": false
           },
           {
@@ -39961,7 +39961,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Durability and impact.",
+            "characterAbility": "Star Platinum's fist impact — the crushing ORA force that can shatter even DIO's defenses.",
             "mobility": false
           },
           {
@@ -39980,7 +39980,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Stand speed.",
+            "characterAbility": "Star Platinum's peak speed — the precision velocity that enables Jotaro's time-stop and reversal.",
             "mobility": false
           },
           {
