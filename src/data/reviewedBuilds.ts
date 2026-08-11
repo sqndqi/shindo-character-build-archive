@@ -40176,5 +40176,1972 @@ export const reviewedBuilds = [
         "notes": "Needs Retesting remains accurate."
       }
     ]
+  },
+  {
+    "id": "vasco",
+    "characterId": "character-vasco",
+    "versionId": "version-vasco",
+    "buildName": "Most Accurate — Muay Thai Forward Pressure",
+    "name": "Vasco",
+    "series": "Lookism",
+    "franchise": "PTJ / Street Action",
+    "version": "Muay Thai Forward Pressure",
+    "image": "/characters/vasco.jpg",
+    "thumbnail": "/characters/thumbs/vasco.webp",
+    "description": "Raw forward pressure and durability-first Muay Thai brawler with explosive closing power.",
+    "archetype": [
+      "Muay Thai",
+      "Forward Pressure",
+      "Durability"
+    ],
+    "combatTags": [
+      "Hand-to-hand",
+      "Martial arts"
+    ],
+    "customTags": [
+      "Curated"
+    ],
+    "effectsIntensity": "Medium",
+    "bloodlines": [
+      {
+        "id": "vasco-bloodline-1",
+        "name": "Ryuji-Kenichi",
+        "purpose": "Muay Thai power and forward pressure engine.",
+        "useMode": true
+      },
+      {
+        "id": "vasco-bloodline-2",
+        "name": "Bruce-Kenichi",
+        "purpose": "Kick combinations and Muay Thai finishing strikes.",
+        "useMode": false
+      },
+      {
+        "id": "vasco-bloodline-3",
+        "name": "Doku-Tengoku",
+        "purpose": "Counter and reactive palm defense.",
+        "useMode": false
+      },
+      {
+        "id": "vasco-bloodline-4",
+        "name": "Rengoku",
+        "purpose": "Compressed Muscle explosive burst for closing distance.",
+        "useMode": false
+      }
+    ],
+    "elements": [
+      "Earth",
+      "Fire"
+    ],
+    "cMode": "Ryuji-Kenichi — Stage 1",
+    "zMode": "None",
+    "combatArt": "Muay Thai",
+    "weapon": "None",
+    "ninjaTool": "None",
+    "consumable": "None",
+    "mentor": "None",
+    "race": "None",
+    "hotbar": [
+      {
+        "id": "vasco-4x2-hotbar-1",
+        "key": "1",
+        "source": "Ryuji-Kenichi",
+        "ability": "Fist Style: Dragon Lotus",
+        "purpose": "Wide-range Muay Thai strike that opens forward pressure.",
+        "comboRole": "Starter",
+        "blockBreak": false,
+        "guardPressure": true,
+        "counter": false,
+        "modeAbility": false,
+        "accuracy": "Strong Match",
+        "sourceType": "Bloodline",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "None",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Vasco's raw forward power — the wide-range strike that announces he is not retreating.",
+        "mobility": false
+      },
+      {
+        "id": "vasco-4x2-hotbar-2",
+        "key": "2",
+        "source": "Ryuji-Kenichi",
+        "ability": "Fist Style: Dragon Demon Combo",
+        "purpose": "Multi-hit combination that sustains pressure into corner.",
+        "comboRole": "Extender",
+        "blockBreak": false,
+        "guardPressure": true,
+        "counter": false,
+        "modeAbility": false,
+        "accuracy": "Strong Match",
+        "sourceType": "Bloodline",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "None",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Vasco's relentless combination pressure — the multi-hit sequence that grinds opponents into a corner.",
+        "mobility": false
+      },
+      {
+        "id": "vasco-4x2-hotbar-3",
+        "key": "3",
+        "source": "Ryuji-Kenichi",
+        "ability": "Fist Style: 3rd Stance",
+        "purpose": "Durability posture that absorbs incoming punishment.",
+        "comboRole": "Pressure",
+        "blockBreak": false,
+        "guardPressure": false,
+        "counter": false,
+        "modeAbility": false,
+        "accuracy": "Strong Match",
+        "sourceType": "Bloodline",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "None",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Vasco's durability stance — the posture that absorbs damage and keeps him in the fight regardless of incoming punishment.",
+        "mobility": false
+      },
+      {
+        "id": "vasco-4x2-hotbar-4",
+        "key": "4",
+        "source": "Bruce-Kenichi",
+        "ability": "Fist Style: Tiger Lotus",
+        "purpose": "Short-range multi-hit Muay Thai kick burst.",
+        "comboRole": "Extender",
+        "blockBreak": false,
+        "guardPressure": false,
+        "counter": false,
+        "modeAbility": false,
+        "accuracy": "Strong Match",
+        "sourceType": "Bloodline",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "None",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Vasco's Muay Thai rapid kicks — short-range multi-hit kick burst expressing his Muay Thai foundation.",
+        "mobility": false
+      },
+      {
+        "id": "vasco-4x2-hotbar-5",
+        "key": "5",
+        "source": "Bruce-Kenichi",
+        "ability": "Fist Style: Star Kick",
+        "purpose": "Decisive forward kick that closes space and cuts hesitation.",
+        "comboRole": "Finisher",
+        "blockBreak": false,
+        "guardPressure": false,
+        "counter": false,
+        "modeAbility": false,
+        "accuracy": "Strong Match",
+        "sourceType": "Bloodline",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "None",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Vasco's forward kick commitment — a decisive single kick that cuts through hesitation and closes space.",
+        "mobility": false
+      },
+      {
+        "id": "vasco-4x2-hotbar-T",
+        "key": "T",
+        "source": "Rengoku",
+        "ability": "Rengoku Style: Inferno Engage",
+        "purpose": "Explosive fire-powered closing burst from Compressed Muscle.",
+        "comboRole": "Opener",
+        "blockBreak": false,
+        "guardPressure": false,
+        "counter": false,
+        "modeAbility": false,
+        "accuracy": "Strong Match",
+        "sourceType": "Bloodline",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "None",
+        "usageNotes": "BL4 maps to T in the four-bloodline hotbar layout. Move existence confirmed; key assignment and exact behavior need live testing.",
+        "characterAbility": "Vasco's explosive charge — the fire-powered closing burst that ends the gap between him and any target.",
+        "mobility": true
+      },
+      {
+        "id": "vasco-4x2-hotbar-V",
+        "key": "V",
+        "source": "Bruce-Kenichi",
+        "ability": "Fist Style: Star Kick Rising",
+        "purpose": "Rising upward kick that punishes opponents pressuring from close range.",
+        "comboRole": "Counter",
+        "blockBreak": false,
+        "guardPressure": false,
+        "counter": true,
+        "modeAbility": false,
+        "accuracy": "Strong Match",
+        "sourceType": "Bloodline",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "None",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Vasco's upward kick — the rising strike that rewards opponents who try to pressure him from close range.",
+        "mobility": false
+      },
+      {
+        "id": "vasco-4x2-hotbar-B",
+        "key": "B",
+        "source": "Doku-Tengoku",
+        "ability": "Tengoku Style: Concentrated Palm Blast",
+        "purpose": "Reactive counter-palm that punishes overcommitted opponents.",
+        "comboRole": "Counter",
+        "blockBreak": false,
+        "guardPressure": false,
+        "counter": true,
+        "modeAbility": false,
+        "accuracy": "Strong Match",
+        "sourceType": "Bloodline",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "None",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Vasco's reactive guard — a counter-palm that punishes opponents who overcommit into his front.",
+        "mobility": false
+      },
+      {
+        "id": "vasco-4x2-hotbar-N",
+        "key": "N",
+        "source": "Doku-Tengoku",
+        "ability": "Tengoku Style: 128 Palm Counter",
+        "purpose": "Sustained counter wall that converts opponent aggression into damage.",
+        "comboRole": "Counter",
+        "blockBreak": false,
+        "guardPressure": false,
+        "counter": true,
+        "modeAbility": false,
+        "accuracy": "Strong Match",
+        "sourceType": "Bloodline",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "None",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Vasco's sustained counter wall — repeated palm strikes that turn an opponent's aggression into their own damage.",
+        "mobility": false
+      },
+      {
+        "id": "vasco-4x2-hotbar-C",
+        "key": "C",
+        "source": "Ryuji-Kenichi",
+        "ability": "Ryuji-Kenichi — Stage 1",
+        "purpose": "Activates Muay Thai power mode.",
+        "comboRole": "Mode",
+        "blockBreak": false,
+        "guardPressure": false,
+        "counter": false,
+        "modeAbility": true,
+        "accuracy": "Strong Match",
+        "sourceType": "Mode",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "Ryuji-Kenichi — Stage 1",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "characterAbility": "Activates Vasco's Muay Thai power mode — Ryuji-Kenichi Stage 1."
+      },
+      {
+        "id": "vasco-4x2-hotbar-Z",
+        "key": "Z",
+        "source": "None",
+        "ability": "Not used in this variant",
+        "purpose": "No secondary mode — Vasco commits entirely to forward Muay Thai approach.",
+        "comboRole": "Mode",
+        "blockBreak": false,
+        "guardPressure": false,
+        "counter": false,
+        "modeAbility": true,
+        "accuracy": "Unresolved",
+        "sourceType": "None",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "Not used in this variant",
+        "usageNotes": "No BL4 Z-mode assigned; Vasco's build concentrates on the four active bloodlines.",
+        "characterAbility": "No secondary mode — Vasco commits entirely to his forward Muay Thai approach."
+      },
+      {
+        "id": "vasco-4x2-hotbar-Q",
+        "key": "Q",
+        "source": "Muay Thai",
+        "ability": "Muay Thai Q attack",
+        "purpose": "Muay Thai core identity — forward pressure and sustained striking.",
+        "comboRole": "Combat Art",
+        "blockBreak": false,
+        "guardPressure": false,
+        "counter": false,
+        "modeAbility": false,
+        "accuracy": "Strong Match",
+        "testingStatus": "Needs Retesting",
+        "modeRequirement": "None",
+        "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+        "sourceType": "Combat Art",
+        "characterAbility": "Vasco's core identity — Muay Thai mastery built from years of street fighting and formal training under Park Hyun."
+      }
+    ],
+    "combos": [
+      {
+        "name": "Vasco forward pressure route",
+        "sequence": [
+          "1",
+          "2",
+          "3",
+          "Q"
+        ],
+        "explanation": "Open with Dragon Lotus, follow with Dragon Demon Combo for multi-hit extension, settle into 3rd Stance, finish with Muay Thai. Continue only after the first hit confirms; live timing remains unverified."
+      },
+      {
+        "name": "Kick closing route",
+        "sequence": [
+          "T",
+          "4",
+          "5",
+          "V"
+        ],
+        "explanation": "Use Inferno Engage to close distance, follow with Tiger Lotus rapid kicks, commit with Star Kick, punish counter-pressure with Star Kick Rising. Timing requires live testing."
+      },
+      {
+        "name": "Counter wall route",
+        "sequence": [
+          "B",
+          "N",
+          "Q"
+        ],
+        "explanation": "Deploy Concentrated Palm Blast on opponent approach, layer with 128 Palm Counter to sustain counter pressure, reset with Muay Thai. This route is not claimed to be guaranteed."
+      }
+    ],
+    "strengths": [
+      "Committed forward pressure identity with no retreat built into the design.",
+      "Muay Thai combat art reinforces the character's defining martial discipline.",
+      "Counter options from Doku-Tengoku provide reactive depth without abandoning aggression.",
+      "Rengoku's explosive burst closes distance and applies fire pressure."
+    ],
+    "weaknesses": [
+      "Live combo timing remains unverified.",
+      "Doku-Tengoku and Rengoku are Shindo analogues rather than direct canon moves.",
+      "No mobility-focused element — Earth and Fire prioritize durability and damage over speed."
+    ],
+    "substitutions": [],
+    "ratings": {
+      "accuracy": 8.5,
+      "pvp": 8.3,
+      "mobility": 7.8,
+      "combos": 8.2,
+      "defense": 8.4,
+      "visuals": 8.5,
+      "aura": 8.7,
+      "difficulty": 7.9
+    },
+    "slotAlternatives": {
+      "twoSlots": [],
+      "threeSlots": [],
+      "fourSlots": []
+    },
+    "variations": {
+      "beginner": "Use the vasco-accessible profile for a single-bloodline entry point.",
+      "meta": "Use vasco-4x2 for the full four-bloodline competitive setup.",
+      "lore": "Use vasco-4x2 for the most complete Muay Thai lore representation."
+    },
+    "notes": "Reviewed static editorial build. Every selectable profile is prepared in archive data; no runtime build generation is used.",
+    "status": "Needs Testing",
+    "gameUpdate": "Live build reviewed 2026-08-11",
+    "lastVerifiedUpdate": "Live build reviewed 2026-08-11",
+    "verificationStatus": "Needs Retesting",
+    "createdAt": "2026-08-11T00:00:00.000Z",
+    "updatedAt": "2026-08-11T00:00:00.000Z",
+    "testing": {
+      "status": "Untested",
+      "contexts": [],
+      "tester": "",
+      "testDate": "",
+      "notes": "Live-game combo timing and guard behavior still require owner testing."
+    },
+    "changeHistory": [],
+    "chapterRange": "Current Lookism continuity; exact chapter range needs editorial confirmation",
+    "characterAbilities": [
+      "Muay Thai",
+      "Forward Pressure",
+      "Durability"
+    ],
+    "knownCompromises": [
+      "Doku-Tengoku as BL3 provides counter moves but does not represent any specific Vasco canon technique — included as closest Shindo analogue for his reactive fighting instinct.",
+      "Rengoku as BL4 maps to Vasco's explosive power ceiling rather than any canonical Lookism move name."
+    ],
+    "confidence": "Unverified",
+    "publicationStatus": "Reviewed",
+    "variants": [
+      {
+        "id": "vasco-4x2",
+        "name": "Most Accurate — Muay Thai Forward Pressure",
+        "type": "Primary",
+        "bloodlineSlotCount": 4,
+        "elementSlotCount": 2,
+        "bloodlines": [
+          {
+            "name": "Ryuji-Kenichi",
+            "purpose": "Muay Thai power and forward pressure engine.",
+            "exactMovesUsed": [
+              "Fist Style: Dragon Lotus",
+              "Fist Style: Dragon Demon Combo",
+              "Fist Style: 3rd Stance"
+            ],
+            "useMode": true,
+            "reason": "Primary Muay Thai identity — power, stamina, and forward pressure.",
+            "represents": "Vasco's Muay Thai power and brawling stamina.",
+            "replacements": {
+              "lore": [],
+              "competitive": [],
+              "accessible": []
+            }
+          },
+          {
+            "name": "Bruce-Kenichi",
+            "purpose": "Kick combinations and Muay Thai finishing strikes.",
+            "exactMovesUsed": [
+              "Fist Style: Tiger Lotus",
+              "Fist Style: Star Kick",
+              "Fist Style: Star Kick Rising"
+            ],
+            "useMode": false,
+            "reason": "Muay Thai kick combination support.",
+            "represents": "Vasco's kick-based Muay Thai finishing capacity.",
+            "replacements": {
+              "lore": [],
+              "competitive": [],
+              "accessible": []
+            }
+          },
+          {
+            "name": "Doku-Tengoku",
+            "purpose": "Counter and reactive palm defense.",
+            "exactMovesUsed": [
+              "Tengoku Style: Concentrated Palm Blast",
+              "Tengoku Style: 128 Palm Counter"
+            ],
+            "useMode": false,
+            "reason": "Closest Shindo analogue for reactive fighting instinct.",
+            "represents": "Vasco's reactive counter instinct and defensive depth.",
+            "replacements": {
+              "lore": [],
+              "competitive": [],
+              "accessible": []
+            }
+          },
+          {
+            "name": "Rengoku",
+            "purpose": "Compressed Muscle explosive burst for closing distance.",
+            "exactMovesUsed": [
+              "Rengoku Style: Inferno Engage"
+            ],
+            "useMode": false,
+            "reason": "Maps to Vasco's explosive power ceiling.",
+            "represents": "Vasco's explosive closing power and fire-infused strikes.",
+            "replacements": {
+              "lore": [],
+              "competitive": [],
+              "accessible": []
+            }
+          }
+        ],
+        "elements": [
+          {
+            "name": "Earth",
+            "exactMovesUsed": [
+              "Stone Style: Earth Wall",
+              "Stone Style: Rage Trail"
+            ],
+            "purpose": "Durability and forward aggression support.",
+            "replacements": []
+          },
+          {
+            "name": "Fire",
+            "exactMovesUsed": [
+              "Blaze Style: Burn Knuckles",
+              "Blaze Style: Flame Wall"
+            ],
+            "purpose": "Burn Knuckles identity and fire damage pressure.",
+            "replacements": []
+          }
+        ],
+        "cMode": "Ryuji-Kenichi — Stage 1",
+        "zMode": "None",
+        "combatArt": "Muay Thai",
+        "weapon": "None",
+        "ninjaTool": "None",
+        "consumable": "None",
+        "mentor": "None",
+        "race": "None",
+        "hotbar": [
+          {
+            "id": "vasco-4x2-hotbar-1",
+            "key": "1",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Lotus",
+            "purpose": "Wide-range Muay Thai strike that opens forward pressure.",
+            "comboRole": "Starter",
+            "blockBreak": false,
+            "guardPressure": true,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's raw forward power — the wide-range strike that announces he is not retreating.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-4x2-hotbar-2",
+            "key": "2",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Demon Combo",
+            "purpose": "Multi-hit combination that sustains pressure into corner.",
+            "comboRole": "Extender",
+            "blockBreak": false,
+            "guardPressure": true,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's relentless combination pressure — the multi-hit sequence that grinds opponents into a corner.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-4x2-hotbar-3",
+            "key": "3",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: 3rd Stance",
+            "purpose": "Durability posture that absorbs incoming punishment.",
+            "comboRole": "Pressure",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's durability stance — the posture that absorbs damage and keeps him in the fight regardless of incoming punishment.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-4x2-hotbar-4",
+            "key": "4",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: Tiger Lotus",
+            "purpose": "Short-range multi-hit Muay Thai kick burst.",
+            "comboRole": "Extender",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's Muay Thai rapid kicks — short-range multi-hit kick burst expressing his Muay Thai foundation.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-4x2-hotbar-5",
+            "key": "5",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: Star Kick",
+            "purpose": "Decisive forward kick that closes space and cuts hesitation.",
+            "comboRole": "Finisher",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's forward kick commitment — a decisive single kick that cuts through hesitation and closes space.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-4x2-hotbar-T",
+            "key": "T",
+            "source": "Rengoku",
+            "ability": "Rengoku Style: Inferno Engage",
+            "purpose": "Explosive fire-powered closing burst from Compressed Muscle.",
+            "comboRole": "Opener",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "BL4 maps to T in the four-bloodline hotbar layout. Move existence confirmed; key assignment and exact behavior need live testing.",
+            "characterAbility": "Vasco's explosive charge — the fire-powered closing burst that ends the gap between him and any target.",
+            "mobility": true
+          },
+          {
+            "id": "vasco-4x2-hotbar-V",
+            "key": "V",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: Star Kick Rising",
+            "purpose": "Rising upward kick that punishes opponents pressuring from close range.",
+            "comboRole": "Counter",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": true,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's upward kick — the rising strike that rewards opponents who try to pressure him from close range.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-4x2-hotbar-B",
+            "key": "B",
+            "source": "Doku-Tengoku",
+            "ability": "Tengoku Style: Concentrated Palm Blast",
+            "purpose": "Reactive counter-palm that punishes overcommitted opponents.",
+            "comboRole": "Counter",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": true,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's reactive guard — a counter-palm that punishes opponents who overcommit into his front.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-4x2-hotbar-N",
+            "key": "N",
+            "source": "Doku-Tengoku",
+            "ability": "Tengoku Style: 128 Palm Counter",
+            "purpose": "Sustained counter wall that converts opponent aggression into damage.",
+            "comboRole": "Counter",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": true,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's sustained counter wall — repeated palm strikes that turn an opponent's aggression into their own damage.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-4x2-hotbar-C",
+            "key": "C",
+            "source": "Ryuji-Kenichi",
+            "ability": "Ryuji-Kenichi — Stage 1",
+            "purpose": "Activates Muay Thai power mode.",
+            "comboRole": "Mode",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": true,
+            "accuracy": "Strong Match",
+            "sourceType": "Mode",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "Ryuji-Kenichi — Stage 1",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Activates Vasco's Muay Thai power mode — Ryuji-Kenichi Stage 1."
+          },
+          {
+            "id": "vasco-4x2-hotbar-Z",
+            "key": "Z",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "No secondary mode — Vasco commits entirely to forward Muay Thai approach.",
+            "comboRole": "Mode",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": true,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "Not used in this variant",
+            "usageNotes": "No BL4 Z-mode assigned; Vasco's build concentrates on the four active bloodlines.",
+            "characterAbility": "No secondary mode — Vasco commits entirely to his forward Muay Thai approach."
+          },
+          {
+            "id": "vasco-4x2-hotbar-Q",
+            "key": "Q",
+            "source": "Muay Thai",
+            "ability": "Muay Thai Q attack",
+            "purpose": "Muay Thai core identity — forward pressure and sustained striking.",
+            "comboRole": "Combat Art",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "sourceType": "Combat Art",
+            "characterAbility": "Vasco's core identity — Muay Thai mastery built from years of street fighting and formal training under Park Hyun."
+          }
+        ],
+        "combos": [
+          {
+            "name": "Vasco forward pressure main route",
+            "sequence": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "explanation": "Open with Dragon Lotus, extend with Dragon Demon Combo, settle into 3rd Stance, follow with Tiger Lotus rapid kicks, finish with Star Kick. Continue only after the first hit confirms; live timing remains unverified."
+          },
+          {
+            "name": "Explosive close and counter route",
+            "sequence": [
+              "T",
+              "B",
+              "N",
+              "Q"
+            ],
+            "explanation": "Close with Inferno Engage, immediately punish with Concentrated Palm Blast and 128 Palm Counter, reset with Muay Thai. Timing requires live testing."
+          }
+        ],
+        "ratings": {
+          "accuracy": 8.5,
+          "pvp": 8.3,
+          "mobility": 7.8,
+          "combos": 8.2,
+          "defense": 8.4,
+          "visuals": 8.5,
+          "aura": 8.7,
+          "difficulty": 7.9
+        },
+        "strengths": [
+          "Full four-bloodline selection preserves Vasco's Muay Thai brawler identity.",
+          "Counter depth from Doku-Tengoku without abandoning forward aggression.",
+          "Rengoku closing burst enables distance control."
+        ],
+        "weaknesses": [
+          "Live combo timing remains unverified.",
+          "Doku-Tengoku and Rengoku are analogues rather than direct Lookism moves."
+        ],
+        "usageGuide": [
+          "Open with Dragon Lotus to establish wide-range pressure.",
+          "Layer Dragon Demon Combo to sustain multi-hit corner pressure.",
+          "Use Inferno Engage to close gaps before committing to kick combinations.",
+          "Keep Concentrated Palm Blast ready for opponent overcommit punishment."
+        ],
+        "verificationStatus": "Needs Retesting",
+        "lastVerifiedUpdate": "Live update pending owner retest",
+        "combatArtReason": "Muay Thai is Vasco's defining martial discipline and reinforces the forward pressure identity.",
+        "kenjutsu": "None",
+        "kenjutsuReason": "Vasco has no sword identity.",
+        "weaponReason": "Vasco's build relies entirely on Muay Thai striking — no weapon assigned.",
+        "qAction": {
+          "source": "Combat Art",
+          "name": "Muay Thai Q attack",
+          "purpose": "Muay Thai forward pressure and sustained striking."
+        },
+        "fightingStyleNotes": [
+          "Raw forward pressure, durability-first, Muay Thai emphasis — Vasco does not retreat.",
+          "Every selected source keeps a documented character or role purpose."
+        ],
+        "equipment": {
+          "ninjaTool": "None",
+          "ninjaToolReason": "No character-specific ninja tool improves this setup.",
+          "consumable": "None",
+          "consumableReason": "No consumable is required for the character concept.",
+          "mentor": "None",
+          "mentorReason": "No mentor is assigned automatically; use one only after a stat-specific owner test.",
+          "race": "None",
+          "raceReason": "Race is left open because no available race is required for the character match."
+        },
+        "ownershipRequirements": [
+          "Ryuji-Kenichi",
+          "Bruce-Kenichi",
+          "Doku-Tengoku",
+          "Rengoku",
+          "Earth",
+          "Fire",
+          "Muay Thai"
+        ],
+        "compromises": [
+          "Doku-Tengoku as BL3 provides counter moves but does not represent any specific Vasco canon technique — included as closest Shindo analogue for his reactive fighting instinct.",
+          "Rengoku as BL4 maps to Vasco's explosive power ceiling rather than any canonical Lookism move name."
+        ]
+      },
+      {
+        "id": "vasco-3x2",
+        "name": "Three-slot Muay Thai brawler",
+        "type": "Three Slot",
+        "bloodlineSlotCount": 3,
+        "elementSlotCount": 2,
+        "bloodlines": [
+          {
+            "name": "Ryuji-Kenichi",
+            "purpose": "Muay Thai power and forward pressure engine.",
+            "exactMovesUsed": [
+              "Fist Style: Dragon Lotus",
+              "Fist Style: Dragon Demon Combo",
+              "Fist Style: 3rd Stance"
+            ],
+            "useMode": true,
+            "reason": "Primary Muay Thai identity — power, stamina, and forward pressure.",
+            "represents": "Vasco's Muay Thai power and brawling stamina.",
+            "replacements": {
+              "lore": [],
+              "competitive": [],
+              "accessible": []
+            }
+          },
+          {
+            "name": "Bruce-Kenichi",
+            "purpose": "Kick combinations and Muay Thai finishing strikes.",
+            "exactMovesUsed": [
+              "Fist Style: Tiger Lotus",
+              "Fist Style: Star Kick",
+              "Fist Style: Star Kick Rising"
+            ],
+            "useMode": false,
+            "reason": "Muay Thai kick combination support.",
+            "represents": "Vasco's kick-based Muay Thai finishing capacity.",
+            "replacements": {
+              "lore": [],
+              "competitive": [],
+              "accessible": []
+            }
+          },
+          {
+            "name": "Doku-Tengoku",
+            "purpose": "Counter and reactive palm defense.",
+            "exactMovesUsed": [
+              "Tengoku Style: Concentrated Palm Blast",
+              "Tengoku Style: 128 Palm Counter"
+            ],
+            "useMode": false,
+            "reason": "Closest Shindo analogue for reactive fighting instinct.",
+            "represents": "Vasco's reactive counter instinct and defensive depth.",
+            "replacements": {
+              "lore": [],
+              "competitive": [],
+              "accessible": []
+            }
+          }
+        ],
+        "elements": [
+          {
+            "name": "Earth",
+            "exactMovesUsed": [
+              "Stone Style: Earth Wall",
+              "Stone Style: Rage Trail"
+            ],
+            "purpose": "Durability and forward aggression support.",
+            "replacements": []
+          },
+          {
+            "name": "Fire",
+            "exactMovesUsed": [
+              "Blaze Style: Burn Knuckles",
+              "Blaze Style: Flame Wall"
+            ],
+            "purpose": "Burn Knuckles identity and fire damage pressure.",
+            "replacements": []
+          }
+        ],
+        "cMode": "Ryuji-Kenichi — Stage 1",
+        "zMode": "None",
+        "combatArt": "Muay Thai",
+        "weapon": "None",
+        "ninjaTool": "None",
+        "consumable": "None",
+        "mentor": "None",
+        "race": "None",
+        "hotbar": [
+          {
+            "id": "vasco-3x2-hotbar-1",
+            "key": "1",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Lotus",
+            "purpose": "Wide-range Muay Thai strike that opens forward pressure.",
+            "comboRole": "Starter",
+            "blockBreak": false,
+            "guardPressure": true,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's raw forward power — the wide-range strike that announces he is not retreating.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-3x2-hotbar-2",
+            "key": "2",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Demon Combo",
+            "purpose": "Multi-hit combination that sustains pressure into corner.",
+            "comboRole": "Extender",
+            "blockBreak": false,
+            "guardPressure": true,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's relentless combination pressure — the multi-hit sequence that grinds opponents into a corner.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-3x2-hotbar-3",
+            "key": "3",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: 3rd Stance",
+            "purpose": "Durability posture that absorbs incoming punishment.",
+            "comboRole": "Pressure",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's durability stance — the posture that absorbs damage and keeps him in the fight regardless of incoming punishment.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-3x2-hotbar-4",
+            "key": "4",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: Tiger Lotus",
+            "purpose": "Short-range multi-hit Muay Thai kick burst.",
+            "comboRole": "Extender",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's Muay Thai rapid kicks — short-range multi-hit kick burst expressing his Muay Thai foundation.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-3x2-hotbar-5",
+            "key": "5",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: Star Kick",
+            "purpose": "Decisive forward kick that closes space and cuts hesitation.",
+            "comboRole": "Finisher",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's forward kick commitment — a decisive single kick that cuts through hesitation and closes space.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-3x2-hotbar-T",
+            "key": "T",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "This control is intentionally empty — BL4 not equipped in three-slot variant.",
+            "comboRole": "Empty",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Intentionally empty; no filler ability is assigned.",
+            "characterAbility": "No BL4 ability equipped in three-slot variant.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-3x2-hotbar-V",
+            "key": "V",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: Star Kick Rising",
+            "purpose": "Rising upward kick that punishes opponents pressuring from close range.",
+            "comboRole": "Counter",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": true,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's upward kick — the rising strike that rewards opponents who try to pressure him from close range.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-3x2-hotbar-B",
+            "key": "B",
+            "source": "Doku-Tengoku",
+            "ability": "Tengoku Style: Concentrated Palm Blast",
+            "purpose": "Reactive counter-palm that punishes overcommitted opponents.",
+            "comboRole": "Counter",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": true,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's reactive guard — a counter-palm that punishes opponents who overcommit into his front.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-3x2-hotbar-N",
+            "key": "N",
+            "source": "Doku-Tengoku",
+            "ability": "Tengoku Style: 128 Palm Counter",
+            "purpose": "Sustained counter wall that converts opponent aggression into damage.",
+            "comboRole": "Counter",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": true,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's sustained counter wall — repeated palm strikes that turn an opponent's aggression into their own damage.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-3x2-hotbar-C",
+            "key": "C",
+            "source": "Ryuji-Kenichi",
+            "ability": "Ryuji-Kenichi — Stage 1",
+            "purpose": "Activates Muay Thai power mode.",
+            "comboRole": "Mode",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": true,
+            "accuracy": "Strong Match",
+            "sourceType": "Mode",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "Ryuji-Kenichi — Stage 1",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Activates Vasco's Muay Thai power mode — Ryuji-Kenichi Stage 1."
+          },
+          {
+            "id": "vasco-3x2-hotbar-Z",
+            "key": "Z",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "No secondary mode — Vasco commits entirely to forward Muay Thai approach.",
+            "comboRole": "Mode",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": true,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "Not used in this variant",
+            "usageNotes": "No BL4 Z-mode assigned; Vasco's build concentrates on the active bloodlines.",
+            "characterAbility": "No secondary mode — Vasco commits entirely to his forward Muay Thai approach."
+          },
+          {
+            "id": "vasco-3x2-hotbar-Q",
+            "key": "Q",
+            "source": "Muay Thai",
+            "ability": "Muay Thai Q attack",
+            "purpose": "Muay Thai core identity — forward pressure and sustained striking.",
+            "comboRole": "Combat Art",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "sourceType": "Combat Art",
+            "characterAbility": "Vasco's core identity — Muay Thai mastery built from years of street fighting and formal training under Park Hyun."
+          }
+        ],
+        "combos": [
+          {
+            "name": "Three-slot forward pressure route",
+            "sequence": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "explanation": "Open with Dragon Lotus, extend with Dragon Demon Combo, settle into 3rd Stance, follow with Tiger Lotus, finish with Star Kick. Live timing remains unverified."
+          },
+          {
+            "name": "Counter wall route",
+            "sequence": [
+              "B",
+              "N",
+              "Q"
+            ],
+            "explanation": "Deploy Concentrated Palm Blast, layer 128 Palm Counter, reset with Muay Thai. Not claimed to be guaranteed."
+          }
+        ],
+        "ratings": {
+          "accuracy": 8.2,
+          "pvp": 8.0,
+          "mobility": 7.6,
+          "combos": 8.0,
+          "defense": 8.2,
+          "visuals": 8.2,
+          "aura": 8.5,
+          "difficulty": 7.7
+        },
+        "strengths": [
+          "Preserves Muay Thai forward pressure with counter depth intact.",
+          "Three-slot selection has its own hotbar and mode plan."
+        ],
+        "weaknesses": [
+          "Live combo timing remains unverified.",
+          "Loses Rengoku closing burst without BL4."
+        ],
+        "usageGuide": [
+          "Open with Dragon Lotus to establish wide-range pressure.",
+          "Layer Dragon Demon Combo to sustain multi-hit corner pressure.",
+          "Keep Concentrated Palm Blast ready for opponent overcommit punishment."
+        ],
+        "verificationStatus": "Needs Retesting",
+        "lastVerifiedUpdate": "Live update pending owner retest",
+        "combatArtReason": "Muay Thai is Vasco's defining martial discipline.",
+        "kenjutsu": "None",
+        "kenjutsuReason": "Vasco has no sword identity.",
+        "weaponReason": "Vasco's build relies entirely on Muay Thai striking — no weapon assigned.",
+        "qAction": {
+          "source": "Combat Art",
+          "name": "Muay Thai Q attack",
+          "purpose": "Muay Thai forward pressure and sustained striking."
+        },
+        "fightingStyleNotes": [
+          "Raw forward pressure with counter depth — Vasco does not retreat.",
+          "Every selected source keeps a documented character or role purpose."
+        ],
+        "equipment": {
+          "ninjaTool": "None",
+          "ninjaToolReason": "No character-specific ninja tool improves this setup.",
+          "consumable": "None",
+          "consumableReason": "No consumable is required for the character concept.",
+          "mentor": "None",
+          "mentorReason": "No mentor is assigned automatically; use one only after a stat-specific owner test.",
+          "race": "None",
+          "raceReason": "Race is left open because no available race is required for the character match."
+        },
+        "ownershipRequirements": [
+          "Ryuji-Kenichi",
+          "Bruce-Kenichi",
+          "Doku-Tengoku",
+          "Earth",
+          "Fire",
+          "Muay Thai"
+        ],
+        "compromises": [
+          "Doku-Tengoku as BL3 provides counter moves but does not represent any specific Vasco canon technique — included as closest Shindo analogue for his reactive fighting instinct."
+        ]
+      },
+      {
+        "id": "vasco-2x2",
+        "name": "Two-slot Muay Thai core",
+        "type": "Two Slot",
+        "bloodlineSlotCount": 2,
+        "elementSlotCount": 2,
+        "bloodlines": [
+          {
+            "name": "Ryuji-Kenichi",
+            "purpose": "Muay Thai power and forward pressure engine.",
+            "exactMovesUsed": [
+              "Fist Style: Dragon Lotus",
+              "Fist Style: Dragon Demon Combo",
+              "Fist Style: 3rd Stance"
+            ],
+            "useMode": true,
+            "reason": "Primary Muay Thai identity — power, stamina, and forward pressure.",
+            "represents": "Vasco's Muay Thai power and brawling stamina.",
+            "replacements": {
+              "lore": [],
+              "competitive": [],
+              "accessible": []
+            }
+          },
+          {
+            "name": "Bruce-Kenichi",
+            "purpose": "Kick combinations and Muay Thai finishing strikes.",
+            "exactMovesUsed": [
+              "Fist Style: Tiger Lotus",
+              "Fist Style: Star Kick",
+              "Fist Style: Star Kick Rising"
+            ],
+            "useMode": false,
+            "reason": "Muay Thai kick combination support.",
+            "represents": "Vasco's kick-based Muay Thai finishing capacity.",
+            "replacements": {
+              "lore": [],
+              "competitive": [],
+              "accessible": []
+            }
+          }
+        ],
+        "elements": [
+          {
+            "name": "Earth",
+            "exactMovesUsed": [
+              "Stone Style: Earth Wall",
+              "Stone Style: Rage Trail"
+            ],
+            "purpose": "Durability and forward aggression support.",
+            "replacements": []
+          },
+          {
+            "name": "Fire",
+            "exactMovesUsed": [
+              "Blaze Style: Burn Knuckles",
+              "Blaze Style: Flame Wall"
+            ],
+            "purpose": "Burn Knuckles identity and fire damage pressure.",
+            "replacements": []
+          }
+        ],
+        "cMode": "Ryuji-Kenichi — Stage 1",
+        "zMode": "None",
+        "combatArt": "Muay Thai",
+        "weapon": "None",
+        "ninjaTool": "None",
+        "consumable": "None",
+        "mentor": "None",
+        "race": "None",
+        "hotbar": [
+          {
+            "id": "vasco-2x2-hotbar-1",
+            "key": "1",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Lotus",
+            "purpose": "Wide-range Muay Thai strike that opens forward pressure.",
+            "comboRole": "Starter",
+            "blockBreak": false,
+            "guardPressure": true,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's raw forward power — the wide-range strike that announces he is not retreating.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-2x2-hotbar-2",
+            "key": "2",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Demon Combo",
+            "purpose": "Multi-hit combination that sustains pressure into corner.",
+            "comboRole": "Extender",
+            "blockBreak": false,
+            "guardPressure": true,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's relentless combination pressure — the multi-hit sequence that grinds opponents into a corner.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-2x2-hotbar-3",
+            "key": "3",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: 3rd Stance",
+            "purpose": "Durability posture that absorbs incoming punishment.",
+            "comboRole": "Pressure",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's durability stance — the posture that absorbs damage and keeps him in the fight regardless of incoming punishment.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-2x2-hotbar-4",
+            "key": "4",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: Tiger Lotus",
+            "purpose": "Short-range multi-hit Muay Thai kick burst.",
+            "comboRole": "Extender",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's Muay Thai rapid kicks — short-range multi-hit kick burst expressing his Muay Thai foundation.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-2x2-hotbar-5",
+            "key": "5",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: Star Kick",
+            "purpose": "Decisive forward kick that closes space and cuts hesitation.",
+            "comboRole": "Finisher",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's forward kick commitment — a decisive single kick that cuts through hesitation and closes space.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-2x2-hotbar-T",
+            "key": "T",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "This control is intentionally empty — BL3 and BL4 not equipped in two-slot variant.",
+            "comboRole": "Empty",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Intentionally empty; no filler ability is assigned.",
+            "characterAbility": "No BL3 or BL4 ability equipped in two-slot variant.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-2x2-hotbar-V",
+            "key": "V",
+            "source": "Bruce-Kenichi",
+            "ability": "Fist Style: Star Kick Rising",
+            "purpose": "Rising upward kick that punishes opponents pressuring from close range.",
+            "comboRole": "Counter",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": true,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's upward kick — the rising strike that rewards opponents who try to pressure him from close range.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-2x2-hotbar-B",
+            "key": "B",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "This control is intentionally empty — no BL3 in two-slot variant.",
+            "comboRole": "Empty",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Intentionally empty; no filler ability is assigned.",
+            "characterAbility": "No counter palm available in two-slot variant.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-2x2-hotbar-N",
+            "key": "N",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "This control is intentionally empty — no BL3 in two-slot variant.",
+            "comboRole": "Empty",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Intentionally empty; no filler ability is assigned.",
+            "characterAbility": "No palm counter available in two-slot variant.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-2x2-hotbar-C",
+            "key": "C",
+            "source": "Ryuji-Kenichi",
+            "ability": "Ryuji-Kenichi — Stage 1",
+            "purpose": "Activates Muay Thai power mode.",
+            "comboRole": "Mode",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": true,
+            "accuracy": "Strong Match",
+            "sourceType": "Mode",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "Ryuji-Kenichi — Stage 1",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Activates Vasco's Muay Thai power mode — Ryuji-Kenichi Stage 1."
+          },
+          {
+            "id": "vasco-2x2-hotbar-Z",
+            "key": "Z",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "No secondary mode — Vasco commits entirely to forward Muay Thai approach.",
+            "comboRole": "Mode",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": true,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "Not used in this variant",
+            "usageNotes": "No Z-mode assigned; Vasco's build concentrates on the active bloodlines.",
+            "characterAbility": "No secondary mode — Vasco commits entirely to his forward Muay Thai approach."
+          },
+          {
+            "id": "vasco-2x2-hotbar-Q",
+            "key": "Q",
+            "source": "Muay Thai",
+            "ability": "Muay Thai Q attack",
+            "purpose": "Muay Thai core identity — forward pressure and sustained striking.",
+            "comboRole": "Combat Art",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "sourceType": "Combat Art",
+            "characterAbility": "Vasco's core identity — Muay Thai mastery built from years of street fighting and formal training under Park Hyun."
+          }
+        ],
+        "combos": [
+          {
+            "name": "Two-slot forward pressure route",
+            "sequence": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "explanation": "Open with Dragon Lotus, extend with Dragon Demon Combo, settle into 3rd Stance, follow with Tiger Lotus, finish with Star Kick. Live timing remains unverified."
+          },
+          {
+            "name": "Upward kick reversal",
+            "sequence": [
+              "V",
+              "Q"
+            ],
+            "explanation": "Use Star Kick Rising against opponent close-range pressure, reset with Muay Thai. Not claimed to be guaranteed."
+          }
+        ],
+        "ratings": {
+          "accuracy": 7.9,
+          "pvp": 7.7,
+          "mobility": 7.4,
+          "combos": 7.8,
+          "defense": 7.6,
+          "visuals": 8.0,
+          "aura": 8.2,
+          "difficulty": 7.5
+        },
+        "strengths": [
+          "Core Muay Thai forward pressure preserved with BL1 and BL2.",
+          "Two-slot selection has its own hotbar and mode plan."
+        ],
+        "weaknesses": [
+          "Loses counter depth without Doku-Tengoku.",
+          "No explosive closing burst without Rengoku.",
+          "Live combo timing remains unverified."
+        ],
+        "usageGuide": [
+          "Open with Dragon Lotus to establish pressure.",
+          "Extend with Dragon Demon Combo for corner pressure.",
+          "Use Star Kick Rising against close-range opponent aggression."
+        ],
+        "verificationStatus": "Needs Retesting",
+        "lastVerifiedUpdate": "Live update pending owner retest",
+        "combatArtReason": "Muay Thai is Vasco's defining martial discipline.",
+        "kenjutsu": "None",
+        "kenjutsuReason": "Vasco has no sword identity.",
+        "weaponReason": "Vasco's build relies entirely on Muay Thai striking — no weapon assigned.",
+        "qAction": {
+          "source": "Combat Art",
+          "name": "Muay Thai Q attack",
+          "purpose": "Muay Thai forward pressure and sustained striking."
+        },
+        "fightingStyleNotes": [
+          "Core Muay Thai forward pressure without counter or explosive-burst support.",
+          "This profile trades counter depth for lower ownership requirements."
+        ],
+        "equipment": {
+          "ninjaTool": "None",
+          "ninjaToolReason": "No character-specific ninja tool improves this setup.",
+          "consumable": "None",
+          "consumableReason": "No consumable is required for the character concept.",
+          "mentor": "None",
+          "mentorReason": "No mentor is assigned automatically; use one only after a stat-specific owner test.",
+          "race": "None",
+          "raceReason": "Race is left open because no available race is required for the character match."
+        },
+        "ownershipRequirements": [
+          "Ryuji-Kenichi",
+          "Bruce-Kenichi",
+          "Earth",
+          "Fire",
+          "Muay Thai"
+        ],
+        "compromises": [
+          "No counter-depth bloodline in this variant — opponent overcommit cannot be punished with a Doku-Tengoku counter."
+        ]
+      },
+      {
+        "id": "vasco-accessible",
+        "name": "Accessible Muay Thai brawler",
+        "type": "Beginner",
+        "bloodlineSlotCount": 2,
+        "elementSlotCount": 2,
+        "bloodlines": [
+          {
+            "name": "Ryuji-Kenichi",
+            "purpose": "Muay Thai power and forward pressure engine.",
+            "exactMovesUsed": [
+              "Fist Style: Dragon Lotus",
+              "Fist Style: Dragon Demon Combo",
+              "Fist Style: 3rd Stance"
+            ],
+            "useMode": true,
+            "reason": "Core Muay Thai identity using a single bloodline for lowest ownership barrier.",
+            "represents": "Vasco's fundamental Muay Thai power and forward commitment.",
+            "replacements": {
+              "lore": [],
+              "competitive": [
+                "Bruce-Kenichi"
+              ],
+              "accessible": []
+            }
+          }
+        ],
+        "elements": [
+          {
+            "name": "Earth",
+            "exactMovesUsed": [
+              "Stone Style: Earth Wall",
+              "Stone Style: Rage Trail"
+            ],
+            "purpose": "Durability support matching Vasco's first-element identity.",
+            "replacements": []
+          }
+        ],
+        "cMode": "Ryuji-Kenichi — Stage 1",
+        "zMode": "None",
+        "combatArt": "Muay Thai",
+        "weapon": "None",
+        "ninjaTool": "None",
+        "consumable": "None",
+        "mentor": "None",
+        "race": "None",
+        "hotbar": [
+          {
+            "id": "vasco-accessible-hotbar-1",
+            "key": "1",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Lotus",
+            "purpose": "Wide-range Muay Thai strike that opens forward pressure.",
+            "comboRole": "Starter",
+            "blockBreak": false,
+            "guardPressure": true,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's raw forward power — the wide-range strike that announces he is not retreating.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-accessible-hotbar-2",
+            "key": "2",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: Dragon Demon Combo",
+            "purpose": "Multi-hit combination that sustains pressure into corner.",
+            "comboRole": "Extender",
+            "blockBreak": false,
+            "guardPressure": true,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's relentless combination pressure — the multi-hit sequence that grinds opponents into a corner.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-accessible-hotbar-3",
+            "key": "3",
+            "source": "Ryuji-Kenichi",
+            "ability": "Fist Style: 3rd Stance",
+            "purpose": "Durability posture that absorbs incoming punishment.",
+            "comboRole": "Pressure",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "sourceType": "Bloodline",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Vasco's durability stance — the posture that absorbs damage and keeps him in the fight regardless of incoming punishment.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-accessible-hotbar-4",
+            "key": "4",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "This control is intentionally empty — single-bloodline accessible variant.",
+            "comboRole": "Empty",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Intentionally empty; no filler ability is assigned.",
+            "characterAbility": "No BL2 ability equipped in accessible variant.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-accessible-hotbar-5",
+            "key": "5",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "This control is intentionally empty — single-bloodline accessible variant.",
+            "comboRole": "Empty",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Intentionally empty; no filler ability is assigned.",
+            "characterAbility": "No BL2 kick ability equipped in accessible variant.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-accessible-hotbar-T",
+            "key": "T",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "This control is intentionally empty — single-bloodline accessible variant.",
+            "comboRole": "Empty",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Intentionally empty; no filler ability is assigned.",
+            "characterAbility": "No BL4 ability equipped in accessible variant.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-accessible-hotbar-V",
+            "key": "V",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "This control is intentionally empty — single-bloodline accessible variant.",
+            "comboRole": "Empty",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Intentionally empty; no filler ability is assigned.",
+            "characterAbility": "No BL2 rising kick equipped in accessible variant.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-accessible-hotbar-B",
+            "key": "B",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "This control is intentionally empty — single-bloodline accessible variant.",
+            "comboRole": "Empty",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Intentionally empty; no filler ability is assigned.",
+            "characterAbility": "No counter palm available in accessible variant.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-accessible-hotbar-N",
+            "key": "N",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "This control is intentionally empty — single-bloodline accessible variant.",
+            "comboRole": "Empty",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Intentionally empty; no filler ability is assigned.",
+            "characterAbility": "No palm counter available in accessible variant.",
+            "mobility": false
+          },
+          {
+            "id": "vasco-accessible-hotbar-C",
+            "key": "C",
+            "source": "Ryuji-Kenichi",
+            "ability": "Ryuji-Kenichi — Stage 1",
+            "purpose": "Activates Muay Thai power mode.",
+            "comboRole": "Mode",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": true,
+            "accuracy": "Strong Match",
+            "sourceType": "Mode",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "Ryuji-Kenichi — Stage 1",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "characterAbility": "Activates Vasco's Muay Thai power mode — Ryuji-Kenichi Stage 1."
+          },
+          {
+            "id": "vasco-accessible-hotbar-Z",
+            "key": "Z",
+            "source": "None",
+            "ability": "Not used in this variant",
+            "purpose": "No secondary mode — Vasco commits entirely to forward Muay Thai approach.",
+            "comboRole": "Mode",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": true,
+            "accuracy": "Unresolved",
+            "sourceType": "None",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "Not used in this variant",
+            "usageNotes": "No Z-mode assigned; accessible variant concentrates on BL1 only.",
+            "characterAbility": "No secondary mode — Vasco commits entirely to his forward Muay Thai approach."
+          },
+          {
+            "id": "vasco-accessible-hotbar-Q",
+            "key": "Q",
+            "source": "Muay Thai",
+            "ability": "Muay Thai Q attack",
+            "purpose": "Muay Thai core identity — forward pressure and sustained striking.",
+            "comboRole": "Combat Art",
+            "blockBreak": false,
+            "guardPressure": false,
+            "counter": false,
+            "modeAbility": false,
+            "accuracy": "Strong Match",
+            "testingStatus": "Needs Retesting",
+            "modeRequirement": "None",
+            "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
+            "sourceType": "Combat Art",
+            "characterAbility": "Vasco's core identity — Muay Thai mastery built from years of street fighting and formal training under Park Hyun."
+          }
+        ],
+        "combos": [
+          {
+            "name": "Accessible Muay Thai entry route",
+            "sequence": [
+              "1",
+              "2",
+              "3",
+              "Q"
+            ],
+            "explanation": "Open with Dragon Lotus, extend with Dragon Demon Combo, settle into 3rd Stance, reset with Muay Thai. Intended as an entry-level route; live timing remains unverified."
+          }
+        ],
+        "ratings": {
+          "accuracy": 7.5,
+          "pvp": 7.2,
+          "mobility": 7.0,
+          "combos": 7.3,
+          "defense": 7.4,
+          "visuals": 7.8,
+          "aura": 8.0,
+          "difficulty": 6.5
+        },
+        "strengths": [
+          "Lowest ownership barrier — only Ryuji-Kenichi and Earth required.",
+          "Core Muay Thai identity fully preserved in accessible format.",
+          "Mode access via Ryuji-Kenichi Stage 1 still available."
+        ],
+        "weaknesses": [
+          "No kick combination support without Bruce-Kenichi.",
+          "No counter depth without Doku-Tengoku.",
+          "No explosive closing burst without Rengoku.",
+          "Live combo timing remains unverified."
+        ],
+        "usageGuide": [
+          "Open with Dragon Lotus to establish pressure.",
+          "Follow with Dragon Demon Combo for multi-hit extension.",
+          "Settle into 3rd Stance to absorb punishment and maintain position.",
+          "Activate C mode for enhanced Muay Thai power when available."
+        ],
+        "verificationStatus": "Needs Retesting",
+        "lastVerifiedUpdate": "Live update pending owner retest",
+        "combatArtReason": "Muay Thai is Vasco's defining martial discipline.",
+        "kenjutsu": "None",
+        "kenjutsuReason": "Vasco has no sword identity.",
+        "weaponReason": "Vasco's build relies entirely on Muay Thai striking — no weapon assigned.",
+        "qAction": {
+          "source": "Combat Art",
+          "name": "Muay Thai Q attack",
+          "purpose": "Muay Thai forward pressure and sustained striking."
+        },
+        "fightingStyleNotes": [
+          "Single-bloodline entry point that preserves Vasco's Muay Thai identity at lowest ownership cost.",
+          "Accessible choices trade depth for approachability."
+        ],
+        "equipment": {
+          "ninjaTool": "None",
+          "ninjaToolReason": "No character-specific ninja tool improves this setup.",
+          "consumable": "None",
+          "consumableReason": "No consumable is required for the character concept.",
+          "mentor": "None",
+          "mentorReason": "No mentor is assigned automatically; use one only after a stat-specific owner test.",
+          "race": "None",
+          "raceReason": "Race is left open because no available race is required for the character match."
+        },
+        "ownershipRequirements": [
+          "Ryuji-Kenichi",
+          "Earth",
+          "Muay Thai"
+        ],
+        "compromises": [
+          "Single-bloodline setup significantly reduces the move pool available to represent Vasco's full fighting style."
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "category": "Character",
+        "claim": "Vasco is a Lookism brawler defined by Muay Thai, forward pressure, and durability — trained formally under Park Hyun.",
+        "sourceTitle": "Vasco character record",
+        "sourceReference": "https://lookism.fandom.com/wiki/Vasco",
+        "checkedAt": "2026-08-11",
+        "notes": "No fabricated chapter reference is used."
+      },
+      {
+        "category": "Game",
+        "claim": "Ryuji-Kenichi supplies Dragon Lotus, Dragon Demon Combo, and 3rd Stance as the primary Muay Thai pressure moves.",
+        "sourceTitle": "Ryuji-Kenichi — Shindo Life Wiki",
+        "sourceReference": "https://shindo-life-rell.fandom.com/wiki/Ryuji-Kenichi",
+        "checkedAt": "2026-08-11",
+        "notes": "Move behavior needs a live retest."
+      },
+      {
+        "category": "Game",
+        "claim": "Bruce-Kenichi supplies Tiger Lotus, Star Kick, and Star Kick Rising as Muay Thai kick combination support.",
+        "sourceTitle": "Bruce-Kenichi — Shindo Life Wiki",
+        "sourceReference": "https://shindo-life-rell.fandom.com/wiki/Bruce-Kenichi",
+        "checkedAt": "2026-08-11",
+        "notes": "Kick move timing needs live testing."
+      },
+      {
+        "category": "Game",
+        "claim": "Doku-Tengoku supplies Concentrated Palm Blast and 128 Palm Counter as closest analogue for Vasco's reactive fighting instinct.",
+        "sourceTitle": "Doku-Tengoku — Shindo Life Wiki",
+        "sourceReference": "https://shindo-life-rell.fandom.com/wiki/Doku-Tengoku",
+        "checkedAt": "2026-08-11",
+        "notes": "Counter palm behavior needs live retest. Analogue — not a canonical Vasco move."
+      },
+      {
+        "category": "Game",
+        "claim": "Rengoku supplies Inferno Engage as closest analogue for Vasco's explosive power ceiling.",
+        "sourceTitle": "Rengoku — Shindo Life Wiki",
+        "sourceReference": "https://shindo-life-rell.fandom.com/wiki/Rengoku",
+        "checkedAt": "2026-08-11",
+        "notes": "BL4 T-slot assignment needs live testing confirmation. Analogue — not a canonical Lookism move name."
+      },
+      {
+        "category": "Testing",
+        "claim": "Mode behavior, combo timing, guard behavior, and all move interactions remain pending owner testing.",
+        "sourceTitle": "Owner test queue",
+        "sourceReference": "Internal testing pending",
+        "checkedAt": "2026-08-11",
+        "notes": "Needs Retesting remains accurate."
+      }
+    ]
   }
 ] satisfies CharacterBuild[]

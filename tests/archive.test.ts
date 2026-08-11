@@ -34,7 +34,7 @@ describe('full restored roster', () => {
   it('has no duplicate build IDs', () => expect(new Set(completeRoster.map((build) => build.id)).size).toBe(completeRoster.length))
   it('has no corrupted repeated Copy names', () => expect(completeRoster.some((build) => /Copy(?:\s+Copy)+/i.test(build.name))).toBe(false))
   it('keeps drafts and research records publicly available', () => {
-    expect(restoredDraftBuilds.length).toBe(80)
+    expect(restoredDraftBuilds.length).toBe(79)
     expect(restoredDraftBuilds.every((build) => ['Draft', 'Needs Research', 'Needs Retesting'].includes(build.publicationStatus))).toBe(true)
   })
   it('orders reviewed builds before restored drafts', () => {
@@ -45,12 +45,12 @@ describe('full restored roster', () => {
     expect(ranks.lastIndexOf('Draft')).toBeLessThan(ranks.indexOf('Needs Research'))
   })
   it('keeps curated Lookism before the anime wave in roster composition', () => {
-    expect(completeRoster.slice(0, 10).map((build) => build.id)).toEqual(curatedBuilds.map((build) => build.id))
-    expect(completeRoster.slice(10, 20).map((build) => build.id)).toEqual(animeMangaBuilds.map((build) => build.id))
+    expect(completeRoster.slice(0, curatedBuilds.length).map((build) => build.id)).toEqual(curatedBuilds.map((build) => build.id))
+    expect(completeRoster.slice(curatedBuilds.length, curatedBuilds.length + animeMangaBuilds.length).map((build) => build.id)).toEqual(animeMangaBuilds.map((build) => build.id))
   })
   it('has the audited publication counts', () => {
     const count = (status: string) => completeRoster.filter((build) => build.publicationStatus === status).length
-    expect({ reviewed: count('Reviewed'), retesting: count('Needs Retesting'), draft: count('Draft'), research: count('Needs Research') }).toEqual({ reviewed: 13, retesting: 63, draft: 16, research: 8 })
+    expect({ reviewed: count('Reviewed'), retesting: count('Needs Retesting'), draft: count('Draft'), research: count('Needs Research') }).toEqual({ reviewed: 14, retesting: 62, draft: 16, research: 8 })
   })
   it('preserves the curated James Lee authority and approved core', () => {
     const james = completeRoster.find((build) => build.id === 'james-lee')!
@@ -243,9 +243,9 @@ describe('Shindo identity, assets, and build-quality checks', () => {
       expect(existsSync(resolve('public', asset!.localPath.slice(1)))).toBe(true)
     }
   })
-  it('gives all 13 reviewed builds prepared slot and accessible profiles', () => {
+  it('gives all 14 reviewed builds prepared slot and accessible profiles', () => {
     const reviewed = completeRoster.filter((build) => build.publicationStatus === 'Reviewed')
-    expect(reviewed).toHaveLength(13)
+    expect(reviewed).toHaveLength(14)
     for (const build of reviewed) {
       expect([2, 3, 4].every((count) => build.variants.some((variant) => variant.bloodlineSlotCount === count))).toBe(true)
       expect(build.variants.some((variant) => variant.type === 'Beginner' || /accessible/i.test(variant.name))).toBe(true)
