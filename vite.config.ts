@@ -6,6 +6,6 @@ export default defineConfig({
   base: process.env.GITHUB_ACTIONS ? '/shindo-character-build-archive/' : '/',
   plugins: [react(), tailwindcss()],
   test: {
-    exclude: ['server/**', 'node_modules/**'],
+    exclude: ['server/**', 'node_modules/**', '.claude/**'],
   },
 })
