@@ -6112,7 +6112,7 @@ export const reviewedBuilds = [
       {
         "id": "little-daniel-park-bloodline-4",
         "name": "Raion-Rengoku",
-        "purpose": "Ultra Instinct automatic dodge-counter — instantaneous evasion that turns every attack into a counter opportunity.",
+        "purpose": "Explosive fire burst — Rengoku's fire charge adds an additional offensive layer at close range, extending Daniel's combo reach.",
         "useMode": false
       }
     ],
@@ -6145,7 +6145,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Copy ability — learns and replicates any fighting style.",
+        "characterAbility": "Daniel's live observation — isolating the core principle of an opponent's style at the moment of first engagement.",
         "mobility": false
       },
       {
@@ -6164,7 +6164,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Copy ability — learns and replicates any fighting style.",
+        "characterAbility": "Daniel's combat adaptation — the reflexive loop that makes each observed technique immediately deployable against the opponent who showed it.",
         "mobility": false
       },
       {
@@ -6183,7 +6183,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Copy ability — learns and replicates any fighting style.",
+        "characterAbility": "Daniel's counter instinct — turning the momentum of an absorbed style against the opponent who demonstrated it.",
         "mobility": false
       },
       {
@@ -6202,7 +6202,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "UI-mode speed and prediction.",
+        "characterAbility": "Daniel's blinding first-step acceleration — the burst speed that places him in striking range before an opponent registers his commitment.",
         "mobility": false
       },
       {
@@ -6221,7 +6221,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "UI-mode speed and prediction.",
+        "characterAbility": "Daniel's positional foresight — moving to where the opponent will be before they decide to move there.",
         "mobility": false
       },
       {
@@ -6259,7 +6259,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "UI-mode speed and prediction.",
+        "characterAbility": "Daniel's UI peak — the moment his perception so completely outpaces the opponent that their movements appear to pause.",
         "mobility": false
       },
       {
@@ -6278,7 +6278,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Learned martial arts mastery.",
+        "characterAbility": "Daniel's absorbed kick foundation — the base kick combination demonstrating complete mastery, not surface imitation.",
         "mobility": false
       },
       {
@@ -6297,7 +6297,7 @@ export const reviewedBuilds = [
         "testingStatus": "Needs Retesting",
         "modeRequirement": "None",
         "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-        "characterAbility": "Learned martial arts mastery.",
+        "characterAbility": "Daniel's absorbed finishing sequence — the closing kick movement proving his copy was comprehensive, not superficial.",
         "mobility": false
       },
       {
@@ -6569,7 +6569,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's live observation — isolating the core principle of an opponent's style at the moment of first engagement.",
             "mobility": false
           },
           {
@@ -6588,7 +6588,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's combat adaptation — the reflexive loop that makes each observed technique immediately deployable against the opponent who showed it.",
             "mobility": false
           },
           {
@@ -6607,7 +6607,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's counter instinct — turning the momentum of an absorbed style against the opponent who demonstrated it.",
             "mobility": false
           },
           {
@@ -6626,7 +6626,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "UI-mode speed and prediction.",
+            "characterAbility": "Daniel's blinding first-step acceleration — the burst speed that places him in striking range before an opponent registers his commitment.",
             "mobility": false
           },
           {
@@ -6645,7 +6645,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "UI-mode speed and prediction.",
+            "characterAbility": "Daniel's positional foresight — moving to where the opponent will be before they decide to move there.",
             "mobility": false
           },
           {
@@ -6683,7 +6683,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "UI-mode speed and prediction.",
+            "characterAbility": "Daniel's UI peak — the moment his perception so completely outpaces the opponent that their movements appear to pause.",
             "mobility": false
           },
           {
@@ -6702,7 +6702,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Learned martial arts mastery.",
+            "characterAbility": "Daniel's absorbed kick foundation — the base kick combination demonstrating complete mastery, not surface imitation.",
             "mobility": false
           },
           {
@@ -6721,7 +6721,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Learned martial arts mastery.",
+            "characterAbility": "Daniel's absorbed finishing sequence — the closing kick movement proving his copy was comprehensive, not superficial.",
             "mobility": false
           },
           {
@@ -6912,7 +6912,7 @@ export const reviewedBuilds = [
           },
           {
             "name": "Raion-Rengoku",
-            "purpose": "Ultra Instinct automatic dodge-counter — instantaneous evasion that turns every attack into a counter opportunity. In this 3-slot build it fills the counter layer previously occupied by predictive defense.",
+            "purpose": "Explosive fire burst — Rengoku's fire charge serves as the offensive anchor in this 3-slot build, replacing the predictive defense layer with direct close-range pressure.",
             "exactMovesUsed": [
               "Rengoku Style: Vanishing Replacement",
               "Rengoku Style: Inferno Engage"
@@ -6974,7 +6974,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's live observation — isolating the core principle of an opponent's style at the moment of first engagement.",
             "mobility": false
           },
           {
@@ -6993,7 +6993,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's combat adaptation — the reflexive loop that makes each observed technique immediately deployable against the opponent who showed it.",
             "mobility": false
           },
           {
@@ -7012,7 +7012,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's counter instinct — turning the momentum of an absorbed style against the opponent who demonstrated it.",
             "mobility": false
           },
           {
@@ -7031,7 +7031,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Learned martial arts mastery.",
+            "characterAbility": "Daniel's absorbed kick foundation — the base kick combination demonstrating complete mastery, not surface imitation.",
             "mobility": false
           },
           {
@@ -7050,7 +7050,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Learned martial arts mastery.",
+            "characterAbility": "Daniel's absorbed finishing sequence — the closing kick movement proving his copy was comprehensive, not superficial.",
             "mobility": false
           },
           {
@@ -7088,7 +7088,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Learned martial arts mastery.",
+            "characterAbility": "Daniel's copied technique ceiling — the most complete expression of absorbed mastery, demonstrating that his copy was total.",
             "mobility": false
           },
           {
@@ -7360,7 +7360,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's live observation — isolating the core principle of an opponent's style at the moment of first engagement.",
             "mobility": false
           },
           {
@@ -7379,7 +7379,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's combat adaptation — the reflexive loop that makes each observed technique immediately deployable against the opponent who showed it.",
             "mobility": false
           },
           {
@@ -7398,7 +7398,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's counter instinct — turning the momentum of an absorbed style against the opponent who demonstrated it.",
             "mobility": false
           },
           {
@@ -7417,7 +7417,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Learned martial arts mastery.",
+            "characterAbility": "Daniel's absorbed kick foundation — the base kick combination demonstrating complete mastery, not surface imitation.",
             "mobility": false
           },
           {
@@ -7436,7 +7436,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Learned martial arts mastery.",
+            "characterAbility": "Daniel's absorbed finishing sequence — the closing kick movement proving his copy was comprehensive, not superficial.",
             "mobility": false
           },
           {
@@ -7474,7 +7474,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Learned martial arts mastery.",
+            "characterAbility": "Daniel's copied technique ceiling — the most complete expression of absorbed mastery, demonstrating that his copy was total.",
             "mobility": false
           },
           {
@@ -7747,7 +7747,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's live observation — isolating the core principle of an opponent's style at the moment of first engagement.",
             "mobility": false
           },
           {
@@ -7766,7 +7766,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's combat adaptation — the reflexive loop that makes each observed technique immediately deployable against the opponent who showed it.",
             "mobility": false
           },
           {
@@ -7785,7 +7785,7 @@ export const reviewedBuilds = [
             "testingStatus": "Needs Retesting",
             "modeRequirement": "None",
             "usageNotes": "Move and source match the archive's Shindo catalog. No independent external verification completed; gameplay timing and guard behavior require live testing.",
-            "characterAbility": "Copy ability — learns and replicates any fighting style.",
+            "characterAbility": "Daniel's counter instinct — turning the momentum of an absorbed style against the opponent who demonstrated it.",
             "mobility": false
           },
           {
@@ -41762,13 +41762,28 @@ export const reviewedBuilds = [
               "Fist Style: 3rd Stance"
             ],
             "useMode": true,
-            "reason": "Core Muay Thai identity using a single bloodline for lowest ownership barrier.",
+            "reason": "Core Muay Thai identity — power, stamina, and forward pressure.",
             "represents": "Vasco's fundamental Muay Thai power and forward commitment.",
             "replacements": {
               "lore": [],
-              "competitive": [
-                "Bruce-Kenichi"
-              ],
+              "competitive": [],
+              "accessible": []
+            }
+          },
+          {
+            "name": "Bruce-Kenichi",
+            "purpose": "Kick combinations and Muay Thai finishing strikes.",
+            "exactMovesUsed": [
+              "Fist Style: Tiger Lotus",
+              "Fist Style: Star Kick",
+              "Fist Style: Star Kick Rising"
+            ],
+            "useMode": false,
+            "reason": "Muay Thai kick combination support — lowest-cost second bloodline with proven synergy.",
+            "represents": "Vasco's kick-based Muay Thai finishing capacity.",
+            "replacements": {
+              "lore": [],
+              "competitive": [],
               "accessible": []
             }
           }
@@ -41781,6 +41796,15 @@ export const reviewedBuilds = [
               "Stone Style: Rage Trail"
             ],
             "purpose": "Durability support matching Vasco's first-element identity.",
+            "replacements": []
+          },
+          {
+            "name": "Fire",
+            "exactMovesUsed": [
+              "Blaze Style: Burn Knuckles",
+              "Blaze Style: Flame Wall"
+            ],
+            "purpose": "Burn Knuckles identity and fire damage pressure.",
             "replacements": []
           }
         ],
