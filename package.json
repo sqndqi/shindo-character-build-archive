@@ -22,6 +22,7 @@
     "taiyi:smoke": "node -e \"const{spawnSync}=require('child_process');const r=spawnSync(process.execPath,['dist/cli/taiyi.js','--version']);process.exit(r.status)\""
   },
   "dependencies": {
+    "@clerk/react": "^6.14.1",
     "@tailwindcss/vite": "^4.3.3",
     "lucide-react": "^1.27.0",
     "oh-my-taiyiforge": "^1.1.0",
