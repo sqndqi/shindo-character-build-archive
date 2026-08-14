@@ -2,6 +2,7 @@ import express, { type Request } from 'express'
 import session from 'express-session'
 import cors from 'cors'
 import helmet from 'helmet'
+import { clerkMiddleware } from '@clerk/express'
 import connectPgSimple from 'connect-pg-simple'
 import { authRouter } from './routes/auth'
 import { archiveRouter } from './routes/archive'
@@ -92,6 +93,8 @@ export function createApp(cookieOverrides?: CookieOverrides) {
       },
     }),
   )
+
+  app.use(clerkMiddleware())
 
   app.get('/health', (_req, res) => {
     res.json({ ok: true })
