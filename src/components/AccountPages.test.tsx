@@ -73,6 +73,7 @@ vi.mock('./CheckoutFlow', () => ({
 import { useAuth } from '@clerk/react'
 import {
   getAccessState,
+  signOut,
   establishClerkSession,
   getEntitlements,
   getOrders,
@@ -82,7 +83,11 @@ import AccountPages from './AccountPages'
 
 const mockUseAuth = vi.mocked(useAuth)
 const mockGetAccessState = vi.mocked(getAccessState)
+const mockSignOut = vi.mocked(signOut)
 const mockEstablishClerkSession = vi.mocked(establishClerkSession)
+
+// Stable reference for Clerk's signOut — re-applied after each vi.resetAllMocks()
+const mockClerkSignOut = vi.fn<() => Promise<void>>()
 
 // ------------------------------------------------------------------ fixtures
 
@@ -118,6 +123,7 @@ function clerkSignedOut() {
     isSignedIn: false,
     userId: null,
     getToken: vi.fn().mockResolvedValue(null),
+    signOut: mockClerkSignOut,
   } as never)
 }
 
@@ -127,6 +133,7 @@ function clerkSignedIn() {
     isSignedIn: true,
     userId: CLERK_USER_ID,
     getToken: vi.fn().mockResolvedValue('clerk.jwt.token'),
+    signOut: mockClerkSignOut,
   } as never)
 }
 
@@ -136,6 +143,7 @@ function clerkLoading() {
     isSignedIn: false,
     userId: null,
     getToken: vi.fn().mockResolvedValue(null),
+    signOut: mockClerkSignOut,
   } as never)
 }
 
@@ -145,7 +153,9 @@ beforeEach(() => {
   vi.resetAllMocks()
   // Re-apply defaults after reset (resetAllMocks clears all implementations)
   mockGetAccessState.mockResolvedValue(signedOutArchive)
+  mockSignOut.mockResolvedValue(undefined)
   mockEstablishClerkSession.mockResolvedValue(signedInArchive)
+  mockClerkSignOut.mockResolvedValue(undefined)
   vi.mocked(getEntitlements).mockResolvedValue([])
   vi.mocked(getOrders).mockResolvedValue([])
   vi.mocked(getProducts).mockResolvedValue([])
@@ -167,6 +177,21 @@ async function renderAndSettle(props: Parameters<typeof AccountPages>[0] = {}) {
     result = render(<AccountPages {...props} />)
   })
   return result
+}
+
+/**
+ * Render AccountPages in signed-in state so AccountView is shown.
+ * Uses getAccessState returning signedInArchive so the initial check
+ * establishes the session without going through the Clerk handshake flow.
+ */
+async function renderSignedIn(props: Parameters<typeof AccountPages>[0] = {}) {
+  mockGetAccessState.mockResolvedValue(signedInArchive)
+  return renderAndSettle(props)
+}
+
+function clickSignOut() {
+  const btn = screen.getByRole('button', { name: /sign out/i })
+  btn.click()
 }
 
 // ================================================================== tests
@@ -480,5 +505,213 @@ describe('StrictMode deduplication', () => {
     expect(onSignedIn.mock.calls[0][0].userId).not.toMatch(/^user_/)
     // Still exactly one request after success
     expect(mockEstablishClerkSession).toHaveBeenCalledTimes(1)
+  })
+})
+
+// ================================================================== dual logout tests
+
+// ---- 14. Archive signOut() called on Sign Out click
+
+describe('dual logout — archive signOut', () => {
+  it('calls repository signOut when Sign Out is clicked (Clerk not active)', async () => {
+    clerkSignedOut()
+    await renderSignedIn()
+    await act(async () => { clickSignOut() })
+    expect(mockSignOut).toHaveBeenCalledTimes(1)
+  })
+
+  it('calls repository signOut when Sign Out is clicked (Clerk active)', async () => {
+    clerkSignedIn()
+    await renderSignedIn()
+    await act(async () => { clickSignOut() })
+    expect(mockSignOut).toHaveBeenCalledTimes(1)
+  })
+})
+
+// ---- 15. Clerk signOut also called
+
+describe('dual logout — Clerk signOut', () => {
+  it('calls Clerk signOut when Clerk session is active', async () => {
+    clerkSignedIn()
+    await renderSignedIn()
+    await act(async () => { clickSignOut() })
+    expect(mockClerkSignOut).toHaveBeenCalledTimes(1)
+  })
+
+  it('skips Clerk signOut when no Clerk session exists (legacy user)', async () => {
+    clerkSignedOut()
+    await renderSignedIn()
+    await act(async () => { clickSignOut() })
+    expect(mockClerkSignOut).not.toHaveBeenCalled()
+  })
+})
+
+// ---- 16. Archive logout must complete before Clerk logout is called
+
+describe('dual logout — ordering', () => {
+  it('archive signOut completes before Clerk signOut is called', async () => {
+    clerkSignedIn()
+
+    const callOrder: string[] = []
+    mockSignOut.mockImplementation(async () => { callOrder.push('archive') })
+    mockClerkSignOut.mockImplementation(async () => { callOrder.push('clerk') })
+
+    await renderSignedIn()
+    await act(async () => { clickSignOut() })
+
+    expect(callOrder).toEqual(['archive', 'clerk'])
+  })
+})
+
+// ---- 17. Duplicate-click protection
+
+describe('dual logout — duplicate click guard', () => {
+  it('does not start a second logout while one is pending', async () => {
+    clerkSignedIn()
+
+    let resolveArchive!: () => void
+    mockSignOut.mockReturnValue(new Promise<void>((res) => { resolveArchive = res }))
+
+    await renderSignedIn()
+
+    // First click starts the pending logout
+    await act(async () => { clickSignOut() })
+
+    // Button is now disabled ("Signing out…") — find it without relying on label
+    const disabledBtn = document.querySelector('button[disabled]') as HTMLButtonElement | null
+    expect(disabledBtn).not.toBeNull()
+
+    // Fire click on the disabled button — handleSignOut guard (signOutBusy) must absorb it
+    await act(async () => { disabledBtn?.click() })
+
+    // Only one archive signOut call despite two clicks
+    expect(mockSignOut).toHaveBeenCalledTimes(1)
+
+    // Clean up — settle so component unmounts cleanly
+    await act(async () => { resolveArchive() })
+  })
+})
+
+// ---- 18. Successful dual logout triggers existing onSignOut (reload)
+
+describe('dual logout — success completes final navigation', () => {
+  it('both archive and Clerk signOut resolve before navigation is triggered', async () => {
+    clerkSignedIn()
+
+    // Both sign-outs complete; the inline onSignOut in AccountPages calls
+    // window.location.href which is a no-op in happy-dom — safe to let run.
+    await renderSignedIn()
+    expect(screen.getByText('Your character access')).toBeTruthy()
+
+    await act(async () => { clickSignOut() })
+
+    // Both called in order before navigation
+    expect(mockSignOut).toHaveBeenCalledTimes(1)
+    expect(mockClerkSignOut).toHaveBeenCalledTimes(1)
+  })
+})
+
+// ---- 19. Archive logout failure prevents false logout completion
+
+describe('dual logout — archive failure', () => {
+  it('shows error and does NOT call Clerk signOut when archive signOut fails', async () => {
+    clerkSignedIn()
+    mockSignOut.mockRejectedValue(new Error('network error'))
+
+    await renderSignedIn()
+    await act(async () => { clickSignOut() })
+
+    // Error message shown
+    expect(screen.getByRole('alert').textContent).toContain('Sign out failed')
+    // Clerk was NOT called — session would still be active
+    expect(mockClerkSignOut).not.toHaveBeenCalled()
+  })
+
+  it('re-enables Sign Out button after archive failure so user can retry', async () => {
+    clerkSignedIn()
+    mockSignOut.mockRejectedValue(new Error('network error'))
+
+    await renderSignedIn()
+    await act(async () => { clickSignOut() })
+
+    const btn = screen.getByRole('button', { name: /sign out/i })
+    expect((btn as HTMLButtonElement).disabled).toBe(false)
+  })
+})
+
+// ---- 20. Clerk logout failure surfaces error and halts logout flow
+
+describe('dual logout — Clerk failure', () => {
+  it('does NOT call onSignOut when Clerk signOut fails', async () => {
+    clerkSignedIn()
+    mockClerkSignOut.mockRejectedValue(new Error('Clerk unavailable'))
+
+    await renderSignedIn()
+    await act(async () => { clickSignOut() })
+
+    // archive was called and Clerk was attempted
+    expect(mockSignOut).toHaveBeenCalledTimes(1)
+    expect(mockClerkSignOut).toHaveBeenCalledTimes(1)
+    // AccountView must still be visible — onSignOut was NOT called (no reload)
+    expect(screen.getByText('Your character access')).toBeTruthy()
+  })
+
+  it('shows the Clerk-failure error message', async () => {
+    clerkSignedIn()
+    mockClerkSignOut.mockRejectedValue(new Error('Clerk unavailable'))
+
+    await renderSignedIn()
+    await act(async () => { clickSignOut() })
+
+    const alert = screen.getByRole('alert')
+    expect(alert.textContent).toContain('archive session was signed out')
+    expect(alert.textContent).toContain('Clerk sign-out failed')
+    expect(alert.textContent).not.toContain('Clerk unavailable') // no internals exposed
+  })
+
+  it('re-enables the Sign Out button after Clerk failure so user can retry', async () => {
+    clerkSignedIn()
+    mockClerkSignOut.mockRejectedValue(new Error('Clerk unavailable'))
+
+    await renderSignedIn()
+    await act(async () => { clickSignOut() })
+
+    const btn = screen.getByRole('button', { name: /sign out/i })
+    expect((btn as HTMLButtonElement).disabled).toBe(false)
+  })
+
+  it('retry after Clerk failure attempts Clerk signOut again', async () => {
+    clerkSignedIn()
+    // First attempt fails, second succeeds
+    mockSignOut.mockResolvedValue(undefined)
+    mockClerkSignOut
+      .mockRejectedValueOnce(new Error('Clerk unavailable'))
+      .mockResolvedValue(undefined)
+
+    await renderSignedIn()
+
+    // First click — Clerk fails, error shown
+    await act(async () => { clickSignOut() })
+    expect(screen.getByRole('alert')).toBeTruthy()
+
+    // Retry — archive signOut called again, Clerk signOut called again
+    await act(async () => { clickSignOut() })
+    expect(mockSignOut).toHaveBeenCalledTimes(2)
+    expect(mockClerkSignOut).toHaveBeenCalledTimes(2)
+  })
+})
+
+// ---- 21. Legacy password-only users can sign out without Clerk
+
+describe('dual logout — legacy password-only user', () => {
+  it('completes archive signOut and calls onSignOut without calling Clerk signOut', async () => {
+    clerkSignedOut() // no Clerk session
+    await renderSignedIn()
+    await act(async () => { clickSignOut() })
+    expect(mockSignOut).toHaveBeenCalledTimes(1)
+    expect(mockClerkSignOut).not.toHaveBeenCalled()
+    // onSignOut fires — component navigates away; AccountView no longer shows
+    // (happy-dom location.href assignment is a no-op but state still resets)
+    expect(screen.queryByText('Your character access')).toBeNull()
   })
 })

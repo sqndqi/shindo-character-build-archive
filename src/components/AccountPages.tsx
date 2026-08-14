@@ -333,6 +333,11 @@ function AccountView({
   const [pendingOrderId, setPendingOrderId] = useState<string | null>(() => getStoredOrderId())
   const [checkoutBusy, setCheckoutBusy] = useState(false)
   const [checkoutError, setCheckoutError] = useState('')
+  const [signOutBusy, setSignOutBusy] = useState(false)
+  const [signOutError, setSignOutError] = useState<string | null>(null)
+  // Clerk auth state — isSignedIn guards whether Clerk signout is needed;
+  // signOut is Clerk's own session termination.
+  const { isSignedIn: clerkSignedIn, signOut: clerkSignOut } = useAuth()
 
   useEffect(() => {
     if (!archiveAccountApiConfigured) return
@@ -349,9 +354,37 @@ function AccountView({
   }, [])
 
   const handleSignOut = async () => {
+    if (signOutBusy) return
+    setSignOutBusy(true)
+    setSignOutError(null)
+
+    // 1. Destroy local archive session first (CSRF + credentials preserved by signOut()).
     if (archiveAccountApiConfigured) {
-      try { await signOut() } catch { /* best effort */ }
+      try {
+        await signOut()
+      } catch {
+        setSignOutError('Sign out failed. Please try again.')
+        setSignOutBusy(false)
+        return
+      }
     }
+
+    // 2. Sign out of Clerk. Legacy password-only users skip this block.
+    //    If Clerk signOut fails the archive session is already gone, so we surface
+    //    the error and let the user retry rather than leaving Clerk active silently.
+    if (clerkSignedIn) {
+      try {
+        await clerkSignOut()
+      } catch {
+        setSignOutError(
+          'Your archive session was signed out, but Clerk sign-out failed. Please try again.',
+        )
+        setSignOutBusy(false)
+        return
+      }
+    }
+
+    // 3. Existing final navigation (clear state + hard reload to BASE_URL).
     onSignOut()
   }
 
@@ -507,8 +540,13 @@ function AccountView({
             Admin panel <ChevronRight size={14} aria-hidden="true" />
           </button>
         )}
-        <button className="button button--text" onClick={handleSignOut}>Sign out</button>
+        <button className="button button--text" onClick={handleSignOut} disabled={signOutBusy}>
+          {signOutBusy ? <><Loader size={14} className="spin" aria-hidden="true" />{' '}Signing out…</> : 'Sign out'}
+        </button>
       </div>
+      {signOutError && (
+        <p className="account-message account-message--error" role="alert">{signOutError}</p>
+      )}
     </section>
   )
 }
