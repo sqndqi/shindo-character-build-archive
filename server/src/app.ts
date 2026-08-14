@@ -1,6 +1,7 @@
 import express, { type Request } from 'express'
 import session from 'express-session'
 import cors from 'cors'
+import { clerkMiddleware } from '@clerk/express'
 import connectPgSimple from 'connect-pg-simple'
 import { authRouter } from './routes/auth'
 import { archiveRouter } from './routes/archive'
@@ -37,6 +38,8 @@ export function createApp(cookieOverrides?: CookieOverrides) {
   ].filter(Boolean) as string[]
 
   const app = express()
+
+  app.use(clerkMiddleware())
 
   app.set('trust proxy', 1)
 

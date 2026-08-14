@@ -47,6 +47,21 @@ export class ApiError extends Error {
   }
 }
 
+export type ClerkSessionErrorCode =
+  | 'clerk_token_missing'
+  | 'account_link_required'
+  | 'account_suspended'
+  | 'provisioning_failed'
+
+export class ClerkSessionError extends Error {
+  readonly code: ClerkSessionErrorCode
+  constructor(code: ClerkSessionErrorCode, message: string) {
+    super(message)
+    this.name = 'ClerkSessionError'
+    this.code = code
+  }
+}
+
 export type EntitlementSummary = {
   id: string
   type: 'character' | 'pack' | 'full_archive'
@@ -372,6 +387,73 @@ export async function adminGetAudit(limit = 50, offset = 0): Promise<AuditLog[]>
     { skipCsrf: true },
   )
   return data.logs
+}
+
+// ------------------------------------------------------------------ Clerk session establishment
+
+// Internal recursive helper — mirrors the CSRF retry pattern in apiRequest.
+async function clerkSessionRequest(token: string, isRetry: boolean): Promise<ArchiveAccessState> {
+  const csrf = await fetchCsrfToken()
+
+  let res: Response
+  try {
+    res = await fetch(`${apiBase}/v1/auth/clerk-session`, {
+      method: 'POST',
+      credentials: 'include',
+      headers: {
+        'content-type': 'application/json',
+        authorization: `Bearer ${token}`,
+        'x-csrf-token': csrf,
+      },
+    })
+  } catch {
+    throw new ApiError('backend_waking', 'The archive server is waking up. Please wait a moment and try again.')
+  }
+
+  if (!res.ok) {
+    const payload = await res.json().catch(() => ({})) as { error?: string; code?: string }
+    // CSRF retry: 403 with no recognizable business code means the CSRF token expired.
+    // Business errors (ACCOUNT_SUSPENDED etc.) carry a `code` field — don't retry those.
+    if (res.status === 403 && !isRetry && !payload.code) {
+      invalidateCsrfToken()
+      return clerkSessionRequest(token, true)
+    }
+    // Map stable backend codes to typed ClerkSessionError
+    if (payload.code === 'ACCOUNT_LINK_REQUIRED') {
+      throw new ClerkSessionError('account_link_required', payload.error ?? 'Account link required.')
+    }
+    if (payload.code === 'ACCOUNT_SUSPENDED') {
+      throw new ClerkSessionError('account_suspended', payload.error ?? 'Account suspended.')
+    }
+    if (payload.code === 'PROVISIONING_FAILED') {
+      throw new ClerkSessionError('provisioning_failed', payload.error ?? 'Provisioning failed.')
+    }
+    const msg = payload.error ?? 'Request failed.'
+    throw new ApiError(statusToCode(res.status, msg), msg, res.status)
+  }
+
+  const state = await res.json() as ArchiveAccessState
+  // session.regenerate() on the backend invalidates the old CSRF token
+  invalidateCsrfToken()
+  return state
+}
+
+/**
+ * Exchange a verified Clerk session token for a local Express archive session.
+ *
+ * getToken must come from Clerk's useAuth() hook.  The token is sent as
+ * Authorization: Bearer — no Clerk identity data is sent in the request body.
+ * The returned ArchiveAccessState.userId is the LOCAL PostgreSQL users.id.
+ */
+export async function establishClerkSession(
+  getToken: () => Promise<string | null>,
+): Promise<ArchiveAccessState> {
+  const token = await getToken()
+  if (!token) {
+    throw new ClerkSessionError('clerk_token_missing', 'Clerk session token is unavailable.')
+  }
+  if (!apiBase) throw new ApiError('unavailable', 'The archive API is not configured.')
+  return clerkSessionRequest(token, false)
 }
 
 // ------------------------------------------------------------------ legacy compat (AccountPages.tsx)

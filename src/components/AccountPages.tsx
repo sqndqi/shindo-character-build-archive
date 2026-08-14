@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react'
+import { SignInButton, useAuth } from '@clerk/react'
 import {
   KeyRound,
   Loader,
@@ -20,7 +21,9 @@ import {
   getProducts,
   createCheckout,
   redeemCode,
+  establishClerkSession,
   ApiError,
+  ClerkSessionError,
   type ArchiveAccessState,
   type EntitlementSummary,
   type OrderSummary,
@@ -78,10 +81,12 @@ function SignInForm({
   onSuccess,
   onSwitch,
   backendStatus,
+  clerkSection,
 }: {
   onSuccess: (state: ArchiveAccessState) => void
   onSwitch: () => void
   backendStatus: BackendStatus
+  clerkSection?: ReactNode
 }) {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
@@ -113,6 +118,12 @@ function SignInForm({
         <p>Your password and entitlements are validated server-side.</p>
       </header>
       <BackendBanner status={backendStatus} />
+      {clerkSection != null && (
+        <>
+          <div className="account-clerk-section">{clerkSection}</div>
+          <div className="account-divider" aria-hidden="true"><span>or</span></div>
+        </>
+      )}
       <form onSubmit={submit}>
         <label>
           Username
@@ -322,6 +333,11 @@ function AccountView({
   const [pendingOrderId, setPendingOrderId] = useState<string | null>(() => getStoredOrderId())
   const [checkoutBusy, setCheckoutBusy] = useState(false)
   const [checkoutError, setCheckoutError] = useState('')
+  const [signOutBusy, setSignOutBusy] = useState(false)
+  const [signOutError, setSignOutError] = useState<string | null>(null)
+  // Clerk auth state — isSignedIn guards whether Clerk signout is needed;
+  // signOut is Clerk's own session termination.
+  const { isSignedIn: clerkSignedIn, signOut: clerkSignOut } = useAuth()
 
   useEffect(() => {
     if (!archiveAccountApiConfigured) return
@@ -338,9 +354,37 @@ function AccountView({
   }, [])
 
   const handleSignOut = async () => {
+    if (signOutBusy) return
+    setSignOutBusy(true)
+    setSignOutError(null)
+
+    // 1. Destroy local archive session first (CSRF + credentials preserved by signOut()).
     if (archiveAccountApiConfigured) {
-      try { await signOut() } catch { /* best effort */ }
+      try {
+        await signOut()
+      } catch {
+        setSignOutError('Sign out failed. Please try again.')
+        setSignOutBusy(false)
+        return
+      }
     }
+
+    // 2. Sign out of Clerk. Legacy password-only users skip this block.
+    //    If Clerk signOut fails the archive session is already gone, so we surface
+    //    the error and let the user retry rather than leaving Clerk active silently.
+    if (clerkSignedIn) {
+      try {
+        await clerkSignOut()
+      } catch {
+        setSignOutError(
+          'Your archive session was signed out, but Clerk sign-out failed. Please try again.',
+        )
+        setSignOutBusy(false)
+        return
+      }
+    }
+
+    // 3. Existing final navigation (clear state + hard reload to BASE_URL).
     onSignOut()
   }
 
@@ -496,8 +540,13 @@ function AccountView({
             Admin panel <ChevronRight size={14} aria-hidden="true" />
           </button>
         )}
-        <button className="button button--text" onClick={handleSignOut}>Sign out</button>
+        <button className="button button--text" onClick={handleSignOut} disabled={signOutBusy}>
+          {signOutBusy ? <><Loader size={14} className="spin" aria-hidden="true" />{' '}Signing out…</> : 'Sign out'}
+        </button>
       </div>
+      {signOutError && (
+        <p className="account-message account-message--error" role="alert">{signOutError}</p>
+      )}
     </section>
   )
 }
@@ -519,6 +568,15 @@ export default function AccountPages({
     archiveAccountApiConfigured ? 'checking' : 'up',
   )
 
+  // ---- Clerk auth state
+  const { isLoaded: clerkLoaded, isSignedIn: clerkSignedIn, getToken } = useAuth()
+  const [clerkError, setClerkError] = useState<string | null>(null)
+  const [clerkHandshaking, setClerkHandshaking] = useState(false)
+  // Stores the in-flight handshake Promise so StrictMode's second effect invocation
+  // attaches to the same Promise rather than starting a second network request.
+  const handshakePromiseRef = useRef<Promise<ArchiveAccessState> | null>(null)
+
+  // ---- initial archive session check
   useEffect(() => {
     if (!archiveAccountApiConfigured) return
     getAccessState()
@@ -535,6 +593,107 @@ export default function AccountPages({
         )
       })
   }, [])
+
+  // ---- Clerk → archive session handshake
+  // Fires only after the initial getAccessState() settles (backendStatus !== 'checking')
+  // so it never races with an already-established legacy session.
+  useEffect(() => {
+    if (backendStatus === 'checking') return
+    if (!clerkLoaded || !clerkSignedIn) return
+    if (signedInState !== null) return
+
+    let cancelled = false
+
+    const attachHandlers = (promise: Promise<ArchiveAccessState>) => {
+      promise
+        .then((state) => {
+          if (cancelled) return
+          if (state.status === 'signed-in') {
+            setSignedInState(state)
+            setPage('account')
+            onSignedIn?.(state)
+          }
+        })
+        .catch((err: unknown) => {
+          if (cancelled) return
+          // Clear ref so a future manual retry can start a new request
+          handshakePromiseRef.current = null
+          if (err instanceof ClerkSessionError) {
+            switch (err.code) {
+              case 'account_link_required':
+                setClerkError(
+                  'An account with this email or username already exists. Sign in with your existing password to link it later.',
+                )
+                break
+              case 'account_suspended':
+                setClerkError('Your account has been suspended. Contact the archive owner on Discord.')
+                break
+              case 'provisioning_failed':
+                setClerkError('Account setup is temporarily unavailable. Please try again in a moment.')
+                break
+              default:
+                setClerkError('Sign in failed. Please try again.')
+            }
+          } else {
+            setClerkError('Sign in failed. Please try again.')
+          }
+        })
+        .finally(() => {
+          if (handshakePromiseRef.current === promise) {
+            handshakePromiseRef.current = null
+          }
+          if (!cancelled) {
+            setClerkHandshaking(false)
+          }
+        })
+    }
+
+    if (handshakePromiseRef.current === null) {
+      // No in-flight promise — start one
+      setClerkHandshaking(true)
+      setClerkError(null)
+      const promise = establishClerkSession(getToken)
+      handshakePromiseRef.current = promise
+      attachHandlers(promise)
+    } else {
+      // Reuse in-flight promise (StrictMode second mount, or re-render while pending)
+      attachHandlers(handshakePromiseRef.current)
+    }
+
+    return () => {
+      cancelled = true
+      // Do NOT clear handshakePromiseRef — the promise must remain reusable
+      // by StrictMode's second effect invocation.
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [backendStatus, clerkLoaded, clerkSignedIn, signedInState])
+  // getToken and onSignedIn intentionally omitted: stable Clerk ref, called at
+  // execution time; onSignedIn captured at call time (parent re-renders don't re-fire).
+
+  // ---- Compute Clerk UI slot for SignInForm
+  let clerkSection: ReactNode = null
+  if (clerkLoaded) {
+    if (clerkHandshaking) {
+      clerkSection = (
+        <div className="account-callout account-callout--loading" aria-live="polite">
+          <Loader size={15} className="spin" aria-hidden="true" />
+          <strong>Setting up your account…</strong>
+        </div>
+      )
+    } else if (clerkSignedIn && clerkError) {
+      clerkSection = (
+        <p className="account-message account-message--error" role="alert">{clerkError}</p>
+      )
+    } else if (!clerkSignedIn) {
+      clerkSection = (
+        <SignInButton mode="modal">
+          <button className="button button--outline" type="button">
+            Sign in with Clerk
+          </button>
+        </SignInButton>
+      )
+    }
+  }
 
   if (page === 'account' && signedInState) {
     return (
@@ -576,6 +735,7 @@ export default function AccountPages({
         }}
         onSwitch={() => setPage('signup')}
         backendStatus={backendStatus}
+        clerkSection={clerkSection}
       />
     </main>
   )
