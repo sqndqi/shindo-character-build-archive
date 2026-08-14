@@ -1,4 +1,4 @@
-import { copyFile, mkdir } from 'node:fs/promises'
+import { copyFile, mkdir, readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { publicBuildPreviews } from '../src/data/publicBuildPreviews'
 import { freeBuilds } from '../src/data/freeBuilds'
@@ -16,3 +16,11 @@ await Promise.all(routes.map(async (target) => {
 }))
 
 console.log(`Generated ${routes.length} static build route shells.`)
+
+// Patch 404.html: replace %%SEGMENTS%% with the deployment base-segment count.
+// 1 = GitHub project pages (/shindo-character-build-archive/); 0 = root/custom-domain.
+const segments = process.env.GITHUB_ACTIONS ? '1' : '0'
+const page404 = resolve(dist, '404.html')
+const html404 = await readFile(page404, 'utf-8')
+await writeFile(page404, html404.replaceAll('%%SEGMENTS%%', segments))
+console.log(`Patched 404.html base-segments: ${segments}`)
