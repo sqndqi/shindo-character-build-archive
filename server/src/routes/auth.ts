@@ -2,8 +2,10 @@ import { Router } from 'express'
 import bcrypt from 'bcryptjs'
 import { randomBytes } from 'crypto'
 import { z } from 'zod'
+import { getAuth } from '@clerk/express'
 import { query, withTransaction, auditLog } from '../db/index'
 import { loginRateLimit, signupRateLimit } from '../middleware/rateLimit'
+import { resolveClerkUser, ClerkResolverError } from '../services/clerkUserResolver'
 import { FREE_CHARACTER_IDS, type ArchiveAccessState, type UserRole } from '../types'
 
 const router = Router()
@@ -264,6 +266,69 @@ router.post('/signup', signupRateLimit, async (req, res) => {
 
 router.post('/forgot-password', (_req, res) => {
   res.status(403).json({ error: 'Password reset is not available.' })
+})
+
+// ------------------------------------------------------------------ POST /clerk-session
+
+router.post('/clerk-session', async (req, res) => {
+  // Clerk userId comes ONLY from verified Clerk auth state — never from req.body
+  const auth = getAuth(req)
+  const clerkUserId = auth.userId
+
+  if (!clerkUserId) {
+    res.status(401).json({ error: 'Clerk authentication required.', code: 'CLERK_AUTH_REQUIRED' })
+    return
+  }
+
+  // Clerk provisioning requires PostgreSQL; owner fallback must not be used here
+  if (!dbAvailable()) {
+    res.status(503).json({ error: 'Database unavailable.', code: 'PROVISIONING_FAILED' })
+    return
+  }
+
+  try {
+    const resolved = await resolveClerkUser(clerkUserId)
+
+    await query(`UPDATE users SET last_login_at = NOW() WHERE id = $1`, [resolved.id])
+
+    req.session.regenerate(async (err) => {
+      if (err) {
+        res.status(500).json({ error: 'Session error.' })
+        return
+      }
+      // Role comes from the LOCAL users row — never from Clerk metadata
+      req.session.userId = resolved.id
+      req.session.role = resolved.role
+      try {
+        const state = await buildAccessState(resolved.id)
+        if (!state) {
+          // buildAccessState returns null for missing/inactive users; clean up the new session
+          req.session.destroy(() => undefined)
+          res.status(500).json({ error: 'An error occurred. Please try again.' })
+          return
+        }
+        res.json(state)
+      } catch {
+        req.session.destroy(() => undefined)
+        res.status(500).json({ error: 'An error occurred. Please try again.' })
+      }
+    })
+  } catch (err) {
+    if (err instanceof ClerkResolverError) {
+      if (err.code === 'ACCOUNT_LINK_REQUIRED') {
+        res.status(409).json({ error: err.message, code: 'ACCOUNT_LINK_REQUIRED' })
+        return
+      }
+      if (err.code === 'ACCOUNT_SUSPENDED') {
+        res.status(403).json({ error: err.message, code: 'ACCOUNT_SUSPENDED' })
+        return
+      }
+      // PROVISIONING_FAILED
+      res.status(500).json({ error: 'An error occurred. Please try again.', code: 'PROVISIONING_FAILED' })
+      return
+    }
+    res.status(500).json({ error: 'An error occurred. Please try again.' })
+  }
 })
 
 export { router as authRouter }
