@@ -40,6 +40,8 @@ export function createApp(cookieOverrides?: CookieOverrides) {
 
   const app = express()
 
+  app.use(clerkMiddleware())
+
   app.set('trust proxy', 1)
   app.use(helmet())
 
@@ -93,8 +95,6 @@ export function createApp(cookieOverrides?: CookieOverrides) {
       },
     }),
   )
-
-  app.use(clerkMiddleware())
 
   app.get('/health', (_req, res) => {
     res.json({ ok: true })
