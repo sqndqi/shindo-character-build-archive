@@ -39,6 +39,8 @@ export function createApp(cookieOverrides?: CookieOverrides) {
 
   const app = express()
 
+  app.use(clerkMiddleware())
+
   app.set('trust proxy', 1)
 
   // Capture raw body for webhook HMAC-SHA512 verification before JSON parsing consumes the stream
@@ -90,8 +92,6 @@ export function createApp(cookieOverrides?: CookieOverrides) {
       },
     }),
   )
-
-  app.use(clerkMiddleware())
 
   app.get('/health', (_req, res) => {
     res.json({ ok: true })
