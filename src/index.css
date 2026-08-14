@@ -480,6 +480,10 @@ body { font-size: 15px; }
 .account-access-card span { display: block; color: var(--text-muted); font-size: 12px; }
 .account-access-card strong { display: block; margin-top: 6px; font-size: 20px; }
 .account-message { color: var(--warning); }
+.account-clerk-section { margin-top: 24px; }
+.account-clerk-section .button--outline { width: 100%; justify-content: center; }
+.account-divider { display: flex; align-items: center; gap: 12px; margin: 18px 0 0; color: var(--text-muted); font-size: 12px; }
+.account-divider::before, .account-divider::after { content: ''; flex: 1; height: 1px; background: var(--border-subtle); }
 
 .account-parked { grid-template-columns: 1fr; max-width: 780px; margin: 0 auto; text-align: center; }
 .account-parked .archive-hero__copy { display: grid; justify-items: center; }
