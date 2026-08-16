@@ -6,6 +6,11 @@ import { getAuth } from '@clerk/express'
 import { query, withTransaction, auditLog } from '../db/index'
 import { loginRateLimit, signupRateLimit } from '../middleware/rateLimit'
 import { resolveClerkUser, ClerkResolverError } from '../services/clerkUserResolver'
+import {
+  PRIMARY_FALLBACK_SESSION_ID,
+  fallbackOwnerBySessionId,
+  fallbackOwnerByUsername,
+} from '../config/owners'
 import { FREE_CHARACTER_IDS, type ArchiveAccessState, type UserRole } from '../types'
 
 const router = Router()
@@ -92,12 +97,25 @@ export async function buildAccessState(userId: string): Promise<ArchiveAccessSta
   }
 }
 
-function ownerFallbackState(): ArchiveAccessState {
+/**
+ * Access state for the no-database fallback path.
+ *
+ * Resolves whichever owner slot the session belongs to, so a second configured
+ * owner reports their own identity rather than the primary owner's. Falls back
+ * to the historical defaults when no slot matches, preserving prior behavior
+ * for sessions created before a slot was configured.
+ */
+function ownerFallbackState(
+  sessionUserId: string = PRIMARY_FALLBACK_SESSION_ID,
+): ArchiveAccessState {
+  const owner = fallbackOwnerBySessionId(sessionUserId)
+  const username = owner?.username ?? process.env.OWNER_USERNAME ?? 'owner'
+
   return {
     status: 'signed-in',
-    userId: 'owner',
-    username: process.env.OWNER_USERNAME ?? 'owner',
-    email: `${process.env.OWNER_USERNAME ?? 'owner'}@archive.internal`,
+    userId: owner?.sessionUserId ?? PRIMARY_FALLBACK_SESSION_ID,
+    username,
+    email: owner?.email ?? `${username}@archive.internal`,
     role: 'owner',
     entitlement: 'active',
     freeCharacterIds: [...FREE_CHARACTER_IDS],
@@ -131,19 +149,21 @@ router.post('/login', loginRateLimit, async (req, res) => {
   }
 
   if (!dbAvailable()) {
-    const ownerUsername = process.env.OWNER_USERNAME ?? ''
-    const ownerHash = process.env.OWNER_PASSWORD_HASH ?? ''
-    const usernameOk = username.toLowerCase() === ownerUsername.toLowerCase()
-    const passwordOk = ownerHash ? bcrypt.compareSync(password, ownerHash) : false
-    if (!usernameOk || !passwordOk) {
+    // No database: authenticate against the configured owner slots. Always run a
+    // bcrypt comparison so an unknown username costs the same as a known one.
+    const owner = fallbackOwnerByUsername(username)
+    const hashToCheck = owner?.passwordHash ?? '$2b$12$invaliddummyhashtopreventtiming0'
+    const passwordOk = bcrypt.compareSync(password, hashToCheck)
+
+    if (!owner || !passwordOk) {
       res.status(401).json({ error: 'Invalid credentials.' })
       return
     }
     req.session.regenerate((err) => {
       if (err) { res.status(500).json({ error: 'Session error.' }); return }
-      req.session.userId = 'owner'
+      req.session.userId = owner.sessionUserId
       req.session.role = 'owner'
-      res.json(ownerFallbackState())
+      res.json(ownerFallbackState(owner.sessionUserId))
     })
     return
   }
@@ -198,7 +218,7 @@ router.get('/me', async (req, res) => {
   }
 
   if (!dbAvailable()) {
-    res.json(ownerFallbackState())
+    res.json(ownerFallbackState(req.session.userId))
     return
   }
 

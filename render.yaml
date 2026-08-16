@@ -14,6 +14,13 @@ services:
         sync: false
       - key: OWNER_PASSWORD_HASH
         sync: false
+      # Optional second owner. Set BOTH in the Render dashboard to enable it,
+      # or leave BOTH unset to keep a single owner. Setting only one fails the
+      # seed with a clear configuration error.
+      - key: OWNER_2_USERNAME
+        sync: false
+      - key: OWNER_2_PASSWORD_HASH
+        sync: false
       - key: SESSION_SECRET
         generateValue: true
       - key: FRONTEND_ORIGIN

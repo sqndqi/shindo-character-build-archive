@@ -1,6 +1,7 @@
 import { Router } from 'express'
 import { FREE_CHARACTER_IDS, type ArchiveAccessState } from '../types'
 import { buildAccessState } from './auth'
+import { PRIMARY_FALLBACK_SESSION_ID, fallbackOwnerBySessionId } from '../config/owners'
 
 const router = Router()
 
@@ -19,11 +20,15 @@ router.get('/access', async (req, res) => {
   }
 
   if (!process.env.DATABASE_URL) {
+    // No database: report the owner slot this session belongs to, so a second
+    // configured owner is not mistaken for the primary one.
+    const owner = fallbackOwnerBySessionId(req.session.userId)
+    const username = owner?.username ?? process.env.OWNER_USERNAME ?? 'owner'
     res.json({
       status: 'signed-in',
-      userId: 'owner',
-      username: process.env.OWNER_USERNAME ?? 'owner',
-      email: `${process.env.OWNER_USERNAME ?? 'owner'}@archive.internal`,
+      userId: owner?.sessionUserId ?? PRIMARY_FALLBACK_SESSION_ID,
+      username,
+      email: owner?.email ?? `${username}@archive.internal`,
       role: 'owner',
       entitlement: 'active',
       freeCharacterIds,
