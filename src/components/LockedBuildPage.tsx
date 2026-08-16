@@ -2,6 +2,20 @@ import { ArrowLeft, Check, LockKeyhole, ShoppingCart } from 'lucide-react'
 import type { ArchiveBuildRecord } from '../types/archiveAccess'
 import { Portrait } from './Portrait'
 
+/**
+ * Loadout categories every Shindo build is composed of. These are structural
+ * category names only — never values, counts, or anything derived from the
+ * locked record, which the repository strips before it reaches the client.
+ */
+const LOCKED_CATEGORIES = [
+  'Bloodlines',
+  'Elements',
+  'Mode',
+  'Combat Art',
+  'Weapon',
+  'Move set',
+] as const
+
 export function LockedBuildPage({
   build,
   onBack,
@@ -36,9 +50,13 @@ export function LockedBuildPage({
             <strong>{build.archetype.slice(0, 3).join(' · ')}</strong>
             <span>{build.publicVariantCount} prepared variants</span>
           </div>
-          <div className="locked-loadout-slots" aria-label="Premium loadout hidden">
-            {['Bloodline', 'Bloodline', 'Bloodline', 'Bloodline', 'Elements', 'Mode'].map((label, index) => (
-              <div key={`${label}-${index}`}><i>?</i><span>{label}</span></div>
+          <p className="locked-manifest-heading" aria-hidden="true">Premium loadout — locked</p>
+          <div className="locked-loadout-slots" role="list" aria-label="Premium loadout hidden">
+            {LOCKED_CATEGORIES.map((label) => (
+              <div key={label} role="listitem">
+                <LockKeyhole aria-hidden="true" />
+                <span>{label}</span>
+              </div>
             ))}
           </div>
           <div className="locked-build-actions">
