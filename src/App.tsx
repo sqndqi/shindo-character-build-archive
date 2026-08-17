@@ -4,6 +4,7 @@ import {
   useCallback,
   useEffect,
   useMemo,
+  useRef,
   useState,
 } from "react";
 import {
@@ -32,6 +33,7 @@ import type { CharacterBuild } from "./types";
 import {
   buildRepository,
   previewToRecord,
+  BuildFetchError,
 } from "./repositories/BuildRepository";
 import type { ArchiveBuildRecord } from "./types/archiveAccess";
 import { useArchivePrefs } from "./hooks/useArchivePrefs";
@@ -222,9 +224,8 @@ export default function App() {
     [],
   );
 
-  useEffect(() => {
-    migratePublicData();
-    Promise.all([
+  const loadArchive = useCallback(() => {
+    return Promise.all([
       buildRepository.listBuildPreviews(),
       buildRepository.listAccess(),
     ])
@@ -245,11 +246,14 @@ export default function App() {
                   publicVariantCount: preview.variantCount,
                   publicAvailableSlotCounts: [],
                 } as ArchiveBuildRecord;
-              } catch {
-                return previewToRecord(
-                  preview,
-                  preview.free ? "Free" : "Locked",
-                );
+              } catch (err) {
+                // A fetch failure must NOT rewrite a valid ownership state to Locked.
+                // Preserve the authoritative accessState and surface a load error the
+                // user can retry. previewToRecord carries no premium data.
+                const record = previewToRecord(preview, accessState);
+                record.buildLoadError =
+                  err instanceof BuildFetchError ? err.kind : "unavailable";
+                return record;
               }
             }
             return previewToRecord(preview, accessState);
@@ -262,7 +266,12 @@ export default function App() {
             return rec?.accessState === "Locked";
           }),
         );
-      })
+      });
+  }, []);
+
+  useEffect(() => {
+    migratePublicData();
+    loadArchive()
       .catch(() =>
         setLoadError(
           "The archive could not be loaded. Your personal preferences were not changed.",
@@ -271,6 +280,17 @@ export default function App() {
       .finally(() => setLoading(false));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  // Background access refresh: after leaving an entitlement-changing surface
+  // (account / premium), re-fetch access so newly owned builds appear without a
+  // full browser reload. No skeleton flash — builds update in place.
+  const prevViewRef = useRef(view);
+  useEffect(() => {
+    const prev = prevViewRef.current;
+    prevViewRef.current = view;
+    if ((prev === "account" || prev === "premium") && view !== prev) {
+      loadArchive().catch(() => undefined);
+    }
+  }, [view, loadArchive]);
   useEffect(() => {
     const onPopState = () => setBuildRoute(readBuildRoute());
     addEventListener("popstate", onPopState);
@@ -474,6 +494,34 @@ export default function App() {
   const routedBuild = buildRoute
     ? builds.find((build) => build.id === buildRoute.buildId)
     : undefined;
+  const [retryingBuildId, setRetryingBuildId] = useState<string | null>(null);
+  const retryBuildLoad = useCallback(async (id: string) => {
+    setRetryingBuildId(id);
+    try {
+      const full = await buildRepository.getBuild(id);
+      setBuilds((prev) =>
+        prev.map((b) =>
+          b.id === id
+            ? ({
+                ...full,
+                accessState: b.accessState,
+                publicVariantCount: b.publicVariantCount,
+                publicAvailableSlotCounts: b.publicAvailableSlotCounts,
+                buildLoadError: undefined,
+              } as ArchiveBuildRecord)
+            : b,
+        ),
+      );
+    } catch (err) {
+      const kind = err instanceof BuildFetchError ? err.kind : "unavailable";
+      // Failure must not change the authoritative accessState — only the error marker.
+      setBuilds((prev) =>
+        prev.map((b) => (b.id === id ? { ...b, buildLoadError: kind } : b)),
+      );
+    } finally {
+      setRetryingBuildId(null);
+    }
+  }, []);
   const openFullBuild = (build: CharacterBuild, variantId?: string) => {
     setGalleryScroll(window.scrollY);
     const route = { buildId: build.id, variantId };
@@ -563,6 +611,35 @@ export default function App() {
           isSelected={selectedForUnlock.includes(routedBuild.id)}
           onToggleSelect={toggleSelectForUnlock}
         />
+      ) : buildRoute &&
+        routedBuild &&
+        routedBuild.buildLoadError &&
+        routedBuild.variants.length === 0 ? (
+        <main className="empty-state build-load-error">
+          <span className="access-seal access-seal--owned">
+            {routedBuild.accessState === "Free" ? "Free" : "Unlocked"}
+          </span>
+          <h2>{routedBuild.name}</h2>
+          <p>
+            {routedBuild.buildLoadError === "missing"
+              ? "This build hasn’t been published yet. Your access is unaffected."
+              : routedBuild.buildLoadError === "denied"
+                ? "We couldn’t confirm access to this build right now. Please try again."
+                : "Build unlocked — its details are temporarily unavailable."}
+          </p>
+          <div className="build-load-error__actions">
+            <button
+              className="button button--primary"
+              onClick={() => retryBuildLoad(routedBuild.id)}
+              disabled={retryingBuildId === routedBuild.id}
+            >
+              {retryingBuildId === routedBuild.id ? "Retrying…" : "Retry"}
+            </button>
+            <button className="button button--outline" onClick={closeFullBuild}>
+              Back to archive
+            </button>
+          </div>
+        </main>
       ) : buildRoute && routedBuild ? (
         <FullBuildPage
           build={routedBuild}

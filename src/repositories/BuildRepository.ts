@@ -1,7 +1,17 @@
 import type { BuildVariant, CharacterBuild } from '../types'
-import type { ArchiveBuildRecord, CharacterAccessState } from '../types/archiveAccess'
+import type { ArchiveBuildRecord, BuildLoadErrorKind, CharacterAccessState } from '../types/archiveAccess'
 import { publicBuildPreviews } from '../data/publicBuildPreviews'
 import { freeBuilds } from '../data/freeBuilds'
+
+/** Thrown by getBuild so callers can distinguish denial from a transient outage. */
+export class BuildFetchError extends Error {
+  readonly kind: BuildLoadErrorKind
+  constructor(kind: BuildLoadErrorKind, message: string) {
+    super(message)
+    this.name = 'BuildFetchError'
+    this.kind = kind
+  }
+}
 
 export interface BuildPreview {
   id: string
@@ -37,10 +47,23 @@ class PublicBuildRepository implements BuildRepository {
   async getBuild(id: string) {
     const free = freeBuilds.find((item) => item.id === id)
     if (free) return structuredClone(free)
-    if (!apiBase) throw new Error('Unlock this character to view the complete build.')
-    const response = await fetch(`${apiBase}/v1/archive/builds/${encodeURIComponent(id)}`, { credentials: 'include' })
-    if (response.status === 401 || response.status === 403) throw new Error('Unlock this character to view the complete build.')
-    if (!response.ok) throw new Error('The premium build service is unavailable.')
+    if (!apiBase) throw new BuildFetchError('unavailable', 'The premium build service is not configured.')
+    let response: Response
+    try {
+      response = await fetch(`${apiBase}/v1/archive/builds/${encodeURIComponent(id)}`, { credentials: 'include' })
+    } catch {
+      // Network failure — transient. Ownership, if known, remains valid.
+      throw new BuildFetchError('unavailable', 'The premium build service is unavailable.')
+    }
+    if (response.status === 401 || response.status === 403) {
+      throw new BuildFetchError('denied', 'You do not have access to this build.')
+    }
+    if (response.status === 404) {
+      throw new BuildFetchError('missing', 'This build is not available yet.')
+    }
+    if (!response.ok) {
+      throw new BuildFetchError('unavailable', 'The premium build service is unavailable.')
+    }
     return response.json() as Promise<CharacterBuild>
   }
 

@@ -32,3 +32,7 @@ weppy-project-sync/
 
 # Local TaiyiForge installation path
 .taiyi/forge-root
+
+# Generated private premium build catalog — server-only, regenerated at build time.
+# Must never be committed (premium build content).
+server/generated/

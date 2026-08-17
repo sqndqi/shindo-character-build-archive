@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "start": "node dist/index.js",
+    "generate:catalog": "node scripts/generate-premium-catalog.mjs",
+    "prebuild": "node scripts/generate-premium-catalog.mjs",
     "build": "tsc",
     "test": "vitest run",
     "migrate:up": "node-pg-migrate up",

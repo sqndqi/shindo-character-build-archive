@@ -39,7 +39,7 @@ import {
   type AuditLog,
   type EntitlementSummary,
 } from '../repositories/ArchiveAccessRepository'
-import { completeRoster } from '../data/restoredRoster'
+import { publicBuildPreviews } from '../data/publicBuildPreviews'
 
 type AdminTab = 'dashboard' | 'users' | 'products' | 'payments' | 'codes' | 'audit'
 
@@ -291,7 +291,10 @@ function UsersTab() {
 
 // ------------------------------------------------------------------ Products
 
-const CHARACTER_OPTIONS = completeRoster.map((c) => ({ id: c.id, name: c.name }))
+// Public preview catalog (id + name only) — never bundles premium build content.
+const CHARACTER_OPTIONS = publicBuildPreviews
+  .map((c) => ({ id: c.id, name: c.name }))
+  .sort((a, b) => a.name.localeCompare(b.name))
 
 type ProductType = 'single_character' | 'character_pack' | 'full_archive'
 
