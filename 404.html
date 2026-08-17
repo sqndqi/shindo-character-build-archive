@@ -1,14 +1,221 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shindo Character Build Archive</title>
-  </head>
-  <body>
-    <script>
-      sessionStorage.setItem('shindo-build-archive:deep-link', location.pathname + location.search + location.hash)
-      location.replace('/shindo-character-build-archive/')
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="x-base-segments" content="1" />
+  <meta name="theme-color" content="#0f0a0a" />
+  <title>404 — Shindo Character Build Archive</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #0f0a0a;
+      --surface:      #1a1212;
+      --accent:       #e06b5c;
+      --accent-hover: #ed877a;
+      --accent-dark:  #8b3f34;
+      --text:         #f2ece8;
+      --muted:        #8a7a72;
+      --border:       #522e2e;
+    }
+
+    html, body {
+      min-height: 100dvh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    #page-404 {
+      display: flex;
+      min-height: 100dvh;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(32px, 8vw, 96px) clamp(20px, 5vw, 48px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Concentric ring motif matching the main app hero */
+    #page-404::before {
+      content: "";
+      position: fixed;
+      right: -8%;
+      top: -18%;
+      width: min(72vw, 640px);
+      height: min(72vw, 640px);
+      border-radius: 50%;
+      border: 2px solid rgba(224, 107, 92, 0.09);
+      box-shadow:
+        inset 0 0 0 38px transparent,
+        inset 0 0 0 40px rgba(224, 107, 92, 0.05),
+        inset 0 0 0 96px transparent,
+        inset 0 0 0 98px rgba(224, 107, 92, 0.03);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .nf {
+      position: relative;
+      z-index: 1;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .nf-glyph {
+      display: block;
+      font-size: min(42vw, 280px);
+      font-weight: 900;
+      line-height: 0.82;
+      letter-spacing: -0.04em;
+      color: rgba(224, 107, 92, 0.065);
+      user-select: none;
+      margin-bottom: -0.06em;
+    }
+
+    .nf-tag {
+      display: inline-block;
+      padding: 4px 10px;
+      margin-bottom: 20px;
+      border: 1px solid var(--accent-dark);
+      color: var(--accent);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(22px, 5vw, 36px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .nf-desc {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.65;
+      max-width: 360px;
+      margin: 0 auto 36px;
+    }
+
+    .nf-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 52px;
+    }
+
+    .btn {
+      min-height: 42px;
+      padding: 0 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn-primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #07110b;
+    }
+    .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+
+    .btn-outline {
+      background: var(--surface);
+      border-color: var(--border);
+      color: var(--text);
+    }
+    .btn-outline:hover { border-color: #703d3d; background: #2c1e1e; }
+
+    .nf-footer {
+      color: #4a3636;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .btn { transition: none; }
+      .btn:hover { transform: none; }
+    }
+
+    @media (max-width: 400px) {
+      .nf-actions { flex-direction: column; align-items: stretch; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main id="page-404" style="display:none" role="main" aria-labelledby="nf-heading">
+    <div class="nf">
+      <span class="nf-glyph" aria-hidden="true">404</span>
+      <span class="nf-tag" aria-hidden="true">Page not found</span>
+      <h1 id="nf-heading">Lost in the Shinobi World</h1>
+      <p class="nf-desc">
+        The page you're looking for doesn't exist, has moved,
+        or was never part of the archive.
+      </p>
+      <nav class="nf-actions" aria-label="Recovery navigation">
+        <a id="link-home" href="/" class="btn btn-primary">Return to Archive</a>
+        <a id="link-browse" href="/" class="btn btn-outline">Browse Builds</a>
+      </nav>
+      <p class="nf-footer">Shindo Character Build Archive</p>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      'use strict';
+      // Read the build-time-injected path-segment count.
+      // 1 for GitHub project-pages subpath deployments, 0 for root/custom-domain.
+      var meta = document.querySelector('meta[name="x-base-segments"]');
+      var segments = meta ? (parseInt(meta.content, 10) || 0) : 0;
+
+      var parts = location.pathname.split('/').filter(Boolean);
+      var basePath = segments > 0
+        ? '/' + parts.slice(0, segments).join('/') + '/'
+        : '/';
+      var rootUrl = location.protocol + '//' + location.hostname +
+        (location.port ? ':' + location.port : '') + basePath;
+
+      // Path relative to the deployment base (e.g. "/build/zack-lee").
+      var relParts = parts.slice(segments);
+      var rel = relParts.length > 0 ? '/' + relParts.join('/') : '/';
+
+      // /build/... routes are owned by the SPA. Static route shells exist for
+      // known builds, but unknown build IDs should fall back to the SPA too.
+      if (/^\/build(\/|$)/.test(rel)) {
+        try {
+          sessionStorage.setItem(
+            'shindo-build-archive:deep-link',
+            location.pathname + location.search + location.hash
+          );
+        } catch (_) { /* private browsing — redirect still works */ }
+        location.replace(rootUrl);
+        return;
+      }
+
+      // Real 404: wire button hrefs and reveal the page.
+      document.getElementById('link-home').href = rootUrl;
+      document.getElementById('link-browse').href = rootUrl;
+      document.getElementById('page-404').removeAttribute('style');
+    }());
+  </script>
+</body>
 </html>
